@@ -1,0 +1,1838 @@
+TMS320C3x/4x COFF AssemblerVersion 5.12     Mon Nov 19 13:45:26 2018
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_53S.AAB 
+
+F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\ASM\buffer.asm        PAGE    1
+
+        1                   ;******************************************************************************
+        2                   ;* TMS320C3x/4x ANSI C Code Generator                            Version 5.11 *
+        3                   ;* Date/Time created: Mon Nov 19 13:45:27 2018                                *
+        4                   ;******************************************************************************
+        5                           .regalias       ; enable floating point register aliases
+        6          0000000b fp      .set    ar3
+        7          0000000b FP      .set    ar3
+        8                   ;******************************************************************************
+        9                   ;* GLOBAL FILE PARAMETERS                                                     *
+       10                   ;*                                                                            *
+       11                   ;*   Optimization       : Always Choose Smaller Code Size                     *
+       12                   ;*   Memory             : Big Memory Model                                    *
+       13                   ;*   Float-to-Int       : Normal Conversions (round toward zero)              *
+       14                   ;*   Multiply           : in Software (32 bits)                               *
+       15                   ;*   Memory Info        : Unmapped Memory Exists                              *
+       16                   ;*   Repeat Loops       : Use RPTS and/or RPTB                                *
+       17                   ;*   Calls              : Normal Library ASM calls                            *
+       18                   ;*   Debug Info         : Standard TI Debug Information                       *
+       19                   ;******************************************************************************
+       20                   ;       C:\tic3x4x\c3x4x\cgtools\bin\ac30.exe -@_53S.AAA 
+       21                           .file   "buffer.c"
+       22                           .file   "GLBLS.H"
+       23                           .file   ".\stdarg.h"
+       24                           .sym    _va_list,0,18,13,32
+       25                           .file   ".\format.h"
+       26                           .stag   .fake0,128
+       27                           .member _flags,0,14,8,32
+       28                           .member _fwidth,32,4,8,32
+       29                           .member _precision,64,4,8,32
+       30                           .member _conv,96,2,8,32
+       31                           .eos
+       32                           .sym    __PFIELD,0,8,13,128,.fake0
+       33                           .stag   .fake1,3200
+       34                           .member _flags,0,14,8,32
+       35                           .member _fwidth,32,4,8,32
+       36                           .member _precision,64,4,8,32
+       37                           .member _scanset,96,50,8,3072,,96
+       38                           .member _conv,3168,2,8,32
+       39                           .eos
+       40                           .sym    __SFIELD,0,8,13,3200,.fake1
+       41                           .file   ".\string.h"
+       42                           .sym    _size_t,0,14,13,32
+       43                           .file   ".\stdio.h"
+       44                           .stag   .fake2,224
+       45                           .member _fd,0,4,8,32
+       46                           .member _buf,32,28,8,32
+       47                           .member _pos,64,28,8,32
+       48                           .member _bufend,96,28,8,32
+       49                           .member _buff_stop,128,28,8,32
+       50                           .member _flags,160,14,8,32
+       51                           .member _index,192,4,8,32
+       52                           .eos
+       53                           .sym    _FILE,0,8,13,224,.fake2
+       54                           .sym    _fpos_t,0,5,13,32
+TMS320C3x/4x COFF AssemblerVersion 5.12     Mon Nov 19 13:45:26 2018
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_53S.AAB 
+
+F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\ASM\buffer.asm        PAGE    2
+
+       55                           .stag   .fake3,544
+       56                           .member _name,0,50,8,288,,9
+       57                           .member _flags,288,13,8,32
+       58                           .member _OPEN,320,148,8,32
+       59                           .member _CLOSE,352,148,8,32
+       60                           .member _READ,384,148,8,32
+       61                           .member _WRITE,416,148,8,32
+       62                           .member _LSEEK,448,149,8,32
+       63                           .member _UNLINK,480,148,8,32
+       64                           .member _RENAME,512,148,8,32
+       65                           .eos
+       66                           .sym    __DEVICE,0,8,13,544,.fake3
+       67                           .file   ".\stdlib.h"
+       68                           .sym    _wchar_t,0,2,13,32
+       69                           .stag   __div_t,64
+       70                           .member _quot,0,4,8,32
+       71                           .member _rem,32,4,8,32
+       72                           .eos
+       73                           .sym    _div_t,0,8,13,64,__div_t
+       74                           .sym    _ldiv_t,0,8,13,64,__div_t
+       75                           .file   ".\math.h"
+       76                           .file   ".\time.h"
+       77                           .sym    _clock_t,0,15,13,32
+       78                           .sym    _time_t,0,15,13,32
+       79                           .stag   _tm,288
+       80                           .member _tm_sec,0,4,8,32
+       81                           .member _tm_min,32,4,8,32
+       82                           .member _tm_hour,64,4,8,32
+       83                           .member _tm_mday,96,4,8,32
+       84                           .member _tm_mon,128,4,8,32
+       85                           .member _tm_year,160,4,8,32
+       86                           .member _tm_wday,192,4,8,32
+       87                           .member _tm_yday,224,4,8,32
+       88                           .member _tm_isdst,256,4,8,32
+       89                           .eos
+       90                           .stag   _tmzone,320
+       91                           .member _daylight,0,3,8,32
+       92                           .member _timezone,32,5,8,32
+       93                           .member _tzname,64,50,8,128,,4
+       94                           .member _dstname,192,50,8,128,,4
+       95                           .eos
+       96                           .file   "ETC.H"
+       97                           .sym    _BOOL,0,14,13,32
+       98                           .file   "LIST.H"
+       99                           .stag   .fake4,96
+      100                           .member _head,0,20,8,32
+      101                           .member _tail,32,20,8,32
+      102                           .member _n,64,4,8,32
+      103                           .eos
+      104                           .sym    _LIST,0,8,13,96,.fake4
+      105                           .stag   .fake5,64
+      106                           .member _prev,0,20,8,32
+      107                           .member _next,32,20,8,32
+      108                           .eos
+TMS320C3x/4x COFF AssemblerVersion 5.12     Mon Nov 19 13:45:26 2018
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_53S.AAB 
+
+F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\ASM\buffer.asm        PAGE    3
+
+      109                           .sym    _GENERIC,0,8,13,64,.fake5
+      110                           .file   "VARIABLE.H"
+      111                           .stag   .fake6,1408
+      112                           .member _val,0,6,8,32
+      113                           .member _vect1,32,20,8,32
+      114                           .member _vect2,64,20,8,32
+      115                           .member _STAT,96,4,8,32
+      116                           .member _dampening,128,6,8,32
+      117                           .member _damp_count,160,4,8,32
+      118                           .member _aux,192,4,8,32
+      119                           .member _val1,224,6,8,32
+      120                           .member _val2,256,6,8,32
+      121                           .member _calc_val,288,11,8,64
+      122                           .member _base_val,352,11,8,64
+      123                           .member _unit,416,4,8,32
+      124                           .member _calc_unit,448,4,8,32
+      125                           .member _class,480,4,8,32
+      126                           .member _scale,512,6,8,32
+      127                           .member _scale_long,544,6,8,32
+      128                           .member _bound_hi_set,576,6,8,32
+      129                           .member _bound_lo_set,608,6,8,32
+      130                           .member _alarm_hi_set,640,6,8,32
+      131                           .member _alarm_lo_set,672,6,8,32
+      132                           .member _name,704,50,8,672,,21
+      133                           .member _name_r,1376,4,8,32
+      134                           .eos
+      135                           .sym    _VAR,0,8,13,1408,.fake6
+      136                           .stag   .fake7,96
+      137                           .member _val,0,14,8,32
+      138                           .member _vect,32,20,8,32
+      139                           .member _vect2,64,20,8,32
+      140                           .eos
+      141                           .sym    _COIL,0,8,13,96,.fake7
+      142                           .stag   .fake8,64
+      143                           .member _val,0,4,8,32
+      144                           .member _vect,32,20,8,32
+      145                           .eos
+      146                           .sym    _REGVECT,0,8,13,64,.fake8
+      147                           .stag   .fake9,96
+      148                           .member _prev,0,20,8,32
+      149                           .member _next,32,20,8,32
+      150                           .member _v,64,24,8,32,.fake6
+      151                           .eos
+      152                           .sym    _DPKT,0,8,13,96,.fake9
+      153                           .file   "BUFFER.H"
+      154                           .stag   .fake10,9824
+      155                           .member _head,0,4,8,32
+      156                           .member _tail,32,4,8,32
+      157                           .member _n,64,4,8,32
+      158                           .member _GSEED,96,14,8,32
+      159                           .member _CRC16,128,14,8,32
+      160                           .member _buff,160,62,8,9600,,300
+      161                           .member _sum,9760,4,8,32
+      162                           .member _locked,9792,14,8,32
+TMS320C3x/4x COFF AssemblerVersion 5.12     Mon Nov 19 13:45:26 2018
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_53S.AAB 
+
+F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\ASM\buffer.asm        PAGE    4
+
+      163                           .eos
+      164                           .sym    _BFR,0,8,13,9824,.fake10
+      165                           .file   "UNITS.H"
+      166                           .file   "TIMER.H"
+      167                           .stag   .fake11,320
+      168                           .member _prev,0,20,8,32
+      169                           .member _next,32,20,8,32
+      170                           .member _vect,64,20,8,32
+      171                           .member _priority,96,4,8,32
+      172                           .member _parent,128,20,8,32
+      173                           .member _n,160,4,8,32
+      174                           .member _prev_n,192,4,8,32
+      175                           .member _countdown,224,4,8,32
+      176                           .member _preset_time,256,4,8,32
+      177                           .member _t,288,6,8,32
+      178                           .eos
+      179                           .sym    _TPKT,0,8,13,320,.fake11
+      180                           .file   "I2C.H"
+      181                           .file   "ERRORS.H"
+      182                           .file   "SERIAL.H"
+      183                           .stag   .fake12,2272
+      184                           .member _Slave,0,4,8,32
+      185                           .member _SNUM,32,4,8,32
+      186                           .member _PRESENT,64,14,8,32
+      187                           .member _TX_complete,96,14,8,32
+      188                           .member _RX_pending,128,14,8,32
+      189                           .member _BUSY,160,14,8,32
+      190                           .member _IGNORE_RX,192,14,8,32
+      191                           .member _STAT,224,12,8,32
+      192                           .member _DAT,256,12,8,32
+      193                           .member _broadcast,288,14,8,32
+      194                           .member _TMR_Network_WDOG,320,4,8,32
+      195                           .member _TMR_EOT_Delay,352,4,8,32
+      196                           .member _TMR_Prefix_Delay,384,4,8,32
+      197                           .member _TMR_Suffix_Delay,416,4,8,32
+      198                           .member _TMR_Char,448,4,8,32
+      199                           .member _TMR_Poll,480,8,8,320,.fake11
+      200                           .member _TMR_Retry,800,8,8,320,.fake11
+      201                           .member _nr,1120,4,8,32
+      202                           .member _Received_PKT,1152,14,8,32
+      203                           .member _TMR_enabled,1184,14,8,32
+      204                           .member _tvector,1216,20,8,32
+      205                           .member _pvector,1248,20,8,32
+      206                           .member _pvector_main,1280,20,8,32
+      207                           .member _tvector_main,1312,20,8,32
+      208                           .member _fvector,1344,20,8,32
+      209                           .member _actual_baud_rate,1376,6,8,32
+      210                           .member _c,1408,14,8,32
+      211                           .member _r,1440,14,8,32
+      212                           .member _n,1472,4,8,32
+      213                           .member _n_exp,1504,4,8,32
+      214                           .member _ai,1536,4,8,32
+      215                           .member _start,1568,4,8,32
+      216                           .member _i,1600,4,8,32
+TMS320C3x/4x COFF AssemblerVersion 5.12     Mon Nov 19 13:45:26 2018
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_53S.AAB 
+
+F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\ASM\buffer.asm        PAGE    5
+
+      217                           .member _i_main,1632,4,8,32
+      218                           .member _func,1664,14,8,32
+      219                           .member _ERROR_COUNT,1696,14,8,32
+      220                           .member _WDOG_COUNT,1728,14,8,32
+      221                           .member _INV_CMD_COUNT,1760,14,8,32
+      222                           .member _INV_PKT_COUNT,1792,14,8,32
+      223                           .member _SUCCESS,1824,14,8,32
+      224                           .member _NUM_RETRIES,1856,14,8,32
+      225                           .member _FLAG1,1888,14,8,32
+      226                           .member _FLAG2,1920,14,8,32
+      227                           .member _FLAG3,1952,14,8,32
+      228                           .member _LONG_ADDRESS,1984,14,8,32
+      229                           .member _MASTER,2016,8,8,96,.fake4
+      230                           .member _p,2112,20,8,32
+      231                           .member _data,2144,14,8,32
+      232                           .member _f,2176,22,8,32
+      233                           .member _l,2208,30,8,32
+      234                           .member _failed,2240,14,8,32
+      235                           .eos
+      236                           .sym    _PORTV,0,8,13,2272,.fake12
+      237                           .stag   .fake13,11488
+      238                           .member _PREFIX,0,8,8,1408,.fake6
+      239                           .member _SUFFIX,1408,8,8,1408,.fake6
+      240                           .member _NETWDOG,2816,8,8,1408,.fake6
+      241                           .member _Slave_ID,4224,8,8,1408,.fake6
+      242                           .member _Baud_Rate,5632,8,8,1408,.fake6
+      243                           .member _Parity,7040,4,8,32
+      244                           .member _n_bits,7072,4,8,32
+      245                           .member _STP,7104,4,8,32
+      246                           .member _N,7136,4,8,32
+      247                           .member _N_retry,7168,4,8,32
+      248                           .member _EOT_Delay,7200,8,8,1408,.fake6
+      249                           .member _Retry_Time,8608,8,8,1408,.fake6
+      250                           .member _Num_Retry,10016,8,8,1408,.fake6
+      251                           .member _poll_time,11424,4,8,32
+      252                           .member _timeout,11456,4,8,32
+      253                           .eos
+      254                           .sym    _PORTC,0,8,13,11488,.fake13
+      255                           .stag   .fake14,672
+      256                           .member _prev,0,20,8,32
+      257                           .member _next,32,20,8,32
+      258                           .member _rxvect,64,20,8,32
+      259                           .member _txvect,96,20,8,32
+      260                           .member _n,128,4,8,32
+      261                           .member _slave,160,4,8,32
+      262                           .member _func,192,4,8,32
+      263                           .member _addr,224,4,8,32
+      264                           .member _num,256,4,8,32
+      265                           .member _v,288,54,8,320,,10
+      266                           .member _flt_ptr,608,22,8,32
+      267                           .member _int_ptr,640,20,8,32
+      268                           .eos
+      269                           .sym    _MPKT,0,8,13,672,.fake14
+      270                           .file   "ADC.H"
+TMS320C3x/4x COFF AssemblerVersion 5.12     Mon Nov 19 13:45:26 2018
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_53S.AAB 
+
+F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\ASM\buffer.asm        PAGE    6
+
+      271                           .stag   .fake15,10176
+      272                           .member _CURRENT,0,8,8,1408,.fake6
+      273                           .member _CURRENT_PERCENT_OF_RANGE,1408,8,8,1408,.fake6
+      274                           .member _LRV,2816,8,8,1408,.fake6
+      275                           .member _URV,4224,8,8,1408,.fake6
+      276                           .member _TRIM_MIN,5632,8,8,1408,.fake6
+      277                           .member _TRIM_MAX,7040,8,8,1408,.fake6
+      278                           .member _VALUE,8448,8,8,1408,.fake6
+      279                           .member _TRIM_MIN_C,9856,6,8,32
+      280                           .member _TRIM_MAX_C,9888,6,8,32
+      281                           .member _v,9920,8,8,64,.fake8
+      282                           .member _class,9984,8,8,64,.fake8
+      283                           .member _unit,10048,8,8,64,.fake8
+      284                           .member _present,10112,14,8,32
+      285                           .member _val,10144,6,8,32
+      286                           .eos
+      287                           .sym    _LOOPDATA_I,0,8,13,10176,.fake15
+      288                           .file   "DAC.H"
+      289                           .stag   .fake16,13408
+      290                           .member _CURRENT,0,8,8,1408,.fake6
+      291                           .member _CURRENT_PERCENT_OF_RANGE,1408,8,8,1408,.fake6
+      292                           .member _LRV,2816,8,8,1408,.fake6
+      293                           .member _URV,4224,8,8,1408,.fake6
+      294                           .member _TRIM_MIN,5632,8,8,1408,.fake6
+      295                           .member _TRIM_MAX,7040,8,8,1408,.fake6
+      296                           .member _TRIM_MIN_C,8448,6,8,32
+      297                           .member _TRIM_MAX_C,8480,6,8,32
+      298                           .member _ALARM_SELECT,8512,4,8,32
+      299                           .member _MINSPAN,8544,6,8,32
+      300                           .member _v,8576,8,8,64,.fake8
+      301                           .member _class,8640,8,8,64,.fake8
+      302                           .member _unit,8704,8,8,64,.fake8
+      303                           .member _MANUAL,8768,4,8,32
+      304                           .member _MANUAL_PERCENT,8800,6,8,32
+      305                           .member _REVERSE,8832,4,8,32
+      306                           .member _PID_input,8864,6,8,32
+      307                           .member _PID_setpoint,8896,6,8,32
+      308                           .member _P,8928,8,8,1408,.fake6
+      309                           .member _I,10336,8,8,1408,.fake6
+      310                           .member _D,11744,8,8,1408,.fake6
+      311                           .member _pid_lastcycle,13152,4,8,32
+      312                           .member _pid_output,13184,6,8,32
+      313                           .member _pid_propband,13216,6,8,32
+      314                           .member _pid_error,13248,6,8,32
+      315                           .member _pid_bias,13280,6,8,32
+      316                           .member _present,13312,14,8,32
+      317                           .member _PID_fail,13344,14,8,32
+      318                           .member _PID_enable_failsafe,13376,14,8,32
+      319                           .eos
+      320                           .sym    _LOOPDATA_O,0,8,13,13408,.fake16
+      321                           .file   "EXECUTE.H"
+      322                           .stag   .fake17,128
+      323                           .member _prev,0,20,8,32
+      324                           .member _next,32,20,8,32
+TMS320C3x/4x COFF AssemblerVersion 5.12     Mon Nov 19 13:45:26 2018
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_53S.AAB 
+
+F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\ASM\buffer.asm        PAGE    7
+
+      325                           .member _vect,64,20,8,32
+      326                           .member _priority,96,4,8,32
+      327                           .eos
+      328                           .sym    _EPKT,0,8,13,128,.fake17
+      329                           .file   "FLASH.H"
+      330                           .file   "LOG.H"
+      331                           .stag   .fake18,384
+      332                           .member _log_len,0,14,8,32
+      333                           .member _log_n_sectors,32,14,8,32
+      334                           .member _log_n_max_per_sector,64,14,8,32
+      335                           .member _log_n,96,14,8,32
+      336                           .member _log_current_sector,128,14,8,32
+      337                           .member _log_absolute_index,160,14,8,32
+      338                           .member _log_start,192,30,8,32
+      339                           .member _log_sector_size,224,14,8,32
+      340                           .member _log_record_size,256,14,8,32
+      341                           .member _log_end,288,14,8,32
+      342                           .member _LOG_ERASE,320,14,8,32
+      343                           .member _erased_sector,352,14,8,32
+      344                           .eos
+      345                           .sym    _LOG,0,8,13,384,.fake18
+      346                           .file   "DEMO.H"
+      347                           .file   "SELFTEST.H"
+      348                           .file   "MENU.H"
+      349                           .stag   .fake19,16288
+      350                           .member _INIT,0,14,8,32
+      351                           .member _FRESH,32,14,8,32
+      352                           .member _MENU,64,14,8,32
+      353                           .member _SELECT,96,14,8,32
+      354                           .member _VALUE,128,14,8,32
+      355                           .member _ENTER,160,14,8,32
+      356                           .member _DIR,192,4,8,32
+      357                           .member _DIR_CHANGE,224,14,8,32
+      358                           .member _M,256,14,8,32
+      359                           .member _S,288,14,8,32
+      360                           .member _V,320,14,8,32
+      361                           .member _E,352,14,8,32
+      362                           .member _CURSOR_ENABLED,384,14,8,32
+      363                           .member _CURSOR_ROW,416,4,8,32
+      364                           .member _CURSOR_COL,448,4,8,32
+      365                           .member _CNT,480,14,8,32
+      366                           .member _MENU_CNT,512,14,8,32
+      367                           .member _SELECT_CNT,544,14,8,32
+      368                           .member _VALUE_CNT,576,14,8,32
+      369                           .member _k,608,14,8,32
+      370                           .member _MODE_LOCKDOWN,640,14,8,32
+      371                           .member _MODE_WPROT,672,14,8,32
+      372                           .member _MODE_DEFINE,704,14,8,32
+      373                           .member _MODE_USER,736,14,8,32
+      374                           .member _MODE_TECH,768,14,8,32
+      375                           .member _MODE_NORMAL,800,14,8,32
+      376                           .member _menu_list_top,832,14,8,32
+      377                           .member _menu_list_operations,864,14,8,32
+      378                           .member _menu_list_configurations,896,14,8,32
+TMS320C3x/4x COFF AssemblerVersion 5.12     Mon Nov 19 13:45:26 2018
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_53S.AAB 
+
+F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\ASM\buffer.asm        PAGE    8
+
+      379                           .member _menu_list_security_info,928,14,8,32
+      380                           .member _menu_list_measurements,960,14,8,32
+      381                           .member _menu_list_changed,992,14,8,32
+      382                           .member _PAGE,1024,14,8,32
+      383                           .member _SUBPAGE,1056,14,8,32
+      384                           .member _MENU_TRAP,1088,14,8,32
+      385                           .member _DIP,1120,62,8,128,,4
+      386                           .member _tmpf,1248,54,8,320,,10
+      387                           .member _tmpi,1568,52,8,320,,10
+      388                           .member _str,1888,242,8,12928,,4,101
+      389                           .member _tmpv,14816,8,8,1408,.fake6
+      390                           .member _ptmpv,16224,24,8,32,.fake6
+      391                           .member _tbl,16256,20,8,32
+      392                           .eos
+      393                           .sym    _MENU_STRUCT,0,8,13,16288,.fake19
+      394                           .file   "FLOAT1.H"
+      395                           .file   "GLBLS.H"
+      396                           .stag   .fake20,480
+      397                           .member _i,0,4,8,32
+      398                           .member _Watercut,32,6,8,32
+      399                           .member _Temperature,64,6,8,32
+      400                           .member _Salinity,96,6,8,32
+      401                           .member _Frequency_Oil,128,6,8,32
+      402                           .member _Frequency_Water,160,6,8,32
+      403                           .member _RefPower_Oil,192,6,8,32
+      404                           .member _RefPower_Water,224,6,8,32
+      405                           .member _Dadj,256,6,8,32
+      406                           .member _Time_HH,288,4,8,32
+      407                           .member _Time_MM,320,4,8,32
+      408                           .member _Time_MONTH,352,4,8,32
+      409                           .member _Time_DAY,384,4,8,32
+      410                           .member _Time_DAY_OF_WEEK,416,4,8,32
+      411                           .member _Time_YEAR,448,4,8,32
+      412                           .eos
+      413                           .sym    _CAPDATA,0,8,13,480,.fake20
+      414                           .stag   .fake21,640
+      415                           .member _Watercut,0,54,8,64,,2
+      416                           .member _Temperature,64,54,8,64,,2
+      417                           .member _Salinity,128,54,8,64,,2
+      418                           .member _Frequency_Oil,192,54,8,64,,2
+      419                           .member _Frequency_Water,256,54,8,64,,2
+      420                           .member _RefPower_Oil,320,54,8,64,,2
+      421                           .member _RefPower_Water,384,54,8,64,,2
+      422                           .member _Dadj,448,54,8,64,,2
+      423                           .member _Time_MONTH_DAY_HH_MM,512,52,8,64,,2
+      424                           .member _CLRSTAT_Time_YEAR,576,52,8,64,,2
+      425                           .eos
+      426                           .sym    _CAPRECORD,0,8,13,640,.fake21
+      427                           .stag   .fake22,800
+      428                           .member _Start_HH,0,4,8,32
+      429                           .member _Start_MM,32,4,8,32
+      430                           .member _Start_SS,64,4,8,32
+      431                           .member _Start_MONTH,96,4,8,32
+      432                           .member _Start_DAY,128,4,8,32
+TMS320C3x/4x COFF AssemblerVersion 5.12     Mon Nov 19 13:45:26 2018
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_53S.AAB 
+
+F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\ASM\buffer.asm        PAGE    9
+
+      433                           .member _Start_YEAR,160,4,8,32
+      434                           .member _Stop_HH,192,4,8,32
+      435                           .member _Stop_MM,224,4,8,32
+      436                           .member _Stop_SS,256,4,8,32
+      437                           .member _Stop_MONTH,288,4,8,32
+      438                           .member _Stop_DAY,320,4,8,32
+      439                           .member _Stop_YEAR,352,4,8,32
+      440                           .member _stream,384,6,8,32
+      441                           .member _elapsed_s,416,6,8,32
+      442                           .member _duration,448,6,8,32
+      443                           .member _purge,480,6,8,32
+      444                           .member _gross_gas,512,6,8,32
+      445                           .member _gross_oil,544,6,8,32
+      446                           .member _gross_water,576,6,8,32
+      447                           .member _gross_total,608,6,8,32
+      448                           .member _gas24,640,6,8,32
+      449                           .member _oil24,672,6,8,32
+      450                           .member _water24,704,6,8,32
+      451                           .member _total24,736,6,8,32
+      452                           .member _watercut,768,6,8,32
+      453                           .eos
+      454                           .sym    _CCMRECORD,0,8,13,800,.fake22
+      455                           .stag   .fake23,224
+      456                           .member _SNUM,0,4,8,32
+      457                           .member _ADDR,32,4,8,32
+      458                           .member _BNUM,64,4,8,32
+      459                           .member _REV,96,4,8,32
+      460                           .member _MONTH,128,4,8,32
+      461                           .member _DAY,160,4,8,32
+      462                           .member _YEAR,192,4,8,32
+      463                           .eos
+      464                           .sym    _BOARD,0,8,13,224,.fake23
+      465                           .etag   _Pulse_Input_Type,32
+      466                           .member _PULSE_GAS_TEMP,1,4,16,32
+      467                           .member _PULSE_SALINITY,2,4,16,32
+      468                           .member _PULSE_STREAM_SELECT,3,4,16,32
+      469                           .member _PULSE_USER_TEMP,4,4,16,32
+      470                           .member _PULSE_FC_WC,5,4,16,32
+      471                           .member _PULSE_FC_TEMP,6,4,16,32
+      472                           .member _PULSE_FC_TOTAL_FLOW,7,4,16,32
+      473                           .member _PULSE_FC_PRESSURE,8,4,16,32
+      474                           .member _PULSE_FC_DENSITY,9,4,16,32
+      475                           .member _PULSE_FC_SALINITY,10,4,16,32
+      476                           .member _PULSE_FC_OIL_DENSITY,11,4,16,32
+      477                           .member _PULSE_FC_OIL_DENSITY_ST,12,4,16,32
+      478                           .member _PULSE_FC_WATER_DENSITY,13,4,16,32
+      479                           .member _PULSE_FC_WATER_DENSITY_ST,14,4,16,32
+      480                           .member _PULSE_NONE,15,4,16,32
+      481                           .eos
+      482                           .stag   .fake24,64
+      483                           .member _freq,0,6,8,32
+      484                           .member _counter,32,4,8,32
+      485                           .eos
+      486                           .sym    _Boxcar_Var,0,8,13,64,.fake24
+TMS320C3x/4x COFF AssemblerVersion 5.12     Mon Nov 19 13:45:26 2018
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_53S.AAB 
+
+F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\ASM\buffer.asm        PAGE   10
+
+      487                           .stag   .fake25,1088
+      488                           .member _data,0,54,8,960,,30
+      489                           .member _head,960,4,8,32
+      490                           .member _tail,992,4,8,32
+      491                           .member _length,1024,4,8,32
+      492                           .member _average,1056,6,8,32
+      493                           .eos
+      494                           .sym    _bubble_struct,0,8,13,1088,.fake25
+      495                           .stag   .fake26,3008
+      496                           .member _data,0,54,8,2880,,90
+      497                           .member _head,2880,4,8,32
+      498                           .member _tail,2912,4,8,32
+      499                           .member _length,2944,4,8,32
+      500                           .member _average,2976,6,8,32
+      501                           .eos
+      502                           .sym    _pattern_struct,0,8,13,3008,.fake26
+      503                           .stag   .fake27,320
+      504                           .member _MODE,0,4,8,32
+      505                           .member _STATUS_MASK,32,4,8,32
+      506                           .member _v,64,8,8,64,.fake8
+      507                           .member _setpoint,128,6,8,32
+      508                           .member _ON,160,8,8,96,.fake7
+      509                           .member _class,256,4,8,32
+      510                           .member _unit,288,4,8,32
+      511                           .eos
+      512                           .sym    _RELAYDATA,0,8,13,320,.fake27
+      513                           .stag   .fake28,12224
+      514                           .member _diag,0,6,8,32
+      515                           .member _mfr,32,6,8,32
+      516                           .member _u_mfr,64,4,8,32
+      517                           .member _density,96,6,8,32
+      518                           .member _u_density,128,4,8,32
+      519                           .member _density_PDI_corrected,160,6,8,32
+      520                           .member _density_corrected,192,6,8,32
+      521                           .member _u_density_corrected,224,4,8,32
+      522                           .member _T,256,6,8,32
+      523                           .member _u_T,288,4,8,32
+      524                           .member _vfr,320,6,8,32
+      525                           .member _u_vfr,352,4,8,32
+      526                           .member _visc,384,6,8,32
+      527                           .member _u_visc,416,4,8,32
+      528                           .member _press,448,6,8,32
+      529                           .member _mass_total,480,6,8,32
+      530                           .member _u_m,512,4,8,32
+      531                           .member _volume_total,544,6,8,32
+      532                           .member _u_v,576,4,8,32
+      533                           .member _u_P,608,4,8,32
+      534                           .member _P,640,6,8,32
+      535                           .member _mass_inv,672,6,8,32
+      536                           .member _volume_inv,704,6,8,32
+      537                           .member _raw_tube_freq,736,6,8,32
+      538                           .member _left_pickup_value,768,6,8,32
+      539                           .member _right_pickup_value,800,6,8,32
+      540                           .member _drive_gain,832,6,8,32
+TMS320C3x/4x COFF AssemblerVersion 5.12     Mon Nov 19 13:45:26 2018
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_53S.AAB 
+
+F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\ASM\buffer.asm        PAGE   11
+
+      541                           .member _damp_flow_rate,864,8,8,1408,.fake6
+      542                           .member _damp_density,2272,8,8,1408,.fake6
+      543                           .member _mfr_cutoff,3680,8,8,1408,.fake6
+      544                           .member _vfr_cutoff,5088,8,8,1408,.fake6
+      545                           .member _mcf,6496,8,8,1408,.fake6
+      546                           .member _address,7904,8,8,1408,.fake6
+      547                           .member _mass_unit,9312,8,8,1408,.fake6
+      548                           .member _density_cutoff,10720,8,8,1408,.fake6
+      549                           .member _Z,12128,8,8,96,.fake7
+      550                           .eos
+      551                           .sym    _CORIOLIS,0,8,13,12224,.fake28
+      552                           .stag   .fake29,288
+      553                           .member _p_delta,0,6,8,32
+      554                           .member _p_static,32,6,8,32
+      555                           .member _T,64,6,8,32
+      556                           .member _diag0,96,6,8,32
+      557                           .member _diag1,128,6,8,32
+      558                           .member _diag2,160,6,8,32
+      559                           .member _u_DP,192,4,8,32
+      560                           .member _u_SP,224,4,8,32
+      561                           .member _u_PT,256,4,8,32
+      562                           .eos
+      563                           .sym    _PRESSURE,0,8,13,288,.fake29
+      564                           .stag   .fake30,192
+      565                           .member _T,0,6,8,32
+      566                           .member _etc0,32,6,8,32
+      567                           .member _etc1,64,6,8,32
+      568                           .member _etc2,96,6,8,32
+      569                           .member _etc3,128,6,8,32
+      570                           .member _etc4,160,6,8,32
+      571                           .eos
+      572                           .sym    _TMPT,0,8,13,192,.fake30
+      573                           .stag   .fake31,42752
+      574                           .member _watercut,0,8,8,1408,.fake6
+      575                           .member _T,1408,8,8,1408,.fake6
+      576                           .member _pressure,2816,8,8,1408,.fake6
+      577                           .member _density,4224,8,8,1408,.fake6
+      578                           .member _density_PDI_corrected,5632,6,8,32
+      579                           .member _density_adj,5664,6,8,32
+      580                           .member _density_oilST,5696,8,8,1408,.fake6
+      581                           .member _density_oil,7104,8,8,1408,.fake6
+      582                           .member _density_waterST,8512,8,8,1408,.fake6
+      583                           .member _density_water,9920,8,8,1408,.fake6
+      584                           .member _salinity,11328,8,8,1408,.fake6
+      585                           .member _API_TABLE,12736,4,8,32
+      586                           .member _a,12768,6,8,32
+      587                           .member _Meter_Factor,12800,8,8,1408,.fake6
+      588                           .member _Shrinkage,14208,8,8,1408,.fake6
+      589                           .member _VCFo,15616,6,8,32
+      590                           .member _VCFw,15648,6,8,32
+      591                           .member _net_watercut,15680,6,8,32
+      592                           .member _net_watercut_mass,15712,6,8,32
+      593                           .member _Dadj,15744,6,8,32
+      594                           .member _NET_FLOW_OIL,15776,8,8,1408,.fake6
+TMS320C3x/4x COFF AssemblerVersion 5.12     Mon Nov 19 13:45:26 2018
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_53S.AAB 
+
+F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\ASM\buffer.asm        PAGE   12
+
+      595                           .member _NET_FLOW_WATER,17184,8,8,1408,.fake6
+      596                           .member _NET_FLOW_TOTAL,18592,8,8,1408,.fake6
+      597                           .member _NET_OIL,20000,8,8,1408,.fake6
+      598                           .member _NET_WATER,21408,8,8,1408,.fake6
+      599                           .member _NET_TOTAL,22816,8,8,1408,.fake6
+      600                           .member _AVG_NET_TOTAL,24224,8,8,1408,.fake6
+      601                           .member _GROSS_OIL,25632,8,8,1408,.fake6
+      602                           .member _gross_oil_whole_part,27040,11,8,64
+      603                           .member _gross_oil_fract_part,27104,11,8,64
+      604                           .member _GROSS_WATER,27168,8,8,1408,.fake6
+      605                           .member _gross_water_whole_part,28576,11,8,64
+      606                           .member _gross_water_fract_part,28640,11,8,64
+      607                           .member _GROSS_TOTAL,28704,8,8,1408,.fake6
+      608                           .member _AVG_GROSS_TOTAL,30112,8,8,1408,.fake6
+      609                           .member _FLOW_OIL,31520,8,8,1408,.fake6
+      610                           .member _FLOW_WATER,32928,8,8,1408,.fake6
+      611                           .member _FLOW_TOTAL,34336,8,8,1408,.fake6
+      612                           .member _PULSES_PER_ACCUM_UNIT,35744,14,8,32
+      613                           .member _PULSE_TOTAL,35776,8,8,1408,.fake6
+      614                           .member _PULSE_FLOW,37184,8,8,1408,.fake6
+      615                           .member _PULSE_FREQ,38592,8,8,1408,.fake6
+      616                           .member _PULSE_COUNTER,40000,14,8,32
+      617                           .member _PULSE,40032,4,8,32
+      618                           .member _CNT,40064,4,8,32
+      619                           .member _PULSE_DELTA,40096,4,8,32
+      620                           .member _PULSE_FACTOR,40128,6,8,32
+      621                           .member _PULSE_STAT,40160,4,8,32
+      622                           .member _enable_NET,40192,14,8,32
+      623                           .member _enable_GROSS,40224,14,8,32
+      624                           .member _enable_FLOW,40256,14,8,32
+      625                           .member _enable_DENSITY,40288,14,8,32
+      626                           .member _enable_PULSE,40320,14,8,32
+      627                           .member _flow_class,40352,8,8,64,.fake8
+      628                           .member _flow_unit,40416,8,8,64,.fake8
+      629                           .member _accum_unit,40480,8,8,64,.fake8
+      630                           .member _Z,40544,8,8,96,.fake7
+      631                           .member _use_totalizer,40640,8,8,96,.fake7
+      632                           .member _pulse_v,40736,8,8,64,.fake8
+      633                           .member _pulse_class,40800,8,8,64,.fake8
+      634                           .member _pulse_unit,40864,8,8,64,.fake8
+      635                           .member _pulse_VALUE,40928,8,8,1408,.fake6
+      636                           .member _USE_PDI_TEMP,42336,14,8,32
+      637                           .member _USE_PDI_SALINITY,42368,14,8,32
+      638                           .member _CALC_WC_DENSITY,42400,14,8,32
+      639                           .member _MAN_TEMP,42432,14,8,32
+      640                           .member _MAN_SALINITY,42464,14,8,32
+      641                           .member _MAN_WATERCUT,42496,14,8,32
+      642                           .member _MAN_DENSITY,42528,14,8,32
+      643                           .member _MAN_PRESSURE,42560,14,8,32
+      644                           .member _MAN_FLOW,42592,14,8,32
+      645                           .member _AUTHORIZATION_CODE1,42624,14,8,32
+      646                           .member _AUTHORIZATION_CODE2,42656,14,8,32
+      647                           .member _AUTHORIZATION_CODE3,42688,14,8,32
+      648                           .member _AUTHORIZATION_CODE4,42720,14,8,32
+TMS320C3x/4x COFF AssemblerVersion 5.12     Mon Nov 19 13:45:26 2018
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_53S.AAB 
+
+F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\ASM\buffer.asm        PAGE   13
+
+      649                           .eos
+      650                           .sym    _FLOW_COMP,0,8,13,42752,.fake31
+      651                           .stag   .fake32,2176
+      652                           .member _WATERCUT,0,6,8,32
+      653                           .member _FLOW_RATE,32,6,8,32
+      654                           .member _TEMPERATURE,64,6,8,32
+      655                           .member _DENSITY,96,6,8,32
+      656                           .member _VISCOSITY,128,6,8,32
+      657                           .member _iWATERCUTz,160,4,8,32
+      658                           .member _iWATERCUT,192,4,8,32
+      659                           .member _iFLOW_RATE,224,4,8,32
+      660                           .member _iTEMPERATURE,256,4,8,32
+      661                           .member _iDENSITY,288,4,8,32
+      662                           .member _iVISCOSITY,320,4,8,32
+      663                           .member _maxWATERCUTz,352,6,8,32
+      664                           .member _maxWATERCUT,384,6,8,32
+      665                           .member _maxFLOW_RATE,416,6,8,32
+      666                           .member _maxTEMPERATURE,448,6,8,32
+      667                           .member _maxDENSITY,480,6,8,32
+      668                           .member _maxVISCOSITY,512,6,8,32
+      669                           .member _minWATERCUTz,544,6,8,32
+      670                           .member _minWATERCUT,576,6,8,32
+      671                           .member _minFLOW_RATE,608,6,8,32
+      672                           .member _minTEMPERATURE,640,6,8,32
+      673                           .member _minDENSITY,672,6,8,32
+      674                           .member _minVISCOSITY,704,6,8,32
+      675                           .member _ENABLED,736,14,8,32
+      676                           .member _DESTINATION_ADDRESS,768,8,8,1408,.fake6
+      677                           .eos
+      678                           .sym    _ALYESKA_STRUCT,0,8,13,2176,.fake32
+      679                           .stag   .fake33,2464
+      680                           .member _ENABLED,0,8,8,96,.fake7
+      681                           .member _flow_threshold,96,8,8,1408,.fake6
+      682                           .member _S3,1504,6,8,32
+      683                           .member _S2,1536,6,8,32
+      684                           .member _S1,1568,6,8,32
+      685                           .member _S0,1600,6,8,32
+      686                           .member _Fmin,1632,6,8,32
+      687                           .member _Dmin,1664,6,8,32
+      688                           .member _Dmax,1696,6,8,32
+      689                           .member _CHANGED,1728,14,8,32
+      690                           .member _PURGING,1760,14,8,32
+      691                           .member _TEST_IN_PROGRESS,1792,14,8,32
+      692                           .member _SP3A,1824,6,8,32
+      693                           .member _SP2A,1856,6,8,32
+      694                           .member _SP1A,1888,6,8,32
+      695                           .member _SP0A,1920,6,8,32
+      696                           .member _SPLOA,1952,6,8,32
+      697                           .member _SPHIA,1984,6,8,32
+      698                           .member _SP3B,2016,6,8,32
+      699                           .member _SP2B,2048,6,8,32
+      700                           .member _SP1B,2080,6,8,32
+      701                           .member _SP0B,2112,6,8,32
+      702                           .member _SPLOB,2144,6,8,32
+TMS320C3x/4x COFF AssemblerVersion 5.12     Mon Nov 19 13:45:26 2018
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_53S.AAB 
+
+F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\ASM\buffer.asm        PAGE   14
+
+      703                           .member _SPHIB,2176,6,8,32
+      704                           .member _FBHI3,2208,6,8,32
+      705                           .member _FBHI2,2240,6,8,32
+      706                           .member _FBHI1,2272,6,8,32
+      707                           .member _FBHI0,2304,6,8,32
+      708                           .member _FBLO3,2336,6,8,32
+      709                           .member _FBLO2,2368,6,8,32
+      710                           .member _FBLO1,2400,6,8,32
+      711                           .member _FBLO0,2432,6,8,32
+      712                           .eos
+      713                           .sym    _HS_STRUCT,0,8,13,2464,.fake33
+      714                           .file   "HART.H"
+      715                           .file   "MODBUSRTU.H"
+      716                           .file   "MISC.H"
+      717                           .file   "API.H"
+      718                           .file   "buffer.c"
+      719 00000000                  .sect    "internal_RAM"
+      720                   
+      721                           .global _CRC16
+      722                           .sym    _CRC16,_CRC16,32,2,0
+      723                           .func   40
+      724                   ;******************************************************************************
+      725                   ;* FUNCTION NAME: _CRC16                                                      *
+      726                   ;*                                                                            *
+      727                   ;*   Architecture       : TMS320C33                                           *
+      728                   ;*   Calling Convention : TI Standard Register Parameters                     *
+      729                   ;*   Function Uses Regs : r0,ar0,ar1,ar2,st                                   *
+      730                   ;*   Regs Saved         :                                                     *
+      731                   ;*   Stack Frame        : Full (w/ debug)                                     *
+      732                   ;*   Total Frame Size   : 2 Call + 0 Parm + 2 Auto + 0 SOE = 4 words          *
+      733                   ;******************************************************************************
+      734 00000000          _CRC16:
+      735                   ;* ar2   assigned to _buffer
+      736                           .sym    _buffer,10,24,17,32,.fake10
+      737                           .sym    _buffer,1,24,1,32,.fake10
+      738                           .sym    _i,2,4,1,32
+      739                           .line   1
+      740                   ;----------------------------------------------------------------------
+      741                   ;  40 | void CRC16(BFR* buffer)                                                
+      742                   ;----------------------------------------------------------------------
+      743 00000000 0f2b0000         push      fp
+      744 00000001 500b0014         ldiu      sp,fp
+      745 00000002 02740002         addi      2,sp
+      746                           .line   2
+      747                   ;----------------------------------------------------------------------
+      748                   ;  42 | int i;                                                                 
+      749                   ;----------------------------------------------------------------------
+      750 00000003 154a0301         sti       ar2,*+fp(1)           ; |41| 
+      751                           .line   5
+      752                   ;----------------------------------------------------------------------
+      753                   ;  44 | if (buffer->n<=0)       /* empty? */                                   
+      754                   ;----------------------------------------------------------------------
+      755 00000004 5008000a         ldiu      ar2,ar0
+      756 00000005 50400002         ldiu      *+ar0(2),r0           ; |44| 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Mon Nov 19 13:45:26 2018
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_53S.AAB 
+
+F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\ASM\buffer.asm        PAGE   15
+
+      757 00000006 04e00000         cmpi      0,r0                  ; |44| 
+      758 00000007 6a080026         ble       L9                    ; |44| 
+      759                   ;*      Branch Occurs to L9             ; |44| 
+      760                           .line   6
+      761                   ;----------------------------------------------------------------------
+      762                   ;  45 | return;                                                                
+      763                   ;----------------------------------------------------------------------
+      764                           .line   8
+      765                   ;----------------------------------------------------------------------
+      766                   ;  47 | if (buffer->n==1)       /* exactly 1 element? */                       
+      767                   ;----------------------------------------------------------------------
+      768 00000008 50400002         ldiu      *+ar0(2),r0           ; |47| 
+      769 00000009 04e00001         cmpi      1,r0                  ; |47| 
+      770 0000000a 6a060003         bne       L4                    ; |47| 
+      771                   ;*      Branch Occurs to L4             ; |47| 
+      772                           .line   9
+      773                   ;----------------------------------------------------------------------
+      774                   ;  48 | buffer->CRC16 = buffer->GSEED;                                         
+      775                   ;----------------------------------------------------------------------
+      776 0000000b 50090008         ldiu      ar0,ar1
+      777 0000000c 50400003         ldiu      *+ar0(3),r0           ; |48| 
+      778 0000000d 15400104         sti       r0,*+ar1(4)           ; |48| 
+      779 0000000e          L4:        
+      780                           .line   11
+      781                   ;----------------------------------------------------------------------
+      782                   ;  50 | buffer->CRC16 ^= (buffer->buff[buffer->tail] & 0xFF);                  
+      783                   ;----------------------------------------------------------------------
+      784 0000000e 50480301         ldiu      *+fp(1),ar0           ; |50| 
+      785 0000000f 506000ff         ldiu      255,r0                ; |50| 
+      786 00000010 50490001         ldiu      *+ar0(1),ar1          ; |50| 
+      787 00000011 02490301         addi      *+fp(1),ar1           ; |50| Unsigned
+      788 00000012 02c00105         and       *+ar1(5),r0           ; |50| 
+      789 00000013 1ac00004         xor       *+ar0(4),r0           ; |50| 
+      790 00000014 15400004         sti       r0,*+ar0(4)           ; |50| 
+      791                           .line   13
+      792                   ;----------------------------------------------------------------------
+      793                   ;  52 | for (i=0;i<8;i++)                                                      
+      794                   ;----------------------------------------------------------------------
+      795 00000015 50600000         ldiu      0,r0                  ; |52| 
+      796 00000016 15400302         sti       r0,*+fp(2)            ; |52| 
+      797 00000017 04e00008         cmpi      8,r0                  ; |52| 
+      798 00000018 6a0a0015         bge       L9                    ; |52| 
+      799                   ;*      Branch Occurs to L9             ; |52| 
+      800 00000019          L5:        
+      801                           .line   15
+      802                   ;----------------------------------------------------------------------
+      803                   ;  54 | if (buffer->CRC16 & 0x01)                                              
+      804                   ;----------------------------------------------------------------------
+      805 00000019 50480301         ldiu      *+fp(1),ar0           ; |54| 
+      806 0000001a 50600001         ldiu      1,r0                  ; |54| 
+      807 0000001b 1a400004         tstb      *+ar0(4),r0           ; |54| 
+      808 0000001c 6a050008         beq       L7                    ; |54| 
+      809                   ;*      Branch Occurs to L7             ; |54| 
+      810                           .line   17
+TMS320C3x/4x COFF AssemblerVersion 5.12     Mon Nov 19 13:45:26 2018
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_53S.AAB 
+
+F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\ASM\buffer.asm        PAGE   16
+
+      811                   ;----------------------------------------------------------------------
+      812                   ;  56 | buffer->CRC16 >>= 1;                                                   
+      813                   ;----------------------------------------------------------------------
+      814 0000001d 50400004         ldiu      *+ar0(4),r0           ; |56| 
+      815 0000001e 09e0ffff         lsh       -1,r0                 ; |56| 
+      816 0000001f 15400004         sti       r0,*+ar0(4)           ; |56| 
+      817                           .line   18
+      818                   ;----------------------------------------------------------------------
+      819                   ;  57 | buffer->CRC16 ^= GPOLY;                                                
+      820                   ;  59 | else                                                                   
+      821                   ;----------------------------------------------------------------------
+      822 00000020 50480301         ldiu      *+fp(1),ar0           ; |57| 
+      823 00000021 50400004         ldiu      *+ar0(4),r0           ; |57| 
+      824 00000022 1ae0a001         xor       40961,r0              ; |57| 
+      825 00000023 15400004         sti       r0,*+ar0(4)           ; |57| 
+      826 00000024 6a000004         bu        L8                    ; |39| 
+      827                   ;*      Branch Occurs to L8             ; |39| 
+      828 00000025          L7:        
+      829                           .line   21
+      830                   ;----------------------------------------------------------------------
+      831                   ;  60 | buffer->CRC16 >>= 1;                                                   
+      832                   ;----------------------------------------------------------------------
+      833 00000025 50480301         ldiu      *+fp(1),ar0           ; |60| 
+      834 00000026 50400004         ldiu      *+ar0(4),r0           ; |60| 
+      835 00000027 09e0ffff         lsh       -1,r0                 ; |60| 
+      836 00000028 15400004         sti       r0,*+ar0(4)           ; |60| 
+      837 00000029          L8:        
+      838                           .line   13
+      839 00000029 50600001         ldiu      1,r0                  ; |52| 
+      840 0000002a 02400302         addi      *+fp(2),r0            ; |52| 
+      841 0000002b 15400302         sti       r0,*+fp(2)            ; |52| 
+      842 0000002c 04e00008         cmpi      8,r0                  ; |52| 
+      843 0000002d 6a07ffeb         blt       L5                    ; |52| 
+      844                   ;*      Branch Occurs to L5             ; |52| 
+      845 0000002e          L9:        
+      846                           .line   23
+      847                                                           ; Begin Epilog Code
+      848 0000002e 50410b01         ldiu      *-fp(1),r1
+      849 0000002f 504bc300         ldiu      *fp,fp
+      850                                                           ; Unallocate the Frame
+      851 00000030 18740004         subi      4,sp
+      852 00000031 68000001         bu        r1
+      853                   ;*      Branch Occurs to r1 
+      854                           .endfunc        62,000000000h,2
+      855                   
+      856                   
+      857 00000032                  .sect    "internal_RAM"
+      858                   
+      859                           .global _Put
+      860                           .sym    _Put,_Put,46,2,0
+      861                           .func   78
+      862                   ;******************************************************************************
+      863                   ;* FUNCTION NAME: _Put                                                        *
+      864                   ;*                                                                            *
+TMS320C3x/4x COFF AssemblerVersion 5.12     Mon Nov 19 13:45:26 2018
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_53S.AAB 
+
+F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\ASM\buffer.asm        PAGE   17
+
+      865                   ;*   Architecture       : TMS320C33                                           *
+      866                   ;*   Calling Convention : TI Standard Register Parameters                     *
+      867                   ;*   Function Uses Regs : r0,r2,r3,ar0,ar2,ir0,st                             *
+      868                   ;*   Regs Saved         :                                                     *
+      869                   ;*   Stack Frame        : Full (w/ debug)                                     *
+      870                   ;*   Total Frame Size   : 2 Call + 0 Parm + 3 Auto + 0 SOE = 5 words          *
+      871                   ;******************************************************************************
+      872 00000032          _Put:
+      873                   ;* ar2   assigned to _buffer
+      874                           .sym    _buffer,10,24,17,32,.fake10
+      875                   ;* r2    assigned to _b
+      876                           .sym    _b,2,14,17,32
+      877                   ;* r3    assigned to _CRC
+      878                           .sym    _CRC,3,14,17,32
+      879                           .sym    _buffer,1,24,1,32,.fake10
+      880                           .sym    _b,2,14,1,32
+      881                           .sym    _CRC,3,14,1,32
+      882                           .line   1
+      883                   ;----------------------------------------------------------------------
+      884                   ;  78 | BOOL Put(BFR* buffer, unsigned int b, BOOL CRC)                        
+      885                   ;----------------------------------------------------------------------
+      886 00000032 0f2b0000         push      fp
+      887 00000033 500b0014         ldiu      sp,fp
+      888 00000034 02740003         addi      3,sp
+      889                           .line   2
+      890 00000035 15430303         sti       r3,*+fp(3)            ; |79| 
+      891 00000036 15420302         sti       r2,*+fp(2)            ; |79| 
+      892 00000037 154a0301         sti       ar2,*+fp(1)           ; |79| 
+      893                           .line   3
+      894                   ;----------------------------------------------------------------------
+      895                   ;  80 | if (buffer->locked)     /* locked? */                                  
+      896                   ;----------------------------------------------------------------------
+      897 00000038 5011000a         ldiu      ar2,ir0               ; |80| 
+      898 00000039 50680132         ldiu      306,ar0               ; |80| 
+      899 0000003a 50404000         ldiu      *+ar0(ir0),r0         ; |80| 
+      900 0000003b 04e00000         cmpi      0,r0                  ; |80| 
+      901 0000003c 6a050004         beq       L13                   ; |80| 
+      902                   ;*      Branch Occurs to L13            ; |80| 
+      903                           .line   4
+      904                   ;----------------------------------------------------------------------
+      905                   ;  81 | return FALSE;                                                          
+      906                   ;----------------------------------------------------------------------
+      907 0000003d 6a200028         bud       L20                   ; |81| 
+      908 0000003e 0c800000         nop
+      909 0000003f 0c800000         nop
+      910 00000040 50600000         ldiu      0,r0                  ; |81| 
+      911                   ;*      Branch Occurs to L20            ; |81| 
+      912 00000041          L13:        
+      913                           .line   6
+      914                   ;----------------------------------------------------------------------
+      915                   ;  83 | _GIEP;                                                                 
+      916                   ;----------------------------------------------------------------------
+      917 00000041 0f350000         push    ST                      
+      918 00000042 03752000         andn    2000h, ST       
+TMS320C3x/4x COFF AssemblerVersion 5.12     Mon Nov 19 13:45:26 2018
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_53S.AAB 
+
+F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\ASM\buffer.asm        PAGE   18
+
+      919                           .line   8
+      920                   ;----------------------------------------------------------------------
+      921                   ;  85 | if (buffer->n >= MAXBUFF)       /* greater than maximum allowed buffer?
+      922                   ;     |  */                                                                    
+      923                   ;----------------------------------------------------------------------
+      924 00000043 50480301         ldiu      *+fp(1),ar0           ; |85| 
+      925 00000044 50400002         ldiu      *+ar0(2),r0           ; |85| 
+      926 00000045 04e0012c         cmpi      300,r0                ; |85| 
+      927 00000046 6a070005         blt       L15                   ; |85| 
+      928                   ;*      Branch Occurs to L15            ; |85| 
+      929                           .line   10
+      930                   ;----------------------------------------------------------------------
+      931                   ;  87 | GIEP;                                                                  
+      932                   ;----------------------------------------------------------------------
+      933 00000047 0e350000         pop             ST                      
+      934                           .line   11
+      935                   ;----------------------------------------------------------------------
+      936                   ;  88 | return FALSE;                                                          
+      937                   ;----------------------------------------------------------------------
+      938 00000048 6a20001d         bud       L20                   ; |88| 
+      939 00000049 0c800000         nop
+      940 0000004a 0c800000         nop
+      941 0000004b 50600000         ldiu      0,r0                  ; |88| 
+      942                   ;*      Branch Occurs to L20            ; |88| 
+      943 0000004c          L15:        
+      944                           .line   14
+      945                   ;----------------------------------------------------------------------
+      946                   ;  91 | buffer->buff[buffer->tail] = b;                                        
+      947                   ;----------------------------------------------------------------------
+      948 0000004c 50480301         ldiu      *+fp(1),ar0           ; |91| 
+      949 0000004d 50480001         ldiu      *+ar0(1),ar0          ; |91| 
+      950 0000004e 02480301         addi      *+fp(1),ar0           ; |91| Unsigned
+      951 0000004f 50400302         ldiu      *+fp(2),r0            ; |91| 
+      952 00000050 15400005         sti       r0,*+ar0(5)           ; |91| 
+      953                           .line   15
+      954                   ;----------------------------------------------------------------------
+      955                   ;  92 | buffer->n ++;                                                          
+      956                   ;----------------------------------------------------------------------
+      957 00000051 50480301         ldiu      *+fp(1),ar0           ; |92| 
+      958 00000052 50600001         ldiu      1,r0                  ; |92| 
+      959 00000053 02400002         addi      *+ar0(2),r0           ; |92| 
+      960 00000054 15400002         sti       r0,*+ar0(2)           ; |92| 
+      961                           .line   17
+      962                   ;----------------------------------------------------------------------
+      963                   ;  94 | if (CRC)        /* check CRC? */                                       
+      964                   ;----------------------------------------------------------------------
+      965 00000055 50400303         ldiu      *+fp(3),r0            ; |94| 
+      966 00000056 04e00000         cmpi      0,r0                  ; |94| 
+      967 00000057 6a050004         beq       L17                   ; |94| 
+      968                   ;*      Branch Occurs to L17            ; |94| 
+      969                           .line   18
+      970                   ;----------------------------------------------------------------------
+      971                   ;  95 | CRC16(buffer);                                                         
+      972                   ;----------------------------------------------------------------------
+TMS320C3x/4x COFF AssemblerVersion 5.12     Mon Nov 19 13:45:26 2018
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_53S.AAB 
+
+F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\ASM\buffer.asm        PAGE   19
+
+      973 00000058 08700000-        ldp       @CL1,DP
+      974 00000059 504a0301         ldiu      *+fp(1),ar2           ; |95| 
+      975 0000005a 50200000-        ldiu      @CL1,r0               ; |95| 
+      976 0000005b 70000000         callu     r0                    ; far call to _CRC16    ; |95| 
+      977                                                           ; |95| Far Call Occurs
+      978 0000005c          L17:        
+      979                           .line   20
+      980                   ;----------------------------------------------------------------------
+      981                   ;  97 | buffer->tail ++;                                                       
+      982                   ;----------------------------------------------------------------------
+      983 0000005c 50480301         ldiu      *+fp(1),ar0           ; |97| 
+      984 0000005d 50600001         ldiu      1,r0                  ; |97| 
+      985 0000005e 02400001         addi      *+ar0(1),r0           ; |97| 
+      986 0000005f 15400001         sti       r0,*+ar0(1)           ; |97| 
+      987                           .line   22
+      988                   ;----------------------------------------------------------------------
+      989                   ;  99 | if (buffer->tail >= MAXBUFF)                                           
+      990                   ;----------------------------------------------------------------------
+      991 00000060 50480301         ldiu      *+fp(1),ar0           ; |99| 
+      992 00000061 50400001         ldiu      *+ar0(1),r0           ; |99| 
+      993 00000062 04e0012c         cmpi      300,r0                ; |99| 
+      994 00000063 6a070002         blt       L19                   ; |99| 
+      995                   ;*      Branch Occurs to L19            ; |99| 
+      996                           .line   23
+      997                   ;----------------------------------------------------------------------
+      998                   ; 100 | buffer->tail = 0;                                                      
+      999                   ;----------------------------------------------------------------------
+     1000 00000064 50600000         ldiu      0,r0                  ; |100| 
+     1001 00000065 15400001         sti       r0,*+ar0(1)           ; |100| 
+     1002 00000066          L19:        
+     1003                           .line   25
+     1004                   ;----------------------------------------------------------------------
+     1005                   ; 102 | GIEP;                                                                  
+     1006                   ;----------------------------------------------------------------------
+     1007 00000066 0e350000         pop             ST                      
+     1008                           .line   27
+     1009                   ;----------------------------------------------------------------------
+     1010                   ; 104 | return TRUE;                                                           
+     1011                   ;----------------------------------------------------------------------
+     1012 00000067 50600001         ldiu      1,r0                  ; |104| 
+     1013 00000068          L20:        
+     1014                           .line   28
+     1015                                                           ; Begin Epilog Code
+     1016 00000068 50410b01         ldiu      *-fp(1),r1            ; |105| 
+     1017 00000069 504bc300         ldiu      *fp,fp                ; |105| 
+     1018                                                           ; Unallocate the Frame
+     1019 0000006a 18740005         subi      5,sp                  ; |105| 
+     1020 0000006b 68000001         bu        r1
+     1021                   ;*      Branch Occurs to r1 
+     1022                           .endfunc        105,000000000h,3
+     1023                   
+     1024                   
+     1025 0000006c                  .sect    "internal_RAM"
+     1026                   
+TMS320C3x/4x COFF AssemblerVersion 5.12     Mon Nov 19 13:45:26 2018
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_53S.AAB 
+
+F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\ASM\buffer.asm        PAGE   20
+
+     1027                           .global _Get
+     1028                           .sym    _Get,_Get,46,2,0
+     1029                           .func   119
+     1030                   ;******************************************************************************
+     1031                   ;* FUNCTION NAME: _Get                                                        *
+     1032                   ;*                                                                            *
+     1033                   ;*   Architecture       : TMS320C33                                           *
+     1034                   ;*   Calling Convention : TI Standard Register Parameters                     *
+     1035                   ;*   Function Uses Regs : r0,ar0,ar2,ir0,st                                   *
+     1036                   ;*   Regs Saved         :                                                     *
+     1037                   ;*   Stack Frame        : Full (w/ debug)                                     *
+     1038                   ;*   Total Frame Size   : 2 Call + 0 Parm + 2 Auto + 0 SOE = 4 words          *
+     1039                   ;******************************************************************************
+     1040 0000006c          _Get:
+     1041                   ;* ar2   assigned to _buffer
+     1042                           .sym    _buffer,10,24,17,32,.fake10
+     1043                           .sym    _buffer,1,24,1,32,.fake10
+     1044                           .sym    _r,2,12,1,32
+     1045                           .line   1
+     1046                   ;----------------------------------------------------------------------
+     1047                   ; 119 | unsigned int Get(BFR* buffer)                                          
+     1048                   ;----------------------------------------------------------------------
+     1049 0000006c 0f2b0000         push      fp
+     1050 0000006d 500b0014         ldiu      sp,fp
+     1051 0000006e 02740002         addi      2,sp
+     1052                           .line   2
+     1053                   ;----------------------------------------------------------------------
+     1054                   ; 121 | unsigned char r;                                                       
+     1055                   ;----------------------------------------------------------------------
+     1056 0000006f 154a0301         sti       ar2,*+fp(1)           ; |120| 
+     1057                           .line   5
+     1058                   ;----------------------------------------------------------------------
+     1059                   ; 123 | if (buffer->locked)     /* locked? */                                  
+     1060                   ;----------------------------------------------------------------------
+     1061 00000070 5011000a         ldiu      ar2,ir0               ; |123| 
+     1062 00000071 50680132         ldiu      306,ar0               ; |123| 
+     1063 00000072 50404000         ldiu      *+ar0(ir0),r0         ; |123| 
+     1064 00000073 04e00000         cmpi      0,r0                  ; |123| 
+     1065 00000074 6a050004         beq       L24                   ; |123| 
+     1066                   ;*      Branch Occurs to L24            ; |123| 
+     1067                           .line   6
+     1068                   ;----------------------------------------------------------------------
+     1069                   ; 124 | return FALSE;                                                          
+     1070                   ;----------------------------------------------------------------------
+     1071 00000075 6a200021         bud       L29                   ; |124| 
+     1072 00000076 0c800000         nop
+     1073 00000077 0c800000         nop
+     1074 00000078 50600000         ldiu      0,r0                  ; |124| 
+     1075                   ;*      Branch Occurs to L29            ; |124| 
+     1076 00000079          L24:        
+     1077                           .line   8
+     1078                   ;----------------------------------------------------------------------
+     1079                   ; 126 | _GIEP;                                                                 
+     1080                   ;----------------------------------------------------------------------
+TMS320C3x/4x COFF AssemblerVersion 5.12     Mon Nov 19 13:45:26 2018
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_53S.AAB 
+
+F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\ASM\buffer.asm        PAGE   21
+
+     1081 00000079 0f350000         push    ST                      
+     1082 0000007a 03752000         andn    2000h, ST       
+     1083                           .line   10
+     1084                   ;----------------------------------------------------------------------
+     1085                   ; 128 | if (buffer->n <= 0) /* empty? */                                       
+     1086                   ;----------------------------------------------------------------------
+     1087 0000007b 50480301         ldiu      *+fp(1),ar0           ; |128| 
+     1088 0000007c 50400002         ldiu      *+ar0(2),r0           ; |128| 
+     1089 0000007d 04e00000         cmpi      0,r0                  ; |128| 
+     1090 0000007e 6a090005         bgt       L26                   ; |128| 
+     1091                   ;*      Branch Occurs to L26            ; |128| 
+     1092                           .line   12
+     1093                   ;----------------------------------------------------------------------
+     1094                   ; 130 | GIEP;                                                                  
+     1095                   ;----------------------------------------------------------------------
+     1096 0000007f 0e350000         pop             ST                      
+     1097                           .line   14
+     1098                   ;----------------------------------------------------------------------
+     1099                   ; 132 | return NULL;                                                           
+     1100                   ;----------------------------------------------------------------------
+     1101 00000080 6a200016         bud       L29                   ; |132| 
+     1102 00000081 0c800000         nop
+     1103 00000082 0c800000         nop
+     1104 00000083 50600000         ldiu      0,r0                  ; |132| 
+     1105                   ;*      Branch Occurs to L29            ; |132| 
+     1106 00000084          L26:        
+     1107                           .line   17
+     1108                   ;----------------------------------------------------------------------
+     1109                   ; 135 | r = buffer->buff[buffer->head];                                        
+     1110                   ;----------------------------------------------------------------------
+     1111 00000084 50480301         ldiu      *+fp(1),ar0           ; |135| 
+     1112 00000085 5048c000         ldiu      *ar0,ar0              ; |135| 
+     1113 00000086 02480301         addi      *+fp(1),ar0           ; |135| Unsigned
+     1114 00000087 50400005         ldiu      *+ar0(5),r0           ; |135| 
+     1115 00000088 15400302         sti       r0,*+fp(2)            ; |135| 
+     1116                           .line   19
+     1117                   ;----------------------------------------------------------------------
+     1118                   ; 137 | buffer->head ++;                                                       
+     1119                   ;----------------------------------------------------------------------
+     1120 00000089 50480301         ldiu      *+fp(1),ar0           ; |137| 
+     1121 0000008a 50600001         ldiu      1,r0                  ; |137| 
+     1122 0000008b 2120c000         addi3     r0,*ar0,r0            ; |137| 
+     1123 0000008c 1540c000         sti       r0,*ar0               ; |137| 
+     1124                           .line   21
+     1125                   ;----------------------------------------------------------------------
+     1126                   ; 139 | if (buffer->head >= MAXBUFF)                                           
+     1127                   ;----------------------------------------------------------------------
+     1128 0000008d 50480301         ldiu      *+fp(1),ar0           ; |139| 
+     1129 0000008e 5040c000         ldiu      *ar0,r0               ; |139| 
+     1130 0000008f 04e0012c         cmpi      300,r0                ; |139| 
+     1131 00000090 6a070002         blt       L28                   ; |139| 
+     1132                   ;*      Branch Occurs to L28            ; |139| 
+     1133                           .line   22
+     1134                   ;----------------------------------------------------------------------
+TMS320C3x/4x COFF AssemblerVersion 5.12     Mon Nov 19 13:45:26 2018
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_53S.AAB 
+
+F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\ASM\buffer.asm        PAGE   22
+
+     1135                   ; 140 | buffer->head = 0;                                                      
+     1136                   ;----------------------------------------------------------------------
+     1137 00000091 50600000         ldiu      0,r0                  ; |140| 
+     1138 00000092 1540c000         sti       r0,*ar0               ; |140| 
+     1139 00000093          L28:        
+     1140                           .line   24
+     1141                   ;----------------------------------------------------------------------
+     1142                   ; 142 | buffer->n --;                                                          
+     1143                   ;----------------------------------------------------------------------
+     1144 00000093 50480301         ldiu      *+fp(1),ar0           ; |142| 
+     1145 00000094 50600001         ldiu      1,r0                  ; |142| 
+     1146 00000095 19c00002         subri     *+ar0(2),r0           ; |142| 
+     1147 00000096 15400002         sti       r0,*+ar0(2)           ; |142| 
+     1148                           .line   26
+     1149                   ;----------------------------------------------------------------------
+     1150                   ; 144 | GIEP;                                                                  
+     1151                   ;----------------------------------------------------------------------
+     1152 00000097 0e350000         pop             ST                      
+     1153                           .line   28
+     1154                   ;----------------------------------------------------------------------
+     1155                   ; 146 | return r;                                                              
+     1156                   ;----------------------------------------------------------------------
+     1157 00000098 50400302         ldiu      *+fp(2),r0            ; |146| 
+     1158 00000099          L29:        
+     1159                           .line   29
+     1160                                                           ; Begin Epilog Code
+     1161 00000099 50410b01         ldiu      *-fp(1),r1            ; |147| 
+     1162 0000009a 504bc300         ldiu      *fp,fp                ; |147| 
+     1163                                                           ; Unallocate the Frame
+     1164 0000009b 18740004         subi      4,sp                  ; |147| 
+     1165 0000009c 68000001         bu        r1
+     1166                   ;*      Branch Occurs to r1 
+     1167                           .endfunc        147,000000000h,2
+     1168                   
+     1169                   
+     1170 0000009d                  .sect    "internal_RAM"
+     1171                   
+     1172                           .global _Put_n
+     1173                           .sym    _Put_n,_Put_n,46,2,0
+     1174                           .func   164
+     1175                   ;******************************************************************************
+     1176                   ;* FUNCTION NAME: _Put_n                                                      *
+     1177                   ;*                                                                            *
+     1178                   ;*   Architecture       : TMS320C33                                           *
+     1179                   ;*   Calling Convention : TI Standard Register Parameters                     *
+     1180                   ;*   Function Uses Regs : r0,r2,r3,ar0,ar2,ir0,st,rc                          *
+     1181                   ;*   Regs Saved         :                                                     *
+     1182                   ;*   Stack Frame        : Full (w/ debug)                                     *
+     1183                   ;*   Total Frame Size   : 2 Call + 0 Parm + 6 Auto + 0 SOE = 8 words          *
+     1184                   ;******************************************************************************
+     1185 0000009d          _Put_n:
+     1186                   ;* ar2   assigned to _buffer
+     1187                           .sym    _buffer,10,24,17,32,.fake10
+     1188                   ;* r2    assigned to _b
+TMS320C3x/4x COFF AssemblerVersion 5.12     Mon Nov 19 13:45:26 2018
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_53S.AAB 
+
+F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\ASM\buffer.asm        PAGE   23
+
+     1189                           .sym    _b,2,28,17,32
+     1190                   ;* r3    assigned to _n
+     1191                           .sym    _n,3,4,17,32
+     1192                   ;* rc    assigned to _CRC
+     1193                           .sym    _CRC,19,14,17,32
+     1194                           .sym    _buffer,1,24,1,32,.fake10
+     1195                           .sym    _b,2,28,1,32
+     1196                           .sym    _n,3,4,1,32
+     1197                           .sym    _CRC,4,14,1,32
+     1198                           .sym    _temp,5,12,1,32
+     1199                           .sym    _i,6,4,1,32
+     1200                           .line   1
+     1201                   ;----------------------------------------------------------------------
+     1202                   ; 164 | BOOL Put_n(BFR* buffer, unsigned char* b, int n, BOOL CRC)             
+     1203                   ;----------------------------------------------------------------------
+     1204 0000009d 0f2b0000         push      fp
+     1205 0000009e 500b0014         ldiu      sp,fp
+     1206 0000009f 02740006         addi      6,sp
+     1207                           .line   2
+     1208                   ;----------------------------------------------------------------------
+     1209                   ; 166 | unsigned char temp;                                                    
+     1210                   ; 167 | int i;                                                                 
+     1211                   ;----------------------------------------------------------------------
+     1212 000000a0 155b0304         sti       rc,*+fp(4)            ; |165| 
+     1213 000000a1 15430303         sti       r3,*+fp(3)            ; |165| 
+     1214 000000a2 15420302         sti       r2,*+fp(2)            ; |165| 
+     1215 000000a3 154a0301         sti       ar2,*+fp(1)           ; |165| 
+     1216                           .line   6
+     1217                   ;----------------------------------------------------------------------
+     1218                   ; 169 | if (buffer->locked)     /* locked? */                                  
+     1219                   ;----------------------------------------------------------------------
+     1220 000000a4 5011000a         ldiu      ar2,ir0               ; |169| 
+     1221 000000a5 50680132         ldiu      306,ar0               ; |169| 
+     1222 000000a6 50404000         ldiu      *+ar0(ir0),r0         ; |169| 
+     1223 000000a7 04e00000         cmpi      0,r0                  ; |169| 
+     1224 000000a8 6a050004         beq       L33                   ; |169| 
+     1225                   ;*      Branch Occurs to L33            ; |169| 
+     1226                           .line   7
+     1227                   ;----------------------------------------------------------------------
+     1228                   ; 170 | return FALSE;                                                          
+     1229                   ;----------------------------------------------------------------------
+     1230 000000a9 6a20003f         bud       L44                   ; |170| 
+     1231 000000aa 0c800000         nop
+     1232 000000ab 0c800000         nop
+     1233 000000ac 50600000         ldiu      0,r0                  ; |170| 
+     1234                   ;*      Branch Occurs to L44            ; |170| 
+     1235 000000ad          L33:        
+     1236                           .line   9
+     1237                   ;----------------------------------------------------------------------
+     1238                   ; 172 | _GIEP;                                                                 
+     1239                   ;----------------------------------------------------------------------
+     1240 000000ad 0f350000         push    ST                      
+     1241 000000ae 03752000         andn    2000h, ST       
+     1242                           .line   11
+TMS320C3x/4x COFF AssemblerVersion 5.12     Mon Nov 19 13:45:26 2018
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_53S.AAB 
+
+F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\ASM\buffer.asm        PAGE   24
+
+     1243                   ;----------------------------------------------------------------------
+     1244                   ; 174 | if (n<=0)                                                              
+     1245                   ;----------------------------------------------------------------------
+     1246 000000af 50400303         ldiu      *+fp(3),r0            ; |174| 
+     1247 000000b0 04e00000         cmpi      0,r0                  ; |174| 
+     1248 000000b1 6a09001f         bgt       L39                   ; |174| 
+     1249                   ;*      Branch Occurs to L39            ; |174| 
+     1250                           .line   13
+     1251                   ;----------------------------------------------------------------------
+     1252                   ; 176 | i = 0;                                                                 
+     1253                   ;----------------------------------------------------------------------
+     1254 000000b2 50600000         ldiu      0,r0                  ; |176| 
+     1255 000000b3 15400306         sti       r0,*+fp(6)            ; |176| 
+     1256                           .line   15
+     1257                   ;----------------------------------------------------------------------
+     1258                   ; 178 | while(b[i] != NULL)                                                    
+     1259                   ;----------------------------------------------------------------------
+     1260 000000b4 50510302         ldiu      *+fp(2),ir0           ; |178| 
+     1261 000000b5 50080000         ldiu      r0,ar0                ; |178| 
+     1262 000000b6 50404000         ldiu      *+ar0(ir0),r0         ; |178| 
+     1263 000000b7 04e00000         cmpi      0,r0                  ; |178| 
+     1264 000000b8 6a050030         beq       L43                   ; |178| 
+     1265                   ;*      Branch Occurs to L43            ; |178| 
+     1266 000000b9          L35:        
+     1267                           .line   17
+     1268                   ;----------------------------------------------------------------------
+     1269                   ; 180 | if (!Put(buffer, b[i], CRC))                                           
+     1270                   ;----------------------------------------------------------------------
+     1271 000000b9 08700000-        ldp       @CL2,DP
+     1272 000000ba 50510302         ldiu      *+fp(2),ir0           ; |180| 
+     1273 000000bb 50480306         ldiu      *+fp(6),ar0           ; |180| 
+     1274 000000bc 50430304         ldiu      *+fp(4),r3            ; |180| 
+     1275 000000bd 504a0301         ldiu      *+fp(1),ar2           ; |180| 
+     1276 000000be 50200001-        ldiu      @CL2,r0               ; |180| 
+     1277 000000bf 50424000         ldiu      *+ar0(ir0),r2         ; |180| 
+     1278 000000c0 70000000         callu     r0                    ; far call to _Put      ; |180| 
+     1279                                                           ; |180| Far Call Occurs
+     1280 000000c1 04e00000         cmpi      0,r0                  ; |180| 
+     1281 000000c2 6a060005         bne       L37                   ; |180| 
+     1282                   ;*      Branch Occurs to L37            ; |180| 
+     1283                           .line   19
+     1284                   ;----------------------------------------------------------------------
+     1285                   ; 182 | GIEP;                                                                  
+     1286                   ;----------------------------------------------------------------------
+     1287 000000c3 0e350000         pop             ST                      
+     1288                           .line   20
+     1289                   ;----------------------------------------------------------------------
+     1290                   ; 183 | return FALSE;                                                          
+     1291                   ;----------------------------------------------------------------------
+     1292 000000c4 6a200024         bud       L44                   ; |183| 
+     1293 000000c5 0c800000         nop
+     1294 000000c6 0c800000         nop
+     1295 000000c7 50600000         ldiu      0,r0                  ; |183| 
+     1296                   ;*      Branch Occurs to L44            ; |183| 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Mon Nov 19 13:45:26 2018
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_53S.AAB 
+
+F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\ASM\buffer.asm        PAGE   25
+
+     1297 000000c8          L37:        
+     1298                           .line   23
+     1299                   ;----------------------------------------------------------------------
+     1300                   ; 186 | i++;                                                                   
+     1301                   ; 189 | else                                                                   
+     1302                   ;----------------------------------------------------------------------
+     1303 000000c8 50600001         ldiu      1,r0                  ; |186| 
+     1304 000000c9 02400306         addi      *+fp(6),r0            ; |186| 
+     1305 000000ca 15400306         sti       r0,*+fp(6)            ; |186| 
+     1306                           .line   15
+     1307 000000cb 50510302         ldiu      *+fp(2),ir0           ; |178| 
+     1308 000000cc 50080000         ldiu      r0,ar0                ; |178| 
+     1309 000000cd 50404000         ldiu      *+ar0(ir0),r0         ; |178| 
+     1310 000000ce 04e00000         cmpi      0,r0                  ; |178| 
+     1311 000000cf 6a06ffe9         bne       L35                   ; |178| 
+     1312                   ;*      Branch Occurs to L35            ; |178| 
+     1313 000000d0 6a000018         bu        L43                   ; |163| 
+     1314                   ;*      Branch Occurs to L43            ; |163| 
+     1315 000000d1          L39:        
+     1316                           .line   28
+     1317                   ;----------------------------------------------------------------------
+     1318                   ; 191 | for (i=0;i<n;i++)                                                      
+     1319                   ;----------------------------------------------------------------------
+     1320 000000d1 50600000         ldiu      0,r0                  ; |191| 
+     1321 000000d2 15400306         sti       r0,*+fp(6)            ; |191| 
+     1322 000000d3 04c00303         cmpi      *+fp(3),r0            ; |191| 
+     1323 000000d4 6a0a0014         bge       L43                   ; |191| 
+     1324                   ;*      Branch Occurs to L43            ; |191| 
+     1325 000000d5          L40:        
+     1326                           .line   30
+     1327                   ;----------------------------------------------------------------------
+     1328                   ; 193 | if (!Put(buffer, b[i], CRC))                                           
+     1329                   ;----------------------------------------------------------------------
+     1330 000000d5 08700000-        ldp       @CL2,DP
+     1331 000000d6 50510302         ldiu      *+fp(2),ir0           ; |193| 
+     1332 000000d7 50480306         ldiu      *+fp(6),ar0           ; |193| 
+     1333 000000d8 50430304         ldiu      *+fp(4),r3            ; |193| 
+     1334 000000d9 504a0301         ldiu      *+fp(1),ar2           ; |193| 
+     1335 000000da 50200001-        ldiu      @CL2,r0               ; |193| 
+     1336 000000db 50424000         ldiu      *+ar0(ir0),r2         ; |193| 
+     1337 000000dc 70000000         callu     r0                    ; far call to _Put      ; |193| 
+     1338                                                           ; |193| Far Call Occurs
+     1339 000000dd 04e00000         cmpi      0,r0                  ; |193| 
+     1340 000000de 6a060005         bne       L42                   ; |193| 
+     1341                   ;*      Branch Occurs to L42            ; |193| 
+     1342                           .line   32
+     1343                   ;----------------------------------------------------------------------
+     1344                   ; 195 | GIEP;                                                                  
+     1345                   ;----------------------------------------------------------------------
+     1346 000000df 0e350000         pop             ST                      
+     1347                           .line   33
+     1348                   ;----------------------------------------------------------------------
+     1349                   ; 196 | return FALSE;                                                          
+     1350                   ;----------------------------------------------------------------------
+TMS320C3x/4x COFF AssemblerVersion 5.12     Mon Nov 19 13:45:26 2018
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_53S.AAB 
+
+F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\ASM\buffer.asm        PAGE   26
+
+     1351 000000e0 6a200008         bud       L44                   ; |196| 
+     1352 000000e1 0c800000         nop
+     1353 000000e2 0c800000         nop
+     1354 000000e3 50600000         ldiu      0,r0                  ; |196| 
+     1355                   ;*      Branch Occurs to L44            ; |196| 
+     1356 000000e4          L42:        
+     1357                           .line   28
+     1358 000000e4 50600001         ldiu      1,r0                  ; |191| 
+     1359 000000e5 02400306         addi      *+fp(6),r0            ; |191| 
+     1360 000000e6 15400306         sti       r0,*+fp(6)            ; |191| 
+     1361 000000e7 04c00303         cmpi      *+fp(3),r0            ; |191| 
+     1362 000000e8 6a07ffec         blt       L40                   ; |191| 
+     1363                   ;*      Branch Occurs to L40            ; |191| 
+     1364 000000e9          L43:        
+     1365                           .line   38
+     1366                   ;----------------------------------------------------------------------
+     1367                   ; 201 | GIEP;                                                                  
+     1368                   ;----------------------------------------------------------------------
+     1369 000000e9 0e350000         pop             ST                      
+     1370                           .line   40
+     1371                   ;----------------------------------------------------------------------
+     1372                   ; 203 | return TRUE;                                                           
+     1373                   ;----------------------------------------------------------------------
+     1374 000000ea 50600001         ldiu      1,r0                  ; |203| 
+     1375 000000eb          L44:        
+     1376                           .line   41
+     1377                                                           ; Begin Epilog Code
+     1378 000000eb 50410b01         ldiu      *-fp(1),r1            ; |204| 
+     1379 000000ec 504bc300         ldiu      *fp,fp                ; |204| 
+     1380                                                           ; Unallocate the Frame
+     1381 000000ed 18740008         subi      8,sp                  ; |204| 
+     1382 000000ee 68000001         bu        r1
+     1383                   ;*      Branch Occurs to r1 
+     1384                           .endfunc        204,000000000h,6
+     1385                   
+     1386                   
+     1387 000000ef                  .sect    "internal_RAM"
+     1388                   
+     1389                           .global _Clear
+     1390                           .sym    _Clear,_Clear,32,2,0
+     1391                           .func   219
+     1392                   ;******************************************************************************
+     1393                   ;* FUNCTION NAME: _Clear                                                      *
+     1394                   ;*                                                                            *
+     1395                   ;*   Architecture       : TMS320C33                                           *
+     1396                   ;*   Calling Convention : TI Standard Register Parameters                     *
+     1397                   ;*   Function Uses Regs : r0,r1,ar0,ar1,ar2,ir0,st                            *
+     1398                   ;*   Regs Saved         :                                                     *
+     1399                   ;*   Stack Frame        : Full (w/ debug)                                     *
+     1400                   ;*   Total Frame Size   : 2 Call + 0 Parm + 2 Auto + 0 SOE = 4 words          *
+     1401                   ;******************************************************************************
+     1402 000000ef          _Clear:
+     1403                   ;* ar2   assigned to _buffer
+     1404                           .sym    _buffer,10,24,17,32,.fake10
+TMS320C3x/4x COFF AssemblerVersion 5.12     Mon Nov 19 13:45:26 2018
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_53S.AAB 
+
+F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\ASM\buffer.asm        PAGE   27
+
+     1405                           .sym    _buffer,1,24,1,32,.fake10
+     1406                           .sym    _i,2,4,1,32
+     1407                           .line   1
+     1408                   ;----------------------------------------------------------------------
+     1409                   ; 219 | void Clear(BFR* buffer)                                                
+     1410                   ;----------------------------------------------------------------------
+     1411 000000ef 0f2b0000         push      fp
+     1412 000000f0 500b0014         ldiu      sp,fp
+     1413 000000f1 02740002         addi      2,sp
+     1414                           .line   2
+     1415                   ;----------------------------------------------------------------------
+     1416                   ; 221 | int i;                                                                 
+     1417                   ;----------------------------------------------------------------------
+     1418 000000f2 154a0301         sti       ar2,*+fp(1)           ; |220| 
+     1419                           .line   5
+     1420                   ;----------------------------------------------------------------------
+     1421                   ; 223 | _GIEP;                                                                 
+     1422                   ;----------------------------------------------------------------------
+     1423 000000f3 0f350000         push    ST                      
+     1424 000000f4 03752000         andn    2000h, ST       
+     1425                           .line   7
+     1426                   ;----------------------------------------------------------------------
+     1427                   ; 225 | if(INITIALIZING)                        /* Startup? */                 
+     1428                   ;----------------------------------------------------------------------
+     1429 000000f5 08700000-        ldp       @CL3,DP
+     1430 000000f6 50280002-        ldiu      @CL3,ar0              ; |225| 
+     1431 000000f7 5040c000         ldiu      *ar0,r0               ; |225| 
+     1432 000000f8 04e00000         cmpi      0,r0                  ; |225| 
+     1433 000000f9 6a050005         beq       L48                   ; |225| 
+     1434                   ;*      Branch Occurs to L48            ; |225| 
+     1435                           .line   8
+     1436                   ;----------------------------------------------------------------------
+     1437                   ; 226 | buffer->locked = FALSE;                                                
+     1438                   ;----------------------------------------------------------------------
+     1439 000000fa 5011000a         ldiu      ar2,ir0
+     1440 000000fb 50680132         ldiu      306,ar0               ; |226| 
+     1441 000000fc 50600000         ldiu      0,r0                  ; |226| 
+     1442 000000fd 15404000         sti       r0,*+ar0(ir0)         ; |226| 
+     1443 000000fe 6a000007         bu        L50                   ; |218| 
+     1444                   ;*      Branch Occurs to L50            ; |218| 
+     1445 000000ff          L48:        
+     1446                           .line   9
+     1447                   ;----------------------------------------------------------------------
+     1448                   ; 227 | else if (buffer->locked)        /* locked?      */                     
+     1449                   ;----------------------------------------------------------------------
+     1450 000000ff 50510301         ldiu      *+fp(1),ir0           ; |227| 
+     1451 00000100 50680132         ldiu      306,ar0               ; |227| 
+     1452 00000101 50404000         ldiu      *+ar0(ir0),r0         ; |227| 
+     1453 00000102 04e00000         cmpi      0,r0                  ; |227| 
+     1454 00000103 6a050002         beq       L50                   ; |227| 
+     1455                   ;*      Branch Occurs to L50            ; |227| 
+     1456                           .line   11
+     1457                   ;----------------------------------------------------------------------
+     1458                   ; 229 | GIEP;                                                                  
+TMS320C3x/4x COFF AssemblerVersion 5.12     Mon Nov 19 13:45:26 2018
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_53S.AAB 
+
+F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\ASM\buffer.asm        PAGE   28
+
+     1459                   ;----------------------------------------------------------------------
+     1460 00000104 0e350000         pop             ST                      
+     1461                           .line   12
+     1462                   ;----------------------------------------------------------------------
+     1463                   ; 230 | return;                                                                
+     1464                   ;----------------------------------------------------------------------
+     1465 00000105 6a000025         bu        L54                   ; |230| 
+     1466                   ;*      Branch Occurs to L54            ; |230| 
+     1467 00000106          L50:        
+     1468                           .line   15
+     1469                   ;----------------------------------------------------------------------
+     1470                   ; 233 | buffer->GSEED   = GSEED_DEFAULT;                                       
+     1471                   ;----------------------------------------------------------------------
+     1472 00000106 08700000-        ldp       @CL4,DP
+     1473 00000107 50480301         ldiu      *+fp(1),ar0           ; |233| 
+     1474 00000108 50200003-        ldiu      @CL4,r0               ; |233| 
+     1475 00000109 15400003         sti       r0,*+ar0(3)           ; |233| 
+     1476                           .line   16
+     1477                   ;----------------------------------------------------------------------
+     1478                   ; 234 | buffer->head    = 0;                                                   
+     1479                   ;----------------------------------------------------------------------
+     1480 0000010a 50480301         ldiu      *+fp(1),ar0           ; |234| 
+     1481 0000010b 50600000         ldiu      0,r0                  ; |234| 
+     1482 0000010c 1540c000         sti       r0,*ar0               ; |234| 
+     1483                           .line   17
+     1484                   ;----------------------------------------------------------------------
+     1485                   ; 235 | buffer->tail    = 0;                                                   
+     1486                   ;----------------------------------------------------------------------
+     1487 0000010d 50480301         ldiu      *+fp(1),ar0           ; |235| 
+     1488 0000010e 15400001         sti       r0,*+ar0(1)           ; |235| 
+     1489                           .line   18
+     1490                   ;----------------------------------------------------------------------
+     1491                   ; 236 | buffer->n               = 0;                                           
+     1492                   ;----------------------------------------------------------------------
+     1493 0000010f 50480301         ldiu      *+fp(1),ar0           ; |236| 
+     1494 00000110 15400002         sti       r0,*+ar0(2)           ; |236| 
+     1495                           .line   19
+     1496                   ;----------------------------------------------------------------------
+     1497                   ; 237 | buffer->sum     = 0;                                                   
+     1498                   ;----------------------------------------------------------------------
+     1499 00000111 50680131         ldiu      305,ar0               ; |237| 
+     1500 00000112 50510301         ldiu      *+fp(1),ir0           ; |237| 
+     1501 00000113 15404000         sti       r0,*+ar0(ir0)         ; |237| 
+     1502                           .line   21
+     1503                   ;----------------------------------------------------------------------
+     1504                   ; 239 | if (INITIALIZING)                       /* Startup? */                 
+     1505                   ;----------------------------------------------------------------------
+     1506 00000114 08700000-        ldp       @CL3,DP
+     1507 00000115 50280002-        ldiu      @CL3,ar0              ; |239| 
+     1508 00000116 5040c000         ldiu      *ar0,r0               ; |239| 
+     1509 00000117 04e00000         cmpi      0,r0                  ; |239| 
+     1510 00000118 6a050011         beq       L53                   ; |239| 
+     1511                   ;*      Branch Occurs to L53            ; |239| 
+     1512                           .line   23
+TMS320C3x/4x COFF AssemblerVersion 5.12     Mon Nov 19 13:45:26 2018
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_53S.AAB 
+
+F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\ASM\buffer.asm        PAGE   29
+
+     1513                   ;----------------------------------------------------------------------
+     1514                   ; 241 | buffer->CRC16 = buffer->GSEED;                                         
+     1515                   ;----------------------------------------------------------------------
+     1516 00000119 50490301         ldiu      *+fp(1),ar1           ; |241| 
+     1517 0000011a 50080009         ldiu      ar1,ar0               ; |241| 
+     1518 0000011b 50400103         ldiu      *+ar1(3),r0           ; |241| 
+     1519 0000011c 15400004         sti       r0,*+ar0(4)           ; |241| 
+     1520                           .line   25
+     1521                   ;----------------------------------------------------------------------
+     1522                   ; 243 | for (i=0;i<MAXBUFF;i++)                                                
+     1523                   ;----------------------------------------------------------------------
+     1524 0000011d 50600000         ldiu      0,r0                  ; |243| 
+     1525 0000011e 15400302         sti       r0,*+fp(2)            ; |243| 
+     1526 0000011f 50610000         ldiu      0,r1                  ; |244| 
+     1527 00000120 04e0012c         cmpi      300,r0                ; |243| 
+     1528 00000121 6a0a0008         bge       L53                   ; |243| 
+     1529                   ;*      Branch Occurs to L53            ; |243| 
+     1530 00000122          L52:        
+     1531                           .line   26
+     1532                   ;----------------------------------------------------------------------
+     1533                   ; 244 | buffer->buff[i] = 0x00;                                                
+     1534                   ;----------------------------------------------------------------------
+     1535 00000122 50480302         ldiu      *+fp(2),ar0           ; |244| 
+     1536 00000123 02480301         addi      *+fp(1),ar0           ; |244| Unsigned
+     1537 00000124 15410005         sti       r1,*+ar0(5)           ; |244| 
+     1538                           .line   25
+     1539 00000125 50600001         ldiu      1,r0                  ; |243| 
+     1540 00000126 02400302         addi      *+fp(2),r0            ; |243| 
+     1541 00000127 15400302         sti       r0,*+fp(2)            ; |243| 
+     1542 00000128 04e0012c         cmpi      300,r0                ; |243| 
+     1543 00000129 6a07fff8         blt       L52                   ; |243| 
+     1544                   ;*      Branch Occurs to L52            ; |243| 
+     1545 0000012a          L53:        
+     1546                           .line   29
+     1547                   ;----------------------------------------------------------------------
+     1548                   ; 247 | GIEP;                                                                  
+     1549                   ;----------------------------------------------------------------------
+     1550 0000012a 0e350000         pop             ST                      
+     1551 0000012b          L54:        
+     1552                           .line   30
+     1553                                                           ; Begin Epilog Code
+     1554 0000012b 50410b01         ldiu      *-fp(1),r1
+     1555 0000012c 504bc300         ldiu      *fp,fp
+     1556                                                           ; Unallocate the Frame
+     1557 0000012d 18740004         subi      4,sp
+     1558 0000012e 68000001         bu        r1
+     1559                   ;*      Branch Occurs to r1 
+     1560                           .endfunc        248,000000000h,2
+     1561                   
+     1562                   
+     1563                   ;******************************************************************************
+     1564                   ;* CONSTANT TABLE                                                             *
+     1565                   ;******************************************************************************
+     1566 00000000                  .sect   ".const"
+TMS320C3x/4x COFF AssemblerVersion 5.12     Mon Nov 19 13:45:26 2018
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_53S.AAB 
+
+F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\ASM\buffer.asm        PAGE   30
+
+     1567 00000000                  .bss    CL1,1
+     1568 00000001                  .bss    CL2,1
+     1569 00000002                  .bss    CL3,1
+     1570 00000003                  .bss    CL4,1
+     1571                   
+     1572 00000000                  .sect   ".cinit"
+     1573 00000000 00000004         .field          4,32
+     1574 00000001 00000000-        .field          CL1+0,32
+     1575 00000002 00000000+        .field          _CRC16,32
+     1576 00000003 00000032+        .field          _Put,32
+     1577 00000004 00000000!        .field          _INITIALIZING,32
+     1578 00000005 0000ffff         .field          65535,32
+     1579                   
+     1580 00000000                  .sect   ".text"
+     1581                   ;******************************************************************************
+     1582                   ;* UNDEFINED EXTERNAL REFERENCES                                              *
+     1583                   ;******************************************************************************
+     1584                   
+     1585                           .global _INITIALIZING
+
+ No Errors,  No Warnings
+TMS320C3x/4x COFF AssemblerVersion 5.12     Mon Nov 19 13:45:26 2018
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_53S.AAB 
+
+F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\ASM\buffer.asm        PAGE   31
+
+LABEL                            VALUE       DEFN    REF
+
+.BIGMODEL                        00000001       0 
+.C30                             00000000       0 
+.C30INTERRUPT                    00000000       0 
+.C31                             00000000       0 
+.C32                             00000000       0 
+.C33                             00000001       0 
+.C3X                             00000001       0 
+.C3x                             00000001       0 
+.C40                             00000000       0 
+.C44                             00000000       0 
+.C4X                             00000000       0 
+.C4x                             00000000       0 
+.REGPARM                         00000001       0 
+.TMS320C30                       00000001       0 
+.TMS320C31                       00000000       0 
+.TMS320C32                       00000000       0 
+.TMS320C40                       00000000       0 
+.TMS320C44                       00000000       0 
+.TMS320xx                        00000021       0 
+.tms320C30                       00000001       0 
+.tms320C31                       00000000       0 
+.tms320C32                       00000000       0 
+.tms320C40                       00000000       0 
+.tms320C44                       00000000       0 
+.tms320xx                        00000021       0 
+.tmx320C40                       00000000       0 
+CL1                              00000000-   1567    973    975   1574 
+CL2                              00000001-   1568   1271   1276   1330   1335 
+CL3                              00000002-   1569   1429   1430   1506   1507 
+CL4                              00000003-   1570   1472   1474 
+FP                               0000000b       7 
+L13                              00000041+    912    901 
+L15                              0000004c+    943    927 
+L17                              0000005c+    978    967 
+L19                              00000066+   1002    994 
+L20                              00000068+   1013    907    938 
+L24                              00000079+   1076   1065 
+L26                              00000084+   1106   1090 
+L28                              00000093+   1139   1131 
+L29                              00000099+   1158   1071   1101 
+L33                              000000ad+   1235   1224 
+L35                              000000b9+   1266   1311 
+L37                              000000c8+   1297   1281 
+L39                              000000d1+   1315   1248 
+L4                               0000000e+    779    770 
+L40                              000000d5+   1325   1362 
+L42                              000000e4+   1356   1340 
+L43                              000000e9+   1364   1264   1313   1323 
+L44                              000000eb+   1375   1230   1292   1351 
+L48                              000000ff+   1445   1433 
+L5                               00000019+    800    843 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Mon Nov 19 13:45:26 2018
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_53S.AAB 
+
+F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\ASM\buffer.asm        PAGE   32
+
+LABEL                            VALUE       DEFN    REF
+
+L50                              00000106+   1467   1443   1454 
+L52                              00000122+   1530   1543 
+L53                              0000012a+   1545   1510   1528 
+L54                              0000012b+   1551   1465 
+L7                               00000025+    828    808 
+L8                               00000029+    837    826 
+L9                               0000002e+    845    758    798 
+_CRC16                           00000000+    734    721    722    722   1575 
+_Clear                           000000ef+   1402   1389   1390   1390 
+_Get                             0000006c+   1040   1027   1028   1028 
+_INITIALIZING                    REF                1577   1585 
+_Put                             00000032+    872    859    860    860   1576 
+_Put_n                           0000009d+   1185   1172   1173   1173 
+fp                               0000000b       6    743    744    750    784 
+                                                     787    796    805    822 
+                                                     833    840    841    848 
+                                                     849    849    886    887 
+                                                     890    891    892    924 
+                                                     948    950    951    957 
+                                                     965    974    983    991 
+                                                    1016   1017   1017   1049 
+                                                    1050   1056   1087   1111 
+                                                    1113   1115   1120   1128 
+                                                    1144   1157   1161   1162 
+                                                    1162   1204   1205   1212 
+                                                    1213   1214   1215   1246 
+                                                    1255   1260   1272   1273 
+                                                    1274   1275   1304   1305 
+                                                    1307   1321   1322   1331 
+                                                    1332   1333   1334   1359 
+                                                    1360   1361   1378   1379 
+                                                    1379   1411   1412   1418 
+                                                    1450   1473   1480   1487 
+                                                    1493   1500   1516   1525 
+                                                    1535   1536   1540   1541 
+                                                    1554   1555   1555 

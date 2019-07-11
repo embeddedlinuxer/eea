@@ -1,0 +1,13 @@
+File: 		PDI_V3.14.2A_2G.ZNV
+
+Date: 		5/29/2015
+
+md5 Hash: 	0f1491659eb58edc67c4961356ac479b
+
+Creator:	D.Askew
+
+==Changes from last version==
+
+# Compatibility routines added. 3.14.2 is tested to be compatible with analyzer firmware versions 6.11, 6.12, and 6.13. Firmware prior to 6.11 may be compatible, but this has not been tested.
+
+# Access to Stream Select with IDEC HMI + MSVE has been made available even if the screen lock is enabled. Bugs related to this feature have been fixed.

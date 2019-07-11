@@ -1,0 +1,1 @@
+Copy this folder to %SD_CARD_ROOT%\PDI

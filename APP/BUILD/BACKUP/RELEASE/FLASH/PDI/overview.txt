@@ -1,0 +1,18 @@
+1.	Connect RS-485 cable to port 1
+2.	Setup up Configuration program
+	a.	Install the configuration software PDICFGv2.11b3 (EEASA)
+	b.	Set the EEASA program to 9600 baud, slave 1, no parity, and whatever computer COM port you're using
+	c.	EEASA password is 1343
+3.	Save the analyzer configuration
+	a.	Rename P000000.csv to P00XXXX.csv, where XXXX is the 4-digit SN of the analyzer
+	b.	Click "MODULE >> PROFILE.csv" button, provide the filepath for the csv file from 4a above
+	c.	(This saves your current analyzer configuration the your computer)
+4.	Flash firmware
+	a.	Click "Flash utility" button
+	b.	Provide the filepath to "PDI_EEA.LST" (the firmware files)
+	c.	Click Load
+5.	Restore the analyzer configuration
+	a.	When dialogue box appears, enter the 4-digit SN
+	b.	Press "Profile.csv >> Module" button
+	c.	Provide the filepath for P00XXXX.csv, where XXXX is the 4-digit SN of the analyzer
+	d.	Click "Lock" button if you like. You're finished

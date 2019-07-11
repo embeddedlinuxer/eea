@@ -1,0 +1,22 @@
+if ( ( (Density_Correction_Mode.val) && ( ((mode&0xFF)==SUB_LOW) || ( (mode&0xFF)==SUB_MID) ) && (FC[0].enable_DENSITY) ) && (WC_STAT != rollover) )
+
+A = Density_Correction_Mode.val
+B = (mode&0xFF)==SUB_LOW
+C = (mode&0xFF)==SUB_MID
+D = FC[0].enable_DENSITY
+E = WC_STAT != rollover
+
+
+if ( B || C || X)
+	if ( A && D && E )
+	
+	
+if ( ((mode&0xFF)==SUB_LOW) || ((mode&0xFF)==SUB_MID) || ((mode&0xFF)==SUB_FULL) )
+{
+	if ( Density_Correction_Mode.val && FC[0].enable_DENSITY && (WC_STAT != rollover) )
+	{
+
+
+
+
+

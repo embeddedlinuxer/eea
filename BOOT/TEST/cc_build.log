@@ -1,0 +1,303 @@
+cl30 ISR.c -gks -v33 -pl -mbfr -alsx -x1 -frF:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\OBJ -fsF:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\ASM -iF:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE -iF:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE -iF:\WKDIR\CodeCom
+[isr.c]
+TMS320C3x/4x ANSI C Compiler            Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\GLBLS.H", line 14: [E045] cannot open include file "ETC.H"
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\BUFFER.H", line 25: [F001] syntax error at or near symbol 'BOOL'
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\BUFFER.H", line 30: [F001] syntax error at or near symbol 'Put'
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\BUFFER.H", line 35: [F001] syntax error at or near symbol 'INITIALIZING'
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\GLBLS.H", line 16: [E045] cannot open include file "PERIPH.H"
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\GLBLS.H", line 17: [E045] cannot open include file "FLASH.H"
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\SERIAL.H", line 33: [F001] syntax error at or near symbol 'BOOL'
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\SERIAL.H", line 42: [F001] syntax error at or near symbol 'BOOL'
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\SERIAL.H", line 45: [F001] syntax error at or near symbol 'BOOL'
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\GLBLS.H", line 20: [E045] cannot open include file "I2C.H"
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\GLBLS.H", line 57: [F108] 'FLASH_BOOT_SIZE' undefined
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\GLBLS.H", line 57: [F100] array dimension must be constant expression
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\GLBLS.H", line 68: [F001] syntax error at or near symbol 'MEM'
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\GLBLS.H", line 69: [F001] syntax error at or near symbol 'GATE_TIMEOUT'
+   "isr.c"   ==> c_INT0
+"isr.c", line 16: [F108] 'DISABLE_EXTINT0' undefined
+"isr.c", line 18: [F108] 'ENABLE_EXTINT0' undefined
+   "isr.c"   ==> c_TINT0
+"isr.c", line 27: [F108] 'FLASH_LOC' undefined
+"isr.c", line 27: [F108] 'FLASH_ENTRY_POINT_APP' undefined
+"isr.c", line 27: [W123] conversion between types is undefined
+"isr.c", line 30: [F108] 'DISABLE_JTAG' undefined
+   "isr.c"   ==> c_TINT1
+"isr.c", line 40: [F108] 'DISABLE_TINT1' undefined
+"isr.c", line 42: [F110] structure member 'TMR_enabled' undefined
+"isr.c", line 49: [F108] 'PUSH_ALL' undefined
+"isr.c", line 54: [F108] 'POP_ALL' undefined
+"isr.c", line 58: [F108] 'ENABLE_TINT1' undefined
+   "isr.c"   ==> c_SPURINT
+
+cl30 MAIN.c -gks -v33 -pl -mbfr -alsx -x1 -frF:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\OBJ -fsF:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\ASM -iF:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE -iF:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE -iF:\WKDIR\CodeCom
+[main.c]
+TMS320C3x/4x ANSI C Compiler            Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\GLBLS.H", line 14: [E045] cannot open include file "ETC.H"
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\BUFFER.H", line 25: [F001] syntax error at or near symbol 'BOOL'
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\BUFFER.H", line 30: [F001] syntax error at or near symbol 'Put'
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\BUFFER.H", line 35: [F001] syntax error at or near symbol 'INITIALIZING'
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\GLBLS.H", line 16: [E045] cannot open include file "PERIPH.H"
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\GLBLS.H", line 17: [E045] cannot open include file "FLASH.H"
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\SERIAL.H", line 33: [F001] syntax error at or near symbol 'BOOL'
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\SERIAL.H", line 42: [F001] syntax error at or near symbol 'BOOL'
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\SERIAL.H", line 45: [F001] syntax error at or near symbol 'BOOL'
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\GLBLS.H", line 20: [E045] cannot open include file "I2C.H"
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\GLBLS.H", line 57: [F108] 'FLASH_BOOT_SIZE' undefined
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\GLBLS.H", line 57: [F100] array dimension must be constant expression
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\GLBLS.H", line 68: [F001] syntax error at or near symbol 'MEM'
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\GLBLS.H", line 68: [F098] declaration must have type or storage class
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\GLBLS.H", line 69: [F001] syntax error at or near symbol 'GATE_TIMEOUT'
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\GLBLS.H", line 69: [F098] declaration must have type or storage class
+   "main.c"   ==> main
+"main.c", line 17: [F001] syntax error at or near symbol 'pass'
+"main.c", line 25: [F108] '_GIE' undefined
+"main.c", line 27: [F108] 'LEDR_OFF' undefined
+"main.c", line 28: [F108] 'LEDG_OFF' undefined
+"main.c", line 29: [F108] 'DISABLE_BOOTINT' undefined
+"main.c", line 30: [F108] 'DISABLE_HEATER' undefined
+"main.c", line 32: [F108] 'RELAY1_OFF' undefined
+"main.c", line 33: [F108] 'RELAY2_OFF' undefined
+"main.c", line 38: [F108] 'TRUE' undefined
+"main.c", line 41: [F108] 'PBCR' undefined
+"main.c", line 41: [F108] 'PBCR_SWW_RDYandCNT' undefined
+"main.c", line 41: [F108] 'PBCR_WTCNT_5' undefined
+"main.c", line 42: [F108] 'NOPS' undefined
+"main.c", line 44: [F108] 'DISABLE_WDOG' undefined
+>> Too many errors, aborting
+
+cl30 SERIAL.c -gks -v33 -pl -mbfr -alsx -x1 -frF:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\OBJ -fsF:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\ASM -iF:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE -iF:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE -iF:\WKDIR\CodeCom
+[serial.c]
+TMS320C3x/4x ANSI C Compiler            Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\GLBLS.H", line 14: [E045] cannot open include file "ETC.H"
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\BUFFER.H", line 25: [F001] syntax error at or near symbol 'BOOL'
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\BUFFER.H", line 30: [F001] syntax error at or near symbol 'Put'
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\BUFFER.H", line 35: [F001] syntax error at or near symbol 'INITIALIZING'
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\GLBLS.H", line 16: [E045] cannot open include file "PERIPH.H"
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\GLBLS.H", line 17: [E045] cannot open include file "FLASH.H"
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\SERIAL.H", line 33: [F001] syntax error at or near symbol 'BOOL'
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\SERIAL.H", line 42: [F001] syntax error at or near symbol 'BOOL'
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\SERIAL.H", line 45: [F001] syntax error at or near symbol 'BOOL'
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\GLBLS.H", line 20: [E045] cannot open include file "I2C.H"
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\GLBLS.H", line 57: [F108] 'FLASH_BOOT_SIZE' undefined
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\GLBLS.H", line 57: [F100] array dimension must be constant expression
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\GLBLS.H", line 68: [F001] syntax error at or near symbol 'MEM'
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\GLBLS.H", line 69: [F001] syntax error at or near symbol 'GATE_TIMEOUT'
+   "serial.c"   ==> Setup_UART
+"serial.c", line 22: [F108] '_GIEP' undefined
+"serial.c", line 29: [F108] 'NOPS' undefined
+"serial.c", line 36: [F108] 'DISABLE_TXA' undefined
+"serial.c", line 37: [F108] 'DISABLE_TXB' undefined
+"serial.c", line 58: [F108] 'NOPS' undefined
+"serial.c", line 72: [F108] 'NOPS' undefined
+"serial.c", line 81: [F108] 'CLOCK_UART' undefined
+"serial.c", line 91: [F110] structure member 'TX_complete' undefined
+"serial.c", line 91: [F108] 'TRUE' undefined
+"serial.c", line 119: [F108] 'ENABLE_INT0' undefined
+"serial.c", line 120: [F108] 'ENABLE_EXTINT0' undefined
+"serial.c", line 122: [F110] structure member 'TMR_enabled' undefined
+"serial.c", line 122: [F108] 'FALSE' undefined
+"serial.c", line 124: [F108] 'GIEP' undefined
+   "serial.c"   ==> Clear_RX
+"serial.c", line 129: [F108] '_GIEP' undefined
+"serial.c", line 130: [F110] structure member 'RX_pending' undefined
+>> Too many errors, aborting
+
+cl30 TIMER.c -gks -v33 -pl -mbfr -alsx -x1 -frF:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\OBJ -fsF:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\ASM -iF:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE -iF:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE -iF:\WKDIR\CodeCom
+[timer.c]
+TMS320C3x/4x ANSI C Compiler            Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\GLBLS.H", line 14: [E045] cannot open include file "ETC.H"
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\BUFFER.H", line 25: [F001] syntax error at or near symbol 'BOOL'
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\BUFFER.H", line 30: [F001] syntax error at or near symbol 'Put'
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\BUFFER.H", line 35: [F001] syntax error at or near symbol 'INITIALIZING'
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\GLBLS.H", line 16: [E045] cannot open include file "PERIPH.H"
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\GLBLS.H", line 17: [E045] cannot open include file "FLASH.H"
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\SERIAL.H", line 33: [F001] syntax error at or near symbol 'BOOL'
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\SERIAL.H", line 42: [F001] syntax error at or near symbol 'BOOL'
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\SERIAL.H", line 45: [F001] syntax error at or near symbol 'BOOL'
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\GLBLS.H", line 20: [E045] cannot open include file "I2C.H"
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\GLBLS.H", line 57: [F108] 'FLASH_BOOT_SIZE' undefined
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\GLBLS.H", line 57: [F100] array dimension must be constant expression
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\GLBLS.H", line 68: [F001] syntax error at or near symbol 'MEM'
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\GLBLS.H", line 69: [F001] syntax error at or near symbol 'GATE_TIMEOUT'
+   "timer.c"   ==> Setup_Timer
+"timer.c", line 19: [F108] 'CLOCK_TIMER' undefined
+"timer.c", line 24: [F108] 'ENABLE_TINT0' undefined
+"timer.c", line 29: [F108] 'CLOCK_TIMER' undefined
+"timer.c", line 33: [F110] structure member 'TMR_enabled' undefined
+"timer.c", line 33: [F108] 'FALSE' undefined
+"timer.c", line 35: [F108] 'ENABLE_TINT1' undefined
+
+cl30 MODBUSRTU.c -gks -v33 -pl -mbfr -alsx -x1 -frF:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\OBJ -fsF:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\ASM -iF:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE -iF:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE -iF:\WKDIR\CodeCom[modbusrtu.c]
+TMS320C3x/4x ANSI C Compiler            Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\GLBLS.H", line 14: [E045] cannot open include file "ETC.H"
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\BUFFER.H", line 25: [F001] syntax error at or near symbol 'BOOL'
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\BUFFER.H", line 30: [F001] syntax error at or near symbol 'Put'
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\BUFFER.H", line 35: [F001] syntax error at or near symbol 'INITIALIZING'
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\GLBLS.H", line 16: [E045] cannot open include file "PERIPH.H"
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\GLBLS.H", line 17: [E045] cannot open include file "FLASH.H"
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\SERIAL.H", line 33: [F001] syntax error at or near symbol 'BOOL'
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\SERIAL.H", line 42: [F001] syntax error at or near symbol 'BOOL'
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\SERIAL.H", line 45: [F001] syntax error at or near symbol 'BOOL'
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\GLBLS.H", line 20: [E045] cannot open include file "I2C.H"
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\GLBLS.H", line 57: [F108] 'FLASH_BOOT_SIZE' undefined
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\GLBLS.H", line 57: [F100] array dimension must be constant expression
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\GLBLS.H", line 68: [F001] syntax error at or near symbol 'MEM'
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\GLBLS.H", line 69: [F001] syntax error at or near symbol 'GATE_TIMEOUT'
+   "modbusrtu.c"   ==> Modbus_Initialize
+"modbusrtu.c", line 22: [F110] structure member 'TMR_enabled' undefined
+"modbusrtu.c", line 22: [F108] 'TRUE' undefined
+   "modbusrtu.c"   ==> WDOG_P
+"modbusrtu.c", line 28: [F110] structure member 'TX_complete' undefined
+"modbusrtu.c", line 31: [F108] 'NOPS' undefined
+   "modbusrtu.c"   ==> TX_P
+"modbusrtu.c", line 36: [F108] 'FALSE' undefined
+"modbusrtu.c", line 39: [F108] 'ENABLE_TXB' undefined
+"modbusrtu.c", line 43: [F108] 'NOPS' undefined
+   "modbusrtu.c"   ==> TX_P1
+"modbusrtu.c", line 52: [F108] 'FALSE' undefined
+"modbusrtu.c", line 54: [F108] 'NOPS' undefined
+   "modbusrtu.c"   ==> TX_S
+"modbusrtu.c", line 64: [F108] 'DISABLE_TXB' undefined
+"modbusrtu.c", line 74: [F108] 'TRUE' undefined
+"modbusrtu.c", line 75: [F108] 'NOPS' undefined
+   "modbusrtu.c"   ==> MODBUS_RX_ID
+"modbusrtu.c", line 81: [F108] 'FALSE' undefined
+"modbusrtu.c", line 83: [F110] structure member 'RX_pending' undefined
+"modbusrtu.c", line 83: [F108] 'TRUE' undefined
+   "modbusrtu.c"   ==> MODBUS_RX_FUNCTION
+"modbusrtu.c", line 90: [F108] 'FALSE' undefined
+>> Too many errors, aborting
+
+cl30 BUFFER.c -gks -v33 -pl -mbfr -alsx -x1 -frF:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\OBJ -fsF:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\ASM -iF:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE -iF:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE -iF:\WKDIR\CodeCom
+[buffer.c]
+TMS320C3x/4x ANSI C Compiler            Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\GLBLS.H", line 14: [E045] cannot open include file "ETC.H"
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\BUFFER.H", line 25: [F001] syntax error at or near symbol 'BOOL'
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\BUFFER.H", line 30: [F001] syntax error at or near symbol 'Put'
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\BUFFER.H", line 30: [F098] declaration must have type or storage class
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\BUFFER.H", line 35: [F001] syntax error at or near symbol 'INITIALIZING'
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\BUFFER.H", line 35: [F098] declaration must have type or storage class
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\GLBLS.H", line 16: [E045] cannot open include file "PERIPH.H"
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\GLBLS.H", line 17: [E045] cannot open include file "FLASH.H"
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\SERIAL.H", line 33: [F001] syntax error at or near symbol 'BOOL'
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\SERIAL.H", line 42: [F001] syntax error at or near symbol 'BOOL'
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\SERIAL.H", line 45: [F001] syntax error at or near symbol 'BOOL'
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\GLBLS.H", line 20: [E045] cannot open include file "I2C.H"
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\GLBLS.H", line 57: [F108] 'FLASH_BOOT_SIZE' undefined
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\GLBLS.H", line 57: [F100] array dimension must be constant expression
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\GLBLS.H", line 68: [F001] syntax error at or near symbol 'MEM'
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\GLBLS.H", line 69: [F001] syntax error at or near symbol 'GATE_TIMEOUT'
+   "buffer.c"   ==> CRC16
+"buffer.c", line 41: [F001] syntax error at or near symbol 'Put'
+   "buffer.c"   ==> Put
+"buffer.c", line 43: [F110] structure member 'locked' undefined
+"buffer.c", line 43: [F108] 'FALSE' undefined
+"buffer.c", line 45: [F108] '_GIEP' undefined
+"buffer.c", line 49: [F108] 'GIEP' undefined
+"buffer.c", line 58: [F108] 'GIEP' undefined
+"buffer.c", line 60: [F108] 'TRUE' undefined
+   "buffer.c"   ==> Get
+"buffer.c", line 67: [F108] 'FALSE' undefined
+"buffer.c", line 69: [F108] '_GIEP' undefined
+"buffer.c", line 73: [F108] 'GIEP' undefined
+"buffer.c", line 74: [F108] 'NULL' undefined
+"buffer.c", line 83: [F108] 'GIEP' undefined
+   "buffer.c"   ==> Clear
+"buffer.c", line 92: [F108] '_GIEP' undefined
+"buffer.c", line 94: [F108] 'FALSE' undefined
+>> Too many errors, aborting
+
+cl30 FLASH.c -gks -v33 -pl -mbfr -alsx -x1 -frF:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\OBJ -fsF:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\ASM -iF:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE -iF:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE -iF:\WKDIR\CodeCom
+[flash.c]
+TMS320C3x/4x ANSI C Compiler            Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\GLBLS.H", line 14: [E045] cannot open include file "ETC.H"
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\BUFFER.H", line 25: [F001] syntax error at or near symbol 'BOOL'
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\BUFFER.H", line 30: [F001] syntax error at or near symbol 'Put'
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\BUFFER.H", line 35: [F001] syntax error at or near symbol 'INITIALIZING'
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\GLBLS.H", line 16: [E045] cannot open include file "PERIPH.H"
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\GLBLS.H", line 17: [E045] cannot open include file "FLASH.H"
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\SERIAL.H", line 33: [F001] syntax error at or near symbol 'BOOL'
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\SERIAL.H", line 42: [F001] syntax error at or near symbol 'BOOL'
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\SERIAL.H", line 45: [F001] syntax error at or near symbol 'BOOL'
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\GLBLS.H", line 20: [E045] cannot open include file "I2C.H"
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\GLBLS.H", line 57: [F108] 'FLASH_BOOT_SIZE' undefined
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\GLBLS.H", line 57: [F100] array dimension must be constant expression
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\GLBLS.H", line 68: [F001] syntax error at or near symbol 'MEM'
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\GLBLS.H", line 69: [F001] syntax error at or near symbol 'GATE_TIMEOUT'
+"flash.c", line 22: [E045] cannot open include file "FLASH.H"
+   "flash.c"   ==> FLASH_SIZE
+"flash.c", line 41: [F108] '_GIEP' undefined
+"flash.c", line 44: [F108] 'FLASH_LOC' undefined
+"flash.c", line 44: [F108] 'READ_CONFIG' undefined
+"flash.c", line 46: [F108] 'READ_ARRAY' undefined
+"flash.c", line 47: [F108] 'GIEP' undefined
+   "flash.c"   ==> FLASH_CHECK_ADDR
+"flash.c", line 132: [F108] 'FLASH_LOC' undefined
+"flash.c", line 133: [F108] 'FLASH_ERROR_BLKADDR' undefined
+"flash.c", line 138: [F108] 'FLASH_SECTOR_SIZE' undefined
+"flash.c", line 142: [F108] 'FLASH_CFGB_SIZE' undefined
+"flash.c", line 145: [F108] 'FLASH_CFGB_SIZE' undefined
+   "flash.c"   ==> FLASH_LOCK_BLK
+"flash.c", line 204: [F108] '_GIEP' undefined
+"flash.c", line 210: [F108] 'BLOCK_LOCK' undefined
+"flash.c", line 211: [F108] 'BLOCK_LOCK_UNLOCK' undefined
+"flash.c", line 216: [F108] 'BLOCK_LOCK' undefined
+"flash.c", line 217: [F108] 'BLOCK_LOCK_LOCK' undefined
+>> Too many errors, aborting
+
+asm30 boot.asm boot.obj -lx -v30 -mrb -iF:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE -iF:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE -iF:\WKDIR\CodeComposer\EEA_SA_V613b\INCLUDE
+TMS320C3x/4x COFF Assembler             Version 5.12
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+ PASS 1
+ PASS 2
+
+ No Errors,  No Warnings
+
+cl30 LCD.c -gks -v33 -pl -mbfr -alsx -x1 -frF:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\OBJ -fsF:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\ASM -iF:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE -iF:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE -iF:\WKDIR\CodeCom
+[lcd.c]
+TMS320C3x/4x ANSI C Compiler            Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\GLBLS.H", line 14: [E045] cannot open include file "ETC.H"
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\BUFFER.H", line 25: [F001] syntax error at or near symbol 'BOOL'
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\BUFFER.H", line 30: [F001] syntax error at or near symbol 'Put'
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\BUFFER.H", line 35: [F001] syntax error at or near symbol 'INITIALIZING'
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\GLBLS.H", line 16: [E045] cannot open include file "PERIPH.H"
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\GLBLS.H", line 17: [E045] cannot open include file "FLASH.H"
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\SERIAL.H", line 33: [F001] syntax error at or near symbol 'BOOL'
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\SERIAL.H", line 42: [F001] syntax error at or near symbol 'BOOL'
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\SERIAL.H", line 45: [F001] syntax error at or near symbol 'BOOL'
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\GLBLS.H", line 20: [E045] cannot open include file "I2C.H"
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\GLBLS.H", line 57: [F108] 'FLASH_BOOT_SIZE' undefined
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\GLBLS.H", line 57: [F100] array dimension must be constant expression
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\GLBLS.H", line 68: [F001] syntax error at or near symbol 'MEM'
+"F:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE\GLBLS.H", line 69: [F001] syntax error at or near symbol 'GATE_TIMEOUT'
+"lcd.c", line 12: [E045] cannot open include file "I2C.H"
+"lcd.c", line 57: [F001] syntax error at or near symbol 'I2C_TX_BYTE_5'
+   "lcd.c"   ==> I2C_TX_BYTE_5
+"lcd.c", line 61: [F001] syntax error at or near symbol 'ack'
+"lcd.c", line 69: [F108] 'SDA_TX_HI_5' undefined
+"lcd.c", line 73: [F108] 'SDA_TX_LO_5' undefined
+"lcd.c", line 76: [F108] 'SCL_HI_5' undefined
+"lcd.c", line 76: [F108] 'SCL_LO_5' undefined
+"lcd.c", line 81: [F108] 'DISABLE_SDA_TX_5' undefined
+"lcd.c", line 82: [F108] 'SDA_TX_HI_5' undefined
+"lcd.c", line 84: [F108] 'SCL_HI_5' undefined
+"lcd.c", line 86: [F108] 'SDA_RX_5' undefined
+"lcd.c", line 86: [F108] 'ack' undefined
+"lcd.c", line 86: [F108] 'FALSE' undefined
+"lcd.c", line 87: [F108] 'TRUE' undefined
+"lcd.c", line 88: [F108] 'SCL_LO_5' undefined
+"lcd.c", line 90: [F108] 'ENABLE_SDA_TX_5' undefined
+>> Too many errors, aborting
+
+Build Complete,
+  230 Errors, 1 Warnings.

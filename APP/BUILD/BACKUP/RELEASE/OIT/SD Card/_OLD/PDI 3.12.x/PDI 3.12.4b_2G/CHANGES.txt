@@ -1,0 +1,11 @@
+File: 		PDI_V312.4b_2G.ZNV
+
+Date: 		4/23/2015
+
+md5 Hash: 	01f036a89f9bd8380c23c74c629cb43e 
+
+Creator:	D.Askew
+
+==Changes from last version==
+
+# Screen-lockup problem was resolved. Can successfully enter maintanence mode during a host comm error.

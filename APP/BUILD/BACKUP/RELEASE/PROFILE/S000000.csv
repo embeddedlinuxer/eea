@@ -1,0 +1,44 @@
+*V6.12
+*Phase Dynamics Analyzer and CCM - Stream Settings
+*Variable Name,Slave,Modbus Address,Variable Type,Scale,r/w,n,Value List
++UNLOCK
++SET_TIME
+**********************************************************************
+Copyright,,45058,char,1,RW,40,"© 2018 Phase Dynamics, Inc.             "
+TAG,,45020,char,1,RW,8,"PD000000"
+Long TAG,,45003,char,1,RW,32,"PHASE DYNAMICS PD000000"
+SN - Measurement Section,,9967,long,1,RW,1,0
+SN - Oscillator,,9983,long,1,RW,1,0
+Initials,,45055,char,1,RW,4,"    "
+Version - Measurement Section,,45053,char,1,RW,2,"  "
+Analyzer Mode,,40020,int,1,RW,1,6
+Turn off RA FORCE Mode,,111,bit,1,W,1,0,
+Analyzer Information,,45079,char,1,RW,20,"UNINITIALIZED       ",,,,,,,
+**********************************************************************
+Salinity (Stream),,62577,float,1,RW,60,0.0,,
+Oil Adjust (Stream),,62697,float,1,RW,60,0.0,,
+Water Adjust (Stream),,62817,float,1,RW,60,0.0,,
+Water Alarm Low (Stream),,62937,float,1,RW,60,0.0,,
+Water Alarm High (Stream),,63057,float,1,RW,60,0.0,,
+CCM Pressure Setpoint1 (Stream),,63177,float,1,RW,60,0.0,,
+CCM Pressure Setpoint2 (Stream),,63297,float,1,RW,60,0.0,,
+CCM Level Setpoint1 (Stream),,63417,float,1,RW,60,0.0,,
+CCM Level Setpoint2 (Stream),,63537,float,1,RW,60,0.0,,
+Hsalt Enable (Stream),,63657,float,1,RW,60,0.0,,
+Gas Routine Enable (Stream),,63777,float,1,RW,60,0.0,,
+Boxcar Only Enable (Stream),,63897,float,1,RW,60,0.0,,
+Hsalt Span (Stream),,64017,float,1,RW,60,0.0,,
+Hsalt Min Flow (Stream),,64137,float,1,RW,60,0.0,,
+Min Freq Boxcar (Stream),,64257,float,1,RW,60,0.0,,
+Oil Phase Only Enable (Stream),,64617,float,1,RW,60,0.0,,
+Water Phase Only Enable (Stream),,64737,float,1,RW,60,0.0,,
+Liquid Valve P (Stream),,64857,float,1,RW,60,0.0,,
+Liquid Valve I (Stream),,64977,float,1,RW,60,0.0,,
+Liquid Valve D (Stream),,65097,float,1,RW,60,0.0,,
+Gas Valve P (Stream),,65217,float,1,RW,60,0.0,,
+Gas Valve I (Stream),,65337,float,1,RW,60,0.0,,
+Gas Valve D (Stream),,65457,float,1,RW,60,0.0,,
+**********************************************************************
+Save User Configuration,,118,bit,1,W,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+CLEAR DIAGNOSTICS,,34,bit,1,W,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
++LOCK

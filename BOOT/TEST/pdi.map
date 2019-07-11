@@ -1,0 +1,261 @@
+******************************************************************************
+TMS320C3x/4x COFF Linker                Version 5.11                   
+******************************************************************************
+>> Linked Fri Feb  3 11:10:30 2017
+
+OUTPUT FILE NAME:   <pdi.out>
+ENTRY POINT SYMBOL: "_c_int00"  address: 00800000
+
+
+MEMORY CONFIGURATION
+
+           name     origin    length      used    attributes    fill
+         --------  --------  ---------  --------  ----------  --------
+         BOOTMIRR  00800000  000001fb0  000017ce     RWIX      
+         INTRAM    00802000  000001000  000002c0     RWIX      
+         INTRAM23  00803000  000005000  00004332     RWIX      
+         BOOTSTK   00809800  000000002  00000000     RWIX      
+         INTRAM01  00809802  0000007bf  000007bf     RWIX      
+         BRTABLE   00809fc1  00000003f  0000003f     RWIX      
+         UART_EX   00c00000  000008000  00000080     RWIX      
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+init_top   0    00800000    0000001f     
+                  00800000    0000001f     boot.obj (init_top)
+
+.text      0    0080001f    00000e69     
+                  0080001f    00000081     LCD.obj (.text)
+                  008000a0    00000000     ISR.obj (.text)
+                  008000a0    00000000     FLASH.obj (.text)
+                  008000a0    00000002     boot.obj (.text)
+                  008000a2    000000d0     BUFFER.obj (.text)
+                  00800172    000007ff     MODBUSRTU.obj (.text)
+                  00800971    00000066     TIMER.obj (.text)
+                  008009d7    00000307     SERIAL.obj (.text)
+                  00800cde    0000016e     MAIN.obj (.text)
+                  00800e4c    00000028     pdi.lib : divf.obj (.text)
+                  00800e74    0000000b             : modf30.obj (.text)
+                  00800e7f    00000009             : mpyk.obj (.text)
+
+.cinit     0    00800e88    00000115     
+                  00800e88    00000012     LCD.obj (.cinit)
+                  00800e9a    0000002c     FLASH.obj (.cinit)
+                  00800ec6    00000004     BUFFER.obj (.cinit)
+                  00800eca    00000059     MODBUSRTU.obj (.cinit)
+                  00800f23    0000000d     TIMER.obj (.cinit)
+                  00800f30    0000002a     SERIAL.obj (.cinit)
+                  00800f5a    00000036     MAIN.obj (.cinit)
+                  00800f90    0000000c     ISR.obj (.cinit)
+                  00800f9c    00000001     --HOLE-- [fill = 00000000]
+
+interrupt_routines   0    00800f9d    00000119     
+                  00800f9d    00000119     ISR.obj (interrupt_routines)
+
+branch_table_copy   0    008010b6    0000003f     
+                  008010b6    0000003f     ISR.obj (branch_table_copy)
+
+.const     0    008010f5    0000005c     
+                  008010f5    00000000     LCD.obj (.const)
+                  008010f5    00000000     ISR.obj (.const)
+                  008010f5    00000000     SERIAL.obj (.const)
+                  008010f5    00000000     TIMER.obj (.const)
+                  008010f5    00000000     MODBUSRTU.obj (.const)
+                  008010f5    00000000     BUFFER.obj (.const)
+                  008010f5    00000000     FLASH.obj (.const)
+                  008010f5    0000005c     MAIN.obj (.const)
+
+external_RAM   0    00800000    00000000     UNINITIALIZED
+
+internal_RAM   0    00801151    0000067d     
+                  00801151    000002ca     LCD.obj (internal_RAM)
+                  0080141b    000003b3     FLASH.obj (internal_RAM)
+
+.bss       0    00803000    00004332     UNINITIALIZED
+                  00803000    00000010     LCD.obj (.bss)
+                  00803010    00000000     pdi.lib : mpyk.obj (.bss)
+                  00803010    00000000             : modf30.obj (.bss)
+                  00803010    00000000             : divf.obj (.bss)
+                  00803010    00000000     boot.obj (.bss)
+                  00803010    0000002b     FLASH.obj (.bss)
+                  0080303b    00000003     BUFFER.obj (.bss)
+                  0080303e    00000057     MODBUSRTU.obj (.bss)
+                  00803095    0000000b     TIMER.obj (.bss)
+                  008030a0    00002060     SERIAL.obj (.bss)
+                  00805100    00002228     MAIN.obj (.bss)
+                  00807328    0000000a     ISR.obj (.bss)
+
+.sysmem    0    00803000    00000000     UNINITIALIZED
+
+.stack     0    00809802    000007bf     UNINITIALIZED
+                  00809802    00000000     boot.obj (.stack)
+
+branch_table   0    00809fc1    0000003f     
+                  00809fc1    0000003f     ISR.obj (branch_table)
+
+varlocs    0    00802000    00000004     
+                  00802000    00000004     boot.obj (varlocs)
+
+copytoflash   0    00802004    000002bc     
+                  00802004    000002bc     MAIN.obj (copytoflash)
+
+UART_ADDR   0    00c00000    00000080     UNINITIALIZED
+                  00c00000    00000080     SERIAL.obj (UART_ADDR)
+
+.data      0    00000000    00000000     UNINITIALIZED
+                  00000000    00000000     LCD.obj (.data)
+                  00000000    00000000     pdi.lib : mpyk.obj (.data)
+                  00000000    00000000             : modf30.obj (.data)
+                  00000000    00000000             : divf.obj (.data)
+                  00000000    00000000     ISR.obj (.data)
+                  00000000    00000000     MAIN.obj (.data)
+                  00000000    00000000     SERIAL.obj (.data)
+                  00000000    00000000     TIMER.obj (.data)
+                  00000000    00000000     MODBUSRTU.obj (.data)
+                  00000000    00000000     BUFFER.obj (.data)
+                  00000000    00000000     FLASH.obj (.data)
+                  00000000    00000000     boot.obj (.data)
+
+.xref      0    00000000    00002710     COPY SECTION
+                  00000000    000003f9     LCD.obj (.xref)
+                  000003f9    0000004c     boot.obj (.xref)
+                  00000445    0000064b     FLASH.obj (.xref)
+                  00000a90    0000013e     BUFFER.obj (.xref)
+                  00000bce    00000da6     MODBUSRTU.obj (.xref)
+                  00001974    000000ee     TIMER.obj (.xref)
+                  00001a62    00000447     SERIAL.obj (.xref)
+                  00001ea9    00000698     MAIN.obj (.xref)
+                  00002541    000001cf     ISR.obj (.xref)
+
+
+GLOBAL SYMBOLS
+
+address  name                             address  name
+-------- ----                             -------- ----
+00803000 .bss                             00000000 ___data__
+00000000 .data                            00000000 .data
+0080001f .text                            00000000 edata
+0080001c C$$EXIT                          00000000 ___edata__
+00800e4c DIV_F30                          000007bf __STACK_SIZE
+00800e7f MPY_K30                          00800000 _c_int00
+0080711e _BOOTPORT                        0080001b _call_to_main
+008010b6 _BTCOPY                          0080001c C$$EXIT
+00809fc1 _BT                              0080001f _LCD_INIT
+00805102 _CLOCK                           0080001f .text
+008000a2 _CRC16                           0080001f ___text__
+0080013a _Clear                           008000a2 _CRC16
+00800b69 _Clear_RX                        008000d3 _Put
+00800834 _Copy_Block                      00800109 _Get
+0080510d _ESN                             0080013a _Clear
+00800e15 _Exit_to_App                     00800172 _Modbus_Initialize
+00801496 _FLASH_CHECK_ADDR                00800190 _WDOG_P
+00801557 _FLASH_ERASE_BLK                 008001ac _TX_P
+00801516 _FLASH_LOCK_BLK                  008001db _TX_P1
+00801786 _FLASH_LOCK_ESN_USER             00800204 _TX_S
+00801691 _FLASH_READ_ESN_MFGR             0080023e _MODBUS_RX_ID
+008016ce _FLASH_READ_ESN_USER             00800260 _MODBUS_RX_FUNCTION
+0080141b _FLASH_SIZE                      008002e1 _MODBUS_RX_n
+0080162c _FLASH_STATUS                    0080030d _MODBUS_RX_nw
+008015ac _FLASH_WRITE_BLK                 00800349 _MODBUS_RX_nDATA
+0080170b _FLASH_WRITE_ESN_USER            0080036e _MODBUS_RX_CRC
+0080711d _GATE_TIMEOUT                    008004c9 _MB_exception
+00800109 _Get                             008004e8 _Process_Read
+008072dd _HW_VER                          0080056a _Process_Write_Scratchpad
+008011ad _I2C_RX_BYTE_5                   0080061c _Process_Write
+00801151 _I2C_TX_BYTE_5                   0080074a _Process_Read_ESN
+0080303b _INITIALIZING                    00800797 _Process_Write_ESN
+00809fc1 _INT0                            008007de _Process_Set_Entry_Point
+00809fc2 _INT1                            00800834 _Copy_Block
+00809fc3 _INT2                            0080086d _Process_Restore_Factory_Defaults
+00809fc4 _INT3                            008008a9 _Process_Erase_Cfg
+00805100 _LCD_CNT                         008008dd _Process_Erase_Scratchpad
+008072f3 _LCD_DIPSW                       00800906 _Process_Store_Scratchpad
+00807116 _LCD                             00800971 _Setup_Timer
+00801368 _LCD_CHAR                        008009d7 _Setup_UART
+008012f0 _LCD_CMD                         00800b69 _Clear_RX
+00801112 _LCD_DISP0                       00800ba3 _Set_Baud
+00801127 _LCD_DISP1                       00800be2 _Process_UINT
+0080113c _LCD_DISP2                       00800ccb _f_ciel
+008072de _LCD_DISP3                       00800cde _main1
+00807149 _LCD_DISPLAY                     00800e15 _Exit_to_App
+0080001f _LCD_INIT                        00800e4c DIV_F30
+00807147 _LCD_PRESENT                     00800e74 _modf
+008013e3 _LCD_STR                         00800e7f MPY_K30
+0080711f _MB_LCD_DISPLAY                  00800e88 ___cinit__
+008004c9 _MB_exception                    00800e88 etext
+00807118 _MEM                             00800e88 ___etext__
+0080036e _MODBUS_RX_CRC                   00800e88 cinit
+00800260 _MODBUS_RX_FUNCTION              00800f9d _c_INT0
+0080023e _MODBUS_RX_ID                    00800feb _c_TINT0
+008002e1 _MODBUS_RX_n                     00801040 _c_TINT1
+00800349 _MODBUS_RX_nDATA                 008010ae _c_SPURINT
+0080030d _MODBUS_RX_nw                    008010b6 _BTCOPY
+00800172 _Modbus_Initialize               008010f5 _copyright
+008030a0 _PORT                            00801112 _LCD_DISP0
+008008a9 _Process_Erase_Cfg               00801127 _LCD_DISP1
+008008dd _Process_Erase_Scratchpad        0080113c _LCD_DISP2
+0080074a _Process_Read_ESN                00801151 _I2C_TX_BYTE_5
+008004e8 _Process_Read                    008011ad _I2C_RX_BYTE_5
+0080086d _Process_Restore_Factory_Defaults 0080120a _Write_I2C_5
+008007de _Process_Set_Entry_Point         00801279 _Read_I2C_5
+00800906 _Process_Store_Scratchpad        008012f0 _LCD_CMD
+00800be2 _Process_UINT                    00801368 _LCD_CHAR
+0080056a _Process_Write_Scratchpad        008013e3 _LCD_STR
+00800797 _Process_Write_ESN               0080141b _FLASH_SIZE
+0080061c _Process_Write                   00801496 _FLASH_CHECK_ADDR
+008000d3 _Put                             00801516 _FLASH_LOCK_BLK
+00809fc6 _RINT0                           00801557 _FLASH_ERASE_BLK
+00805103 _RTC                             008015ac _FLASH_WRITE_BLK
+00807119 _RTC_PRESENT                     0080162c _FLASH_STATUS
+00801279 _Read_I2C_5                      00801691 _FLASH_READ_ESN_MFGR
+00803010 _SRAM_SCRATCHPAD                 008016ce _FLASH_READ_ESN_USER
+00800ba3 _Set_Baud                        0080170b _FLASH_WRITE_ESN_USER
+00800971 _Setup_Timer                     00801786 _FLASH_LOCK_ESN_USER
+008009d7 _Setup_UART                      00802004 _main
+0080711a _TIME0                           00803000 .bss
+0080711b _TIME1                           00803000 ___bss__
+00807148 _TIMER1_COUNTER                  00803010 _SRAM_SCRATCHPAD
+00809fc9 _TINT0                           0080303b _INITIALIZING
+00809fca _TINT1                           008030a0 _PORT
+008001db _TX_P1                           00805100 _LCD_CNT
+008001ac _TX_P                            00805101 _vect_pt1
+00800204 _TX_S                            00805102 _CLOCK
+00c00000 _UART                            00805103 _RTC
+00800190 _WDOG_P                          0080510d _ESN
+0080120a _Write_I2C_5                     00805116 _boot_blk
+00809fc5 _XINT0                           00807116 _LCD
+000007bf __STACK_SIZE                     00807118 _MEM
+00803000 ___bss__                         00807119 _RTC_PRESENT
+00800e88 ___cinit__                       0080711a _TIME0
+00000000 ___data__                        0080711b _TIME1
+00000000 ___edata__                       0080711c _vect_p1
+00807332 ___end__                         0080711d _GATE_TIMEOUT
+00800e88 ___etext__                       0080711e _BOOTPORT
+ffffffff ___pinit__                       0080711f _MB_LCD_DISPLAY
+0080001f ___text__                        00807147 _LCD_PRESENT
+00809802 __stack                          00807148 _TIMER1_COUNTER
+00805116 _boot_blk                        00807149 _LCD_DISPLAY
+00800f9d _c_INT0                          008072dd _HW_VER
+008010ae _c_SPURINT                       008072de _LCD_DISP3
+00800feb _c_TINT0                         008072f3 _LCD_DIPSW
+00801040 _c_TINT1                         00807332 ___end__
+00800000 _c_int00                         00807332 end
+0080001b _call_to_main                    00809802 __stack
+008010f5 _copyright                       00809fc1 _INT0
+00800ccb _f_ciel                          00809fc1 _BT
+00800cde _main1                           00809fc2 _INT1
+00802004 _main                            00809fc3 _INT2
+00800e74 _modf                            00809fc4 _INT3
+0080711c _vect_p1                         00809fc5 _XINT0
+00805101 _vect_pt1                        00809fc6 _RINT0
+00800e88 cinit                            00809fc9 _TINT0
+00000000 edata                            00809fca _TINT1
+00807332 end                              00c00000 _UART
+00800e88 etext                            ffffffff ___pinit__
+ffffffff pinit                            ffffffff pinit
+
+[121 symbols]

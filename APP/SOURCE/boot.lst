@@ -1,0 +1,200 @@
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Jul 11 12:18:51 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30 boot.asm boot.obj -lx -v30 -mrb -iG:\workspace\win\eea\APP\SOURCE -iG:\workspace\win\eea\APP\SOURCE\INCLUDE -iG:\workspace\win\eea\INCLUDE -iG:\workspace\win\eea\APP\SOURCE\ASM 
+
+boot.asm                                                             PAGE    1
+
+        1                           .length 85
+        2                           .width  132
+        3                   *****************************************************************************
+        4                   * Phase Dynamics, Inc.                                                                                 
+        5                   * 1251 Columbia Dr.                                                             *
+        6                   * Richardson, TX 75081                                                          *
+        7                   * 972-680-1550    972-680-3262 fax                                              *
+        8                   *                                                                                                      
+        9                   * (C)2011 Phase Dynamics, Inc.                                                                         
+       10                   * This code is not to be used in any capacity without explicit consent by       *
+       11                   * Phase Dynamics, Inc.  Violators will be prosecuted to the fullest extent      *
+       12                   * of the law.  Please contact Phase Dynamics, Inc. if you wish to use this      *
+       13                   * code.  Thank you for your cooperation.                                        *
+       14                   *                                                                                                      
+       15                   * File Name: boot.asm                                                                                  
+       16                   *                                                                                                      
+       17                   * File Description:     This is the first file that gets executed.  It sets up  *
+       18                   * the stack, initializes the Hardware (by extension the variables) and then *
+       19                   * calls main.  Really it just sits there and waits for TINT0 to run the next*
+       20                   * timed event.                                                                                         
+       21                   *                                                                                                      
+       22                   *****************************************************************************
+       23          0000000b FP          .set        AR3             ;frame pointer
+       24                   
+       25                               .global cinit
+       26                               .global .bss
+       27                               .global _cmdargs
+       28                               .global _exit_APP
+       29                               .global _init_io
+       30                               .global _main
+       31                               .global _c_int00
+       32                                       .global __stack
+       33                               .global _Initialize_Hardware
+       34                               .global _call_to_main
+       35                               .global C$$DONE
+       36                   ;
+       37                   ; Allocate space for the system stack.
+       38                   ; Initialize the first words in .text to point to the stack
+       39                   ; and initialization tables.
+       40                   ;
+       41 00000000          __stack     .usect  ".stack",0
+       42                   
+       43 00000000                      .sect  "initialization_TOP"
+       44                   ***************************************************************
+       45                   * _C_INT00 - C entry point function
+       46                   ***************************************************************
+       47 00000000          _c_int00:
+       48                   
+       49                   ;
+       50                   ; Disable all interrupts
+       51                   ;
+       52 00000000 13fb0001         RPTS    1
+       53 00000001 037507d0         ANDN    2000, ST
+       54 00000002 0c800000         NOP
+       55 00000003 0c800000         NOP
+       56 00000004 0c800000         NOP
+       57                   
+       58 00000005 10800000         MAXSPEED
+       59                   
+       60                   ;
+       61                   ; Set up the initial stack pointer
+       62                   ;
+       63 00000006 08700000+        LDP     stack_addr        ;get page of stored address
+       64 00000007 08340032+        LDI     @stack_addr,SP    ;load the address into SP
+       65 00000008 080b0014         LDI     SP,FP             ;and into FP too
+       66                   
+       67 00000009 08700000+        LDP     init_addr         ;get page of stored address
+       68 0000000a 08280033+        LDI     @init_addr,AR0    ;get address of init tables
+       69 0000000b 04e8ffff         CMPI    -1,AR0            ;if RAM model, skip init
+       70 0000000c 6a05001c         BEQ     done
+       71                   
+       72                   ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+       73                   ; Mirror the "fast code" spaces
+       74                   ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+       75 0000000d 08600000+        LDP     _c_int00,R0       ;get page of entry routine
+       76 0000000e 09e0fffa                 LSH             -6,R0
+       77 0000000f 04e00001                 CMPI    1,R0                      ;check if address is between 0x400000 & 0x600000
+       78 00000010 6a060008                 BNE             auto_init
+       79                   
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Jul 11 12:18:51 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30 boot.asm boot.obj -lx -v30 -mrb -iG:\workspace\win\eea\APP\SOURCE -iG:\workspace\win\eea\APP\SOURCE\INCLUDE -iG:\workspace\win\eea\INCLUDE -iG:\workspace\win\eea\APP\SOURCE\ASM 
+
+boot.asm                                                             PAGE    2
+
+       80 00000011 08700000+        LDP     s_fast_code
+       81 00000012 08280034+        LDI     @s_fast_code,AR0
+       82 00000013 08700000+        LDP     d_fast_code
+       83 00000014 08290035+        LDI     @d_fast_code,AR1
+       84 00000015 08617fff         LDI     7FFFh,R1          ;length-1
+       85 00000016 08402001         LDI     *AR0++,R0         ;get first word
+       86 00000017 139b0001         RPTS    R1                ;block copy
+       87 00000018 da002120         LDI     *AR0++,R0
+       88                       ||  STI     R0,*AR1++
+       89                   ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+       90                   
+       91 00000019          auto_init:
+       92 00000019 08700000+        LDP     init_addr         ;get page of stored address
+       93 0000001a 08280033+        LDI     @init_addr,AR0    ;get address of init tables
+       94 0000001b 04e8ffff         CMPI    -1,AR0            ;if RAM model, skip init
+       95 0000001c 6a05000c         BEQ     done
+       96                   
+       97 0000001d 08412001         LDI     *AR0++,R1         ;get first count
+       98 0000001e 6a250008         BZD     done              ;if 0, nothing to do
+       99 0000001f 08492001         LDI     *AR0++,AR1        ;get dest address
+      100 00000020 08402001         LDI     *AR0++,R0         ;get first word
+      101 00000021 18610001         SUBI    1,R1              ;count - 1
+      102 00000022          do_init:
+      103 00000022 139b0001         RPTS    R1                ;block copy
+      104 00000023 da002120         STI     R0,*AR1++
+      105                       ||  LDI     *AR0++,R0
+      106 00000024 08010000         LDI     R0,R1             ;move next count into R1
+      107 00000025 6a26fffa         BNZD    do_init           ;if there is more, repeat
+      108 00000026 08492001         LDI     *AR0++,AR1        ;get next dest address
+      109 00000027 08402001         LDI     *AR0++,R0         ;get next first word
+      110 00000028 18610001         SUBI    1,R1              ;count - 1
+      111                   
+      112 00000029          done:
+      113                   
+      114 00000029          _init_hw:
+      115 00000029 086a0000         LDI     0,AR2             ;make sure argc=0 with register 
+      116 0000002a 0f2a0000         PUSH    AR2               ;and stack parameter passing
+      117 0000002b 62000000!        CALL    _Initialize_Hardware
+      118                   
+      119 0000002c          _call_to_main:
+      120 0000002c 086a0000         LDI     0,AR2             ;make sure argc=0 with register 
+      121 0000002d 0f2a0000         PUSH    AR2               ;and stack parameter passing
+      122 0000002e 62000000!        CALL    _main
+      123                   
+      124                   
+      125 0000002f 0c800000 C$$DONE:nop
+      126 00000030 6000002f+                BR              C$$DONE
+      127                   
+      128 00000031 78000000         RETI
+      129                   
+      130 00000032 00000000-stack_addr  .word  __stack        ;address of stack
+      131 00000033 00000000!init_addr   .word  cinit          ;address of init tables
+      132                   
+      133 00000034 00428000 s_fast_code     .word  00428000h          ;address of FLASH copy of code
+      134 00000035 00800000 d_fast_code     .word  00800000h          ;address of SRAM  copy of code
+      135                           .end
+
+ No Errors,  No Warnings
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Jul 11 12:18:51 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30 boot.asm boot.obj -lx -v30 -mrb -iG:\workspace\win\eea\APP\SOURCE -iG:\workspace\win\eea\APP\SOURCE\INCLUDE -iG:\workspace\win\eea\INCLUDE -iG:\workspace\win\eea\APP\SOURCE\ASM 
+
+boot.asm                                                             PAGE    3
+
+LABEL                            VALUE       DEFN    REF
+
+.BIGMODEL                        00000001       0 
+.C30                             00000001       0 
+.C30INTERRUPT                    00000000       0 
+.C31                             00000000       0 
+.C32                             00000000       0 
+.C33                             00000000       0 
+.C3X                             00000001       0 
+.C3x                             00000001       0 
+.C40                             00000000       0 
+.C44                             00000000       0 
+.C4X                             00000000       0 
+.C4x                             00000000       0 
+.REGPARM                         00000001       0 
+.TMS320C30                       00000001       0 
+.TMS320C31                       00000000       0 
+.TMS320C32                       00000000       0 
+.TMS320C40                       00000000       0 
+.TMS320C44                       00000000       0 
+.TMS320xx                        0000001e       0 
+.bss                             REF                  26 
+.tms320C30                       00000001       0 
+.tms320C31                       00000000       0 
+.tms320C32                       00000000       0 
+.tms320C40                       00000000       0 
+.tms320C44                       00000000       0 
+.tms320xx                        0000001e       0 
+.tmx320C40                       00000000       0 
+C$$DONE                          0000002f+    125     35    126 
+FP                               0000000b      23     65 
+_Initialize_Hardware             REF                  33    117 
+__stack                          00000000-     41     32    130 
+_c_int00                         00000000+     47     31     75 
+_call_to_main                    0000002c+    119     34 
+_cmdargs                         REF                  27 
+_exit_APP                        REF                  28 
+_init_hw                         00000029+    114 
+_init_io                         REF                  29 
+_main                            REF                  30    122 
+auto_init                        00000019+     91     78 
+cinit                            REF                  25    131 
+d_fast_code                      00000035+    134     82     83 
+do_init                          00000022+    102    107 
+done                             00000029+    112     70     95     98 
+init_addr                        00000033+    131     67     68     92     93 
+s_fast_code                      00000034+    133     80     81 
+stack_addr                       00000032+    130     63     64 

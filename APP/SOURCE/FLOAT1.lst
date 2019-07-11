@@ -1,0 +1,200 @@
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Jul 11 12:18:47 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30 FLOAT1.asm FLOAT1.obj -lx -v30 -mrb -iG:\workspace\win\eea\APP\SOURCE -iG:\workspace\win\eea\APP\SOURCE\INCLUDE -iG:\workspace\win\eea\INCLUDE -iG:\workspace\win\eea\APP\SOURCE\ASM 
+
+FLOAT1.asm                                                           PAGE    1
+
+        1                   *****************************************************************************
+        2                   * Phase Dynamics, Inc.                                                                                 
+        3                   * 1251 Columbia Dr.                                                             *
+        4                   * Richardson, TX 75081                                                          *
+        5                   * 972-680-1550    972-680-3262 fax                                              *
+        6                   *                                                                                                      
+        7                   * (C)2011 Phase Dynamics, Inc.                                                                         
+        8                   * This code is not to be used in any capacity without explicit consent by       *
+        9                   * Phase Dynamics, Inc.  Violators will be prosecuted to the fullest extent      *
+       10                   * of the law.  Please contact Phase Dynamics, Inc. if you wish to use this      *
+       11                   * code.  Thank you for your cooperation.                                        *
+       12                   *                                                                                                      
+       13                   * File Name: FLOAT1.asm                                                                                
+       14                   *                                                                                                      
+       15                   * File Description:     Converts floating point numbers from DSP to IEEE.               *
+       16                   *                                                                                                      
+       17                   *****************************************************************************
+       18                   
+       19 00000000                                  .text
+       20                   
+       21                                           .global         _FLOAT_TABLE
+       22 00000000          _FLOAT_TABLE:
+       23 00000000 ff800000                         .word   0FF800000h
+       24 00000001 ff000000                         .word   0FF000000h
+       25 00000002 7f000000                         .word   07F000000h
+       26 00000003 80000000                         .word   080000000h
+       27 00000004 81000000                         .word   081000000h
+       28 00000005 7f800000                         .word   07F800000h
+       29 00000006 00400000                         .word   000400000h
+       30 00000007 007fffff                         .word   0007FFFFFh
+       31 00000008 7f7fffff                         .word   07F7FFFFFh
+       32                   
+       33 00000009 00000000'_ftable         .word   _FLOAT_TABLE
+       34                   
+       35                                           .global         _FMIEEE
+       36 0000000a 0f300000 _FMIEEE:        PUSH    DP
+       37 0000000b 0f290000                         PUSH    AR1
+       38 0000000c 0f210000                         PUSH    R1
+       39 0000000d 0fa10000                         PUSHF   R1
+       40 0000000e 0800000a                         LDI             AR2,R0
+       41 0000000f 08700000'                        LDP             _ftable
+       42 00000010 08290009'                        LDI             @_ftable,AR1
+       43 00000011 62000024'                        CALL    _FMIEEE1
+       44 00000012 0ea10000                         POPF    R1
+       45 00000013 0e210000                         POP             R1
+       46 00000014 0e290000                         POP             AR1
+       47 00000015 0e300000                         POP             DP
+       48 00000016 78800000                         RETS
+       49                   
+       50                                           .global         _TOIEEE
+       51 00000017 0f300000 _TOIEEE:        PUSH    DP
+       52 00000018 0f290000                         PUSH    AR1
+       53 00000019 0f210000                         PUSH    R1
+       54 0000001a 0fa10000                         PUSHF   R1
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Jul 11 12:18:47 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30 FLOAT1.asm FLOAT1.obj -lx -v30 -mrb -iG:\workspace\win\eea\APP\SOURCE -iG:\workspace\win\eea\APP\SOURCE\INCLUDE -iG:\workspace\win\eea\INCLUDE -iG:\workspace\win\eea\APP\SOURCE\ASM 
+
+FLOAT1.asm                                                           PAGE    2
+
+       55 0000001b 40000002                         LDFU    R2,R0
+       56 0000001c 08700000'                        LDP             _ftable
+       57 0000001d 08290009'                        LDI             @_ftable,AR1
+       58 0000001e 62000046'                        CALL    _TOIEEE1
+       59 0000001f 0ea10000                         POPF    R1
+       60 00000020 0e210000                         POP             R1
+       61 00000021 0e290000                         POP             AR1
+       62 00000022 0e300000                         POP             DP
+       63 00000023 78800000                         RETS
+       64                   
+       65                   ***************************************************
+       66                   * IEEE to TMS320C3x conversion
+       67                   * IN:  R0(31..0) = IEEE number
+       68                   * OUT: R0(39..8) = converted C3x float
+       69                   ***************************************************
+       70 00000024 08010000 _FMIEEE1:       LDI             R0,R1
+       71 00000025 02c10105                         AND             *+AR1(5),R1
+       72 00000026 6a050008                         BZ              UNNORM                  ; IF E = 0, NUMBER IS EITHER 0 OR DENOR
+       73 00000027 1ac10105                         XOR             *+AR1(5),R1
+       74 00000028 6a060013                         BNZ             NORMAL                  ; IF E < 255, USE REGULAR ROUTINE
+       75                   * HANDLE NaN AND INFINITY
+       76 00000029 1a400107                         TSTB    *+AR1(7),R0
+       77 0000002a 78860000                         RETSNZ                                  ; RETURN IF NaN
+       78 0000002b 08000000                         LDI             R0,R0
+       79 0000002c 44c00108                         LDFGT   *+AR1(8),R0             ; IF +INF, MOST POSITIVE NUMBER
+       80 0000002d 43c00105                         LDFN    *+AR1(5),R0             ; IF -INF, MOST NEGATIVE NUMBER
+       81 0000002e 78800000                         RETS
+       82                   * HANDLE 0s AND UNNORMALIZED NUMBERS
+       83 0000002f 1a400106 UNNORM:         TSTB    *+AR1(6),R0             ; IS MSB OF F = 1?
+       84 00000030 42c00103                         LDFZ    *+AR1(3),R0             ; NO - FORCE NUMBER TO 0 AND RETURN
+       85 00000031 78850000                         RETSZ
+       86 00000032 1ac00106                         XOR             *+AR1(6),R0             ; IF MSB OF F = 1, MAKE IT 0
+       87 00000033 6a270003                         BND             NEG1
+       88 00000034 09e00001                         LSH             1,R0                    ; ELIMINATE SIGN BIT AND LINE UP MANTIS
+       89 00000035 18400102                         SUBI    *+AR1(2),R0             ; MAKE E = +/-127
+       90 00000036 0f200000                         PUSH    R0
+       91 00000037 0ea00000                         POPF    R0                              ; PUT NUMBER IN FLOATING POINT FORMAT
+       92 00000038 78800000                         RETS
+       93 00000039 0ea00000 NEG1:           POPF    R0
+       94 0000003a 0b800000                         NEGF    R0,R0                   ; IF NEGATIVE, NEGATE R0
+       95 0000003b 78800000                         RETS
+       96                   * HANDLE REGULAR CASES
+       97 0000003c 21a1c100 NORMAL:         AND3    R0,*AR1,R1              ; REPLACE FRACTION WITH 0
+       98 0000003d 6a270003                         BND             NEG                             ; TEST SIGN
+       99 0000003e 02010000                         ADDI    R0,R1                   ; SHIFT SIGN AND EXPONENT INSERTING 0
+      100 0000003f 18410102                         SUBI    *+AR1(2),R1             ; UNBIAS EXPONENT
+      101 00000040 0f210000                         PUSH    R1
+      102 00000041 0ea00000                         POPF    R0                              ; LOAD AS FLOAT PT NUMBER
+      103 00000042 78800000                         RETS
+      104 00000043 0ea00000 NEG:            POPF    R0                              ; LOAD AS FLOAT PT NUMBER
+      105 00000044 0b800000                         NEGF    R0,R0                   ; NEGATE IF ORIGINAL SIGN NEGATIVE
+      106 00000045 78800000                         RETS
+      107                   
+      108                   ***************************************************
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Jul 11 12:18:47 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30 FLOAT1.asm FLOAT1.obj -lx -v30 -mrb -iG:\workspace\win\eea\APP\SOURCE -iG:\workspace\win\eea\APP\SOURCE\INCLUDE -iG:\workspace\win\eea\INCLUDE -iG:\workspace\win\eea\APP\SOURCE\ASM 
+
+FLOAT1.asm                                                           PAGE    3
+
+      109                   * TMS320C3x to IEEE conversion
+      110                   * IN:  R0(39..8) = C3x float
+      111                   * OUT: R0(31..0) = converted IEEE number
+      112                   ***************************************************
+      113 00000046 07000000 _TOIEEE1:       LDF             R0,R0                   ; DETERMINE THE SIGN OF THE NUMBER
+      114 00000047 42c00104                         LDFZ    *+AR1(4),R0             ; IF 0, LOAD APPROPRIATE NUMBER
+      115 00000048 6a27000f                         BND             NEG2                    ; DELAYED BRANCH TO NEG IF NEGATIVE
+      116 00000049 00000000                         ABSF    R0                              ; ABSOLUTE VALUE
+      117 0000004a 09e00001                         LSH             1,R0                    ; ELIMINATE SIGN BIT
+      118 0000004b 0fa00000                         PUSHF   R0
+      119 0000004c 0e200000                         POP             R0                              ; PLACE IN LOWER 32 BITS OF R0
+      120 0000004d 02400102                         ADDI    *+AR1(2),R0             ; ADD EXPONENT BIAS (127)
+      121 0000004e 09e0ffff                         LSH             -1,R0                   ; ADD THE POSITIVE SIGN
+      122 0000004f 1a400105 CONT:           TSTB    *+AR1(5),R0
+      123 00000050 78860000                         RETSNZ                                  ; IF E > 0, RETURN
+      124 00000051 1a400107                         TSTB    *+AR1(7),R0
+      125 00000052 78850000                         RETSZ                                   ; IF e = 0 & F = 0, RETURN
+      126 00000053 0f200000                         PUSH    R0
+      127 00000054 0ea00000                         POPF    R0
+      128 00000055 09e0ffff                         LSH             -1,R0                   ; SHIFT F RIGHT BY ONE BIT
+      129 00000056 0fa00000                         PUSHF   R0
+      130 00000057 0e200000                         POP             R0
+      131 00000058 02400106                         ADDI    *+AR1(6),R0             ; ADD 1 TO THE MSB OF F
+      132 00000059 78800000                         RETS
+      133 0000005a 0e200000 NEG2:           POP             R0                              ; PLACE NUMBER IN LOWER 32 BITS OF R0
+      134 0000005b 6100004f'                        BRD             CONT
+      135 0000005c 02400102                         ADDI    *+AR1(2),R0             ; ADD EXPONENT BIAS (127)
+      136 0000005d 09e0ffff                         LSH             -1,R0                   ; MAKE SPACE FOR THE SIGN
+      137 0000005e 02400103                         ADDI    *+AR1(3),R0             ; ADD THE NEGATIVE SIGN
+      138 0000005f 78800000                         RETS
+
+ No Errors,  No Warnings
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Jul 11 12:18:47 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30 FLOAT1.asm FLOAT1.obj -lx -v30 -mrb -iG:\workspace\win\eea\APP\SOURCE -iG:\workspace\win\eea\APP\SOURCE\INCLUDE -iG:\workspace\win\eea\INCLUDE -iG:\workspace\win\eea\APP\SOURCE\ASM 
+
+FLOAT1.asm                                                           PAGE    4
+
+LABEL                            VALUE       DEFN    REF
+
+.BIGMODEL                        00000001       0 
+.C30                             00000001       0 
+.C30INTERRUPT                    00000000       0 
+.C31                             00000000       0 
+.C32                             00000000       0 
+.C33                             00000000       0 
+.C3X                             00000001       0 
+.C3x                             00000001       0 
+.C40                             00000000       0 
+.C44                             00000000       0 
+.C4X                             00000000       0 
+.C4x                             00000000       0 
+.REGPARM                         00000001       0 
+.TMS320C30                       00000001       0 
+.TMS320C31                       00000000       0 
+.TMS320C32                       00000000       0 
+.TMS320C40                       00000000       0 
+.TMS320C44                       00000000       0 
+.TMS320xx                        0000001e       0 
+.tms320C30                       00000001       0 
+.tms320C31                       00000000       0 
+.tms320C32                       00000000       0 
+.tms320C40                       00000000       0 
+.tms320C44                       00000000       0 
+.tms320xx                        0000001e       0 
+.tmx320C40                       00000000       0 
+CONT                             0000004f'    122    134 
+NEG                              00000043'    104     98 
+NEG1                             00000039'     93     87 
+NEG2                             0000005a'    133    115 
+NORMAL                           0000003c'     97     74 
+UNNORM                           0000002f'     83     72 
+_FLOAT_TABLE                     00000000'     22     21     33 
+_FMIEEE                          0000000a'     36     35 
+_FMIEEE1                         00000024'     70     43 
+_TOIEEE                          00000017'     51     50 
+_TOIEEE1                         00000046'    113     58 
+_ftable                          00000009'     33     41     42     56     57 

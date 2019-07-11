@@ -1,0 +1,33 @@
+StartUp()
+{
+	GEL_Halt();
+
+	GEL_Reset();
+
+	/* set 5 wait states */
+ 	*0x00808064 = 0x00A8;
+
+	/* disable wdog */
+ 	*0x00900004 &= (0xFF ^ 0x08);
+
+	*0x00900013 &= (0xFF ^ 0xC0);	/* turn on LED1 &  LED2 */
+
+ 	GEL_MapOn();
+ 	GEL_MapAdd(0x800000,0,0x400000,1,1);
+ 	GEL_MapAdd(0xC00000,0,0x100000,1,1);
+ 	GEL_MapAdd(0x400000,0,0x400000,1,0);
+ 	GEL_MapAdd(0x001000,0,0x3FF000,1,0);
+ 	GEL_MapAdd(0x000000,0,0x001000,1,0);
+
+	/* load program */
+	GEL_Load("U:\\MODULE\\PROG_FILES\\Latest_Release\\FLASH\\PDI_BOOT.OUT");
+	GEL_Go(C$$EXIT);
+	GEL_Halt();
+
+	PC = c_int00;
+
+	GEL_RunF();
+
+	GEL_Exit();
+	/* note: cannot seem to be able to use GEL_Exit() and have it Run,RunF successfully */
+}

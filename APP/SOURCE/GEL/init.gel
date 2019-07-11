@@ -1,0 +1,239 @@
+StartUp()
+{
+	GEL_Halt();
+
+	GEL_Reset();
+
+	/* set 5 wait states */
+ 	*0x00808064 = 0x00A8;
+
+	/* disable wdog */
+ 	*0x00900004 &= (0xFF ^ 0x08);
+
+ 	GEL_MapOn();
+ 	GEL_MapAdd(0x800000,0,0x400000,1,1);
+ 	GEL_MapAdd(0xC00000,0,0x100000,1,1);
+ 	GEL_MapAdd(0x400000,0,0x400000,1,0);
+ 	GEL_MapAdd(0x001000,0,0x3FF000,1,0);
+ 	GEL_MapAdd(0x000000,0,0x001000,1,0);
+
+	*0x00900013 &= (0xFF ^ 0xC0);	/* turn on LED1 &  LED2 */
+
+	GEL_Restart();
+}
+
+menuitem "Code Utilities";
+
+hotmenu RESET()
+{
+	GEL_Halt();
+
+	GEL_Reset();
+
+	if ((*0x00900000 & 0x80) == 0x00)
+	{
+		/* completely reset target */
+	 	*0x00900004 = 0x40;
+	}
+
+	/* set 5 wait states */
+ 	*0x00808064 = 0x00A8;
+
+	/* disable wdog */
+ 	*0x00900004 &= (0xFF ^ 0x08);
+
+	*0x00900013 &= (0xFF ^ 0xC0);	/* turn on LED1 &  LED2 */
+
+	GEL_Restart();
+}
+
+hotmenu Load_Bootloader_into_ROM()
+{
+	GEL_Halt();
+
+	GEL_Reset();
+
+	GEL_BreakPtReset();
+
+	/* set 5 wait states */
+ 	*0x00808064 = 0x00A8;
+
+	/* disable wdog */
+ 	*0x00900004 &= (0xFF ^ 0x08);
+
+	/* load program */
+	GEL_Load("U:\\MODULE\\PROG_FILES\\Current_Development\\FLASH\\PDI_BOOT.OUT");
+
+	GEL_Go(C$$EXIT);
+
+	GEL_Halt();
+}
+
+hotmenu Load_Application_into_ROM()
+{
+	/* loads ROM application and symbol table */
+
+	GEL_Halt();
+
+	GEL_Reset();
+
+	GEL_BreakPtReset();
+
+	/* set 5 wait states */
+ 	*0x00808064 = 0x00A8;
+
+	/* disable wdog */
+ 	*0x00900004 &= (0xFF ^ 0x08);
+
+	GEL_System("D:\\WKDIR\\CodeComposer\\EEA_SA\\APP\\hex.bat");
+
+	/* load bootloader program */
+	GEL_Load("U:\\MODULE\\PROG_FILES\\Current_Development\\FLASH\\PDI_BOOT.OUT");
+
+	GEL_SymbolLoad("D:\\WKDIR\\CodeComposer\\EEA_SA\\APP\\PDI.OUT");
+
+	PC = 0x00800000;		/* start addr of bootloader */
+
+	AR0 = *0x00802000;
+	AR1 = *0x00802001;
+	*AR1 = AR0|0x62000000;	/* change call_to_main to call_to_main1() */
+
+	AR2 = *0x00802002;
+	AR2 += 8;
+	AR3 = *0x00802003;
+	AR3 += 8;
+	*AR2 = *AR3;			/* disable timeout interrupt */
+
+	GEL_Run();
+
+	GEL_System("D:\\WKDIR\\CVI\\PDICFG_EEA\\EEASA.exe PDI1343 1 1");
+}
+
+hotmenu Load_P00TEST_Profile()
+{
+	GEL_System("C:\\PDI\\PDI_PROF\\pdi_prof.exe 0 D:\\WKDIR\\CodeComposer\\EEA_SA\\P00TEST.csv 1 9600 6 0");
+}
+
+hotmenu Save_P00TEST_Profile()
+{
+	GEL_System("C:\\PDI\\PDI_PROF\\pdi_prof.exe 1 D:\\WKDIR\\CodeComposer\\EEA_SA\\P00TEST.csv 1 9600 6 0");
+}
+
+hotmenu Load_Simulation_Data()
+{
+	GEL_System("C:\\PDI\\PDI_PROF\\pdi_prof.exe 0 D:\\WKDIR\\CodeComposer\\EEA_SA\\SIM.csv 1 9600 6 0");
+}
+
+hotmenu Edit_P00TEST_Profile()
+{
+	GEL_System("notepad.exe D:\\WKDIR\\CodeComposer\\EEA_SA\\P00TEST.csv");
+}
+
+hotmenu Edit_Simulation_Data()
+{
+	GEL_System("notepad.exe D:\\WKDIR\\CodeComposer\\EEA_SA\\SIM.csv");
+}
+
+menuitem "Analog Output";
+
+dialog AO1_Input(val "Current Output AO1")
+{
+	AO[0].MANUAL = 1;
+	AO[0].CURRENT.val1 = val;
+}
+
+dialog AO2_Input(val "Current Output AO2")
+{
+	AO[1].MANUAL = 1;
+	AO[1].CURRENT.val1 = val;
+}
+
+dialog AO3_Input(val "Current Output AO3")
+{
+	AO[2].MANUAL = 1;
+	AO[2].CURRENT.val1 = val;
+}
+
+dialog AO4_Input(val "Current Output AO4")
+{
+	AO[3].MANUAL = 1;
+	AO[3].CURRENT.val1 = val;
+}
+
+dialog AO5_Input(val "Current Output AO5")
+{
+	AO[4].MANUAL = 1;
+	AO[4].CURRENT.val1 = val;
+}
+
+dialog AO6_Input(val "Current Output AO6")
+{
+	AO[5].MANUAL = 1;
+	AO[5].CURRENT.val1 = val;
+}
+
+dialog AO7_Input(val "Current Output AO7")
+{
+	AO[6].MANUAL = 1;
+	AO[6].CURRENT.val1 = val;
+}
+
+dialog AO8_Input(val "Current Output AO8")
+{
+	AO[7].MANUAL = 1;
+	AO[7].CURRENT.val1 = val;
+}
+
+slider AO1(4.0, 20.0, 0.1, 1.0, val)
+{
+	AO[0].MANUAL = 1;
+	AO[0].CURRENT.val1 = val;
+}
+
+slider AO2(4.0, 20.0, 0.1, 1.0, val)
+{
+	AO[1].MANUAL = 1;
+	AO[1].CURRENT.val1 = val;
+}
+
+slider AO3(4.0, 20.0, 0.1, 1.0, val)
+{
+	AO[2].MANUAL = 1;
+	AO[2].CURRENT.val1 = val;
+}
+
+slider AO4(4.0, 20.0, 0.1, 1.0, val)
+{
+	AO[3].MANUAL = 1;
+	AO[3].CURRENT.val1 = val;
+}
+
+slider AO5(4.0, 20.0, 0.1, 1.0, val)
+{
+	AO[4].MANUAL = 1;
+	AO[4].CURRENT.val1 = val;
+}
+
+slider AO6(4.0, 20.0, 0.1, 1.0, val)
+{
+	AO[5].MANUAL = 1;
+	AO[5].CURRENT.val1 = val;
+}
+
+slider AO7(4.0, 20.0, 0.1, 1.0, val)
+{
+	AO[6].MANUAL = 1;
+	AO[6].CURRENT.val1 = val;
+}
+
+slider AO8(4.0, 20.0, 0.1, 1.0, val)
+{
+	AO[7].MANUAL = 1;
+	AO[7].CURRENT.val1 = val;
+}
+
+slider AO9(4.0, 20.0, 0.1, 1.0, val)
+{
+	AO[8].MANUAL = 1;
+	AO[8].CURRENT.val1 = val;
+}

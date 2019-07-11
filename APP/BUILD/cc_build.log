@@ -1,0 +1,2094 @@
+cl30 ADC.c -gks -v33 -pl -mbfr -alsx -x1 -frG:\workspace\win\eea\APP\OBJ -fsG:\workspace\win\eea\APP\SOURCE\ASM -iG:\workspace\win\eea\APP\SOURCE\INCLUDE -iG:\workspace\win\eea\INCLUDE
+[adc.c]
+TMS320C3x/4x ANSI C Compiler            Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+   "adc.c"   ==> Setup_ADC
+   "adc.c"   ==> Read_ADC_test
+   "adc.c"   ==> Read_ADC_FIFO
+   "adc.c"   ==> Convert_ADC
+   "adc.c"   ==> Write_ADC_DAC
+   "adc.c"   ==> Read_ADC_DAC
+   "adc.c"   ==> Write_TMP75
+   "adc.c"   ==> Read_TMP75
+   "adc.c"   ==> Read_ADCn
+   "adc.c"   ==> ADC_UPDATE
+TMS320C3x/4x ANSI C Code Generator      Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+   "adc.c"   ==> Setup_ADC
+   "adc.c"   ==> Read_ADC_test
+   "adc.c"   ==> Read_ADC_FIFO
+   "adc.c"   ==> Convert_ADC
+   "adc.c"   ==> Write_ADC_DAC
+   "adc.c"   ==> Read_ADC_DAC
+   "adc.c"   ==> Write_TMP75
+   "adc.c"   ==> Read_TMP75
+   "adc.c"   ==> Read_ADCn
+   "adc.c"   ==> ADC_UPDATE
+C Source Interlister                    Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+   ""  ==> Setup_ADC
+   "adc.c"  ==> Read_ADC_test
+   "adc.c"  ==> Read_ADC_FIFO
+   "adc.c"  ==> Convert_ADC
+   "adc.c"  ==> Write_ADC_DAC
+   "adc.c"  ==> Read_ADC_DAC
+   "adc.c"  ==> Write_TMP75
+   "adc.c"  ==> Read_TMP75
+   "adc.c"  ==> Read_ADCn
+   "adc.c"  ==> ADC_UPDATE
+TMS320C3x/4x COFF Assembler             Version 5.12
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+ PASS 1
+ PASS 2
+
+ No Errors,  No Warnings
+
+cl30 DAC.c -gks -v33 -pl -mbfr -alsx -x1 -frG:\workspace\win\eea\APP\OBJ -fsG:\workspace\win\eea\APP\SOURCE\ASM -iG:\workspace\win\eea\APP\SOURCE\INCLUDE -iG:\workspace\win\eea\INCLUDE
+[dac.c]
+TMS320C3x/4x ANSI C Compiler            Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+   "dac.c"   ==> Write_DAC
+   "dac.c"   ==> MB_RX_DAC_Aout
+   "dac.c"   ==> MB_RX_DAC_Aout6_7
+   "dac.c"   ==> MB_RX_DAC_Aout8_9
+   "dac.c"   ==> Setup_DAC
+   "dac.c"   ==> Set_Current
+   "dac.c"   ==> PID_Init
+   "dac.c"   ==> PID
+TMS320C3x/4x ANSI C Code Generator      Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+   "dac.c"   ==> Write_DAC
+   "dac.c"   ==> MB_RX_DAC_Aout
+   "dac.c"   ==> MB_RX_DAC_Aout6_7
+   "dac.c"   ==> MB_RX_DAC_Aout8_9
+   "dac.c"   ==> Setup_DAC
+   "dac.c"   ==> Set_Current
+   "dac.c"   ==> PID_Init
+   "dac.c"   ==> PID
+C Source Interlister                    Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+   ""  ==> Write_DAC
+   "dac.c"  ==> MB_RX_DAC_Aout
+   "dac.c"  ==> MB_RX_DAC_Aout6_7
+   "dac.c"  ==> MB_RX_DAC_Aout8_9
+   "dac.c"  ==> Setup_DAC
+   "dac.c"  ==> Set_Current
+   "dac.c"  ==> PID_Init
+   "dac.c"  ==> PID
+TMS320C3x/4x COFF Assembler             Version 5.12
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+ PASS 1
+ PASS 2
+
+ No Errors,  No Warnings
+
+cl30 ISR.c -gks -v33 -pl -mbfr -alsx -x1 -frG:\workspace\win\eea\APP\OBJ -fsG:\workspace\win\eea\APP\SOURCE\ASM -iG:\workspace\win\eea\APP\SOURCE\INCLUDE -iG:\workspace\win\eea\INCLUDE
+[isr.c]
+TMS320C3x/4x ANSI C Compiler            Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+   "isr.c"   ==> c_XINT0
+   "isr.c"   ==> c_RINT0
+   "isr.c"   ==> c_INT0
+   "isr.c"   ==> c_INT1
+   "isr.c"   ==> c_INT2
+   "isr.c"   ==> c_INT3
+   "isr.c"   ==> c_TINT0
+   "isr.c"   ==> c_TINT1
+   "isr.c"   ==> c_SPURINT
+TMS320C3x/4x ANSI C Code Generator      Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+   "isr.c"   ==> c_XINT0
+   "isr.c"   ==> c_RINT0
+   "isr.c"   ==> c_INT0
+   "isr.c"   ==> c_INT1
+   "isr.c"   ==> c_INT2
+   "isr.c"   ==> c_INT3
+   "isr.c"   ==> c_TINT0
+   "isr.c"   ==> c_TINT1
+   "isr.c"   ==> c_SPURINT
+C Source Interlister                    Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+   ""  ==> c_XINT0
+   "isr.c"  ==> c_RINT0
+   "isr.c"  ==> c_INT0
+   "isr.c"  ==> c_INT1
+   "isr.c"  ==> c_INT2
+   "isr.c"  ==> c_INT3
+   "isr.c"  ==> c_TINT0
+   "isr.c"  ==> c_TINT1
+   "isr.c"  ==> c_SPURINT
+TMS320C3x/4x COFF Assembler             Version 5.12
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+ PASS 1
+ PASS 2
+
+ No Errors,  No Warnings
+
+cl30 MAIN.c -gks -v33 -pl -mbfr -alsx -x1 -frG:\workspace\win\eea\APP\OBJ -fsG:\workspace\win\eea\APP\SOURCE\ASM -iG:\workspace\win\eea\APP\SOURCE\INCLUDE -iG:\workspace\win\eea\INCLUDE
+[main.c]
+TMS320C3x/4x ANSI C Compiler            Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+   "main.c"   ==> Debug
+   "main.c"   ==> Initialize_Variables
+   "main.c"   ==> Initialize_Hardware
+   "main.c"   ==> Make_Russian_Line
+   "main.c"   ==> main
+TMS320C3x/4x ANSI C Code Generator      Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+   "main.c"   ==> Debug
+   "main.c"   ==> Initialize_Variables
+   "main.c"   ==> Initialize_Hardware
+   "main.c"   ==> Make_Russian_Line
+   "main.c"   ==> main
+C Source Interlister                    Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+   ""  ==> Debug
+   "main.c"  ==> Initialize_Variables
+   "main.c"  ==> Initialize_Hardware
+   "main.c"  ==> Make_Russian_Line
+   "main.c"  ==> main
+TMS320C3x/4x COFF Assembler             Version 5.12
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+ PASS 1
+ PASS 2
+
+ No Errors,  No Warnings
+
+cl30 MISC.c -gks -v33 -pl -mbfr -alsx -x1 -frG:\workspace\win\eea\APP\OBJ -fsG:\workspace\win\eea\APP\SOURCE\ASM -iG:\workspace\win\eea\APP\SOURCE\INCLUDE -iG:\workspace\win\eea\INCLUDE
+[misc.c]
+TMS320C3x/4x ANSI C Compiler            Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+   "misc.c"   ==> Poll
+   "misc.c"   ==> FS
+   "misc.c"   ==> FS2
+   "misc.c"   ==> Span
+   "misc.c"   ==> Setup_Sample
+   "misc.c"   ==> Calc_CRC
+   "misc.c"   ==> Refresh_IDEC_Time
+   "misc.c"   ==> Reset_IDEC
+   "misc.c"   ==> Set_IDEC_Port
+   "misc.c"   ==> Set_Time
+   "misc.c"   ==> Set_Density_Correction
+   "misc.c"   ==> Copy_CAPDATA
+   "misc.c"   ==> Calibrate_OIL
+   "misc.c"   ==> Calibrate_WATER
+   "misc.c"   ==> CLEAR_PORT_COUNT
+   "misc.c"   ==> Get_CAPDATA
+   "misc.c"   ==> Capture_Watercut_Water
+   "misc.c"   ==> Capture_Watercut_Oil
+   "misc.c"   ==> PVAVG24
+   "misc.c"   ==> PV_AVERAGE
+   "misc.c"   ==> System_Reset
+   "misc.c"   ==> System_Restart
+   "misc.c"   ==> Set_Temperature_Unit
+   "misc.c"   ==> Set_ASCII_Temp_Unit
+   "misc.c"   ==> Calibrate_RTD
+   "misc.c"   ==> RESEARCH
+   "misc.c"   ==> CopyTempVars
+   "misc.c"   ==> Freq_oil_plot_min
+   "misc.c"   ==> Freq_oil_plot_max
+   "misc.c"   ==> Freq_water_plot_min
+   "misc.c"   ==> Freq_water_plot_max
+   "misc.c"   ==> Temp_plot_min
+   "misc.c"   ==> Temp_plot_max
+   "misc.c"   ==> Watercut_plot_min
+   "misc.c"   ==> Watercut_plot_max
+   "misc.c"   ==> Oil_RP_plot_min
+   "misc.c"   ==> Oil_RP_plot_max
+   "misc.c"   ==> Water_RP_plot_min
+   "misc.c"   ==> Water_RP_plot_max
+   "misc.c"   ==> Timer_T
+   "misc.c"   ==> Send_Sample
+   "misc.c"   ==> Interpolate
+   "misc.c"   ==> Set_Research_Mode
+   "misc.c"   ==> UnLock_P0
+   "misc.c"   ==> UnLock_P1
+   "misc.c"   ==> UnLock_P2
+   "misc.c"   ==> UnLock_P3
+   "misc.c"   ==> UnLock_P4
+   "misc.c"   ==> UnLock_P
+   "misc.c"   ==> Put_IEEE
+   "misc.c"   ==> Unpack_ASCII
+   "misc.c"   ==> Pack_ASCII
+   "misc.c"   ==> Reset_PID_Bias
+   "misc.c"   ==> Mirror_To_Stream_Table
+   "misc.c"   ==> Mirror_From_Stream_Table
+   "misc.c"   ==> BEEP_OFF
+   "misc.c"   ==> BEEP_ON
+   "misc.c"   ==> STATUS_LED_on
+   "misc.c"   ==> STATUS_LED_off
+   "misc.c"   ==> Initialize_Periodic_Events
+   "misc.c"   ==> CLEAR_LOCKOUT
+   "misc.c"   ==> Submit_Setup_Basics
+   "misc.c"   ==> Submit_Write_CFG_USER
+   "misc.c"   ==> Submit_Write_CFG_FACTORY
+   "misc.c"   ==> Submit_Restore_CFG_USER
+   "misc.c"   ==> Submit_Restore_CFG_FACTORY
+   "misc.c"   ==> Submit_SELF_TEST
+   "misc.c"   ==> Submit_Reset
+   "misc.c"   ==> Submit_Serial_Defaults
+   "misc.c"   ==> Serial_Defaults
+   "misc.c"   ==> Submit_Restart
+   "misc.c"   ==> SET_BASICS
+   "misc.c"   ==> STAT
+   "misc.c"   ==> Restore_CFG_USER
+   "misc.c"   ==> Restore_CFG_FACTORY
+   "misc.c"   ==> Restore_CFG
+   "misc.c"   ==> Write_CFG_USER
+   "misc.c"   ==> Write_CFG_FACTORY
+   "misc.c"   ==> Update_Relays
+   "misc.c"   ==> Zero_FC1
+   "misc.c"   ==> Zero_FC2
+   "misc.c"   ==> Zero_FC3
+   "misc.c"   ==> Disable_PDI_WC_Mode
+   "misc.c"   ==> Disable_WC_Density_Mode
+   "misc.c"   ==> Clear_Accumulator
+   "misc.c"   ==> Clear_Accumulators
+   "misc.c"   ==> Totalizer_Control
+   "misc.c"   ==> Check_Zero
+   "misc.c"   ==> truncate
+   "misc.c"   ==> round
+   "misc.c"   ==> sigfig
+   "misc.c"   ==> PULSE_UPDATE
+   "misc.c"   ==> Accum_Fractional_Oil
+   "misc.c"   ==> Accum_Fractional_Water
+   "misc.c"   ==> Accum_Fractional_Gas
+   "misc.c"   ==> Disable_Heater
+   "misc.c"   ==> Set_Class_Units_AO1
+   "misc.c"   ==> Set_Class_Units_AO2
+   "misc.c"   ==> Set_Class_Units_AO3
+   "misc.c"   ==> Set_Class_Units_AO4
+   "misc.c"   ==> Set_Class_Units_AO5
+   "misc.c"   ==> Set_Class_Units_AO6
+   "misc.c"   ==> Set_Class_Units_AO7
+   "misc.c"   ==> Set_Class_Units_AO8
+   "misc.c"   ==> Set_Class_Units_AO9
+   "misc.c"   ==> Set_Class_Units_AO
+   "misc.c"   ==> Set_Class_Units_AI1
+   "misc.c"   ==> Set_Class_Units_AI2
+   "misc.c"   ==> Set_Class_Units_AI3
+   "misc.c"   ==> Set_Class_Units_AI4
+   "misc.c"   ==> Set_Class_Units_AI5
+   "misc.c"   ==> Set_Class_Units_Pulse1
+   "misc.c"   ==> Set_Class_Units_Pulse2
+   "misc.c"   ==> Set_Class_Units_Pulse3
+   "misc.c"   ==> Set_Class_Units_AI
+   "misc.c"   ==> Set_Class_Units_Pulse
+   "misc.c"   ==> Set_RLY_Units
+   "misc.c"   ==> Set_Units
+   "misc.c"   ==> Set_Pulse_Units
+   "misc.c"   ==> Periodic_Accumulate
+   "misc.c"   ==> Accumulate_Gas
+   "misc.c"   ==> Accumulate
+   "misc.c"   ==> Set_FC_Units
+   "misc.c"   ==> Set_Density_Cal_Unit
+   "misc.c"   ==> PDI_Density_Correction
+   "misc.c"   ==> PDI_Density_Adj
+   "misc.c"   ==> CORIOLIS_CFG
+   "misc.c"   ==> CORIOLIS_INT_CFG
+   "misc.c"   ==> CORIOLIS_ZERO1
+   "misc.c"   ==> CORIOLIS_ZERO2
+   "misc.c"   ==> CORIOLIS_ZERO3
+   "misc.c"   ==> CORIOLIS_ZERO4
+   "misc.c"   ==> Sampling_Error
+   "misc.c"   ==> CCM_Record_Viewer
+   "misc.c"   ==> CCM_TESTING
+   "misc.c"   ==> CCM_PURGING
+   "misc.c"   ==> CCM_START
+   "misc.c"   ==> VAR_SET_STR_DV
+   "misc.c"   ==> VAR_SET_STR_DVIN
+   "misc.c"   ==> VAR_SET_STR
+   "misc.c"   ==> Read_RTC
+   "misc.c"   ==> Update_i_Log_Var
+   "misc.c"   ==> HSALT_CLEAR
+   "misc.c"   ==> Submit_GET_ANALYZER_CONFIG
+   "misc.c"   ==> GET_ANALYZER_CONFIG
+   "misc.c"   ==> Submit_STORE_ANALYZER_CONFIG
+   "misc.c"   ==> STORE_ANALYZER_CONFIG
+   "misc.c"   ==> Submit_GET_ANALOGIO_CONFIG
+   "misc.c"   ==> GET_ANALOGIO_CONFIG
+   "misc.c"   ==> Submit_STORE_ANALOGIO_CONFIG
+   "misc.c"   ==> STORE_ANALOGIO_CONFIG
+   "misc.c"   ==> Submit_GET_uP_CONFIG
+   "misc.c"   ==> GET_uP_CONFIG
+   "misc.c"   ==> Submit_STORE_uP_CONFIG
+   "misc.c"   ==> STORE_uP_CONFIG
+   "misc.c"   ==> Submit_GET_COMM_CONFIG
+   "misc.c"   ==> GET_COMM_CONFIG
+   "misc.c"   ==> Submit_STORE_COMM_CONFIG
+   "misc.c"   ==> STORE_COMM_CONFIG
+   "misc.c"   ==> Submit_GET_POWER_CONFIG
+   "misc.c"   ==> GET_POWER_CONFIG
+   "misc.c"   ==> Submit_STORE_POWER_CONFIG
+   "misc.c"   ==> STORE_POWER_CONFIG
+   "misc.c"   ==> Submit_GET_DISPLAY_CONFIG
+   "misc.c"   ==> GET_DISPLAY_CONFIG
+   "misc.c"   ==> Submit_STORE_DISPLAY_CONFIG
+   "misc.c"   ==> STORE_DISPLAY_CONFIG
+   "misc.c"   ==> Submit_GET_MOTHERBOARD_CONFIG
+   "misc.c"   ==> GET_MOTHERBOARD_CONFIG
+   "misc.c"   ==> Submit_STORE_MOTHERBOARD_CONFIG
+   "misc.c"   ==> STORE_MOTHERBOARD_CONFIG
+   "misc.c"   ==> M24C02_Record
+   "misc.c"   ==> PutInt
+   "misc.c"   ==> GetInt
+   "misc.c"   ==> PutFlt
+   "misc.c"   ==> GetFlt
+   "misc.c"   ==> PutCRC
+   "misc.c"   ==> CRC16_bytes
+   "misc.c"   ==> Check_Boxcar_Limits
+   "misc.c"   ==> Reset_Boxcar
+   "misc.c"   ==> Update_Boxcar
+   "misc.c"   ==> Update_Bubble
+   "misc.c"   ==> Update_Pattern
+   "misc.c"   ==> Swap_Boxcar_Vals
+   "misc.c"   ==> Is_Expired
+   "misc.c"   ==> BCD_to_Int
+   "misc.c"   ==> Hex_to_ASCII
+   "misc.c"   ==> ASCII_to_Hex
+   "misc.c"   ==> Hex32_to_String
+   "misc.c"   ==> Alfat_Get_Version
+   "misc.c"   ==> Alfat_Get_Version_Vector
+   "misc.c"   ==> Alfat_Log_Vars
+   "misc.c"   ==> Alfat_Init_All
+   "misc.c"   ==> Alfat_Init_RTC
+   "misc.c"   ==> Alfat_Print_Time_Date
+   "misc.c"   ==> Alfat_Set_Time_Date
+   "misc.c"   ==> Alfat_Set_Time_Date_Vector
+   "misc.c"   ==> Alfat_Init_USB
+   "misc.c"   ==> Alfat_Init_USB_Vector
+   "misc.c"   ==> Alfat_Get_Time
+   "misc.c"   ==> Alfat_Get_Time_Vector
+   "misc.c"   ==> Alfat_Get_Date
+   "misc.c"   ==> Alfat_Get_Date_Vector
+   "misc.c"   ==> Alfat_Get_Status_Reg
+   "misc.c"   ==> Alfat_Get_Status_Reg_Vector
+   "misc.c"   ==> Alfat_Open_Append
+   "misc.c"   ==> Alfat_Open_Append_Vector
+   "misc.c"   ==> Alfat_Close
+   "misc.c"   ==> Alfat_Flush
+   "misc.c"   ==> Alfat_Write
+   "misc.c"   ==> Alfat_Write_Vector
+   "misc.c"   ==> Alfat_Wait_For_Write
+   "misc.c"   ==> Alfat_Map_Var
+   "misc.c"   ==> Begin_Alfat_Logging
+   "misc.c"   ==> Alfat_Change_Log_Period
+TMS320C3x/4x ANSI C Code Generator      Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+   "misc.c"   ==> Poll
+   "misc.c"   ==> FS
+   "misc.c"   ==> FS2
+   "misc.c"   ==> Span
+   "misc.c"   ==> Setup_Sample
+   "misc.c"   ==> Calc_CRC
+   "misc.c"   ==> Refresh_IDEC_Time
+   "misc.c"   ==> Reset_IDEC
+   "misc.c"   ==> Set_IDEC_Port
+   "misc.c"   ==> Set_Time
+   "misc.c"   ==> Set_Density_Correction
+   "misc.c"   ==> Copy_CAPDATA
+   "misc.c"   ==> Calibrate_OIL
+   "misc.c"   ==> Calibrate_WATER
+   "misc.c"   ==> CLEAR_PORT_COUNT
+   "misc.c"   ==> Get_CAPDATA
+   "misc.c"   ==> Capture_Watercut_Water
+   "misc.c"   ==> Capture_Watercut_Oil
+   "misc.c"   ==> PVAVG24
+   "misc.c"   ==> PV_AVERAGE
+   "misc.c"   ==> System_Reset
+   "misc.c"   ==> System_Restart
+   "misc.c"   ==> Set_Temperature_Unit
+   "misc.c"   ==> Set_ASCII_Temp_Unit
+   "misc.c"   ==> Calibrate_RTD
+   "misc.c"   ==> RESEARCH
+   "misc.c"   ==> CopyTempVars
+   "misc.c"   ==> Freq_oil_plot_min
+   "misc.c"   ==> Freq_oil_plot_max
+   "misc.c"   ==> Freq_water_plot_min
+   "misc.c"   ==> Freq_water_plot_max
+   "misc.c"   ==> Temp_plot_min
+   "misc.c"   ==> Temp_plot_max
+   "misc.c"   ==> Watercut_plot_min
+   "misc.c"   ==> Watercut_plot_max
+   "misc.c"   ==> Oil_RP_plot_min
+   "misc.c"   ==> Oil_RP_plot_max
+   "misc.c"   ==> Water_RP_plot_min
+   "misc.c"   ==> Water_RP_plot_max
+   "misc.c"   ==> Timer_T
+   "misc.c"   ==> Send_Sample
+   "misc.c"   ==> Interpolate
+   "misc.c"   ==> Set_Research_Mode
+   "misc.c"   ==> UnLock_P0
+   "misc.c"   ==> UnLock_P1
+   "misc.c"   ==> UnLock_P2
+   "misc.c"   ==> UnLock_P3
+   "misc.c"   ==> UnLock_P4
+   "misc.c"   ==> UnLock_P
+   "misc.c"   ==> Put_IEEE
+   "misc.c"   ==> Unpack_ASCII
+   "misc.c"   ==> Pack_ASCII
+   "misc.c"   ==> Reset_PID_Bias
+   "misc.c"   ==> Mirror_To_Stream_Table
+   "misc.c"   ==> Mirror_From_Stream_Table
+   "misc.c"   ==> BEEP_OFF
+   "misc.c"   ==> BEEP_ON
+   "misc.c"   ==> STATUS_LED_on
+   "misc.c"   ==> STATUS_LED_off
+   "misc.c"   ==> Initialize_Periodic_Events
+   "misc.c"   ==> CLEAR_LOCKOUT
+   "misc.c"   ==> Submit_Setup_Basics
+   "misc.c"   ==> Submit_Write_CFG_USER
+   "misc.c"   ==> Submit_Write_CFG_FACTORY
+   "misc.c"   ==> Submit_Restore_CFG_USER
+   "misc.c"   ==> Submit_Restore_CFG_FACTORY
+   "misc.c"   ==> Submit_SELF_TEST
+   "misc.c"   ==> Submit_Reset
+   "misc.c"   ==> Submit_Serial_Defaults
+   "misc.c"   ==> Serial_Defaults
+   "misc.c"   ==> Submit_Restart
+   "misc.c"   ==> SET_BASICS
+   "misc.c"   ==> STAT
+   "misc.c"   ==> Restore_CFG_USER
+   "misc.c"   ==> Restore_CFG_FACTORY
+   "misc.c"   ==> Restore_CFG
+   "misc.c"   ==> Write_CFG_USER
+   "misc.c"   ==> Write_CFG_FACTORY
+   "misc.c"   ==> Update_Relays
+   "misc.c"   ==> Zero_FC1
+   "misc.c"   ==> Zero_FC2
+   "misc.c"   ==> Zero_FC3
+   "misc.c"   ==> Disable_PDI_WC_Mode
+   "misc.c"   ==> Disable_WC_Density_Mode
+   "misc.c"   ==> Clear_Accumulator
+   "misc.c"   ==> Clear_Accumulators
+   "misc.c"   ==> Totalizer_Control
+   "misc.c"   ==> Check_Zero
+   "misc.c"   ==> truncate
+   "misc.c"   ==> round
+   "misc.c"   ==> sigfig
+   "misc.c"   ==> PULSE_UPDATE
+   "misc.c"   ==> Accum_Fractional_Oil
+   "misc.c"   ==> Accum_Fractional_Water
+   "misc.c"   ==> Accum_Fractional_Gas
+   "misc.c"   ==> Disable_Heater
+   "misc.c"   ==> Set_Class_Units_AO1
+   "misc.c"   ==> Set_Class_Units_AO2
+   "misc.c"   ==> Set_Class_Units_AO3
+   "misc.c"   ==> Set_Class_Units_AO4
+   "misc.c"   ==> Set_Class_Units_AO5
+   "misc.c"   ==> Set_Class_Units_AO6
+   "misc.c"   ==> Set_Class_Units_AO7
+   "misc.c"   ==> Set_Class_Units_AO8
+   "misc.c"   ==> Set_Class_Units_AO9
+   "misc.c"   ==> Set_Class_Units_AO
+   "misc.c"   ==> Set_Class_Units_AI1
+   "misc.c"   ==> Set_Class_Units_AI2
+   "misc.c"   ==> Set_Class_Units_AI3
+   "misc.c"   ==> Set_Class_Units_AI4
+   "misc.c"   ==> Set_Class_Units_AI5
+   "misc.c"   ==> Set_Class_Units_Pulse1
+   "misc.c"   ==> Set_Class_Units_Pulse2
+   "misc.c"   ==> Set_Class_Units_Pulse3
+   "misc.c"   ==> Set_Class_Units_AI
+   "misc.c"   ==> Set_Class_Units_Pulse
+   "misc.c"   ==> Set_RLY_Units
+   "misc.c"   ==> Set_Units
+   "misc.c"   ==> Set_Pulse_Units
+   "misc.c"   ==> Periodic_Accumulate
+   "misc.c"   ==> Accumulate_Gas
+   "misc.c"   ==> Accumulate
+   "misc.c"   ==> Set_FC_Units
+   "misc.c"   ==> Set_Density_Cal_Unit
+   "misc.c"   ==> PDI_Density_Correction
+   "misc.c"   ==> PDI_Density_Adj
+   "misc.c"   ==> CORIOLIS_CFG
+   "misc.c"   ==> CORIOLIS_INT_CFG
+   "misc.c"   ==> CORIOLIS_ZERO1
+   "misc.c"   ==> CORIOLIS_ZERO2
+   "misc.c"   ==> CORIOLIS_ZERO3
+   "misc.c"   ==> CORIOLIS_ZERO4
+   "misc.c"   ==> Sampling_Error
+   "misc.c"   ==> CCM_Record_Viewer
+   "misc.c"   ==> CCM_TESTING
+   "misc.c"   ==> CCM_PURGING
+   "misc.c"   ==> CCM_START
+   "misc.c"   ==> VAR_SET_STR_DV
+   "misc.c"   ==> VAR_SET_STR_DVIN
+   "misc.c"   ==> VAR_SET_STR
+   "misc.c"   ==> Read_RTC
+   "misc.c"   ==> Update_i_Log_Var
+   "misc.c"   ==> HSALT_CLEAR
+   "misc.c"   ==> Submit_GET_ANALYZER_CONFIG
+   "misc.c"   ==> GET_ANALYZER_CONFIG
+   "misc.c"   ==> Submit_STORE_ANALYZER_CONFIG
+   "misc.c"   ==> STORE_ANALYZER_CONFIG
+   "misc.c"   ==> Submit_GET_ANALOGIO_CONFIG
+   "misc.c"   ==> GET_ANALOGIO_CONFIG
+   "misc.c"   ==> Submit_STORE_ANALOGIO_CONFIG
+   "misc.c"   ==> STORE_ANALOGIO_CONFIG
+   "misc.c"   ==> Submit_GET_uP_CONFIG
+   "misc.c"   ==> GET_uP_CONFIG
+   "misc.c"   ==> Submit_STORE_uP_CONFIG
+   "misc.c"   ==> STORE_uP_CONFIG
+   "misc.c"   ==> Submit_GET_COMM_CONFIG
+   "misc.c"   ==> GET_COMM_CONFIG
+   "misc.c"   ==> Submit_STORE_COMM_CONFIG
+   "misc.c"   ==> STORE_COMM_CONFIG
+   "misc.c"   ==> Submit_GET_POWER_CONFIG
+   "misc.c"   ==> GET_POWER_CONFIG
+   "misc.c"   ==> Submit_STORE_POWER_CONFIG
+   "misc.c"   ==> STORE_POWER_CONFIG
+   "misc.c"   ==> Submit_GET_DISPLAY_CONFIG
+   "misc.c"   ==> GET_DISPLAY_CONFIG
+   "misc.c"   ==> Submit_STORE_DISPLAY_CONFIG
+   "misc.c"   ==> STORE_DISPLAY_CONFIG
+   "misc.c"   ==> Submit_GET_MOTHERBOARD_CONFIG
+   "misc.c"   ==> GET_MOTHERBOARD_CONFIG
+   "misc.c"   ==> Submit_STORE_MOTHERBOARD_CONFIG
+   "misc.c"   ==> STORE_MOTHERBOARD_CONFIG
+   "misc.c"   ==> M24C02_Record
+   "misc.c"   ==> PutInt
+   "misc.c"   ==> GetInt
+   "misc.c"   ==> PutFlt
+   "misc.c"   ==> GetFlt
+   "misc.c"   ==> PutCRC
+   "misc.c"   ==> CRC16_bytes
+   "misc.c"   ==> Check_Boxcar_Limits
+   "misc.c"   ==> Reset_Boxcar
+   "misc.c"   ==> Update_Boxcar
+   "misc.c"   ==> Update_Bubble
+   "misc.c"   ==> Update_Pattern
+   "misc.c"   ==> Swap_Boxcar_Vals
+   "misc.c"   ==> Is_Expired
+   "misc.c"   ==> BCD_to_Int
+   "misc.c"   ==> Hex_to_ASCII
+   "misc.c"   ==> ASCII_to_Hex
+   "misc.c"   ==> Hex32_to_String
+   "misc.c"   ==> Alfat_Get_Version
+   "misc.c"   ==> Alfat_Get_Version_Vector
+   "misc.c"   ==> Alfat_Log_Vars
+   "misc.c"   ==> Alfat_Init_All
+   "misc.c"   ==> Alfat_Init_RTC
+   "misc.c"   ==> Alfat_Print_Time_Date
+   "misc.c"   ==> Alfat_Set_Time_Date
+   "misc.c"   ==> Alfat_Set_Time_Date_Vector
+   "misc.c"   ==> Alfat_Init_USB
+   "misc.c"   ==> Alfat_Init_USB_Vector
+   "misc.c"   ==> Alfat_Get_Time
+   "misc.c"   ==> Alfat_Get_Time_Vector
+   "misc.c"   ==> Alfat_Get_Date
+   "misc.c"   ==> Alfat_Get_Date_Vector
+   "misc.c"   ==> Alfat_Get_Status_Reg
+   "misc.c"   ==> Alfat_Get_Status_Reg_Vector
+   "misc.c"   ==> Alfat_Open_Append
+   "misc.c"   ==> Alfat_Open_Append_Vector
+   "misc.c"   ==> Alfat_Close
+   "misc.c"   ==> Alfat_Flush
+   "misc.c"   ==> Alfat_Write
+   "misc.c"   ==> Alfat_Write_Vector
+   "misc.c"   ==> Alfat_Wait_For_Write
+   "misc.c"   ==> Alfat_Map_Var
+   "misc.c"   ==> Begin_Alfat_Logging
+   "misc.c"   ==> Alfat_Change_Log_Period
+C Source Interlister                    Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+   ""  ==> Poll
+   "misc.c"  ==> FS
+   "misc.c"  ==> FS2
+   "misc.c"  ==> Span
+   "misc.c"  ==> Setup_Sample
+   "misc.c"  ==> Calc_CRC
+   "misc.c"  ==> Refresh_IDEC_Time
+   "misc.c"  ==> Reset_IDEC
+   "misc.c"  ==> Set_IDEC_Port
+   "misc.c"  ==> Set_Time
+   "misc.c"  ==> Set_Density_Correction
+   "misc.c"  ==> Copy_CAPDATA
+   "misc.c"  ==> Calibrate_OIL
+   "misc.c"  ==> Calibrate_WATER
+   "misc.c"  ==> CLEAR_PORT_COUNT
+   "misc.c"  ==> Get_CAPDATA
+   "misc.c"  ==> Capture_Watercut_Water
+   "misc.c"  ==> Capture_Watercut_Oil
+   "misc.c"  ==> PVAVG24
+   "misc.c"  ==> PV_AVERAGE
+   "misc.c"  ==> System_Reset
+   "misc.c"  ==> System_Restart
+   "misc.c"  ==> Set_Temperature_Unit
+   "misc.c"  ==> Set_ASCII_Temp_Unit
+   "misc.c"  ==> Calibrate_RTD
+   "misc.c"  ==> RESEARCH
+   "misc.c"  ==> CopyTempVars
+   "misc.c"  ==> Freq_oil_plot_min
+   "misc.c"  ==> Freq_oil_plot_max
+   "misc.c"  ==> Freq_water_plot_min
+   "misc.c"  ==> Freq_water_plot_max
+   "misc.c"  ==> Temp_plot_min
+   "misc.c"  ==> Temp_plot_max
+   "misc.c"  ==> Watercut_plot_min
+   "misc.c"  ==> Watercut_plot_max
+   "misc.c"  ==> Oil_RP_plot_min
+   "misc.c"  ==> Oil_RP_plot_max
+   "misc.c"  ==> Water_RP_plot_min
+   "misc.c"  ==> Water_RP_plot_max
+   "misc.c"  ==> Timer_T
+   "misc.c"  ==> Send_Sample
+   "misc.c"  ==> Interpolate
+   "misc.c"  ==> Set_Research_Mode
+   "misc.c"  ==> UnLock_P0
+   "misc.c"  ==> UnLock_P1
+   "misc.c"  ==> UnLock_P2
+   "misc.c"  ==> UnLock_P3
+   "misc.c"  ==> UnLock_P4
+   "misc.c"  ==> UnLock_P
+   "misc.c"  ==> Put_IEEE
+   "misc.c"  ==> Unpack_ASCII
+   "misc.c"  ==> Pack_ASCII
+   "misc.c"  ==> Reset_PID_Bias
+   "misc.c"  ==> Mirror_To_Stream_Table
+   "misc.c"  ==> Mirror_From_Stream_Table
+   "misc.c"  ==> BEEP_OFF
+   "misc.c"  ==> BEEP_ON
+   "misc.c"  ==> STATUS_LED_on
+   "misc.c"  ==> STATUS_LED_off
+   "misc.c"  ==> Initialize_Periodic_Events
+   "misc.c"  ==> CLEAR_LOCKOUT
+   "misc.c"  ==> Submit_Setup_Basics
+   "misc.c"  ==> Submit_Write_CFG_USER
+   "misc.c"  ==> Submit_Write_CFG_FACTORY
+   "misc.c"  ==> Submit_Restore_CFG_USER
+   "misc.c"  ==> Submit_Restore_CFG_FACTORY
+   "misc.c"  ==> Submit_SELF_TEST
+   "misc.c"  ==> Submit_Reset
+   "misc.c"  ==> Submit_Serial_Defaults
+   "misc.c"  ==> Serial_Defaults
+   "misc.c"  ==> Submit_Restart
+   "misc.c"  ==> SET_BASICS
+   "misc.c"  ==> STAT
+   "misc.c"  ==> Restore_CFG_USER
+   "misc.c"  ==> Restore_CFG_FACTORY
+   "misc.c"  ==> Restore_CFG
+   "misc.c"  ==> Write_CFG_USER
+   "misc.c"  ==> Write_CFG_FACTORY
+   "misc.c"  ==> Update_Relays
+   "misc.c"  ==> Zero_FC1
+   "misc.c"  ==> Zero_FC2
+   "misc.c"  ==> Zero_FC3
+   "misc.c"  ==> Disable_PDI_WC_Mode
+   "misc.c"  ==> Disable_WC_Density_Mode
+   "misc.c"  ==> Clear_Accumulator
+   "misc.c"  ==> Clear_Accumulators
+   "misc.c"  ==> Totalizer_Control
+   "misc.c"  ==> Check_Zero
+   "misc.c"  ==> truncate
+   "misc.c"  ==> round
+   "misc.c"  ==> sigfig
+   "misc.c"  ==> PULSE_UPDATE
+   "misc.c"  ==> Accum_Fractional_Oil
+   "misc.c"  ==> Accum_Fractional_Water
+   "misc.c"  ==> Accum_Fractional_Gas
+   "misc.c"  ==> Disable_Heater
+   "misc.c"  ==> Set_Class_Units_AO1
+   "misc.c"  ==> Set_Class_Units_AO2
+   "misc.c"  ==> Set_Class_Units_AO3
+   "misc.c"  ==> Set_Class_Units_AO4
+   "misc.c"  ==> Set_Class_Units_AO5
+   "misc.c"  ==> Set_Class_Units_AO6
+   "misc.c"  ==> Set_Class_Units_AO7
+   "misc.c"  ==> Set_Class_Units_AO8
+   "misc.c"  ==> Set_Class_Units_AO9
+   "misc.c"  ==> Set_Class_Units_AO
+   "misc.c"  ==> Set_Class_Units_AI1
+   "misc.c"  ==> Set_Class_Units_AI2
+   "misc.c"  ==> Set_Class_Units_AI3
+   "misc.c"  ==> Set_Class_Units_AI4
+   "misc.c"  ==> Set_Class_Units_AI5
+   "misc.c"  ==> Set_Class_Units_Pulse1
+   "misc.c"  ==> Set_Class_Units_Pulse2
+   "misc.c"  ==> Set_Class_Units_Pulse3
+   "misc.c"  ==> Set_Class_Units_AI
+   "misc.c"  ==> Set_Class_Units_Pulse
+   "misc.c"  ==> Set_RLY_Units
+   "misc.c"  ==> Set_Units
+   "misc.c"  ==> Set_Pulse_Units
+   "misc.c"  ==> Periodic_Accumulate
+   "misc.c"  ==> Accumulate_Gas
+   "misc.c"  ==> Accumulate
+   "misc.c"  ==> Set_FC_Units
+   "misc.c"  ==> Set_Density_Cal_Unit
+   "misc.c"  ==> PDI_Density_Correction
+   "misc.c"  ==> PDI_Density_Adj
+   "misc.c"  ==> CORIOLIS_CFG
+   "misc.c"  ==> CORIOLIS_INT_CFG
+   "misc.c"  ==> CORIOLIS_ZERO1
+   "misc.c"  ==> CORIOLIS_ZERO2
+   "misc.c"  ==> CORIOLIS_ZERO3
+   "misc.c"  ==> CORIOLIS_ZERO4
+   "misc.c"  ==> Sampling_Error
+   "misc.c"  ==> CCM_Record_Viewer
+   "misc.c"  ==> CCM_TESTING
+   "misc.c"  ==> CCM_PURGING
+   "misc.c"  ==> CCM_START
+   "misc.c"  ==> VAR_SET_STR_DV
+   "misc.c"  ==> VAR_SET_STR_DVIN
+   "misc.c"  ==> VAR_SET_STR
+   "misc.c"  ==> Read_RTC
+   "misc.c"  ==> Update_i_Log_Var
+   "misc.c"  ==> HSALT_CLEAR
+   "misc.c"  ==> Submit_GET_ANALYZER_CONFIG
+   "misc.c"  ==> GET_ANALYZER_CONFIG
+   "misc.c"  ==> Submit_STORE_ANALYZER_CONFIG
+   "misc.c"  ==> STORE_ANALYZER_CONFIG
+   "misc.c"  ==> Submit_GET_ANALOGIO_CONFIG
+   "misc.c"  ==> GET_ANALOGIO_CONFIG
+   "misc.c"  ==> Submit_STORE_ANALOGIO_CONFIG
+   "misc.c"  ==> STORE_ANALOGIO_CONFIG
+   "misc.c"  ==> Submit_GET_uP_CONFIG
+   "misc.c"  ==> GET_uP_CONFIG
+   "misc.c"  ==> Submit_STORE_uP_CONFIG
+   "misc.c"  ==> STORE_uP_CONFIG
+   "misc.c"  ==> Submit_GET_COMM_CONFIG
+   "misc.c"  ==> GET_COMM_CONFIG
+   "misc.c"  ==> Submit_STORE_COMM_CONFIG
+   "misc.c"  ==> STORE_COMM_CONFIG
+   "misc.c"  ==> Submit_GET_POWER_CONFIG
+   "misc.c"  ==> GET_POWER_CONFIG
+   "misc.c"  ==> Submit_STORE_POWER_CONFIG
+   "misc.c"  ==> STORE_POWER_CONFIG
+   "misc.c"  ==> Submit_GET_DISPLAY_CONFIG
+   "misc.c"  ==> GET_DISPLAY_CONFIG
+   "misc.c"  ==> Submit_STORE_DISPLAY_CONFIG
+   "misc.c"  ==> STORE_DISPLAY_CONFIG
+   "misc.c"  ==> Submit_GET_MOTHERBOARD_CONFIG
+   "misc.c"  ==> GET_MOTHERBOARD_CONFIG
+   "misc.c"  ==> Submit_STORE_MOTHERBOARD_CONFIG
+   "misc.c"  ==> STORE_MOTHERBOARD_CONFIG
+   "misc.c"  ==> M24C02_Record
+   "misc.c"  ==> PutInt
+   "misc.c"  ==> GetInt
+   "misc.c"  ==> PutFlt
+   "misc.c"  ==> GetFlt
+   "misc.c"  ==> PutCRC
+   "misc.c"  ==> CRC16_bytes
+   "misc.c"  ==> Check_Boxcar_Limits
+   "misc.c"  ==> Reset_Boxcar
+   "misc.c"  ==> Update_Boxcar
+   "misc.c"  ==> Update_Bubble
+   "misc.c"  ==> Update_Pattern
+   "misc.c"  ==> Swap_Boxcar_Vals
+   "misc.c"  ==> Is_Expired
+   "misc.c"  ==> BCD_to_Int
+   "misc.c"  ==> Hex_to_ASCII
+   "misc.c"  ==> ASCII_to_Hex
+   "misc.c"  ==> Hex32_to_String
+   "misc.c"  ==> Alfat_Get_Version
+   "misc.c"  ==> Alfat_Get_Version_Vector
+   "misc.c"  ==> Alfat_Log_Vars
+   "misc.c"  ==> Alfat_Init_All
+   "misc.c"  ==> Alfat_Init_RTC
+   "misc.c"  ==> Alfat_Print_Time_Date
+   "misc.c"  ==> Alfat_Set_Time_Date
+   "misc.c"  ==> Alfat_Set_Time_Date_Vector
+   "misc.c"  ==> Alfat_Init_USB
+   "misc.c"  ==> Alfat_Init_USB_Vector
+   "misc.c"  ==> Alfat_Get_Time
+   "misc.c"  ==> Alfat_Get_Time_Vector
+   "misc.c"  ==> Alfat_Get_Date
+   "misc.c"  ==> Alfat_Get_Date_Vector
+   "misc.c"  ==> Alfat_Get_Status_Reg
+   "misc.c"  ==> Alfat_Get_Status_Reg_Vector
+   "misc.c"  ==> Alfat_Open_Append
+   "misc.c"  ==> Alfat_Open_Append_Vector
+   "misc.c"  ==> Alfat_Close
+   "misc.c"  ==> Alfat_Flush
+   "misc.c"  ==> Alfat_Write
+   "misc.c"  ==> Alfat_Write_Vector
+   "misc.c"  ==> Alfat_Wait_For_Write
+   "misc.c"  ==> Alfat_Map_Var
+   "misc.c"  ==> Begin_Alfat_Logging
+   "misc.c"  ==> Alfat_Change_Log_Period
+TMS320C3x/4x COFF Assembler             Version 5.12
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+ PASS 1
+ PASS 2
+
+ No Errors,  No Warnings
+
+cl30 SERIAL.c -gks -v33 -pl -mbfr -alsx -x1 -frG:\workspace\win\eea\APP\OBJ -fsG:\workspace\win\eea\APP\SOURCE\ASM -iG:\workspace\win\eea\APP\SOURCE\INCLUDE -iG:\workspace\win\eea\INCLUDE
+[serial.c]
+TMS320C3x/4x ANSI C Compiler            Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+   "serial.c"   ==> Setup_Serial_Port0
+   "serial.c"   ==> Clear_RX
+   "serial.c"   ==> RESET_PKT
+   "serial.c"   ==> No_Port
+   "serial.c"   ==> Setup_UART
+   "serial.c"   ==> Set_Baud
+   "serial.c"   ==> Process_UINT
+   "serial.c"   ==> WDOG_P
+   "serial.c"   ==> TX_S1
+   "serial.c"   ==> TX_S
+   "serial.c"   ==> TX_P1
+   "serial.c"   ==> TX_P
+   "serial.c"   ==> Prepare_TX
+   "serial.c"   ==> Port_Defaults
+TMS320C3x/4x ANSI C Code Generator      Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+   "serial.c"   ==> Setup_Serial_Port0
+   "serial.c"   ==> Clear_RX
+   "serial.c"   ==> RESET_PKT
+   "serial.c"   ==> No_Port
+   "serial.c"   ==> Setup_UART
+   "serial.c"   ==> Set_Baud
+   "serial.c"   ==> Process_UINT
+   "serial.c"   ==> WDOG_P
+   "serial.c"   ==> TX_S1
+   "serial.c"   ==> TX_S
+   "serial.c"   ==> TX_P1
+   "serial.c"   ==> TX_P
+   "serial.c"   ==> Prepare_TX
+   "serial.c"   ==> Port_Defaults
+C Source Interlister                    Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+   ""  ==> Setup_Serial_Port0
+   "serial.c"  ==> Clear_RX
+   "serial.c"  ==> RESET_PKT
+   "serial.c"  ==> No_Port
+   "serial.c"  ==> Setup_UART
+   "serial.c"  ==> Set_Baud
+   "serial.c"  ==> Process_UINT
+   "serial.c"  ==> WDOG_P
+   "serial.c"  ==> TX_S1
+   "serial.c"  ==> TX_S
+   "serial.c"  ==> TX_P1
+   "serial.c"  ==> TX_P
+   "serial.c"  ==> Prepare_TX
+   "serial.c"  ==> Port_Defaults
+TMS320C3x/4x COFF Assembler             Version 5.12
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+ PASS 1
+ PASS 2
+
+ No Errors,  No Warnings
+
+cl30 TIMER.c -gks -v33 -pl -mbfr -alsx -x1 -frG:\workspace\win\eea\APP\OBJ -fsG:\workspace\win\eea\APP\SOURCE\ASM -iG:\workspace\win\eea\APP\SOURCE\INCLUDE -iG:\workspace\win\eea\INCLUDE
+[timer.c]
+TMS320C3x/4x ANSI C Compiler            Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+   "timer.c"   ==> Timer_Insert
+   "timer.c"   ==> Timer_Remove
+   "timer.c"   ==> Timer_Create
+   "timer.c"   ==> Setup_Timer
+   "timer.c"   ==> Setup_Gate
+   "timer.c"   ==> GET_TIME
+   "timer.c"   ==> CLEAR_TIME
+TMS320C3x/4x ANSI C Code Generator      Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+   "timer.c"   ==> Timer_Insert
+   "timer.c"   ==> Timer_Remove
+   "timer.c"   ==> Timer_Create
+   "timer.c"   ==> Setup_Timer
+   "timer.c"   ==> Setup_Gate
+   "timer.c"   ==> GET_TIME
+   "timer.c"   ==> CLEAR_TIME
+C Source Interlister                    Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+   ""  ==> Timer_Insert
+   "timer.c"  ==> Timer_Remove
+   "timer.c"  ==> Timer_Create
+   "timer.c"  ==> Setup_Timer
+   "timer.c"  ==> Setup_Gate
+   "timer.c"  ==> GET_TIME
+   "timer.c"  ==> CLEAR_TIME
+TMS320C3x/4x COFF Assembler             Version 5.12
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+ PASS 1
+ PASS 2
+
+ No Errors,  No Warnings
+
+cl30 VARIABLE.c -gks -v33 -pl -mbfr -alsx -x1 -frG:\workspace\win\eea\APP\OBJ -fsG:\workspace\win\eea\APP\SOURCE\ASM -iG:\workspace\win\eea\APP\SOURCE\INCLUDE -iG:\workspace\win\eea\INCLUDE
+[variable.c]
+TMS320C3x/4x ANSI C Compiler            Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+   "variable.c"   ==> VAR_DAMP_Init
+   "variable.c"   ==> VAR_Copy
+   "variable.c"   ==> VAR_Initialize
+   "variable.c"   ==> VAR_Update
+   "variable.c"   ==> VAR_Setup_Unit
+   "variable.c"   ==> VAR_Set_Unit
+   "variable.c"   ==> VAR_Set_Unit_Param
+   "variable.c"   ==> VAR_Get_Unit_Param
+   "variable.c"   ==> VAR_NaN
+   "variable.c"   ==> VAR_DAMP
+   "variable.c"   ==> f_compare
+   "variable.c"   ==> l_compare
+   "variable.c"   ==> VAR_CheckSet_Bounds
+   "variable.c"   ==> VAR_Check_Bounds
+   "variable.c"   ==> Get_Unit_Coeff
+   "variable.c"   ==> Convert
+   "variable.c"   ==> Get_Prev_Unit
+   "variable.c"   ==> Get_Next_Unit
+   "variable.c"   ==> Get_Unit
+   "variable.c"   ==> Get_Class
+   "variable.c"   ==> Time_Scale_Flow
+   "variable.c"   ==> Breakout_Flow_Units
+   "variable.c"   ==> Join_MassTime_Units
+TMS320C3x/4x ANSI C Code Generator      Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+   "variable.c"   ==> VAR_DAMP_Init
+   "variable.c"   ==> VAR_Copy
+   "variable.c"   ==> VAR_Initialize
+   "variable.c"   ==> VAR_Update
+   "variable.c"   ==> VAR_Setup_Unit
+   "variable.c"   ==> VAR_Set_Unit
+   "variable.c"   ==> VAR_Set_Unit_Param
+   "variable.c"   ==> VAR_Get_Unit_Param
+   "variable.c"   ==> VAR_NaN
+   "variable.c"   ==> VAR_DAMP
+   "variable.c"   ==> f_compare
+   "variable.c"   ==> l_compare
+   "variable.c"   ==> VAR_CheckSet_Bounds
+   "variable.c"   ==> VAR_Check_Bounds
+   "variable.c"   ==> Get_Unit_Coeff
+   "variable.c"   ==> Convert
+   "variable.c"   ==> Get_Prev_Unit
+   "variable.c"   ==> Get_Next_Unit
+   "variable.c"   ==> Get_Unit
+   "variable.c"   ==> Get_Class
+   "variable.c"   ==> Time_Scale_Flow
+   "variable.c"   ==> Breakout_Flow_Units
+   "variable.c"   ==> Join_MassTime_Units
+C Source Interlister                    Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+   ""  ==> VAR_DAMP_Init
+   "variable.c"  ==> VAR_Copy
+   "variable.c"  ==> VAR_Initialize
+   "variable.c"  ==> VAR_Update
+   "variable.c"  ==> VAR_Setup_Unit
+   "variable.c"  ==> VAR_Set_Unit
+   "variable.c"  ==> VAR_Set_Unit_Param
+   "variable.c"  ==> VAR_Get_Unit_Param
+   "variable.c"  ==> VAR_NaN
+   "variable.c"  ==> VAR_DAMP
+   "variable.c"  ==> f_compare
+   "variable.c"  ==> l_compare
+   "variable.c"  ==> VAR_CheckSet_Bounds
+   "variable.c"  ==> VAR_Check_Bounds
+   "variable.c"  ==> Get_Unit_Coeff
+   "variable.c"  ==> Convert
+   "variable.c"  ==> Get_Prev_Unit
+   "variable.c"  ==> Get_Next_Unit
+   "variable.c"  ==> Get_Unit
+   "variable.c"  ==> Get_Class
+   "variable.c"  ==> Time_Scale_Flow
+   "variable.c"  ==> Breakout_Flow_Units
+   "variable.c"  ==> Join_MassTime_Units
+TMS320C3x/4x COFF Assembler             Version 5.12
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+ PASS 1
+ PASS 2
+
+ No Errors,  No Warnings
+
+cl30 EXECUTE.c -gks -v33 -pl -mbfr -alsx -x1 -frG:\workspace\win\eea\APP\OBJ -fsG:\workspace\win\eea\APP\SOURCE\ASM -iG:\workspace\win\eea\APP\SOURCE\INCLUDE -iG:\workspace\win\eea\INCLUDE
+[execute.c]
+TMS320C3x/4x ANSI C Compiler            Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+   "execute.c"   ==> Execute_Init
+   "execute.c"   ==> Execute_Insert
+   "execute.c"   ==> Execute
+TMS320C3x/4x ANSI C Code Generator      Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+   "execute.c"   ==> Execute_Init
+   "execute.c"   ==> Execute_Insert
+   "execute.c"   ==> Execute
+C Source Interlister                    Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+   ""  ==> Execute_Init
+   "execute.c"  ==> Execute_Insert
+   "execute.c"  ==> Execute
+TMS320C3x/4x COFF Assembler             Version 5.12
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+ PASS 1
+ PASS 2
+
+ No Errors,  No Warnings
+
+cl30 FLASH.c -gks -v33 -pl -mbfr -alsx -x1 -frG:\workspace\win\eea\APP\OBJ -fsG:\workspace\win\eea\APP\SOURCE\ASM -iG:\workspace\win\eea\APP\SOURCE\INCLUDE -iG:\workspace\win\eea\INCLUDE
+[flash.c]
+TMS320C3x/4x ANSI C Compiler            Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+   "flash.c"   ==> FLASH_SIZE
+   "flash.c"   ==> FLASH_CHECK_ADDR
+   "flash.c"   ==> FLASH_LOCK_BLK
+   "flash.c"   ==> FLASH_ERASE_BLK
+   "flash.c"   ==> FLASH_WRITE_BLK
+   "flash.c"   ==> FLASH_STATUS
+   "flash.c"   ==> FLASH_READ_ESN_MFGR
+   "flash.c"   ==> FLASH_READ_ESN_USER
+   "flash.c"   ==> FLASH_WRITE_ESN_USER
+   "flash.c"   ==> FLASH_LOCK_ESN_USER
+TMS320C3x/4x ANSI C Code Generator      Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+   "flash.c"   ==> FLASH_SIZE
+   "flash.c"   ==> FLASH_CHECK_ADDR
+   "flash.c"   ==> FLASH_LOCK_BLK
+   "flash.c"   ==> FLASH_ERASE_BLK
+   "flash.c"   ==> FLASH_WRITE_BLK
+   "flash.c"   ==> FLASH_STATUS
+   "flash.c"   ==> FLASH_READ_ESN_MFGR
+   "flash.c"   ==> FLASH_READ_ESN_USER
+   "flash.c"   ==> FLASH_WRITE_ESN_USER
+   "flash.c"   ==> FLASH_LOCK_ESN_USER
+C Source Interlister                    Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+   ""  ==> FLASH_SIZE
+   "flash.c"  ==> FLASH_CHECK_ADDR
+   "flash.c"  ==> FLASH_LOCK_BLK
+   "flash.c"  ==> FLASH_ERASE_BLK
+   "flash.c"  ==> FLASH_WRITE_BLK
+   "flash.c"  ==> FLASH_STATUS
+   "flash.c"  ==> FLASH_READ_ESN_MFGR
+   "flash.c"  ==> FLASH_READ_ESN_USER
+   "flash.c"  ==> FLASH_WRITE_ESN_USER
+   "flash.c"  ==> FLASH_LOCK_ESN_USER
+TMS320C3x/4x COFF Assembler             Version 5.12
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+ PASS 1
+ PASS 2
+
+ No Errors,  No Warnings
+
+cl30 LIST.c -gks -v33 -pl -mbfr -alsx -x1 -frG:\workspace\win\eea\APP\OBJ -fsG:\workspace\win\eea\APP\SOURCE\ASM -iG:\workspace\win\eea\APP\SOURCE\INCLUDE -iG:\workspace\win\eea\INCLUDE
+[list.c]
+TMS320C3x/4x ANSI C Compiler            Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+   "list.c"   ==> List_Add
+   "list.c"   ==> List_Remove
+   "list.c"   ==> List_Push
+   "list.c"   ==> List_Pop
+   "list.c"   ==> List_Init
+TMS320C3x/4x ANSI C Code Generator      Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+   "list.c"   ==> List_Add
+   "list.c"   ==> List_Remove
+   "list.c"   ==> List_Push
+   "list.c"   ==> List_Pop
+   "list.c"   ==> List_Init
+C Source Interlister                    Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+   ""  ==> List_Add
+   "list.c"  ==> List_Remove
+   "list.c"  ==> List_Push
+   "list.c"  ==> List_Pop
+   "list.c"  ==> List_Init
+TMS320C3x/4x COFF Assembler             Version 5.12
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+ PASS 1
+ PASS 2
+
+ No Errors,  No Warnings
+
+cl30 MODBUSRTU.c -gks -v33 -pl -mbfr -alsx -x1 -frG:\workspace\win\eea\APP\OBJ -fsG:\workspace\win\eea\APP\SOURCE\ASM -iG:\workspace\win\eea\APP\SOURCE\INCLUDE -iG:\workspace\win\eea\INCLUDE
+[modbusrtu.c]
+TMS320C3x/4x ANSI C Compiler            Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+   "modbusrtu.c"   ==> Modbus_Initialize
+   "modbusrtu.c"   ==> MODBUS_RX_ID
+   "modbusrtu.c"   ==> MODBUS_RX_LONG_ADDR
+   "modbusrtu.c"   ==> MODBUS_RX_FUNCTION
+   "modbusrtu.c"   ==> MODBUS_RX_n
+   "modbusrtu.c"   ==> MODBUS_RX_nDATA
+   "modbusrtu.c"   ==> MODBUS_RX_CRC
+   "modbusrtu.c"   ==> MB_exception
+   "modbusrtu.c"   ==> MB_Diag
+   "modbusrtu.c"   ==> Force_Slave_Pipe
+   "modbusrtu.c"   ==> Report_Slave_Info
+   "modbusrtu.c"   ==> Process_Memory
+   "modbusrtu.c"   ==> Process
+   "modbusrtu.c"   ==> MB_Calibrate
+   "modbusrtu.c"   ==> MB_POLL_0
+   "modbusrtu.c"   ==> MB_POLL_1
+   "modbusrtu.c"   ==> MB_POLL_2
+   "modbusrtu.c"   ==> MB_POLL_3
+   "modbusrtu.c"   ==> MB_POLL_4
+   "modbusrtu.c"   ==> MB_POLL_5
+   "modbusrtu.c"   ==> MB_POLL_6
+   "modbusrtu.c"   ==> MB_POLL_7
+   "modbusrtu.c"   ==> MB_RETRY_0
+   "modbusrtu.c"   ==> MB_RETRY_1
+   "modbusrtu.c"   ==> MB_RETRY_2
+   "modbusrtu.c"   ==> MB_RETRY_3
+   "modbusrtu.c"   ==> MB_RETRY_4
+   "modbusrtu.c"   ==> MB_RETRY_5
+   "modbusrtu.c"   ==> MB_RETRY_6
+   "modbusrtu.c"   ==> MB_RETRY_7
+   "modbusrtu.c"   ==> MB_POLL
+   "modbusrtu.c"   ==> MB_RETRY
+   "modbusrtu.c"   ==> MB_Init_Master
+   "modbusrtu.c"   ==> MB_RX
+   "modbusrtu.c"   ==> MB_RX_MCFU1
+   "modbusrtu.c"   ==> MB_RX_MCFU2
+   "modbusrtu.c"   ==> MB_RX_MCFU3
+   "modbusrtu.c"   ==> MB_RX_MCFU4
+   "modbusrtu.c"   ==> MB_RX_COR0CFGA
+   "modbusrtu.c"   ==> MB_RX_COR1CFGA
+   "modbusrtu.c"   ==> MB_RX_COR2CFGA
+   "modbusrtu.c"   ==> MB_RX_COR3CFGA
+   "modbusrtu.c"   ==> MB_RX_COR0CFGB
+   "modbusrtu.c"   ==> MB_RX_COR1CFGB
+   "modbusrtu.c"   ==> MB_RX_COR2CFGB
+   "modbusrtu.c"   ==> MB_RX_COR3CFGB
+   "modbusrtu.c"   ==> MB_RX_COR4CFGB
+   "modbusrtu.c"   ==> MB_RX_COR0CFGC
+   "modbusrtu.c"   ==> MB_RX_COR1CFGC
+   "modbusrtu.c"   ==> MB_RX_COR2CFGC
+   "modbusrtu.c"   ==> MB_RX_COR3CFGC
+   "modbusrtu.c"   ==> MB_RX_COR0CFGD
+   "modbusrtu.c"   ==> MB_RX_COR1CFGD
+   "modbusrtu.c"   ==> MB_RX_COR2CFGD
+   "modbusrtu.c"   ==> MB_RX_COR3CFGD
+   "modbusrtu.c"   ==> MB_RX_COR0CFG
+   "modbusrtu.c"   ==> MB_RX_COR1CFG
+   "modbusrtu.c"   ==> MB_RX_COR2CFG
+   "modbusrtu.c"   ==> MB_RX_COR3CFG
+   "modbusrtu.c"   ==> MB_RX_2
+   "modbusrtu.c"   ==> MB_RX_3
+   "modbusrtu.c"   ==> MB_RX_COR1COILS
+   "modbusrtu.c"   ==> MB_RX_COR2COILS
+   "modbusrtu.c"   ==> MB_RX_5
+   "modbusrtu.c"   ==> Xlate_COR_Special_Units
+   "modbusrtu.c"   ==> MB_RX_CT1
+   "modbusrtu.c"   ==> MB_RX_CT2
+   "modbusrtu.c"   ==> MB_RX_CT3
+   "modbusrtu.c"   ==> MB_RX_CT4
+   "modbusrtu.c"   ==> MB_RX_CA1
+   "modbusrtu.c"   ==> MB_RX_CA2
+   "modbusrtu.c"   ==> MB_RX_CA3
+   "modbusrtu.c"   ==> MB_RX_CA4
+   "modbusrtu.c"   ==> MB_RX_CAP1
+   "modbusrtu.c"   ==> Xlate_3095_P_units
+   "modbusrtu.c"   ==> Xlate_3095_T_units
+   "modbusrtu.c"   ==> MB_RX_C1
+   "modbusrtu.c"   ==> MB_RX_C2
+   "modbusrtu.c"   ==> MB_RX_C3
+   "modbusrtu.c"   ==> MB_RX_C4
+   "modbusrtu.c"   ==> MB_RX_C5
+   "modbusrtu.c"   ==> MB_TX_A_PLC
+   "modbusrtu.c"   ==> Master_Create
+TMS320C3x/4x ANSI C Code Generator      Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+   "modbusrtu.c"   ==> Modbus_Initialize
+   "modbusrtu.c"   ==> MODBUS_RX_ID
+   "modbusrtu.c"   ==> MODBUS_RX_LONG_ADDR
+   "modbusrtu.c"   ==> MODBUS_RX_FUNCTION
+   "modbusrtu.c"   ==> MODBUS_RX_n
+   "modbusrtu.c"   ==> MODBUS_RX_nDATA
+   "modbusrtu.c"   ==> MODBUS_RX_CRC
+   "modbusrtu.c"   ==> MB_exception
+   "modbusrtu.c"   ==> MB_Diag
+   "modbusrtu.c"   ==> Force_Slave_Pipe
+   "modbusrtu.c"   ==> Report_Slave_Info
+   "modbusrtu.c"   ==> Process_Memory
+   "modbusrtu.c"   ==> Process
+   "modbusrtu.c"   ==> MB_Calibrate
+   "modbusrtu.c"   ==> MB_POLL_0
+   "modbusrtu.c"   ==> MB_POLL_1
+   "modbusrtu.c"   ==> MB_POLL_2
+   "modbusrtu.c"   ==> MB_POLL_3
+   "modbusrtu.c"   ==> MB_POLL_4
+   "modbusrtu.c"   ==> MB_POLL_5
+   "modbusrtu.c"   ==> MB_POLL_6
+   "modbusrtu.c"   ==> MB_POLL_7
+   "modbusrtu.c"   ==> MB_RETRY_0
+   "modbusrtu.c"   ==> MB_RETRY_1
+   "modbusrtu.c"   ==> MB_RETRY_2
+   "modbusrtu.c"   ==> MB_RETRY_3
+   "modbusrtu.c"   ==> MB_RETRY_4
+   "modbusrtu.c"   ==> MB_RETRY_5
+   "modbusrtu.c"   ==> MB_RETRY_6
+   "modbusrtu.c"   ==> MB_RETRY_7
+   "modbusrtu.c"   ==> MB_POLL
+   "modbusrtu.c"   ==> MB_RETRY
+   "modbusrtu.c"   ==> MB_Init_Master
+   "modbusrtu.c"   ==> MB_RX
+   "modbusrtu.c"   ==> MB_RX_MCFU1
+   "modbusrtu.c"   ==> MB_RX_MCFU2
+   "modbusrtu.c"   ==> MB_RX_MCFU3
+   "modbusrtu.c"   ==> MB_RX_MCFU4
+   "modbusrtu.c"   ==> MB_RX_COR0CFGA
+   "modbusrtu.c"   ==> MB_RX_COR1CFGA
+   "modbusrtu.c"   ==> MB_RX_COR2CFGA
+   "modbusrtu.c"   ==> MB_RX_COR3CFGA
+   "modbusrtu.c"   ==> MB_RX_COR0CFGB
+   "modbusrtu.c"   ==> MB_RX_COR1CFGB
+   "modbusrtu.c"   ==> MB_RX_COR2CFGB
+   "modbusrtu.c"   ==> MB_RX_COR3CFGB
+   "modbusrtu.c"   ==> MB_RX_COR4CFGB
+   "modbusrtu.c"   ==> MB_RX_COR0CFGC
+   "modbusrtu.c"   ==> MB_RX_COR1CFGC
+   "modbusrtu.c"   ==> MB_RX_COR2CFGC
+   "modbusrtu.c"   ==> MB_RX_COR3CFGC
+   "modbusrtu.c"   ==> MB_RX_COR0CFGD
+   "modbusrtu.c"   ==> MB_RX_COR1CFGD
+   "modbusrtu.c"   ==> MB_RX_COR2CFGD
+   "modbusrtu.c"   ==> MB_RX_COR3CFGD
+   "modbusrtu.c"   ==> MB_RX_COR0CFG
+   "modbusrtu.c"   ==> MB_RX_COR1CFG
+   "modbusrtu.c"   ==> MB_RX_COR2CFG
+   "modbusrtu.c"   ==> MB_RX_COR3CFG
+   "modbusrtu.c"   ==> MB_RX_2
+   "modbusrtu.c"   ==> MB_RX_3
+   "modbusrtu.c"   ==> MB_RX_COR1COILS
+   "modbusrtu.c"   ==> MB_RX_COR2COILS
+   "modbusrtu.c"   ==> MB_RX_5
+   "modbusrtu.c"   ==> Xlate_COR_Special_Units
+   "modbusrtu.c"   ==> MB_RX_CT1
+   "modbusrtu.c"   ==> MB_RX_CT2
+   "modbusrtu.c"   ==> MB_RX_CT3
+   "modbusrtu.c"   ==> MB_RX_CT4
+   "modbusrtu.c"   ==> MB_RX_CA1
+   "modbusrtu.c"   ==> MB_RX_CA2
+   "modbusrtu.c"   ==> MB_RX_CA3
+   "modbusrtu.c"   ==> MB_RX_CA4
+   "modbusrtu.c"   ==> MB_RX_CAP1
+   "modbusrtu.c"   ==> Xlate_3095_P_units
+   "modbusrtu.c"   ==> Xlate_3095_T_units
+   "modbusrtu.c"   ==> MB_RX_C1
+   "modbusrtu.c"   ==> MB_RX_C2
+   "modbusrtu.c"   ==> MB_RX_C3
+   "modbusrtu.c"   ==> MB_RX_C4
+   "modbusrtu.c"   ==> MB_RX_C5
+   "modbusrtu.c"   ==> MB_TX_A_PLC
+   "modbusrtu.c"   ==> Master_Create
+C Source Interlister                    Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+   ""  ==> Modbus_Initialize
+   "modbusrtu.c"  ==> MODBUS_RX_ID
+   "modbusrtu.c"  ==> MODBUS_RX_LONG_ADDR
+   "modbusrtu.c"  ==> MODBUS_RX_FUNCTION
+   "modbusrtu.c"  ==> MODBUS_RX_n
+   "modbusrtu.c"  ==> MODBUS_RX_nDATA
+   "modbusrtu.c"  ==> MODBUS_RX_CRC
+   "modbusrtu.c"  ==> MB_exception
+   "modbusrtu.c"  ==> MB_Diag
+   "modbusrtu.c"  ==> Force_Slave_Pipe
+   "modbusrtu.c"  ==> Report_Slave_Info
+   "modbusrtu.c"  ==> Process_Memory
+   "modbusrtu.c"  ==> Process
+   "modbusrtu.c"  ==> MB_Calibrate
+   "modbusrtu.c"  ==> MB_POLL_0
+   "modbusrtu.c"  ==> MB_POLL_1
+   "modbusrtu.c"  ==> MB_POLL_2
+   "modbusrtu.c"  ==> MB_POLL_3
+   "modbusrtu.c"  ==> MB_POLL_4
+   "modbusrtu.c"  ==> MB_POLL_5
+   "modbusrtu.c"  ==> MB_POLL_6
+   "modbusrtu.c"  ==> MB_POLL_7
+   "modbusrtu.c"  ==> MB_RETRY_0
+   "modbusrtu.c"  ==> MB_RETRY_1
+   "modbusrtu.c"  ==> MB_RETRY_2
+   "modbusrtu.c"  ==> MB_RETRY_3
+   "modbusrtu.c"  ==> MB_RETRY_4
+   "modbusrtu.c"  ==> MB_RETRY_5
+   "modbusrtu.c"  ==> MB_RETRY_6
+   "modbusrtu.c"  ==> MB_RETRY_7
+   "modbusrtu.c"  ==> MB_POLL
+   "modbusrtu.c"  ==> MB_RETRY
+   "modbusrtu.c"  ==> MB_Init_Master
+   "modbusrtu.c"  ==> MB_RX
+   "modbusrtu.c"  ==> MB_RX_MCFU1
+   "modbusrtu.c"  ==> MB_RX_MCFU2
+   "modbusrtu.c"  ==> MB_RX_MCFU3
+   "modbusrtu.c"  ==> MB_RX_MCFU4
+   "modbusrtu.c"  ==> MB_RX_COR0CFGA
+   "modbusrtu.c"  ==> MB_RX_COR1CFGA
+   "modbusrtu.c"  ==> MB_RX_COR2CFGA
+   "modbusrtu.c"  ==> MB_RX_COR3CFGA
+   "modbusrtu.c"  ==> MB_RX_COR0CFGB
+   "modbusrtu.c"  ==> MB_RX_COR1CFGB
+   "modbusrtu.c"  ==> MB_RX_COR2CFGB
+   "modbusrtu.c"  ==> MB_RX_COR3CFGB
+   "modbusrtu.c"  ==> MB_RX_COR4CFGB
+   "modbusrtu.c"  ==> MB_RX_COR0CFGC
+   "modbusrtu.c"  ==> MB_RX_COR1CFGC
+   "modbusrtu.c"  ==> MB_RX_COR2CFGC
+   "modbusrtu.c"  ==> MB_RX_COR3CFGC
+   "modbusrtu.c"  ==> MB_RX_COR0CFGD
+   "modbusrtu.c"  ==> MB_RX_COR1CFGD
+   "modbusrtu.c"  ==> MB_RX_COR2CFGD
+   "modbusrtu.c"  ==> MB_RX_COR3CFGD
+   "modbusrtu.c"  ==> MB_RX_COR0CFG
+   "modbusrtu.c"  ==> MB_RX_COR1CFG
+   "modbusrtu.c"  ==> MB_RX_COR2CFG
+   "modbusrtu.c"  ==> MB_RX_COR3CFG
+   "modbusrtu.c"  ==> MB_RX_2
+   "modbusrtu.c"  ==> MB_RX_3
+   "modbusrtu.c"  ==> MB_RX_COR1COILS
+   "modbusrtu.c"  ==> MB_RX_COR2COILS
+   "modbusrtu.c"  ==> MB_RX_5
+   "modbusrtu.c"  ==> Xlate_COR_Special_Units
+   "modbusrtu.c"  ==> MB_RX_CT1
+   "modbusrtu.c"  ==> MB_RX_CT2
+   "modbusrtu.c"  ==> MB_RX_CT3
+   "modbusrtu.c"  ==> MB_RX_CT4
+   "modbusrtu.c"  ==> MB_RX_CA1
+   "modbusrtu.c"  ==> MB_RX_CA2
+   "modbusrtu.c"  ==> MB_RX_CA3
+   "modbusrtu.c"  ==> MB_RX_CA4
+   "modbusrtu.c"  ==> MB_RX_CAP1
+   "modbusrtu.c"  ==> Xlate_3095_P_units
+   "modbusrtu.c"  ==> Xlate_3095_T_units
+   "modbusrtu.c"  ==> MB_RX_C1
+   "modbusrtu.c"  ==> MB_RX_C2
+   "modbusrtu.c"  ==> MB_RX_C3
+   "modbusrtu.c"  ==> MB_RX_C4
+   "modbusrtu.c"  ==> MB_RX_C5
+   "modbusrtu.c"  ==> MB_TX_A_PLC
+   "modbusrtu.c"  ==> Master_Create
+TMS320C3x/4x COFF Assembler             Version 5.12
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+ PASS 1
+ PASS 2
+
+ No Errors,  No Warnings
+
+cl30 BUFFER.c -gks -v33 -pl -mbfr -alsx -x1 -frG:\workspace\win\eea\APP\OBJ -fsG:\workspace\win\eea\APP\SOURCE\ASM -iG:\workspace\win\eea\APP\SOURCE\INCLUDE -iG:\workspace\win\eea\INCLUDE
+[buffer.c]
+TMS320C3x/4x ANSI C Compiler            Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+   "buffer.c"   ==> CRC16
+   "buffer.c"   ==> Put
+   "buffer.c"   ==> Get
+   "buffer.c"   ==> Put_n
+   "buffer.c"   ==> Clear
+TMS320C3x/4x ANSI C Code Generator      Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+   "buffer.c"   ==> CRC16
+   "buffer.c"   ==> Put
+   "buffer.c"   ==> Get
+   "buffer.c"   ==> Put_n
+   "buffer.c"   ==> Clear
+C Source Interlister                    Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+   ""  ==> CRC16
+   "buffer.c"  ==> Put
+   "buffer.c"  ==> Get
+   "buffer.c"  ==> Put_n
+   "buffer.c"  ==> Clear
+TMS320C3x/4x COFF Assembler             Version 5.12
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+ PASS 1
+ PASS 2
+
+ No Errors,  No Warnings
+
+asm30 FLOAT1.asm FLOAT1.obj -lx -v30 -mrb -iG:\workspace\win\eea\APP\SOURCE -iG:\workspace\win\eea\APP\SOURCE\INCLUDE -iG:\workspace\win\eea\INCLUDE -iG:\workspace\win\eea\APP\SOURCE\ASM
+TMS320C3x/4x COFF Assembler             Version 5.12
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+ PASS 1
+ PASS 2
+
+ No Errors,  No Warnings
+
+cl30 GLBLS.c -gks -v33 -pl -mbfr -alsx -x1 -frG:\workspace\win\eea\APP\OBJ -fsG:\workspace\win\eea\APP\SOURCE\ASM -iG:\workspace\win\eea\APP\SOURCE\INCLUDE -iG:\workspace\win\eea\INCLUDE
+[glbls.c]
+TMS320C3x/4x ANSI C Compiler            Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+   "glbls.c"   ==> Setup_Basics
+TMS320C3x/4x ANSI C Code Generator      Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+   "glbls.c"   ==> Setup_Basics
+C Source Interlister                    Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+   ""  ==> Setup_Basics
+TMS320C3x/4x COFF Assembler             Version 5.12
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+ PASS 1
+ PASS 2
+
+ No Errors,  No Warnings
+
+cl30 HART.c -gks -v33 -pl -mbfr -alsx -x1 -frG:\workspace\win\eea\APP\OBJ -fsG:\workspace\win\eea\APP\SOURCE\ASM -iG:\workspace\win\eea\APP\SOURCE\INCLUDE -iG:\workspace\win\eea\INCLUDE
+[hart.c]
+TMS320C3x/4x ANSI C Compiler            Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+   "hart.c"   ==> HART_5
+   "hart.c"   ==> HART_VAR_STAT
+   "hart.c"   ==> HART_Lookup
+   "hart.c"   ==> HART_Lookup_n
+   "hart.c"   ==> HCFG_CHANGE
+   "hart.c"   ==> HART_Send_Response
+   "hart.c"   ==> HART_BURST_REPEAT
+   "hart.c"   ==> HART_Burst
+   "hart.c"   ==> HART_RX_CKSUM
+   "hart.c"   ==> HART_RX_N_DATA
+   "hart.c"   ==> HART_RX_N
+   "hart.c"   ==> HART_RX_COMMAND
+   "hart.c"   ==> HART_RX_EXPANSION_BYTES
+   "hart.c"   ==> HART_RX_SHORT_ADDRESS
+   "hart.c"   ==> HART_RX_LONG_ADDRESS
+   "hart.c"   ==> HART_RX_DELIMITER
+   "hart.c"   ==> HART_Initialize
+TMS320C3x/4x ANSI C Code Generator      Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+   "hart.c"   ==> HART_5
+   "hart.c"   ==> HART_VAR_STAT
+   "hart.c"   ==> HART_Lookup
+   "hart.c"   ==> HART_Lookup_n
+   "hart.c"   ==> HCFG_CHANGE
+   "hart.c"   ==> HART_Send_Response
+   "hart.c"   ==> HART_BURST_REPEAT
+   "hart.c"   ==> HART_Burst
+   "hart.c"   ==> HART_RX_CKSUM
+   "hart.c"   ==> HART_RX_N_DATA
+   "hart.c"   ==> HART_RX_N
+   "hart.c"   ==> HART_RX_COMMAND
+   "hart.c"   ==> HART_RX_EXPANSION_BYTES
+   "hart.c"   ==> HART_RX_SHORT_ADDRESS
+   "hart.c"   ==> HART_RX_LONG_ADDRESS
+   "hart.c"   ==> HART_RX_DELIMITER
+   "hart.c"   ==> HART_Initialize
+C Source Interlister                    Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+   ""  ==> HART_5
+   "hart.c"  ==> HART_VAR_STAT
+   "hart.c"  ==> HART_Lookup
+   "hart.c"  ==> HART_Lookup_n
+   "hart.c"  ==> HCFG_CHANGE
+   "hart.c"  ==> HART_Send_Response
+   "hart.c"  ==> HART_BURST_REPEAT
+   "hart.c"  ==> HART_Burst
+   "hart.c"  ==> HART_RX_CKSUM
+   "hart.c"  ==> HART_RX_N_DATA
+   "hart.c"  ==> HART_RX_N
+   "hart.c"  ==> HART_RX_COMMAND
+   "hart.c"  ==> HART_RX_EXPANSION_BYTES
+   "hart.c"  ==> HART_RX_SHORT_ADDRESS
+   "hart.c"  ==> HART_RX_LONG_ADDRESS
+   "hart.c"  ==> HART_RX_DELIMITER
+   "hart.c"  ==> HART_Initialize
+TMS320C3x/4x COFF Assembler             Version 5.12
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+ PASS 1
+ PASS 2
+
+ No Errors,  No Warnings
+
+asm30 boot.asm boot.obj -lx -v30 -mrb -iG:\workspace\win\eea\APP\SOURCE -iG:\workspace\win\eea\APP\SOURCE\INCLUDE -iG:\workspace\win\eea\INCLUDE -iG:\workspace\win\eea\APP\SOURCE\ASM
+TMS320C3x/4x COFF Assembler             Version 5.12
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+ PASS 1
+ PASS 2
+
+ No Errors,  No Warnings
+
+cl30 LOG.c -gks -v33 -pl -mbfr -alsx -x1 -frG:\workspace\win\eea\APP\OBJ -fsG:\workspace\win\eea\APP\SOURCE\ASM -iG:\workspace\win\eea\APP\SOURCE\INCLUDE -iG:\workspace\win\eea\INCLUDE
+[log.c]
+TMS320C3x/4x ANSI C Compiler            Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+   "log.c"   ==> InitLog
+   "log.c"   ==> EraseSector
+   "log.c"   ==> MarkLogStart
+   "log.c"   ==> RecordLogEntry
+   "log.c"   ==> LogNow
+   "log.c"   ==> LogNowUser
+   "log.c"   ==> DataLogCounter
+   "log.c"   ==> DataLogCounters
+   "log.c"   ==> DataLogUserClearFlag
+   "log.c"   ==> DataLogSysClearFlag
+   "log.c"   ==> DataLogUser
+   "log.c"   ==> DataLog
+   "log.c"   ==> CfgLog
+   "log.c"   ==> EraseEntireLog
+   "log.c"   ==> FindNextLogIndex
+   "log.c"   ==> FindLastLogRecord
+TMS320C3x/4x ANSI C Code Generator      Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+   "log.c"   ==> InitLog
+   "log.c"   ==> EraseSector
+   "log.c"   ==> MarkLogStart
+   "log.c"   ==> RecordLogEntry
+   "log.c"   ==> LogNow
+   "log.c"   ==> LogNowUser
+   "log.c"   ==> DataLogCounter
+   "log.c"   ==> DataLogCounters
+   "log.c"   ==> DataLogUserClearFlag
+   "log.c"   ==> DataLogSysClearFlag
+   "log.c"   ==> DataLogUser
+   "log.c"   ==> DataLog
+   "log.c"   ==> CfgLog
+   "log.c"   ==> EraseEntireLog
+   "log.c"   ==> FindNextLogIndex
+   "log.c"   ==> FindLastLogRecord
+C Source Interlister                    Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+   ""  ==> InitLog
+   "log.c"  ==> EraseSector
+   "log.c"  ==> MarkLogStart
+   "log.c"  ==> RecordLogEntry
+   "log.c"  ==> LogNow
+   "log.c"  ==> LogNowUser
+   "log.c"  ==> DataLogCounter
+   "log.c"  ==> DataLogCounters
+   "log.c"  ==> DataLogUserClearFlag
+   "log.c"  ==> DataLogSysClearFlag
+   "log.c"  ==> DataLogUser
+   "log.c"  ==> DataLog
+   "log.c"  ==> CfgLog
+   "log.c"  ==> EraseEntireLog
+   "log.c"  ==> FindNextLogIndex
+   "log.c"  ==> FindLastLogRecord
+TMS320C3x/4x COFF Assembler             Version 5.12
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+ PASS 1
+ PASS 2
+
+ No Errors,  No Warnings
+
+cl30 DEMO.c -gks -v33 -pl -mbfr -alsx -x1 -frG:\workspace\win\eea\APP\OBJ -fsG:\workspace\win\eea\APP\SOURCE\ASM -iG:\workspace\win\eea\APP\SOURCE\INCLUDE -iG:\workspace\win\eea\INCLUDE
+[demo.c]
+TMS320C3x/4x ANSI C Compiler            Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+   "demo.c"   ==> DEMO_Init
+TMS320C3x/4x ANSI C Code Generator      Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+   "demo.c"   ==> DEMO_Init
+C Source Interlister                    Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+   ""  ==> DEMO_Init
+TMS320C3x/4x COFF Assembler             Version 5.12
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+ PASS 1
+ PASS 2
+
+ No Errors,  No Warnings
+
+cl30 SELFTEST.c -gks -v33 -pl -mbfr -alsx -x1 -frG:\workspace\win\eea\APP\OBJ -fsG:\workspace\win\eea\APP\SOURCE\ASM -iG:\workspace\win\eea\APP\SOURCE\INCLUDE -iG:\workspace\win\eea\INCLUDE
+[selftest.c]
+TMS320C3x/4x ANSI C Compiler            Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+   "selftest.c"   ==> Clear_Diagnostics
+   "selftest.c"   ==> Set_Diag_Status
+   "selftest.c"   ==> Self_Test_FULL
+   "selftest.c"   ==> Self_Test5
+   "selftest.c"   ==> Self_Test4
+   "selftest.c"   ==> Self_Test3
+   "selftest.c"   ==> Self_Test2
+   "selftest.c"   ==> Self_Test1
+TMS320C3x/4x ANSI C Code Generator      Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+   "selftest.c"   ==> Clear_Diagnostics
+   "selftest.c"   ==> Set_Diag_Status
+   "selftest.c"   ==> Self_Test_FULL
+   "selftest.c"   ==> Self_Test5
+   "selftest.c"   ==> Self_Test4
+   "selftest.c"   ==> Self_Test3
+   "selftest.c"   ==> Self_Test2
+   "selftest.c"   ==> Self_Test1
+C Source Interlister                    Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+   ""  ==> Clear_Diagnostics
+   "selftest.c"  ==> Set_Diag_Status
+   "selftest.c"  ==> Self_Test_FULL
+   "selftest.c"  ==> Self_Test5
+   "selftest.c"  ==> Self_Test4
+   "selftest.c"  ==> Self_Test3
+   "selftest.c"  ==> Self_Test2
+   "selftest.c"  ==> Self_Test1
+TMS320C3x/4x COFF Assembler             Version 5.12
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+ PASS 1
+ PASS 2
+
+ No Errors,  No Warnings
+
+cl30 ETC.c -gks -v33 -pl -mbfr -alsx -x1 -frG:\workspace\win\eea\APP\OBJ -fsG:\workspace\win\eea\APP\SOURCE\ASM -iG:\workspace\win\eea\APP\SOURCE\INCLUDE -iG:\workspace\win\eea\INCLUDE
+[etc.c]
+TMS320C3x/4x ANSI C Compiler            Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+TMS320C3x/4x ANSI C Code Generator      Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+C Source Interlister                    Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+TMS320C3x/4x COFF Assembler             Version 5.12
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+ PASS 1
+ PASS 2
+
+ No Errors,  No Warnings
+
+cl30 I2C.c -gks -v33 -pl -mbfr -alsx -x1 -frG:\workspace\win\eea\APP\OBJ -fsG:\workspace\win\eea\APP\SOURCE\ASM -iG:\workspace\win\eea\APP\SOURCE\INCLUDE -iG:\workspace\win\eea\INCLUDE
+[i2c.c]
+TMS320C3x/4x ANSI C Compiler            Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+   "i2c.c"   ==> I2C_TX_BYTE
+   "i2c.c"   ==> I2C_RX_BYTE
+   "i2c.c"   ==> Write_I2C
+   "i2c.c"   ==> Read_I2C
+   "i2c.c"   ==> Write_DS1340
+   "i2c.c"   ==> Read_DS1340
+   "i2c.c"   ==> RTC_setup
+   "i2c.c"   ==> Write_MC24C02_Record
+   "i2c.c"   ==> Read_MC24C02_Record
+TMS320C3x/4x ANSI C Code Generator      Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+   "i2c.c"   ==> I2C_TX_BYTE
+   "i2c.c"   ==> I2C_RX_BYTE
+   "i2c.c"   ==> Write_I2C
+   "i2c.c"   ==> Read_I2C
+   "i2c.c"   ==> Write_DS1340
+   "i2c.c"   ==> Read_DS1340
+   "i2c.c"   ==> RTC_setup
+   "i2c.c"   ==> Write_MC24C02_Record
+   "i2c.c"   ==> Read_MC24C02_Record
+C Source Interlister                    Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+   ""  ==> I2C_TX_BYTE
+   "i2c.c"  ==> I2C_RX_BYTE
+   "i2c.c"  ==> Write_I2C
+   "i2c.c"  ==> Read_I2C
+   "i2c.c"  ==> Write_DS1340
+   "i2c.c"  ==> Read_DS1340
+   "i2c.c"  ==> RTC_setup
+   "i2c.c"  ==> Write_MC24C02_Record
+   "i2c.c"  ==> Read_MC24C02_Record
+TMS320C3x/4x COFF Assembler             Version 5.12
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+ PASS 1
+ PASS 2
+
+ No Errors,  No Warnings
+
+cl30 LCD.c -gks -v33 -pl -mbfr -alsx -x1 -frG:\workspace\win\eea\APP\OBJ -fsG:\workspace\win\eea\APP\SOURCE\ASM -iG:\workspace\win\eea\APP\SOURCE\INCLUDE -iG:\workspace\win\eea\INCLUDE
+[lcd.c]
+TMS320C3x/4x ANSI C Compiler            Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+   "lcd.c"   ==> I2C_TX_BYTE_5
+   "lcd.c"   ==> I2C_RX_BYTE_5
+   "lcd.c"   ==> Write_I2C_5
+   "lcd.c"   ==> Read_I2C_5
+   "lcd.c"   ==> LCD_CMD
+   "lcd.c"   ==> LCD_CHAR
+   "lcd.c"   ==> LCD_STR
+   "lcd.c"   ==> LCD_PAGE
+   "lcd.c"   ==> LCD_INIT
+TMS320C3x/4x ANSI C Code Generator      Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+   "lcd.c"   ==> I2C_TX_BYTE_5
+   "lcd.c"   ==> I2C_RX_BYTE_5
+   "lcd.c"   ==> Write_I2C_5
+   "lcd.c"   ==> Read_I2C_5
+   "lcd.c"   ==> LCD_CMD
+   "lcd.c"   ==> LCD_CHAR
+   "lcd.c"   ==> LCD_STR
+   "lcd.c"   ==> LCD_PAGE
+   "lcd.c"   ==> LCD_INIT
+C Source Interlister                    Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+   ""  ==> I2C_TX_BYTE_5
+   "lcd.c"  ==> I2C_RX_BYTE_5
+   "lcd.c"  ==> Write_I2C_5
+   "lcd.c"  ==> Read_I2C_5
+   "lcd.c"  ==> LCD_CMD
+   "lcd.c"  ==> LCD_CHAR
+   "lcd.c"  ==> LCD_STR
+   "lcd.c"  ==> LCD_PAGE
+   "lcd.c"  ==> LCD_INIT
+TMS320C3x/4x COFF Assembler             Version 5.12
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+ PASS 1
+ PASS 2
+
+ No Errors,  No Warnings
+
+cl30 MENU.c -gks -v33 -pl -mbfr -alsx -x1 -frG:\workspace\win\eea\APP\OBJ -fsG:\workspace\win\eea\APP\SOURCE\ASM -iG:\workspace\win\eea\APP\SOURCE\INCLUDE -iG:\workspace\win\eea\INCLUDE
+[menu.c]
+TMS320C3x/4x ANSI C Compiler            Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+   "menu.c"   ==> MENU_INIT
+   "menu.c"   ==> MENU_REFRESH
+   "menu.c"   ==> Update_Flags_Goto_Next_Menu
+   "menu.c"   ==> MSVE_Data_Input
+   "menu.c"   ==> MENU_PAGE_CPYRT
+   "menu.c"   ==> MENU_PAGE_RESTART
+   "menu.c"   ==> MENU_PAGE_RESTORE_FACTORY_DEFAULTS
+   "menu.c"   ==> MENU_PAGE_DIAG
+   "menu.c"   ==> MENU_PAGE_MAIN
+   "menu.c"   ==> MENU_PAGE_STREAM_SELECT
+   "menu.c"   ==> MENU_PAGE_PHASE_HOLDOVER
+   "menu.c"   ==> MENU_PAGE_NUMSAMP
+   "menu.c"   ==> MENU_PAGE_ALYESKA_PLC_DATA_ADDR
+   "menu.c"   ==> MENU_PAGE_SALINITY
+   "menu.c"   ==> MENU_FORCE_PHASE
+   "menu.c"   ==> MENU_PAGE_T_UNIT
+   "menu.c"   ==> MENU_PAGE_T_ADJ
+   "menu.c"   ==> MENU_PAGE_T_AVG
+   "menu.c"   ==> MENU_PAGE_CHPW_WPROT
+   "menu.c"   ==> MENU_PAGE_CHPW_TECH_MODE
+   "menu.c"   ==> MENU_PAGE_UNLOCK_WPROT
+   "menu.c"   ==> MENU_PAGE_GOTO_TECH_MODE
+   "menu.c"   ==> MENU_PAGE_LOW_SALT_MODE
+   "menu.c"   ==> MENU_PAGE_LOW_SALT_THRESHOLD
+   "menu.c"   ==> MENU_PAGE_OIL_ADJ
+   "menu.c"   ==> MENU_PAGE_WATER_ADJ
+   "menu.c"   ==> MENU_PAGE_ALARM_LO
+   "menu.c"   ==> MENU_PAGE_ALARM_HI
+   "menu.c"   ==> MENU_PAGE_WATER_IDX
+   "menu.c"   ==> MENU_PAGE_WATER_LO
+   "menu.c"   ==> MENU_PAGE_WATER_HI
+   "menu.c"   ==> MENU_PAGE_OIL_IDX
+   "menu.c"   ==> MENU_PAGE_OIL_LO
+   "menu.c"   ==> MENU_PAGE_OIL_HI
+   "menu.c"   ==> MENU_PAGE_OIL_P1
+   "menu.c"   ==> MENU_PAGE_OIL_P0
+   "menu.c"   ==> MENU_PAGE_CAPTURE_OIL
+   "menu.c"   ==> MENU_PAGE_CAPTURE_WATER
+   "menu.c"   ==> MENU_PAGE_CAL_OIL
+   "menu.c"   ==> MENU_PAGE_CAL_WATER
+   "menu.c"   ==> MENU_PAGE_WATERCUT_RAW
+   "menu.c"   ==> MENU_PAGE_AVGACCUM
+   "menu.c"   ==> MENU_PAGE_ACCUMN
+   "menu.c"   ==> MENU_PAGE_ACCUMG
+   "menu.c"   ==> MENU_PAGE_FLOW
+   "menu.c"   ==> MENU_PAGE_NET_FLOW
+   "menu.c"   ==> MENU_DENSITY
+   "menu.c"   ==> MENU_PAGE_DENSITY
+   "menu.c"   ==> MENU_TIME_DATE
+   "menu.c"   ==> MENU_PAGE_INFO
+   "menu.c"   ==> MENU_PAGE_PORT_CFG
+   "menu.c"   ==> MENU_RELAY_CFG
+   "menu.c"   ==> MENU_AI_CFG
+   "menu.c"   ==> MENU_AO_CFG
+   "menu.c"   ==> MENU_PAGE_TRIM_RTD_SELECT
+   "menu.c"   ==> MENU_OIL_CALC_MODE
+   "menu.c"   ==> MENU_DENSITY_CORRECTION
+   "menu.c"   ==> MENU_Density_D3
+   "menu.c"   ==> MENU_Density_D2
+   "menu.c"   ==> MENU_Density_D1
+   "menu.c"   ==> MENU_Density_D0
+   "menu.c"   ==> MENU_Density_Cal_Unit
+   "menu.c"   ==> MENU_Density_Cal
+   "menu.c"   ==> MENU_DCM_PORT
+   "menu.c"   ==> MENU_DCM_CFG_DAMP_FR
+   "menu.c"   ==> MENU_DCM_CFG_DAMP_DENSITY
+   "menu.c"   ==> MENU_DCM_CFG_CUTOFF
+   "menu.c"   ==> MENU_DCM_ZERO
+   "menu.c"   ==> MENU_Density_ADJ
+   "menu.c"   ==> MENU_FC_PRESSURE_UNIT
+   "menu.c"   ==> MENU_FC_TEMP_UNIT
+   "menu.c"   ==> MENU_FC_DENSITY_UNIT
+   "menu.c"   ==> MENU_FC_ACCUM_UNIT
+   "menu.c"   ==> MENU_FC_FLOW_UNIT
+   "menu.c"   ==> MENU_FC_FLOW_CLASS
+   "menu.c"   ==> MENU_FC_EMUL_DENSITY
+   "menu.c"   ==> MENU_FC_SALINITY
+   "menu.c"   ==> MENU_FC_WATERCUT
+   "menu.c"   ==> MENU_FC_PRESSURE
+   "menu.c"   ==> MENU_FC_TEMP
+   "menu.c"   ==> MENU_FC_FLOW
+   "menu.c"   ==> MENU_FC_WATER_DENSITY_PT
+   "menu.c"   ==> MENU_FC_WATER_DENSITY_ST
+   "menu.c"   ==> MENU_FC_OIL_DENSITY_PT
+   "menu.c"   ==> MENU_FC_OIL_DENSITY_ST
+   "menu.c"   ==> MENU_FC_SHRINKAGE
+   "menu.c"   ==> MENU_FC_METER_FACTOR
+   "menu.c"   ==> MENU_FC_ENABLE_NET
+   "menu.c"   ==> MENU_FC_ENABLE_DENSITY
+   "menu.c"   ==> MENU_FC_ENABLE_PULSE
+   "menu.c"   ==> MENU_FC_ENABLE_GROSS
+   "menu.c"   ==> MENU_FC_ENABLE_FLOW
+   "menu.c"   ==> MENU_FC_USE_PDI_TEMP
+   "menu.c"   ==> MENU_FC_USE_PDI_SALINITY
+   "menu.c"   ==> MENU_FC_USE_PDI_WATERCUT
+   "menu.c"   ==> MENU_FC_API_TABLE
+   "menu.c"   ==> MENU_FC_DENSITY_ADJ
+   "menu.c"   ==> MENU_FC_API_C_ALPHA
+   "menu.c"   ==> MENU_FC_MAN_FLOW
+   "menu.c"   ==> MENU_FC_MAN_TEMP
+   "menu.c"   ==> MENU_FC_MAN_WATERCUT
+   "menu.c"   ==> MENU_FC_MAN_PRESSURE
+   "menu.c"   ==> MENU_FC_MAN_DENSITY
+   "menu.c"   ==> MENU_FC_MAN_SALINITY
+   "menu.c"   ==> MENU_FC_PULSES_PER_VOL_UNIT
+   "menu.c"   ==> MENU_FLOW_COMPUTER
+   "menu.c"   ==> Get_Russ_Line
+   "menu.c"   ==> Print_To_LCD
+   "menu.c"   ==> Find_Russ_Tbl_Len
+   "menu.c"   ==> MENU_USB_LOGGING
+   "menu.c"   ==> MENU_LOGGING_PERIOD
+TMS320C3x/4x ANSI C Code Generator      Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+   "menu.c"   ==> MENU_INIT
+   "menu.c"   ==> MENU_REFRESH
+   "menu.c"   ==> Update_Flags_Goto_Next_Menu
+   "menu.c"   ==> MSVE_Data_Input
+   "menu.c"   ==> MENU_PAGE_CPYRT
+   "menu.c"   ==> MENU_PAGE_RESTART
+   "menu.c"   ==> MENU_PAGE_RESTORE_FACTORY_DEFAULTS
+   "menu.c"   ==> MENU_PAGE_DIAG
+   "menu.c"   ==> MENU_PAGE_MAIN
+   "menu.c"   ==> MENU_PAGE_STREAM_SELECT
+   "menu.c"   ==> MENU_PAGE_PHASE_HOLDOVER
+   "menu.c"   ==> MENU_PAGE_NUMSAMP
+   "menu.c"   ==> MENU_PAGE_ALYESKA_PLC_DATA_ADDR
+   "menu.c"   ==> MENU_PAGE_SALINITY
+   "menu.c"   ==> MENU_FORCE_PHASE
+   "menu.c"   ==> MENU_PAGE_T_UNIT
+   "menu.c"   ==> MENU_PAGE_T_ADJ
+   "menu.c"   ==> MENU_PAGE_T_AVG
+   "menu.c"   ==> MENU_PAGE_CHPW_WPROT
+   "menu.c"   ==> MENU_PAGE_CHPW_TECH_MODE
+   "menu.c"   ==> MENU_PAGE_UNLOCK_WPROT
+   "menu.c"   ==> MENU_PAGE_GOTO_TECH_MODE
+   "menu.c"   ==> MENU_PAGE_LOW_SALT_MODE
+   "menu.c"   ==> MENU_PAGE_LOW_SALT_THRESHOLD
+   "menu.c"   ==> MENU_PAGE_OIL_ADJ
+   "menu.c"   ==> MENU_PAGE_WATER_ADJ
+   "menu.c"   ==> MENU_PAGE_ALARM_LO
+   "menu.c"   ==> MENU_PAGE_ALARM_HI
+   "menu.c"   ==> MENU_PAGE_WATER_IDX
+   "menu.c"   ==> MENU_PAGE_WATER_LO
+   "menu.c"   ==> MENU_PAGE_WATER_HI
+   "menu.c"   ==> MENU_PAGE_OIL_IDX
+   "menu.c"   ==> MENU_PAGE_OIL_LO
+   "menu.c"   ==> MENU_PAGE_OIL_HI
+   "menu.c"   ==> MENU_PAGE_OIL_P1
+   "menu.c"   ==> MENU_PAGE_OIL_P0
+   "menu.c"   ==> MENU_PAGE_CAPTURE_OIL
+   "menu.c"   ==> MENU_PAGE_CAPTURE_WATER
+   "menu.c"   ==> MENU_PAGE_CAL_OIL
+   "menu.c"   ==> MENU_PAGE_CAL_WATER
+   "menu.c"   ==> MENU_PAGE_WATERCUT_RAW
+   "menu.c"   ==> MENU_PAGE_AVGACCUM
+   "menu.c"   ==> MENU_PAGE_ACCUMN
+   "menu.c"   ==> MENU_PAGE_ACCUMG
+   "menu.c"   ==> MENU_PAGE_FLOW
+   "menu.c"   ==> MENU_PAGE_NET_FLOW
+   "menu.c"   ==> MENU_DENSITY
+   "menu.c"   ==> MENU_PAGE_DENSITY
+   "menu.c"   ==> MENU_TIME_DATE
+   "menu.c"   ==> MENU_PAGE_INFO
+   "menu.c"   ==> MENU_PAGE_PORT_CFG
+   "menu.c"   ==> MENU_RELAY_CFG
+   "menu.c"   ==> MENU_AI_CFG
+   "menu.c"   ==> MENU_AO_CFG
+   "menu.c"   ==> MENU_PAGE_TRIM_RTD_SELECT
+   "menu.c"   ==> MENU_OIL_CALC_MODE
+   "menu.c"   ==> MENU_DENSITY_CORRECTION
+   "menu.c"   ==> MENU_Density_D3
+   "menu.c"   ==> MENU_Density_D2
+   "menu.c"   ==> MENU_Density_D1
+   "menu.c"   ==> MENU_Density_D0
+   "menu.c"   ==> MENU_Density_Cal_Unit
+   "menu.c"   ==> MENU_Density_Cal
+   "menu.c"   ==> MENU_DCM_PORT
+   "menu.c"   ==> MENU_DCM_CFG_DAMP_FR
+   "menu.c"   ==> MENU_DCM_CFG_DAMP_DENSITY
+   "menu.c"   ==> MENU_DCM_CFG_CUTOFF
+   "menu.c"   ==> MENU_DCM_ZERO
+   "menu.c"   ==> MENU_Density_ADJ
+   "menu.c"   ==> MENU_FC_PRESSURE_UNIT
+   "menu.c"   ==> MENU_FC_TEMP_UNIT
+   "menu.c"   ==> MENU_FC_DENSITY_UNIT
+   "menu.c"   ==> MENU_FC_ACCUM_UNIT
+   "menu.c"   ==> MENU_FC_FLOW_UNIT
+   "menu.c"   ==> MENU_FC_FLOW_CLASS
+   "menu.c"   ==> MENU_FC_EMUL_DENSITY
+   "menu.c"   ==> MENU_FC_SALINITY
+   "menu.c"   ==> MENU_FC_WATERCUT
+   "menu.c"   ==> MENU_FC_PRESSURE
+   "menu.c"   ==> MENU_FC_TEMP
+   "menu.c"   ==> MENU_FC_FLOW
+   "menu.c"   ==> MENU_FC_WATER_DENSITY_PT
+   "menu.c"   ==> MENU_FC_WATER_DENSITY_ST
+   "menu.c"   ==> MENU_FC_OIL_DENSITY_PT
+   "menu.c"   ==> MENU_FC_OIL_DENSITY_ST
+   "menu.c"   ==> MENU_FC_SHRINKAGE
+   "menu.c"   ==> MENU_FC_METER_FACTOR
+   "menu.c"   ==> MENU_FC_ENABLE_NET
+   "menu.c"   ==> MENU_FC_ENABLE_DENSITY
+   "menu.c"   ==> MENU_FC_ENABLE_PULSE
+   "menu.c"   ==> MENU_FC_ENABLE_GROSS
+   "menu.c"   ==> MENU_FC_ENABLE_FLOW
+   "menu.c"   ==> MENU_FC_USE_PDI_TEMP
+   "menu.c"   ==> MENU_FC_USE_PDI_SALINITY
+   "menu.c"   ==> MENU_FC_USE_PDI_WATERCUT
+   "menu.c"   ==> MENU_FC_API_TABLE
+   "menu.c"   ==> MENU_FC_DENSITY_ADJ
+   "menu.c"   ==> MENU_FC_API_C_ALPHA
+   "menu.c"   ==> MENU_FC_MAN_FLOW
+   "menu.c"   ==> MENU_FC_MAN_TEMP
+   "menu.c"   ==> MENU_FC_MAN_WATERCUT
+   "menu.c"   ==> MENU_FC_MAN_PRESSURE
+   "menu.c"   ==> MENU_FC_MAN_DENSITY
+   "menu.c"   ==> MENU_FC_MAN_SALINITY
+   "menu.c"   ==> MENU_FC_PULSES_PER_VOL_UNIT
+   "menu.c"   ==> MENU_FLOW_COMPUTER
+   "menu.c"   ==> Get_Russ_Line
+   "menu.c"   ==> Print_To_LCD
+   "menu.c"   ==> Find_Russ_Tbl_Len
+   "menu.c"   ==> MENU_USB_LOGGING
+   "menu.c"   ==> MENU_LOGGING_PERIOD
+C Source Interlister                    Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+   ""  ==> MENU_INIT
+   "menu.c"  ==> MENU_REFRESH
+   "menu.c"  ==> Update_Flags_Goto_Next_Menu
+   "menu.c"  ==> MSVE_Data_Input
+   "menu.c"  ==> MENU_PAGE_CPYRT
+   "menu.c"  ==> MENU_PAGE_RESTART
+   "menu.c"  ==> MENU_PAGE_RESTORE_FACTORY_DEFAULTS
+   "menu.c"  ==> MENU_PAGE_DIAG
+   "menu.c"  ==> MENU_PAGE_MAIN
+   "menu.c"  ==> MENU_PAGE_STREAM_SELECT
+   "menu.c"  ==> MENU_PAGE_PHASE_HOLDOVER
+   "menu.c"  ==> MENU_PAGE_NUMSAMP
+   "menu.c"  ==> MENU_PAGE_ALYESKA_PLC_DATA_ADDR
+   "menu.c"  ==> MENU_PAGE_SALINITY
+   "menu.c"  ==> MENU_FORCE_PHASE
+   "menu.c"  ==> MENU_PAGE_T_UNIT
+   "menu.c"  ==> MENU_PAGE_T_ADJ
+   "menu.c"  ==> MENU_PAGE_T_AVG
+   "menu.c"  ==> MENU_PAGE_CHPW_WPROT
+   "menu.c"  ==> MENU_PAGE_CHPW_TECH_MODE
+   "menu.c"  ==> MENU_PAGE_UNLOCK_WPROT
+   "menu.c"  ==> MENU_PAGE_GOTO_TECH_MODE
+   "menu.c"  ==> MENU_PAGE_LOW_SALT_MODE
+   "menu.c"  ==> MENU_PAGE_LOW_SALT_THRESHOLD
+   "menu.c"  ==> MENU_PAGE_OIL_ADJ
+   "menu.c"  ==> MENU_PAGE_WATER_ADJ
+   "menu.c"  ==> MENU_PAGE_ALARM_LO
+   "menu.c"  ==> MENU_PAGE_ALARM_HI
+   "menu.c"  ==> MENU_PAGE_WATER_IDX
+   "menu.c"  ==> MENU_PAGE_WATER_LO
+   "menu.c"  ==> MENU_PAGE_WATER_HI
+   "menu.c"  ==> MENU_PAGE_OIL_IDX
+   "menu.c"  ==> MENU_PAGE_OIL_LO
+   "menu.c"  ==> MENU_PAGE_OIL_HI
+   "menu.c"  ==> MENU_PAGE_OIL_P1
+   "menu.c"  ==> MENU_PAGE_OIL_P0
+   "menu.c"  ==> MENU_PAGE_CAPTURE_OIL
+   "menu.c"  ==> MENU_PAGE_CAPTURE_WATER
+   "menu.c"  ==> MENU_PAGE_CAL_OIL
+   "menu.c"  ==> MENU_PAGE_CAL_WATER
+   "menu.c"  ==> MENU_PAGE_WATERCUT_RAW
+   "menu.c"  ==> MENU_PAGE_AVGACCUM
+   "menu.c"  ==> MENU_PAGE_ACCUMN
+   "menu.c"  ==> MENU_PAGE_ACCUMG
+   "menu.c"  ==> MENU_PAGE_FLOW
+   "menu.c"  ==> MENU_PAGE_NET_FLOW
+   "menu.c"  ==> MENU_DENSITY
+   "menu.c"  ==> MENU_PAGE_DENSITY
+   "menu.c"  ==> MENU_TIME_DATE
+   "menu.c"  ==> MENU_PAGE_INFO
+   "menu.c"  ==> MENU_PAGE_PORT_CFG
+   "menu.c"  ==> MENU_RELAY_CFG
+   "menu.c"  ==> MENU_AI_CFG
+   "menu.c"  ==> MENU_AO_CFG
+   "menu.c"  ==> MENU_PAGE_TRIM_RTD_SELECT
+   "menu.c"  ==> MENU_OIL_CALC_MODE
+   "menu.c"  ==> MENU_DENSITY_CORRECTION
+   "menu.c"  ==> MENU_Density_D3
+   "menu.c"  ==> MENU_Density_D2
+   "menu.c"  ==> MENU_Density_D1
+   "menu.c"  ==> MENU_Density_D0
+   "menu.c"  ==> MENU_Density_Cal_Unit
+   "menu.c"  ==> MENU_Density_Cal
+   "menu.c"  ==> MENU_DCM_PORT
+   "menu.c"  ==> MENU_DCM_CFG_DAMP_FR
+   "menu.c"  ==> MENU_DCM_CFG_DAMP_DENSITY
+   "menu.c"  ==> MENU_DCM_CFG_CUTOFF
+   "menu.c"  ==> MENU_DCM_ZERO
+   "menu.c"  ==> MENU_Density_ADJ
+   "menu.c"  ==> MENU_FC_PRESSURE_UNIT
+   "menu.c"  ==> MENU_FC_TEMP_UNIT
+   "menu.c"  ==> MENU_FC_DENSITY_UNIT
+   "menu.c"  ==> MENU_FC_ACCUM_UNIT
+   "menu.c"  ==> MENU_FC_FLOW_UNIT
+   "menu.c"  ==> MENU_FC_FLOW_CLASS
+   "menu.c"  ==> MENU_FC_EMUL_DENSITY
+   "menu.c"  ==> MENU_FC_SALINITY
+   "menu.c"  ==> MENU_FC_WATERCUT
+   "menu.c"  ==> MENU_FC_PRESSURE
+   "menu.c"  ==> MENU_FC_TEMP
+   "menu.c"  ==> MENU_FC_FLOW
+   "menu.c"  ==> MENU_FC_WATER_DENSITY_PT
+   "menu.c"  ==> MENU_FC_WATER_DENSITY_ST
+   "menu.c"  ==> MENU_FC_OIL_DENSITY_PT
+   "menu.c"  ==> MENU_FC_OIL_DENSITY_ST
+   "menu.c"  ==> MENU_FC_SHRINKAGE
+   "menu.c"  ==> MENU_FC_METER_FACTOR
+   "menu.c"  ==> MENU_FC_ENABLE_NET
+   "menu.c"  ==> MENU_FC_ENABLE_DENSITY
+   "menu.c"  ==> MENU_FC_ENABLE_PULSE
+   "menu.c"  ==> MENU_FC_ENABLE_GROSS
+   "menu.c"  ==> MENU_FC_ENABLE_FLOW
+   "menu.c"  ==> MENU_FC_USE_PDI_TEMP
+   "menu.c"  ==> MENU_FC_USE_PDI_SALINITY
+   "menu.c"  ==> MENU_FC_USE_PDI_WATERCUT
+   "menu.c"  ==> MENU_FC_API_TABLE
+   "menu.c"  ==> MENU_FC_DENSITY_ADJ
+   "menu.c"  ==> MENU_FC_API_C_ALPHA
+   "menu.c"  ==> MENU_FC_MAN_FLOW
+   "menu.c"  ==> MENU_FC_MAN_TEMP
+   "menu.c"  ==> MENU_FC_MAN_WATERCUT
+   "menu.c"  ==> MENU_FC_MAN_PRESSURE
+   "menu.c"  ==> MENU_FC_MAN_DENSITY
+   "menu.c"  ==> MENU_FC_MAN_SALINITY
+   "menu.c"  ==> MENU_FC_PULSES_PER_VOL_UNIT
+   "menu.c"  ==> MENU_FLOW_COMPUTER
+   "menu.c"  ==> Get_Russ_Line
+   "menu.c"  ==> Print_To_LCD
+   "menu.c"  ==> Find_Russ_Tbl_Len
+   "menu.c"  ==> MENU_USB_LOGGING
+   "menu.c"  ==> MENU_LOGGING_PERIOD
+TMS320C3x/4x COFF Assembler             Version 5.12
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+ PASS 1
+ PASS 2
+
+ No Errors,  No Warnings
+
+cl30 API.c -gks -v33 -pl -mbfr -alsx -x1 -frG:\workspace\win\eea\APP\OBJ -fsG:\workspace\win\eea\APP\SOURCE\ASM -iG:\workspace\win\eea\APP\SOURCE\INCLUDE -iG:\workspace\win\eea\INCLUDE
+[api.c]
+TMS320C3x/4x ANSI C Compiler            Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+   "api.c"   ==> API_VCF
+   "api.c"   ==> API_STATUS
+   "api.c"   ==> API_60F_PT
+   "api.c"   ==> API_15C_PT
+   "api.c"   ==> API_PT_ST
+   "api.c"   ==> kgm3_to_API
+   "api.c"   ==> API_to_kgm3
+TMS320C3x/4x ANSI C Code Generator      Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+   "api.c"   ==> API_VCF
+   "api.c"   ==> API_STATUS
+   "api.c"   ==> API_60F_PT
+   "api.c"   ==> API_15C_PT
+   "api.c"   ==> API_PT_ST
+   "api.c"   ==> kgm3_to_API
+   "api.c"   ==> API_to_kgm3
+C Source Interlister                    Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+   ""  ==> API_VCF
+   "api.c"  ==> API_STATUS
+   "api.c"  ==> API_60F_PT
+   "api.c"  ==> API_15C_PT
+   "api.c"  ==> API_PT_ST
+   "api.c"  ==> kgm3_to_API
+   "api.c"  ==> API_to_kgm3
+TMS320C3x/4x COFF Assembler             Version 5.12
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+ PASS 1
+ PASS 2
+
+ No Errors,  No Warnings
+
+lnk30 pdi.mak
+TMS320C3x/4x COFF Linker                Version 5.11
+Copyright (c) 1987-1999 Texas Instruments Incorporated
+Build Complete,
+  0 Errors, 0 Warnings.

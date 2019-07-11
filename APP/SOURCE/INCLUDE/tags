@@ -1,0 +1,2390 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.7	//
+ADC_ACTIVE	ADC.h	/^_EXTERN unsigned int ADC_ACTIVE[3];$/;"	v
+ADC_ADDRA1	ADC.h	32;"	d
+ADC_ADDRA2	ADC.h	33;"	d
+ADC_ADDRIO1	ADC.h	34;"	d
+ADC_ADDRIO2	ADC.h	35;"	d
+ADC_Ain1	ADC.h	43;"	d
+ADC_Ain2	ADC.h	42;"	d
+ADC_Ain3	ADC.h	41;"	d
+ADC_Ain4	ADC.h	40;"	d
+ADC_Ain5	ADC.h	39;"	d
+ADC_CFG_CLK_DIV	ADC.h	106;"	d
+ADC_CH0	ADC.h	51;"	d
+ADC_CH1	ADC.h	52;"	d
+ADC_CH2	ADC.h	53;"	d
+ADC_CONFIG	ADC.h	105;"	d
+ADC_EXTREF_V	ADC.h	59;"	d
+ADC_GNDSEN	ADC.h	44;"	d
+ADC_H	ADC.h	145;"	d
+ADC_INT	ADC.h	/^_EXTERN int ADC_INT[ADC_MAX];$/;"	v
+ADC_MAX	ADC.h	49;"	d
+ADC_REF_V	ADC.h	58;"	d
+ADC_Spare	ADC.h	37;"	d
+ADC_TMP	ADC.h	36;"	d
+ADC_TRIM_F_0	GLBLS.h	/^_EXTERN float ADC_TRIM_F_0[ADC_MAX];$/;"	v
+ADC_TRIM_F_1	GLBLS.h	/^_EXTERN float ADC_TRIM_F_1[ADC_MAX];$/;"	v
+ADC_TRIM_I_0	GLBLS.h	/^_EXTERN int ADC_TRIM_I_0[ADC_MAX];$/;"	v
+ADC_TRIM_I_1	GLBLS.h	/^_EXTERN int ADC_TRIM_I_1[ADC_MAX];$/;"	v
+ADC_Text	ADC.h	46;"	d
+ADC_Tint	ADC.h	38;"	d
+ADC_VTUNE	ADC.h	45;"	d
+ADC_Vinc	ADC.h	47;"	d
+ADC_Vref	ADC.h	48;"	d
+ADDR	GLBLS.h	/^					int		ADDR;$/;"	m	struct:__anon8
+AI	ADC.h	/^_EXTERN LOOPDATA_I AI[AI_NLOOPS];$/;"	v
+AI_NLOOPS	ADC.h	50;"	d
+ALARM_SELECT	DAC.h	/^					int		ALARM_SELECT;$/;"	m	struct:__anon3
+ALFAT_APPEND_LF	GLBLS.h	/^_EXTERN	BOOL 	ALFAT_APPEND_LF;$/;"	v
+ALFAT_AUTO_LENGTH	GLBLS.h	196;"	d
+ALFAT_BFR_INDEX	GLBLS.h	/^_EXTERN int ALFAT_BFR_INDEX;  \/\/tracks how many seconds have past since last ALFAT write$/;"	v
+ALFAT_BUFFER	GLBLS.h	/^_EXTERN _EXTERN float ALFAT_BUFFER[LOG_BFR_SECONDS][LOG_BFR_NUM_VAR]; \/\/ buffer for storing log variables before ALFAT write$/;"	v
+ALFAT_CONTINUE_LOG	GLBLS.h	193;"	d
+ALFAT_HANDLE_1	GLBLS.h	195;"	d
+ALFAT_INITIALIZED	GLBLS.h	/^_EXTERN	unsigned int 	ALFAT_INITIALIZED;$/;"	v
+ALFAT_INIT_ALL	GLBLS.h	/^_EXTERN int		ALFAT_INIT_ALL;$/;"	v
+ALFAT_LINEFEED	GLBLS.h	197;"	d
+ALFAT_LOG_DAY	GLBLS.h	/^_EXTERN	unsigned int 	ALFAT_LOG_DAY; \/\/for keeping track of date, to start new file$/;"	v
+ALFAT_NO_ERROR	GLBLS.h	/^_EXTERN int		ALFAT_NO_ERROR;$/;"	v
+ALFAT_NO_LF	GLBLS.h	198;"	d
+ALFAT_NO_LOG	GLBLS.h	192;"	d
+ALFAT_RX	GLBLS.h	/^_EXTERN	char	ALFAT_RX[ALFAT_RX_MAX_SIZE]; \/\/receive buffer for ALFAT data$/;"	v
+ALFAT_RX_MAX_SIZE	GLBLS.h	1577;"	d
+ALFAT_SECONDS_COUNT	GLBLS.h	/^_EXTERN int ALFAT_SECONDS_COUNT;  \/\/tracks how many seconds have past since last ALFAT write$/;"	v
+ALFAT_STATUS_REG	GLBLS.h	/^_EXTERN	unsigned int 	ALFAT_STATUS_REG;$/;"	v
+ALFAT_TX	GLBLS.h	/^_EXTERN	char	ALFAT_TX[ALFAT_TX_MAX_SIZE]; \/\/output buffer for ALFAT data \/\/ terminate with 0x0A$/;"	v
+ALFAT_TX_MAX_SIZE	GLBLS.h	1578;"	d
+ALFAT_USB_DETECTED	GLBLS.h	/^_EXTERN COIL ALFAT_USB_DETECTED;$/;"	v
+ALFAT_USB_MOUNTED	GLBLS.h	/^_EXTERN COIL ALFAT_USB_MOUNTED;$/;"	v
+ALFAT_WAIT_LOG	GLBLS.h	194;"	d
+ALFAT_WRITE_HEADER	GLBLS.h	/^_EXTERN	unsigned int 	ALFAT_WRITE_HEADER;$/;"	v
+ALYESKA	GLBLS.h	/^_EXTERN ALYESKA_STRUCT ALYESKA;$/;"	v
+ALYESKA_STRUCT	GLBLS.h	/^	    		} ALYESKA_STRUCT;$/;"	t	typeref:struct:__anon17
+AMETEK	GLBLS.h	/^_EXTERN int AMETEK;$/;"	v
+ANALOGIO	GLBLS.h	/^_EXTERN BOARD	ANALOGIO;$/;"	v
+ANALYZER	GLBLS.h	/^_EXTERN BOARD	ANALYZER;$/;"	v
+ANALYZER_MODE	GLBLS.h	/^_EXTERN REGVECT ANALYZER_MODE;$/;"	v
+AO	DAC.h	/^_EXTERN LOOPDATA_O AO[AO_NLOOPS];$/;"	v
+AO_NLOOPS	DAC.h	70;"	d
+API_H	API.H	40;"	d
+API_TABLE	GLBLS.h	/^					int		API_TABLE;$/;"	m	struct:__anon16
+API_error_num	API.H	37;"	d
+AUTHORIZATION_CODE1	GLBLS.h	/^					unsigned int AUTHORIZATION_CODE1;$/;"	m	struct:__anon16
+AUTHORIZATION_CODE2	GLBLS.h	/^					unsigned int AUTHORIZATION_CODE2;$/;"	m	struct:__anon16
+AUTHORIZATION_CODE3	GLBLS.h	/^					unsigned int AUTHORIZATION_CODE3;$/;"	m	struct:__anon16
+AUTHORIZATION_CODE4	GLBLS.h	/^					unsigned int AUTHORIZATION_CODE4;$/;"	m	struct:__anon16
+AVG_GROSS_TOTAL	GLBLS.h	/^					VAR AVG_GROSS_TOTAL;$/;"	m	struct:__anon16
+AVG_NET_TOTAL	GLBLS.h	/^					VAR AVG_NET_TOTAL;$/;"	m	struct:__anon16
+AVG_RESET	GLBLS.h	/^_EXTERN COIL AVG_RESET;$/;"	v
+AVG_TEMP	GLBLS.h	/^_EXTERN long double	AVG_TEMP; \/*AVG TEMP RS*\/$/;"	v
+BEGIN_ALFAT_LOGGING	GLBLS.h	/^_EXTERN COIL BEGIN_ALFAT_LOGGING;$/;"	v
+BFR	BUFFER.h	/^				} BFR;$/;"	t	typeref:struct:__anon2
+BNUM	GLBLS.h	/^					int		BNUM;$/;"	m	struct:__anon8
+BOARD	GLBLS.h	/^	    		} BOARD;$/;"	t	typeref:struct:__anon8
+BOXCAR_EXPIRE_MAX	GLBLS.h	1051;"	d
+BOXCAR_EXPIRE_MIN	GLBLS.h	1050;"	d
+BOXCAR_LIST_SIZE	GLBLS.h	1048;"	d
+BOXCAR_RESET	GLBLS.h	/^_EXTERN BOOL BOXCAR_RESET;$/;"	v
+BRANCH_H	BRANCH.h	66;"	d
+BUBBLE_SIZE_MAX	GLBLS.h	1044;"	d
+BUBBLE_SIZE_MIN	GLBLS.h	1043;"	d
+BUFFER_H	BUFFER.h	63;"	d
+BULK_LEVEL_ENABLED	GLBLS.h	/^_EXTERN COIL BULK_LEVEL_ENABLED;$/;"	v
+BUSY	SERIAL.h	/^					BOOL			BUSY;$/;"	m	struct:__anon21
+Baud_Rate	SERIAL.h	/^					VAR				Baud_Rate;$/;"	m	struct:__anon22
+Boxcar_Var	GLBLS.h	/^} Boxcar_Var;$/;"	t	typeref:struct:__anon9
+CALC_WC_DENSITY	GLBLS.h	/^					BOOL CALC_WC_DENSITY;$/;"	m	struct:__anon16
+CALC_WC_DENSITY	GLBLS.h	/^_EXTERN	COIL CALC_WC_DENSITY;$/;"	v
+CAPDATA	GLBLS.h	/^	    		} CAPDATA;$/;"	t	typeref:struct:__anon5
+CAPRECORD	GLBLS.h	/^	    		} CAPRECORD;$/;"	t	typeref:struct:__anon6
+CAPTURE_SAMPLES	GLBLS.h	190;"	d
+CAP_OIL_STOP	GLBLS.h	/^_EXTERN COIL CAP_OIL_STOP;$/;"	v
+CAP_WATER_STOP	GLBLS.h	/^_EXTERN COIL CAP_WATER_STOP;   $/;"	v
+CCMREC	GLBLS.h	/^_EXTERN unsigned int CCMREC[CCMrecmax];$/;"	v
+CCMRECORD	GLBLS.h	/^	    		} CCMRECORD;$/;"	t	typeref:struct:__anon7
+CCM_24_GAS	GLBLS.h	/^_EXTERN float CCM_24_GAS;$/;"	v
+CCM_24_OIL	GLBLS.h	/^_EXTERN float CCM_24_OIL;$/;"	v
+CCM_24_TOTAL	GLBLS.h	/^_EXTERN float CCM_24_TOTAL;  $/;"	v
+CCM_24_WATER	GLBLS.h	/^_EXTERN float CCM_24_WATER;$/;"	v
+CCM_2GAS	GLBLS.h	/^_EXTERN	int CCM_2GAS;$/;"	v
+CCM_2LIQ	GLBLS.h	/^_EXTERN	int CCM_2LIQ;$/;"	v
+CCM_CNT	GLBLS.h	/^_EXTERN	int CCM_CNT;$/;"	v
+CCM_CORRECT_GAS_TO_STP	GLBLS.h	/^_EXTERN	int CCM_CORRECT_GAS_TO_STP;$/;"	v
+CCM_CORRECT_LIQ_HEIGHT	GLBLS.h	/^_EXTERN	int CCM_CORRECT_LIQ_HEIGHT;$/;"	v
+CCM_DURATION	GLBLS.h	/^_EXTERN float CCM_DURATION;$/;"	v
+CCM_ELAPSED_S	GLBLS.h	/^_EXTERN float CCM_ELAPSED_S;$/;"	v
+CCM_GAS_CNT	GLBLS.h	/^_EXTERN	int CCM_GAS_CNT;$/;"	v
+CCM_GAS_DENSITY	GLBLS.h	/^_EXTERN VAR CCM_GAS_DENSITY;$/;"	v
+CCM_GAS_DENSITY_INPUT	GLBLS.h	/^_EXTERN VAR CCM_GAS_DENSITY_INPUT;   \/*Gas Density Input RS*\/     $/;"	v
+CCM_GAS_FLOW	GLBLS.h	/^_EXTERN VAR CCM_GAS_FLOW;$/;"	v
+CCM_GAS_LIVE_DENSITY	GLBLS.h	/^_EXTERN VAR CCM_GAS_LIVE_DENSITY;$/;"	v
+CCM_GAS_MASS	GLBLS.h	/^_EXTERN	int CCM_GAS_MASS;$/;"	v
+CCM_GAS_TEMPERATURE	GLBLS.h	/^_EXTERN VAR CCM_GAS_TEMPERATURE;   \/*Gas Temperature RS*\/$/;"	v
+CCM_GAS_TOTAL	GLBLS.h	/^_EXTERN VAR CCM_GAS_TOTAL;$/;"	v
+CCM_PURGE	GLBLS.h	/^_EXTERN float CCM_PURGE;$/;"	v
+CCM_REMAINING	GLBLS.h	/^_EXTERN float CCM_REMAINING;$/;"	v
+CCM_REMAINING_S	GLBLS.h	/^_EXTERN float CCM_REMAINING_S;$/;"	v
+CCM_Record	GLBLS.h	/^_EXTERN CCMRECORD CCM_Record;$/;"	v
+CCM_Record_view	LOG.h	/^_EXTERN REGVECT CCM_Record_view;$/;"	v
+CCM_Records	LOG.h	/^_EXTERN LOG CCM_Records;$/;"	v
+CCM_Records_log_record_size	LOG.h	99;"	d
+CCM_SETPOINT_L1	GLBLS.h	/^_EXTERN float CCM_SETPOINT_L1[SMAX];$/;"	v
+CCM_SETPOINT_L2	GLBLS.h	/^_EXTERN float CCM_SETPOINT_L2[SMAX];$/;"	v
+CCM_SETPOINT_LEVEL	GLBLS.h	/^_EXTERN VAR CCM_SETPOINT_LEVEL[2];$/;"	v
+CCM_SETPOINT_P1	GLBLS.h	/^_EXTERN float CCM_SETPOINT_P1[SMAX];$/;"	v
+CCM_SETPOINT_P2	GLBLS.h	/^_EXTERN float CCM_SETPOINT_P2[SMAX];$/;"	v
+CCM_SETPOINT_PRESSURE	GLBLS.h	/^_EXTERN VAR CCM_SETPOINT_PRESSURE[2];$/;"	v
+CCM_SETPOINT_PRESSURE_MAX_OVER	GLBLS.h	/^_EXTERN VAR CCM_SETPOINT_PRESSURE_MAX_OVER;$/;"	v
+CCM_TIME_ELAPSED	GLBLS.h	/^_EXTERN struct tm CCM_TIME_ELAPSED;$/;"	v	typeref:struct:tm
+CCM_TIME_REMAINING	GLBLS.h	/^_EXTERN struct tm CCM_TIME_REMAINING;$/;"	v	typeref:struct:tm
+CCM_TIME_START	GLBLS.h	/^_EXTERN struct tm CCM_TIME_START;$/;"	v	typeref:struct:tm
+CCM_TIME_STOP	GLBLS.h	/^_EXTERN struct tm CCM_TIME_STOP;$/;"	v	typeref:struct:tm
+CCM_VESSEL_LEVEL	GLBLS.h	/^_EXTERN VAR CCM_VESSEL_LEVEL[2];$/;"	v
+CCM_VESSEL_MAX_LEVEL	GLBLS.h	/^_EXTERN float CCM_VESSEL_MAX_LEVEL[2];$/;"	v
+CCM_VESSEL_PRESSURE	GLBLS.h	/^_EXTERN VAR CCM_VESSEL_PRESSURE[2];$/;"	v
+CCMrecmax	GLBLS.h	465;"	d
+CFGU	MODBUSRTU.h	131;"	d
+CHANGE	GLBLS.h	/^_EXTERN BOOL CHANGE;$/;"	v
+CHANGED	GLBLS.h	/^					BOOL	CHANGED;$/;"	m	struct:__anon18
+CLKFUNC	SERIAL.h	281;"	d
+CLKRP	SERIAL.h	257;"	d
+CLKXP	SERIAL.h	256;"	d
+CLOCK	GLBLS.h	/^_EXTERN unsigned int CLOCK;$/;"	v
+CLRSTAT_Time_YEAR	GLBLS.h	/^					int		CLRSTAT_Time_YEAR[2];$/;"	m	struct:__anon6
+CNT	GLBLS.h	/^					int CNT;$/;"	m	struct:__anon16
+CNT	MENU.h	/^					unsigned int CNT;$/;"	m	struct:__anon20
+COEFF_C0	GLBLS.h	/^_EXTERN float COEFF_C0;$/;"	v
+COEFF_D1	GLBLS.h	/^_EXTERN float COEFF_D1;$/;"	v
+COEFF_D2	GLBLS.h	/^_EXTERN float COEFF_D2;$/;"	v
+COEFF_FA1	GLBLS.h	/^_EXTERN float COEFF_FA1;$/;"	v
+COEFF_FA2	GLBLS.h	/^_EXTERN float COEFF_FA2;$/;"	v
+COEFF_FB1	GLBLS.h	/^_EXTERN float COEFF_FB1;$/;"	v
+COEFF_FB2	GLBLS.h	/^_EXTERN float COEFF_FB2;$/;"	v
+COEFF_IPA1	GLBLS.h	/^_EXTERN float COEFF_IPA1;$/;"	v
+COEFF_IPA2	GLBLS.h	/^_EXTERN float COEFF_IPA2;$/;"	v
+COEFF_IPB1	GLBLS.h	/^_EXTERN float COEFF_IPB1;$/;"	v
+COEFF_IPB2	GLBLS.h	/^_EXTERN float COEFF_IPB2;$/;"	v
+COEFF_RPA1	GLBLS.h	/^_EXTERN float COEFF_RPA1;$/;"	v
+COEFF_RPA2	GLBLS.h	/^_EXTERN float COEFF_RPA2;$/;"	v
+COEFF_RPB1	GLBLS.h	/^_EXTERN float COEFF_RPB1;$/;"	v
+COEFF_RPB2	GLBLS.h	/^_EXTERN float COEFF_RPB2;$/;"	v
+COEFF_SALT_TEMP_WATER	GLBLS.h	/^_EXTERN float COEFF_SALT_TEMP_WATER[20][15][4];$/;"	v
+COEFF_T1	GLBLS.h	/^_EXTERN float COEFF_T1;  $/;"	v
+COEFF_T2	GLBLS.h	/^_EXTERN float COEFF_T2;$/;"	v
+COEFF_TEMP_OIL	GLBLS.h	/^_EXTERN float COEFF_TEMP_OIL[10][4];$/;"	v
+COIL	VARIABLE.h	/^	    		} COIL;$/;"	t	typeref:struct:__anon26
+COMM	GLBLS.h	/^_EXTERN BOARD	COMM;$/;"	v
+COR	GLBLS.h	/^_EXTERN CORIOLIS COR[CORMAX];$/;"	v
+CORIOLIS	GLBLS.h	/^	    		} CORIOLIS;$/;"	t	typeref:struct:__anon13
+CORMAX	GLBLS.h	116;"	d
+COR_CFG_CHANGED	GLBLS.h	1372;"	d
+COR_DENSITY_OVERRANGE	GLBLS.h	1364;"	d
+COR_EE_FAIL	GLBLS.h	1352;"	d
+COR_ELECTR_FAIL	GLBLS.h	1368;"	d
+COR_ERROR	GLBLS.h	1374;"	d
+COR_FLOWZERO_FAIL	GLBLS.h	1365;"	d
+COR_FREQ_SAT	GLBLS.h	1357;"	d
+COR_INIT	GLBLS.h	1373;"	d
+COR_INPUT_OVERRANGE	GLBLS.h	1356;"	d
+COR_NOT_CFG	GLBLS.h	1358;"	d
+COR_POWER_RESET	GLBLS.h	1371;"	d
+COR_PRI_MA_FAIL	GLBLS.h	1360;"	d
+COR_PRI_MA_FIXED	GLBLS.h	1362;"	d
+COR_RAM_FAIL	GLBLS.h	1353;"	d
+COR_RTINT_FAIL	GLBLS.h	1359;"	d
+COR_SEC_MA_FAIL	GLBLS.h	1361;"	d
+COR_SEC_MA_FIXED	GLBLS.h	1363;"	d
+COR_SENS_FAIL	GLBLS.h	1354;"	d
+COR_SLUG_FLOW	GLBLS.h	1370;"	d
+COR_TSENS_FAIL	GLBLS.h	1355;"	d
+COR_ZERO_IN_PROGRESS	GLBLS.h	1369;"	d
+COR_ZERO_TOO_HIGH	GLBLS.h	1367;"	d
+COR_ZERO_TOO_LOW	GLBLS.h	1366;"	d
+CRC16	BUFFER.h	/^					unsigned int	CRC16;$/;"	m	struct:__anon2
+CRC_APP	GLBLS.h	/^_EXTERN unsigned int CRC_APP;$/;"	v
+CRC_BOOT	GLBLS.h	/^_EXTERN unsigned int CRC_BOOT;$/;"	v
+CRC_FAST	GLBLS.h	/^_EXTERN unsigned int CRC_FAST;$/;"	v
+CRC_INIT	GLBLS.h	/^_EXTERN unsigned int CRC_INIT;$/;"	v
+CURRENT	ADC.h	/^					VAR		CURRENT;$/;"	m	struct:__anon1
+CURRENT	DAC.h	/^					VAR		CURRENT;$/;"	m	struct:__anon3
+CURRENT_OSC	GLBLS.h	/^_EXTERN int CURRENT_OSC;$/;"	v
+CURRENT_PERCENT_OF_RANGE	ADC.h	/^					VAR		CURRENT_PERCENT_OF_RANGE;$/;"	m	struct:__anon1
+CURRENT_PERCENT_OF_RANGE	DAC.h	/^					VAR		CURRENT_PERCENT_OF_RANGE;$/;"	m	struct:__anon3
+CURSOR_COL	MENU.h	/^					int		CURSOR_COL;$/;"	m	struct:__anon20
+CURSOR_ENABLED	MENU.h	/^					BOOL	CURSOR_ENABLED;$/;"	m	struct:__anon20
+CURSOR_ROW	MENU.h	/^					int		CURSOR_ROW;$/;"	m	struct:__anon20
+Cap_Oil	GLBLS.h	/^_EXTERN CAPDATA Cap_Oil;$/;"	v
+Cap_Records	GLBLS.h	/^_EXTERN CAPRECORD Cap_Records[SMAX];$/;"	v
+Cap_Water	GLBLS.h	/^_EXTERN CAPDATA Cap_Water;$/;"	v
+D	DAC.h	/^					VAR		D;     \/*Add PID to stream table RS*\/$/;"	m	struct:__anon3
+DAC_ADDRA1	DAC.h	37;"	d
+DAC_ADDRA2	DAC.h	38;"	d
+DAC_Aout1	DAC.h	46;"	d
+DAC_Aout2	DAC.h	47;"	d
+DAC_Aout3	DAC.h	48;"	d
+DAC_Aout4	DAC.h	49;"	d
+DAC_Aout5	DAC.h	50;"	d
+DAC_Aout6	DAC.h	51;"	d
+DAC_Aout7	DAC.h	52;"	d
+DAC_Aout8	DAC.h	53;"	d
+DAC_Aout9	DAC.h	54;"	d
+DAC_EXTREF	DAC.h	42;"	d
+DAC_FASTMODE	DAC.h	44;"	d
+DAC_H	DAC.h	118;"	d
+DAC_INT	DAC.h	/^_EXTERN int DAC_INT[DAC_MAX];$/;"	v
+DAC_INTREF	DAC.h	43;"	d
+DAC_INTREF_V0	DAC.h	40;"	d
+DAC_INTREF_V1	DAC.h	41;"	d
+DAC_MAX	DAC.h	58;"	d
+DAC_OSCSEL	DAC.h	55;"	d
+DAC_PWRDN	DAC.h	45;"	d
+DAC_REF_V	DAC.h	39;"	d
+DAC_TRIM_F_0	GLBLS.h	/^_EXTERN float DAC_TRIM_F_0[DAC_MAX];$/;"	v
+DAC_TRIM_F_1	GLBLS.h	/^_EXTERN float DAC_TRIM_F_1[DAC_MAX];$/;"	v
+DAC_TRIM_I_0	GLBLS.h	/^_EXTERN int DAC_TRIM_I_0[DAC_MAX];$/;"	v
+DAC_TRIM_I_1	GLBLS.h	/^_EXTERN int DAC_TRIM_I_1[DAC_MAX];$/;"	v
+DAC_TUNESEL	DAC.h	57;"	d
+DAC_VTUNE	DAC.h	56;"	d
+DAMP	VARIABLE.h	/^_EXTERN DPKT 	DAMP[DAMP_MAX];$/;"	v
+DAMP_MAX	VARIABLE.h	112;"	d
+DAT	SERIAL.h	/^					unsigned char	DAT;$/;"	m	struct:__anon21
+DATA_CHANGE	GLBLS.h	/^_EXTERN COIL DATA_CHANGE;$/;"	v
+DAY	GLBLS.h	/^					int		DAY;$/;"	m	struct:__anon8
+DB_IP_RP_O	GLBLS.h	/^_EXTERN float DB_IP_RP_O;$/;"	v
+DB_IP_RP_W	GLBLS.h	/^_EXTERN float DB_IP_RP_W;$/;"	v
+DCM_PORT	GLBLS.h	/^_EXTERN REGVECT DCM_PORT;$/;"	v
+DEFAULT_EOT	MODBUSRTU.h	93;"	d
+DEFAULT_H_EOT	HART.h	495;"	d
+DEFAULT_H_NETWDOG	HART.h	494;"	d
+DEFAULT_H_PREFIX	HART.h	492;"	d
+DEFAULT_H_SUFFIX	HART.h	493;"	d
+DEFAULT_NETWDOG	MODBUSRTU.h	92;"	d
+DEFAULT_PREFIX	MODBUSRTU.h	90;"	d
+DEFAULT_SUFFIX	MODBUSRTU.h	91;"	d
+DEF_SCALE	VARIABLE.h	44;"	d
+DEF_SCALE_LONG	VARIABLE.h	43;"	d
+DEMO	GLBLS.h	/^_EXTERN BOOL DEMO;$/;"	v
+DEMO_ANALYZER_MODE	GLBLS.h	/^_EXTERN VAR DEMO_ANALYZER_MODE;$/;"	v
+DEMO_H	DEMO.H	36;"	d
+DENSITY	GLBLS.h	/^					float	DENSITY;$/;"	m	struct:__anon17
+DESTINATION_ADDRESS	GLBLS.h	/^					VAR		DESTINATION_ADDRESS;$/;"	m	struct:__anon17
+DFUNC	SERIAL.h	282;"	d
+DIAGNOSTICS	ERRORS.h	/^_EXTERN int DIAGNOSTICS[2];$/;"	v
+DIAGNOSTICS_ERROR_CODE	ERRORS.h	/^_EXTERN int DIAGNOSTICS_ERROR_CODE;$/;"	v
+DIAGNOSTICS_MASK	ERRORS.h	/^_EXTERN int DIAGNOSTICS_MASK[2];$/;"	v
+DIAGNOSTICS_MSG_CODE	ERRORS.h	/^_EXTERN int DIAGNOSTICS_MSG_CODE;$/;"	v
+DIAG_TEMP	ERRORS.h	/^_EXTERN int DIAG_TEMP[2];$/;"	v
+DIO_ALARM	ERRORS.h	/^_EXTERN COIL DIO_ALARM;$/;"	v
+DIO_ANALOGIO_GET	GLBLS.h	/^_EXTERN COIL DIO_ANALOGIO_GET;$/;"	v
+DIO_ANALOGIO_SET	GLBLS.h	/^_EXTERN COIL DIO_ANALOGIO_SET;$/;"	v
+DIO_ANALYZER_GET	GLBLS.h	/^_EXTERN COIL DIO_ANALYZER_GET;$/;"	v
+DIO_ANALYZER_SET	GLBLS.h	/^_EXTERN COIL DIO_ANALYZER_SET;$/;"	v
+DIO_AUX_FREQ_MODE	GLBLS.h	/^_EXTERN int  DIO_AUX_FREQ_MODE;$/;"	v
+DIO_Autosave_on_pair_boundary	GLBLS.h	/^_EXTERN int   DIO_Autosave_on_pair_boundary;$/;"	v
+DIO_BEEP	GLBLS.h	/^_EXTERN COIL DIO_BEEP;$/;"	v
+DIO_BUILT_IN_TEST	GLBLS.h	/^_EXTERN COIL DIO_BUILT_IN_TEST;$/;"	v
+DIO_BUILT_IN_TEST_ENABLE	GLBLS.h	/^_EXTERN COIL DIO_BUILT_IN_TEST_ENABLE;$/;"	v
+DIO_CAP_OIL	GLBLS.h	/^_EXTERN COIL DIO_CAP_OIL;$/;"	v
+DIO_CAP_WATER	GLBLS.h	/^_EXTERN COIL DIO_CAP_WATER;$/;"	v
+DIO_CCM_PURGE_STAT	GLBLS.h	/^_EXTERN COIL DIO_CCM_PURGE_STAT; $/;"	v
+DIO_CCM_PURGE_TIME	GLBLS.h	/^_EXTERN COIL DIO_CCM_PURGE_TIME;$/;"	v
+DIO_CCM_START	GLBLS.h	/^_EXTERN COIL DIO_CCM_START;$/;"	v
+DIO_CLEAR_COUNTERS	GLBLS.h	/^_EXTERN COIL DIO_CLEAR_COUNTERS;$/;"	v
+DIO_CLEAR_PORT_COUNT	GLBLS.h	/^_EXTERN COIL DIO_CLEAR_PORT_COUNT[UART_MAX];$/;"	v
+DIO_COMM_GET	GLBLS.h	/^_EXTERN COIL DIO_COMM_GET;$/;"	v
+DIO_COMM_SET	GLBLS.h	/^_EXTERN COIL DIO_COMM_SET;$/;"	v
+DIO_DISPLAY_GET	GLBLS.h	/^_EXTERN COIL DIO_DISPLAY_GET;$/;"	v
+DIO_DISPLAY_SET	GLBLS.h	/^_EXTERN COIL DIO_DISPLAY_SET;$/;"	v
+DIO_DUMMY	GLBLS.h	/^_EXTERN COIL DIO_DUMMY;$/;"	v
+DIO_ERROR	ERRORS.h	/^_EXTERN COIL DIO_ERROR;$/;"	v
+DIO_HART_5	GLBLS.h	/^_EXTERN COIL  DIO_HART_5;$/;"	v
+DIO_HEATER_DISABLE	GLBLS.h	/^_EXTERN COIL DIO_HEATER_DISABLE;$/;"	v
+DIO_IDEC_ENABLE	GLBLS.h	/^_EXTERN int   DIO_IDEC_ENABLE;$/;"	v
+DIO_LOCK	GLBLS.h	/^_EXTERN COIL DIO_LOCK[4];$/;"	v
+DIO_MANUAL_RESET	GLBLS.h	/^_EXTERN COIL DIO_MANUAL_RESET;       $/;"	v
+DIO_MOTHERBOARD_GET	GLBLS.h	/^_EXTERN COIL DIO_MOTHERBOARD_GET;$/;"	v
+DIO_MOTHERBOARD_SET	GLBLS.h	/^_EXTERN COIL DIO_MOTHERBOARD_SET;$/;"	v
+DIO_MSVE	MENU.h	/^_EXTERN int  DIO_MSVE;$/;"	v
+DIO_PORT_DEFAULTS	GLBLS.h	/^_EXTERN COIL DIO_PORT_DEFAULTS;$/;"	v
+DIO_PORT_IGNORE_DATA_EXCEPTION	GLBLS.h	/^_EXTERN int  DIO_PORT_IGNORE_DATA_EXCEPTION;$/;"	v
+DIO_POWER_GET	GLBLS.h	/^_EXTERN COIL DIO_POWER_GET;$/;"	v
+DIO_POWER_SET	GLBLS.h	/^_EXTERN COIL DIO_POWER_SET;$/;"	v
+DIO_PV_PERCMASS	GLBLS.h	/^_EXTERN int	DIO_PV_PERCMASS;$/;"	v
+DIO_RESEARCH_MODE	GLBLS.h	/^_EXTERN COIL DIO_RESEARCH_MODE;$/;"	v
+DIO_RESET_FACTORY_DEFAULTS	GLBLS.h	/^_EXTERN COIL DIO_RESET_FACTORY_DEFAULTS;$/;"	v
+DIO_RESTORE_BASICS	GLBLS.h	/^_EXTERN COIL DIO_RESTORE_BASICS;$/;"	v
+DIO_RESTORE_USER_CONFIG	GLBLS.h	/^_EXTERN COIL DIO_RESTORE_USER_CONFIG;$/;"	v
+DIO_SAVE_FACTORY_CONFIG	GLBLS.h	/^_EXTERN COIL DIO_SAVE_FACTORY_CONFIG;$/;"	v
+DIO_SAVE_USER_CONFIG	GLBLS.h	/^_EXTERN COIL DIO_SAVE_USER_CONFIG;$/;"	v
+DIO_SYSTEM_RESET	GLBLS.h	/^_EXTERN COIL DIO_SYSTEM_RESET;$/;"	v
+DIO_SYSTEM_RESTART	GLBLS.h	/^_EXTERN COIL DIO_SYSTEM_RESTART;$/;"	v
+DIO_TEMP_C	GLBLS.h	/^_EXTERN COIL DIO_TEMP_C;$/;"	v
+DIO_TIME_RESET	GLBLS.h	/^_EXTERN COIL DIO_TIME_RESET;$/;"	v
+DIO_TOTALIZER_CONTROL	GLBLS.h	/^_EXTERN COIL DIO_TOTALIZER_CONTROL;$/;"	v
+DIO_uP_GET	GLBLS.h	/^_EXTERN COIL DIO_uP_GET;$/;"	v
+DIO_uP_SET	GLBLS.h	/^_EXTERN COIL DIO_uP_SET;$/;"	v
+DIP	MENU.h	/^					BOOL	DIP[4];$/;"	m	struct:__anon20
+DIPSWITCH	GLBLS.h	/^_EXTERN BOOL DIPSWITCH[2];$/;"	v
+DIR	MENU.h	/^					int		DIR;$/;"	m	struct:__anon20
+DIR_CHANGE	MENU.h	/^					BOOL	DIR_CHANGE;$/;"	m	struct:__anon20
+DISPLAY	GLBLS.h	/^_EXTERN BOARD	DISPLAY;$/;"	v
+DIS_R	MODBUSRTU.h	129;"	d
+DLL	SERIAL.h	240;"	d
+DLM	SERIAL.h	241;"	d
+DPKT	VARIABLE.h	/^				} DPKT;$/;"	t	typeref:struct:__anon28
+DRP	SERIAL.h	259;"	d
+DUMMY	GLBLS.h	/^_EXTERN int DUMMY;$/;"	v
+DUMMY_COIL	GLBLS.h	/^_EXTERN COIL DUMMY_COIL; \/\/ used for compatibility until FC2 and FC3 are removed completely$/;"	v
+DXP	SERIAL.h	258;"	d
+Dadj	GLBLS.h	/^					float	Dadj;$/;"	m	struct:__anon16
+Dadj	GLBLS.h	/^					float	Dadj;$/;"	m	struct:__anon5
+Dadj	GLBLS.h	/^					float	Dadj[2];$/;"	m	struct:__anon6
+DensityCFD_D1	GLBLS.h	/^_EXTERN float DensityCFD_D1;$/;"	v
+DensityCFT_D1	GLBLS.h	/^_EXTERN float DensityCFT_D1;$/;"	v
+DensityCF_D0	GLBLS.h	/^_EXTERN float DensityCF_D0;$/;"	v
+Density_Cal	GLBLS.h	/^_EXTERN VAR Density_Cal;$/;"	v
+Density_Cal_Unit	GLBLS.h	/^_EXTERN REGVECT Density_Cal_Unit;$/;"	v
+Density_Correction_Mode	GLBLS.h	/^_EXTERN REGVECT Density_Correction_Mode;$/;"	v
+Density_D0	GLBLS.h	/^_EXTERN VAR Density_D0;$/;"	v
+Density_D1	GLBLS.h	/^_EXTERN VAR Density_D1; $/;"	v
+Density_D2	GLBLS.h	/^_EXTERN VAR Density_D2; 				\/*third order density correction RS*\/$/;"	v
+Density_D3	GLBLS.h	/^_EXTERN VAR Density_D3;					\/*third order density correction RS*\/$/;"	v
+Dmax	GLBLS.h	/^					float	Dmax;$/;"	m	struct:__anon18
+Dmin	GLBLS.h	/^					float	Dmin;$/;"	m	struct:__anon18
+E	MENU.h	/^					BOOL	E;$/;"	m	struct:__anon20
+ENABLED	GLBLS.h	/^					BOOL	ENABLED;$/;"	m	struct:__anon17
+ENABLED	GLBLS.h	/^					COIL	ENABLED;$/;"	m	struct:__anon18
+ENABLED	GLBLS.h	/^_EXTERN int ENABLED[VTMAX];$/;"	v
+ENG_STR	MENU.h	/^_EXTERN char ENG_STR[32]; \/\/stores English string$/;"	v
+ENG_STR2	MENU.h	/^_EXTERN char ENG_STR2[32]; \/\/stores second English string$/;"	v
+ENTER	MENU.h	/^					BOOL	ENTER;$/;"	m	struct:__anon20
+EN_W	MODBUSRTU.h	130;"	d
+EOT_Delay	SERIAL.h	/^					VAR				EOT_Delay;$/;"	m	struct:__anon22
+EPKT	EXECUTE.h	/^				} EPKT;$/;"	t	typeref:struct:__anon4
+ERROR2_FC1_EXTRAPOLATE	ERRORS.h	77;"	d
+ERROR2_FC1_FAIL	ERRORS.h	71;"	d
+ERROR2_FC2_EXTRAPOLATE	ERRORS.h	78;"	d
+ERROR2_FC2_FAIL	ERRORS.h	72;"	d
+ERROR2_FC3_EXTRAPOLATE	ERRORS.h	79;"	d
+ERROR2_FC3_FAIL	ERRORS.h	73;"	d
+ERROR2_FLASH_MEMORY_LOG	ERRORS.h	82;"	d
+ERROR2_SAMPLE_ERROR	ERRORS.h	76;"	d
+ERROR2_TIME_RESET	ERRORS.h	70;"	d
+ERRORS_H	ERRORS.h	131;"	d
+ERROR_COUNT	SERIAL.h	/^					unsigned int	ERROR_COUNT;$/;"	m	struct:__anon21
+ERROR_EXEC_FAIL	ERRORS.h	47;"	d
+ERROR_FLASH_MEMORY	ERRORS.h	49;"	d
+ERROR_FLASH_WPROT	ERRORS.h	52;"	d
+ERROR_FREQ_OVERRANGE	ERRORS.h	59;"	d
+ERROR_FREQ_UNDERRANGE	ERRORS.h	58;"	d
+ERROR_INTERNAL_MEMORY	ERRORS.h	55;"	d
+ERROR_MEMORY	ERRORS.h	46;"	d
+ERROR_NONE	ERRORS.h	45;"	d
+ERROR_RESET	ERRORS.h	66;"	d
+ERROR_RESET_BASICS	ERRORS.h	67;"	d
+ERROR_TMR_FAIL	ERRORS.h	48;"	d
+ERROR_T_OVERRANGE	ERRORS.h	61;"	d
+ERROR_T_UNDERRANGE	ERRORS.h	60;"	d
+ERROR_VAR_BOUNDARY	ERRORS.h	53;"	d
+ERROR_VAR_UNIT	ERRORS.h	54;"	d
+ERROR_WC_OVERRANGE	ERRORS.h	65;"	d
+ERROR_WC_UNDERRANGE	ERRORS.h	64;"	d
+ESN_MFGR	GLBLS.h	/^_EXTERN unsigned int ESN_MFGR[5];$/;"	v
+ESN_USER	GLBLS.h	/^_EXTERN unsigned int ESN_USER[5];$/;"	v
+EXECUTE_H	EXECUTE.h	55;"	d
+EXEC_Q_LEN	EXECUTE.h	46;"	d
+EXP_FREQ	GLBLS.h	/^_EXTERN float EXP_FREQ[VTMAX];$/;"	v
+EXTENDED_ADDR_LEN	MODBUSRTU.h	33;"	d
+EXTENDED_FW_VERSION_ENABLE	GLBLS.h	/^_EXTERN VAR EXTENDED_FW_VERSION_ENABLE;  \/\/ extended fw version    $/;"	v
+EXTUNE	GLBLS.h	/^_EXTERN BOOL EXTUNE;$/;"	v
+EXT_ANALOG_OUT	GLBLS.h	/^_EXTERN int EXT_ANALOG_OUT;$/;"	v
+E_ERROR_CURRENT_LOOP_ERROR	ERRORS.h	113;"	d
+E_ERROR_EXTRAM_FAIL	ERRORS.h	111;"	d
+E_ERROR_FLASH_FAIL	ERRORS.h	109;"	d
+E_ERROR_FLASH_FAIL_RESET_BASICS	ERRORS.h	115;"	d
+E_ERROR_FREQ	ERRORS.h	105;"	d
+E_ERROR_INTRAM_FAIL	ERRORS.h	110;"	d
+E_ERROR_NONE	ERRORS.h	104;"	d
+E_ERROR_OIL_CAL_NOT_OIL_CONTINUOUS	ERRORS.h	126;"	d
+E_ERROR_PHASE_LOGIC	ERRORS.h	124;"	d
+E_ERROR_RP_THRESH	ERRORS.h	117;"	d
+E_ERROR_SALINITY_CAL_NOT_WATER_CONTINUOUS	ERRORS.h	121;"	d
+E_ERROR_SALINITY_CAL_OVERRANGE	ERRORS.h	119;"	d
+E_ERROR_SALINITY_CAL_UNDERRANGE	ERRORS.h	120;"	d
+E_ERROR_SALINITY_TIME	ERRORS.h	118;"	d
+E_ERROR_SCALING_ERROR	ERRORS.h	107;"	d
+E_ERROR_TEMPERATURE_OVERRANGE	ERRORS.h	123;"	d
+E_ERROR_TEMPERATURE_UNDERRANGE	ERRORS.h	122;"	d
+E_ERROR_TEMP_USER_OUT_OF_RANGE	ERRORS.h	106;"	d
+E_ERROR_TIME_RESET	ERRORS.h	127;"	d
+E_ERROR_WATERCUT_INVALID	ERRORS.h	128;"	d
+E_ERROR_WATERCUT_OVER	ERRORS.h	108;"	d
+E_ERROR_WATERCUT_OVERRANGE	ERRORS.h	116;"	d
+E_ERROR_WATERCUT_UNDERRANGE	ERRORS.h	112;"	d
+E_STRING	ERRORS.h	/^_EXTERN char E_STRING[101];$/;"	v
+FBHI0	GLBLS.h	/^					float	FBHI0;$/;"	m	struct:__anon18
+FBHI1	GLBLS.h	/^					float	FBHI1;$/;"	m	struct:__anon18
+FBHI2	GLBLS.h	/^					float	FBHI2;$/;"	m	struct:__anon18
+FBHI3	GLBLS.h	/^					float	FBHI3;$/;"	m	struct:__anon18
+FBLO0	GLBLS.h	/^					float	FBLO0;$/;"	m	struct:__anon18
+FBLO1	GLBLS.h	/^					float	FBLO1;$/;"	m	struct:__anon18
+FBLO2	GLBLS.h	/^					float	FBLO2;$/;"	m	struct:__anon18
+FBLO3	GLBLS.h	/^					float	FBLO3;$/;"	m	struct:__anon18
+FC	GLBLS.h	/^_EXTERN FLOW_COMP FC[FCMAX];$/;"	v
+FCMAX	GLBLS.h	117;"	d
+FCR	SERIAL.h	233;"	d
+FC_Periodic	LOG.h	/^_EXTERN LOG FC_Periodic;$/;"	v
+FC_Periodic_log_record_size	LOG.h	104;"	d
+FIFOSIZE	SERIAL.h	228;"	d
+FINAL_ASSY	GLBLS.h	/^_EXTERN int    FINAL_ASSY;$/;"	v
+FIRMWARE_SUBVERSION	GLBLS.h	48;"	d
+FIRMWARE_VERSION	GLBLS.h	43;"	d
+FLAG1	SERIAL.h	/^					BOOL			FLAG1;$/;"	m	struct:__anon21
+FLAG2	SERIAL.h	/^					BOOL			FLAG2;$/;"	m	struct:__anon21
+FLAG3	SERIAL.h	/^					BOOL			FLAG3;$/;"	m	struct:__anon21
+FLOW_COMP	GLBLS.h	/^	    		} FLOW_COMP;$/;"	t	typeref:struct:__anon16
+FLOW_OIL	GLBLS.h	/^					VAR FLOW_OIL;$/;"	m	struct:__anon16
+FLOW_RATE	GLBLS.h	/^					float	FLOW_RATE;$/;"	m	struct:__anon17
+FLOW_TOTAL	GLBLS.h	/^					VAR FLOW_TOTAL;$/;"	m	struct:__anon16
+FLOW_WATER	GLBLS.h	/^					VAR FLOW_WATER;$/;"	m	struct:__anon16
+FREQ_FACTOR	GLBLS.h	/^_EXTERN float FREQ_FACTOR;$/;"	v
+FREQ_O	GLBLS.h	/^_EXTERN float FREQ_O;$/;"	v
+FREQ_W	GLBLS.h	/^_EXTERN float FREQ_W;$/;"	v
+FRESH	MENU.h	/^					BOOL	FRESH;$/;"	m	struct:__anon20
+FSFUNC	SERIAL.h	283;"	d
+FSRP	SERIAL.h	261;"	d
+FSXOUT	SERIAL.h	246;"	d
+FSXP	SERIAL.h	260;"	d
+Fmin	GLBLS.h	/^					float	Fmin;$/;"	m	struct:__anon18
+Frequency_Oil	GLBLS.h	/^					float	Frequency_Oil;$/;"	m	struct:__anon5
+Frequency_Oil	GLBLS.h	/^					float	Frequency_Oil[2];$/;"	m	struct:__anon6
+Frequency_Water	GLBLS.h	/^					float	Frequency_Water;$/;"	m	struct:__anon5
+Frequency_Water	GLBLS.h	/^					float	Frequency_Water[2];$/;"	m	struct:__anon6
+GAS_DENSITY_INPUT_ENABLED	GLBLS.h	/^_EXTERN int GAS_DENSITY_INPUT_ENABLED;            \/*Gas Density Input RS*\/ $/;"	v
+GAS_ENTRAINED	GLBLS.h	/^_EXTERN COIL GAS_ENTRAINED;  $/;"	v
+GAS_ENTRAINED_DENS_DETECT	GLBLS.h	/^_EXTERN COIL GAS_ENTRAINED_DENS_DETECT;   $/;"	v
+GAS_ROUTINE_ENABLE	GLBLS.h	/^_EXTERN float GAS_ROUTINE_ENABLE[SMAX];$/;"	v
+GAS_VALVE_D	GLBLS.h	/^_EXTERN float GAS_VALVE_D[SMAX];$/;"	v
+GAS_VALVE_I	GLBLS.h	/^_EXTERN float GAS_VALVE_I[SMAX];$/;"	v
+GAS_VALVE_P	GLBLS.h	/^_EXTERN float GAS_VALVE_P[SMAX];$/;"	v
+GATE_TIME	GLBLS.h	/^_EXTERN float GATE_TIME;$/;"	v
+GATE_TIMEOUT	TIMER.h	/^_EXTERN BOOL GATE_TIMEOUT;$/;"	v
+GLBLS_H	GLBLS.h	1695;"	d
+GPOLY	BUFFER.h	32;"	d
+GROSS_OIL	GLBLS.h	/^					VAR GROSS_OIL;$/;"	m	struct:__anon16
+GROSS_TOTAL	GLBLS.h	/^					VAR GROSS_TOTAL;$/;"	m	struct:__anon16
+GROSS_WATER	GLBLS.h	/^					VAR GROSS_WATER;$/;"	m	struct:__anon16
+GSEED	BUFFER.h	/^					unsigned int	GSEED;$/;"	m	struct:__anon2
+GSEED_DEFAULT	BUFFER.h	33;"	d
+HART_BT	HART.h	490;"	d
+HART_BURST_CMD	HART.h	/^_EXTERN int	HART_BURST_CMD;$/;"	v
+HART_BURST_MASTER_SEL	HART.h	/^_EXTERN BOOL	HART_BURST_MASTER_SEL;$/;"	v
+HART_BURST_MODE	HART.h	/^_EXTERN int	HART_BURST_MODE;$/;"	v
+HART_BURST_VAR_LIST	HART.h	/^_EXTERN unsigned int	HART_BURST_VAR_LIST[4];$/;"	v
+HART_CMD_BURST_MODE	HART.h	606;"	d
+HART_CMD_EEPROM_Control	HART.h	619;"	d
+HART_CMD_FIXED_AO_MODE	HART.h	596;"	d
+HART_CMD_FIXED_PV_CURRENT_MODE	HART.h	573;"	d
+HART_CMD_Lock	HART.h	601;"	d
+HART_CMD_MASTER_RESET	HART.h	575;"	d
+HART_CMD_PDI_Read_DD	HART.h	611;"	d
+HART_CMD_PDI_Read_DPF	HART.h	609;"	d
+HART_CMD_PDI_Read_DPI	HART.h	613;"	d
+HART_CMD_PDI_Read_DV	HART.h	615;"	d
+HART_CMD_PDI_Read_DVI	HART.h	616;"	d
+HART_CMD_PDI_Write_DD	HART.h	612;"	d
+HART_CMD_PDI_Write_DPF	HART.h	610;"	d
+HART_CMD_PDI_Write_DPI	HART.h	614;"	d
+HART_CMD_RESET_CONFIG_CHANGED_FLAG	HART.h	572;"	d
+HART_CMD_REV	HART.h	34;"	d
+HART_CMD_Read_ALL_DV	HART.h	623;"	d
+HART_CMD_Read_AO	HART.h	592;"	d
+HART_CMD_Read_AO_endpoints	HART.h	600;"	d
+HART_CMD_Read_AO_inform	HART.h	593;"	d
+HART_CMD_Read_AO_perc_range	HART.h	591;"	d
+HART_CMD_Read_BURST_Config	HART.h	603;"	d
+HART_CMD_Read_DV	HART.h	622;"	d
+HART_CMD_Read_DV_Classifications	HART.h	560;"	d
+HART_CMD_Read_DV_assignments	HART.h	583;"	d
+HART_CMD_Read_DV_with_Status	HART.h	561;"	d
+HART_CMD_Read_Dynamic_Vars	HART.h	547;"	d
+HART_CMD_Read_Final_Assy	HART.h	554;"	d
+HART_CMD_Read_Loop_Configuration	HART.h	559;"	d
+HART_CMD_Read_Msg	HART.h	550;"	d
+HART_CMD_Read_PV	HART.h	545;"	d
+HART_CMD_Read_PV_Current	HART.h	546;"	d
+HART_CMD_Read_PV_Output_Info	HART.h	553;"	d
+HART_CMD_Read_PV_Sensor_Info	HART.h	552;"	d
+HART_CMD_Read_TAG_Desc_Date	HART.h	551;"	d
+HART_CMD_Read_TAG_Long	HART.h	562;"	d
+HART_CMD_Read_Unique_ID	HART.h	544;"	d
+HART_CMD_Read_Unique_ID_by_TAG	HART.h	549;"	d
+HART_CMD_Read_Unique_ID_by_TAG_Long	HART.h	563;"	d
+HART_CMD_Read_XV	HART.h	567;"	d
+HART_CMD_Read_XV_info	HART.h	587;"	d
+HART_CMD_Read_unit_tag_desc_date	HART.h	620;"	d
+HART_CMD_Read_xmtr_status	HART.h	581;"	d
+HART_CMD_SELF_TEST	HART.h	574;"	d
+HART_CMD_Set_PV_ZERO	HART.h	576;"	d
+HART_CMD_Set_PV_lower_range	HART.h	571;"	d
+HART_CMD_Set_PV_upper_range	HART.h	570;"	d
+HART_CMD_Set_XV_zero	HART.h	585;"	d
+HART_CMD_Squawk	HART.h	602;"	d
+HART_CMD_TRIM_AO_CURRENT_GAIN	HART.h	598;"	d
+HART_CMD_TRIM_AO_CURRENT_ZERO	HART.h	597;"	d
+HART_CMD_TRIM_PV_CURRENT_GAIN	HART.h	579;"	d
+HART_CMD_TRIM_PV_CURRENT_ZERO	HART.h	578;"	d
+HART_CMD_Write_AO_dampening	HART.h	594;"	d
+HART_CMD_Write_AO_range	HART.h	595;"	d
+HART_CMD_Write_AO_xfer_func	HART.h	599;"	d
+HART_CMD_Write_BURST_CMD	HART.h	605;"	d
+HART_CMD_Write_BURST_XV	HART.h	604;"	d
+HART_CMD_Write_DV_assignments	HART.h	584;"	d
+HART_CMD_Write_Final_Assy	HART.h	557;"	d
+HART_CMD_Write_Msg	HART.h	555;"	d
+HART_CMD_Write_PV_Serial_Number	HART.h	582;"	d
+HART_CMD_Write_PV_dampening	HART.h	568;"	d
+HART_CMD_Write_PV_range	HART.h	569;"	d
+HART_CMD_Write_PV_units	HART.h	577;"	d
+HART_CMD_Write_PV_xfer_func	HART.h	580;"	d
+HART_CMD_Write_Poll_Addr	HART.h	548;"	d
+HART_CMD_Write_TAG_Desc_Date	HART.h	556;"	d
+HART_CMD_Write_TAG_Long	HART.h	564;"	d
+HART_CMD_Write_XV_Serial_Number	HART.h	589;"	d
+HART_CMD_Write_XV_dampening	HART.h	588;"	d
+HART_CMD_Write_XV_units	HART.h	586;"	d
+HART_CMD_Write_num_preamble	HART.h	590;"	d
+HART_CMD_Write_unit_tag_desc_date	HART.h	621;"	d
+HART_CMD_XFER_Service	HART.h	607;"	d
+HART_DD_Table	HART.h	/^_EXTERN const int* HART_DD_Table;$/;"	v
+HART_DD_Table	HART.h	/^const int HART_DD_Table[]={$/;"	v
+HART_DIST_PDI	HART.h	33;"	d
+HART_DPF_Table	HART.h	/^_EXTERN const int* HART_DPF_Table;$/;"	v
+HART_DPF_Table	HART.h	/^const int HART_DPF_Table[]={$/;"	v
+HART_DPI_Table	HART.h	/^_EXTERN const int* HART_DPI_Table;$/;"	v
+HART_DPI_Table	HART.h	/^const int HART_DPI_Table[]={$/;"	v
+HART_DVINPUT_Table	HART.h	/^_EXTERN const int* HART_DVINPUT_Table;$/;"	v
+HART_DVINPUT_Table	HART.h	/^const int HART_DVINPUT_Table[]={ \/\/for Analog Input?$/;"	v
+HART_DVI_Table	HART.h	/^_EXTERN const int* HART_DVI_Table;$/;"	v
+HART_DVI_Table	HART.h	/^const int HART_DVI_Table[]={$/;"	v
+HART_DVOUTPUT_Table	HART.h	/^_EXTERN const int* HART_DVOUTPUT_Table;$/;"	v
+HART_DVOUTPUT_Table	HART.h	/^const int HART_DVOUTPUT_Table[]={$/;"	v
+HART_DV_Table	HART.h	/^_EXTERN const int* HART_DV_Table;$/;"	v
+HART_DV_Table	HART.h	/^const int HART_DV_Table[]={$/;"	v
+HART_ERROR_COMM	HART.h	497;"	d
+HART_ERROR_COMM_Buffer_Overflow	HART.h	503;"	d
+HART_ERROR_COMM_CKSUM	HART.h	501;"	d
+HART_ERROR_COMM_Framing	HART.h	500;"	d
+HART_ERROR_COMM_Overrun	HART.h	499;"	d
+HART_ERROR_COMM_Parity	HART.h	498;"	d
+HART_ERROR_COMM_reserved	HART.h	502;"	d
+HART_EXT_STATUS_MALFUNCTION	HART.h	632;"	d
+HART_EXT_STATUS_NONE	HART.h	631;"	d
+HART_EXT_STATUS_VAR_ALERT	HART.h	633;"	d
+HART_FAMILY_CODE	HART.h	42;"	d
+HART_FLAG_EEPROM_Ctrl	HART.h	636;"	d
+HART_FLAG_Multisens_Dev	HART.h	635;"	d
+HART_FLAG_Protocol_Bridge	HART.h	637;"	d
+HART_H	HART.h	640;"	d
+HART_HOLD	HART.h	489;"	d
+HART_MFGR_PDI	HART.h	32;"	d
+HART_PHYS_BELL202_CURRENT	HART.h	625;"	d
+HART_PHYS_BELL202_VOLTAGE	HART.h	626;"	d
+HART_PHYS_RS422	HART.h	628;"	d
+HART_PHYS_RS485	HART.h	627;"	d
+HART_PHYS_Special	HART.h	629;"	d
+HART_RESP_BUSY	HART.h	534;"	d
+HART_RESP_CMD_NOT_SUPPORTED	HART.h	535;"	d
+HART_RESP_Invalid_Selection	HART.h	518;"	d
+HART_RESP_Large_Parameter	HART.h	519;"	d
+HART_RESP_NO_ERROR	HART.h	516;"	d
+HART_RESP_Small_Parameter	HART.h	520;"	d
+HART_RESP_Undefined	HART.h	517;"	d
+HART_RESP_WRITE_PROTECT	HART.h	523;"	d
+HART_RESP_error_10	HART.h	526;"	d
+HART_RESP_error_11	HART.h	527;"	d
+HART_RESP_error_12	HART.h	528;"	d
+HART_RESP_error_13	HART.h	529;"	d
+HART_RESP_error_15	HART.h	530;"	d
+HART_RESP_error_9	HART.h	525;"	d
+HART_RESP_invalid_range_units_code	HART.h	532;"	d
+HART_RESP_invalid_span	HART.h	533;"	d
+HART_RESP_invalid_unit_code	HART.h	531;"	d
+HART_RESP_not_enough_data	HART.h	521;"	d
+HART_RESP_restricted_access	HART.h	524;"	d
+HART_RESP_warn_14	HART.h	539;"	d
+HART_RESP_warn_31	HART.h	541;"	d
+HART_RESP_warn_8	HART.h	538;"	d
+HART_RESP_warn_EOT	HART.h	540;"	d
+HART_RESP_xmtr_specific_error	HART.h	522;"	d
+HART_RT1_0	HART.h	486;"	d
+HART_RT1_1	HART.h	487;"	d
+HART_RT2	HART.h	488;"	d
+HART_ST0	HART.h	485;"	d
+HART_STATUS_CFG_changed	HART.h	507;"	d
+HART_STATUS_Cold_Start	HART.h	508;"	d
+HART_STATUS_Malfunction	HART.h	506;"	d
+HART_STATUS_More	HART.h	509;"	d
+HART_STATUS_NO_ERROR	HART.h	505;"	d
+HART_STATUS_PV_bounds	HART.h	513;"	d
+HART_STATUS_PV_loop_bounds	HART.h	511;"	d
+HART_STATUS_PV_loop_fixed	HART.h	510;"	d
+HART_STATUS_bounds	HART.h	512;"	d
+HART_TRANS_REV	HART.h	39;"	d
+HART_VAR_LIST	HART.h	/^_EXTERN unsigned int	HART_VAR_LIST[4];$/;"	v
+HCHANGE	HART.h	/^_EXTERN int    HCHANGE[2];$/;"	v
+HCHANGE_COUNTER	HART.h	/^_EXTERN unsigned int    HCHANGE_COUNTER;$/;"	v
+HCOLD	HART.h	/^_EXTERN int    HCOLD[2];$/;"	v
+HS	SERIAL.h	249;"	d
+HSALT	GLBLS.h	/^_EXTERN HS_STRUCT HSALT;$/;"	v
+HSALT_ENABLE	GLBLS.h	/^_EXTERN float HSALT_ENABLE[SMAX];$/;"	v
+HSALT_FREQ_TRIGGER	GLBLS.h	/^_EXTERN COIL HSALT_FREQ_TRIGGER;   $/;"	v
+HSALT_MIN_FLOW	GLBLS.h	/^_EXTERN float HSALT_MIN_FLOW[SMAX];$/;"	v
+HSALT_TEMP_TRIGGER	GLBLS.h	/^_EXTERN COIL HSALT_TEMP_TRIGGER; $/;"	v
+HS_STRUCT	GLBLS.h	/^	    		} HS_STRUCT;$/;"	t	typeref:struct:__anon18
+HW_VER	GLBLS.h	/^_EXTERN unsigned int HW_VER;$/;"	v
+H_DEV_TYPE	HART.h	41;"	d
+Hsalt_Min_WC	GLBLS.h	/^_EXTERN VAR Hsalt_Min_WC;$/;"	v
+I	DAC.h	/^					VAR		I;     \/*Add PID to stream table RS*\/$/;"	m	struct:__anon3
+IDEC_PORT	GLBLS.h	/^_EXTERN int IDEC_PORT;$/;"	v
+IDEC_SA	GLBLS.h	/^_EXTERN REGVECT IDEC_SA[13];$/;"	v
+IER	SERIAL.h	232;"	d
+IGNORE_RX	SERIAL.h	/^					BOOL			IGNORE_RX;$/;"	m	struct:__anon21
+INIT	MENU.h	/^					BOOL	INIT;$/;"	m	struct:__anon20
+INITIALIZING	GLBLS.h	/^_EXTERN BOOL INITIALIZING;$/;"	v
+INV_CMD_COUNT	SERIAL.h	/^					unsigned int	INV_CMD_COUNT;$/;"	m	struct:__anon21
+INV_PKT_COUNT	SERIAL.h	/^					unsigned int	INV_PKT_COUNT;$/;"	m	struct:__anon21
+IP_O	GLBLS.h	/^_EXTERN float IP_O;$/;"	v
+IP_RP_O	GLBLS.h	/^_EXTERN float IP_RP_O;$/;"	v
+IP_RP_W	GLBLS.h	/^_EXTERN float IP_RP_W;$/;"	v
+IP_W	GLBLS.h	/^_EXTERN float IP_W;$/;"	v
+IRDA_ENABLE	GLBLS.h	/^_EXTERN BOOL IRDA_ENABLE;$/;"	v
+ISR	SERIAL.h	234;"	d
+LAST_TEMP_RESET	GLBLS.h	/^_EXTERN float LAST_TEMP_RESET;$/;"	v
+LCR	SERIAL.h	235;"	d
+LED_GREEN	GLBLS.h	/^_EXTERN BOOL LED_GREEN;$/;"	v
+LIQ_VALVE_D	GLBLS.h	/^_EXTERN float LIQ_VALVE_D[SMAX]; $/;"	v
+LIQ_VALVE_I	GLBLS.h	/^_EXTERN float LIQ_VALVE_I[SMAX];$/;"	v
+LIQ_VALVE_P	GLBLS.h	/^_EXTERN float LIQ_VALVE_P[SMAX]; $/;"	v
+LIST_DAMP	VARIABLE.h	/^_EXTERN LIST	LIST_DAMP;$/;"	v
+LIST_DAMP_EMPTY	VARIABLE.h	/^_EXTERN LIST	LIST_DAMP_EMPTY;$/;"	v
+LIST_EXEC	EXECUTE.h	/^_EXTERN LIST LIST_EXEC;			\/* execution list- after a timeout its vector is placed in the queue *\/$/;"	v
+LIST_EXEC_EMPTY	EXECUTE.h	/^_EXTERN LIST LIST_EXEC_EMPTY;   \/* empty execution list to get empty nodes from *\/$/;"	v
+LIST_MASTER_EMPTY	SERIAL.h	/^_EXTERN LIST LIST_MASTER_EMPTY;$/;"	v
+LIST_TIMER0	TIMER.h	/^_EXTERN LIST LIST_TIMER0;$/;"	v
+LIST_TMR_EMPTY	TIMER.h	/^_EXTERN LIST LIST_TMR_EMPTY;$/;"	v
+LOCKOUT	GLBLS.h	/^_EXTERN BOOL LOCKOUT;$/;"	v
+LOG	LOG.h	/^				} LOG;$/;"	t	typeref:struct:__anon19
+LOG_BFR_NUM_VAR	GLBLS.h	1626;"	d
+LOG_BFR_SECONDS	GLBLS.h	1625;"	d
+LOG_CFG	LOG.h	56;"	d
+LOG_EMPTY	LOG.h	69;"	d
+LOG_ERASE	LOG.h	/^					unsigned int LOG_ERASE;$/;"	m	struct:__anon19
+LOG_ERROR	LOG.h	57;"	d
+LOG_FC_1	LOG.h	65;"	d
+LOG_FC_2	LOG.h	66;"	d
+LOG_FC_3	LOG.h	67;"	d
+LOG_H	LOG.h	142;"	d
+LOG_PERIODIC	LOG.h	55;"	d
+LOG_STATUS	GLBLS.h	/^_EXTERN int		LOG_STATUS; \/\/48650$/;"	v
+LOG_USER1	LOG.h	58;"	d
+LOG_USER2	LOG.h	59;"	d
+LOG_USER3	LOG.h	60;"	d
+LOG_USER4	LOG.h	61;"	d
+LOG_USER5	LOG.h	62;"	d
+LOG_USER6	LOG.h	63;"	d
+LOG_VAR_SEL	GLBLS.h	/^_EXTERN int LOG_VAR_SEL[30];$/;"	v
+LONG_ADDRESS	SERIAL.h	/^					BOOL			LONG_ADDRESS;$/;"	m	struct:__anon21
+LOOPDATA_I	ADC.h	/^	    		} LOOPDATA_I;$/;"	t	typeref:struct:__anon1
+LOOPDATA_O	DAC.h	/^	    		} LOOPDATA_O;$/;"	t	typeref:struct:__anon3
+LOOP_ENABLED	GLBLS.h	/^_EXTERN COIL LOOP_ENABLED;$/;"	v
+LOW_SALT_MODE	GLBLS.h	/^_EXTERN int LOW_SALT_MODE;                     \/*Low salt mode freq threshold RS*\/$/;"	v
+LRV	ADC.h	/^					VAR		LRV;$/;"	m	struct:__anon1
+LRV	DAC.h	/^					VAR		LRV;$/;"	m	struct:__anon3
+LSR	SERIAL.h	237;"	d
+LSR_FIFO_DATA_ERROR	SERIAL.h	210;"	d
+LSR_FRAMING_ERROR	SERIAL.h	214;"	d
+LSR_OVERRUN_ERROR	SERIAL.h	216;"	d
+LSR_PARITY_ERROR	SERIAL.h	215;"	d
+LSR_THR_EMPTY	SERIAL.h	212;"	d
+LSR_THR_TSR_EMPTY	SERIAL.h	211;"	d
+LSR_break_int	SERIAL.h	213;"	d
+LSR_receive_data_rdy	SERIAL.h	217;"	d
+M	MENU.h	/^					BOOL	M;$/;"	m	struct:__anon20
+MANUAL	DAC.h	/^					int		MANUAL;$/;"	m	struct:__anon3
+MANUAL_PERCENT	DAC.h	/^					float	MANUAL_PERCENT;$/;"	m	struct:__anon3
+MAN_DENSITY	GLBLS.h	/^					BOOL MAN_DENSITY;$/;"	m	struct:__anon16
+MAN_FLOW	GLBLS.h	/^					BOOL MAN_FLOW;$/;"	m	struct:__anon16
+MAN_PRESSURE	GLBLS.h	/^					BOOL MAN_PRESSURE;$/;"	m	struct:__anon16
+MAN_SALINITY	GLBLS.h	/^					BOOL MAN_SALINITY;$/;"	m	struct:__anon16
+MAN_TEMP	GLBLS.h	/^					BOOL MAN_TEMP;$/;"	m	struct:__anon16
+MAN_WATERCUT	GLBLS.h	/^					BOOL MAN_WATERCUT;$/;"	m	struct:__anon16
+MASTER	SERIAL.h	/^					LIST			MASTER;$/;"	m	struct:__anon21
+MASTER_Q_LEN	SERIAL.h	146;"	d
+MAXBUFF	BUFFER.h	34;"	d
+MB_ADDR_COIL	MODBUSTABLES.h	2034;"	d
+MB_ADDR_EXT	MODBUSTABLES.h	2433;"	d
+MB_ADDR_FC	MODBUSTABLES.h	899;"	d
+MB_ADDR_FLT	MODBUSTABLES.h	1345;"	d
+MB_ADDR_INT	MODBUSTABLES.h	41;"	d
+MCR	SERIAL.h	236;"	d
+MEM	GLBLS.h	/^_EXTERN BOOL MEM;$/;"	v
+MENU	MENU.h	/^					BOOL	MENU;$/;"	m	struct:__anon20
+MENU_CNT	MENU.h	/^					unsigned int MENU_CNT;$/;"	m	struct:__anon20
+MENU_H	MENU.h	120;"	d
+MENU_STRUCT	MENU.h	/^	    		} MENU_STRUCT;$/;"	t	typeref:struct:__anon20
+MENU_TRAP	MENU.h	/^					BOOL	MENU_TRAP;$/;"	m	struct:__anon20
+MINSPAN	DAC.h	/^					float	MINSPAN;$/;"	m	struct:__anon3
+MINUTES_BOXCAR_EXPIRE_MAX	GLBLS.h	1054;"	d
+MINUTES_BOXCAR_EXPIRE_MIN	GLBLS.h	1053;"	d
+MISC_H	MISC.h	413;"	d
+MM_GAS_fail	GLBLS.h	/^_EXTERN COIL MM_GAS_fail;$/;"	v
+MM_LIQ_fail	GLBLS.h	/^_EXTERN COIL MM_LIQ_fail;    $/;"	v
+MODBUSRTU_H	MODBUSRTU.h	243;"	d
+MODBUSTABLES_H	MODBUSTABLES.h	2481;"	d
+MODBUS_CRITICAL_ERROR	MODBUSRTU.h	/^_EXTERN BOOL   MODBUS_CRITICAL_ERROR;$/;"	v
+MODE	GLBLS.h	/^					int		MODE;$/;"	m	struct:__anon12
+MODE_DEFINE	MENU.h	/^					BOOL	MODE_DEFINE;$/;"	m	struct:__anon20
+MODE_LOCKDOWN	MENU.h	/^					BOOL	MODE_LOCKDOWN;$/;"	m	struct:__anon20
+MODE_NORMAL	MENU.h	/^					BOOL	MODE_NORMAL;$/;"	m	struct:__anon20
+MODE_TECH	MENU.h	/^					BOOL	MODE_TECH;$/;"	m	struct:__anon20
+MODE_USER	MENU.h	/^					BOOL	MODE_USER;$/;"	m	struct:__anon20
+MODE_WPROT	MENU.h	/^					BOOL	MODE_WPROT;$/;"	m	struct:__anon20
+MONTH	GLBLS.h	/^					int		MONTH;$/;"	m	struct:__anon8
+MOTHERBOARD	GLBLS.h	/^_EXTERN BOARD	MOTHERBOARD;$/;"	v
+MPKT	SERIAL.h	/^				} MPKT;$/;"	t	typeref:struct:__anon23
+MSR	SERIAL.h	238;"	d
+MSVE	MENU.h	/^_EXTERN MENU_STRUCT MSVE;$/;"	v
+M_ERROR_EXEC_FAIL	ERRORS.h	87;"	d
+M_ERROR_FLASH_MEMORY	ERRORS.h	89;"	d
+M_ERROR_FLASH_WPROT	ERRORS.h	90;"	d
+M_ERROR_FREQ_OVERRANGE	ERRORS.h	95;"	d
+M_ERROR_FREQ_UNDERRANGE	ERRORS.h	94;"	d
+M_ERROR_INTERNAL_MEMORY	ERRORS.h	93;"	d
+M_ERROR_MEMORY	ERRORS.h	86;"	d
+M_ERROR_NONE	ERRORS.h	85;"	d
+M_ERROR_RESET	ERRORS.h	100;"	d
+M_ERROR_RESET_BASICS	ERRORS.h	101;"	d
+M_ERROR_TMR_FAIL	ERRORS.h	88;"	d
+M_ERROR_T_OVERRANGE	ERRORS.h	97;"	d
+M_ERROR_T_UNDERRANGE	ERRORS.h	96;"	d
+M_ERROR_VAR_BOUNDARY	ERRORS.h	91;"	d
+M_ERROR_VAR_UNIT	ERRORS.h	92;"	d
+M_ERROR_WC_OVERRANGE	ERRORS.h	99;"	d
+M_ERROR_WC_UNDERRANGE	ERRORS.h	98;"	d
+Meter_Factor	GLBLS.h	/^					VAR		Meter_Factor;$/;"	m	struct:__anon16
+N	SERIAL.h	/^					int				N;$/;"	m	struct:__anon22
+NETWDOG	SERIAL.h	/^					VAR				NETWDOG;$/;"	m	struct:__anon22
+NET_FLOW_OIL	GLBLS.h	/^					VAR NET_FLOW_OIL;$/;"	m	struct:__anon16
+NET_FLOW_TOTAL	GLBLS.h	/^					VAR NET_FLOW_TOTAL;$/;"	m	struct:__anon16
+NET_FLOW_WATER	GLBLS.h	/^					VAR NET_FLOW_WATER;$/;"	m	struct:__anon16
+NET_OIL	GLBLS.h	/^					VAR NET_OIL;$/;"	m	struct:__anon16
+NET_TOTAL	GLBLS.h	/^					VAR NET_TOTAL;$/;"	m	struct:__anon16
+NET_WATER	GLBLS.h	/^					VAR NET_WATER;$/;"	m	struct:__anon16
+NULL_VAR	VARIABLE.h	39;"	d
+NUM_PREAMBLE_MS	GLBLS.h	/^_EXTERN int    NUM_PREAMBLE_MS;$/;"	v
+NUM_PREAMBLE_SM	GLBLS.h	/^_EXTERN int    NUM_PREAMBLE_SM;$/;"	v
+NUM_RETRIES	SERIAL.h	/^					unsigned int	NUM_RETRIES;$/;"	m	struct:__anon21
+N_FREQ	GLBLS.h	/^_EXTERN unsigned int N_FREQ;$/;"	v
+N_TEMP	GLBLS.h	/^_EXTERN unsigned int		N_TEMP;   \/*RS*\/  $/;"	v
+N_WC	GLBLS.h	/^_EXTERN unsigned int N_WC;       \/*average filter RS*\/$/;"	v
+N_retry	SERIAL.h	/^					int				N_retry;$/;"	m	struct:__anon22
+NaN	GLBLS.h	163;"	d
+NaN_val	GLBLS.h	/^_EXTERN float    NaN_val;$/;"	v
+NaN_val_flt	GLBLS.h	/^_EXTERN int    NaN_val_flt;$/;"	v
+NaN_val_int	GLBLS.h	/^_EXTERN int    NaN_val_int;$/;"	v
+Num_Oil_Samples	GLBLS.h	/^_EXTERN VAR Num_Oil_Samples;$/;"	v
+Num_Retry	SERIAL.h	/^					VAR				Num_Retry;$/;"	m	struct:__anon22
+Num_Water_Samples	GLBLS.h	/^_EXTERN VAR Num_Water_Samples;$/;"	v
+OIL_ADJ	GLBLS.h	/^_EXTERN float OIL_ADJ[SMAX];$/;"	v
+OIL_CALC_CUTOFF	GLBLS.h	/^_EXTERN float OIL_CALC_CUTOFF;$/;"	v
+OIL_CALC_MAX	GLBLS.h	/^_EXTERN float OIL_CALC_MAX[2];$/;"	v
+OIL_CALC_MODE	GLBLS.h	/^_EXTERN int OIL_CALC_MODE;$/;"	v
+OIL_P0	GLBLS.h	/^_EXTERN VAR OIL_P0;$/;"	v
+OIL_P1	GLBLS.h	/^_EXTERN VAR OIL_P1;$/;"	v
+OIL_PHASE_ONLY	GLBLS.h	/^_EXTERN COIL OIL_PHASE_ONLY;$/;"	v
+OIL_PHASE_ONLY_ENABLE	GLBLS.h	/^_EXTERN float OIL_PHASE_ONLY_ENABLE[SMAX];$/;"	v
+OLD_CURRENT	HART.h	/^_EXTERN float	OLD_CURRENT;$/;"	v
+ON	GLBLS.h	/^					COIL	ON;$/;"	m	struct:__anon12
+OSC	GLBLS.h	/^_EXTERN int OSC[VTMAX];$/;"	v
+OSC_OIL_CALC	GLBLS.h	/^_EXTERN int    OSC_OIL_CALC;$/;"	v
+OSC_WATER_CALC	GLBLS.h	/^_EXTERN int    OSC_WATER_CALC;$/;"	v
+OSWITCH	GLBLS.h	/^_EXTERN BOOL OSWITCH;$/;"	v
+OUT_STR	MENU.h	/^_EXTERN char OUT_STR[32]; \/\/stores a Russian character string$/;"	v
+OUT_STR2	MENU.h	/^_EXTERN char OUT_STR2[32]; \/\/stores a second Russian character string$/;"	v
+Oil_Phase_Filter	GLBLS.h	/^_EXTERN VAR Oil_Phase_Filter;$/;"	v
+Oil_Phase_Maximum	GLBLS.h	/^_EXTERN VAR Oil_Phase_Maximum;$/;"	v
+P	DAC.h	/^					VAR		P;     \/*Add PID to stream table RS*\/$/;"	m	struct:__anon3
+P	GLBLS.h	/^					float	P;$/;"	m	struct:__anon13
+PAGE	MENU.h	/^					unsigned int PAGE;$/;"	m	struct:__anon20
+PATTERN_SIZE_MAX	GLBLS.h	1046;"	d
+PATTERN_SIZE_MIN	GLBLS.h	1045;"	d
+PDI_id	SERIAL.h	/^_EXTERN int  PDI_id;$/;"	v
+PID_enable_failsafe	DAC.h	/^					BOOL	PID_enable_failsafe;$/;"	m	struct:__anon3
+PID_fail	DAC.h	/^					BOOL	PID_fail;$/;"	m	struct:__anon3
+PID_input	DAC.h	/^					float	PID_input;$/;"	m	struct:__anon3
+PID_setpoint	DAC.h	/^					float	PID_setpoint;$/;"	m	struct:__anon3
+PORT	SERIAL.h	/^_EXTERN PORTV PORT[UART_MAX];$/;"	v
+PORT2_GAS_TEMP	GLBLS.h	/^_EXTERN unsigned int		PORT2_GAS_TEMP;  $/;"	v
+PORT2_LIQ_TEMP	GLBLS.h	/^_EXTERN unsigned int		PORT2_LIQ_TEMP; $/;"	v
+PORT3_TEMP	GLBLS.h	/^_EXTERN unsigned int		PORT3_TEMP;   $/;"	v
+PORTC	SERIAL.h	/^				} PORTC;$/;"	t	typeref:struct:__anon22
+PORTCFG	SERIAL.h	/^_EXTERN PORTC PORTCFG[UART_MAX];$/;"	v
+PORTV	SERIAL.h	/^				} PORTV;$/;"	t	typeref:struct:__anon21
+POWER	GLBLS.h	/^_EXTERN BOARD	POWER;$/;"	v
+PREFIX	SERIAL.h	/^					VAR				PREFIX;$/;"	m	struct:__anon22
+PRESCALE	GLBLS.h	/^_EXTERN float PRESCALE;$/;"	v
+PRESENT	SERIAL.h	/^					BOOL			PRESENT;$/;"	m	struct:__anon21
+PRESS	GLBLS.h	/^_EXTERN PRESSURE PRESS[FCMAX];$/;"	v
+PRESSURE	GLBLS.h	/^	    		} PRESSURE;$/;"	t	typeref:struct:__anon14
+PROT_G	MODBUSRTU.h	127;"	d
+PROT_MASK	MODBUSRTU.h	128;"	d
+PROT_U	MODBUSRTU.h	126;"	d
+PULSE	GLBLS.h	/^					int PULSE;$/;"	m	struct:__anon16
+PULSES_PER_ACCUM_UNIT	GLBLS.h	/^					unsigned int PULSES_PER_ACCUM_UNIT;$/;"	m	struct:__anon16
+PULSE_COUNTER	GLBLS.h	/^					unsigned int PULSE_COUNTER;$/;"	m	struct:__anon16
+PULSE_DELTA	GLBLS.h	/^					int PULSE_DELTA;$/;"	m	struct:__anon16
+PULSE_FACTOR	GLBLS.h	/^					float	PULSE_FACTOR;$/;"	m	struct:__anon16
+PULSE_FC_DENSITY	GLBLS.h	/^	PULSE_FC_DENSITY 	= 9,$/;"	e	enum:Pulse_Input_Type
+PULSE_FC_OIL_DENSITY	GLBLS.h	/^	PULSE_FC_OIL_DENSITY 		= 11,$/;"	e	enum:Pulse_Input_Type
+PULSE_FC_OIL_DENSITY_ST	GLBLS.h	/^	PULSE_FC_OIL_DENSITY_ST 	= 12,$/;"	e	enum:Pulse_Input_Type
+PULSE_FC_PRESSURE	GLBLS.h	/^	PULSE_FC_PRESSURE 	= 8,$/;"	e	enum:Pulse_Input_Type
+PULSE_FC_SALINITY	GLBLS.h	/^	PULSE_FC_SALINITY 	= 10,$/;"	e	enum:Pulse_Input_Type
+PULSE_FC_TEMP	GLBLS.h	/^	PULSE_FC_TEMP 		= 6,$/;"	e	enum:Pulse_Input_Type
+PULSE_FC_TOTAL_FLOW	GLBLS.h	/^	PULSE_FC_TOTAL_FLOW = 7,$/;"	e	enum:Pulse_Input_Type
+PULSE_FC_WATER_DENSITY	GLBLS.h	/^	PULSE_FC_WATER_DENSITY 		= 13,$/;"	e	enum:Pulse_Input_Type
+PULSE_FC_WATER_DENSITY_ST	GLBLS.h	/^	PULSE_FC_WATER_DENSITY_ST 	= 14,$/;"	e	enum:Pulse_Input_Type
+PULSE_FC_WC	GLBLS.h	/^	PULSE_FC_WC 		= 5,$/;"	e	enum:Pulse_Input_Type
+PULSE_FLOW	GLBLS.h	/^					VAR PULSE_FLOW;$/;"	m	struct:__anon16
+PULSE_FREQ	GLBLS.h	/^					VAR PULSE_FREQ;$/;"	m	struct:__anon16
+PULSE_GAS_TEMP	GLBLS.h	/^	PULSE_GAS_TEMP 		= 1,$/;"	e	enum:Pulse_Input_Type
+PULSE_NONE	GLBLS.h	/^	PULSE_NONE					= 15$/;"	e	enum:Pulse_Input_Type
+PULSE_SALINITY	GLBLS.h	/^	PULSE_SALINITY 		= 2,$/;"	e	enum:Pulse_Input_Type
+PULSE_STAT	GLBLS.h	/^					int PULSE_STAT;$/;"	m	struct:__anon16
+PULSE_STREAM_SELECT	GLBLS.h	/^	PULSE_STREAM_SELECT = 3,$/;"	e	enum:Pulse_Input_Type
+PULSE_TOTAL	GLBLS.h	/^					VAR PULSE_TOTAL;$/;"	m	struct:__anon16
+PULSE_USER_TEMP	GLBLS.h	/^	PULSE_USER_TEMP 	= 4,$/;"	e	enum:Pulse_Input_Type
+PURGING	GLBLS.h	/^					BOOL	PURGING;$/;"	m	struct:__anon18
+PV_SAMPLES	GLBLS.h	/^_EXTERN BFR PV_SAMPLES;$/;"	v
+PV_SAMPLES_24hr	GLBLS.h	/^_EXTERN BFR PV_SAMPLES_24hr;$/;"	v
+PV_SAMPLES_5min	GLBLS.h	/^_EXTERN BFR PV_SAMPLES_5min;$/;"	v
+Parity	SERIAL.h	/^					int				Parity;$/;"	m	struct:__anon22
+Plot_Limit_Oil_Freq_High	GLBLS.h	/^_EXTERN VAR Plot_Limit_Oil_Freq_High;$/;"	v
+Plot_Limit_Oil_Freq_Low	GLBLS.h	/^_EXTERN VAR Plot_Limit_Oil_Freq_Low;$/;"	v
+Plot_Limit_Oil_RP_High	GLBLS.h	/^_EXTERN VAR Plot_Limit_Oil_RP_High;$/;"	v
+Plot_Limit_Oil_RP_Low	GLBLS.h	/^_EXTERN VAR Plot_Limit_Oil_RP_Low;$/;"	v
+Plot_Limit_Temp_High	GLBLS.h	/^_EXTERN VAR Plot_Limit_Temp_High;$/;"	v
+Plot_Limit_Temp_Low	GLBLS.h	/^_EXTERN VAR Plot_Limit_Temp_Low;$/;"	v
+Plot_Limit_Water_Freq_High	GLBLS.h	/^_EXTERN VAR Plot_Limit_Water_Freq_High;$/;"	v
+Plot_Limit_Water_Freq_Low	GLBLS.h	/^_EXTERN VAR Plot_Limit_Water_Freq_Low;$/;"	v
+Plot_Limit_Water_RP_High	GLBLS.h	/^_EXTERN VAR Plot_Limit_Water_RP_High;$/;"	v
+Plot_Limit_Water_RP_Low	GLBLS.h	/^_EXTERN VAR Plot_Limit_Water_RP_Low;$/;"	v
+Plot_Limit_Watercut_High	GLBLS.h	/^_EXTERN VAR  Plot_Limit_Watercut_High;$/;"	v
+Plot_Limit_Watercut_Low	GLBLS.h	/^_EXTERN VAR  Plot_Limit_Watercut_Low;$/;"	v
+Pulse_Input_Type	GLBLS.h	/^enum Pulse_Input_Type$/;"	g
+QUEUE_EXEC	EXECUTE.h	/^_EXTERN EPKT QUEUE_EXEC[EXEC_Q_LEN];$/;"	v
+QUEUE_MASTER	SERIAL.h	/^_EXTERN MPKT QUEUE_MASTER[MASTER_Q_LEN];$/;"	v
+QUEUE_TMR	TIMER.h	/^_EXTERN TPKT QUEUE_TMR[TMR_Q_LEN];$/;"	v
+RCLKSRC	SERIAL.h	294;"	d
+RCLK_SRCE	SERIAL.h	251;"	d
+RC_P	SERIAL.h	293;"	d
+READ_ADC_INPUTS	GLBLS.h	/^_EXTERN int READ_ADC_INPUTS;$/;"	v
+REGVECT	VARIABLE.h	/^	    		} REGVECT;$/;"	t	typeref:struct:__anon27
+REG_20mA_max_flow_rate_input	GLBLS.h	/^_EXTERN VAR REG_20mA_max_flow_rate_input;$/;"	v
+REG_ADC	GLBLS.h	/^_EXTERN VAR REG_ADC[ADC_MAX];$/;"	v
+REG_ALFAT_LOG_PERIOD	GLBLS.h	/^_EXTERN VAR REG_ALFAT_LOG_PERIOD;$/;"	v
+REG_BULK_LEVEL	GLBLS.h	/^_EXTERN VAR REG_BULK_LEVEL;$/;"	v
+REG_CAL_OIL	GLBLS.h	/^_EXTERN VAR REG_CAL_OIL;$/;"	v
+REG_CAL_WATER	GLBLS.h	/^_EXTERN VAR REG_CAL_WATER;$/;"	v
+REG_CCM_PURGE_STAT	GLBLS.h	/^_EXTERN VAR REG_CCM_PURGE_STAT;                       \/*logging purge status RS*\/  $/;"	v
+REG_CCM_TEST_STAT	GLBLS.h	/^_EXTERN VAR REG_CCM_TEST_STAT;                       \/*logging test status RS*\/ $/;"	v
+REG_DAC	GLBLS.h	/^_EXTERN VAR REG_DAC[DAC_MAX];$/;"	v
+REG_DELTA_TEMP	GLBLS.h	/^_EXTERN VAR REG_DELTA_TEMP; $/;"	v
+REG_DIAG	ERRORS.h	/^_EXTERN VAR REG_DIAG[5];$/;"	v
+REG_DUMMY	GLBLS.h	/^_EXTERN VAR REG_DUMMY;$/;"	v
+REG_EMULSION_PHASE	GLBLS.h	/^_EXTERN VAR REG_EMULSION_PHASE;$/;"	v
+REG_EM_PHASE_HOLD	GLBLS.h	/^_EXTERN VAR REG_EM_PHASE_HOLD;$/;"	v
+REG_FREQ	GLBLS.h	/^_EXTERN VAR REG_FREQ[VTMAX];$/;"	v
+REG_FREQ_O	GLBLS.h	/^_EXTERN VAR REG_FREQ_O;$/;"	v
+REG_FREQ_OIL_HI	GLBLS.h	/^_EXTERN VAR REG_FREQ_OIL_HI;$/;"	v
+REG_FREQ_OIL_LO	GLBLS.h	/^_EXTERN VAR REG_FREQ_OIL_LO;$/;"	v
+REG_FREQ_VARIANCE_RATIO	GLBLS.h	/^_EXTERN VAR REG_FREQ_VARIANCE_RATIO;$/;"	v
+REG_FREQ_W	GLBLS.h	/^_EXTERN VAR REG_FREQ_W;$/;"	v
+REG_FREQ_WATER_HI	GLBLS.h	/^_EXTERN VAR REG_FREQ_WATER_HI;$/;"	v
+REG_FREQ_WATER_LO	GLBLS.h	/^_EXTERN VAR REG_FREQ_WATER_LO;$/;"	v
+REG_HART_num_preamble	GLBLS.h	/^_EXTERN VAR REG_HART_num_preamble;$/;"	v
+REG_HART_response_delay	GLBLS.h	/^_EXTERN VAR REG_HART_response_delay;$/;"	v
+REG_LOCK	GLBLS.h	/^_EXTERN VAR REG_LOCK[5];     \/*add 1 for heuristic routine lock, change from 4 to 5 RS*\/$/;"	v
+REG_LOWSALT_THRESHOLD	GLBLS.h	/^_EXTERN VAR REG_LOWSALT_THRESHOLD;                   \/*Low salt mode freq threshold RS*\/    $/;"	v
+REG_NUM_SAMP	GLBLS.h	/^_EXTERN VAR REG_NUM_SAMP;$/;"	v
+REG_OIL_ADJ	GLBLS.h	/^_EXTERN VAR REG_OIL_ADJ;$/;"	v
+REG_OIL_INDEX	GLBLS.h	/^_EXTERN VAR REG_OIL_INDEX;$/;"	v
+REG_PHASE_HOLD_CYCLES	GLBLS.h	/^_EXTERN VAR REG_PHASE_HOLD_CYCLES;                       \/*phase hold over RS*\/$/;"	v
+REG_PV_AVG_1sec	GLBLS.h	/^_EXTERN float REG_PV_AVG_1sec;$/;"	v
+REG_PV_AVG_24hr	GLBLS.h	/^_EXTERN float REG_PV_AVG_24hr;$/;"	v
+REG_PV_AVG_5min	GLBLS.h	/^_EXTERN float REG_PV_AVG_5min;$/;"	v
+REG_PV_AVG_CNT	GLBLS.h	/^_EXTERN int REG_PV_AVG_CNT;$/;"	v
+REG_PW	GLBLS.h	/^_EXTERN int REG_PW[5];       \/*add 1 for heuristic routine pw, change from 4 to 5 RS*\/$/;"	v
+REG_SALINITY	GLBLS.h	/^_EXTERN VAR REG_SALINITY;$/;"	v
+REG_STREAM_SELECT	GLBLS.h	/^_EXTERN VAR REG_STREAM_SELECT;$/;"	v
+REG_TEMPERATURE_AVG	GLBLS.h	/^_EXTERN VAR REG_TEMPERATURE_AVG;$/;"	v
+REG_TEMPERATURE_EXTERNAL	GLBLS.h	/^_EXTERN VAR REG_TEMPERATURE_EXTERNAL;$/;"	v
+REG_TEMPERATURE_USER	GLBLS.h	/^_EXTERN VAR REG_TEMPERATURE_USER;   $/;"	v
+REG_TEMPERATURE_USER_ADJUST	GLBLS.h	/^_EXTERN VAR REG_TEMPERATURE_USER_ADJUST;$/;"	v
+REG_TIME	GLBLS.h	/^_EXTERN unsigned int		REG_TIME; $/;"	v
+REG_USER_DEFINE	GLBLS.h	/^_EXTERN int REG_USER_DEFINE[20];$/;"	v
+REG_VINC	GLBLS.h	/^_EXTERN VAR REG_VINC[VTMAX];$/;"	v
+REG_VINC_O	GLBLS.h	/^_EXTERN VAR REG_VINC_O;$/;"	v
+REG_VINC_W	GLBLS.h	/^_EXTERN VAR REG_VINC_W;$/;"	v
+REG_VREF	GLBLS.h	/^_EXTERN VAR REG_VREF[VTMAX];$/;"	v
+REG_VREF_O	GLBLS.h	/^_EXTERN VAR REG_VREF_O;$/;"	v
+REG_VREF_W	GLBLS.h	/^_EXTERN VAR REG_VREF_W;$/;"	v
+REG_VTUNE	GLBLS.h	/^_EXTERN VAR REG_VTUNE[VTMAX];$/;"	v
+REG_VTUNE_SET	GLBLS.h	/^_EXTERN VAR REG_VTUNE_SET[VTMAX];$/;"	v
+REG_WATERCUT	GLBLS.h	/^_EXTERN VAR REG_WATERCUT;$/;"	v
+REG_WATERCUT_ALARM_HI	GLBLS.h	/^_EXTERN VAR REG_WATERCUT_ALARM_HI;$/;"	v
+REG_WATERCUT_ALARM_LO	GLBLS.h	/^_EXTERN VAR REG_WATERCUT_ALARM_LO;$/;"	v
+REG_WATERCUT_DENSITY	GLBLS.h	/^_EXTERN VAR REG_WATERCUT_DENSITY;$/;"	v
+REG_WATERCUT_RAW	GLBLS.h	/^_EXTERN float REG_WATERCUT_RAW;$/;"	v
+REG_WATER_ADJ	GLBLS.h	/^_EXTERN VAR REG_WATER_ADJ;$/;"	v
+REG_WATER_INDEX	GLBLS.h	/^_EXTERN VAR REG_WATER_INDEX;$/;"	v
+REG_WC_NUM_SAMPLES	GLBLS.h	/^_EXTERN VAR REG_WC_NUM_SAMPLES;                       \/*average filter RS*\/$/;"	v
+REG_accumulator_display_format	GLBLS.h	/^_EXTERN VAR REG_accumulator_display_format;$/;"	v
+REG_alarm_relay_delay	GLBLS.h	/^_EXTERN VAR REG_alarm_relay_delay;$/;"	v
+REG_count_per_flow_unit	GLBLS.h	/^_EXTERN VAR REG_count_per_flow_unit;$/;"	v
+REG_density_correction_mode	GLBLS.h	/^_EXTERN VAR REG_density_correction_mode;$/;"	v
+REG_flow_meter_type	GLBLS.h	/^_EXTERN VAR REG_flow_meter_type;$/;"	v
+REG_flow_rate_time_unit	GLBLS.h	/^_EXTERN VAR REG_flow_rate_time_unit;$/;"	v
+REG_flow_volume_unit	GLBLS.h	/^_EXTERN VAR REG_flow_volume_unit;$/;"	v
+REG_num_oil_cal_samples	GLBLS.h	/^_EXTERN VAR REG_num_oil_cal_samples;$/;"	v
+REG_num_water_cal_samples	GLBLS.h	/^_EXTERN VAR REG_num_water_cal_samples;$/;"	v
+REG_osc_settle_long	GLBLS.h	/^_EXTERN VAR REG_osc_settle_long;$/;"	v
+REG_osc_settle_short	GLBLS.h	/^_EXTERN VAR REG_osc_settle_short;$/;"	v
+REG_port1_Baud_Rate	GLBLS.h	/^_EXTERN VAR REG_port1_Baud_Rate;$/;"	v
+REG_port1_parity	GLBLS.h	/^_EXTERN VAR REG_port1_parity;$/;"	v
+REG_port1_stop_bits	GLBLS.h	/^_EXTERN VAR REG_port1_stop_bits;$/;"	v
+REG_reference_currrent_mode	GLBLS.h	/^_EXTERN VAR REG_reference_currrent_mode;$/;"	v
+RELAYDATA	GLBLS.h	/^	    		} RELAYDATA;$/;"	t	typeref:struct:__anon12
+RELAYMAX	GLBLS.h	1300;"	d
+RESEARCH_ENABLED	MISC.h	/^_EXTERN float RESEARCH_ENABLED[VTMAX];$/;"	v
+RESEARCH_FORCE_MODE	GLBLS.h	/^_EXTERN BOOL RESEARCH_FORCE_MODE;$/;"	v
+RESEARCH_GATE	MISC.h	/^_EXTERN float RESEARCH_GATE;$/;"	v
+RESEARCH_OSC	MISC.h	/^_EXTERN float RESEARCH_OSC[VTMAX];$/;"	v
+RESEARCH_PS	MISC.h	/^_EXTERN float RESEARCH_PS;$/;"	v
+RESEARCH_VTUNE	MISC.h	/^_EXTERN float RESEARCH_VTUNE[VTMAX];$/;"	v
+RESET_AT_PURGE	GLBLS.h	/^_EXTERN int RESET_AT_PURGE;                     \/*HSALT always run option RS*\/ $/;"	v
+RESET_COUNTER	GLBLS.h	/^_EXTERN int    RESET_COUNTER;$/;"	v
+REV	GLBLS.h	/^					int		REV;$/;"	m	struct:__anon8
+REVERSE	DAC.h	/^					int		REVERSE;$/;"	m	struct:__anon3
+RGO	SERIAL.h	291;"	d
+RHR	SERIAL.h	230;"	d
+RINT	SERIAL.h	275;"	d
+RLEN	SERIAL.h	267;"	d
+RLEN_16	SERIAL.h	269;"	d
+RLEN_24	SERIAL.h	270;"	d
+RLEN_32	SERIAL.h	271;"	d
+RLEN_8	SERIAL.h	268;"	d
+RLY	GLBLS.h	/^_EXTERN RELAYDATA RLY[RELAYMAX];$/;"	v
+RP_O	GLBLS.h	/^_EXTERN float RP_O;$/;"	v
+RP_W	GLBLS.h	/^_EXTERN float RP_W;$/;"	v
+RRDY	SERIAL.h	244;"	d
+RSFM	SERIAL.h	255;"	d
+RSRFULL	SERIAL.h	248;"	d
+RSTAT	SERIAL.h	295;"	d
+RTD_CAL	GLBLS.h	/^_EXTERN COIL RTD_CAL;$/;"	v
+RTD_CAL_HI_OHM	GLBLS.h	/^_EXTERN float RTD_CAL_HI_OHM;$/;"	v
+RTD_CAL_HI_V	GLBLS.h	/^_EXTERN float RTD_CAL_HI_V;$/;"	v
+RTD_CAL_LO_OHM	GLBLS.h	/^_EXTERN float RTD_CAL_LO_OHM;$/;"	v
+RTD_CAL_LO_V	GLBLS.h	/^_EXTERN float RTD_CAL_LO_V;$/;"	v
+RTD_CURRENT	GLBLS.h	/^_EXTERN float RTD_CURRENT;$/;"	v
+RTD_GAIN	GLBLS.h	/^_EXTERN float RTD_GAIN;$/;"	v
+RTD_R	GLBLS.h	/^_EXTERN float RTD_R;$/;"	v
+RTINT	SERIAL.h	274;"	d
+RUSS	GLBLS.h	/^_EXTERN BOOL RUSS;$/;"	v
+RUSSTBLS_H	RUSSTBLS.h	415;"	d
+RUSS_MENU_TBL	RUSSTBLS.h	/^const char RUSS_MENU_TBL[][41] = {$/;"	v
+RUSS_TBL_LEN	GLBLS.h	/^_EXTERN int RUSS_TBL_LEN;$/;"	v
+RVAREN	SERIAL.h	253;"	d
+RX_pending	SERIAL.h	/^					BOOL			RX_pending;$/;"	m	struct:__anon21
+RXbuf	SERIAL.h	/^_EXTERN BFR	RXbuf[UART_MAX];$/;"	v
+Received_PKT	SERIAL.h	/^					BOOL			Received_PKT;$/;"	m	struct:__anon21
+RefPower_Oil	GLBLS.h	/^					float	RefPower_Oil;$/;"	m	struct:__anon5
+RefPower_Oil	GLBLS.h	/^					float	RefPower_Oil[2];$/;"	m	struct:__anon6
+RefPower_Water	GLBLS.h	/^					float	RefPower_Water;$/;"	m	struct:__anon5
+RefPower_Water	GLBLS.h	/^					float	RefPower_Water[2];$/;"	m	struct:__anon6
+Retry_Time	SERIAL.h	/^					VAR				Retry_Time;$/;"	m	struct:__anon22
+Rosemount_fail	GLBLS.h	/^_EXTERN COIL Rosemount_fail; $/;"	v
+S	MENU.h	/^					BOOL	S;$/;"	m	struct:__anon20
+S0	GLBLS.h	/^					float	S0;$/;"	m	struct:__anon18
+S1	GLBLS.h	/^					float	S1;$/;"	m	struct:__anon18
+S2	GLBLS.h	/^					float	S2;$/;"	m	struct:__anon18
+S3	GLBLS.h	/^					float	S3;$/;"	m	struct:__anon18
+SA	GLBLS.h	/^_EXTERN unsigned int SA;$/;"	v
+SALINITY	GLBLS.h	/^_EXTERN float SALINITY[SMAX];$/;"	v
+SALTS	GLBLS.h	/^_EXTERN float SALTS[20];$/;"	v
+SALT_MAX	GLBLS.h	/^_EXTERN float SALT_MAX;$/;"	v
+SAMPLE_PENDING	GLBLS.h	/^_EXTERN BOOL SAMPLE_PENDING;$/;"	v
+SCREEN_ANA_PV	GLBLS.h	186;"	d
+SCREEN_CCM_PV	GLBLS.h	185;"	d
+SCREEN_CREDITS	GLBLS.h	178;"	d
+SCREEN_ERRORS	GLBLS.h	180;"	d
+SCREEN_FC_PV	GLBLS.h	182;"	d
+SCREEN_GAS_PV	GLBLS.h	187;"	d
+SCREEN_HC_PV	GLBLS.h	184;"	d
+SCREEN_LC_PV	GLBLS.h	181;"	d
+SCREEN_LOGO	GLBLS.h	176;"	d
+SCREEN_MC_PV	GLBLS.h	183;"	d
+SCREEN_NODE	GLBLS.h	179;"	d
+SCREEN_RA_NOTIFY	GLBLS.h	188;"	d
+SCREEN_WPROT	GLBLS.h	177;"	d
+SELECT	MENU.h	/^					BOOL	SELECT;$/;"	m	struct:__anon20
+SELECT_CNT	MENU.h	/^					unsigned int SELECT_CNT;$/;"	m	struct:__anon20
+SELFTEST_H	SELFTEST.h	56;"	d
+SERIAL_H	SERIAL.h	311;"	d
+SIM_FREQ	GLBLS.h	/^_EXTERN float SIM_FREQ[VTMAX];$/;"	v
+SIM_TEMPERATURE_EXTERNAL	GLBLS.h	/^_EXTERN float SIM_TEMPERATURE_EXTERNAL;$/;"	v
+SIM_VINC	GLBLS.h	/^_EXTERN float SIM_VINC[VTMAX];$/;"	v
+SIM_VREF	GLBLS.h	/^_EXTERN float SIM_VREF[VTMAX];$/;"	v
+SIM_VTUNE	GLBLS.h	/^_EXTERN float SIM_VTUNE[VTMAX];$/;"	v
+SIZE_ALFAT_TX	GLBLS.h	/^_EXTERN int		SIZE_ALFAT_TX; \/\/number of bytes to send from ALFAT_TX$/;"	v
+SMAX	GLBLS.h	119;"	d
+SNUM	GLBLS.h	/^					int		SNUM;$/;"	m	struct:__anon8
+SNUM	SERIAL.h	/^					int				SNUM;$/;"	m	struct:__anon21
+SN_DC_BOARD	GLBLS.h	/^_EXTERN int    SN_DC_BOARD;$/;"	v
+SN_OSC	GLBLS.h	/^_EXTERN int    SN_OSC;$/;"	v
+SN_PIPE	GLBLS.h	/^_EXTERN int    SN_PIPE;$/;"	v
+SP0A	GLBLS.h	/^					float	SP0A;$/;"	m	struct:__anon18
+SP0B	GLBLS.h	/^					float	SP0B;$/;"	m	struct:__anon18
+SP0_GC	SERIAL.h	243;"	d
+SP0_RCTRL	SERIAL.h	280;"	d
+SP0_RXDATA	SERIAL.h	301;"	d
+SP0_RX_DATA	SERIAL.h	/^_EXTERN unsigned int SP0_RX_DATA;$/;"	v
+SP0_TMRCNTR	SERIAL.h	297;"	d
+SP0_TMRCTRL	SERIAL.h	285;"	d
+SP0_TMRPER	SERIAL.h	299;"	d
+SP0_TXDATA	SERIAL.h	300;"	d
+SP0_XCTRL	SERIAL.h	279;"	d
+SP1A	GLBLS.h	/^					float	SP1A;$/;"	m	struct:__anon18
+SP1B	GLBLS.h	/^					float	SP1B;$/;"	m	struct:__anon18
+SP2A	GLBLS.h	/^					float	SP2A;$/;"	m	struct:__anon18
+SP2B	GLBLS.h	/^					float	SP2B;$/;"	m	struct:__anon18
+SP3A	GLBLS.h	/^					float	SP3A;$/;"	m	struct:__anon18
+SP3B	GLBLS.h	/^					float	SP3B;$/;"	m	struct:__anon18
+SPAD	GLBLS.h	/^_EXTERN int SPAD[SPADMAX];$/;"	v
+SPADMAX	GLBLS.h	1308;"	d
+SPHIA	GLBLS.h	/^					float	SPHIA;$/;"	m	struct:__anon18
+SPHIB	GLBLS.h	/^					float	SPHIB;$/;"	m	struct:__anon18
+SPLOA	GLBLS.h	/^					float	SPLOA;$/;"	m	struct:__anon18
+SPLOB	GLBLS.h	/^					float	SPLOB;$/;"	m	struct:__anon18
+SPR	SERIAL.h	239;"	d
+STAT	SERIAL.h	/^					unsigned char	STAT;$/;"	m	struct:__anon21
+STAT	VARIABLE.h	/^					int		STAT;$/;"	m	struct:__anon25
+STATUS_MASK	GLBLS.h	/^					int		STATUS_MASK;$/;"	m	struct:__anon12
+STP	SERIAL.h	/^					int				STP;$/;"	m	struct:__anon22
+STR_ASSY_Date	GLBLS.h	/^_EXTERN int STR_ASSY_Date[16\/2]; \/* add profile version -RS*\/ $/;"	v
+STR_Analyzer_Info	GLBLS.h	/^_EXTERN int STR_Analyzer_Info[20\/2];$/;"	v
+STR_Analyzer_PV	GLBLS.h	/^_EXTERN int STR_Analyzer_PV[20\/2];$/;"	v
+STR_Analyzer_UNIT	GLBLS.h	/^_EXTERN int STR_Analyzer_UNIT[8\/2];$/;"	v
+STR_Copyright	GLBLS.h	/^_EXTERN int STR_Copyright[40\/2];$/;"	v
+STR_HART_Date	GLBLS.h	/^_EXTERN int STR_HART_Date[4\/2];$/;"	v
+STR_HART_Desc	GLBLS.h	/^_EXTERN int STR_HART_Desc[16\/2];$/;"	v
+STR_HART_Msg	GLBLS.h	/^_EXTERN int STR_HART_Msg[32\/2];$/;"	v
+STR_HART_Tag	GLBLS.h	/^_EXTERN int STR_HART_Tag[8\/2];$/;"	v
+STR_HART_Tag_Long	GLBLS.h	/^_EXTERN int STR_HART_Tag_Long[32\/2];$/;"	v
+STR_INIT	GLBLS.h	/^_EXTERN int STR_INIT[2];$/;"	v
+STR_VAR_DESC	GLBLS.h	/^_EXTERN int STR_VAR_DESC[10];$/;"	v
+STR_VAR_UNIT	GLBLS.h	/^_EXTERN int STR_VAR_UNIT[4];$/;"	v
+STR_VER	GLBLS.h	/^_EXTERN int STR_VER[1];$/;"	v
+SUBPAGE	MENU.h	/^					unsigned int SUBPAGE;$/;"	m	struct:__anon20
+SUB_ANALYZER	GLBLS.h	168;"	d
+SUB_CCM	GLBLS.h	172;"	d
+SUB_DUMMY	GLBLS.h	173;"	d
+SUB_FULL	GLBLS.h	167;"	d
+SUB_GAS_ANALYZER	GLBLS.h	171;"	d
+SUB_HIGH	GLBLS.h	170;"	d
+SUB_LOW	GLBLS.h	166;"	d
+SUB_MID	GLBLS.h	169;"	d
+SUB_UNDEFINED	GLBLS.h	174;"	d
+SUCCESS	SERIAL.h	/^					unsigned int	SUCCESS;$/;"	m	struct:__anon21
+SUFFIX	SERIAL.h	/^					VAR				SUFFIX;$/;"	m	struct:__anon22
+SUM_TEMP	GLBLS.h	/^_EXTERN long double		SUM_TEMP;   \/*RS*\/ $/;"	v
+SYS	LOG.h	/^_EXTERN LOG SYS;$/;"	v
+SYS_LOG_ENABLED	LOG.h	/^_EXTERN int SYS_LOG_ENABLED;$/;"	v
+SYS_LOG_EVENT	LOG.h	/^_EXTERN int SYS_LOG_EVENT;$/;"	v
+SYS_log_record_size	LOG.h	86;"	d
+SYS_log_sample_period	LOG.h	/^_EXTERN VAR SYS_log_sample_period;$/;"	v
+Salinity	GLBLS.h	/^					float	Salinity;$/;"	m	struct:__anon5
+Salinity	GLBLS.h	/^					float	Salinity[2];$/;"	m	struct:__anon6
+Shrinkage	GLBLS.h	/^					VAR		Shrinkage;$/;"	m	struct:__anon16
+Slave	SERIAL.h	/^					int				Slave;$/;"	m	struct:__anon21
+Slave_ID	SERIAL.h	/^					VAR				Slave_ID;$/;"	m	struct:__anon22
+Start_DAY	GLBLS.h	/^					int		Start_DAY;$/;"	m	struct:__anon7
+Start_HH	GLBLS.h	/^					int		Start_HH;$/;"	m	struct:__anon7
+Start_MM	GLBLS.h	/^					int		Start_MM;$/;"	m	struct:__anon7
+Start_MONTH	GLBLS.h	/^					int		Start_MONTH;$/;"	m	struct:__anon7
+Start_SS	GLBLS.h	/^					int		Start_SS;$/;"	m	struct:__anon7
+Start_YEAR	GLBLS.h	/^					int		Start_YEAR;$/;"	m	struct:__anon7
+Stop_DAY	GLBLS.h	/^					int		Stop_DAY;$/;"	m	struct:__anon7
+Stop_HH	GLBLS.h	/^					int		Stop_HH;$/;"	m	struct:__anon7
+Stop_MM	GLBLS.h	/^					int		Stop_MM;$/;"	m	struct:__anon7
+Stop_MONTH	GLBLS.h	/^					int		Stop_MONTH;$/;"	m	struct:__anon7
+Stop_SS	GLBLS.h	/^					int		Stop_SS;$/;"	m	struct:__anon7
+Stop_YEAR	GLBLS.h	/^					int		Stop_YEAR;$/;"	m	struct:__anon7
+T	GLBLS.h	/^					VAR		T;$/;"	m	struct:__anon16
+T	GLBLS.h	/^					float	T;$/;"	m	struct:__anon13
+T	GLBLS.h	/^					float	T;$/;"	m	struct:__anon14
+T	GLBLS.h	/^					float	T;$/;"	m	struct:__anon15
+TC0	TIMER.h	137;"	d
+TC1	TIMER.h	138;"	d
+TEMPERATURE	GLBLS.h	/^					float	TEMPERATURE;$/;"	m	struct:__anon17
+TEMPERATURE_TRIM_T0	GLBLS.h	/^_EXTERN float TEMPERATURE_TRIM_T0;$/;"	v
+TEMPERATURE_TRIM_T1	GLBLS.h	/^_EXTERN float TEMPERATURE_TRIM_T1;$/;"	v
+TEMPS_OIL	GLBLS.h	/^_EXTERN float TEMPS_OIL[10];$/;"	v
+TEMPS_WATER	GLBLS.h	/^_EXTERN float TEMPS_WATER[15];$/;"	v
+TEMP_OIL_MAX	GLBLS.h	/^_EXTERN float TEMP_OIL_MAX;$/;"	v
+TEMP_SAMPLE	GLBLS.h	/^_EXTERN float TEMP_SAMPLE;$/;"	v
+TEMP_WATER_MAX	GLBLS.h	/^_EXTERN float TEMP_WATER_MAX;$/;"	v
+TEST_IN_PROGRESS	GLBLS.h	/^					BOOL	TEST_IN_PROGRESS;$/;"	m	struct:__anon18
+THR	SERIAL.h	231;"	d
+TIME0	TIMER.h	/^_EXTERN float TIME0;$/;"	v
+TIME1	TIMER.h	/^_EXTERN float TIME1;$/;"	v
+TIMER0_COUNTER	TIMER.h	/^_EXTERN int TIMER0_COUNTER;$/;"	v
+TIMER1_COUNTER	TIMER.h	/^_EXTERN int TIMER1_COUNTER[UART_MAX+1];$/;"	v
+TIMER_H	TIMER.h	141;"	d
+TIME_COUNT	GLBLS.h	/^_EXTERN int TIME_COUNT;$/;"	v
+TLV_AIN0	ADC.h	62;"	d
+TLV_AIN1	ADC.h	63;"	d
+TLV_AIN2	ADC.h	64;"	d
+TLV_AIN3	ADC.h	65;"	d
+TLV_CFR_CLK_INTCLK	ADC.h	82;"	d
+TLV_CFR_CLK_SCLK	ADC.h	83;"	d
+TLV_CFR_CLK_SCLK_2	ADC.h	85;"	d
+TLV_CFR_CLK_SCLK_4	ADC.h	84;"	d
+TLV_CFR_CLK_SRC	ADC.h	81;"	d
+TLV_CFR_CONV	ADC.h	86;"	d
+TLV_CFR_CONV_1	ADC.h	87;"	d
+TLV_CFR_CONV_REPEAT	ADC.h	88;"	d
+TLV_CFR_CONV_REPEATSWP	ADC.h	90;"	d
+TLV_CFR_CONV_SWEEP	ADC.h	89;"	d
+TLV_CFR_EOC	ADC.h	96;"	d
+TLV_CFR_EXTREF	ADC.h	77;"	d
+TLV_CFR_FIFO_1	ADC.h	102;"	d
+TLV_CFR_FIFO_3	ADC.h	101;"	d
+TLV_CFR_FIFO_5	ADC.h	100;"	d
+TLV_CFR_FIFO_FULL	ADC.h	99;"	d
+TLV_CFR_FIFO_TRIG	ADC.h	98;"	d
+TLV_CFR_INT	ADC.h	97;"	d
+TLV_CFR_INTREF	ADC.h	76;"	d
+TLV_CFR_INTREFV	ADC.h	78;"	d
+TLV_CFR_SAMPER_12	ADC.h	80;"	d
+TLV_CFR_SAMPER_24	ADC.h	79;"	d
+TLV_CFR_SWEEP_00112233	ADC.h	94;"	d
+TLV_CFR_SWEEP_01010101	ADC.h	95;"	d
+TLV_CFR_SWEEP_01230123	ADC.h	93;"	d
+TLV_CFR_SWEEP_AUTO_SEQ	ADC.h	91;"	d
+TLV_CFR_SWEEP_NA	ADC.h	92;"	d
+TLV_FIFO	ADC.h	72;"	d
+TLV_PWRDN	ADC.h	66;"	d
+TLV_RDCFR	ADC.h	67;"	d
+TLV_REF	ADC.h	/^_EXTERN int TLV_REF[3];$/;"	v
+TLV_REFM	ADC.h	70;"	d
+TLV_REFP	ADC.h	71;"	d
+TLV_REFPM	ADC.h	69;"	d
+TLV_WRCFR	ADC.h	68;"	d
+TMAX	DAC.h	67;"	d
+TMAX2	DAC.h	68;"	d
+TMIN	DAC.h	65;"	d
+TMIN2	DAC.h	66;"	d
+TMPT	GLBLS.h	/^	    		} TMPT;$/;"	t	typeref:struct:__anon15
+TMPTRANS	GLBLS.h	/^_EXTERN TMPT TMPTRANS[FCMAX];$/;"	v
+TMP_FREQ	GLBLS.h	/^_EXTERN long double TMP_FREQ[VTMAX];$/;"	v
+TMP_TEMP	GLBLS.h	/^_EXTERN long double	TMP_TEMP;    $/;"	v
+TMP_VINC	GLBLS.h	/^_EXTERN long double TMP_VINC[VTMAX];$/;"	v
+TMP_VREF	GLBLS.h	/^_EXTERN long double TMP_VREF[VTMAX];$/;"	v
+TMP_VTUNE	GLBLS.h	/^_EXTERN long double TMP_VTUNE[VTMAX];$/;"	v
+TMR0_CNT	TIMER.h	118;"	d
+TMR0_CONTINUE	TIMER.h	134;"	d
+TMR0_FREQ	TIMER.h	125;"	d
+TMR0_GC	TIMER.h	104;"	d
+TMR0_HOLD	TIMER.h	131;"	d
+TMR0_PER	TIMER.h	122;"	d
+TMR0_RESTART	TIMER.h	128;"	d
+TMR1_CNT	TIMER.h	119;"	d
+TMR1_CONTINUE	TIMER.h	135;"	d
+TMR1_FREQ	TIMER.h	126;"	d
+TMR1_GC	TIMER.h	105;"	d
+TMR1_HOLD	TIMER.h	132;"	d
+TMR1_PER	TIMER.h	123;"	d
+TMR1_RESTART	TIMER.h	129;"	d
+TMR_ADC_UPDATE	MISC.h	/^_EXTERN TPKT TMR_ADC_UPDATE;$/;"	v
+TMR_ALFAT_LOG	MISC.h	/^_EXTERN TPKT TMR_ALFAT_LOG;$/;"	v
+TMR_ALYESKA_PLC	MODBUSRTU.h	/^_EXTERN TPKT TMR_ALYESKA_PLC;$/;"	v
+TMR_BEEP_OFF	MISC.h	/^_EXTERN TPKT TMR_BEEP_OFF;$/;"	v
+TMR_BURST	HART.h	/^_EXTERN int		TMR_BURST;$/;"	v
+TMR_CCM_PURGE	MISC.h	/^_EXTERN TPKT TMR_CCM_PURGE;$/;"	v
+TMR_CCM_TEST	MISC.h	/^_EXTERN TPKT TMR_CCM_TEST;$/;"	v
+TMR_CHECK_ZERO	MISC.h	/^_EXTERN TPKT TMR_CHECK_ZERO;$/;"	v
+TMR_CLEAR_LOCKOUT	MISC.h	/^_EXTERN TPKT TMR_CLEAR_LOCKOUT;$/;"	v
+TMR_CLEAR_SYS_LOG_EVENT_FLAG	MISC.h	/^_EXTERN TPKT TMR_CLEAR_SYS_LOG_EVENT_FLAG;$/;"	v
+TMR_CLEAR_USER_LOG_EVENT_FLAG	MISC.h	/^_EXTERN TPKT TMR_CLEAR_USER_LOG_EVENT_FLAG;$/;"	v
+TMR_CLKSRC	TIMER.h	113;"	d
+TMR_CP	TIMER.h	112;"	d
+TMR_Char	SERIAL.h	/^					int				TMR_Char;$/;"	m	struct:__anon21
+TMR_DAMP	MISC.h	/^_EXTERN TPKT TMR_DAMP;$/;"	v
+TMR_DATALOG	MISC.h	/^_EXTERN TPKT TMR_DATALOG;$/;"	v
+TMR_DATALOG_COUNTERS	MISC.h	/^_EXTERN TPKT TMR_DATALOG_COUNTERS;$/;"	v
+TMR_DATALOG_USER	MISC.h	/^_EXTERN TPKT TMR_DATALOG_USER;$/;"	v
+TMR_DATIN	TIMER.h	109;"	d
+TMR_DATOUT	TIMER.h	108;"	d
+TMR_EOT_Delay	SERIAL.h	/^					int				TMR_EOT_Delay;$/;"	m	struct:__anon21
+TMR_FUNC	TIMER.h	106;"	d
+TMR_GET_ANALOGIO_CONFIG	MISC.h	/^_EXTERN TPKT TMR_GET_ANALOGIO_CONFIG;$/;"	v
+TMR_GET_ANALYZER_CONFIG	MISC.h	/^_EXTERN TPKT TMR_GET_ANALYZER_CONFIG;$/;"	v
+TMR_GET_COMM_CONFIG	MISC.h	/^_EXTERN TPKT TMR_GET_COMM_CONFIG;$/;"	v
+TMR_GET_DISPLAY_CONFIG	MISC.h	/^_EXTERN TPKT TMR_GET_DISPLAY_CONFIG;$/;"	v
+TMR_GET_MOTHERBOARD_CONFIG	MISC.h	/^_EXTERN TPKT TMR_GET_MOTHERBOARD_CONFIG;$/;"	v
+TMR_GET_POWER_CONFIG	MISC.h	/^_EXTERN TPKT TMR_GET_POWER_CONFIG;$/;"	v
+TMR_GET_uP_CONFIG	MISC.h	/^_EXTERN TPKT TMR_GET_uP_CONFIG;$/;"	v
+TMR_GO	TIMER.h	110;"	d
+TMR_HLD	TIMER.h	111;"	d
+TMR_INV	TIMER.h	114;"	d
+TMR_IO	TIMER.h	107;"	d
+TMR_LEDOFF	MISC.h	/^_EXTERN TPKT TMR_LEDOFF;$/;"	v
+TMR_LEDON	MISC.h	/^_EXTERN TPKT TMR_LEDON;$/;"	v
+TMR_MENU_REFRESH	MISC.h	/^_EXTERN TPKT TMR_MENU_REFRESH;$/;"	v
+TMR_Network_WDOG	SERIAL.h	/^					int				TMR_Network_WDOG;$/;"	m	struct:__anon21
+TMR_OSC_DELAY_LONG	MISC.h	/^_EXTERN TPKT TMR_OSC_DELAY_LONG;$/;"	v
+TMR_OSC_DELAY_SHORT	MISC.h	/^_EXTERN TPKT TMR_OSC_DELAY_SHORT;$/;"	v
+TMR_PERIODIC_ACCUM	MISC.h	/^_EXTERN TPKT TMR_PERIODIC_ACCUM;$/;"	v
+TMR_POLL	MISC.h	/^_EXTERN TPKT TMR_POLL;$/;"	v
+TMR_PULSE_UPDATE	MISC.h	/^_EXTERN TPKT TMR_PULSE_UPDATE;$/;"	v
+TMR_PVAVG	MISC.h	/^_EXTERN TPKT TMR_PVAVG;$/;"	v
+TMR_Poll	SERIAL.h	/^					TPKT			TMR_Poll;$/;"	m	struct:__anon21
+TMR_Prefix_Delay	SERIAL.h	/^					int				TMR_Prefix_Delay;$/;"	m	struct:__anon21
+TMR_Q_LEN	TIMER.h	48;"	d
+TMR_REFRESH_TIME	MISC.h	/^_EXTERN TPKT TMR_REFRESH_TIME;$/;"	v
+TMR_RESET	MISC.h	/^_EXTERN TPKT TMR_RESET;$/;"	v
+TMR_RESTART	MISC.h	/^_EXTERN TPKT TMR_RESTART;$/;"	v
+TMR_RESTORE_CFGF	MISC.h	/^_EXTERN TPKT TMR_RESTORE_CFGF;$/;"	v
+TMR_RESTORE_CFGU	MISC.h	/^_EXTERN TPKT TMR_RESTORE_CFGU;$/;"	v
+TMR_RTC_UPDATE	MISC.h	/^_EXTERN TPKT TMR_RTC_UPDATE;$/;"	v
+TMR_Retry	SERIAL.h	/^					TPKT			TMR_Retry;$/;"	m	struct:__anon21
+TMR_SAMPLE_ERROR	MISC.h	/^_EXTERN TPKT TMR_SAMPLE_ERROR;$/;"	v
+TMR_SAVE_CFGF	MISC.h	/^_EXTERN TPKT TMR_SAVE_CFGF;$/;"	v
+TMR_SAVE_CFGU	MISC.h	/^_EXTERN TPKT TMR_SAVE_CFGU;$/;"	v
+TMR_SELFTEST	MISC.h	/^_EXTERN TPKT TMR_SELFTEST;$/;"	v
+TMR_SELF_TEST	MISC.h	/^_EXTERN TPKT TMR_SELF_TEST;$/;"	v
+TMR_SERDEF	MISC.h	/^_EXTERN TPKT TMR_SERDEF;$/;"	v
+TMR_SET_BASICS	MISC.h	/^_EXTERN TPKT TMR_SET_BASICS;$/;"	v
+TMR_SET_BT	HART.h	/^_EXTERN int		TMR_SET_BT;$/;"	v
+TMR_SET_CURRENT	MISC.h	/^_EXTERN TPKT TMR_SET_CURRENT;$/;"	v
+TMR_SET_RT1	HART.h	/^_EXTERN int		TMR_SET_RT1;$/;"	v
+TMR_STAT	MISC.h	/^_EXTERN TPKT TMR_STAT;$/;"	v
+TMR_STORE_ANALOGIO_CONFIG	MISC.h	/^_EXTERN TPKT TMR_STORE_ANALOGIO_CONFIG;$/;"	v
+TMR_STORE_ANALYZER_CONFIG	MISC.h	/^_EXTERN TPKT TMR_STORE_ANALYZER_CONFIG;$/;"	v
+TMR_STORE_COMM_CONFIG	MISC.h	/^_EXTERN TPKT TMR_STORE_COMM_CONFIG;$/;"	v
+TMR_STORE_DISPLAY_CONFIG	MISC.h	/^_EXTERN TPKT TMR_STORE_DISPLAY_CONFIG;$/;"	v
+TMR_STORE_MOTHERBOARD_CONFIG	MISC.h	/^_EXTERN TPKT TMR_STORE_MOTHERBOARD_CONFIG;$/;"	v
+TMR_STORE_POWER_CONFIG	MISC.h	/^_EXTERN TPKT TMR_STORE_POWER_CONFIG;$/;"	v
+TMR_STORE_uP_CONFIG	MISC.h	/^_EXTERN TPKT TMR_STORE_uP_CONFIG;$/;"	v
+TMR_Suffix_Delay	SERIAL.h	/^					int				TMR_Suffix_Delay;$/;"	m	struct:__anon21
+TMR_T	MISC.h	/^_EXTERN TPKT TMR_T;$/;"	v
+TMR_TSTAT	TIMER.h	115;"	d
+TMR_UPDATE_RELAYS	MISC.h	/^_EXTERN TPKT TMR_UPDATE_RELAYS;$/;"	v
+TMR_action_add_if_not_exist	TIMER.h	101;"	d
+TMR_action_always_add	TIMER.h	99;"	d
+TMR_action_delete	TIMER.h	102;"	d
+TMR_action_replace	TIMER.h	100;"	d
+TMR_enabled	SERIAL.h	/^					BOOL			TMR_enabled;$/;"	m	struct:__anon21
+TMR_iLV	MISC.h	/^_EXTERN TPKT TMR_iLV;$/;"	v
+TPKT	TIMER.h	/^				} TPKT;$/;"	t	typeref:struct:__anon24
+TRIM_MAX	ADC.h	/^					VAR		TRIM_MAX;$/;"	m	struct:__anon1
+TRIM_MAX	DAC.h	/^					VAR		TRIM_MAX;$/;"	m	struct:__anon3
+TRIM_MAX_C	ADC.h	/^					float   TRIM_MAX_C;$/;"	m	struct:__anon1
+TRIM_MAX_C	DAC.h	/^					float   TRIM_MAX_C;$/;"	m	struct:__anon3
+TRIM_MIN	ADC.h	/^					VAR		TRIM_MIN;$/;"	m	struct:__anon1
+TRIM_MIN	DAC.h	/^					VAR		TRIM_MIN;$/;"	m	struct:__anon3
+TRIM_MIN_C	ADC.h	/^					float   TRIM_MIN_C;$/;"	m	struct:__anon1
+TRIM_MIN_C	DAC.h	/^					float   TRIM_MIN_C;$/;"	m	struct:__anon3
+TRIM_RTD_HI	GLBLS.h	/^_EXTERN BOOL TRIM_RTD_HI;   $/;"	v
+TRIM_RTD_LO	GLBLS.h	/^_EXTERN BOOL TRIM_RTD_LO;$/;"	v
+TX_complete	SERIAL.h	/^					BOOL			TX_complete;$/;"	m	struct:__anon21
+TXbuf	SERIAL.h	/^_EXTERN BFR	TXbuf[UART_MAX];$/;"	v
+Temperature	GLBLS.h	/^					float	Temperature;$/;"	m	struct:__anon5
+Temperature	GLBLS.h	/^					float	Temperature[2];$/;"	m	struct:__anon6
+Time_DAY	GLBLS.h	/^					int		Time_DAY;$/;"	m	struct:__anon5
+Time_DAY_OF_WEEK	GLBLS.h	/^					int		Time_DAY_OF_WEEK;$/;"	m	struct:__anon5
+Time_HH	GLBLS.h	/^					int		Time_HH;$/;"	m	struct:__anon5
+Time_MM	GLBLS.h	/^					int		Time_MM;$/;"	m	struct:__anon5
+Time_MONTH	GLBLS.h	/^					int		Time_MONTH;$/;"	m	struct:__anon5
+Time_MONTH_DAY_HH_MM	GLBLS.h	/^					int		Time_MONTH_DAY_HH_MM[2];$/;"	m	struct:__anon6
+Time_YEAR	GLBLS.h	/^					int		Time_YEAR;$/;"	m	struct:__anon5
+UART	SERIAL.h	/^_EXTERN volatile unsigned char UART[UART_MAX][16];$/;"	v
+UART_CLOCK	SERIAL.h	227;"	d
+UART_ERROR_BAUD	SERIAL.h	224;"	d
+UART_ERROR_FIFOSETUP	SERIAL.h	226;"	d
+UART_ERROR_NUM_BITS	SERIAL.h	222;"	d
+UART_ERROR_PARITY	SERIAL.h	223;"	d
+UART_ERROR_PRESCALE	SERIAL.h	225;"	d
+UART_ERROR_SELECT	SERIAL.h	220;"	d
+UART_ERROR_STOP_BITS	SERIAL.h	221;"	d
+UART_MAX	GLBLS.h	115;"	d
+URV	ADC.h	/^					VAR		URV;$/;"	m	struct:__anon1
+URV	DAC.h	/^					VAR		URV;$/;"	m	struct:__anon3
+USER_LOG_ENABLED	LOG.h	/^_EXTERN int USER_LOG_ENABLED;$/;"	v
+USER_LOG_EVENT	LOG.h	/^_EXTERN int USER_LOG_EVENT;$/;"	v
+USER_log_sample_period	LOG.h	/^_EXTERN VAR USER_log_sample_period;$/;"	v
+USE_COR0_TEMP	GLBLS.h	/^_EXTERN int USE_COR0_TEMP;$/;"	v
+USE_PDI_SALINITY	GLBLS.h	/^					BOOL USE_PDI_SALINITY;$/;"	m	struct:__anon16
+USE_PDI_TEMP	GLBLS.h	/^					BOOL USE_PDI_TEMP;$/;"	m	struct:__anon16
+USE_PDI_WATERCUT	GLBLS.h	/^_EXTERN	COIL USE_PDI_WATERCUT;$/;"	v
+U_TEMP_ASCII	GLBLS.h	/^_EXTERN int U_TEMP_ASCII;$/;"	v
+V	MENU.h	/^					BOOL	V;$/;"	m	struct:__anon20
+VALUE	ADC.h	/^					VAR		VALUE;$/;"	m	struct:__anon1
+VALUE	MENU.h	/^					BOOL	VALUE;$/;"	m	struct:__anon20
+VALUE_CNT	MENU.h	/^					unsigned int VALUE_CNT;$/;"	m	struct:__anon20
+VAR	VARIABLE.h	/^	    		} VAR;$/;"	t	typeref:struct:__anon25
+VARIABLE_H	VARIABLE.h	159;"	d
+VARUSER	GLBLS.h	/^_EXTERN VAR VARUSER[VARUSERMAX];$/;"	v
+VARUSERMAX	GLBLS.h	1304;"	d
+VAR_INT_SCALE	GLBLS.h	/^_EXTERN float VAR_INT_SCALE;$/;"	v
+VAR_LONGINT_SCALE	GLBLS.h	/^_EXTERN float VAR_LONGINT_SCALE;$/;"	v
+VAR_SELECT_DV	GLBLS.h	/^_EXTERN REGVECT VAR_SELECT_DV;$/;"	v
+VAR_SELECT_DVIN	GLBLS.h	/^_EXTERN REGVECT VAR_SELECT_DVIN;$/;"	v
+VCFo	GLBLS.h	/^					float	VCFo;$/;"	m	struct:__anon16
+VCFw	GLBLS.h	/^					float	VCFw;$/;"	m	struct:__anon16
+VISCOSITY	GLBLS.h	/^					float	VISCOSITY;$/;"	m	struct:__anon17
+VTMAX	GLBLS.h	118;"	d
+VT_SELECT	GLBLS.h	/^_EXTERN int VT_SELECT;$/;"	v
+WAIT_SP0	SERIAL.h	303;"	d
+WATERCUT	GLBLS.h	/^					float	WATERCUT;$/;"	m	struct:__anon17
+WATER_ADJ	GLBLS.h	/^_EXTERN float WATER_ADJ[SMAX];$/;"	v
+WATER_ALARM_HI	GLBLS.h	/^_EXTERN float WATER_ALARM_HI[SMAX];$/;"	v
+WATER_ALARM_LO	GLBLS.h	/^_EXTERN float WATER_ALARM_LO[SMAX];$/;"	v
+WATER_PHASE_ONLY	GLBLS.h	/^_EXTERN COIL WATER_PHASE_ONLY;$/;"	v
+WATER_PHASE_ONLY_ENABLE	GLBLS.h	/^_EXTERN float WATER_PHASE_ONLY_ENABLE[SMAX];$/;"	v
+WC	GLBLS.h	/^_EXTERN float WC;     \/*make WC global: float WC; for store last value when phase error RS*\/$/;"	v
+WC_SAMPLE	GLBLS.h	/^_EXTERN float WC_SAMPLE[30];     \/*average filter RS*\/$/;"	v
+WC_SUM	GLBLS.h	/^_EXTERN float WC_SUM;            \/*average filter RS*\/    $/;"	v
+WDOG_COUNT	SERIAL.h	/^					unsigned int	WDOG_COUNT;$/;"	m	struct:__anon21
+Water_Phase_Filter	GLBLS.h	/^_EXTERN VAR Water_Phase_Filter;$/;"	v
+Water_Phase_Minimum	GLBLS.h	/^_EXTERN VAR Water_Phase_Minimum;$/;"	v
+Watercut	GLBLS.h	/^					float	Watercut;$/;"	m	struct:__anon5
+Watercut	GLBLS.h	/^					float	Watercut[2];$/;"	m	struct:__anon6
+XCLKSRC	SERIAL.h	289;"	d
+XCLK_SRCE	SERIAL.h	250;"	d
+XC_P	SERIAL.h	288;"	d
+XFSM	SERIAL.h	254;"	d
+XGO	SERIAL.h	286;"	d
+XINT	SERIAL.h	273;"	d
+XLEN	SERIAL.h	262;"	d
+XLEN_16	SERIAL.h	264;"	d
+XLEN_24	SERIAL.h	265;"	d
+XLEN_32	SERIAL.h	266;"	d
+XLEN_8	SERIAL.h	263;"	d
+XRDY	SERIAL.h	245;"	d
+XSREMPTY	SERIAL.h	247;"	d
+XTINT	SERIAL.h	272;"	d
+XTSTAT	SERIAL.h	290;"	d
+XVAREN	SERIAL.h	252;"	d
+YEAR	GLBLS.h	/^					int		YEAR;$/;"	m	struct:__anon8
+Z	GLBLS.h	/^					COIL	Z;$/;"	m	struct:__anon13
+Z	GLBLS.h	/^					COIL Z;$/;"	m	struct:__anon16
+ZERO_INPUT	GLBLS.h	/^_EXTERN int ZERO_INPUT;$/;"	v
+_ADC	ADC.h	24;"	d
+_API	API.H	21;"	d
+_BRANCH	BRANCH.h	22;"	d
+_BUFFER	BUFFER.h	24;"	d
+_DAC	DAC.h	23;"	d
+_DEMO	DEMO.H	21;"	d
+_ERRORS	ERRORS.h	22;"	d
+_EXECUTE	EXECUTE.h	25;"	d
+_EXTERN	ADC.h	144;"	d
+_EXTERN	ADC.h	27;"	d
+_EXTERN	ADC.h	29;"	d
+_EXTERN	API.H	24;"	d
+_EXTERN	API.H	26;"	d
+_EXTERN	API.H	39;"	d
+_EXTERN	BUFFER.h	27;"	d
+_EXTERN	BUFFER.h	29;"	d
+_EXTERN	BUFFER.h	62;"	d
+_EXTERN	DAC.h	117;"	d
+_EXTERN	DAC.h	26;"	d
+_EXTERN	DAC.h	28;"	d
+_EXTERN	DEMO.H	24;"	d
+_EXTERN	DEMO.H	26;"	d
+_EXTERN	DEMO.H	35;"	d
+_EXTERN	ERRORS.h	130;"	d
+_EXTERN	ERRORS.h	25;"	d
+_EXTERN	ERRORS.h	27;"	d
+_EXTERN	EXECUTE.h	28;"	d
+_EXTERN	EXECUTE.h	30;"	d
+_EXTERN	EXECUTE.h	54;"	d
+_EXTERN	GLBLS.h	150;"	d
+_EXTERN	GLBLS.h	152;"	d
+_EXTERN	GLBLS.h	1694;"	d
+_EXTERN	HART.h	27;"	d
+_EXTERN	HART.h	29;"	d
+_EXTERN	HART.h	639;"	d
+_EXTERN	LOG.h	141;"	d
+_EXTERN	LOG.h	29;"	d
+_EXTERN	LOG.h	31;"	d
+_EXTERN	MENU.h	119;"	d
+_EXTERN	MENU.h	27;"	d
+_EXTERN	MENU.h	29;"	d
+_EXTERN	MISC.h	26;"	d
+_EXTERN	MISC.h	28;"	d
+_EXTERN	MISC.h	412;"	d
+_EXTERN	MODBUSRTU.h	242;"	d
+_EXTERN	MODBUSRTU.h	26;"	d
+_EXTERN	MODBUSRTU.h	28;"	d
+_EXTERN	RUSSTBLS.h	414;"	d
+_EXTERN	RUSSTBLS.h	5;"	d
+_EXTERN	RUSSTBLS.h	7;"	d
+_EXTERN	SELFTEST.h	29;"	d
+_EXTERN	SELFTEST.h	31;"	d
+_EXTERN	SELFTEST.h	55;"	d
+_EXTERN	SERIAL.h	310;"	d
+_EXTERN	SERIAL.h	40;"	d
+_EXTERN	SERIAL.h	42;"	d
+_EXTERN	TIMER.h	140;"	d
+_EXTERN	TIMER.h	29;"	d
+_EXTERN	TIMER.h	31;"	d
+_EXTERN	VARIABLE.h	158;"	d
+_EXTERN	VARIABLE.h	34;"	d
+_EXTERN	VARIABLE.h	36;"	d
+_FLOAT1	FLOAT1.h	21;"	d
+_GLBLS	GLBLS.h	40;"	d
+_HART	HART.h	24;"	d
+_LOG	LOG.h	26;"	d
+_MENU	MENU.h	24;"	d
+_MISC	MISC.h	23;"	d
+_MODBUSRTU	MODBUSRTU.h	23;"	d
+_MODBUSTABLES	MODBUSTABLES.h	37;"	d
+_RHLD	SERIAL.h	292;"	d
+_RRESET	SERIAL.h	277;"	d
+_RUSSTBLS	RUSSTBLS.h	2;"	d
+_SELFTEST	SELFTEST.h	26;"	d
+_SERIAL	SERIAL.h	37;"	d
+_TIMER	TIMER.h	26;"	d
+_VARIABLE	VARIABLE.h	31;"	d
+_XHLD	SERIAL.h	287;"	d
+_XRESET	SERIAL.h	276;"	d
+__anon10::average	GLBLS.h	/^	float average;					\/\/The current value of our moving average for bubble$/;"	m	struct:__anon10
+__anon10::data	GLBLS.h	/^	float data[BUBBLE_SIZE_MAX];	\/\/data array holding frequency values$/;"	m	struct:__anon10
+__anon10::head	GLBLS.h	/^	int head;						\/\/Head pointer of bubble ring buffer$/;"	m	struct:__anon10
+__anon10::length	GLBLS.h	/^	int length;						\/\/Number of elements in the bubble array$/;"	m	struct:__anon10
+__anon10::tail	GLBLS.h	/^	int tail;						\/\/Tail pointer of bubble ring buffer$/;"	m	struct:__anon10
+__anon11::average	GLBLS.h	/^	float average;					\/\/The current value of our moving average for pattern$/;"	m	struct:__anon11
+__anon11::data	GLBLS.h	/^	float data[PATTERN_SIZE_MAX];	\/\/data array holding frequency values$/;"	m	struct:__anon11
+__anon11::head	GLBLS.h	/^	int head;						\/\/Head pointer of pattern ring buffer$/;"	m	struct:__anon11
+__anon11::length	GLBLS.h	/^	int length;						\/\/Number of elements in the pattern array$/;"	m	struct:__anon11
+__anon11::tail	GLBLS.h	/^	int tail;						\/\/Tail pointer of pattern ring buffer$/;"	m	struct:__anon11
+__anon12::MODE	GLBLS.h	/^					int		MODE;$/;"	m	struct:__anon12
+__anon12::ON	GLBLS.h	/^					COIL	ON;$/;"	m	struct:__anon12
+__anon12::STATUS_MASK	GLBLS.h	/^					int		STATUS_MASK;$/;"	m	struct:__anon12
+__anon12::setpoint	GLBLS.h	/^					float	setpoint;$/;"	m	struct:__anon12
+__anon12::unit	GLBLS.h	/^					int		unit;$/;"	m	struct:__anon12
+__anon12::v	GLBLS.h	/^					REGVECT	v;$/;"	m	struct:__anon12
+__anon13::P	GLBLS.h	/^					float	P;$/;"	m	struct:__anon13
+__anon13::T	GLBLS.h	/^					float	T;$/;"	m	struct:__anon13
+__anon13::Z	GLBLS.h	/^					COIL	Z;$/;"	m	struct:__anon13
+__anon13::address	GLBLS.h	/^					VAR		address;     \/*MM initial Slave address config RS*\/    $/;"	m	struct:__anon13
+__anon13::damp_density	GLBLS.h	/^					VAR		damp_density;$/;"	m	struct:__anon13
+__anon13::damp_flow_rate	GLBLS.h	/^					VAR		damp_flow_rate;$/;"	m	struct:__anon13
+__anon13::density	GLBLS.h	/^					float	density;$/;"	m	struct:__anon13
+__anon13::density_PDI_corrected	GLBLS.h	/^					float	density_PDI_corrected;$/;"	m	struct:__anon13
+__anon13::density_corrected	GLBLS.h	/^					float	density_corrected;$/;"	m	struct:__anon13
+__anon13::density_cutoff	GLBLS.h	/^					VAR     density_cutoff; \/*Config density cutoff RS*\/$/;"	m	struct:__anon13
+__anon13::diag	GLBLS.h	/^					float	diag;$/;"	m	struct:__anon13
+__anon13::drive_gain	GLBLS.h	/^					float	drive_gain;$/;"	m	struct:__anon13
+__anon13::left_pickup_value	GLBLS.h	/^					float	left_pickup_value;$/;"	m	struct:__anon13
+__anon13::mass_inv	GLBLS.h	/^					float	mass_inv;$/;"	m	struct:__anon13
+__anon13::mass_total	GLBLS.h	/^					float	mass_total;$/;"	m	struct:__anon13
+__anon13::mass_unit	GLBLS.h	/^					VAR     mass_unit;   \/*Config mass flow unit RS*\/  $/;"	m	struct:__anon13
+__anon13::mcf	GLBLS.h	/^					VAR		mcf;  $/;"	m	struct:__anon13
+__anon13::mfr	GLBLS.h	/^					float	mfr;$/;"	m	struct:__anon13
+__anon13::mfr_cutoff	GLBLS.h	/^					VAR		mfr_cutoff;$/;"	m	struct:__anon13
+__anon13::press	GLBLS.h	/^					float	press;$/;"	m	struct:__anon13
+__anon13::raw_tube_freq	GLBLS.h	/^					float	raw_tube_freq;$/;"	m	struct:__anon13
+__anon13::right_pickup_value	GLBLS.h	/^					float	right_pickup_value;$/;"	m	struct:__anon13
+__anon13::u_P	GLBLS.h	/^					int		u_P;$/;"	m	struct:__anon13
+__anon13::u_T	GLBLS.h	/^					int		u_T;$/;"	m	struct:__anon13
+__anon13::u_density	GLBLS.h	/^					int		u_density;$/;"	m	struct:__anon13
+__anon13::u_density_corrected	GLBLS.h	/^					int		u_density_corrected;$/;"	m	struct:__anon13
+__anon13::u_m	GLBLS.h	/^					int		u_m;$/;"	m	struct:__anon13
+__anon13::u_mfr	GLBLS.h	/^					int		u_mfr;$/;"	m	struct:__anon13
+__anon13::u_v	GLBLS.h	/^					int		u_v;$/;"	m	struct:__anon13
+__anon13::u_vfr	GLBLS.h	/^					int		u_vfr;$/;"	m	struct:__anon13
+__anon13::u_visc	GLBLS.h	/^					int		u_visc;$/;"	m	struct:__anon13
+__anon13::vfr	GLBLS.h	/^					float	vfr;$/;"	m	struct:__anon13
+__anon13::vfr_cutoff	GLBLS.h	/^					VAR		vfr_cutoff;$/;"	m	struct:__anon13
+__anon13::visc	GLBLS.h	/^					float	visc;$/;"	m	struct:__anon13
+__anon13::volume_inv	GLBLS.h	/^					float	volume_inv;$/;"	m	struct:__anon13
+__anon13::volume_total	GLBLS.h	/^					float	volume_total;$/;"	m	struct:__anon13
+__anon14::T	GLBLS.h	/^					float	T;$/;"	m	struct:__anon14
+__anon14::diag0	GLBLS.h	/^					float	diag0;$/;"	m	struct:__anon14
+__anon14::diag1	GLBLS.h	/^					float	diag1;$/;"	m	struct:__anon14
+__anon14::diag2	GLBLS.h	/^					float	diag2;$/;"	m	struct:__anon14
+__anon14::p_delta	GLBLS.h	/^					float	p_delta;$/;"	m	struct:__anon14
+__anon14::p_static	GLBLS.h	/^					float	p_static;$/;"	m	struct:__anon14
+__anon14::u_DP	GLBLS.h	/^					int		u_DP;$/;"	m	struct:__anon14
+__anon14::u_PT	GLBLS.h	/^					int		u_PT;$/;"	m	struct:__anon14
+__anon14::u_SP	GLBLS.h	/^					int		u_SP;$/;"	m	struct:__anon14
+__anon15::T	GLBLS.h	/^					float	T;$/;"	m	struct:__anon15
+__anon15::etc0	GLBLS.h	/^					float	etc0;$/;"	m	struct:__anon15
+__anon15::etc1	GLBLS.h	/^					float	etc1;$/;"	m	struct:__anon15
+__anon15::etc2	GLBLS.h	/^					float	etc2;$/;"	m	struct:__anon15
+__anon15::etc3	GLBLS.h	/^					float	etc3;$/;"	m	struct:__anon15
+__anon15::etc4	GLBLS.h	/^					float	etc4;$/;"	m	struct:__anon15
+__anon16::API_TABLE	GLBLS.h	/^					int		API_TABLE;$/;"	m	struct:__anon16
+__anon16::AUTHORIZATION_CODE1	GLBLS.h	/^					unsigned int AUTHORIZATION_CODE1;$/;"	m	struct:__anon16
+__anon16::AUTHORIZATION_CODE2	GLBLS.h	/^					unsigned int AUTHORIZATION_CODE2;$/;"	m	struct:__anon16
+__anon16::AUTHORIZATION_CODE3	GLBLS.h	/^					unsigned int AUTHORIZATION_CODE3;$/;"	m	struct:__anon16
+__anon16::AUTHORIZATION_CODE4	GLBLS.h	/^					unsigned int AUTHORIZATION_CODE4;$/;"	m	struct:__anon16
+__anon16::AVG_GROSS_TOTAL	GLBLS.h	/^					VAR AVG_GROSS_TOTAL;$/;"	m	struct:__anon16
+__anon16::AVG_NET_TOTAL	GLBLS.h	/^					VAR AVG_NET_TOTAL;$/;"	m	struct:__anon16
+__anon16::CALC_WC_DENSITY	GLBLS.h	/^					BOOL CALC_WC_DENSITY;$/;"	m	struct:__anon16
+__anon16::CNT	GLBLS.h	/^					int CNT;$/;"	m	struct:__anon16
+__anon16::Dadj	GLBLS.h	/^					float	Dadj;$/;"	m	struct:__anon16
+__anon16::FLOW_OIL	GLBLS.h	/^					VAR FLOW_OIL;$/;"	m	struct:__anon16
+__anon16::FLOW_TOTAL	GLBLS.h	/^					VAR FLOW_TOTAL;$/;"	m	struct:__anon16
+__anon16::FLOW_WATER	GLBLS.h	/^					VAR FLOW_WATER;$/;"	m	struct:__anon16
+__anon16::GROSS_OIL	GLBLS.h	/^					VAR GROSS_OIL;$/;"	m	struct:__anon16
+__anon16::GROSS_TOTAL	GLBLS.h	/^					VAR GROSS_TOTAL;$/;"	m	struct:__anon16
+__anon16::GROSS_WATER	GLBLS.h	/^					VAR GROSS_WATER;$/;"	m	struct:__anon16
+__anon16::MAN_DENSITY	GLBLS.h	/^					BOOL MAN_DENSITY;$/;"	m	struct:__anon16
+__anon16::MAN_FLOW	GLBLS.h	/^					BOOL MAN_FLOW;$/;"	m	struct:__anon16
+__anon16::MAN_PRESSURE	GLBLS.h	/^					BOOL MAN_PRESSURE;$/;"	m	struct:__anon16
+__anon16::MAN_SALINITY	GLBLS.h	/^					BOOL MAN_SALINITY;$/;"	m	struct:__anon16
+__anon16::MAN_TEMP	GLBLS.h	/^					BOOL MAN_TEMP;$/;"	m	struct:__anon16
+__anon16::MAN_WATERCUT	GLBLS.h	/^					BOOL MAN_WATERCUT;$/;"	m	struct:__anon16
+__anon16::Meter_Factor	GLBLS.h	/^					VAR		Meter_Factor;$/;"	m	struct:__anon16
+__anon16::NET_FLOW_OIL	GLBLS.h	/^					VAR NET_FLOW_OIL;$/;"	m	struct:__anon16
+__anon16::NET_FLOW_TOTAL	GLBLS.h	/^					VAR NET_FLOW_TOTAL;$/;"	m	struct:__anon16
+__anon16::NET_FLOW_WATER	GLBLS.h	/^					VAR NET_FLOW_WATER;$/;"	m	struct:__anon16
+__anon16::NET_OIL	GLBLS.h	/^					VAR NET_OIL;$/;"	m	struct:__anon16
+__anon16::NET_TOTAL	GLBLS.h	/^					VAR NET_TOTAL;$/;"	m	struct:__anon16
+__anon16::NET_WATER	GLBLS.h	/^					VAR NET_WATER;$/;"	m	struct:__anon16
+__anon16::PULSE	GLBLS.h	/^					int PULSE;$/;"	m	struct:__anon16
+__anon16::PULSES_PER_ACCUM_UNIT	GLBLS.h	/^					unsigned int PULSES_PER_ACCUM_UNIT;$/;"	m	struct:__anon16
+__anon16::PULSE_COUNTER	GLBLS.h	/^					unsigned int PULSE_COUNTER;$/;"	m	struct:__anon16
+__anon16::PULSE_DELTA	GLBLS.h	/^					int PULSE_DELTA;$/;"	m	struct:__anon16
+__anon16::PULSE_FACTOR	GLBLS.h	/^					float	PULSE_FACTOR;$/;"	m	struct:__anon16
+__anon16::PULSE_FLOW	GLBLS.h	/^					VAR PULSE_FLOW;$/;"	m	struct:__anon16
+__anon16::PULSE_FREQ	GLBLS.h	/^					VAR PULSE_FREQ;$/;"	m	struct:__anon16
+__anon16::PULSE_STAT	GLBLS.h	/^					int PULSE_STAT;$/;"	m	struct:__anon16
+__anon16::PULSE_TOTAL	GLBLS.h	/^					VAR PULSE_TOTAL;$/;"	m	struct:__anon16
+__anon16::Shrinkage	GLBLS.h	/^					VAR		Shrinkage;$/;"	m	struct:__anon16
+__anon16::T	GLBLS.h	/^					VAR		T;$/;"	m	struct:__anon16
+__anon16::USE_PDI_SALINITY	GLBLS.h	/^					BOOL USE_PDI_SALINITY;$/;"	m	struct:__anon16
+__anon16::USE_PDI_TEMP	GLBLS.h	/^					BOOL USE_PDI_TEMP;$/;"	m	struct:__anon16
+__anon16::VCFo	GLBLS.h	/^					float	VCFo;$/;"	m	struct:__anon16
+__anon16::VCFw	GLBLS.h	/^					float	VCFw;$/;"	m	struct:__anon16
+__anon16::Z	GLBLS.h	/^					COIL Z;$/;"	m	struct:__anon16
+__anon16::a	GLBLS.h	/^					float	a;$/;"	m	struct:__anon16
+__anon16::accum_unit	GLBLS.h	/^					REGVECT accum_unit;$/;"	m	struct:__anon16
+__anon16::density	GLBLS.h	/^					VAR		density;$/;"	m	struct:__anon16
+__anon16::density_PDI_corrected	GLBLS.h	/^					float	density_PDI_corrected;$/;"	m	struct:__anon16
+__anon16::density_adj	GLBLS.h	/^					float	density_adj;$/;"	m	struct:__anon16
+__anon16::density_oil	GLBLS.h	/^					VAR		density_oil;$/;"	m	struct:__anon16
+__anon16::density_oilST	GLBLS.h	/^					VAR		density_oilST;$/;"	m	struct:__anon16
+__anon16::density_water	GLBLS.h	/^					VAR		density_water;$/;"	m	struct:__anon16
+__anon16::density_waterST	GLBLS.h	/^					VAR		density_waterST;$/;"	m	struct:__anon16
+__anon16::enable_DENSITY	GLBLS.h	/^					BOOL	enable_DENSITY;$/;"	m	struct:__anon16
+__anon16::enable_FLOW	GLBLS.h	/^					BOOL	enable_FLOW;$/;"	m	struct:__anon16
+__anon16::enable_GROSS	GLBLS.h	/^					BOOL	enable_GROSS;$/;"	m	struct:__anon16
+__anon16::enable_NET	GLBLS.h	/^					BOOL	enable_NET;$/;"	m	struct:__anon16
+__anon16::enable_PULSE	GLBLS.h	/^					BOOL	enable_PULSE;$/;"	m	struct:__anon16
+__anon16::flow_class	GLBLS.h	/^					REGVECT	flow_class;$/;"	m	struct:__anon16
+__anon16::flow_unit	GLBLS.h	/^					REGVECT flow_unit;$/;"	m	struct:__anon16
+__anon16::gross_oil_fract_part	GLBLS.h	/^					long double gross_oil_fract_part;$/;"	m	struct:__anon16
+__anon16::gross_oil_whole_part	GLBLS.h	/^					long double gross_oil_whole_part;$/;"	m	struct:__anon16
+__anon16::gross_water_fract_part	GLBLS.h	/^					long double gross_water_fract_part;$/;"	m	struct:__anon16
+__anon16::gross_water_whole_part	GLBLS.h	/^					long double gross_water_whole_part;$/;"	m	struct:__anon16
+__anon16::net_watercut	GLBLS.h	/^					float	net_watercut;$/;"	m	struct:__anon16
+__anon16::net_watercut_mass	GLBLS.h	/^					float	net_watercut_mass;$/;"	m	struct:__anon16
+__anon16::pressure	GLBLS.h	/^					VAR		pressure;$/;"	m	struct:__anon16
+__anon16::pulse_VALUE	GLBLS.h	/^					VAR pulse_VALUE;$/;"	m	struct:__anon16
+__anon16::pulse_class	GLBLS.h	/^					REGVECT	pulse_class;$/;"	m	struct:__anon16
+__anon16::pulse_unit	GLBLS.h	/^					REGVECT	pulse_unit;$/;"	m	struct:__anon16
+__anon16::pulse_v	GLBLS.h	/^					REGVECT	pulse_v;$/;"	m	struct:__anon16
+__anon16::salinity	GLBLS.h	/^					VAR		salinity;$/;"	m	struct:__anon16
+__anon16::use_totalizer	GLBLS.h	/^					COIL use_totalizer;$/;"	m	struct:__anon16
+__anon16::watercut	GLBLS.h	/^					VAR		watercut;$/;"	m	struct:__anon16
+__anon17::DENSITY	GLBLS.h	/^					float	DENSITY;$/;"	m	struct:__anon17
+__anon17::DESTINATION_ADDRESS	GLBLS.h	/^					VAR		DESTINATION_ADDRESS;$/;"	m	struct:__anon17
+__anon17::ENABLED	GLBLS.h	/^					BOOL	ENABLED;$/;"	m	struct:__anon17
+__anon17::FLOW_RATE	GLBLS.h	/^					float	FLOW_RATE;$/;"	m	struct:__anon17
+__anon17::TEMPERATURE	GLBLS.h	/^					float	TEMPERATURE;$/;"	m	struct:__anon17
+__anon17::VISCOSITY	GLBLS.h	/^					float	VISCOSITY;$/;"	m	struct:__anon17
+__anon17::WATERCUT	GLBLS.h	/^					float	WATERCUT;$/;"	m	struct:__anon17
+__anon17::iDENSITY	GLBLS.h	/^					int		iDENSITY;$/;"	m	struct:__anon17
+__anon17::iFLOW_RATE	GLBLS.h	/^					int		iFLOW_RATE;$/;"	m	struct:__anon17
+__anon17::iTEMPERATURE	GLBLS.h	/^					int		iTEMPERATURE;$/;"	m	struct:__anon17
+__anon17::iVISCOSITY	GLBLS.h	/^					int		iVISCOSITY;$/;"	m	struct:__anon17
+__anon17::iWATERCUT	GLBLS.h	/^					int		iWATERCUT;$/;"	m	struct:__anon17
+__anon17::iWATERCUTz	GLBLS.h	/^					int		iWATERCUTz;$/;"	m	struct:__anon17
+__anon17::maxDENSITY	GLBLS.h	/^					float	maxDENSITY;$/;"	m	struct:__anon17
+__anon17::maxFLOW_RATE	GLBLS.h	/^					float	maxFLOW_RATE;$/;"	m	struct:__anon17
+__anon17::maxTEMPERATURE	GLBLS.h	/^					float	maxTEMPERATURE;$/;"	m	struct:__anon17
+__anon17::maxVISCOSITY	GLBLS.h	/^					float	maxVISCOSITY;$/;"	m	struct:__anon17
+__anon17::maxWATERCUT	GLBLS.h	/^					float	maxWATERCUT;$/;"	m	struct:__anon17
+__anon17::maxWATERCUTz	GLBLS.h	/^					float	maxWATERCUTz;$/;"	m	struct:__anon17
+__anon17::minDENSITY	GLBLS.h	/^					float	minDENSITY;$/;"	m	struct:__anon17
+__anon17::minFLOW_RATE	GLBLS.h	/^					float	minFLOW_RATE;$/;"	m	struct:__anon17
+__anon17::minTEMPERATURE	GLBLS.h	/^					float	minTEMPERATURE;$/;"	m	struct:__anon17
+__anon17::minVISCOSITY	GLBLS.h	/^					float	minVISCOSITY;$/;"	m	struct:__anon17
+__anon17::minWATERCUT	GLBLS.h	/^					float	minWATERCUT;$/;"	m	struct:__anon17
+__anon17::minWATERCUTz	GLBLS.h	/^					float	minWATERCUTz;$/;"	m	struct:__anon17
+__anon18::CHANGED	GLBLS.h	/^					BOOL	CHANGED;$/;"	m	struct:__anon18
+__anon18::Dmax	GLBLS.h	/^					float	Dmax;$/;"	m	struct:__anon18
+__anon18::Dmin	GLBLS.h	/^					float	Dmin;$/;"	m	struct:__anon18
+__anon18::ENABLED	GLBLS.h	/^					COIL	ENABLED;$/;"	m	struct:__anon18
+__anon18::FBHI0	GLBLS.h	/^					float	FBHI0;$/;"	m	struct:__anon18
+__anon18::FBHI1	GLBLS.h	/^					float	FBHI1;$/;"	m	struct:__anon18
+__anon18::FBHI2	GLBLS.h	/^					float	FBHI2;$/;"	m	struct:__anon18
+__anon18::FBHI3	GLBLS.h	/^					float	FBHI3;$/;"	m	struct:__anon18
+__anon18::FBLO0	GLBLS.h	/^					float	FBLO0;$/;"	m	struct:__anon18
+__anon18::FBLO1	GLBLS.h	/^					float	FBLO1;$/;"	m	struct:__anon18
+__anon18::FBLO2	GLBLS.h	/^					float	FBLO2;$/;"	m	struct:__anon18
+__anon18::FBLO3	GLBLS.h	/^					float	FBLO3;$/;"	m	struct:__anon18
+__anon18::Fmin	GLBLS.h	/^					float	Fmin;$/;"	m	struct:__anon18
+__anon18::PURGING	GLBLS.h	/^					BOOL	PURGING;$/;"	m	struct:__anon18
+__anon18::S0	GLBLS.h	/^					float	S0;$/;"	m	struct:__anon18
+__anon18::S1	GLBLS.h	/^					float	S1;$/;"	m	struct:__anon18
+__anon18::S2	GLBLS.h	/^					float	S2;$/;"	m	struct:__anon18
+__anon18::S3	GLBLS.h	/^					float	S3;$/;"	m	struct:__anon18
+__anon18::SP0A	GLBLS.h	/^					float	SP0A;$/;"	m	struct:__anon18
+__anon18::SP0B	GLBLS.h	/^					float	SP0B;$/;"	m	struct:__anon18
+__anon18::SP1A	GLBLS.h	/^					float	SP1A;$/;"	m	struct:__anon18
+__anon18::SP1B	GLBLS.h	/^					float	SP1B;$/;"	m	struct:__anon18
+__anon18::SP2A	GLBLS.h	/^					float	SP2A;$/;"	m	struct:__anon18
+__anon18::SP2B	GLBLS.h	/^					float	SP2B;$/;"	m	struct:__anon18
+__anon18::SP3A	GLBLS.h	/^					float	SP3A;$/;"	m	struct:__anon18
+__anon18::SP3B	GLBLS.h	/^					float	SP3B;$/;"	m	struct:__anon18
+__anon18::SPHIA	GLBLS.h	/^					float	SPHIA;$/;"	m	struct:__anon18
+__anon18::SPHIB	GLBLS.h	/^					float	SPHIB;$/;"	m	struct:__anon18
+__anon18::SPLOA	GLBLS.h	/^					float	SPLOA;$/;"	m	struct:__anon18
+__anon18::SPLOB	GLBLS.h	/^					float	SPLOB;$/;"	m	struct:__anon18
+__anon18::TEST_IN_PROGRESS	GLBLS.h	/^					BOOL	TEST_IN_PROGRESS;$/;"	m	struct:__anon18
+__anon18::flow_threshold	GLBLS.h	/^					VAR	flow_threshold;\/*Add stream select for Hsalt and Gas routine RS*\/$/;"	m	struct:__anon18
+__anon19::LOG_ERASE	LOG.h	/^					unsigned int LOG_ERASE;$/;"	m	struct:__anon19
+__anon19::erased_sector	LOG.h	/^					BOOL		 erased_sector;$/;"	m	struct:__anon19
+__anon19::log_absolute_index	LOG.h	/^					unsigned int log_absolute_index;$/;"	m	struct:__anon19
+__anon19::log_current_sector	LOG.h	/^					unsigned int log_current_sector;$/;"	m	struct:__anon19
+__anon19::log_end	LOG.h	/^					unsigned int log_end;$/;"	m	struct:__anon19
+__anon19::log_len	LOG.h	/^					unsigned int log_len;$/;"	m	struct:__anon19
+__anon19::log_n	LOG.h	/^					unsigned int log_n;$/;"	m	struct:__anon19
+__anon19::log_n_max_per_sector	LOG.h	/^					unsigned int log_n_max_per_sector;$/;"	m	struct:__anon19
+__anon19::log_n_sectors	LOG.h	/^					unsigned int log_n_sectors;$/;"	m	struct:__anon19
+__anon19::log_record_size	LOG.h	/^					unsigned int log_record_size;$/;"	m	struct:__anon19
+__anon19::log_sector_size	LOG.h	/^					unsigned int log_sector_size;$/;"	m	struct:__anon19
+__anon19::log_start	LOG.h	/^					unsigned int* log_start;$/;"	m	struct:__anon19
+__anon1::CURRENT	ADC.h	/^					VAR		CURRENT;$/;"	m	struct:__anon1
+__anon1::CURRENT_PERCENT_OF_RANGE	ADC.h	/^					VAR		CURRENT_PERCENT_OF_RANGE;$/;"	m	struct:__anon1
+__anon1::LRV	ADC.h	/^					VAR		LRV;$/;"	m	struct:__anon1
+__anon1::TRIM_MAX	ADC.h	/^					VAR		TRIM_MAX;$/;"	m	struct:__anon1
+__anon1::TRIM_MAX_C	ADC.h	/^					float   TRIM_MAX_C;$/;"	m	struct:__anon1
+__anon1::TRIM_MIN	ADC.h	/^					VAR		TRIM_MIN;$/;"	m	struct:__anon1
+__anon1::TRIM_MIN_C	ADC.h	/^					float   TRIM_MIN_C;$/;"	m	struct:__anon1
+__anon1::URV	ADC.h	/^					VAR		URV;$/;"	m	struct:__anon1
+__anon1::VALUE	ADC.h	/^					VAR		VALUE;$/;"	m	struct:__anon1
+__anon1::present	ADC.h	/^					BOOL	present;$/;"	m	struct:__anon1
+__anon1::unit	ADC.h	/^					REGVECT	unit;$/;"	m	struct:__anon1
+__anon1::v	ADC.h	/^					REGVECT	v;$/;"	m	struct:__anon1
+__anon1::val	ADC.h	/^					float	val;$/;"	m	struct:__anon1
+__anon20::CNT	MENU.h	/^					unsigned int CNT;$/;"	m	struct:__anon20
+__anon20::CURSOR_COL	MENU.h	/^					int		CURSOR_COL;$/;"	m	struct:__anon20
+__anon20::CURSOR_ENABLED	MENU.h	/^					BOOL	CURSOR_ENABLED;$/;"	m	struct:__anon20
+__anon20::CURSOR_ROW	MENU.h	/^					int		CURSOR_ROW;$/;"	m	struct:__anon20
+__anon20::DIP	MENU.h	/^					BOOL	DIP[4];$/;"	m	struct:__anon20
+__anon20::DIR	MENU.h	/^					int		DIR;$/;"	m	struct:__anon20
+__anon20::DIR_CHANGE	MENU.h	/^					BOOL	DIR_CHANGE;$/;"	m	struct:__anon20
+__anon20::E	MENU.h	/^					BOOL	E;$/;"	m	struct:__anon20
+__anon20::ENTER	MENU.h	/^					BOOL	ENTER;$/;"	m	struct:__anon20
+__anon20::FRESH	MENU.h	/^					BOOL	FRESH;$/;"	m	struct:__anon20
+__anon20::INIT	MENU.h	/^					BOOL	INIT;$/;"	m	struct:__anon20
+__anon20::M	MENU.h	/^					BOOL	M;$/;"	m	struct:__anon20
+__anon20::MENU	MENU.h	/^					BOOL	MENU;$/;"	m	struct:__anon20
+__anon20::MENU_CNT	MENU.h	/^					unsigned int MENU_CNT;$/;"	m	struct:__anon20
+__anon20::MENU_TRAP	MENU.h	/^					BOOL	MENU_TRAP;$/;"	m	struct:__anon20
+__anon20::MODE_DEFINE	MENU.h	/^					BOOL	MODE_DEFINE;$/;"	m	struct:__anon20
+__anon20::MODE_LOCKDOWN	MENU.h	/^					BOOL	MODE_LOCKDOWN;$/;"	m	struct:__anon20
+__anon20::MODE_NORMAL	MENU.h	/^					BOOL	MODE_NORMAL;$/;"	m	struct:__anon20
+__anon20::MODE_TECH	MENU.h	/^					BOOL	MODE_TECH;$/;"	m	struct:__anon20
+__anon20::MODE_USER	MENU.h	/^					BOOL	MODE_USER;$/;"	m	struct:__anon20
+__anon20::MODE_WPROT	MENU.h	/^					BOOL	MODE_WPROT;$/;"	m	struct:__anon20
+__anon20::PAGE	MENU.h	/^					unsigned int PAGE;$/;"	m	struct:__anon20
+__anon20::S	MENU.h	/^					BOOL	S;$/;"	m	struct:__anon20
+__anon20::SELECT	MENU.h	/^					BOOL	SELECT;$/;"	m	struct:__anon20
+__anon20::SELECT_CNT	MENU.h	/^					unsigned int SELECT_CNT;$/;"	m	struct:__anon20
+__anon20::SUBPAGE	MENU.h	/^					unsigned int SUBPAGE;$/;"	m	struct:__anon20
+__anon20::V	MENU.h	/^					BOOL	V;$/;"	m	struct:__anon20
+__anon20::VALUE	MENU.h	/^					BOOL	VALUE;$/;"	m	struct:__anon20
+__anon20::VALUE_CNT	MENU.h	/^					unsigned int VALUE_CNT;$/;"	m	struct:__anon20
+__anon20::k	MENU.h	/^					unsigned int k;$/;"	m	struct:__anon20
+__anon20::menu_list_changed	MENU.h	/^					BOOL	menu_list_changed;$/;"	m	struct:__anon20
+__anon20::menu_list_configurations	MENU.h	/^					BOOL	menu_list_configurations;$/;"	m	struct:__anon20
+__anon20::menu_list_measurements	MENU.h	/^					BOOL	menu_list_measurements;$/;"	m	struct:__anon20
+__anon20::menu_list_operations	MENU.h	/^					BOOL	menu_list_operations;$/;"	m	struct:__anon20
+__anon20::menu_list_security_info	MENU.h	/^					BOOL	menu_list_security_info;$/;"	m	struct:__anon20
+__anon20::menu_list_top	MENU.h	/^					BOOL	menu_list_top;$/;"	m	struct:__anon20
+__anon20::ptmpv	MENU.h	/^					VAR*	ptmpv;$/;"	m	struct:__anon20
+__anon20::str	MENU.h	/^					char	str[4][101];$/;"	m	struct:__anon20
+__anon20::tbl	MENU.h	/^					int*	tbl;$/;"	m	struct:__anon20
+__anon20::tmpf	MENU.h	/^					float	tmpf[10];$/;"	m	struct:__anon20
+__anon20::tmpi	MENU.h	/^					int		tmpi[10];$/;"	m	struct:__anon20
+__anon20::tmpv	MENU.h	/^					VAR		tmpv;$/;"	m	struct:__anon20
+__anon21::BUSY	SERIAL.h	/^					BOOL			BUSY;$/;"	m	struct:__anon21
+__anon21::DAT	SERIAL.h	/^					unsigned char	DAT;$/;"	m	struct:__anon21
+__anon21::ERROR_COUNT	SERIAL.h	/^					unsigned int	ERROR_COUNT;$/;"	m	struct:__anon21
+__anon21::FLAG1	SERIAL.h	/^					BOOL			FLAG1;$/;"	m	struct:__anon21
+__anon21::FLAG2	SERIAL.h	/^					BOOL			FLAG2;$/;"	m	struct:__anon21
+__anon21::FLAG3	SERIAL.h	/^					BOOL			FLAG3;$/;"	m	struct:__anon21
+__anon21::IGNORE_RX	SERIAL.h	/^					BOOL			IGNORE_RX;$/;"	m	struct:__anon21
+__anon21::INV_CMD_COUNT	SERIAL.h	/^					unsigned int	INV_CMD_COUNT;$/;"	m	struct:__anon21
+__anon21::INV_PKT_COUNT	SERIAL.h	/^					unsigned int	INV_PKT_COUNT;$/;"	m	struct:__anon21
+__anon21::LONG_ADDRESS	SERIAL.h	/^					BOOL			LONG_ADDRESS;$/;"	m	struct:__anon21
+__anon21::MASTER	SERIAL.h	/^					LIST			MASTER;$/;"	m	struct:__anon21
+__anon21::NUM_RETRIES	SERIAL.h	/^					unsigned int	NUM_RETRIES;$/;"	m	struct:__anon21
+__anon21::PRESENT	SERIAL.h	/^					BOOL			PRESENT;$/;"	m	struct:__anon21
+__anon21::RX_pending	SERIAL.h	/^					BOOL			RX_pending;$/;"	m	struct:__anon21
+__anon21::Received_PKT	SERIAL.h	/^					BOOL			Received_PKT;$/;"	m	struct:__anon21
+__anon21::SNUM	SERIAL.h	/^					int				SNUM;$/;"	m	struct:__anon21
+__anon21::STAT	SERIAL.h	/^					unsigned char	STAT;$/;"	m	struct:__anon21
+__anon21::SUCCESS	SERIAL.h	/^					unsigned int	SUCCESS;$/;"	m	struct:__anon21
+__anon21::Slave	SERIAL.h	/^					int				Slave;$/;"	m	struct:__anon21
+__anon21::TMR_Char	SERIAL.h	/^					int				TMR_Char;$/;"	m	struct:__anon21
+__anon21::TMR_EOT_Delay	SERIAL.h	/^					int				TMR_EOT_Delay;$/;"	m	struct:__anon21
+__anon21::TMR_Network_WDOG	SERIAL.h	/^					int				TMR_Network_WDOG;$/;"	m	struct:__anon21
+__anon21::TMR_Poll	SERIAL.h	/^					TPKT			TMR_Poll;$/;"	m	struct:__anon21
+__anon21::TMR_Prefix_Delay	SERIAL.h	/^					int				TMR_Prefix_Delay;$/;"	m	struct:__anon21
+__anon21::TMR_Retry	SERIAL.h	/^					TPKT			TMR_Retry;$/;"	m	struct:__anon21
+__anon21::TMR_Suffix_Delay	SERIAL.h	/^					int				TMR_Suffix_Delay;$/;"	m	struct:__anon21
+__anon21::TMR_enabled	SERIAL.h	/^					BOOL			TMR_enabled;$/;"	m	struct:__anon21
+__anon21::TX_complete	SERIAL.h	/^					BOOL			TX_complete;$/;"	m	struct:__anon21
+__anon21::WDOG_COUNT	SERIAL.h	/^					unsigned int	WDOG_COUNT;$/;"	m	struct:__anon21
+__anon21::actual_baud_rate	SERIAL.h	/^					float			actual_baud_rate;$/;"	m	struct:__anon21
+__anon21::ai	SERIAL.h	/^					int				ai;$/;"	m	struct:__anon21
+__anon21::broadcast	SERIAL.h	/^					BOOL			broadcast;$/;"	m	struct:__anon21
+__anon21::c	SERIAL.h	/^					BOOL			c;$/;"	m	struct:__anon21
+__anon21::data	SERIAL.h	/^					unsigned int	data;$/;"	m	struct:__anon21
+__anon21::f	SERIAL.h	/^					float*			f;$/;"	m	struct:__anon21
+__anon21::failed	SERIAL.h	/^					BOOL			failed;$/;"	m	struct:__anon21
+__anon21::func	SERIAL.h	/^					unsigned int	func;$/;"	m	struct:__anon21
+__anon21::fvector	SERIAL.h	/^					int*			fvector;		\/* final vector - this vector executes (GIE) after the suffix, and before releasing the port *\/$/;"	m	struct:__anon21
+__anon21::i	SERIAL.h	/^					int				i;$/;"	m	struct:__anon21
+__anon21::i_main	SERIAL.h	/^					int				i_main;$/;"	m	struct:__anon21
+__anon21::l	SERIAL.h	/^					unsigned int*	l;$/;"	m	struct:__anon21
+__anon21::n	SERIAL.h	/^					int				n;$/;"	m	struct:__anon21
+__anon21::n_exp	SERIAL.h	/^					int				n_exp;$/;"	m	struct:__anon21
+__anon21::nr	SERIAL.h	/^					int				nr;$/;"	m	struct:__anon21
+__anon21::p	SERIAL.h	/^					int*			p;$/;"	m	struct:__anon21
+__anon21::pvector	SERIAL.h	/^					int*			pvector;		\/* port vector current *\/$/;"	m	struct:__anon21
+__anon21::pvector_main	SERIAL.h	/^					int*			pvector_main;	\/* port vector start *\/$/;"	m	struct:__anon21
+__anon21::r	SERIAL.h	/^					BOOL			r;$/;"	m	struct:__anon21
+__anon21::start	SERIAL.h	/^					int				start;$/;"	m	struct:__anon21
+__anon21::tvector	SERIAL.h	/^					int*			tvector;		\/* port timer vector *\/$/;"	m	struct:__anon21
+__anon21::tvector_main	SERIAL.h	/^					int*			tvector_main;	\/* port timer vector start *\/$/;"	m	struct:__anon21
+__anon22::Baud_Rate	SERIAL.h	/^					VAR				Baud_Rate;$/;"	m	struct:__anon22
+__anon22::EOT_Delay	SERIAL.h	/^					VAR				EOT_Delay;$/;"	m	struct:__anon22
+__anon22::N	SERIAL.h	/^					int				N;$/;"	m	struct:__anon22
+__anon22::NETWDOG	SERIAL.h	/^					VAR				NETWDOG;$/;"	m	struct:__anon22
+__anon22::N_retry	SERIAL.h	/^					int				N_retry;$/;"	m	struct:__anon22
+__anon22::Num_Retry	SERIAL.h	/^					VAR				Num_Retry;$/;"	m	struct:__anon22
+__anon22::PREFIX	SERIAL.h	/^					VAR				PREFIX;$/;"	m	struct:__anon22
+__anon22::Parity	SERIAL.h	/^					int				Parity;$/;"	m	struct:__anon22
+__anon22::Retry_Time	SERIAL.h	/^					VAR				Retry_Time;$/;"	m	struct:__anon22
+__anon22::STP	SERIAL.h	/^					int				STP;$/;"	m	struct:__anon22
+__anon22::SUFFIX	SERIAL.h	/^					VAR				SUFFIX;$/;"	m	struct:__anon22
+__anon22::Slave_ID	SERIAL.h	/^					VAR				Slave_ID;$/;"	m	struct:__anon22
+__anon22::n_bits	SERIAL.h	/^					int				n_bits;$/;"	m	struct:__anon22
+__anon22::poll_time	SERIAL.h	/^					int				poll_time;$/;"	m	struct:__anon22
+__anon22::timeout	SERIAL.h	/^					int				timeout;$/;"	m	struct:__anon22
+__anon23::addr	SERIAL.h	/^					int		addr;$/;"	m	struct:__anon23
+__anon23::flt_ptr	SERIAL.h	/^					float*	flt_ptr;$/;"	m	struct:__anon23
+__anon23::func	SERIAL.h	/^					int		func;$/;"	m	struct:__anon23
+__anon23::int_ptr	SERIAL.h	/^					int*	int_ptr;$/;"	m	struct:__anon23
+__anon23::n	SERIAL.h	/^					int		n;$/;"	m	struct:__anon23
+__anon23::next	SERIAL.h	/^					int*	next;$/;"	m	struct:__anon23
+__anon23::num	SERIAL.h	/^					int		num;$/;"	m	struct:__anon23
+__anon23::prev	SERIAL.h	/^					int*	prev;$/;"	m	struct:__anon23
+__anon23::rxvect	SERIAL.h	/^					int*	rxvect;$/;"	m	struct:__anon23
+__anon23::slave	SERIAL.h	/^					int		slave;$/;"	m	struct:__anon23
+__anon23::txvect	SERIAL.h	/^					int*	txvect;$/;"	m	struct:__anon23
+__anon23::v	SERIAL.h	/^					float	v[nmax];$/;"	m	struct:__anon23
+__anon24::countdown	TIMER.h	/^					int		countdown;$/;"	m	struct:__anon24
+__anon24::n	TIMER.h	/^					int		n;				\/* Number of times to repeat  (if (n==-1) repeat forever) *\/$/;"	m	struct:__anon24
+__anon24::next	TIMER.h	/^					int*	next;$/;"	m	struct:__anon24
+__anon24::parent	TIMER.h	/^					int*	parent;$/;"	m	struct:__anon24
+__anon24::preset_time	TIMER.h	/^					int		preset_time;$/;"	m	struct:__anon24
+__anon24::prev	TIMER.h	/^					int*	prev;$/;"	m	struct:__anon24
+__anon24::prev_n	TIMER.h	/^					int		prev_n;$/;"	m	struct:__anon24
+__anon24::priority	TIMER.h	/^					int		priority;$/;"	m	struct:__anon24
+__anon24::t	TIMER.h	/^					float	t;$/;"	m	struct:__anon24
+__anon24::vect	TIMER.h	/^					int*	vect;$/;"	m	struct:__anon24
+__anon25::STAT	VARIABLE.h	/^					int		STAT;$/;"	m	struct:__anon25
+__anon25::alarm_hi_set	VARIABLE.h	/^					float	alarm_hi_set;$/;"	m	struct:__anon25
+__anon25::alarm_lo_set	VARIABLE.h	/^					float	alarm_lo_set;$/;"	m	struct:__anon25
+__anon25::aux	VARIABLE.h	/^					int		aux;$/;"	m	struct:__anon25
+__anon25::base_val	VARIABLE.h	/^					long double	base_val;	\/* original value prior to calculations *\/$/;"	m	struct:__anon25
+__anon25::bound_hi_set	VARIABLE.h	/^					float	bound_hi_set;$/;"	m	struct:__anon25
+__anon25::bound_lo_set	VARIABLE.h	/^					float	bound_lo_set;$/;"	m	struct:__anon25
+__anon25::calc_unit	VARIABLE.h	/^					int		calc_unit;		\/* unit that is used in calculations *\/$/;"	m	struct:__anon25
+__anon25::calc_val	VARIABLE.h	/^					long double	calc_val;	\/* value used in calculations *\/$/;"	m	struct:__anon25
+__anon25::damp_count	VARIABLE.h	/^					int		damp_count;$/;"	m	struct:__anon25
+__anon25::dampening	VARIABLE.h	/^					float	dampening;$/;"	m	struct:__anon25
+__anon25::name	VARIABLE.h	/^					char	name[21];$/;"	m	struct:__anon25
+__anon25::name_r	VARIABLE.h	/^					int		name_r;	$/;"	m	struct:__anon25
+__anon25::scale	VARIABLE.h	/^					float	scale;			\/* amount to scale the integer values *\/$/;"	m	struct:__anon25
+__anon25::scale_long	VARIABLE.h	/^					float	scale_long;		\/* amount to scale the integer values *\/$/;"	m	struct:__anon25
+__anon25::unit	VARIABLE.h	/^					int		unit;			\/* unit that is read by user *\/$/;"	m	struct:__anon25
+__anon25::val	VARIABLE.h	/^					float	val;			\/* value that is read by user & clipped *\/$/;"	m	struct:__anon25
+__anon25::val1	VARIABLE.h	/^					float	val1;			\/* value that is intermediate for dampening *\/$/;"	m	struct:__anon25
+__anon25::val2	VARIABLE.h	/^					float	val2;			\/* value that is dampened *\/$/;"	m	struct:__anon25
+__anon25::vect1	VARIABLE.h	/^					int*	vect1;$/;"	m	struct:__anon25
+__anon25::vect2	VARIABLE.h	/^					int*	vect2;$/;"	m	struct:__anon25
+__anon26::val	VARIABLE.h	/^					BOOL    val;$/;"	m	struct:__anon26
+__anon26::vect	VARIABLE.h	/^					int*	vect; $/;"	m	struct:__anon26
+__anon26::vect2	VARIABLE.h	/^					int*    vect2;\/*Add stream select for Hsalt and Gas routine RS*\/$/;"	m	struct:__anon26
+__anon27::val	VARIABLE.h	/^					int     val;$/;"	m	struct:__anon27
+__anon27::vect	VARIABLE.h	/^					int*	vect;$/;"	m	struct:__anon27
+__anon28::next	VARIABLE.h	/^					int*	next;$/;"	m	struct:__anon28
+__anon28::prev	VARIABLE.h	/^					int*	prev;$/;"	m	struct:__anon28
+__anon28::v	VARIABLE.h	/^					VAR*	v;$/;"	m	struct:__anon28
+__anon2::CRC16	BUFFER.h	/^					unsigned int	CRC16;$/;"	m	struct:__anon2
+__anon2::GSEED	BUFFER.h	/^					unsigned int	GSEED;$/;"	m	struct:__anon2
+__anon2::buff	BUFFER.h	/^					unsigned int	buff[MAXBUFF];$/;"	m	struct:__anon2
+__anon2::head	BUFFER.h	/^					int				head;$/;"	m	struct:__anon2
+__anon2::locked	BUFFER.h	/^					BOOL			locked;$/;"	m	struct:__anon2
+__anon2::n	BUFFER.h	/^					int				n;$/;"	m	struct:__anon2
+__anon2::sum	BUFFER.h	/^					int				sum;$/;"	m	struct:__anon2
+__anon2::tail	BUFFER.h	/^					int				tail;$/;"	m	struct:__anon2
+__anon3::ALARM_SELECT	DAC.h	/^					int		ALARM_SELECT;$/;"	m	struct:__anon3
+__anon3::CURRENT	DAC.h	/^					VAR		CURRENT;$/;"	m	struct:__anon3
+__anon3::CURRENT_PERCENT_OF_RANGE	DAC.h	/^					VAR		CURRENT_PERCENT_OF_RANGE;$/;"	m	struct:__anon3
+__anon3::D	DAC.h	/^					VAR		D;     \/*Add PID to stream table RS*\/$/;"	m	struct:__anon3
+__anon3::I	DAC.h	/^					VAR		I;     \/*Add PID to stream table RS*\/$/;"	m	struct:__anon3
+__anon3::LRV	DAC.h	/^					VAR		LRV;$/;"	m	struct:__anon3
+__anon3::MANUAL	DAC.h	/^					int		MANUAL;$/;"	m	struct:__anon3
+__anon3::MANUAL_PERCENT	DAC.h	/^					float	MANUAL_PERCENT;$/;"	m	struct:__anon3
+__anon3::MINSPAN	DAC.h	/^					float	MINSPAN;$/;"	m	struct:__anon3
+__anon3::P	DAC.h	/^					VAR		P;     \/*Add PID to stream table RS*\/$/;"	m	struct:__anon3
+__anon3::PID_enable_failsafe	DAC.h	/^					BOOL	PID_enable_failsafe;$/;"	m	struct:__anon3
+__anon3::PID_fail	DAC.h	/^					BOOL	PID_fail;$/;"	m	struct:__anon3
+__anon3::PID_input	DAC.h	/^					float	PID_input;$/;"	m	struct:__anon3
+__anon3::PID_setpoint	DAC.h	/^					float	PID_setpoint;$/;"	m	struct:__anon3
+__anon3::REVERSE	DAC.h	/^					int		REVERSE;$/;"	m	struct:__anon3
+__anon3::TRIM_MAX	DAC.h	/^					VAR		TRIM_MAX;$/;"	m	struct:__anon3
+__anon3::TRIM_MAX_C	DAC.h	/^					float   TRIM_MAX_C;$/;"	m	struct:__anon3
+__anon3::TRIM_MIN	DAC.h	/^					VAR		TRIM_MIN;$/;"	m	struct:__anon3
+__anon3::TRIM_MIN_C	DAC.h	/^					float   TRIM_MIN_C;$/;"	m	struct:__anon3
+__anon3::URV	DAC.h	/^					VAR		URV;$/;"	m	struct:__anon3
+__anon3::pid_bias	DAC.h	/^					float	pid_bias;$/;"	m	struct:__anon3
+__anon3::pid_error	DAC.h	/^					float	pid_error;$/;"	m	struct:__anon3
+__anon3::pid_lastcycle	DAC.h	/^					int		pid_lastcycle;$/;"	m	struct:__anon3
+__anon3::pid_output	DAC.h	/^					float	pid_output;$/;"	m	struct:__anon3
+__anon3::pid_propband	DAC.h	/^					float	pid_propband;$/;"	m	struct:__anon3
+__anon3::present	DAC.h	/^					BOOL	present;$/;"	m	struct:__anon3
+__anon3::unit	DAC.h	/^					REGVECT	unit;$/;"	m	struct:__anon3
+__anon3::v	DAC.h	/^					REGVECT		v;$/;"	m	struct:__anon3
+__anon4::next	EXECUTE.h	/^					int*	next;$/;"	m	struct:__anon4
+__anon4::prev	EXECUTE.h	/^					int*	prev;$/;"	m	struct:__anon4
+__anon4::priority	EXECUTE.h	/^					int		priority;$/;"	m	struct:__anon4
+__anon4::vect	EXECUTE.h	/^					int*	vect;$/;"	m	struct:__anon4
+__anon5::Dadj	GLBLS.h	/^					float	Dadj;$/;"	m	struct:__anon5
+__anon5::Frequency_Oil	GLBLS.h	/^					float	Frequency_Oil;$/;"	m	struct:__anon5
+__anon5::Frequency_Water	GLBLS.h	/^					float	Frequency_Water;$/;"	m	struct:__anon5
+__anon5::RefPower_Oil	GLBLS.h	/^					float	RefPower_Oil;$/;"	m	struct:__anon5
+__anon5::RefPower_Water	GLBLS.h	/^					float	RefPower_Water;$/;"	m	struct:__anon5
+__anon5::Salinity	GLBLS.h	/^					float	Salinity;$/;"	m	struct:__anon5
+__anon5::Temperature	GLBLS.h	/^					float	Temperature;$/;"	m	struct:__anon5
+__anon5::Time_DAY	GLBLS.h	/^					int		Time_DAY;$/;"	m	struct:__anon5
+__anon5::Time_DAY_OF_WEEK	GLBLS.h	/^					int		Time_DAY_OF_WEEK;$/;"	m	struct:__anon5
+__anon5::Time_HH	GLBLS.h	/^					int		Time_HH;$/;"	m	struct:__anon5
+__anon5::Time_MM	GLBLS.h	/^					int		Time_MM;$/;"	m	struct:__anon5
+__anon5::Time_MONTH	GLBLS.h	/^					int		Time_MONTH;$/;"	m	struct:__anon5
+__anon5::Time_YEAR	GLBLS.h	/^					int		Time_YEAR;$/;"	m	struct:__anon5
+__anon5::Watercut	GLBLS.h	/^					float	Watercut;$/;"	m	struct:__anon5
+__anon5::i	GLBLS.h	/^					int		i;$/;"	m	struct:__anon5
+__anon6::CLRSTAT_Time_YEAR	GLBLS.h	/^					int		CLRSTAT_Time_YEAR[2];$/;"	m	struct:__anon6
+__anon6::Dadj	GLBLS.h	/^					float	Dadj[2];$/;"	m	struct:__anon6
+__anon6::Frequency_Oil	GLBLS.h	/^					float	Frequency_Oil[2];$/;"	m	struct:__anon6
+__anon6::Frequency_Water	GLBLS.h	/^					float	Frequency_Water[2];$/;"	m	struct:__anon6
+__anon6::RefPower_Oil	GLBLS.h	/^					float	RefPower_Oil[2];$/;"	m	struct:__anon6
+__anon6::RefPower_Water	GLBLS.h	/^					float	RefPower_Water[2];$/;"	m	struct:__anon6
+__anon6::Salinity	GLBLS.h	/^					float	Salinity[2];$/;"	m	struct:__anon6
+__anon6::Temperature	GLBLS.h	/^					float	Temperature[2];$/;"	m	struct:__anon6
+__anon6::Time_MONTH_DAY_HH_MM	GLBLS.h	/^					int		Time_MONTH_DAY_HH_MM[2];$/;"	m	struct:__anon6
+__anon6::Watercut	GLBLS.h	/^					float	Watercut[2];$/;"	m	struct:__anon6
+__anon7::Start_DAY	GLBLS.h	/^					int		Start_DAY;$/;"	m	struct:__anon7
+__anon7::Start_HH	GLBLS.h	/^					int		Start_HH;$/;"	m	struct:__anon7
+__anon7::Start_MM	GLBLS.h	/^					int		Start_MM;$/;"	m	struct:__anon7
+__anon7::Start_MONTH	GLBLS.h	/^					int		Start_MONTH;$/;"	m	struct:__anon7
+__anon7::Start_SS	GLBLS.h	/^					int		Start_SS;$/;"	m	struct:__anon7
+__anon7::Start_YEAR	GLBLS.h	/^					int		Start_YEAR;$/;"	m	struct:__anon7
+__anon7::Stop_DAY	GLBLS.h	/^					int		Stop_DAY;$/;"	m	struct:__anon7
+__anon7::Stop_HH	GLBLS.h	/^					int		Stop_HH;$/;"	m	struct:__anon7
+__anon7::Stop_MM	GLBLS.h	/^					int		Stop_MM;$/;"	m	struct:__anon7
+__anon7::Stop_MONTH	GLBLS.h	/^					int		Stop_MONTH;$/;"	m	struct:__anon7
+__anon7::Stop_SS	GLBLS.h	/^					int		Stop_SS;$/;"	m	struct:__anon7
+__anon7::Stop_YEAR	GLBLS.h	/^					int		Stop_YEAR;$/;"	m	struct:__anon7
+__anon7::duration	GLBLS.h	/^					float	duration;$/;"	m	struct:__anon7
+__anon7::elapsed_s	GLBLS.h	/^					float	elapsed_s;$/;"	m	struct:__anon7
+__anon7::gas24	GLBLS.h	/^					float	gas24;$/;"	m	struct:__anon7
+__anon7::gross_gas	GLBLS.h	/^					float	gross_gas;$/;"	m	struct:__anon7
+__anon7::gross_oil	GLBLS.h	/^					float	gross_oil;$/;"	m	struct:__anon7
+__anon7::gross_total	GLBLS.h	/^					float	gross_total;$/;"	m	struct:__anon7
+__anon7::gross_water	GLBLS.h	/^					float	gross_water;$/;"	m	struct:__anon7
+__anon7::oil24	GLBLS.h	/^					float	oil24;$/;"	m	struct:__anon7
+__anon7::purge	GLBLS.h	/^					float	purge;$/;"	m	struct:__anon7
+__anon7::stream	GLBLS.h	/^					float	stream;$/;"	m	struct:__anon7
+__anon7::total24	GLBLS.h	/^					float	total24;$/;"	m	struct:__anon7
+__anon7::water24	GLBLS.h	/^					float	water24;$/;"	m	struct:__anon7
+__anon7::watercut	GLBLS.h	/^					float	watercut;$/;"	m	struct:__anon7
+__anon8::ADDR	GLBLS.h	/^					int		ADDR;$/;"	m	struct:__anon8
+__anon8::BNUM	GLBLS.h	/^					int		BNUM;$/;"	m	struct:__anon8
+__anon8::DAY	GLBLS.h	/^					int		DAY;$/;"	m	struct:__anon8
+__anon8::MONTH	GLBLS.h	/^					int		MONTH;$/;"	m	struct:__anon8
+__anon8::REV	GLBLS.h	/^					int		REV;$/;"	m	struct:__anon8
+__anon8::SNUM	GLBLS.h	/^					int		SNUM;$/;"	m	struct:__anon8
+__anon8::YEAR	GLBLS.h	/^					int		YEAR;$/;"	m	struct:__anon8
+__anon9::counter	GLBLS.h	/^	int counter;	\/\/counter tells us how old the frequency$/;"	m	struct:__anon9
+__anon9::freq	GLBLS.h	/^	float freq;		\/\/water frequency$/;"	m	struct:__anon9
+a	GLBLS.h	/^					float	a;$/;"	m	struct:__anon16
+accum_unit	GLBLS.h	/^					REGVECT accum_unit;$/;"	m	struct:__anon16
+actual_baud_rate	SERIAL.h	/^					float			actual_baud_rate;$/;"	m	struct:__anon21
+addr	SERIAL.h	/^					int		addr;$/;"	m	struct:__anon23
+address	GLBLS.h	/^					VAR		address;     \/*MM initial Slave address config RS*\/    $/;"	m	struct:__anon13
+ai	SERIAL.h	/^					int				ai;$/;"	m	struct:__anon21
+alarm_hi_set	VARIABLE.h	/^					float	alarm_hi_set;$/;"	m	struct:__anon25
+alarm_lo_set	VARIABLE.h	/^					float	alarm_lo_set;$/;"	m	struct:__anon25
+aux	VARIABLE.h	/^					int		aux;$/;"	m	struct:__anon25
+average	GLBLS.h	/^	float average;					\/\/The current value of our moving average for bubble$/;"	m	struct:__anon10
+average	GLBLS.h	/^	float average;					\/\/The current value of our moving average for pattern$/;"	m	struct:__anon11
+base_val	VARIABLE.h	/^					long double	base_val;	\/* original value prior to calculations *\/$/;"	m	struct:__anon25
+bound_hi_set	VARIABLE.h	/^					float	bound_hi_set;$/;"	m	struct:__anon25
+bound_lo_set	VARIABLE.h	/^					float	bound_lo_set;$/;"	m	struct:__anon25
+boxcar_expire_val	GLBLS.h	/^_EXTERN VAR boxcar_expire_val;$/;"	v
+boxcar_expire_val_minutes	GLBLS.h	/^_EXTERN VAR boxcar_expire_val_minutes;$/;"	v
+boxcar_list	GLBLS.h	/^_EXTERN Boxcar_Var boxcar_list[BOXCAR_LIST_SIZE];		\/\/array holds the lowest unexpired frequency readings$/;"	v
+boxcar_reset_needed	GLBLS.h	/^_EXTERN BOOL boxcar_reset_needed;$/;"	v
+broadcast	SERIAL.h	/^					BOOL			broadcast;$/;"	m	struct:__anon21
+bubble	GLBLS.h	/^_EXTERN bubble_struct bubble; \/\/Ring buffer queue for bubble values$/;"	v
+bubble_new_length	GLBLS.h	/^_EXTERN VAR bubble_new_length;$/;"	v
+bubble_struct	GLBLS.h	/^} bubble_struct;$/;"	t	typeref:struct:__anon10
+buff	BUFFER.h	/^					unsigned int	buff[MAXBUFF];$/;"	m	struct:__anon2
+c	SERIAL.h	/^					BOOL			c;$/;"	m	struct:__anon21
+calc_unit	VARIABLE.h	/^					int		calc_unit;		\/* unit that is used in calculations *\/$/;"	m	struct:__anon25
+calc_val	VARIABLE.h	/^					long double	calc_val;	\/* value used in calculations *\/$/;"	m	struct:__anon25
+ccm_gas_total_fract_part	GLBLS.h	/^_EXTERN long double ccm_gas_total_fract_part;$/;"	v
+ccm_gas_total_whole_part	GLBLS.h	/^_EXTERN long double ccm_gas_total_whole_part;$/;"	v
+coil_direct_bit_00	MODBUSRTU.h	109;"	d
+coil_direct_bit_01	MODBUSRTU.h	110;"	d
+coil_direct_bit_02	MODBUSRTU.h	111;"	d
+coil_direct_bit_03	MODBUSRTU.h	112;"	d
+coil_direct_bit_04	MODBUSRTU.h	113;"	d
+coil_direct_bit_05	MODBUSRTU.h	114;"	d
+coil_direct_bit_06	MODBUSRTU.h	115;"	d
+coil_direct_bit_07	MODBUSRTU.h	116;"	d
+coil_direct_bit_08	MODBUSRTU.h	117;"	d
+coil_direct_bit_09	MODBUSRTU.h	118;"	d
+coil_direct_bit_0A	MODBUSRTU.h	119;"	d
+coil_direct_bit_0B	MODBUSRTU.h	120;"	d
+coil_direct_bit_0C	MODBUSRTU.h	121;"	d
+coil_direct_bit_0D	MODBUSRTU.h	122;"	d
+coil_direct_bit_0E	MODBUSRTU.h	123;"	d
+coil_direct_bit_0F	MODBUSRTU.h	124;"	d
+compatibility_dummy	GLBLS.h	/^_EXTERN float compatibility_dummy;$/;"	v
+copyright	GLBLS.h	/^const char copyright[]={"©2017 Phase Dynamics, Inc.              "}; \/\/R87 $/;"	v
+countdown	TIMER.h	/^					int		countdown;$/;"	m	struct:__anon24
+counter	GLBLS.h	/^	int counter;	\/\/counter tells us how old the frequency$/;"	m	struct:__anon9
+credit	GLBLS.h	/^const char    credit[]={"Firmware by PDI"};	\/\/R373 (not used)$/;"	v
+cycles	GLBLS.h	/^_EXTERN unsigned int cycles;                 \/*phase hold over RS*\/$/;"	v
+damp_count	VARIABLE.h	/^					int		damp_count;$/;"	m	struct:__anon25
+damp_density	GLBLS.h	/^					VAR		damp_density;$/;"	m	struct:__anon13
+damp_flow_rate	GLBLS.h	/^					VAR		damp_flow_rate;$/;"	m	struct:__anon13
+dampening	VARIABLE.h	/^					float	dampening;$/;"	m	struct:__anon25
+data	GLBLS.h	/^	float data[BUBBLE_SIZE_MAX];	\/\/data array holding frequency values$/;"	m	struct:__anon10
+data	GLBLS.h	/^	float data[PATTERN_SIZE_MAX];	\/\/data array holding frequency values$/;"	m	struct:__anon11
+data	SERIAL.h	/^					unsigned int	data;$/;"	m	struct:__anon21
+density	GLBLS.h	/^					VAR		density;$/;"	m	struct:__anon16
+density	GLBLS.h	/^					float	density;$/;"	m	struct:__anon13
+density_PDI_corrected	GLBLS.h	/^					float	density_PDI_corrected;$/;"	m	struct:__anon13
+density_PDI_corrected	GLBLS.h	/^					float	density_PDI_corrected;$/;"	m	struct:__anon16
+density_adj	GLBLS.h	/^					float	density_adj;$/;"	m	struct:__anon16
+density_corrected	GLBLS.h	/^					float	density_corrected;$/;"	m	struct:__anon13
+density_cutoff	GLBLS.h	/^					VAR     density_cutoff; \/*Config density cutoff RS*\/$/;"	m	struct:__anon13
+density_oil	GLBLS.h	/^					VAR		density_oil;$/;"	m	struct:__anon16
+density_oilST	GLBLS.h	/^					VAR		density_oilST;$/;"	m	struct:__anon16
+density_water	GLBLS.h	/^					VAR		density_water;$/;"	m	struct:__anon16
+density_waterST	GLBLS.h	/^					VAR		density_waterST;$/;"	m	struct:__anon16
+diag	GLBLS.h	/^					float	diag;$/;"	m	struct:__anon13
+diag0	GLBLS.h	/^					float	diag0;$/;"	m	struct:__anon14
+diag1	GLBLS.h	/^					float	diag1;$/;"	m	struct:__anon14
+diag2	GLBLS.h	/^					float	diag2;$/;"	m	struct:__anon14
+drive_gain	GLBLS.h	/^					float	drive_gain;$/;"	m	struct:__anon13
+duration	GLBLS.h	/^					float	duration;$/;"	m	struct:__anon7
+elapsed_s	GLBLS.h	/^					float	elapsed_s;$/;"	m	struct:__anon7
+enable_DENSITY	GLBLS.h	/^					BOOL	enable_DENSITY;$/;"	m	struct:__anon16
+enable_FLOW	GLBLS.h	/^					BOOL	enable_FLOW;$/;"	m	struct:__anon16
+enable_GROSS	GLBLS.h	/^					BOOL	enable_GROSS;$/;"	m	struct:__anon16
+enable_NET	GLBLS.h	/^					BOOL	enable_NET;$/;"	m	struct:__anon16
+enable_PULSE	GLBLS.h	/^					BOOL	enable_PULSE;$/;"	m	struct:__anon16
+erased_sector	LOG.h	/^					BOOL		 erased_sector;$/;"	m	struct:__anon19
+etc0	GLBLS.h	/^					float	etc0;$/;"	m	struct:__anon15
+etc1	GLBLS.h	/^					float	etc1;$/;"	m	struct:__anon15
+etc2	GLBLS.h	/^					float	etc2;$/;"	m	struct:__anon15
+etc3	GLBLS.h	/^					float	etc3;$/;"	m	struct:__anon15
+etc4	GLBLS.h	/^					float	etc4;$/;"	m	struct:__anon15
+f	SERIAL.h	/^					float*			f;$/;"	m	struct:__anon21
+f_LV	GLBLS.h	/^_EXTERN float f_LV[30];$/;"	v
+failed	SERIAL.h	/^					BOOL			failed;$/;"	m	struct:__anon21
+flow_class	GLBLS.h	/^					REGVECT	flow_class;$/;"	m	struct:__anon16
+flow_threshold	GLBLS.h	/^					VAR	flow_threshold;\/*Add stream select for Hsalt and Gas routine RS*\/$/;"	m	struct:__anon18
+flow_unit	GLBLS.h	/^					REGVECT flow_unit;$/;"	m	struct:__anon16
+flt_ptr	SERIAL.h	/^					float*	flt_ptr;$/;"	m	struct:__anon23
+freq	GLBLS.h	/^	float freq;		\/\/water frequency$/;"	m	struct:__anon9
+func	SERIAL.h	/^					int		func;$/;"	m	struct:__anon23
+func	SERIAL.h	/^					unsigned int	func;$/;"	m	struct:__anon21
+fvector	SERIAL.h	/^					int*			fvector;		\/* final vector - this vector executes (GIE) after the suffix, and before releasing the port *\/$/;"	m	struct:__anon21
+gas24	GLBLS.h	/^					float	gas24;$/;"	m	struct:__anon7
+gas_routine_reset_needed	GLBLS.h	/^_EXTERN BOOL gas_routine_reset_needed;$/;"	v
+gross_gas	GLBLS.h	/^					float	gross_gas;$/;"	m	struct:__anon7
+gross_oil	GLBLS.h	/^					float	gross_oil;$/;"	m	struct:__anon7
+gross_oil_fract_part	GLBLS.h	/^					long double gross_oil_fract_part;$/;"	m	struct:__anon16
+gross_oil_whole_part	GLBLS.h	/^					long double gross_oil_whole_part;$/;"	m	struct:__anon16
+gross_total	GLBLS.h	/^					float	gross_total;$/;"	m	struct:__anon7
+gross_water	GLBLS.h	/^					float	gross_water;$/;"	m	struct:__anon7
+gross_water_fract_part	GLBLS.h	/^					long double gross_water_fract_part;$/;"	m	struct:__anon16
+gross_water_whole_part	GLBLS.h	/^					long double gross_water_whole_part;$/;"	m	struct:__anon16
+head	BUFFER.h	/^					int				head;$/;"	m	struct:__anon2
+head	GLBLS.h	/^	int head;						\/\/Head pointer of bubble ring buffer$/;"	m	struct:__anon10
+head	GLBLS.h	/^	int head;						\/\/Head pointer of pattern ring buffer$/;"	m	struct:__anon11
+i	GLBLS.h	/^					int		i;$/;"	m	struct:__anon5
+i	SERIAL.h	/^					int				i;$/;"	m	struct:__anon21
+iDENSITY	GLBLS.h	/^					int		iDENSITY;$/;"	m	struct:__anon17
+iFLOW_RATE	GLBLS.h	/^					int		iFLOW_RATE;$/;"	m	struct:__anon17
+iTEMPERATURE	GLBLS.h	/^					int		iTEMPERATURE;$/;"	m	struct:__anon17
+iVISCOSITY	GLBLS.h	/^					int		iVISCOSITY;$/;"	m	struct:__anon17
+iWATERCUT	GLBLS.h	/^					int		iWATERCUT;$/;"	m	struct:__anon17
+iWATERCUTz	GLBLS.h	/^					int		iWATERCUTz;$/;"	m	struct:__anon17
+i_CCM_Flow	GLBLS.h	/^_EXTERN int i_CCM_Flow;$/;"	v
+i_CCM_Flow_Gas	GLBLS.h	/^_EXTERN int i_CCM_Flow_Gas;$/;"	v
+i_CCM_Flow_Oil	GLBLS.h	/^_EXTERN int i_CCM_Flow_Oil;$/;"	v
+i_CCM_Flow_Water	GLBLS.h	/^_EXTERN int i_CCM_Flow_Water;$/;"	v
+i_CCM_Gas_Valve	GLBLS.h	/^_EXTERN int i_CCM_Gas_Valve;$/;"	v
+i_CCM_Level	GLBLS.h	/^_EXTERN int i_CCM_Level;$/;"	v
+i_CCM_Level_Setpoint	GLBLS.h	/^_EXTERN int i_CCM_Level_Setpoint;$/;"	v
+i_CCM_Liquid_Valve	GLBLS.h	/^_EXTERN int i_CCM_Liquid_Valve;$/;"	v
+i_CCM_Pressure	GLBLS.h	/^_EXTERN int i_CCM_Pressure;$/;"	v
+i_CCM_Pressure_Setpoint	GLBLS.h	/^_EXTERN int i_CCM_Pressure_Setpoint;$/;"	v
+i_FREQ_O	GLBLS.h	/^_EXTERN int i_FREQ_O;$/;"	v
+i_FREQ_W	GLBLS.h	/^_EXTERN int i_FREQ_W;$/;"	v
+i_IP_O	GLBLS.h	/^_EXTERN int i_IP_O;$/;"	v
+i_IP_W	GLBLS.h	/^_EXTERN int i_IP_W;$/;"	v
+i_LV	GLBLS.h	/^_EXTERN int i_LV[30];$/;"	v
+i_RP_O	GLBLS.h	/^_EXTERN int i_RP_O;$/;"	v
+i_RP_W	GLBLS.h	/^_EXTERN int i_RP_W;$/;"	v
+i_TEMP	GLBLS.h	/^_EXTERN int i_TEMP;$/;"	v
+i_WC	GLBLS.h	/^_EXTERN int i_WC;$/;"	v
+i_main	SERIAL.h	/^					int				i_main;$/;"	m	struct:__anon21
+il_LV	GLBLS.h	/^_EXTERN int il_LV[30];$/;"	v
+int_ptr	SERIAL.h	/^					int*	int_ptr;$/;"	m	struct:__anon23
+k	MENU.h	/^					unsigned int k;$/;"	m	struct:__anon20
+l	SERIAL.h	/^					unsigned int*	l;$/;"	m	struct:__anon21
+left_pickup_value	GLBLS.h	/^					float	left_pickup_value;$/;"	m	struct:__anon13
+length	GLBLS.h	/^	int length;						\/\/Number of elements in the bubble array$/;"	m	struct:__anon10
+length	GLBLS.h	/^	int length;						\/\/Number of elements in the pattern array$/;"	m	struct:__anon11
+locked	BUFFER.h	/^					BOOL			locked;$/;"	m	struct:__anon2
+log_absolute_index	LOG.h	/^					unsigned int log_absolute_index;$/;"	m	struct:__anon19
+log_current_sector	LOG.h	/^					unsigned int log_current_sector;$/;"	m	struct:__anon19
+log_end	LOG.h	/^					unsigned int log_end;$/;"	m	struct:__anon19
+log_len	LOG.h	/^					unsigned int log_len;$/;"	m	struct:__anon19
+log_n	LOG.h	/^					unsigned int log_n;$/;"	m	struct:__anon19
+log_n_max_per_sector	LOG.h	/^					unsigned int log_n_max_per_sector;$/;"	m	struct:__anon19
+log_n_sectors	LOG.h	/^					unsigned int log_n_sectors;$/;"	m	struct:__anon19
+log_record_size	LOG.h	/^					unsigned int log_record_size;$/;"	m	struct:__anon19
+log_sector_size	LOG.h	/^					unsigned int log_sector_size;$/;"	m	struct:__anon19
+log_start	LOG.h	/^					unsigned int* log_start;$/;"	m	struct:__anon19
+mass_inv	GLBLS.h	/^					float	mass_inv;$/;"	m	struct:__anon13
+mass_total	GLBLS.h	/^					float	mass_total;$/;"	m	struct:__anon13
+mass_unit	GLBLS.h	/^					VAR     mass_unit;   \/*Config mass flow unit RS*\/  $/;"	m	struct:__anon13
+maxDENSITY	GLBLS.h	/^					float	maxDENSITY;$/;"	m	struct:__anon17
+maxFLOW_RATE	GLBLS.h	/^					float	maxFLOW_RATE;$/;"	m	struct:__anon17
+maxTEMPERATURE	GLBLS.h	/^					float	maxTEMPERATURE;$/;"	m	struct:__anon17
+maxVISCOSITY	GLBLS.h	/^					float	maxVISCOSITY;$/;"	m	struct:__anon17
+maxWATERCUT	GLBLS.h	/^					float	maxWATERCUT;$/;"	m	struct:__anon17
+maxWATERCUTz	GLBLS.h	/^					float	maxWATERCUTz;$/;"	m	struct:__anon17
+maxint	GLBLS.h	155;"	d
+mb_cmd_diag	MODBUSRTU.h	52;"	d
+mb_cmd_pdi_analyzer_sample	MODBUSRTU.h	62;"	d
+mb_cmd_pdi_analyzer_setup	MODBUSRTU.h	61;"	d
+mb_cmd_pdi_calibrate	MODBUSRTU.h	67;"	d
+mb_cmd_pdi_force_slave	MODBUSRTU.h	63;"	d
+mb_cmd_pdi_force_slave_pipe	MODBUSRTU.h	64;"	d
+mb_cmd_pdi_memory_read	MODBUSRTU.h	65;"	d
+mb_cmd_pdi_memory_write	MODBUSRTU.h	66;"	d
+mb_cmd_pdi_set_time	MODBUSRTU.h	69;"	d
+mb_cmd_pdi_unlock	MODBUSRTU.h	68;"	d
+mb_cmd_r_coil_stat	MODBUSRTU.h	35;"	d
+mb_cmd_r_commevent_ctr	MODBUSRTU.h	42;"	d
+mb_cmd_r_commevent_log	MODBUSRTU.h	43;"	d
+mb_cmd_r_exception_stat	MODBUSRTU.h	41;"	d
+mb_cmd_r_fifo	MODBUSRTU.h	51;"	d
+mb_cmd_r_gen_ref	MODBUSRTU.h	47;"	d
+mb_cmd_r_hold_reg	MODBUSRTU.h	37;"	d
+mb_cmd_r_input_reg	MODBUSRTU.h	38;"	d
+mb_cmd_r_input_stat	MODBUSRTU.h	36;"	d
+mb_cmd_r_slave_id	MODBUSRTU.h	46;"	d
+mb_cmd_rw_reg4x	MODBUSRTU.h	50;"	d
+mb_cmd_w_coil	MODBUSRTU.h	39;"	d
+mb_cmd_w_coils	MODBUSRTU.h	44;"	d
+mb_cmd_w_gen_ref	MODBUSRTU.h	48;"	d
+mb_cmd_w_mask4x	MODBUSRTU.h	49;"	d
+mb_cmd_w_reg	MODBUSRTU.h	40;"	d
+mb_cmd_w_regs	MODBUSRTU.h	45;"	d
+mb_coil	MODBUSTABLES.h	/^const int mb_coil[][2]=		{$/;"	v
+mb_excp_ack	MODBUSRTU.h	75;"	d
+mb_excp_illegal_addr	MODBUSRTU.h	72;"	d
+mb_excp_illegal_data	MODBUSRTU.h	73;"	d
+mb_excp_illegal_func	MODBUSRTU.h	71;"	d
+mb_excp_memory_error	MODBUSRTU.h	78;"	d
+mb_excp_neg_ack	MODBUSRTU.h	77;"	d
+mb_excp_slave_busy	MODBUSRTU.h	76;"	d
+mb_excp_slave_fail	MODBUSRTU.h	74;"	d
+mb_ext	MODBUSTABLES.h	/^const int mb_ext[][2]=	{\/* special coefficient area for modbus starting at addr 60001 (no Auto-Save) *\/$/;"	v
+mb_fc	MODBUSTABLES.h	/^const int mb_fc[][2] = {$/;"	v
+mb_flt	MODBUSTABLES.h	/^const int mb_flt[][2]=		{$/;"	v
+mb_int	MODBUSTABLES.h	/^const int mb_int[][2] =	{$/;"	v
+mb_var_f_ABCD	MODBUSRTU.h	54;"	d
+mb_var_f_BADC	MODBUSRTU.h	57;"	d
+mb_var_f_CDAB	MODBUSRTU.h	55;"	d
+mb_var_f_DCBA	MODBUSRTU.h	56;"	d
+mb_var_int	MODBUSRTU.h	53;"	d
+mb_var_long	MODBUSRTU.h	58;"	d
+mcf	GLBLS.h	/^					VAR		mcf;  $/;"	m	struct:__anon13
+menu_list_changed	MENU.h	/^					BOOL	menu_list_changed;$/;"	m	struct:__anon20
+menu_list_configurations	MENU.h	/^					BOOL	menu_list_configurations;$/;"	m	struct:__anon20
+menu_list_measurements	MENU.h	/^					BOOL	menu_list_measurements;$/;"	m	struct:__anon20
+menu_list_operations	MENU.h	/^					BOOL	menu_list_operations;$/;"	m	struct:__anon20
+menu_list_security_info	MENU.h	/^					BOOL	menu_list_security_info;$/;"	m	struct:__anon20
+menu_list_top	MENU.h	/^					BOOL	menu_list_top;$/;"	m	struct:__anon20
+mfr	GLBLS.h	/^					float	mfr;$/;"	m	struct:__anon13
+mfr_cutoff	GLBLS.h	/^					VAR		mfr_cutoff;$/;"	m	struct:__anon13
+minDENSITY	GLBLS.h	/^					float	minDENSITY;$/;"	m	struct:__anon17
+minFLOW_RATE	GLBLS.h	/^					float	minFLOW_RATE;$/;"	m	struct:__anon17
+minTEMPERATURE	GLBLS.h	/^					float	minTEMPERATURE;$/;"	m	struct:__anon17
+minVISCOSITY	GLBLS.h	/^					float	minVISCOSITY;$/;"	m	struct:__anon17
+minWATERCUT	GLBLS.h	/^					float	minWATERCUT;$/;"	m	struct:__anon17
+minWATERCUTz	GLBLS.h	/^					float	minWATERCUTz;$/;"	m	struct:__anon17
+minint	GLBLS.h	156;"	d
+n	BUFFER.h	/^					int				n;$/;"	m	struct:__anon2
+n	SERIAL.h	/^					int				n;$/;"	m	struct:__anon21
+n	SERIAL.h	/^					int		n;$/;"	m	struct:__anon23
+n	TIMER.h	/^					int		n;				\/* Number of times to repeat  (if (n==-1) repeat forever) *\/$/;"	m	struct:__anon24
+n_bits	SERIAL.h	/^					int				n_bits;$/;"	m	struct:__anon22
+n_exp	SERIAL.h	/^					int				n_exp;$/;"	m	struct:__anon21
+name	VARIABLE.h	/^					char	name[21];$/;"	m	struct:__anon25
+name_r	VARIABLE.h	/^					int		name_r;	$/;"	m	struct:__anon25
+net_watercut	GLBLS.h	/^					float	net_watercut;$/;"	m	struct:__anon16
+net_watercut_mass	GLBLS.h	/^					float	net_watercut_mass;$/;"	m	struct:__anon16
+next	EXECUTE.h	/^					int*	next;$/;"	m	struct:__anon4
+next	SERIAL.h	/^					int*	next;$/;"	m	struct:__anon23
+next	TIMER.h	/^					int*	next;$/;"	m	struct:__anon24
+next	VARIABLE.h	/^					int*	next;$/;"	m	struct:__anon28
+nmax	SERIAL.h	124;"	d
+nr	SERIAL.h	/^					int				nr;$/;"	m	struct:__anon21
+num	SERIAL.h	/^					int		num;$/;"	m	struct:__anon23
+oil24	GLBLS.h	/^					float	oil24;$/;"	m	struct:__anon7
+p	SERIAL.h	/^					int*			p;$/;"	m	struct:__anon21
+p_delta	GLBLS.h	/^					float	p_delta;$/;"	m	struct:__anon14
+p_static	GLBLS.h	/^					float	p_static;$/;"	m	struct:__anon14
+parent	TIMER.h	/^					int*	parent;$/;"	m	struct:__anon24
+pattern	GLBLS.h	/^_EXTERN pattern_struct pattern; \/\/Ring buffer queue for pattern values$/;"	v
+pattern_new_length	GLBLS.h	/^_EXTERN VAR pattern_new_length;$/;"	v
+pattern_struct	GLBLS.h	/^} pattern_struct;$/;"	t	typeref:struct:__anon11
+phase	GLBLS.h	/^_EXTERN unsigned int phase;                  \/*phase hold over RS*\/$/;"	v
+phase_rollover_count	GLBLS.h	/^_EXTERN unsigned int phase_rollover_count;   \/*phase hold over RS*\/   $/;"	v
+pid_bias	DAC.h	/^					float	pid_bias;$/;"	m	struct:__anon3
+pid_error	DAC.h	/^					float	pid_error;$/;"	m	struct:__anon3
+pid_lastcycle	DAC.h	/^					int		pid_lastcycle;$/;"	m	struct:__anon3
+pid_output	DAC.h	/^					float	pid_output;$/;"	m	struct:__anon3
+pid_propband	DAC.h	/^					float	pid_propband;$/;"	m	struct:__anon3
+poll_time	SERIAL.h	/^					int				poll_time;$/;"	m	struct:__anon22
+present	ADC.h	/^					BOOL	present;$/;"	m	struct:__anon1
+present	DAC.h	/^					BOOL	present;$/;"	m	struct:__anon3
+preset_time	TIMER.h	/^					int		preset_time;$/;"	m	struct:__anon24
+press	GLBLS.h	/^					float	press;$/;"	m	struct:__anon13
+pressure	GLBLS.h	/^					VAR		pressure;$/;"	m	struct:__anon16
+prev	EXECUTE.h	/^					int*	prev;$/;"	m	struct:__anon4
+prev	SERIAL.h	/^					int*	prev;$/;"	m	struct:__anon23
+prev	TIMER.h	/^					int*	prev;$/;"	m	struct:__anon24
+prev	VARIABLE.h	/^					int*	prev;$/;"	m	struct:__anon28
+prev_n	TIMER.h	/^					int		prev_n;$/;"	m	struct:__anon24
+previous_phase	GLBLS.h	/^_EXTERN unsigned int previous_phase;         \/*phase hold over RS*\/$/;"	v
+priority	EXECUTE.h	/^					int		priority;$/;"	m	struct:__anon4
+priority	TIMER.h	/^					int		priority;$/;"	m	struct:__anon24
+ptmpv	MENU.h	/^					VAR*	ptmpv;$/;"	m	struct:__anon20
+pulse_VALUE	GLBLS.h	/^					VAR pulse_VALUE;$/;"	m	struct:__anon16
+pulse_class	GLBLS.h	/^					REGVECT	pulse_class;$/;"	m	struct:__anon16
+pulse_unit	GLBLS.h	/^					REGVECT	pulse_unit;$/;"	m	struct:__anon16
+pulse_v	GLBLS.h	/^					REGVECT	pulse_v;$/;"	m	struct:__anon16
+purge	GLBLS.h	/^					float	purge;$/;"	m	struct:__anon7
+pvector	SERIAL.h	/^					int*			pvector;		\/* port vector current *\/$/;"	m	struct:__anon21
+pvector_main	SERIAL.h	/^					int*			pvector_main;	\/* port vector start *\/$/;"	m	struct:__anon21
+r	SERIAL.h	/^					BOOL			r;$/;"	m	struct:__anon21
+raw_tube_freq	GLBLS.h	/^					float	raw_tube_freq;$/;"	m	struct:__anon13
+reg_direct_alarm_hi	MODBUSRTU.h	101;"	d
+reg_direct_alarm_lo	MODBUSRTU.h	102;"	d
+reg_direct_bmax	MODBUSRTU.h	99;"	d
+reg_direct_bmin	MODBUSRTU.h	100;"	d
+reg_direct_f	MODBUSRTU.h	96;"	d
+reg_direct_i	MODBUSRTU.h	95;"	d
+reg_direct_raw_int	MODBUSRTU.h	105;"	d
+reg_direct_regvect	MODBUSRTU.h	104;"	d
+reg_indirect	MODBUSRTU.h	97;"	d
+reg_indirect_calc_unit	MODBUSRTU.h	103;"	d
+reg_indirect_class	MODBUSRTU.h	107;"	d
+reg_indirect_m	MODBUSRTU.h	106;"	d
+reg_indirect_unit	MODBUSRTU.h	98;"	d
+right_pickup_value	GLBLS.h	/^					float	right_pickup_value;$/;"	m	struct:__anon13
+rxvect	SERIAL.h	/^					int*	rxvect;$/;"	m	struct:__anon23
+salinity	GLBLS.h	/^					VAR		salinity;$/;"	m	struct:__anon16
+scale	VARIABLE.h	/^					float	scale;			\/* amount to scale the integer values *\/$/;"	m	struct:__anon25
+scale_long	VARIABLE.h	/^					float	scale_long;		\/* amount to scale the integer values *\/$/;"	m	struct:__anon25
+setpoint	GLBLS.h	/^					float	setpoint;$/;"	m	struct:__anon12
+slave	SERIAL.h	/^					int		slave;$/;"	m	struct:__anon23
+start	SERIAL.h	/^					int				start;$/;"	m	struct:__anon21
+str	MENU.h	/^					char	str[4][101];$/;"	m	struct:__anon20
+stream	GLBLS.h	/^					float	stream;$/;"	m	struct:__anon7
+stream_boxcar_expire	GLBLS.h	/^_EXTERN float stream_boxcar_expire[SMAX];$/;"	v
+stream_boxcar_expire_minutes	GLBLS.h	/^_EXTERN int   stream_boxcar_expire_minutes[SMAX]; \/\/ THIS IS AN INTEGER ARRAY!$/;"	v
+stream_bubble_length	GLBLS.h	/^_EXTERN float stream_bubble_length[SMAX];$/;"	v
+stream_delta_temp	GLBLS.h	/^_EXTERN float stream_delta_temp[SMAX];$/;"	v
+stream_pattern_length	GLBLS.h	/^_EXTERN float stream_pattern_length[SMAX];$/;"	v
+sum	BUFFER.h	/^					int				sum;$/;"	m	struct:__anon2
+t	TIMER.h	/^					float	t;$/;"	m	struct:__anon24
+tail	BUFFER.h	/^					int				tail;$/;"	m	struct:__anon2
+tail	GLBLS.h	/^	int tail;						\/\/Tail pointer of bubble ring buffer$/;"	m	struct:__anon10
+tail	GLBLS.h	/^	int tail;						\/\/Tail pointer of pattern ring buffer$/;"	m	struct:__anon11
+tbl	MENU.h	/^					int*	tbl;$/;"	m	struct:__anon20
+timeout	SERIAL.h	/^					int				timeout;$/;"	m	struct:__anon22
+tmpf	MENU.h	/^					float	tmpf[10];$/;"	m	struct:__anon20
+tmpi	MENU.h	/^					int		tmpi[10];$/;"	m	struct:__anon20
+tmpv	MENU.h	/^					VAR		tmpv;$/;"	m	struct:__anon20
+tol	VARIABLE.h	41;"	d
+total24	GLBLS.h	/^					float	total24;$/;"	m	struct:__anon7
+tvector	SERIAL.h	/^					int*			tvector;		\/* port timer vector *\/$/;"	m	struct:__anon21
+tvector_main	SERIAL.h	/^					int*			tvector_main;	\/* port timer vector start *\/$/;"	m	struct:__anon21
+txvect	SERIAL.h	/^					int*	txvect;$/;"	m	struct:__anon23
+uP	GLBLS.h	/^_EXTERN BOARD	uP;$/;"	v
+u_DP	GLBLS.h	/^					int		u_DP;$/;"	m	struct:__anon14
+u_P	GLBLS.h	/^					int		u_P;$/;"	m	struct:__anon13
+u_PT	GLBLS.h	/^					int		u_PT;$/;"	m	struct:__anon14
+u_SP	GLBLS.h	/^					int		u_SP;$/;"	m	struct:__anon14
+u_T	GLBLS.h	/^					int		u_T;$/;"	m	struct:__anon13
+u_density	GLBLS.h	/^					int		u_density;$/;"	m	struct:__anon13
+u_density_corrected	GLBLS.h	/^					int		u_density_corrected;$/;"	m	struct:__anon13
+u_m	GLBLS.h	/^					int		u_m;$/;"	m	struct:__anon13
+u_mfr	GLBLS.h	/^					int		u_mfr;$/;"	m	struct:__anon13
+u_v	GLBLS.h	/^					int		u_v;$/;"	m	struct:__anon13
+u_vfr	GLBLS.h	/^					int		u_vfr;$/;"	m	struct:__anon13
+u_visc	GLBLS.h	/^					int		u_visc;$/;"	m	struct:__anon13
+unit	ADC.h	/^					REGVECT	unit;$/;"	m	struct:__anon1
+unit	DAC.h	/^					REGVECT	unit;$/;"	m	struct:__anon3
+unit	GLBLS.h	/^					int		unit;$/;"	m	struct:__anon12
+unit	VARIABLE.h	/^					int		unit;			\/* unit that is read by user *\/$/;"	m	struct:__anon25
+use_totalizer	GLBLS.h	/^					COIL use_totalizer;$/;"	m	struct:__anon16
+v	ADC.h	/^					REGVECT	v;$/;"	m	struct:__anon1
+v	DAC.h	/^					REGVECT		v;$/;"	m	struct:__anon3
+v	GLBLS.h	/^					REGVECT	v;$/;"	m	struct:__anon12
+v	SERIAL.h	/^					float	v[nmax];$/;"	m	struct:__anon23
+v	VARIABLE.h	/^					VAR*	v;$/;"	m	struct:__anon28
+val	ADC.h	/^					float	val;$/;"	m	struct:__anon1
+val	VARIABLE.h	/^					BOOL    val;$/;"	m	struct:__anon26
+val	VARIABLE.h	/^					float	val;			\/* value that is read by user & clipped *\/$/;"	m	struct:__anon25
+val	VARIABLE.h	/^					int     val;$/;"	m	struct:__anon27
+val1	VARIABLE.h	/^					float	val1;			\/* value that is intermediate for dampening *\/$/;"	m	struct:__anon25
+val2	VARIABLE.h	/^					float	val2;			\/* value that is dampened *\/$/;"	m	struct:__anon25
+var_NaNproof	VARIABLE.h	57;"	d
+var_NaNum	VARIABLE.h	49;"	d
+var_alarm_hi	VARIABLE.h	52;"	d
+var_alarm_lo	VARIABLE.h	53;"	d
+var_aux	VARIABLE.h	56;"	d
+var_bound_hi	VARIABLE.h	50;"	d
+var_bound_lo	VARIABLE.h	51;"	d
+var_dampen	VARIABLE.h	46;"	d
+var_no_alarm	VARIABLE.h	48;"	d
+var_no_bound	VARIABLE.h	47;"	d
+var_roll	VARIABLE.h	55;"	d
+var_round	VARIABLE.h	54;"	d
+vect	EXECUTE.h	/^					int*	vect;$/;"	m	struct:__anon4
+vect	TIMER.h	/^					int*	vect;$/;"	m	struct:__anon24
+vect	VARIABLE.h	/^					int*	vect; $/;"	m	struct:__anon26
+vect	VARIABLE.h	/^					int*	vect;$/;"	m	struct:__anon27
+vect1	VARIABLE.h	/^					int*	vect1;$/;"	m	struct:__anon25
+vect2	VARIABLE.h	/^					int*	vect2;$/;"	m	struct:__anon25
+vect2	VARIABLE.h	/^					int*    vect2;\/*Add stream select for Hsalt and Gas routine RS*\/$/;"	m	struct:__anon26
+vect_ex	EXECUTE.h	/^_EXTERN int* vect_ex;$/;"	v
+vect_exec0	MODBUSRTU.h	/^_EXTERN int* vect_exec0;$/;"	v
+vect_exec1	MODBUSRTU.h	/^_EXTERN int* vect_exec1;$/;"	v
+vect_exec2	MODBUSRTU.h	/^_EXTERN int* vect_exec2;$/;"	v
+vect_exec3	MODBUSRTU.h	/^_EXTERN int* vect_exec3;$/;"	v
+vect_exec4	MODBUSRTU.h	/^_EXTERN int* vect_exec4;$/;"	v
+vect_exec5	MODBUSRTU.h	/^_EXTERN int* vect_exec5;$/;"	v
+vect_exec6	MODBUSRTU.h	/^_EXTERN int* vect_exec6;$/;"	v
+vect_exec7	MODBUSRTU.h	/^_EXTERN int* vect_exec7; $/;"	v
+vect_exec8	MODBUSRTU.h	/^_EXTERN int* vect_exec8;\/*added for .vect2 of coils - add stream select PTR RS*\/$/;"	v
+vect_hexec0	HART.h	/^_EXTERN int* vect_hexec0;$/;"	v
+vect_hexec1	HART.h	/^_EXTERN int* vect_hexec1;$/;"	v
+vect_hexec2	HART.h	/^_EXTERN int* vect_hexec2;$/;"	v
+vect_hexec3	HART.h	/^_EXTERN int* vect_hexec3;$/;"	v
+vect_hexec4	HART.h	/^_EXTERN int* vect_hexec4;$/;"	v
+vect_hexec5	HART.h	/^_EXTERN int* vect_hexec5;$/;"	v
+vect_hexec6	HART.h	/^_EXTERN int* vect_hexec6;$/;"	v
+vect_hexec7	HART.h	/^_EXTERN int* vect_hexec7;$/;"	v
+vect_m	MENU.h	/^_EXTERN int* vect_m;$/;"	v
+vect_p0	SERIAL.h	/^_EXTERN int* vect_p0;$/;"	v
+vect_p1	SERIAL.h	/^_EXTERN int* vect_p1;$/;"	v
+vect_p2	SERIAL.h	/^_EXTERN int* vect_p2;$/;"	v
+vect_p3	SERIAL.h	/^_EXTERN int* vect_p3;$/;"	v
+vect_p4	SERIAL.h	/^_EXTERN int* vect_p4;$/;"	v
+vect_p5	SERIAL.h	/^_EXTERN int* vect_p5;$/;"	v
+vect_p6	SERIAL.h	/^_EXTERN int* vect_p6;$/;"	v
+vect_p7	SERIAL.h	/^_EXTERN int* vect_p7;$/;"	v
+vect_pt0	TIMER.h	/^_EXTERN int* vect_pt0;$/;"	v
+vect_pt1	TIMER.h	/^_EXTERN int* vect_pt1;$/;"	v
+vect_pt2	TIMER.h	/^_EXTERN int* vect_pt2;$/;"	v
+vect_pt3	TIMER.h	/^_EXTERN int* vect_pt3;$/;"	v
+vect_pt4	TIMER.h	/^_EXTERN int* vect_pt4;$/;"	v
+vect_pt5	TIMER.h	/^_EXTERN int* vect_pt5;$/;"	v
+vect_pt6	TIMER.h	/^_EXTERN int* vect_pt6;$/;"	v
+vect_pt7	TIMER.h	/^_EXTERN int* vect_pt7;$/;"	v
+vect_tm	TIMER.h	/^_EXTERN int* vect_tm;$/;"	v
+vect_v1	VARIABLE.h	/^_EXTERN int* vect_v1;$/;"	v
+vect_v2	VARIABLE.h	/^_EXTERN int* vect_v2;$/;"	v
+vect_var1	VARIABLE.h	/^_EXTERN int* vect_var1;$/;"	v
+vect_var2	VARIABLE.h	/^_EXTERN int* vect_var2;$/;"	v
+vfr	GLBLS.h	/^					float	vfr;$/;"	m	struct:__anon13
+vfr_cutoff	GLBLS.h	/^					VAR		vfr_cutoff;$/;"	m	struct:__anon13
+visc	GLBLS.h	/^					float	visc;$/;"	m	struct:__anon13
+volume_inv	GLBLS.h	/^					float	volume_inv;$/;"	m	struct:__anon13
+volume_total	GLBLS.h	/^					float	volume_total;$/;"	m	struct:__anon13
+water24	GLBLS.h	/^					float	water24;$/;"	m	struct:__anon7
+water_filter_clipped	GLBLS.h	1377;"	d
+water_filter_density	GLBLS.h	1378;"	d
+water_filter_higher_clipped_oil_or_density	GLBLS.h	1381;"	d
+water_filter_higher_clipped_oil_or_higher_clipped_or_density	GLBLS.h	1382;"	d
+water_filter_higher_clipped_oil_or_water	GLBLS.h	1380;"	d
+water_filter_higher_clipped_or_density	GLBLS.h	1379;"	d
+water_filter_none	GLBLS.h	1376;"	d
+water_freq_in	GLBLS.h	/^_EXTERN double water_freq_in;$/;"	v
+watercut	GLBLS.h	/^					VAR		watercut;$/;"	m	struct:__anon16
+watercut	GLBLS.h	/^					float	watercut;$/;"	m	struct:__anon7

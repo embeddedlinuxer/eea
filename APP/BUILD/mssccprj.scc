@@ -1,0 +1,5 @@
+SCC = This is a Source Code Control file
+
+[pdi.mak]
+SCC_Aux_Path = "\\Server2k\H\VSS\Code Composer"
+SCC_Project_Name = "$/EEA_SA/APP", TOAAAAAA

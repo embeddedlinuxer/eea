@@ -1,0 +1,71 @@
+*V6.11
+*Phase Dynamics Analyzer Profile - Additional Variables
+*Variable Name,Slave,Modbus Address,Variable Type,Scale,r/w,n,Value List
++UNLOCK
++SET_TIME
+**********************************************************************
+Copyright,,45058,char,1,RW,40,"© 2015 Phase Dynamics, Inc.             "
+TAG,,45020,char,1,RW,8,"PD000000"
+Long TAG,,45003,char,1,RW,32,"PHASE DYNAMICS PD000000"
+SN - Measurement Section,,9967,long,1,RW,1,0
+SN - Oscillator,,9983,long,1,RW,1,0
+Initials,,45055,char,1,RW,4,"    "
+Version - Measurement Section,,45053,char,1,RW,2,"  "
+Analyzer Mode,,40020,int,1,W,1,2
+Turn off RA FORCE Mode,,111,bit,1,W,1,0,
+Analyzer Information,,45079,char,1,RW,20,"UNINITIALIZED       ",,,,,,,
+**********************************************************************
+Oscillator - A,,40027,int,1,RW,1,0
+*Note: Calculation occurs upon Osc B
+Oscillator - B,,40028,int,1,RW,1,3,,,,,,,
+External Tune,,110,bit,1,RW,1,1,
+Osc Profile 0 - ENABLE,,501,float,1,RW,1,1
+Osc Profile 1 - ENABLE,,509,float,1,RW,1,0
+Osc Profile 2 - ENABLE,,517,float,1,RW,1,0
+Osc Profile 3 - ENABLE,,525,float,1,RW,1,0
+Osc Profile 0,,503,float,1,RW,3,0,1.0,0.0
+Osc Profile 1,,511,float,1,RW,3,0,2.0,0.0
+Osc Profile 2,,519,float,1,RW,3,1,3.0,0.0
+Osc Profile 3,,527,float,1,RW,3,1,4.0,0.0
+Osc A Freq bound min/max,,727,float,1,RW,2,0.000000,1000.000000
+Osc A Freq lo/hi,,731,float,1,RW,2,0.000000,1000.000000
+Osc B Freq bound min/max,,735,float,1,RW,2,0,1000,,,,,,,,
+Osc B Freq lo/hi,,739,float,1,RW,2,0,1000,,,,,,,,
+Oscillator Settling Times,,751,float,1,RW,2,0.05,0.25,,,,,,,,
+**********************************************************************
+PV Name,,49403,char,1,RW,20,"Process",,,,,,,
+PV Class Code,,49402,int,1,RW,1,90,,,,,,,
+PV Unit Code,,49402,int,1,RW,1,139,,,,,,,
+PV Unit,,49414,char,1,RW,8,"ppm",,,,,,,
+PV dampening,,285,float,1,RW,1,0.000000,
+PV min/max,,287,float,1,RW,2,0.000000,20.000000
+PV Alarm lo/hi,,291,float,1,RW,2,0.000000,20.000000
+**********************************************************************
+Temperature Unit,,40014,int,1,RW,1,32
+Temperature min/max,,713,float,1,RW,2,-279.0,1000.0
+Temperature Alarm lo/hi,,717,float,1,RW,2,4.440000,82.220000
+Temperature Adjust,,721,float,1,RW,1,0.0,,
+**********************************************************************
+Coeff Offset,,251,float,1,RW,1,0,,,
+Coeff Osc A Freq,,253,float,1,RW,2,0,0,,,,,,,,
+Coeff Osc B Freq,,257,float,1,RW,2,0,0,,,,,,,,
+Coeff Osc A RP,,261,float,1,RW,2,0,0,,,,,,,,
+Coeff Osc B RP,,265,float,1,RW,2,0,0,,,,,,,,
+Coeff Osc A IP,,269,float,1,RW,2,0,0,,,,,,,,
+Coeff Osc B IP,,273,float,1,RW,2,0,0,,,,,,,,
+Coeff Temperature,,277,float,1,RW,2,0,0,,,,,,,,
+**********************************************************************
+Oil Phase Filter,,40035,int,1,RW,1,0,
+Oil Phase Maximum,,59,float,1,RW,1,80.0
+Water Phase Filter,,40036,int,1,RW,1,0,
+Water Phase Minimum,,61,float,1,RW,1,50.0
+HSALT.ENABLED,,701,bit,1,RW,1,0,,
+HSALT.flow_threshold,,21901,float,1,RW,1,50.0,
+HSALT.span%,,21903,float,1,RW,1,5.0,
+HSALT.SALT,,21905,float,1,RW,4,0.0,0.0,0.0,0.0,
+HSALT.SPAN A,,21921,float,1,RW,6,0.0,0.0,0.0,0.0,0.0,0.0,
+HSALT.SPAN B,,21933,float,1,RW,6,0.0,0.0,0.0,0.0,0.0,0.0,
+**********************************************************************
+Save User Configuration,,118,bit,1,W,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+CLEAR DIAGNOSTICS,,34,bit,1,W,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
++LOCK

@@ -1,0 +1,161 @@
+TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Nov 29 16:20:35 2017
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30 boot.asm boot.obj -lx -v30 -mrb -iF:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE -iF:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE -iF:\WKDIR\CodeComposer\EEA_SA_V613b\INCLUDE 
+
+boot.asm                                                             PAGE    1
+
+        1                           .length 85
+        2                           .width  132
+        3                   ***************************************************************************
+        4                   * (c) 2004 Phase Dynamics, Inc.                                           *
+        5                   * Phase Dynamics, Inc.                                                    *
+        6                   * 1251 Columbia Dr.                                                       *
+        7                   * Richardson, TX 75081                                                    *
+        8                   * 972-680-1550    972-680-3262 fax                                        *
+        9                   ***************************************************************************
+       10          0000000b FP          .set  AR3             ;frame pointer
+       11                   
+       12                               .global cinit
+       13                               .global .bss
+       14                               .global _cmdargs
+       15                               .global _exit
+       16                               .global _init_io
+       17                               .global _main
+       18                               .global _main1
+       19                               .global _c_int00
+       20                                       .global __stack
+       21                               .global _call_to_main
+       22                               .global _BT
+       23                               .global _BTCOPY
+       24                               .global C$$EXIT
+       25                   ;
+       26                   ; Allocate space for the system stack.
+       27                   ; Initialize the first words in .text to point to the stack
+       28                   ; and initialization tables.
+       29                   ;
+       30 00000000          __stack     .usect  ".stack",0
+       31 00000000                      .text
+       32 00000000 00000000-stack_addr  .word  __stack        ;address of stack
+       33 00000001 00000000!init_addr   .word  cinit          ;address of init tables
+       34                   
+       35                   ***************************************************************
+       36                   * _C_INT00 - C entry point function
+       37                   ***************************************************************
+       38 00000000                      .sect "init_top"
+       39 00000000          _c_int00:
+       40                   
+       41                   ;
+       42                   ; Disable all interrupts
+       43                   ;
+       44 00000000 13fb0001         RPTS    1
+       45 00000001 037507d0         ANDN    2000, ST
+       46 00000002 0c800000         NOP
+       47 00000003 0c800000         NOP
+       48 00000004 0c800000         NOP
+       49                   
+       50 00000005 10800000         MAXSPEED
+       51                   
+       52                   ;
+       53                   ; Set up the initial stack pointer
+       54                   ;
+       55 00000006 08700000'        LDP     stack_addr        ;get page of stored address
+       56 00000007 08340000'        LDI     @stack_addr,SP    ;load the address into SP
+       57 00000008 080b0014         LDI     SP,FP             ;and into FP too
+       58                   
+       59 00000009 08700000'        LDP     init_addr         ;get page of stored address
+       60 0000000a 08280001'        LDI     @init_addr,AR0    ;get address of init tables
+       61 0000000b 04e8ffff         CMPI    -1,AR0            ;if RAM model, skip init
+       62 0000000c 6a05000c         BEQ     done
+       63                   
+       64                   ;
+       65                   ; Do autoinitialization
+       66                   ;
+       67 0000000d 08412001         LDI     *AR0++,R1         ;get first count
+       68 0000000e 6a250008         BZD     done              ;if 0, nothing to do
+       69 0000000f 08492001         LDI     *AR0++,AR1        ;get dest address
+       70 00000010 08402001         LDI     *AR0++,R0         ;get first word
+       71 00000011 18610001         SUBI    1,R1              ;count - 1
+       72 00000012          do_init:
+       73 00000012 139b0001         RPTS    R1                ;block copy
+       74 00000013 da002120         STI     R0,*AR1++
+       75                       ||  LDI     *AR0++,R0
+       76 00000014 08010000         LDI     R0,R1             ;move next count into R1
+       77 00000015 6a26fffa         BNZD    do_init           ;if there is more, repeat
+       78 00000016 08492001         LDI     *AR0++,AR1        ;get next dest address
+       79 00000017 08402001         LDI     *AR0++,R0         ;get next first word
+TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Nov 29 16:20:35 2017
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30 boot.asm boot.obj -lx -v30 -mrb -iF:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE -iF:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE -iF:\WKDIR\CodeComposer\EEA_SA_V613b\INCLUDE 
+
+boot.asm                                                             PAGE    2
+
+       80 00000018 18610001         SUBI    1,R1              ;count - 1
+       81 00000019          done:
+       82 00000019 086a0000         LDI     0,AR2             ;make sure argc=0 with register 
+       83 0000001a 0f2a0000         PUSH    AR2               ;and stack parameter passing
+       84 0000001b          _call_to_main:
+       85 0000001b 62000000!        CALL    _main
+       86                   
+       87 0000001c 0c800000 C$$EXIT: nop
+       88 0000001d 6000001c+                BR              C$$EXIT
+       89                   
+       90 0000001e 78000000         RETI
+       91                   
+       92 00000000                      .sect "varlocs"
+       93 00000000 00000000!                        .word _main1
+       94 00000001 0000001b+                        .word _call_to_main
+       95 00000002 00000000!                        .word _BTCOPY
+       96 00000003 00000000!                        .word _BT
+       97                   
+       98                           .end
+
+ No Errors,  No Warnings
+TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Nov 29 16:20:35 2017
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30 boot.asm boot.obj -lx -v30 -mrb -iF:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE -iF:\WKDIR\CodeComposer\EEA_SA_V613b\BOOT\SOURCE\INCLUDE -iF:\WKDIR\CodeComposer\EEA_SA_V613b\INCLUDE 
+
+boot.asm                                                             PAGE    3
+
+LABEL                            VALUE       DEFN    REF
+
+.BIGMODEL                        00000001       0 
+.C30                             00000001       0 
+.C30INTERRUPT                    00000000       0 
+.C31                             00000000       0 
+.C32                             00000000       0 
+.C33                             00000000       0 
+.C3X                             00000001       0 
+.C3x                             00000001       0 
+.C40                             00000000       0 
+.C44                             00000000       0 
+.C4X                             00000000       0 
+.C4x                             00000000       0 
+.REGPARM                         00000001       0 
+.TMS320C30                       00000001       0 
+.TMS320C31                       00000000       0 
+.TMS320C32                       00000000       0 
+.TMS320C40                       00000000       0 
+.TMS320C44                       00000000       0 
+.TMS320xx                        0000001e       0 
+.bss                             REF                  13 
+.tms320C30                       00000001       0 
+.tms320C31                       00000000       0 
+.tms320C32                       00000000       0 
+.tms320C40                       00000000       0 
+.tms320C44                       00000000       0 
+.tms320xx                        0000001e       0 
+.tmx320C40                       00000000       0 
+C$$EXIT                          0000001c+     87     24     88 
+FP                               0000000b      10     57 
+_BT                              REF                  22     96 
+_BTCOPY                          REF                  23     95 
+__stack                          00000000-     30     20     32 
+_c_int00                         00000000+     39     19 
+_call_to_main                    0000001b+     84     21     94 
+_cmdargs                         REF                  14 
+_exit                            REF                  15 
+_init_io                         REF                  16 
+_main                            REF                  17     85 
+_main1                           REF                  18     93 
+cinit                            REF                  12     33 
+do_init                          00000012+     72     77 
+done                             00000019+     81     62     68 
+init_addr                        00000001'     33     59     60 
+stack_addr                       00000000'     32     55     56 

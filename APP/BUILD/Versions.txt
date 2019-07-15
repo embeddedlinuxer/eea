@@ -1,4 +1,4 @@
-Release 2019_07_11
+Release 2019_07_15
 CPLD:
    EEA    V2.0
    SA_54  0b10110110

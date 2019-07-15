@@ -1,10 +1,10 @@
-#line 109 "G:\workspace\win\eea\APP\SOURCE\INCLUDE\GLBLS.H"
+#line 110 "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\GLBLS.H"
 extern const char* copyright;
 extern const char* credit;
-#line 8 "G:\workspace\win\eea\INCLUDE\stdarg.h"
+#line 8 "G:\workspace\EEA\V615\INCLUDE\stdarg.h"
 typedef char *va_list;
 
-#line 15 "G:\workspace\win\eea\INCLUDE\format.h"
+#line 15 "G:\workspace\EEA\V615\INCLUDE\format.h"
 extern int _scanfi(void *inp, const char *_format, va_list _ap,
             int (*_chkmbc)(void **inp, char **_format, int *num_read),
             char (*_inpchar)(void **inp),
@@ -32,7 +32,7 @@ typedef struct {
  
  
 
-#line 14 "G:\workspace\win\eea\INCLUDE\string.h"
+#line 14 "G:\workspace\EEA\V615\INCLUDE\string.h"
 typedef unsigned size_t;
 #line 26
  void   *memchr(const void *_mem, int _ch, size_t _length);
@@ -59,7 +59,7 @@ typedef unsigned size_t;
          char   *strtok(char *_str1, const char *_str2);
          size_t  strxfrm(char *_to, const char *_from, size_t _n);
 
-#line 16 "G:\workspace\win\eea\INCLUDE\stdio.h"
+#line 16 "G:\workspace\EEA\V615\INCLUDE\stdio.h"
 typedef struct {
          int fd;                     
          unsigned char* buf;         
@@ -180,7 +180,7 @@ extern int       add_device(char           *name,
                   long           (*dlseek)(),
                   int            (*dunlink)(),
                   int            (*drename)());
-#line 24 "G:\workspace\win\eea\INCLUDE\stdlib.h"
+#line 24 "G:\workspace\EEA\V615\INCLUDE\stdlib.h"
 typedef char wchar_t;
 
 
@@ -234,7 +234,7 @@ div_t         div(int _numer, int _denom);
 div_t         ldiv(long _numer, long _denom);
 
 char         *getenv(const char *_string);
-#line 19 "G:\workspace\win\eea\INCLUDE\math.h"
+#line 19 "G:\workspace\EEA\V615\INCLUDE\math.h"
          double asin(double _x);
          double acos(double _x);
          double atan(double _x);
@@ -258,7 +258,7 @@ char         *getenv(const char *_string);
          double tan(double _x);
          double tanh(double _x);
 
-#line 14 "G:\workspace\win\eea\INCLUDE\time.h"
+#line 14 "G:\workspace\EEA\V615\INCLUDE\time.h"
 typedef unsigned long clock_t;
 typedef unsigned long time_t;
 
@@ -299,10 +299,10 @@ struct tm *localtime(const time_t *_timer);
 size_t     strftime(char *_out, size_t _maxsize, const char *_format, 
 		    const struct tm *_timeptr);
 
-#line 30 "G:\workspace\win\eea\INCLUDE\ETC.H"
+#line 30 "G:\workspace\EEA\V615\INCLUDE\ETC.H"
 typedef unsigned int BOOL;
 
-#line 32 "G:\workspace\win\eea\INCLUDE\LIST.H"
+#line 32 "G:\workspace\EEA\V615\INCLUDE\LIST.H"
 typedef struct 	{
 					int*	head;
 					int*	tail;
@@ -321,7 +321,7 @@ extern BOOL List_Push(LIST *l, GENERIC *p);
 extern GENERIC* List_Pop(LIST *l);
 extern BOOL List_Init(LIST *l);
 
-#line 59 "G:\workspace\win\eea\APP\SOURCE\INCLUDE\VARIABLE.H"
+#line 59 "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\VARIABLE.H"
 typedef struct 	{
 					float	val;			 
 
@@ -417,7 +417,7 @@ extern int* vect_v2;
 extern int* vect_var1;
 extern int* vect_var2;
 
-#line 36 "G:\workspace\win\eea\APP\SOURCE\INCLUDE\BUFFER.H"
+#line 36 "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\BUFFER.H"
 typedef struct	{
 					int				head;
 					int				tail;
@@ -437,9 +437,9 @@ extern unsigned int Get(BFR* buffer);
 extern BOOL Put_n(BFR* buffer, unsigned char* b, int n, BOOL CRC);
 extern void Clear(BFR* buffer);
 
-#line 445 "G:\workspace\win\eea\INCLUDE\UNITS.H"
+#line 445 "G:\workspace\EEA\V615\INCLUDE\UNITS.H"
 extern const float* MASTER_UNITS;
-#line 34 "G:\workspace\win\eea\APP\SOURCE\INCLUDE\TIMER.H"
+#line 34 "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\TIMER.H"
 typedef struct	{
 					int*	prev;
 					int*	next;
@@ -501,7 +501,7 @@ extern BOOL GATE_TIMEOUT;
 extern float TIME0;
 extern float TIME1;
 
-#line 115 "G:\workspace\win\eea\INCLUDE\I2C.H"
+#line 115 "G:\workspace\EEA\V615\INCLUDE\I2C.H"
 extern void I2C_RX_BYTE(unsigned char* b, BOOL ack);
 extern BOOL I2C_TX_BYTE(unsigned char b);
 extern BOOL Read_I2C(int addr, int n, unsigned char* p);
@@ -553,7 +553,7 @@ extern unsigned int  LCD_CNT;
  
  
  
-#line 30 "G:\workspace\win\eea\APP\SOURCE\INCLUDE\ERRORS.H"
+#line 30 "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\ERRORS.H"
 #pragma DATA_SECTION(REG_DIAG,"CFG")
 extern VAR REG_DIAG[5];
 extern int DIAG_TEMP[2];
@@ -569,7 +569,7 @@ extern COIL DIO_ERROR;
 extern COIL DIO_ALARM;
 
  
-#line 45 "G:\workspace\win\eea\APP\SOURCE\INCLUDE\SERIAL.H"
+#line 45 "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\SERIAL.H"
 typedef struct	{
 					int				Slave;
 					int				SNUM;
@@ -720,7 +720,7 @@ extern void TX_S(int id);
 extern void TX_S1(int id);
 extern void Port_Defaults(BOOL FORCE);
 
-#line 55 "G:\workspace\win\eea\APP\SOURCE\INCLUDE\ADC.H"
+#line 55 "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\ADC.H"
 extern int ADC_INT[12];
 extern int TLV_REF[3];
 
@@ -758,7 +758,7 @@ extern void Convert_ADC(void);
 extern void Read_ADC_FIFO(void);
 extern void Read_ADC_test(void);
 
-#line 35 "G:\workspace\win\eea\APP\SOURCE\INCLUDE\DAC.H"
+#line 35 "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\DAC.H"
 extern void Setup_DAC(int n);
 
 #line 72
@@ -807,7 +807,7 @@ extern void MB_RX_DAC_Aout(int id, int i);
 extern void MB_RX_DAC_Aout6_7(int id);
 extern void MB_RX_DAC_Aout8_9(int id);
 
-#line 33 "G:\workspace\win\eea\APP\SOURCE\INCLUDE\EXECUTE.H"
+#line 33 "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\EXECUTE.H"
 typedef struct	{
 					int*	prev;
 					int*	next;
@@ -826,7 +826,7 @@ extern LIST LIST_EXEC_EMPTY;
 
 extern int* vect_ex;
 
-#line 44 "G:\workspace\win\eea\INCLUDE\FLASH.H"
+#line 44 "G:\workspace\EEA\V615\INCLUDE\FLASH.H"
 extern unsigned int* SRAM_SCRATCHPAD;
 #line 107
 extern unsigned int FLASH_SIZE(void);
@@ -840,7 +840,7 @@ extern void FLASH_READ_ESN_USER(unsigned int* dat);
 extern int FLASH_WRITE_ESN_USER(unsigned int* dat);
 extern int FLASH_LOCK_ESN_USER(void);
 
-#line 71 "G:\workspace\win\eea\APP\SOURCE\INCLUDE\LOG.H"
+#line 71 "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\LOG.H"
 typedef struct	{
 					unsigned int log_len;
 					unsigned int log_n_sectors;
@@ -895,10 +895,10 @@ extern void EraseSector(LOG* log, unsigned int s);
 extern void MarkLogStart(LOG* log, unsigned int s);
 extern void RecordLogEntry(LOG* log, int mode, unsigned int* p);
 
-#line 33 "G:\workspace\win\eea\APP\SOURCE\INCLUDE\DEMO.H"
+#line 33 "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\DEMO.H"
 extern void DEMO_Init(VAR* v);
 
-#line 46 "G:\workspace\win\eea\APP\SOURCE\INCLUDE\SELFTEST.H"
+#line 46 "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\SELFTEST.H"
 extern void Set_Diag_Status(void);
 extern void Self_Test1(void);
 extern void Self_Test2(void);
@@ -908,7 +908,7 @@ extern void Self_Test5(void);
 extern void Self_Test_FULL(void);
 extern void Clear_Diagnostics(void);
 
-#line 32 "G:\workspace\win\eea\APP\SOURCE\INCLUDE\MENU.H"
+#line 32 "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\MENU.H"
 extern void Update_Flags_Goto_Next_Menu(BOOL cfg, BOOL skip_adv);
 extern void MSVE_Data_Input(char* title, char* varname, int iw, int ip, BOOL is, BOOL sci, VAR* v, BOOL skip_save, BOOL skip_adv);
 
@@ -996,17 +996,17 @@ extern MENU_STRUCT MSVE;
 
 extern int* vect_m;
 
-#line 23 "G:\workspace\win\eea\APP\SOURCE\INCLUDE\FLOAT1.H"
+#line 23 "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\FLOAT1.H"
 extern unsigned int TOIEEE(float v);
 extern float FMIEEE(unsigned int v);
 
-#line 156 "G:\workspace\win\eea\APP\SOURCE\INCLUDE\GLBLS.H"
+#line 157 "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\GLBLS.H"
 extern unsigned int CLOCK;
 extern BOOL LED_GREEN;
 extern BOOL OSWITCH;
 extern void c_int00(void);
 
-#line 200
+#line 201
 extern unsigned int ESN_USER[5];
 extern unsigned int ESN_MFGR[5];
 
@@ -1416,7 +1416,7 @@ extern float stream_delta_temp[60];
 
 
  
-#line 630
+#line 631
 #pragma DATA_SECTION(OIL_PHASE_ONLY_ENABLE,"CFG")
 extern float OIL_PHASE_ONLY_ENABLE[60];
 #pragma DATA_SECTION(WATER_PHASE_ONLY_ENABLE,"CFG")
@@ -1599,7 +1599,7 @@ extern BOOL BOXCAR_RESET;
 
 
  
-#line 819
+#line 820
 #pragma DATA_SECTION(REG_CCM_TEST_STAT,"CFG")         
 extern VAR REG_CCM_TEST_STAT;                         
 
@@ -1773,11 +1773,11 @@ extern VAR EXTENDED_FW_VERSION_ENABLE;
 #pragma DATA_SECTION(GAS_ENTRAINED,"CFG")
 extern COIL GAS_ENTRAINED;  
  
-#line 1003
+#line 1004
 #pragma DATA_SECTION(GAS_ENTRAINED_DENS_DETECT,"CFG")
 extern COIL GAS_ENTRAINED_DENS_DETECT;   
  
-#line 1019
+#line 1020
 enum Pulse_Input_Type
 {
 	PULSE_GAS_TEMP 		= 1,
@@ -1800,7 +1800,7 @@ enum Pulse_Input_Type
 
 
 
-#line 1054
+#line 1055
 #pragma DATA_SECTION(boxcar_expire_val,"CFG")
 extern VAR boxcar_expire_val;
 
@@ -2097,7 +2097,7 @@ typedef struct 	{
 	    		} CORIOLIS;
 extern CORIOLIS COR[5];
 
-#line 1382
+#line 1383
 typedef struct 	{
 					float	p_delta;
 					float	p_static;
@@ -2263,7 +2263,7 @@ extern float compatibility_dummy;
 
 
 		 
-#line 1578
+#line 1579
 #pragma DATA_SECTION(ALFAT_RX,"internal_RAM")
 extern	char	ALFAT_RX[128]; 
 
@@ -2362,10 +2362,10 @@ extern VAR Hsalt_Min_WC;
 #pragma DATA_SECTION(AVG_RESET,"CFG")
 extern COIL AVG_RESET;
 
-#line 1680
+#line 1681
 extern void Setup_Basics(void);
 
-#line 44 "G:\workspace\win\eea\APP\SOURCE\INCLUDE\HART.H"
+#line 44 "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\HART.H"
 #pragma DATA_SECTION(HART_VAR_LIST,"CFG")
 extern unsigned int	HART_VAR_LIST[4];
 #pragma DATA_SECTION(HART_BURST_VAR_LIST,"CFG")
@@ -2409,7 +2409,7 @@ extern const int* HART_DVI_Table;
 extern const int* HART_DV_Table;
 extern const int* HART_DVOUTPUT_Table;
 extern const int* HART_DVINPUT_Table;
-#line 31 "G:\workspace\win\eea\APP\SOURCE\INCLUDE\MODBUSRTU.H"
+#line 31 "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\MODBUSRTU.H"
 extern BOOL   MODBUS_CRITICAL_ERROR;
 
 #line 143
@@ -2512,7 +2512,7 @@ extern int* vect_exec6;
 extern int* vect_exec7; 
 extern int* vect_exec8; 
 
-#line 36 "G:\workspace\win\eea\APP\SOURCE\INCLUDE\MISC.H"
+#line 36 "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\MISC.H"
 extern void Initialize_Periodic_Events(void);
 extern unsigned int Calc_CRC(unsigned int* s, unsigned int n);
 
@@ -2864,7 +2864,7 @@ extern inline void Update_Boxcar();
 extern inline void	Update_Pattern();
 extern inline void	Update_Bubble();
 
-#line 29 "G:\workspace\win\eea\APP\SOURCE\INCLUDE\API.H"
+#line 29 "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\API.H"
  void API_VCF(FLOW_COMP* f, float* VCFw, float* VCFo);
  double API_15C_PT(const int fcidx, const double r, int* k_set);
  double API_60F_PT(const int fcidx, const double r, int* k_set);

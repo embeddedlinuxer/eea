@@ -1,14 +1,13 @@
-####################################################
-####################################################
-
 VER = 6.15.02
 VER2 = 6_15_02
 
-STORY0 = 55
-STORY0_TITLE = "$(STORY0) : EEA - Incorrect max_addr set on ports other than port 0 in HART_5"
+BUGS = "55 : Incorrect max_addr set on ports other than port 0 in HART_5. (http://bug.phasedynamics.com/bugzilla/show_bug.cgi?id=55)\n57 : REG_OIL_ADJ value wrongfully applied to a single curve (http://bug.phasedynamics.com/bugzilla/show_bug.cgi?id=57)\n58 : Capture Oil does not function properly (http://bug.phasedynamics.com/bugzilla/show_bug.cgi?id=58)"
 
-########## DO NOT CHANGE AFTER THIS LINE ###########
-####################################################
+##############################################
+##############################################
+### DO NOT CHANGE ANYTHING AFTER THIS LINE ###
+##############################################
+##############################################
 
 PRODUCT = EEA
 TIME_STAMP = `date +'%Y_%m_%d'`
@@ -42,7 +41,7 @@ LINE4 = "VERSION      : $(VER)"
 LINE5 = "RELEASE DATE : $(RELEASE_DATE)"
 LINE6 = "-----------------------------------------------------"
 LINE7 = "-----------------------------------------------------"
-LINE8 = "BUG FIX & CHANGES INCLUDED"
+LINE8 = "BUG FIX & CHANGES"
 LINE9 = "-----------------------------------------------------"
 LINE10 = "-----------------------------------------------------"
 LINE11 = "MD5 HASHES"
@@ -88,7 +87,7 @@ md5hash	:
 	@$(ECHO) $(LINE7) >> $(RELEASE_NOTE_FILE)
 	@$(ECHO) $(LINE8) >> $(RELEASE_NOTE_FILE)
 	@$(ECHO) $(LINE9) >> $(RELEASE_NOTE_FILE)
-	@$(ECHO) $(STORY0_TITLE) >> $(RELEASE_NOTE_FILE)
+	@$(ECHO) $(BUGS) >> $(RELEASE_NOTE_FILE)
 	@$(ECHO) "" 		 >> $(RELEASE_NOTE_FILE)
 	@$(ECHO) "" 		 >> $(RELEASE_NOTE_FILE)
 	@$(ECHO) "" 		 >> $(RELEASE_NOTE_FILE)

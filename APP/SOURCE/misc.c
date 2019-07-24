@@ -356,125 +356,102 @@ void Poll(void)
 
 					if (TEMP_OIL_MAX && !error)
 					{ 
-						if (REG_VREF[OSC_OIL_CALC].calc_val > thresh)
-						{
-							for (i=1;i<TEMP_OIL_MAX;i++)
-								if (t<TEMPS_OIL[i]) break;
-
-							ot_index = 0;
-							cf_index = i;
-
-							for (;;)
-							{
-								ot[ot_index] = 
-									COEFF_TEMP_OIL[cf_index][3]*REG_FREQ[OSC_OIL_CALC].calc_val*REG_FREQ[OSC_OIL_CALC].calc_val*REG_FREQ[OSC_OIL_CALC].calc_val +
-						   			COEFF_TEMP_OIL[cf_index][2]*REG_FREQ[OSC_OIL_CALC].calc_val*REG_FREQ[OSC_OIL_CALC].calc_val +
-									COEFF_TEMP_OIL[cf_index][1]*REG_FREQ[OSC_OIL_CALC].calc_val +
-									COEFF_TEMP_OIL[cf_index][0];
-
-								ot_index++;
-								if (ot_index > 1) break;
-								else cf_index--;
-							}
-
-                           	w = Interpolate(ot[0], TEMPS_OIL[i], ot[1], TEMPS_OIL[i-1], t);
-                         	REG_WATERCUT_RAW = w;
-                         	w += REG_OIL_ADJ.calc_val;
-
-                            // APR 17, 2019 BY DKOH
-                            // WE NO LONGER SUPPORT OIL_CALC_MODE 1 AND 2, HENCE REMOVED
-							// max with only 1 curve -DHA
-							//if (OIL_CALC_MODE==1) 
-						    //	if (w > OIL_CALC_MAX[0]) w = OIL_CALC_MAX[0];
-							// max with 2 curves -DHA
-							//else if (OIL_CALC_MODE==2)
-							//	if (w > OIL_CALC_MAX[1]) w = OIL_CALC_MAX[1];
-							
-							// no max if oil_calc_mode = (0 or 3)
-							WC = w;
-
-							// decide watercut threshold 
-							OIL_CALC_DEFAULT = 37.0;
-                            // IF THE USER ENTERS THREASHOLD VALUE VIA OIL_CALC_CUTOFF, THEN USE THAT THREASHOLD.
-							(OIL_CALC_CUTOFF > 0) ? (watercutThreshold = OIL_CALC_CUTOFF) : (watercutThreshold = OIL_CALC_DEFAULT);
-
-							// USE A SINGLE CURVE IF "(OIL_CALC_MODE == 0)"
-							if (OIL_CALC_MODE == 0)
+                        /* LOWCUT calculation */
+                        switch(OIL_CALC_MODE)
+                        {
+                            case 2:
+                            case 3:
                             {
-								REG_WATERCUT_RAW = w;
-                            	w 				+= REG_OIL_ADJ.calc_val;
-                            	WC 				 = w;
-								break;
-							}
-							// USE DUAL CURVES IF (OIL_CALC_MODE != 0)
-							else
-                            {
-                                if (w <= watercutThreshold)
-							    {
-								    REG_WATERCUT_RAW = w;
-                            	    w 				+= REG_OIL_ADJ.calc_val;
-                            	    WC 				 = w;
-								    break;
-							    }
-							    // Otherwise, use the second curve when (OIL_CALC_MODE == 3)
-							    else
-							    {
-								    for (i=1;i<TEMP_OIL_MAX;i++)
-									    if (t<TEMPS_OIL[i+3]) break;
+                                if (REG_VREF[OSC_OIL_CALC].calc_val > thresh)
+                                {
+                                    for (i=1;i<TEMP_OIL_MAX;i++)
+                                    {
+                                        //if (REG_TEMPERATURE_EXTERNAL.calc_val<TEMPS_OIL[i+3]) 
+                                        if (t<TEMPS_OIL[i+3]) break;// (2/2/2016)
+                                            
+                                    }
 
-								    ot_index = 0;
-								    cf_index = i+3;
+                                    j     = i-1;
+                                    ot[0] = COEFF_TEMP_OIL[i+3][3]*REG_FREQ[OSC_OIL_CALC].calc_val*REG_FREQ[OSC_OIL_CALC].calc_val*REG_FREQ[OSC_OIL_CALC].calc_val +
+                                            COEFF_TEMP_OIL[i+3][2]*REG_FREQ[OSC_OIL_CALC].calc_val*REG_FREQ[OSC_OIL_CALC].calc_val +
+                                            COEFF_TEMP_OIL[i+3][1]*REG_FREQ[OSC_OIL_CALC].calc_val +
+                                            COEFF_TEMP_OIL[i+3][0];
+                                    ot[1] = COEFF_TEMP_OIL[j+3][3]*REG_FREQ[OSC_OIL_CALC].calc_val*REG_FREQ[OSC_OIL_CALC].calc_val*REG_FREQ[OSC_OIL_CALC].calc_val +
+                                            COEFF_TEMP_OIL[j+3][2]*REG_FREQ[OSC_OIL_CALC].calc_val*REG_FREQ[OSC_OIL_CALC].calc_val +
+                                            COEFF_TEMP_OIL[j+3][1]*REG_FREQ[OSC_OIL_CALC].calc_val +
+                                            COEFF_TEMP_OIL[j+3][0];
+                                    w     = Interpolate(ot[0], TEMPS_OIL[i], ot[1], TEMPS_OIL[j], t);
 
-								    for (;;)
-								    {
-									    ot[ot_index] = 
-									    COEFF_TEMP_OIL[cf_index][3]*REG_FREQ[OSC_OIL_CALC].calc_val*REG_FREQ[OSC_OIL_CALC].calc_val*REG_FREQ[OSC_OIL_CALC].calc_val +
-						   			    COEFF_TEMP_OIL[cf_index][2]*REG_FREQ[OSC_OIL_CALC].calc_val*REG_FREQ[OSC_OIL_CALC].calc_val +
-									    COEFF_TEMP_OIL[cf_index][1]*REG_FREQ[OSC_OIL_CALC].calc_val +
-									    COEFF_TEMP_OIL[cf_index][0];
-
-									    ot_index++;
-									    if (ot_index > 1) break;
-									    else cf_index--;
-								    }
-
-                            	    w = Interpolate(ot[0], TEMPS_OIL[i], ot[1], TEMPS_OIL[i-1], t);
-								    REG_WATERCUT_RAW = w;
-                            	    w += REG_OIL_ADJ.calc_val;
-                            	    WC = w;
-								    break;
-							    }
+                                    if ((w>OIL_CALC_CUTOFF) || (OIL_CALC_MODE==2))
+                                    {// w > OIL_CALC_CUTOFF --> use the second curve (i+3)
+                                        REG_WATERCUT_RAW = w;
+                                        w               += REG_OIL_ADJ.calc_val;
+                                        WC               = w;
+                                        break;
+                                    }
+                                    else; //move on to next switch branch if w < OIL_CALC_CUTOFF    -DHA
+                                }
+                                else
+                                {
+                                    w                = VAR_Get_Unit_Param(&REG_WATERCUT, reg_direct_bmax, 0, 0);
+                                    REG_WATERCUT_RAW = w;
+                                    WC               = w;
+                                    WC_STAT          = rollover;
+                                    break;
+                                }
                             }
-						}
-						else
-                    	{
-                            // APR 17, 2019 BY DKOH
-                            // WE NO LONGER SUPPORT OIL_CALC_MODE 1 AND 2. HENCE, REMOVED
-/*
-							if (OIL_CALC_MODE==1)
-                               	if (w > OIL_CALC_MAX[0]) w = OIL_CALC_MAX[0];
-                            else if (OIL_CALC_MODE==2)
-                                if (w > OIL_CALC_MAX[1]) w = OIL_CALC_MAX[1];
-*/
-                            w = VAR_Get_Unit_Param(&REG_WATERCUT, reg_direct_bmax, 0, 0);
-                                   
-                            REG_WATERCUT_RAW = w;
-                            WC               = w;
-                            WC_STAT          = rollover;
+                            case 0:
+                            case 1:
+                            default:
+                            {
+                                if (REG_VREF[OSC_OIL_CALC].calc_val > thresh)
+                                {
+                                    for (i=1;i<TEMP_OIL_MAX;i++)
+                                    {
+                                        if (t<TEMPS_OIL[i]) break;// (2/2/2016)
+                                    }
 
-                            if ((mode&0xFF) == SUB_MID) VAR_Update(&REG_EMULSION_PHASE, 1.0, 0, 0); /* indicate water phase */
+                                    j     = i-1;
+                                    ot[0] = COEFF_TEMP_OIL[i][3]*REG_FREQ[OSC_OIL_CALC].calc_val*REG_FREQ[OSC_OIL_CALC].calc_val*REG_FREQ[OSC_OIL_CALC].calc_val +
+                                            COEFF_TEMP_OIL[i][2]*REG_FREQ[OSC_OIL_CALC].calc_val*REG_FREQ[OSC_OIL_CALC].calc_val +
+                                            COEFF_TEMP_OIL[i][1]*REG_FREQ[OSC_OIL_CALC].calc_val +
+                                            COEFF_TEMP_OIL[i][0];
+                                    ot[1] = COEFF_TEMP_OIL[j][3]*REG_FREQ[OSC_OIL_CALC].calc_val*REG_FREQ[OSC_OIL_CALC].calc_val*REG_FREQ[OSC_OIL_CALC].calc_val +
+                                            COEFF_TEMP_OIL[j][2]*REG_FREQ[OSC_OIL_CALC].calc_val*REG_FREQ[OSC_OIL_CALC].calc_val +
+                                            COEFF_TEMP_OIL[j][1]*REG_FREQ[OSC_OIL_CALC].calc_val +
+                                            COEFF_TEMP_OIL[j][0];
 
-                            break;
-						}
-					}	
-					else
-					{
-						WC_STAT          = rollover;
+                                    w                = Interpolate(ot[0], TEMPS_OIL[i], ot[1], TEMPS_OIL[j], t); // (2/2/2016)
+                                    REG_WATERCUT_RAW = w;
+                                    w               += REG_OIL_ADJ.calc_val;
+
+                                    WC = w;
+                                }
+                                else // RP below P0 -DHA
+                                {
+                                    w = VAR_Get_Unit_Param(&REG_WATERCUT, reg_direct_bmax, 0, 0);
+                                    REG_WATERCUT_RAW = w;
+                                    WC               = w;
+                                    WC_STAT          = rollover;
+
+                                    if ((mode&0xFF) == SUB_MID) VAR_Update(&REG_EMULSION_PHASE, 1.0, 0, 0); /* indicate water phase */
+                                }
+
+                                break;
+                            }
+                        }
+                    }
+                    else
+                    {
+                        WC_STAT          = rollover;
                         w                = 0.0;
                         WC               = 0.0;
                         REG_WATERCUT_RAW = 0.0;
+
                         VAR_NaN(&REG_WATERCUT);
-					}
+                    }
+
+                    break;
 				}
                 case SUB_HIGH:
 				case SUB_FULL:
@@ -627,57 +604,42 @@ void Poll(void)
 						if (w > Oil_Phase_Maximum.calc_val) w = Oil_Phase_Maximum.calc_val;  
 						
 						OIL_CALC_DEFAULT = 10.0;
+                        // if user changed OIL_CALC_CUTOFF, then use it. Otherwise, use a factory default OIL_CALC_DEFAULT which is 10.0
 						(OIL_CALC_CUTOFF > 0) ? (watercutThreshold = OIL_CALC_CUTOFF) : (watercutThreshold = OIL_CALC_DEFAULT);
 
 						// USE THE FIRST CURVE ONLY IF "OIL_CALC_MODE == 0"
-                        if (OIL_CALC_MODE == 0)
-						{ 
-							REG_WATERCUT_RAW = w;
-							w 				+= REG_OIL_ADJ.calc_val;
-							WC 				 = w;
-						}
-						// USE THE DUAL CURVE IF "OIL_CALC_MODE != 0"
-                        else
-						{
-                            if (w<=watercutThreshold)
-						    { 
-							    REG_WATERCUT_RAW = w;
-							    w 				+= REG_OIL_ADJ.calc_val;
-							    WC 				 = w;
-						    }
-						    // USE THE SECOND CURVE IF "WC > watercutThreshold"
-						    else
-						    {	 
-							    // find the two oil-temp-curves for which the current temperature falls between
-							    for (i=1;i<(TEMP_OIL_MAX-3);i++)    //TEMP_OIL_MAX suppose = 3 as i+3 are used instead of i as below 
-								    if (t<TEMPS_OIL[i+3]) break;
+                        if (w<=watercutThreshold)
+					    { 
+						    REG_WATERCUT_RAW = w;
+						    w 				+= REG_OIL_ADJ.calc_val;
+						    WC 				 = w;
+					    }
+					    // USE THE SECOND CURVE IF "WC > watercutThreshold"
+					    else
+					    {	 
+						    // find the two oil-temp-curves for which the current temperature falls between
+						    for (i=1;i<(TEMP_OIL_MAX-3);i++)    //TEMP_OIL_MAX suppose = 3 as i+3 are used instead of i as below 
+							    if (t<TEMPS_OIL[i+3]) break;
+                            
+                            j     = i-1; 
+                            ot[0] = COEFF_TEMP_OIL[i+3][3]*REG_FREQ[OSC_OIL_CALC].calc_val*REG_FREQ[OSC_OIL_CALC].calc_val*REG_FREQ[OSC_OIL_CALC].calc_val +
+                                    COEFF_TEMP_OIL[i+3][2]*REG_FREQ[OSC_OIL_CALC].calc_val*REG_FREQ[OSC_OIL_CALC].calc_val +
+                                    COEFF_TEMP_OIL[i+3][1]*REG_FREQ[OSC_OIL_CALC].calc_val +
+                                    COEFF_TEMP_OIL[i+3][0];
+                            ot[1] = COEFF_TEMP_OIL[j+3][3]*REG_FREQ[OSC_OIL_CALC].calc_val*REG_FREQ[OSC_OIL_CALC].calc_val*REG_FREQ[OSC_OIL_CALC].calc_val +
+                                    COEFF_TEMP_OIL[j+3][2]*REG_FREQ[OSC_OIL_CALC].calc_val*REG_FREQ[OSC_OIL_CALC].calc_val +
+                                    COEFF_TEMP_OIL[j+3][1]*REG_FREQ[OSC_OIL_CALC].calc_val +
+                                    COEFF_TEMP_OIL[j+3][0];
+                            w     = Interpolate(ot[0], TEMPS_OIL[i], ot[1], TEMPS_OIL[j], REG_TEMPERATURE_EXTERNAL.calc_val);
 
-							    ot_index = 0;
-							    cf_index = i+3;
-							    for (;;)
-							    {
-								    ot[ot_index] = 
-								    COEFF_TEMP_OIL[cf_index][3]*REG_FREQ[OSC_OIL_CALC].calc_val*REG_FREQ[OSC_OIL_CALC].calc_val*REG_FREQ[OSC_OIL_CALC].calc_val +
-						   		    COEFF_TEMP_OIL[cf_index][2]*REG_FREQ[OSC_OIL_CALC].calc_val*REG_FREQ[OSC_OIL_CALC].calc_val +
-								    COEFF_TEMP_OIL[cf_index][1]*REG_FREQ[OSC_OIL_CALC].calc_val +
-								    COEFF_TEMP_OIL[cf_index][0];
+						    // limit water/oil phase watetcut	
+						    if (w > Oil_Phase_Maximum.calc_val) w = Oil_Phase_Maximum.calc_val;
 
-								    ot_index++;
-								    if (ot_index > 1) break;
-								    else cf_index--;
-							    }
-
-							    w = Interpolate(ot[0], TEMPS_OIL[i], ot[1], TEMPS_OIL[i-1], REG_TEMPERATURE_EXTERNAL.calc_val);
-
-							    // limit water/oil phase watetcut	
-							    if (w > Oil_Phase_Maximum.calc_val) w = Oil_Phase_Maximum.calc_val;
-
-							    REG_WATERCUT_RAW = w;
-							    w += REG_OIL_ADJ.calc_val;
-							    WC = w;
-						    }
-                        }
-					}
+						    REG_WATERCUT_RAW = w;
+						    w += REG_OIL_ADJ.calc_val;
+						    WC = w;
+					    }
+                    }
 					/******END: Implement oil dual curve, can be optimized and simplified   *****************************/
 //////////////////////////////////////////////////////////////////////////////////
 				

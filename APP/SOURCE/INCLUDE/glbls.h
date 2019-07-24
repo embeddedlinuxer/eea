@@ -47,7 +47,7 @@
 /////////////////////////////////////////////////////////////////////////////
 
 #define FIRMWARE_VERSION	 			615
-#define FIRMWARE_SUBVERSION				02 // http://bug.phasedynamics.com/bugzilla/show_bug.cgi?id=55
+#define FIRMWARE_SUBVERSION				02
 
 /*
 	SUBVERSION CHANGES: ('->' arrow denotes partially non-cumulative release, i.e. a separate branch)

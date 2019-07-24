@@ -1,11 +1,11 @@
-TMS320C3x/4x COFF AssemblerVersion 5.12     Mon Jul 15 11:12:32 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_2M4.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_FUO.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\execute.asm                     PAGE    1
 
         1                   ;******************************************************************************
         2                   ;* TMS320C3x/4x ANSI C Code Generator                            Version 5.11 *
-        3                   ;* Date/Time created: Mon Jul 15 11:12:33 2019                                *
+        3                   ;* Date/Time created: Wed Jul 24 11:03:48 2019                                *
         4                   ;******************************************************************************
         5                           .regalias       ; enable floating point register aliases
         6          0000000b fp      .set    ar3
@@ -22,7 +22,7 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\execute.asm                     PAGE    1
        17                   ;*   Calls              : Normal Library ASM calls                            *
        18                   ;*   Debug Info         : Standard TI Debug Information                       *
        19                   ;******************************************************************************
-       20                   ;       C:\tic3x4x\c3x4x\cgtools\bin\ac30.exe -@_2M4.AAA 
+       20                   ;       C:\tic3x4x\c3x4x\cgtools\bin\ac30.exe -@_FUO.AAA 
        21                           .file   "execute.c"
        22                           .file   "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\GLBLS.H"
        23                           .file   "G:\workspace\EEA\V615\INCLUDE\stdarg.h"
@@ -57,8 +57,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\execute.asm                     PAGE    1
        52                           .eos
        53                           .sym    _FILE,0,8,13,224,.fake2
        54                           .sym    _fpos_t,0,5,13,32
-TMS320C3x/4x COFF AssemblerVersion 5.12     Mon Jul 15 11:12:32 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_2M4.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_FUO.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\execute.asm                     PAGE    2
 
@@ -116,8 +116,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\execute.asm                     PAGE    2
       106                           .member _prev,0,20,8,32
       107                           .member _next,32,20,8,32
       108                           .eos
-TMS320C3x/4x COFF AssemblerVersion 5.12     Mon Jul 15 11:12:32 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_2M4.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_FUO.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\execute.asm                     PAGE    3
 
@@ -175,8 +175,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\execute.asm                     PAGE    3
       160                           .member _buff,160,62,8,9600,,300
       161                           .member _sum,9760,4,8,32
       162                           .member _locked,9792,14,8,32
-TMS320C3x/4x COFF AssemblerVersion 5.12     Mon Jul 15 11:12:32 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_2M4.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_FUO.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\execute.asm                     PAGE    4
 
@@ -234,8 +234,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\execute.asm                     PAGE    4
       214                           .member _ai,1536,4,8,32
       215                           .member _start,1568,4,8,32
       216                           .member _i,1600,4,8,32
-TMS320C3x/4x COFF AssemblerVersion 5.12     Mon Jul 15 11:12:32 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_2M4.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_FUO.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\execute.asm                     PAGE    5
 
@@ -293,8 +293,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\execute.asm                     PAGE    5
       268                           .eos
       269                           .sym    _MPKT,0,8,13,672,.fake14
       270                           .file   "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\ADC.H"
-TMS320C3x/4x COFF AssemblerVersion 5.12     Mon Jul 15 11:12:32 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_2M4.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_FUO.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\execute.asm                     PAGE    6
 
@@ -352,8 +352,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\execute.asm                     PAGE    6
       322                           .stag   .fake17,128
       323                           .member _prev,0,20,8,32
       324                           .member _next,32,20,8,32
-TMS320C3x/4x COFF AssemblerVersion 5.12     Mon Jul 15 11:12:32 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_2M4.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_FUO.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\execute.asm                     PAGE    7
 
@@ -411,8 +411,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\execute.asm                     PAGE    7
       376                           .member _menu_list_top,832,14,8,32
       377                           .member _menu_list_operations,864,14,8,32
       378                           .member _menu_list_configurations,896,14,8,32
-TMS320C3x/4x COFF AssemblerVersion 5.12     Mon Jul 15 11:12:32 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_2M4.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_FUO.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\execute.asm                     PAGE    8
 
@@ -470,8 +470,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\execute.asm                     PAGE    8
       430                           .member _Start_SS,64,4,8,32
       431                           .member _Start_MONTH,96,4,8,32
       432                           .member _Start_DAY,128,4,8,32
-TMS320C3x/4x COFF AssemblerVersion 5.12     Mon Jul 15 11:12:32 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_2M4.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_FUO.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\execute.asm                     PAGE    9
 
@@ -529,8 +529,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\execute.asm                     PAGE    9
       484                           .member _counter,32,4,8,32
       485                           .eos
       486                           .sym    _Boxcar_Var,0,8,13,64,.fake24
-TMS320C3x/4x COFF AssemblerVersion 5.12     Mon Jul 15 11:12:32 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_2M4.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_FUO.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\execute.asm                     PAGE   10
 
@@ -588,8 +588,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\execute.asm                     PAGE   10
       538                           .member _left_pickup_value,768,6,8,32
       539                           .member _right_pickup_value,800,6,8,32
       540                           .member _drive_gain,832,6,8,32
-TMS320C3x/4x COFF AssemblerVersion 5.12     Mon Jul 15 11:12:32 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_2M4.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_FUO.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\execute.asm                     PAGE   11
 
@@ -647,8 +647,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\execute.asm                     PAGE   11
       592                           .member _net_watercut_mass,15712,6,8,32
       593                           .member _Dadj,15744,6,8,32
       594                           .member _NET_FLOW_OIL,15776,8,8,1408,.fake6
-TMS320C3x/4x COFF AssemblerVersion 5.12     Mon Jul 15 11:12:32 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_2M4.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_FUO.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\execute.asm                     PAGE   12
 
@@ -706,8 +706,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\execute.asm                     PAGE   12
       646                           .member _AUTHORIZATION_CODE2,42656,14,8,32
       647                           .member _AUTHORIZATION_CODE3,42688,14,8,32
       648                           .member _AUTHORIZATION_CODE4,42720,14,8,32
-TMS320C3x/4x COFF AssemblerVersion 5.12     Mon Jul 15 11:12:32 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_2M4.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_FUO.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\execute.asm                     PAGE   13
 
@@ -765,8 +765,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\execute.asm                     PAGE   13
       700                           .member _SP1B,2080,6,8,32
       701                           .member _SP0B,2112,6,8,32
       702                           .member _SPLOB,2144,6,8,32
-TMS320C3x/4x COFF AssemblerVersion 5.12     Mon Jul 15 11:12:32 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_2M4.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_FUO.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\execute.asm                     PAGE   14
 
@@ -824,8 +824,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\execute.asm                     PAGE   14
       754                           .line   6
       755                   ;----------------------------------------------------------------------
       756                   ;  42 | List_Init(&LIST_EXEC_EMPTY);                                           
-TMS320C3x/4x COFF AssemblerVersion 5.12     Mon Jul 15 11:12:32 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_2M4.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_FUO.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\execute.asm                     PAGE   15
 
@@ -883,8 +883,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\execute.asm                     PAGE   15
       808 00000000                  .sect    ".text"
       809                   
       810                           .global _Execute_Insert
-TMS320C3x/4x COFF AssemblerVersion 5.12     Mon Jul 15 11:12:32 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_2M4.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_FUO.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\execute.asm                     PAGE   16
 
@@ -942,8 +942,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\execute.asm                     PAGE   16
       862                   ;  71 | e = (EPKT*)List_Pop(&LIST_EXEC_EMPTY);  /* get empty EPKT        */    
       863                   ;----------------------------------------------------------------------
       864 00000009 08700000-        ldp       @CL6,DP
-TMS320C3x/4x COFF AssemblerVersion 5.12     Mon Jul 15 11:12:32 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_2M4.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_FUO.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\execute.asm                     PAGE   17
 
@@ -1001,8 +1001,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\execute.asm                     PAGE   17
       916 00000020 50490302         ldiu      *+fp(2),ar1           ; |82| 
       917 00000021 50400002         ldiu      *+ar0(2),r0           ; |82| 
       918 00000022 15400102         sti       r0,*+ar1(2)           ; |82| 
-TMS320C3x/4x COFF AssemblerVersion 5.12     Mon Jul 15 11:12:32 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_2M4.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_FUO.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\execute.asm                     PAGE   18
 
@@ -1060,8 +1060,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\execute.asm                     PAGE   18
       970                   ;----------------------------------------------------------------------
       971                   ;  93 | return TRUE;                                                           
       972                   ;----------------------------------------------------------------------
-TMS320C3x/4x COFF AssemblerVersion 5.12     Mon Jul 15 11:12:32 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_2M4.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_FUO.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\execute.asm                     PAGE   19
 
@@ -1119,8 +1119,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\execute.asm                     PAGE   19
      1024 00000048 50400303         ldiu      *+fp(3),r0            ; |106| 
      1025 00000049 04e00000         cmpi      0,r0                  ; |106| 
      1026 0000004a 6a060012         bne       L15                   ; |106| 
-TMS320C3x/4x COFF AssemblerVersion 5.12     Mon Jul 15 11:12:32 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_2M4.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_FUO.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\execute.asm                     PAGE   20
 
@@ -1178,8 +1178,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\execute.asm                     PAGE   20
      1078 0000005e 5040c000         ldiu      *ar0,r0               ; |117| 
      1079 0000005f 04c00303         cmpi      *+fp(3),r0            ; |117| 
      1080 00000060 6a060002         bne       L17                   ; |117| 
-TMS320C3x/4x COFF AssemblerVersion 5.12     Mon Jul 15 11:12:32 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_2M4.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_FUO.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\execute.asm                     PAGE   21
 
@@ -1237,8 +1237,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\execute.asm                     PAGE   21
      1132                   
      1133 00000073                  .sect    ".text"
      1134                   
-TMS320C3x/4x COFF AssemblerVersion 5.12     Mon Jul 15 11:12:32 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_2M4.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_FUO.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\execute.asm                     PAGE   22
 
@@ -1296,8 +1296,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\execute.asm                     PAGE   22
      1186                   ;*      Branch Occurs to L23            ; |152| 
      1187                           .line   11
      1188                   ;----------------------------------------------------------------------
-TMS320C3x/4x COFF AssemblerVersion 5.12     Mon Jul 15 11:12:32 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_2M4.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_FUO.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\execute.asm                     PAGE   23
 
@@ -1355,8 +1355,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\execute.asm                     PAGE   23
      1240                           .line   15
      1241                   ;----------------------------------------------------------------------
      1242                   ; 158 | asm("       ldp             _vect_ex      ");                          
-TMS320C3x/4x COFF AssemblerVersion 5.12     Mon Jul 15 11:12:32 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_2M4.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_FUO.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\execute.asm                     PAGE   24
 
@@ -1414,8 +1414,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\execute.asm                     PAGE   24
      1294                   ;----------------------------------------------------------------------
      1295                   ; 163 | List_Add(&LIST_EXEC_EMPTY, (GENERIC*)e);                               
      1296                   ;----------------------------------------------------------------------
-TMS320C3x/4x COFF AssemblerVersion 5.12     Mon Jul 15 11:12:32 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_2M4.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_FUO.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\execute.asm                     PAGE   25
 
@@ -1473,8 +1473,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\execute.asm                     PAGE   25
      1348 00000033                  .bss    CL5,1
      1349 00000034                  .bss    CL6,1
      1350 00000035                  .bss    CL7,1
-TMS320C3x/4x COFF AssemblerVersion 5.12     Mon Jul 15 11:12:32 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_2M4.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_FUO.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\execute.asm                     PAGE   26
 
@@ -1508,8 +1508,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\execute.asm                     PAGE   26
      1378                           .global _DIAGNOSTICS
 
  No Errors,  No Warnings
-TMS320C3x/4x COFF AssemblerVersion 5.12     Mon Jul 15 11:12:32 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_2M4.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_FUO.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\execute.asm                     PAGE   27
 
@@ -1566,8 +1566,8 @@ L3                               0000001f+    796    772
 L7                               0000001b'    901    876 
 L9                               0000003a'    978    935 
 _DIAGNOSTICS                     REF                1363   1378 
-TMS320C3x/4x COFF AssemblerVersion 5.12     Mon Jul 15 11:12:32 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_2M4.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_FUO.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\execute.asm                     PAGE   28
 

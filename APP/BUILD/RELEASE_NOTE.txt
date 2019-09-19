@@ -2,8 +2,8 @@
 RELEASE SUMMARY
 -----------------------------------------------------
 PRODUCT      : EEA
-VERSION      : 6.15.02
-RELEASE DATE : 2019-07-24T11:05:07-05:00
+VERSION      : 6.15.03
+RELEASE DATE : 2019-09-19T10:37:56-05:00
 -----------------------------------------------------
 
 
@@ -11,17 +11,15 @@ RELEASE DATE : 2019-07-24T11:05:07-05:00
 -----------------------------------------------------
 BUG FIX & CHANGES
 -----------------------------------------------------
-55 : Incorrect max_addr set on ports other than port 0 in HART_5. (http://bug.phasedynamics.com/bugzilla/show_bug.cgi?id=55)
-57 : REG_OIL_ADJ value wrongfully applied to a single curve (http://bug.phasedynamics.com/bugzilla/show_bug.cgi?id=57)
-58 : Capture Oil does not function properly (http://bug.phasedynamics.com/bugzilla/show_bug.cgi?id=58)
+64 - Maximum number limit on FC Accumulator (http://bug.phasedynamics.com/bugzilla/show_bug.cgi?id=64)
 
 
 
 -----------------------------------------------------
 MD5 HASHES
 -----------------------------------------------------
-b431e8160d4dfa81fe41110690dfacf7  pdi.out
-11a10de71d55b45ba1ee23db230a59b7  pdi.map
-9f8bb71e7950c1f840a0dbb992215297  pdi.i0
+e5cad7d5c76659b6dc79688fdca3e49c  pdi.out
+f3df2a243df96d227b3ff7ef1da76418  pdi.map
+d84a758e2bfe69060a493ec7e35e4926  pdi.i0
 c9af1350551b69512e31f3da01cda861  PDI_BOOT.OUT
 2f74774c6718bb39378737968346f406  PDI_BOOT.I0

@@ -1,7 +1,7 @@
-VER = 6.15.02
-VER2 = 6_15_02
+VER = 6.15.03
+VER2 = 6_15_03
 
-BUGS = "55 : Incorrect max_addr set on ports other than port 0 in HART_5. (http://bug.phasedynamics.com/bugzilla/show_bug.cgi?id=55)\n57 : REG_OIL_ADJ value wrongfully applied to a single curve (http://bug.phasedynamics.com/bugzilla/show_bug.cgi?id=57)\n58 : Capture Oil does not function properly (http://bug.phasedynamics.com/bugzilla/show_bug.cgi?id=58)"
+BUGS = "64 - Maximum number limit on FC Accumulator (http://bug.phasedynamics.com/bugzilla/show_bug.cgi?id=64)"
 
 ##############################################
 ##############################################

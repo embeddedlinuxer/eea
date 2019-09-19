@@ -44,10 +44,11 @@
 ///                          changed VT_SELECT[i] oscillator access sequence from 0,1,2,3 to 0,2,1,3.
 /// V6.15.01 | May-16-2019 | Fixed incorrect HART enabling sequence in STR_Anlyzer_Info[] array 
 /// V6.15.02 | Jul-11-2019 | Fixed. Incorrect max_addr was set on ports other than port 0 in HART_5.
+/// V6.15.03 | Sep-19-2019 | Fixed. Bug 64 - Maximum number limit on FC Accumulator
 /////////////////////////////////////////////////////////////////////////////
 
 #define FIRMWARE_VERSION	 			615
-#define FIRMWARE_SUBVERSION				02
+#define FIRMWARE_SUBVERSION				03
 
 /*
 	SUBVERSION CHANGES: ('->' arrow denotes partially non-cumulative release, i.e. a separate branch)

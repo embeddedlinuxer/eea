@@ -1,4 +1,4 @@
-#line 110 "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\GLBLS.H"
+#line 111 "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\GLBLS.H"
 extern const char* copyright;
 extern const char* credit;
 #line 8 "G:\workspace\EEA\V615\INCLUDE\stdarg.h"
@@ -1013,13 +1013,13 @@ extern int* vect_m;
 extern unsigned int TOIEEE(float v);
 extern float FMIEEE(unsigned int v);
 
-#line 157 "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\GLBLS.H"
+#line 158 "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\GLBLS.H"
 extern unsigned int CLOCK;
 extern BOOL LED_GREEN;
 extern BOOL OSWITCH;
 extern void c_int00(void);
 
-#line 201
+#line 202
 extern unsigned int ESN_USER[5];
 extern unsigned int ESN_MFGR[5];
 
@@ -1429,7 +1429,7 @@ extern float stream_delta_temp[60];
 
 
  
-#line 631
+#line 632
 #pragma DATA_SECTION(OIL_PHASE_ONLY_ENABLE,"CFG")
 extern float OIL_PHASE_ONLY_ENABLE[60];
 #pragma DATA_SECTION(WATER_PHASE_ONLY_ENABLE,"CFG")
@@ -1612,7 +1612,7 @@ extern BOOL BOXCAR_RESET;
 
 
  
-#line 820
+#line 821
 #pragma DATA_SECTION(REG_CCM_TEST_STAT,"CFG")         
 extern VAR REG_CCM_TEST_STAT;                         
 
@@ -1786,11 +1786,11 @@ extern VAR EXTENDED_FW_VERSION_ENABLE;
 #pragma DATA_SECTION(GAS_ENTRAINED,"CFG")
 extern COIL GAS_ENTRAINED;  
  
-#line 1004
+#line 1005
 #pragma DATA_SECTION(GAS_ENTRAINED_DENS_DETECT,"CFG")
 extern COIL GAS_ENTRAINED_DENS_DETECT;   
  
-#line 1020
+#line 1021
 enum Pulse_Input_Type
 {
 	PULSE_GAS_TEMP 		= 1,
@@ -1813,7 +1813,7 @@ enum Pulse_Input_Type
 
 
 
-#line 1055
+#line 1056
 #pragma DATA_SECTION(boxcar_expire_val,"CFG")
 extern VAR boxcar_expire_val;
 
@@ -2110,7 +2110,7 @@ typedef struct 	{
 	    		} CORIOLIS;
 extern CORIOLIS COR[5];
 
-#line 1383
+#line 1384
 typedef struct 	{
 					float	p_delta;
 					float	p_static;
@@ -2276,7 +2276,7 @@ extern float compatibility_dummy;
 
 
 		 
-#line 1579
+#line 1580
 #pragma DATA_SECTION(ALFAT_RX,"internal_RAM")
 extern	char	ALFAT_RX[128]; 
 
@@ -2375,7 +2375,7 @@ extern VAR Hsalt_Min_WC;
 #pragma DATA_SECTION(AVG_RESET,"CFG")
 extern COIL AVG_RESET;
 
-#line 1681
+#line 1682
 extern void Setup_Basics(void);
 
 #line 44 "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\HART.H"

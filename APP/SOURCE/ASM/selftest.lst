@@ -1,11 +1,11 @@
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE    1
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE    1
 
         1                   ;******************************************************************************
         2                   ;* TMS320C3x/4x ANSI C Code Generator                            Version 5.11 *
-        3                   ;* Date/Time created: Wed Jul 24 11:03:54 2019                                *
+        3                   ;* Date/Time created: Thu Sep 19 10:37:48 2019                                *
         4                   ;******************************************************************************
         5                           .regalias       ; enable floating point register aliases
         6          0000000b fp      .set    ar3
@@ -22,12 +22,12 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE    1
        17                   ;*   Calls              : Normal Library ASM calls                            *
        18                   ;*   Debug Info         : Standard TI Debug Information                       *
        19                   ;******************************************************************************
-       20                   ;       C:\tic3x4x\c3x4x\cgtools\bin\ac30.exe -@_AK8.AAA 
+       20                   ;       C:\tic3x4x\c3x4x\cgtools\bin\ac30.exe -@_95S.AAA 
        21                           .file   "selftest.c"
-       22                           .file   "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\GLBLS.H"
-       23                           .file   "G:\workspace\EEA\V615\INCLUDE\stdarg.h"
+       22                           .file   "G:\workspace\EEA\v615\APP\SOURCE\INCLUDE\GLBLS.H"
+       23                           .file   "G:\workspace\EEA\v615\INCLUDE\stdarg.h"
        24                           .sym    _va_list,0,18,13,32
-       25                           .file   "G:\workspace\EEA\V615\INCLUDE\format.h"
+       25                           .file   "G:\workspace\EEA\v615\INCLUDE\format.h"
        26                           .stag   .fake0,128
        27                           .member _flags,0,14,8,32
        28                           .member _fwidth,32,4,8,32
@@ -43,9 +43,9 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE    1
        38                           .member _conv,3168,2,8,32
        39                           .eos
        40                           .sym    __SFIELD,0,8,13,3200,.fake1
-       41                           .file   "G:\workspace\EEA\V615\INCLUDE\string.h"
+       41                           .file   "G:\workspace\EEA\v615\INCLUDE\string.h"
        42                           .sym    _size_t,0,14,13,32
-       43                           .file   "G:\workspace\EEA\V615\INCLUDE\stdio.h"
+       43                           .file   "G:\workspace\EEA\v615\INCLUDE\stdio.h"
        44                           .stag   .fake2,224
        45                           .member _fd,0,4,8,32
        46                           .member _buf,32,28,8,32
@@ -57,10 +57,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE    1
        52                           .eos
        53                           .sym    _FILE,0,8,13,224,.fake2
        54                           .sym    _fpos_t,0,5,13,32
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE    2
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE    2
 
        55                           .stag   .fake3,544
        56                           .member _name,0,50,8,288,,9
@@ -74,7 +74,7 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE    2
        64                           .member _RENAME,512,148,8,32
        65                           .eos
        66                           .sym    __DEVICE,0,8,13,544,.fake3
-       67                           .file   "G:\workspace\EEA\V615\INCLUDE\stdlib.h"
+       67                           .file   "G:\workspace\EEA\v615\INCLUDE\stdlib.h"
        68                           .sym    _wchar_t,0,2,13,32
        69                           .stag   __div_t,64
        70                           .member _quot,0,4,8,32
@@ -82,8 +82,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE    2
        72                           .eos
        73                           .sym    _div_t,0,8,13,64,__div_t
        74                           .sym    _ldiv_t,0,8,13,64,__div_t
-       75                           .file   "G:\workspace\EEA\V615\INCLUDE\math.h"
-       76                           .file   "G:\workspace\EEA\V615\INCLUDE\time.h"
+       75                           .file   "G:\workspace\EEA\v615\INCLUDE\math.h"
+       76                           .file   "G:\workspace\EEA\v615\INCLUDE\time.h"
        77                           .sym    _clock_t,0,15,13,32
        78                           .sym    _time_t,0,15,13,32
        79                           .stag   _tm,288
@@ -103,9 +103,9 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE    2
        93                           .member _tzname,64,50,8,128,,4
        94                           .member _dstname,192,50,8,128,,4
        95                           .eos
-       96                           .file   "G:\workspace\EEA\V615\INCLUDE\ETC.H"
+       96                           .file   "G:\workspace\EEA\v615\INCLUDE\ETC.H"
        97                           .sym    _BOOL,0,14,13,32
-       98                           .file   "G:\workspace\EEA\V615\INCLUDE\LIST.H"
+       98                           .file   "G:\workspace\EEA\v615\INCLUDE\LIST.H"
        99                           .stag   .fake4,96
       100                           .member _head,0,20,8,32
       101                           .member _tail,32,20,8,32
@@ -116,13 +116,13 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE    2
       106                           .member _prev,0,20,8,32
       107                           .member _next,32,20,8,32
       108                           .eos
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE    3
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE    3
 
       109                           .sym    _GENERIC,0,8,13,64,.fake5
-      110                           .file   "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\VARIABLE.H"
+      110                           .file   "G:\workspace\EEA\v615\APP\SOURCE\INCLUDE\VARIABLE.H"
       111                           .stag   .fake6,1408
       112                           .member _val,0,6,8,32
       113                           .member _vect1,32,20,8,32
@@ -165,7 +165,7 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE    3
       150                           .member _v,64,24,8,32,.fake6
       151                           .eos
       152                           .sym    _DPKT,0,8,13,96,.fake9
-      153                           .file   "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\BUFFER.H"
+      153                           .file   "G:\workspace\EEA\v615\APP\SOURCE\INCLUDE\BUFFER.H"
       154                           .stag   .fake10,9824
       155                           .member _head,0,4,8,32
       156                           .member _tail,32,4,8,32
@@ -175,15 +175,15 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE    3
       160                           .member _buff,160,62,8,9600,,300
       161                           .member _sum,9760,4,8,32
       162                           .member _locked,9792,14,8,32
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE    4
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE    4
 
       163                           .eos
       164                           .sym    _BFR,0,8,13,9824,.fake10
-      165                           .file   "G:\workspace\EEA\V615\INCLUDE\UNITS.H"
-      166                           .file   "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\TIMER.H"
+      165                           .file   "G:\workspace\EEA\v615\INCLUDE\UNITS.H"
+      166                           .file   "G:\workspace\EEA\v615\APP\SOURCE\INCLUDE\TIMER.H"
       167                           .stag   .fake11,320
       168                           .member _prev,0,20,8,32
       169                           .member _next,32,20,8,32
@@ -197,9 +197,9 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE    4
       177                           .member _t,288,6,8,32
       178                           .eos
       179                           .sym    _TPKT,0,8,13,320,.fake11
-      180                           .file   "G:\workspace\EEA\V615\INCLUDE\I2C.H"
-      181                           .file   "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\ERRORS.H"
-      182                           .file   "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\SERIAL.H"
+      180                           .file   "G:\workspace\EEA\v615\INCLUDE\I2C.H"
+      181                           .file   "G:\workspace\EEA\v615\APP\SOURCE\INCLUDE\ERRORS.H"
+      182                           .file   "G:\workspace\EEA\v615\APP\SOURCE\INCLUDE\SERIAL.H"
       183                           .stag   .fake12,2272
       184                           .member _Slave,0,4,8,32
       185                           .member _SNUM,32,4,8,32
@@ -234,10 +234,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE    4
       214                           .member _ai,1536,4,8,32
       215                           .member _start,1568,4,8,32
       216                           .member _i,1600,4,8,32
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE    5
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE    5
 
       217                           .member _i_main,1632,4,8,32
       218                           .member _func,1664,14,8,32
@@ -292,11 +292,11 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE    5
       267                           .member _int_ptr,640,20,8,32
       268                           .eos
       269                           .sym    _MPKT,0,8,13,672,.fake14
-      270                           .file   "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\ADC.H"
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+      270                           .file   "G:\workspace\EEA\v615\APP\SOURCE\INCLUDE\ADC.H"
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE    6
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE    6
 
       271                           .stag   .fake15,10176
       272                           .member _CURRENT,0,8,8,1408,.fake6
@@ -315,7 +315,7 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE    6
       285                           .member _val,10144,6,8,32
       286                           .eos
       287                           .sym    _LOOPDATA_I,0,8,13,10176,.fake15
-      288                           .file   "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\DAC.H"
+      288                           .file   "G:\workspace\EEA\v615\APP\SOURCE\INCLUDE\DAC.H"
       289                           .stag   .fake16,13408
       290                           .member _CURRENT,0,8,8,1408,.fake6
       291                           .member _CURRENT_PERCENT_OF_RANGE,1408,8,8,1408,.fake6
@@ -348,21 +348,21 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE    6
       318                           .member _PID_enable_failsafe,13376,14,8,32
       319                           .eos
       320                           .sym    _LOOPDATA_O,0,8,13,13408,.fake16
-      321                           .file   "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\EXECUTE.H"
+      321                           .file   "G:\workspace\EEA\v615\APP\SOURCE\INCLUDE\EXECUTE.H"
       322                           .stag   .fake17,128
       323                           .member _prev,0,20,8,32
       324                           .member _next,32,20,8,32
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE    7
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE    7
 
       325                           .member _vect,64,20,8,32
       326                           .member _priority,96,4,8,32
       327                           .eos
       328                           .sym    _EPKT,0,8,13,128,.fake17
-      329                           .file   "G:\workspace\EEA\V615\INCLUDE\FLASH.H"
-      330                           .file   "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\LOG.H"
+      329                           .file   "G:\workspace\EEA\v615\INCLUDE\FLASH.H"
+      330                           .file   "G:\workspace\EEA\v615\APP\SOURCE\INCLUDE\LOG.H"
       331                           .stag   .fake18,384
       332                           .member _log_len,0,14,8,32
       333                           .member _log_n_sectors,32,14,8,32
@@ -378,9 +378,9 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE    7
       343                           .member _erased_sector,352,14,8,32
       344                           .eos
       345                           .sym    _LOG,0,8,13,384,.fake18
-      346                           .file   "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\DEMO.H"
-      347                           .file   "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\SELFTEST.H"
-      348                           .file   "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\MENU.H"
+      346                           .file   "G:\workspace\EEA\v615\APP\SOURCE\INCLUDE\DEMO.H"
+      347                           .file   "G:\workspace\EEA\v615\APP\SOURCE\INCLUDE\SELFTEST.H"
+      348                           .file   "G:\workspace\EEA\v615\APP\SOURCE\INCLUDE\MENU.H"
       349                           .stag   .fake19,16288
       350                           .member _INIT,0,14,8,32
       351                           .member _FRESH,32,14,8,32
@@ -411,10 +411,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE    7
       376                           .member _menu_list_top,832,14,8,32
       377                           .member _menu_list_operations,864,14,8,32
       378                           .member _menu_list_configurations,896,14,8,32
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE    8
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE    8
 
       379                           .member _menu_list_security_info,928,14,8,32
       380                           .member _menu_list_measurements,960,14,8,32
@@ -431,8 +431,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE    8
       391                           .member _tbl,16256,20,8,32
       392                           .eos
       393                           .sym    _MENU_STRUCT,0,8,13,16288,.fake19
-      394                           .file   "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\FLOAT1.H"
-      395                           .file   "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\GLBLS.H"
+      394                           .file   "G:\workspace\EEA\v615\APP\SOURCE\INCLUDE\FLOAT1.H"
+      395                           .file   "G:\workspace\EEA\v615\APP\SOURCE\INCLUDE\GLBLS.H"
       396                           .stag   .fake20,480
       397                           .member _i,0,4,8,32
       398                           .member _Watercut,32,6,8,32
@@ -470,10 +470,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE    8
       430                           .member _Start_SS,64,4,8,32
       431                           .member _Start_MONTH,96,4,8,32
       432                           .member _Start_DAY,128,4,8,32
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE    9
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE    9
 
       433                           .member _Start_YEAR,160,4,8,32
       434                           .member _Stop_HH,192,4,8,32
@@ -529,10 +529,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE    9
       484                           .member _counter,32,4,8,32
       485                           .eos
       486                           .sym    _Boxcar_Var,0,8,13,64,.fake24
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   10
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   10
 
       487                           .stag   .fake25,1088
       488                           .member _data,0,54,8,960,,30
@@ -588,10 +588,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   10
       538                           .member _left_pickup_value,768,6,8,32
       539                           .member _right_pickup_value,800,6,8,32
       540                           .member _drive_gain,832,6,8,32
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   11
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   11
 
       541                           .member _damp_flow_rate,864,8,8,1408,.fake6
       542                           .member _damp_density,2272,8,8,1408,.fake6
@@ -647,10 +647,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   11
       592                           .member _net_watercut_mass,15712,6,8,32
       593                           .member _Dadj,15744,6,8,32
       594                           .member _NET_FLOW_OIL,15776,8,8,1408,.fake6
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   12
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   12
 
       595                           .member _NET_FLOW_WATER,17184,8,8,1408,.fake6
       596                           .member _NET_FLOW_TOTAL,18592,8,8,1408,.fake6
@@ -706,10 +706,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   12
       646                           .member _AUTHORIZATION_CODE2,42656,14,8,32
       647                           .member _AUTHORIZATION_CODE3,42688,14,8,32
       648                           .member _AUTHORIZATION_CODE4,42720,14,8,32
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   13
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   13
 
       649                           .eos
       650                           .sym    _FLOW_COMP,0,8,13,42752,.fake31
@@ -765,10 +765,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   13
       700                           .member _SP1B,2080,6,8,32
       701                           .member _SP0B,2112,6,8,32
       702                           .member _SPLOB,2144,6,8,32
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   14
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   14
 
       703                           .member _SPHIB,2176,6,8,32
       704                           .member _FBHI3,2208,6,8,32
@@ -781,10 +781,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   14
       711                           .member _FBLO0,2432,6,8,32
       712                           .eos
       713                           .sym    _HS_STRUCT,0,8,13,2464,.fake33
-      714                           .file   "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\HART.H"
-      715                           .file   "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\MODBUSRTU.H"
-      716                           .file   "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\MISC.H"
-      717                           .file   "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\API.H"
+      714                           .file   "G:\workspace\EEA\v615\APP\SOURCE\INCLUDE\HART.H"
+      715                           .file   "G:\workspace\EEA\v615\APP\SOURCE\INCLUDE\MODBUSRTU.H"
+      716                           .file   "G:\workspace\EEA\v615\APP\SOURCE\INCLUDE\MISC.H"
+      717                           .file   "G:\workspace\EEA\v615\APP\SOURCE\INCLUDE\API.H"
       718                           .file   "selftest.c"
       719 00000000                  .sect    ".text"
       720                   
@@ -824,10 +824,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   14
       754 00000007 5028006c-        ldiu      @CL2,ar0              ; |44| 
       755 00000008 1540c000         sti       r0,*ar0               ; |44| 
       756                           .line   5
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   15
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   15
 
       757                   ;----------------------------------------------------------------------
       758                   ;  45 | DIAGNOSTICS[0]                  = ERROR_NONE;                          
@@ -883,10 +883,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   15
       808                           .func   65
       809                   ;******************************************************************************
       810                   ;* FUNCTION NAME: _Set_Diag_Status                                            *
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   16
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   16
 
       811                   ;*                                                                            *
       812                   ;*   Architecture       : TMS320C33                                           *
@@ -942,10 +942,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   16
       862                   ;  77 | else                                                                   
       863                   ;----------------------------------------------------------------------
       864 00000028 08700000-        ldp       @CL9,DP
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   17
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   17
 
       865 00000029 50280073-        ldiu      @CL9,ar0              ; |76| 
       866 0000002a 50600000         ldiu      0,r0                  ; |76| 
@@ -1001,10 +1001,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   17
       916 00000044 50600010         ldiu      16,r0                 ; |86| 
       917 00000045 1540c000         sti       r0,*ar0               ; |86| 
       918 00000046 6a000059         bu        L27                   ; |64| 
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   18
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   18
 
       919                   ;*      Branch Occurs to L27            ; |64| 
       920 00000047          L9:        
@@ -1060,10 +1060,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   18
       970 00000060          L14:        
       971                           .line   27
       972                   ;----------------------------------------------------------------------
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   19
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   19
 
       973                   ;  91 | else if (DIAGNOSTICS[0] & ERROR_INTERNAL_MEMORY)                       
       974                   ;----------------------------------------------------------------------
@@ -1119,10 +1119,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   19
      1024                   ;*      Branch Occurs to L20            ; |96| 
      1025 00000079 08700000-        ldp       @CL3,DP
      1026 0000007a 5028006d-        ldiu      @CL3,ar0              ; |96| 
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   20
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   20
 
      1027 0000007b 50601000         ldiu      4096,r0               ; |96| 
      1028 0000007c 27c000c0         tstb3     *ar0,r0               ; |96| 
@@ -1178,10 +1178,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   20
      1078 00000094 5040c000         ldiu      *ar0,r0               ; |100| 
      1079 00000095 04e00000         cmpi      0,r0                  ; |100| 
      1080 00000096 6a050009         beq       L27                   ; |100| 
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   21
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   21
 
      1081                   ;*      Branch Occurs to L27            ; |100| 
      1082 00000097 08700000-        ldp       @CL4,DP
@@ -1237,10 +1237,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   21
      1132 000000b2 50790000         ldiu      0,rs                  ; |109| 
      1133 000000b3 4022007a-        ldfu      @CL16,f2              ; |109| 
      1134 000000b4 08700000-        ldp       @CL15,DP
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   22
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   22
 
      1135 000000b5 50630001         ldiu      1,r3                  ; |109| 
      1136 000000b6 502a0079-        ldiu      @CL15,ar2             ; |109| 
@@ -1296,10 +1296,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   22
      1186 000000d2 08700000-        ldp       @CL6,DP
      1187 000000d3 50280070-        ldiu      @CL6,ar0              ; |115| 
      1188 000000d4 1540c000         sti       r0,*ar0               ; |115| 
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   23
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   23
 
      1189                           .line   53
      1190                   ;----------------------------------------------------------------------
@@ -1355,10 +1355,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   23
      1240 000000f2 70000000         callu     r0                    ; far call to _Timer_Create     ; |122| 
      1241                                                           ; |122| Far Call Occurs
      1242                           .line   59
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   24
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   24
 
      1243                   ;----------------------------------------------------------------------
      1244                   ; 123 | Timer_Create(&TMR_LEDON,  0.95, 1, (int*)STATUS_LED_on,  0);           
@@ -1414,10 +1414,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   24
      1294                           .line   67
      1295                   ;----------------------------------------------------------------------
      1296                   ; 131 | Timer_Create(&TMR_LEDON,  0.45, 1, (int*)STATUS_LED_on,  0);           
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   25
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   25
 
      1297                   ;----------------------------------------------------------------------
      1298 00000112 08700000-        ldp       @CL18,DP
@@ -1473,10 +1473,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   25
      1348                   ;*      Branch Occurs to L40            ; |140| 
      1349                           .line   77
      1350                   ;----------------------------------------------------------------------
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   26
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   26
 
      1351                   ; 141 | break;                                                                 
      1352                   ; 142 | else                                                                   
@@ -1532,10 +1532,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   26
      1402                           .line   87
      1403                   ;----------------------------------------------------------------------
      1404                   ; 151 | t                                        = log(t)/log(2.0);            
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   27
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   27
 
      1405                   ;----------------------------------------------------------------------
      1406 00000148 08700000-        ldp       @CL28,DP
@@ -1591,10 +1591,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   27
      1456 00000169 08700000-        ldp       @CL4,DP
      1457 0000016a 5028006e-        ldiu      @CL4,ar0              ; |158| 
      1458 0000016b 08700000-        ldp       @CL31,DP
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   28
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   28
 
      1459 0000016c 502a0089-        ldiu      @CL31,ar2             ; |158| 
      1460 0000016d 507b0000         ldiu      0,rc                  ; |158| 
@@ -1650,10 +1650,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   28
      1510                   ;*      Branch Occurs to L97            ; |162| 
      1511 0000018f 08700000-        ldp       @CL35,DP
      1512 00000190 5028008d-        ldiu      @CL35,ar0             ; |162| 
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   29
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   29
 
      1513 00000191 08700000-        ldp       @CL3,DP
      1514 00000192 5029006d-        ldiu      @CL3,ar1              ; |162| 
@@ -1709,10 +1709,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   29
      1564                           .line   109
      1565                   ;----------------------------------------------------------------------
      1566                   ; 173 | if (RUSS)                                                              
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   30
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   30
 
      1567                   ;----------------------------------------------------------------------
      1568 000001b0 08700000-        ldp       @CL39,DP
@@ -1768,10 +1768,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   30
      1618                           .line   116
      1619                   ;----------------------------------------------------------------------
      1620                   ; 180 | break;                                                                 
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   31
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   31
 
      1621                   ; 181 | case E_ERROR_FREQ:                                                     
      1622                   ;----------------------------------------------------------------------
@@ -1827,10 +1827,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   31
      1672 000001e8 08700000-        ldp       @CL43,DP
      1673 000001e9 50200095-        ldiu      @CL43,r0              ; |188| 
      1674 000001ea 08700000-        ldp       @CL42,DP
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   32
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   32
 
      1675 000001eb 0f210000         push      r1                    ; |188| 
      1676 000001ec 502a0094-        ldiu      @CL42,ar2             ; |188| 
@@ -1886,10 +1886,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   32
      1726                   ;*      Branch Occurs to L115           ; |64| 
      1727 00000206          L56:        
      1728                           .line   134
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   33
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   33
 
      1729                   ;----------------------------------------------------------------------
      1730                   ; 198 | sprintf(E_STRING,"ERROR: FLASH Memory");        //R350                 
@@ -1945,10 +1945,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   33
      1780 0000021f 50200095-        ldiu      @CL43,r0              ; |205| 
      1781 00000220 08700000-        ldp       @CL42,DP
      1782 00000221 0f210000         push      r1                    ; |205| 
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   34
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   34
 
      1783 00000222 502a0094-        ldiu      @CL42,ar2             ; |205| 
      1784 00000223 70000000         callu     r0                    ; far call to _sprintf  ; |205| 
@@ -2004,10 +2004,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   34
      1834                           .line   151
      1835                   ;----------------------------------------------------------------------
      1836                   ; 215 | sprintf(E_STRING,OUT_STR);                                             
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   35
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   35
 
      1837                   ; 217 | else                                                                   
      1838                   ;----------------------------------------------------------------------
@@ -2063,10 +2063,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   35
      1888 00000254 08700000-        ldp       @CL50,DP
      1889 00000255 5021009c-        ldiu      @CL50,r1              ; |224| 
      1890 00000256 08700000-        ldp       @CL43,DP
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   36
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   36
 
      1891 00000257 50200095-        ldiu      @CL43,r0              ; |224| 
      1892 00000258 08700000-        ldp       @CL42,DP
@@ -2122,10 +2122,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   36
      1942                   ;----------------------------------------------------------------------
      1943                   ; 233 | sprintf(E_STRING,"ERROR: Invalid WCut");        //R356                 
      1944                   ;----------------------------------------------------------------------
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   37
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   37
 
      1945 00000274 08700000-        ldp       @CL51,DP
      1946 00000275 5021009d-        ldiu      @CL51,r1              ; |233| 
@@ -2181,10 +2181,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   37
      1996 0000028e 5040c000         ldiu      *ar0,r0               ; |243| 
      1997 0000028f 04e00000         cmpi      0,r0                  ; |243| 
      1998 00000290 6a050011         beq       L72                   ; |243| 
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   38
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   38
 
      1999                   ;*      Branch Occurs to L72            ; |243| 
      2000                           .line   181
@@ -2240,10 +2240,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   38
      2050                   ;----------------------------------------------------------------------
      2051 000002ab 6a00011d         bu        L115                  ; |250| 
      2052                   ;*      Branch Occurs to L115           ; |250| 
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   39
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   39
 
      2053 000002ac          L73:        
      2054                           .line   192
@@ -2299,10 +2299,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   39
      2104                   ;----------------------------------------------------------------------
      2105                   ; 263 | sprintf(E_STRING,OUT_STR);                                             
      2106                   ; 265 | else                                                                   
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   40
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   40
 
      2107                   ;----------------------------------------------------------------------
      2108 000002c6 08700000-        ldp       @CL40,DP
@@ -2358,10 +2358,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   40
      2158 000002e0 50200093-        ldiu      @CL41,r0              ; |274| 
      2159 000002e1 506a0168         ldiu      360,ar2               ; |274| 
      2160 000002e2 08700000-        ldp       @CL40,DP
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   41
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   41
 
      2161 000002e3 50630000         ldiu      0,r3                  ; |274| 
      2162 000002e4 50220092-        ldiu      @CL40,r2              ; |274| 
@@ -2417,10 +2417,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   41
      2212 000002fd 04e00000         cmpi      0,r0                  ; |281| 
      2213 000002fe 6a050011         beq       L83                   ; |281| 
      2214                   ;*      Branch Occurs to L83            ; |281| 
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   42
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   42
 
      2215                           .line   219
      2216                   ;----------------------------------------------------------------------
@@ -2476,10 +2476,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   42
      2266 0000031a          L84:        
      2267                           .line   226
      2268                   ;----------------------------------------------------------------------
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   43
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   43
 
      2269                   ; 290 | if (RUSS)                                                              
      2270                   ;----------------------------------------------------------------------
@@ -2535,10 +2535,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   43
      2320 00000338 18740001         subi      1,sp                  ; |296| 
      2321                           .line   233
      2322                   ;----------------------------------------------------------------------
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   44
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   44
 
      2323                   ; 297 | break;                                                                 
      2324                   ; 298 | case E_ERROR_TIME_RESET:                                               
@@ -2594,10 +2594,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   44
      2374 00000351 502100a5-        ldiu      @CL59,r1              ; |305| 
      2375 00000352 08700000-        ldp       @CL43,DP
      2376 00000353 50200095-        ldiu      @CL43,r0              ; |305| 
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   45
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   45
 
      2377 00000354 08700000-        ldp       @CL42,DP
      2378 00000355 0f210000         push      r1                    ; |305| 
@@ -2653,10 +2653,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   45
      2428 0000036f 6a000059         bu        L115                  ; |64| 
      2429                   ;*      Branch Occurs to L115           ; |64| 
      2430 00000370          L92:        
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   46
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   46
 
      2431                           .line   250
      2432                   ;----------------------------------------------------------------------
@@ -2712,10 +2712,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   46
      2482 00000388 08700000-        ldp       @CL40,DP
      2483 00000389 50210092-        ldiu      @CL40,r1              ; |320| 
      2484 0000038a 08700000-        ldp       @CL61,DP
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   47
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   47
 
      2485 0000038b 502200a7-        ldiu      @CL61,r2              ; |320| 
      2486 0000038c 08700000-        ldp       @CL43,DP
@@ -2771,10 +2771,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   47
      2536                   ;*      Branch Occurs to L48            ; |170| 
      2537 000003ad 04e00001         cmpi      1,r0                  ; |170| 
      2538 000003ae 6a05fe21         beq       L51                   ; |170| 
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   48
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   48
 
      2539                   ;*      Branch Occurs to L51            ; |170| 
      2540 000003af 04e00006         cmpi      6,r0                  ; |170| 
@@ -2830,10 +2830,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   48
      2590 000003cb 504bc300         ldiu      *fp,fp
      2591                                                           ; Restore SOE Registers
      2592 000003cc 0ea60000         popf      f6
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   49
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   49
 
      2593                                                           ; Unallocate the Frame
      2594 000003cd 1874001f         subi      31,sp
@@ -2889,10 +2889,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   49
      2644 00000007 50600001         ldiu      1,r0                  ; |351| 
      2645 00000008 1540c000         sti       r0,*ar0               ; |351| 
      2646                           .line   13
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   50
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   50
 
      2647                   ;----------------------------------------------------------------------
      2648                   ; 355 | if (Calc_CRC(FLASH_LOC_CFG_FACTORY, FLASH_CFG_SIZE))    /* Test Factory
@@ -2948,10 +2948,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   50
      2698                           .line   19
      2699                   ;----------------------------------------------------------------------
      2700                   ; 361 | CRC = Calc_CRC(FLASH_LOC_BOOT, FLASH_BOOT_SIZE);                /* Test
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   51
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   51
 
      2701                   ;     |  Boot */                                                               
      2702                   ;----------------------------------------------------------------------
@@ -3007,10 +3007,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   51
      2752                   ;*      Branch Occurs to L126           ; |368| 
      2753                           .line   27
      2754                   ;----------------------------------------------------------------------
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   52
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   52
 
      2755                   ; 369 | DIAGNOSTICS[0] |= ERROR_FLASH_MEMORY;                                  
      2756                   ;----------------------------------------------------------------------
@@ -3066,10 +3066,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   52
      2806 0000005c 502000ac-        ldiu      @CL66,r0              ; |376| 
      2807 0000005d 70000000         callu     r0                    ; far call to _Calc_CRC ; |376| 
      2808                                                           ; |376| Far Call Occurs
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   53
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   53
 
      2809 0000005e 15400304         sti       r0,*+fp(4)            ; |376| 
      2810                           .line   36
@@ -3125,10 +3125,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   53
      2860                   ;* FUNCTION NAME: _Self_Test5                                                 *
      2861                   ;*                                                                            *
      2862                   ;*   Architecture       : TMS320C33                                           *
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   54
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   54
 
      2863                   ;*   Calling Convention : TI Standard Register Parameters                     *
      2864                   ;*   Function Uses Regs : r0,r2,r3,ar0,ar2,st                                 *
@@ -3184,10 +3184,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   54
      2914 00000082 15400304         sti       r0,*+fp(4)            ; |408| 
      2915                           .line   14
      2916                   ;----------------------------------------------------------------------
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   55
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   55
 
      2917                   ; 410 | if (CRC!=CRC_APP)                                                      
      2918                   ;----------------------------------------------------------------------
@@ -3243,10 +3243,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   55
      2968                   ;----------------------------------------------------------------------
      2969                   ; 418 | TMR_SELFTEST.vect = (int*)Self_Test1;                   /* Set vector t
      2970                   ;     | o Self_Test1 */                                                        
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   56
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   56
 
      2971                   ;----------------------------------------------------------------------
      2972 0000009d 08700000-        ldp       @CL79,DP
@@ -3302,10 +3302,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   56
      3022                           .sym    _s,1,30,1,32
      3023                           .sym    _d,2,30,1,32
      3024                           .sym    _i,3,4,1,32
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   57
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   57
 
      3025                           .sym    _CRC,4,14,1,32
      3026                           .line   1
@@ -3361,10 +3361,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   57
      3076                           .line   14
      3077                   ;----------------------------------------------------------------------
      3078                   ; 451 | DIAGNOSTICS[0] |= ERROR_FLASH_MEMORY;                                  
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   58
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   58
 
      3079                   ;----------------------------------------------------------------------
      3080 000000c4 08700000-        ldp       @CL3,DP
@@ -3420,10 +3420,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   58
      3130                   ;******************************************************************************
      3131                   ;* FUNCTION NAME: _Self_Test3                                                 *
      3132                   ;*                                                                            *
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   59
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   59
 
      3133                   ;*   Architecture       : TMS320C33                                           *
      3134                   ;*   Calling Convention : TI Standard Register Parameters                     *
@@ -3479,10 +3479,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   59
      3184 000000ec 502800af-        ldiu      @CL69,ar0             ; |483| 
      3185 000000ed 23c000c0         cmpi3     *ar0,r0               ; |483| 
      3186 000000ee 6a050005         beq       L152                  ; |483| 
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   60
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   60
 
      3187                   ;*      Branch Occurs to L152           ; |483| 
      3188                           .line   12
@@ -3538,10 +3538,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   60
      3238                   
      3239                           .global _Self_Test2
      3240                           .sym    _Self_Test2,_Self_Test2,32,2,0
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   61
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   61
 
      3241                           .func   506
      3242                   ;******************************************************************************
@@ -3597,10 +3597,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   61
      3292                   ;----------------------------------------------------------------------
      3293                   ; 513 | DIAGNOSTICS[0] |= ERROR_FLASH_MEMORY;                                  
      3294                   ;----------------------------------------------------------------------
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   62
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   62
 
      3295 00000117 08700000-        ldp       @CL3,DP
      3296 00000118 5028006d-        ldiu      @CL3,ar0              ; |513| 
@@ -3656,10 +3656,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   62
      3346                   ;* FUNCTION NAME: _Self_Test1                                                 *
      3347                   ;*                                                                            *
      3348                   ;*   Architecture       : TMS320C33                                           *
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   63
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   63
 
      3349                   ;*   Calling Convention : TI Standard Register Parameters                     *
      3350                   ;*   Function Uses Regs : r0,r2,r3,ar0,ar2,st                                 *
@@ -3715,10 +3715,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   63
      3400 00000141 50600008         ldiu      8,r0                  ; |542| 
      3401 00000142 25a0c000         or3       r0,*ar0,r0            ; |542| 
      3402 00000143 1540c000         sti       r0,*ar0               ; |542| 
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   64
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   64
 
      3403 00000144          L166:        
      3404                           .line   10
@@ -3774,10 +3774,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   64
      3454                           .sym    _E_STRING,_E_STRING,50,2,3232,,101
      3455                   
      3456                           .global _DIO_ALARM
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   65
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   65
 
      3457 000000dc          _DIO_ALARM:     .usect  "CFG",3,1
      3458                           .sym    _DIO_ALARM,_DIO_ALARM,8,2,96,.fake7
@@ -3833,10 +3833,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   65
           00000019 00000079 
           0000001a 00000000 
      3485 0000001b 00000045 SL3:    .byte   "ERROR: FLASH Memory",0
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   66
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   66
 
           0000001c 00000052 
           0000001d 00000052 
@@ -3892,10 +3892,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   66
           0000004f 0000006f 
           00000050 00000072 
           00000051 00000079 
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   67
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   67
 
           00000052 00000000 
      3488 00000053 00000045 SL6:    .byte   "ERROR: Invalid PV",0
@@ -3951,10 +3951,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   67
           00000085 00000000 
      3491 00000086 00000045 SL9:    .byte   "ERROR: Lo Water Cut",0
           00000087 00000052 
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   68
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   68
 
           00000088 00000052 
           00000089 0000004f 
@@ -4010,10 +4010,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   68
      3494 000000bb 00000045 SL12:   .byte   "ERROR: RESET BASICS",0
           000000bc 00000052 
           000000bd 00000052 
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   69
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   69
 
           000000be 0000004f 
           000000bf 00000052 
@@ -4069,10 +4069,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   69
           000000f1 00000000 
      3497 000000f2 00000045 SL15:   .byte   "ERROR: Invalid Time",0
           000000f3 00000052 
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   70
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   70
 
           000000f4 00000052 
           000000f5 0000004f 
@@ -4128,10 +4128,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   70
           00000127 00000020 
           00000128 00000023 
           00000129 00000025 
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   71
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   71
 
           0000012a 00000030 
           0000012b 00000032 
@@ -4187,10 +4187,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   71
      3548 00000096                  .bss    CL44,1
      3549 00000097                  .bss    CL45,1
      3550 00000098                  .bss    CL46,1
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   72
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   72
 
      3551 00000099                  .bss    CL47,1
      3552 0000009a                  .bss    CL48,1
@@ -4246,10 +4246,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   72
      3602 00000009 00000000!        .field          _CHANGE,32
      3603 0000000a 00000000!        .field          _DATA_CHANGE,32
      3604 0000000b 000000df-        .field          _DIAGNOSTICS_MASK,32
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   73
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   73
 
      3605 0000000c 000000e0-        .field          _DIAGNOSTICS_MASK+1,32
      3606 0000000d 00000003!        .field          _REG_WATERCUT+3,32
@@ -4305,10 +4305,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   73
      3656 0000003f 00000122+        .field          SL18,32
      3657 00000040 00000000!        .field          _DIO_BUILT_IN_TEST,32
      3658 00000041 00418000         .field          4292608,32
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   74
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   74
 
      3659 00000042 00008000         .field          32768,32
      3660 00000043 00000000!        .field          _Calc_CRC,32
@@ -4364,10 +4364,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   74
      3710                   
      3711                           .global _DATA_CHANGE
      3712                   
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   75
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   75
 
      3713                           .global _SA
      3714                   
@@ -4407,10 +4407,10 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   75
      3748                           .global DIV_F30
 
  No Errors,  No Warnings
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   76
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   76
 
 LABEL                            VALUE       DEFN    REF
 
@@ -4465,10 +4465,10 @@ CL20                             0000007e-   3524   1147   1148
 CL21                             0000007f-   3525   1145   1146   1249   1250 
                                                     1300   1301 
 CL22                             00000080-   3526   1193   1194 
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   77
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   77
 
 LABEL                            VALUE       DEFN    REF
 
@@ -4528,10 +4528,10 @@ CL40                             00000092-   3544   1581   1583   1591   1592
                                                     2346   2348   2356   2357 
                                                     2408   2410   2418   2419 
                                                     2470   2472   2482   2483 
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   78
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   78
 
 LABEL                            VALUE       DEFN    REF
 
@@ -4587,10 +4587,10 @@ CL5                              0000006f-   3509    774    775    914    915
                                                     1092   1093   1101   1102 
                                                     1472   1473   2480   2481 
                                                     2504   2505   2526   2527 
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   79
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   79
 
 LABEL                            VALUE       DEFN    REF
 
@@ -4644,10 +4644,10 @@ CL80                             000000ba-   3584   2974   2975
 CL81                             000000bb-   3585   2985   2987   3104   3106 
                                                     3216   3218   3319   3321 
                                                     3422   3424 
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   80
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   80
 
 LABEL                            VALUE       DEFN    REF
 
@@ -4702,10 +4702,10 @@ L27                              000000a0'   1096    918    947    968    989
 L29                              000000c4'   1157   1105 
 L34                              000000e4'   1216   1197   1203 
 L35                              000000e8'   1225   1214 
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   81
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   81
 
 LABEL                            VALUE       DEFN    REF
 
@@ -4760,10 +4760,10 @@ SL14                             000000e0+   3496   3652
 SL15                             000000f2+   3497   3653 
 SL16                             00000106+   3498   3654 
 SL17                             00000119+   3499   3655 
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   82
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   82
 
 LABEL                            VALUE       DEFN    REF
 
@@ -4818,10 +4818,10 @@ _Self_Test2                      00000105+   3252   3239   3240   3240   3680
 _Self_Test3                      000000da+   3140   3127   3128   3128   3679 
 _Self_Test4                      000000ae+   3021   3008   3009   3009   3678 
 _Self_Test5                      00000071+   2869   2856   2857   2857   3677 
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Jul 24 11:03:54 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_AK8.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Sep 19 10:37:48 2019
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_95S.AAB 
 
-G:\workspace\EEA\V615\APP\SOURCE\ASM\selftest.asm                    PAGE   83
+G:\workspace\EEA\v615\APP\SOURCE\ASM\selftest.asm                    PAGE   83
 
 LABEL                            VALUE       DEFN    REF
 

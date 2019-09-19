@@ -1548,7 +1548,7 @@ void Setup_Basics(void)
 		VAR_Initialize(&FC[i].GROSS_OIL, c_volume, u_v_barrel, 1.0, 1000.0, var_no_alarm|var_roll);
 		sprintf(FC[i].GROSS_OIL.name, "FC%d Gross Oil", i+1);
 		//VAR_Setup_Unit(&FC[i].GROSS_OIL, u_v_barrel, 10000000.0, 0.0, 10000000.0, 0.0); // BY DKOH SEP 19, 2019 Bug 64 - Maximum number limit on FC Accumulator (edit)
-		VAR_Setup_Unit(&FC[i].GROSS_OIL, u_v_barrel, 100000000.0, 0.0, 100000000.0, 0.0);
+		VAR_Setup_Unit(&FC[i].GROSS_OIL, u_v_barrel, 1000000000.0, 0.0, 1000000000.0, 0.0);
 		VAR_Update(&FC[i].GROSS_OIL, 0.0, 0, 0);
 		FC[i].GROSS_OIL.aux = i;
 
@@ -1556,14 +1556,15 @@ void Setup_Basics(void)
 		VAR_Initialize(&FC[i].GROSS_WATER, c_volume, u_v_barrel, 1.0, 1000.0, var_no_alarm|var_roll);
 		sprintf(FC[i].GROSS_WATER.name, "Gross Water %d", i+1);
 		//VAR_Setup_Unit(&FC[i].GROSS_WATER, u_v_barrel, 10000000.0, 0.0, 10000000.0, 0.0); // BY DKOH SEP 19, 2019 Bug 64 - Maximum number limit on FC Accumulator (edit) 
-		VAR_Setup_Unit(&FC[i].GROSS_WATER, u_v_barrel, 100000000.0, 0.0, 100000000.0, 0.0);
+		VAR_Setup_Unit(&FC[i].GROSS_WATER, u_v_barrel, 1000000000.0, 0.0, 1000000000.0, 0.0);
 		VAR_Update(&FC[i].GROSS_WATER, 0.0, 0, 0);
 		FC[i].GROSS_WATER.aux = i;
 
 		/* Flow Computer Accumulator Gross Total - 0.0 */
 		VAR_Initialize(&FC[i].GROSS_TOTAL, c_volume, u_v_barrel, 1.0, 1000.0, var_no_alarm|var_roll);
 		sprintf(FC[i].GROSS_TOTAL.name, "FC%d Gross Total", i+1);
-		VAR_Setup_Unit(&FC[i].GROSS_TOTAL, u_v_barrel, 100000000.0, 0.0, 100000000.0, 0.0);
+		//VAR_Setup_Unit(&FC[i].GROSS_TOTAL, u_v_barrel, 100000000.0, 0.0, 100000000.0, 0.0);
+		VAR_Setup_Unit(&FC[i].GROSS_TOTAL, u_v_barrel, 1000000000.0, 0.0, 1000000000.0, 0.0); // BY DKOH SEP 19, 2019 Bug 64 - Maximum number limit on FC Accumulator (edit)
 		VAR_Update(&FC[i].GROSS_TOTAL, 0.0, 0, 0);
 		FC[i].GROSS_TOTAL.aux = i;
 		

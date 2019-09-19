@@ -1,6 +1,6 @@
 ;******************************************************************************
 ;* TMS320C3x/4x ANSI C Code Generator                            Version 5.11 *
-;* Date/Time created: Thu Sep 19 10:37:43 2019                                *
+;* Date/Time created: Thu Sep 19 14:35:17 2019                                *
 ;******************************************************************************
 	.regalias	; enable floating point register aliases
 fp	.set	ar3
@@ -17,9 +17,9 @@ FP	.set	ar3
 ;*   Calls              : Normal Library ASM calls                            *
 ;*   Debug Info         : Standard TI Debug Information                       *
 ;******************************************************************************
-;	C:\tic3x4x\c3x4x\cgtools\bin\ac30.exe -@_78C.AAA 
+;	C:\tic3x4x\c3x4x\cgtools\bin\ac30.exe -@_F6K.AAA 
 	.file	"glbls.c"
-	.file	"G:\workspace\EEA\v615\APP\SOURCE\INCLUDE\GLBLS.H"
+	.file	"G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\GLBLS.H"
 
 	.sect	".const"
 _copyright:
@@ -93,9 +93,9 @@ _credit:
 
 	.global	_credit
 	.sym	_credit,_credit,50,2,512,,16
-	.file	"G:\workspace\EEA\v615\INCLUDE\stdarg.h"
+	.file	"G:\workspace\EEA\V615\INCLUDE\stdarg.h"
 	.sym	_va_list,0,18,13,32
-	.file	"G:\workspace\EEA\v615\INCLUDE\format.h"
+	.file	"G:\workspace\EEA\V615\INCLUDE\format.h"
 	.stag	.fake0,128
 	.member	_flags,0,14,8,32
 	.member	_fwidth,32,4,8,32
@@ -111,9 +111,9 @@ _credit:
 	.member	_conv,3168,2,8,32
 	.eos
 	.sym	__SFIELD,0,8,13,3200,.fake1
-	.file	"G:\workspace\EEA\v615\INCLUDE\string.h"
+	.file	"G:\workspace\EEA\V615\INCLUDE\string.h"
 	.sym	_size_t,0,14,13,32
-	.file	"G:\workspace\EEA\v615\INCLUDE\stdio.h"
+	.file	"G:\workspace\EEA\V615\INCLUDE\stdio.h"
 	.stag	.fake2,224
 	.member	_fd,0,4,8,32
 	.member	_buf,32,28,8,32
@@ -137,7 +137,7 @@ _credit:
 	.member	_RENAME,512,148,8,32
 	.eos
 	.sym	__DEVICE,0,8,13,544,.fake3
-	.file	"G:\workspace\EEA\v615\INCLUDE\stdlib.h"
+	.file	"G:\workspace\EEA\V615\INCLUDE\stdlib.h"
 	.sym	_wchar_t,0,2,13,32
 	.stag	__div_t,64
 	.member	_quot,0,4,8,32
@@ -145,8 +145,8 @@ _credit:
 	.eos
 	.sym	_div_t,0,8,13,64,__div_t
 	.sym	_ldiv_t,0,8,13,64,__div_t
-	.file	"G:\workspace\EEA\v615\INCLUDE\math.h"
-	.file	"G:\workspace\EEA\v615\INCLUDE\time.h"
+	.file	"G:\workspace\EEA\V615\INCLUDE\math.h"
+	.file	"G:\workspace\EEA\V615\INCLUDE\time.h"
 	.sym	_clock_t,0,15,13,32
 	.sym	_time_t,0,15,13,32
 	.stag	_tm,288
@@ -166,9 +166,9 @@ _credit:
 	.member	_tzname,64,50,8,128,,4
 	.member	_dstname,192,50,8,128,,4
 	.eos
-	.file	"G:\workspace\EEA\v615\INCLUDE\ETC.H"
+	.file	"G:\workspace\EEA\V615\INCLUDE\ETC.H"
 	.sym	_BOOL,0,14,13,32
-	.file	"G:\workspace\EEA\v615\INCLUDE\LIST.H"
+	.file	"G:\workspace\EEA\V615\INCLUDE\LIST.H"
 	.stag	.fake4,96
 	.member	_head,0,20,8,32
 	.member	_tail,32,20,8,32
@@ -180,7 +180,7 @@ _credit:
 	.member	_next,32,20,8,32
 	.eos
 	.sym	_GENERIC,0,8,13,64,.fake5
-	.file	"G:\workspace\EEA\v615\APP\SOURCE\INCLUDE\VARIABLE.H"
+	.file	"G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\VARIABLE.H"
 	.stag	.fake6,1408
 	.member	_val,0,6,8,32
 	.member	_vect1,32,20,8,32
@@ -223,7 +223,7 @@ _credit:
 	.member	_v,64,24,8,32,.fake6
 	.eos
 	.sym	_DPKT,0,8,13,96,.fake9
-	.file	"G:\workspace\EEA\v615\APP\SOURCE\INCLUDE\BUFFER.H"
+	.file	"G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\BUFFER.H"
 	.stag	.fake10,9824
 	.member	_head,0,4,8,32
 	.member	_tail,32,4,8,32
@@ -235,8 +235,8 @@ _credit:
 	.member	_locked,9792,14,8,32
 	.eos
 	.sym	_BFR,0,8,13,9824,.fake10
-	.file	"G:\workspace\EEA\v615\INCLUDE\UNITS.H"
-	.file	"G:\workspace\EEA\v615\APP\SOURCE\INCLUDE\TIMER.H"
+	.file	"G:\workspace\EEA\V615\INCLUDE\UNITS.H"
+	.file	"G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\TIMER.H"
 	.stag	.fake11,320
 	.member	_prev,0,20,8,32
 	.member	_next,32,20,8,32
@@ -250,9 +250,9 @@ _credit:
 	.member	_t,288,6,8,32
 	.eos
 	.sym	_TPKT,0,8,13,320,.fake11
-	.file	"G:\workspace\EEA\v615\INCLUDE\I2C.H"
-	.file	"G:\workspace\EEA\v615\APP\SOURCE\INCLUDE\ERRORS.H"
-	.file	"G:\workspace\EEA\v615\APP\SOURCE\INCLUDE\SERIAL.H"
+	.file	"G:\workspace\EEA\V615\INCLUDE\I2C.H"
+	.file	"G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\ERRORS.H"
+	.file	"G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\SERIAL.H"
 	.stag	.fake12,2272
 	.member	_Slave,0,4,8,32
 	.member	_SNUM,32,4,8,32
@@ -340,7 +340,7 @@ _credit:
 	.member	_int_ptr,640,20,8,32
 	.eos
 	.sym	_MPKT,0,8,13,672,.fake14
-	.file	"G:\workspace\EEA\v615\APP\SOURCE\INCLUDE\ADC.H"
+	.file	"G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\ADC.H"
 	.stag	.fake15,10176
 	.member	_CURRENT,0,8,8,1408,.fake6
 	.member	_CURRENT_PERCENT_OF_RANGE,1408,8,8,1408,.fake6
@@ -358,7 +358,7 @@ _credit:
 	.member	_val,10144,6,8,32
 	.eos
 	.sym	_LOOPDATA_I,0,8,13,10176,.fake15
-	.file	"G:\workspace\EEA\v615\APP\SOURCE\INCLUDE\DAC.H"
+	.file	"G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\DAC.H"
 	.stag	.fake16,13408
 	.member	_CURRENT,0,8,8,1408,.fake6
 	.member	_CURRENT_PERCENT_OF_RANGE,1408,8,8,1408,.fake6
@@ -391,7 +391,7 @@ _credit:
 	.member	_PID_enable_failsafe,13376,14,8,32
 	.eos
 	.sym	_LOOPDATA_O,0,8,13,13408,.fake16
-	.file	"G:\workspace\EEA\v615\APP\SOURCE\INCLUDE\EXECUTE.H"
+	.file	"G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\EXECUTE.H"
 	.stag	.fake17,128
 	.member	_prev,0,20,8,32
 	.member	_next,32,20,8,32
@@ -399,8 +399,8 @@ _credit:
 	.member	_priority,96,4,8,32
 	.eos
 	.sym	_EPKT,0,8,13,128,.fake17
-	.file	"G:\workspace\EEA\v615\INCLUDE\FLASH.H"
-	.file	"G:\workspace\EEA\v615\APP\SOURCE\INCLUDE\LOG.H"
+	.file	"G:\workspace\EEA\V615\INCLUDE\FLASH.H"
+	.file	"G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\LOG.H"
 	.stag	.fake18,384
 	.member	_log_len,0,14,8,32
 	.member	_log_n_sectors,32,14,8,32
@@ -416,9 +416,9 @@ _credit:
 	.member	_erased_sector,352,14,8,32
 	.eos
 	.sym	_LOG,0,8,13,384,.fake18
-	.file	"G:\workspace\EEA\v615\APP\SOURCE\INCLUDE\DEMO.H"
-	.file	"G:\workspace\EEA\v615\APP\SOURCE\INCLUDE\SELFTEST.H"
-	.file	"G:\workspace\EEA\v615\APP\SOURCE\INCLUDE\MENU.H"
+	.file	"G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\DEMO.H"
+	.file	"G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\SELFTEST.H"
+	.file	"G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\MENU.H"
 	.stag	.fake19,16288
 	.member	_INIT,0,14,8,32
 	.member	_FRESH,32,14,8,32
@@ -464,8 +464,8 @@ _credit:
 	.member	_tbl,16256,20,8,32
 	.eos
 	.sym	_MENU_STRUCT,0,8,13,16288,.fake19
-	.file	"G:\workspace\EEA\v615\APP\SOURCE\INCLUDE\FLOAT1.H"
-	.file	"G:\workspace\EEA\v615\APP\SOURCE\INCLUDE\GLBLS.H"
+	.file	"G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\FLOAT1.H"
+	.file	"G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\GLBLS.H"
 	.stag	.fake20,480
 	.member	_i,0,4,8,32
 	.member	_Watercut,32,6,8,32
@@ -784,10 +784,10 @@ _credit:
 	.member	_FBLO0,2432,6,8,32
 	.eos
 	.sym	_HS_STRUCT,0,8,13,2464,.fake33
-	.file	"G:\workspace\EEA\v615\APP\SOURCE\INCLUDE\HART.H"
-	.file	"G:\workspace\EEA\v615\APP\SOURCE\INCLUDE\MODBUSRTU.H"
-	.file	"G:\workspace\EEA\v615\APP\SOURCE\INCLUDE\MISC.H"
-	.file	"G:\workspace\EEA\v615\APP\SOURCE\INCLUDE\API.H"
+	.file	"G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\HART.H"
+	.file	"G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\MODBUSRTU.H"
+	.file	"G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\MISC.H"
+	.file	"G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\API.H"
 	.file	"glbls.c"
 	.sect	 "initialization"
 
@@ -13409,6 +13409,9 @@ L193:
 	.line	1512
 ;----------------------------------------------------------------------
 ; 1549 | sprintf(FC[i].GROSS_OIL.name, "FC%d Gross Oil", i+1);                  
+; 1550 | //VAR_Setup_Unit(&FC[i].GROSS_OIL, u_v_barrel, 10000000.0, 0.0, 1000000
+;     | 0.0, 0.0); // BY DKOH SEP 19, 2019 Bug 64 - Maximum number limit on FC 
+;     | Accumulator (edit)                                                     
 ;----------------------------------------------------------------------
         ldp       @CL869,DP
         ldiu      1,r0                  ; |1549| 
@@ -13425,1888 +13428,1894 @@ L193:
         callu     r0                    ; far call to _sprintf	; |1549| 
                                         ; |1549| Far Call Occurs
         subi      2,sp                  ; |1549| 
-	.line	1513
-;----------------------------------------------------------------------
-; 1550 | VAR_Setup_Unit(&FC[i].GROSS_OIL, u_v_barrel, 10000000.0, 0.0, 10000000.
-;     | 0, 0.0);                                                               
-;----------------------------------------------------------------------
-        ldfu      0.0000000000e+00,f1   ; |1550| 
-        ldp       @CL870,DP
-        pushf     f1                    ; |1550| 
-        ldfu      @CL870,f0             ; |1550| 
-        ldp       @CL30,DP
-        pushf     f0                    ; |1550| 
-        ldiu      @CL30,r0              ; |1550| 
-        ldp       @CL867,DP
-        ldiu      *+fp(1),ar2           ; |1550| 
-        mpyi      1336,ar2              ; |1550| 
-        addi      @CL867,ar2            ; |1550| Unsigned
-        ldp       @CL870,DP
-        ldfu      @CL870,f2             ; |1550| 
-        ldiu      46,rc                 ; |1550| 
-        ldfu      0.0000000000e+00,f3   ; |1550| 
-        callu     r0                    ; far call to _VAR_Setup_Unit	; |1550| 
-                                        ; |1550| Far Call Occurs
-        subi      2,sp                  ; |1550| 
 	.line	1514
 ;----------------------------------------------------------------------
-; 1551 | VAR_Update(&FC[i].GROSS_OIL, 0.0, 0, 0);                               
-;----------------------------------------------------------------------
-        ldp       @CL32,DP
-        ldiu      @CL32,r0              ; |1551| 
-        ldiu      *+fp(1),ar2           ; |1551| 
-        ldp       @CL867,DP
-        mpyi      1336,ar2              ; |1551| 
-        addi      @CL867,ar2            ; |1551| Unsigned
-        ldp       @CL31+0,DP
-        ldfu      @CL31+0,f2            ; |1551| 40b float hi half
-        ldp       @CL31+1,DP
-        ldiu      0,rc                  ; |1551| 
-        ldiu      @CL31+1,r2            ; |1551| 40b float lo half
-        ldiu      0,r3                  ; |1551| 
-        callu     r0                    ; far call to _VAR_Update	; |1551| 
-                                        ; |1551| Far Call Occurs
-	.line	1515
-;----------------------------------------------------------------------
-; 1552 | FC[i].GROSS_OIL.aux = i;                                               
-;----------------------------------------------------------------------
-        ldp       @CL871,DP
-        ldiu      *+fp(1),ir0           ; |1552| 
-        ldiu      @CL871,ar0            ; |1552| 
-        mpyi      1336,ir0              ; |1552| 
-        ldiu      *+fp(1),r0            ; |1552| 
-        sti       r0,*+ar0(ir0)         ; |1552| 
-	.line	1518
-;----------------------------------------------------------------------
-; 1555 | VAR_Initialize(&FC[i].GROSS_WATER, c_volume, u_v_barrel, 1.0, 1000.0, v
-;     | ar_no_alarm|var_roll);                                                 
-;----------------------------------------------------------------------
-        ldiu      *+fp(1),ar2           ; |1555| 
-        ldp       @CL872,DP
-        mpyi      1336,ar2              ; |1555| 
-        addi      @CL872,ar2            ; |1555| Unsigned
-        ldp       @CL20,DP
-        ldiu      @CL20,r0              ; |1555| 
-        ldp       @CL19,DP
-        ldiu      46,rs                 ; |1555| 
-        ldiu      516,re                ; |1555| 
-        ldiu      68,rc                 ; |1555| 
-        ldfu      @CL19,f3              ; |1555| 
-        ldfu      1.0000000000e+00,f2   ; |1555| 
-        callu     r0                    ; far call to _VAR_Initialize	; |1555| 
-                                        ; |1555| Far Call Occurs
-	.line	1519
-;----------------------------------------------------------------------
-; 1556 | sprintf(FC[i].GROSS_WATER.name, "Gross Water %d", i+1);                
-;----------------------------------------------------------------------
-        ldp       @CL874,DP
-        ldiu      1,r0                  ; |1556| 
-        addi      *+fp(1),r0            ; |1556| 
-        push      r0                    ; |1556| 
-        ldiu      @CL874,r1             ; |1556| 
-        push      r1                    ; |1556| 
-        ldiu      *+fp(1),ar2           ; |1556| 
-        ldp       @CL873,DP
-        mpyi      1336,ar2              ; |1556| 
-        addi      @CL873,ar2            ; |1556| Unsigned
-        ldp       @CL24,DP
-        ldiu      @CL24,r0              ; |1556| 
-        callu     r0                    ; far call to _sprintf	; |1556| 
-                                        ; |1556| Far Call Occurs
-        subi      2,sp                  ; |1556| 
-	.line	1520
-;----------------------------------------------------------------------
-; 1557 | VAR_Setup_Unit(&FC[i].GROSS_WATER, u_v_barrel, 10000000.0, 0.0, 1000000
-;     | 0.0, 0.0);                                                             
-;----------------------------------------------------------------------
-        ldfu      0.0000000000e+00,f1   ; |1557| 
-        ldp       @CL870,DP
-        pushf     f1                    ; |1557| 
-        ldfu      @CL870,f0             ; |1557| 
-        ldp       @CL30,DP
-        pushf     f0                    ; |1557| 
-        ldiu      @CL30,r0              ; |1557| 
-        ldp       @CL872,DP
-        ldiu      *+fp(1),ar2           ; |1557| 
-        mpyi      1336,ar2              ; |1557| 
-        addi      @CL872,ar2            ; |1557| Unsigned
-        ldp       @CL870,DP
-        ldiu      46,rc                 ; |1557| 
-        ldfu      @CL870,f2             ; |1557| 
-        ldfu      0.0000000000e+00,f3   ; |1557| 
-        callu     r0                    ; far call to _VAR_Setup_Unit	; |1557| 
-                                        ; |1557| Far Call Occurs
-        subi      2,sp                  ; |1557| 
-	.line	1521
-;----------------------------------------------------------------------
-; 1558 | VAR_Update(&FC[i].GROSS_WATER, 0.0, 0, 0);                             
-;----------------------------------------------------------------------
-        ldp       @CL32,DP
-        ldiu      *+fp(1),ar2           ; |1558| 
-        ldiu      @CL32,r0              ; |1558| 
-        ldp       @CL872,DP
-        mpyi      1336,ar2              ; |1558| 
-        addi      @CL872,ar2            ; |1558| Unsigned
-        ldp       @CL31+0,DP
-        ldfu      @CL31+0,f2            ; |1558| 40b float hi half
-        ldp       @CL31+1,DP
-        ldiu      0,rc                  ; |1558| 
-        ldiu      @CL31+1,r2            ; |1558| 40b float lo half
-        ldiu      0,r3                  ; |1558| 
-        callu     r0                    ; far call to _VAR_Update	; |1558| 
-                                        ; |1558| Far Call Occurs
-	.line	1522
-;----------------------------------------------------------------------
-; 1559 | FC[i].GROSS_WATER.aux = i;                                             
-;----------------------------------------------------------------------
-        ldp       @CL875,DP
-        ldiu      *+fp(1),ir0           ; |1559| 
-        mpyi      1336,ir0              ; |1559| 
-        ldiu      @CL875,ar0            ; |1559| 
-        ldiu      *+fp(1),r0            ; |1559| 
-        sti       r0,*+ar0(ir0)         ; |1559| 
-	.line	1525
-;----------------------------------------------------------------------
-; 1562 | VAR_Initialize(&FC[i].GROSS_TOTAL, c_volume, u_v_barrel, 1.0, 1000.0, v
-;     | ar_no_alarm|var_roll);                                                 
-;----------------------------------------------------------------------
-        ldiu      *+fp(1),ar2           ; |1562| 
-        ldp       @CL876,DP
-        mpyi      1336,ar2              ; |1562| 
-        addi      @CL876,ar2            ; |1562| Unsigned
-        ldp       @CL20,DP
-        ldiu      @CL20,r0              ; |1562| 
-        ldp       @CL19,DP
-        ldfu      @CL19,f3              ; |1562| 
-        ldiu      46,rs                 ; |1562| 
-        ldiu      516,re                ; |1562| 
-        ldiu      68,rc                 ; |1562| 
-        ldfu      1.0000000000e+00,f2   ; |1562| 
-        callu     r0                    ; far call to _VAR_Initialize	; |1562| 
-                                        ; |1562| Far Call Occurs
-	.line	1526
-;----------------------------------------------------------------------
-; 1563 | sprintf(FC[i].GROSS_TOTAL.name, "FC%d Gross Total", i+1);              
-;----------------------------------------------------------------------
-        ldiu      1,r0                  ; |1563| 
-        addi      *+fp(1),r0            ; |1563| 
-        ldp       @CL878,DP
-        push      r0                    ; |1563| 
-        ldiu      @CL878,r1             ; |1563| 
-        push      r1                    ; |1563| 
-        ldiu      *+fp(1),ar2           ; |1563| 
-        ldp       @CL877,DP
-        mpyi      1336,ar2              ; |1563| 
-        addi      @CL877,ar2            ; |1563| Unsigned
-        ldp       @CL24,DP
-        ldiu      @CL24,r0              ; |1563| 
-        callu     r0                    ; far call to _sprintf	; |1563| 
-                                        ; |1563| Far Call Occurs
-        subi      2,sp                  ; |1563| 
-	.line	1527
-;----------------------------------------------------------------------
-; 1564 | VAR_Setup_Unit(&FC[i].GROSS_TOTAL, u_v_barrel, 100000000.0, 0.0, 100000
+; 1551 | VAR_Setup_Unit(&FC[i].GROSS_OIL, u_v_barrel, 1000000000.0, 0.0, 1000000
 ;     | 000.0, 0.0);                                                           
 ;----------------------------------------------------------------------
-        ldp       @CL879,DP
-        ldfu      @CL879,f0             ; |1564| 
-        ldfu      0.0000000000e+00,f1   ; |1564| 
+        ldfu      0.0000000000e+00,f1   ; |1551| 
+        ldp       @CL764,DP
+        pushf     f1                    ; |1551| 
+        ldfu      @CL764,f0             ; |1551| 
         ldp       @CL30,DP
-        pushf     f1                    ; |1564| 
-        pushf     f0                    ; |1564| 
-        ldiu      @CL30,r0              ; |1564| 
-        ldp       @CL876,DP
-        ldiu      *+fp(1),ar2           ; |1564| 
-        mpyi      1336,ar2              ; |1564| 
-        addi      @CL876,ar2            ; |1564| Unsigned
-        ldp       @CL879,DP
-        ldiu      46,rc                 ; |1564| 
-        ldfu      @CL879,f2             ; |1564| 
-        ldfu      0.0000000000e+00,f3   ; |1564| 
-        callu     r0                    ; far call to _VAR_Setup_Unit	; |1564| 
-                                        ; |1564| Far Call Occurs
-        subi      2,sp                  ; |1564| 
-	.line	1528
+        pushf     f0                    ; |1551| 
+        ldiu      @CL30,r0              ; |1551| 
+        ldp       @CL867,DP
+        ldiu      *+fp(1),ar2           ; |1551| 
+        mpyi      1336,ar2              ; |1551| 
+        addi      @CL867,ar2            ; |1551| Unsigned
+        ldp       @CL764,DP
+        ldfu      @CL764,f2             ; |1551| 
+        ldiu      46,rc                 ; |1551| 
+        ldfu      0.0000000000e+00,f3   ; |1551| 
+        callu     r0                    ; far call to _VAR_Setup_Unit	; |1551| 
+                                        ; |1551| Far Call Occurs
+        subi      2,sp                  ; |1551| 
+	.line	1515
 ;----------------------------------------------------------------------
-; 1565 | VAR_Update(&FC[i].GROSS_TOTAL, 0.0, 0, 0);                             
+; 1552 | VAR_Update(&FC[i].GROSS_OIL, 0.0, 0, 0);                               
 ;----------------------------------------------------------------------
         ldp       @CL32,DP
+        ldiu      @CL32,r0              ; |1552| 
+        ldiu      *+fp(1),ar2           ; |1552| 
+        ldp       @CL867,DP
+        mpyi      1336,ar2              ; |1552| 
+        addi      @CL867,ar2            ; |1552| Unsigned
+        ldp       @CL31+0,DP
+        ldfu      @CL31+0,f2            ; |1552| 40b float hi half
+        ldp       @CL31+1,DP
+        ldiu      0,rc                  ; |1552| 
+        ldiu      @CL31+1,r2            ; |1552| 40b float lo half
+        ldiu      0,r3                  ; |1552| 
+        callu     r0                    ; far call to _VAR_Update	; |1552| 
+                                        ; |1552| Far Call Occurs
+	.line	1516
+;----------------------------------------------------------------------
+; 1553 | FC[i].GROSS_OIL.aux = i;                                               
+;----------------------------------------------------------------------
+        ldp       @CL870,DP
+        ldiu      *+fp(1),ir0           ; |1553| 
+        ldiu      @CL870,ar0            ; |1553| 
+        mpyi      1336,ir0              ; |1553| 
+        ldiu      *+fp(1),r0            ; |1553| 
+        sti       r0,*+ar0(ir0)         ; |1553| 
+	.line	1519
+;----------------------------------------------------------------------
+; 1556 | VAR_Initialize(&FC[i].GROSS_WATER, c_volume, u_v_barrel, 1.0, 1000.0, v
+;     | ar_no_alarm|var_roll);                                                 
+;----------------------------------------------------------------------
+        ldiu      *+fp(1),ar2           ; |1556| 
+        ldp       @CL871,DP
+        mpyi      1336,ar2              ; |1556| 
+        addi      @CL871,ar2            ; |1556| Unsigned
+        ldp       @CL20,DP
+        ldiu      @CL20,r0              ; |1556| 
+        ldp       @CL19,DP
+        ldiu      46,rs                 ; |1556| 
+        ldiu      516,re                ; |1556| 
+        ldiu      68,rc                 ; |1556| 
+        ldfu      @CL19,f3              ; |1556| 
+        ldfu      1.0000000000e+00,f2   ; |1556| 
+        callu     r0                    ; far call to _VAR_Initialize	; |1556| 
+                                        ; |1556| Far Call Occurs
+	.line	1520
+;----------------------------------------------------------------------
+; 1557 | sprintf(FC[i].GROSS_WATER.name, "Gross Water %d", i+1);                
+; 1558 | //VAR_Setup_Unit(&FC[i].GROSS_WATER, u_v_barrel, 10000000.0, 0.0, 10000
+;     | 000.0, 0.0); // BY DKOH SEP 19, 2019 Bug 64 - Maximum number limit on F
+;     | C Accumulator (edit)                                                   
+;----------------------------------------------------------------------
+        ldp       @CL873,DP
+        ldiu      1,r0                  ; |1557| 
+        addi      *+fp(1),r0            ; |1557| 
+        push      r0                    ; |1557| 
+        ldiu      @CL873,r1             ; |1557| 
+        push      r1                    ; |1557| 
+        ldiu      *+fp(1),ar2           ; |1557| 
+        ldp       @CL872,DP
+        mpyi      1336,ar2              ; |1557| 
+        addi      @CL872,ar2            ; |1557| Unsigned
+        ldp       @CL24,DP
+        ldiu      @CL24,r0              ; |1557| 
+        callu     r0                    ; far call to _sprintf	; |1557| 
+                                        ; |1557| Far Call Occurs
+        subi      2,sp                  ; |1557| 
+	.line	1522
+;----------------------------------------------------------------------
+; 1559 | VAR_Setup_Unit(&FC[i].GROSS_WATER, u_v_barrel, 1000000000.0, 0.0, 10000
+;     | 00000.0, 0.0);                                                         
+;----------------------------------------------------------------------
+        ldfu      0.0000000000e+00,f1   ; |1559| 
+        ldp       @CL764,DP
+        pushf     f1                    ; |1559| 
+        ldfu      @CL764,f0             ; |1559| 
+        ldp       @CL30,DP
+        pushf     f0                    ; |1559| 
+        ldiu      @CL30,r0              ; |1559| 
+        ldp       @CL871,DP
+        ldiu      *+fp(1),ar2           ; |1559| 
+        mpyi      1336,ar2              ; |1559| 
+        addi      @CL871,ar2            ; |1559| Unsigned
+        ldp       @CL764,DP
+        ldiu      46,rc                 ; |1559| 
+        ldfu      @CL764,f2             ; |1559| 
+        ldfu      0.0000000000e+00,f3   ; |1559| 
+        callu     r0                    ; far call to _VAR_Setup_Unit	; |1559| 
+                                        ; |1559| Far Call Occurs
+        subi      2,sp                  ; |1559| 
+	.line	1523
+;----------------------------------------------------------------------
+; 1560 | VAR_Update(&FC[i].GROSS_WATER, 0.0, 0, 0);                             
+;----------------------------------------------------------------------
+        ldp       @CL32,DP
+        ldiu      *+fp(1),ar2           ; |1560| 
+        ldiu      @CL32,r0              ; |1560| 
+        ldp       @CL871,DP
+        mpyi      1336,ar2              ; |1560| 
+        addi      @CL871,ar2            ; |1560| Unsigned
+        ldp       @CL31+0,DP
+        ldfu      @CL31+0,f2            ; |1560| 40b float hi half
+        ldp       @CL31+1,DP
+        ldiu      0,rc                  ; |1560| 
+        ldiu      @CL31+1,r2            ; |1560| 40b float lo half
+        ldiu      0,r3                  ; |1560| 
+        callu     r0                    ; far call to _VAR_Update	; |1560| 
+                                        ; |1560| Far Call Occurs
+	.line	1524
+;----------------------------------------------------------------------
+; 1561 | FC[i].GROSS_WATER.aux = i;                                             
+;----------------------------------------------------------------------
+        ldp       @CL874,DP
+        ldiu      *+fp(1),ir0           ; |1561| 
+        mpyi      1336,ir0              ; |1561| 
+        ldiu      @CL874,ar0            ; |1561| 
+        ldiu      *+fp(1),r0            ; |1561| 
+        sti       r0,*+ar0(ir0)         ; |1561| 
+	.line	1527
+;----------------------------------------------------------------------
+; 1564 | VAR_Initialize(&FC[i].GROSS_TOTAL, c_volume, u_v_barrel, 1.0, 1000.0, v
+;     | ar_no_alarm|var_roll);                                                 
+;----------------------------------------------------------------------
+        ldiu      *+fp(1),ar2           ; |1564| 
+        ldp       @CL875,DP
+        mpyi      1336,ar2              ; |1564| 
+        addi      @CL875,ar2            ; |1564| Unsigned
+        ldp       @CL20,DP
+        ldiu      @CL20,r0              ; |1564| 
+        ldp       @CL19,DP
+        ldfu      @CL19,f3              ; |1564| 
+        ldiu      46,rs                 ; |1564| 
+        ldiu      516,re                ; |1564| 
+        ldiu      68,rc                 ; |1564| 
+        ldfu      1.0000000000e+00,f2   ; |1564| 
+        callu     r0                    ; far call to _VAR_Initialize	; |1564| 
+                                        ; |1564| Far Call Occurs
+	.line	1528
+;----------------------------------------------------------------------
+; 1565 | sprintf(FC[i].GROSS_TOTAL.name, "FC%d Gross Total", i+1);              
+; 1566 | //VAR_Setup_Unit(&FC[i].GROSS_TOTAL, u_v_barrel, 100000000.0, 0.0, 1000
+;     | 00000.0, 0.0);                                                         
+;----------------------------------------------------------------------
+        ldiu      1,r0                  ; |1565| 
+        addi      *+fp(1),r0            ; |1565| 
+        ldp       @CL877,DP
+        push      r0                    ; |1565| 
+        ldiu      @CL877,r1             ; |1565| 
+        push      r1                    ; |1565| 
         ldiu      *+fp(1),ar2           ; |1565| 
-        ldiu      @CL32,r0              ; |1565| 
         ldp       @CL876,DP
         mpyi      1336,ar2              ; |1565| 
         addi      @CL876,ar2            ; |1565| Unsigned
-        ldp       @CL31+0,DP
-        ldfu      @CL31+0,f2            ; |1565| 40b float hi half
-        ldp       @CL31+1,DP
-        ldiu      @CL31+1,r2            ; |1565| 40b float lo half
-        ldiu      0,rc                  ; |1565| 
-        ldiu      0,r3                  ; |1565| 
-        callu     r0                    ; far call to _VAR_Update	; |1565| 
-                                        ; |1565| Far Call Occurs
-	.line	1529
-;----------------------------------------------------------------------
-; 1566 | FC[i].GROSS_TOTAL.aux = i;                                             
-;----------------------------------------------------------------------
-        ldiu      *+fp(1),ir0           ; |1566| 
-        ldp       @CL880,DP
-        mpyi      1336,ir0              ; |1566| 
-        ldiu      @CL880,ar0            ; |1566| 
-        ldiu      *+fp(1),r0            ; |1566| 
-        sti       r0,*+ar0(ir0)         ; |1566| 
-	.line	1532
-;----------------------------------------------------------------------
-; 1569 | VAR_Initialize(&FC[i].AVG_GROSS_TOTAL, c_volume, u_v_barrel, 1.0, 1000.
-;     | 0, var_no_alarm|var_roll);                                             
-;----------------------------------------------------------------------
-        ldiu      *+fp(1),ar2           ; |1569| 
-        ldp       @CL881,DP
-        mpyi      1336,ar2              ; |1569| 
-        addi      @CL881,ar2            ; |1569| Unsigned
-        ldp       @CL20,DP
-        ldiu      @CL20,r0              ; |1569| 
-        ldiu      46,rs                 ; |1569| 
-        ldiu      516,re                ; |1569| 
-        ldp       @CL19,DP
-        ldiu      68,rc                 ; |1569| 
-        ldfu      @CL19,f3              ; |1569| 
-        ldfu      1.0000000000e+00,f2   ; |1569| 
-        callu     r0                    ; far call to _VAR_Initialize	; |1569| 
-                                        ; |1569| Far Call Occurs
-	.line	1533
-;----------------------------------------------------------------------
-; 1570 | sprintf(FC[i].AVG_GROSS_TOTAL.name, "FC%d Avg Grs Ttl", i+1);          
-;----------------------------------------------------------------------
-        ldiu      1,r0                  ; |1570| 
-        addi      *+fp(1),r0            ; |1570| 
-        ldp       @CL883,DP
-        push      r0                    ; |1570| 
-        ldiu      @CL883,r1             ; |1570| 
-        push      r1                    ; |1570| 
-        ldp       @CL882,DP
-        ldiu      *+fp(1),ar2           ; |1570| 
-        mpyi      1336,ar2              ; |1570| 
-        addi      @CL882,ar2            ; |1570| Unsigned
         ldp       @CL24,DP
-        ldiu      @CL24,r0              ; |1570| 
-        callu     r0                    ; far call to _sprintf	; |1570| 
-                                        ; |1570| Far Call Occurs
-        subi      2,sp                  ; |1570| 
-	.line	1534
+        ldiu      @CL24,r0              ; |1565| 
+        callu     r0                    ; far call to _sprintf	; |1565| 
+                                        ; |1565| Far Call Occurs
+        subi      2,sp                  ; |1565| 
+	.line	1530
 ;----------------------------------------------------------------------
-; 1571 | VAR_Setup_Unit(&FC[i].AVG_GROSS_TOTAL, u_v_barrel, 1000000000.0, 0.0, 1
-;     | 000000000.0, 0.0);                                                     
+; 1567 | VAR_Setup_Unit(&FC[i].GROSS_TOTAL, u_v_barrel, 1000000000.0, 0.0, 10000
+;     | 00000.0, 0.0); // BY DKOH SEP 19, 2019 Bug 64 - Maximum number limit on
+;     |  FC Accumulator (edit)                                                 
 ;----------------------------------------------------------------------
         ldp       @CL764,DP
-        ldfu      0.0000000000e+00,f1   ; |1571| 
-        ldfu      @CL764,f0             ; |1571| 
-        pushf     f1                    ; |1571| 
+        ldfu      @CL764,f0             ; |1567| 
+        ldfu      0.0000000000e+00,f1   ; |1567| 
         ldp       @CL30,DP
-        pushf     f0                    ; |1571| 
-        ldiu      @CL30,r0              ; |1571| 
-        ldiu      *+fp(1),ar2           ; |1571| 
-        ldp       @CL881,DP
-        mpyi      1336,ar2              ; |1571| 
-        addi      @CL881,ar2            ; |1571| Unsigned
+        pushf     f1                    ; |1567| 
+        pushf     f0                    ; |1567| 
+        ldiu      @CL30,r0              ; |1567| 
+        ldp       @CL875,DP
+        ldiu      *+fp(1),ar2           ; |1567| 
+        mpyi      1336,ar2              ; |1567| 
+        addi      @CL875,ar2            ; |1567| Unsigned
         ldp       @CL764,DP
-        ldiu      46,rc                 ; |1571| 
-        ldfu      @CL764,f2             ; |1571| 
-        ldfu      0.0000000000e+00,f3   ; |1571| 
-        callu     r0                    ; far call to _VAR_Setup_Unit	; |1571| 
-                                        ; |1571| Far Call Occurs
-        subi      2,sp                  ; |1571| 
-	.line	1535
+        ldiu      46,rc                 ; |1567| 
+        ldfu      @CL764,f2             ; |1567| 
+        ldfu      0.0000000000e+00,f3   ; |1567| 
+        callu     r0                    ; far call to _VAR_Setup_Unit	; |1567| 
+                                        ; |1567| Far Call Occurs
+        subi      2,sp                  ; |1567| 
+	.line	1531
 ;----------------------------------------------------------------------
-; 1572 | VAR_Update(&FC[i].AVG_GROSS_TOTAL, 0.0, 0, 0);                         
+; 1568 | VAR_Update(&FC[i].GROSS_TOTAL, 0.0, 0, 0);                             
 ;----------------------------------------------------------------------
         ldp       @CL32,DP
-        ldiu      @CL32,r0              ; |1572| 
-        ldiu      *+fp(1),ar2           ; |1572| 
-        ldp       @CL881,DP
-        mpyi      1336,ar2              ; |1572| 
-        addi      @CL881,ar2            ; |1572| Unsigned
+        ldiu      *+fp(1),ar2           ; |1568| 
+        ldiu      @CL32,r0              ; |1568| 
+        ldp       @CL875,DP
+        mpyi      1336,ar2              ; |1568| 
+        addi      @CL875,ar2            ; |1568| Unsigned
         ldp       @CL31+0,DP
-        ldfu      @CL31+0,f2            ; |1572| 40b float hi half
+        ldfu      @CL31+0,f2            ; |1568| 40b float hi half
         ldp       @CL31+1,DP
-        ldiu      0,rc                  ; |1572| 
-        ldiu      @CL31+1,r2            ; |1572| 40b float lo half
-        ldiu      0,r3                  ; |1572| 
-        callu     r0                    ; far call to _VAR_Update	; |1572| 
+        ldiu      @CL31+1,r2            ; |1568| 40b float lo half
+        ldiu      0,rc                  ; |1568| 
+        ldiu      0,r3                  ; |1568| 
+        callu     r0                    ; far call to _VAR_Update	; |1568| 
+                                        ; |1568| Far Call Occurs
+	.line	1532
+;----------------------------------------------------------------------
+; 1569 | FC[i].GROSS_TOTAL.aux = i;                                             
+;----------------------------------------------------------------------
+        ldiu      *+fp(1),ir0           ; |1569| 
+        ldp       @CL878,DP
+        mpyi      1336,ir0              ; |1569| 
+        ldiu      @CL878,ar0            ; |1569| 
+        ldiu      *+fp(1),r0            ; |1569| 
+        sti       r0,*+ar0(ir0)         ; |1569| 
+	.line	1535
+;----------------------------------------------------------------------
+; 1572 | VAR_Initialize(&FC[i].AVG_GROSS_TOTAL, c_volume, u_v_barrel, 1.0, 1000.
+;     | 0, var_no_alarm|var_roll);                                             
+;----------------------------------------------------------------------
+        ldiu      *+fp(1),ar2           ; |1572| 
+        ldp       @CL879,DP
+        mpyi      1336,ar2              ; |1572| 
+        addi      @CL879,ar2            ; |1572| Unsigned
+        ldp       @CL20,DP
+        ldiu      @CL20,r0              ; |1572| 
+        ldiu      46,rs                 ; |1572| 
+        ldiu      516,re                ; |1572| 
+        ldp       @CL19,DP
+        ldiu      68,rc                 ; |1572| 
+        ldfu      @CL19,f3              ; |1572| 
+        ldfu      1.0000000000e+00,f2   ; |1572| 
+        callu     r0                    ; far call to _VAR_Initialize	; |1572| 
                                         ; |1572| Far Call Occurs
 	.line	1536
 ;----------------------------------------------------------------------
-; 1573 | FC[i].AVG_GROSS_TOTAL.aux = i;                                         
+; 1573 | sprintf(FC[i].AVG_GROSS_TOTAL.name, "FC%d Avg Grs Ttl", i+1);          
 ;----------------------------------------------------------------------
-        ldp       @CL884,DP
-        ldiu      *+fp(1),ir0           ; |1573| 
-        ldiu      @CL884,ar0            ; |1573| 
-        mpyi      1336,ir0              ; |1573| 
-        ldiu      *+fp(1),r0            ; |1573| 
-        sti       r0,*+ar0(ir0)         ; |1573| 
-	.line	1539
-;----------------------------------------------------------------------
-; 1576 | VAR_Initialize(&FC[i].FLOW_OIL, c_volumetric_flow, u_vfr_barrel_day, 1.
-;     | 0, 1000.0, var_no_alarm);                                              
-;----------------------------------------------------------------------
-        ldp       @CL885,DP
-        ldiu      *+fp(1),ar2           ; |1576| 
-        mpyi      1336,ar2              ; |1576| 
-        addi      @CL885,ar2            ; |1576| Unsigned
-        ldp       @CL20,DP
-        ldiu      @CL20,r0              ; |1576| 
-        ldp       @CL19,DP
-        ldiu      66,rc                 ; |1576| 
-        ldfu      @CL19,f3              ; |1576| 
-        ldiu      135,rs                ; |1576| 
-        ldiu      4,re                  ; |1576| 
-        ldfu      1.0000000000e+00,f2   ; |1576| 
-        callu     r0                    ; far call to _VAR_Initialize	; |1576| 
-                                        ; |1576| Far Call Occurs
-	.line	1540
-;----------------------------------------------------------------------
-; 1577 | sprintf(FC[i].FLOW_OIL.name, "FC%d Oil Flow", i+1);                    
-;----------------------------------------------------------------------
-        ldp       @CL887,DP
-        ldiu      1,r0                  ; |1577| 
-        ldiu      @CL887,r1             ; |1577| 
-        addi      *+fp(1),r0            ; |1577| 
-        push      r0                    ; |1577| 
-        push      r1                    ; |1577| 
-        ldiu      *+fp(1),ar2           ; |1577| 
-        ldp       @CL886,DP
-        mpyi      1336,ar2              ; |1577| 
-        addi      @CL886,ar2            ; |1577| Unsigned
+        ldiu      1,r0                  ; |1573| 
+        addi      *+fp(1),r0            ; |1573| 
+        ldp       @CL881,DP
+        push      r0                    ; |1573| 
+        ldiu      @CL881,r1             ; |1573| 
+        push      r1                    ; |1573| 
+        ldp       @CL880,DP
+        ldiu      *+fp(1),ar2           ; |1573| 
+        mpyi      1336,ar2              ; |1573| 
+        addi      @CL880,ar2            ; |1573| Unsigned
         ldp       @CL24,DP
-        ldiu      @CL24,r0              ; |1577| 
-        callu     r0                    ; far call to _sprintf	; |1577| 
-                                        ; |1577| Far Call Occurs
-        subi      2,sp                  ; |1577| 
-	.line	1541
+        ldiu      @CL24,r0              ; |1573| 
+        callu     r0                    ; far call to _sprintf	; |1573| 
+                                        ; |1573| Far Call Occurs
+        subi      2,sp                  ; |1573| 
+	.line	1537
 ;----------------------------------------------------------------------
-; 1578 | VAR_Setup_Unit(&FC[i].FLOW_OIL, u_vfr_barrel_day, 1000000000.0, 0.0, 10
-;     | 00000000.0, 0.0);                                                      
+; 1574 | VAR_Setup_Unit(&FC[i].AVG_GROSS_TOTAL, u_v_barrel, 1000000000.0, 0.0, 1
+;     | 000000000.0, 0.0);                                                     
 ;----------------------------------------------------------------------
         ldp       @CL764,DP
-        ldfu      @CL764,f0             ; |1578| 
-        ldfu      0.0000000000e+00,f1   ; |1578| 
+        ldfu      0.0000000000e+00,f1   ; |1574| 
+        ldfu      @CL764,f0             ; |1574| 
+        pushf     f1                    ; |1574| 
         ldp       @CL30,DP
-        pushf     f1                    ; |1578| 
-        pushf     f0                    ; |1578| 
-        ldiu      @CL30,r0              ; |1578| 
-        ldiu      *+fp(1),ar2           ; |1578| 
-        ldp       @CL885,DP
-        mpyi      1336,ar2              ; |1578| 
-        addi      @CL885,ar2            ; |1578| Unsigned
+        pushf     f0                    ; |1574| 
+        ldiu      @CL30,r0              ; |1574| 
+        ldiu      *+fp(1),ar2           ; |1574| 
+        ldp       @CL879,DP
+        mpyi      1336,ar2              ; |1574| 
+        addi      @CL879,ar2            ; |1574| Unsigned
         ldp       @CL764,DP
-        ldfu      @CL764,f2             ; |1578| 
-        ldiu      135,rc                ; |1578| 
-        ldfu      0.0000000000e+00,f3   ; |1578| 
-        callu     r0                    ; far call to _VAR_Setup_Unit	; |1578| 
-                                        ; |1578| Far Call Occurs
-        subi      2,sp                  ; |1578| 
-	.line	1542
+        ldiu      46,rc                 ; |1574| 
+        ldfu      @CL764,f2             ; |1574| 
+        ldfu      0.0000000000e+00,f3   ; |1574| 
+        callu     r0                    ; far call to _VAR_Setup_Unit	; |1574| 
+                                        ; |1574| Far Call Occurs
+        subi      2,sp                  ; |1574| 
+	.line	1538
 ;----------------------------------------------------------------------
-; 1579 | VAR_Update(&FC[i].FLOW_OIL, 0.0, 0, 0);                                
+; 1575 | VAR_Update(&FC[i].AVG_GROSS_TOTAL, 0.0, 0, 0);                         
 ;----------------------------------------------------------------------
         ldp       @CL32,DP
-        ldiu      *+fp(1),ar2           ; |1579| 
-        ldiu      @CL32,r0              ; |1579| 
-        ldp       @CL885,DP
-        mpyi      1336,ar2              ; |1579| 
-        addi      @CL885,ar2            ; |1579| Unsigned
+        ldiu      @CL32,r0              ; |1575| 
+        ldiu      *+fp(1),ar2           ; |1575| 
+        ldp       @CL879,DP
+        mpyi      1336,ar2              ; |1575| 
+        addi      @CL879,ar2            ; |1575| Unsigned
         ldp       @CL31+0,DP
-        ldfu      @CL31+0,f2            ; |1579| 40b float hi half
+        ldfu      @CL31+0,f2            ; |1575| 40b float hi half
         ldp       @CL31+1,DP
-        ldiu      @CL31+1,r2            ; |1579| 40b float lo half
-        ldiu      0,rc                  ; |1579| 
-        ldiu      0,r3                  ; |1579| 
-        callu     r0                    ; far call to _VAR_Update	; |1579| 
+        ldiu      0,rc                  ; |1575| 
+        ldiu      @CL31+1,r2            ; |1575| 40b float lo half
+        ldiu      0,r3                  ; |1575| 
+        callu     r0                    ; far call to _VAR_Update	; |1575| 
+                                        ; |1575| Far Call Occurs
+	.line	1539
+;----------------------------------------------------------------------
+; 1576 | FC[i].AVG_GROSS_TOTAL.aux = i;                                         
+;----------------------------------------------------------------------
+        ldp       @CL882,DP
+        ldiu      *+fp(1),ir0           ; |1576| 
+        ldiu      @CL882,ar0            ; |1576| 
+        mpyi      1336,ir0              ; |1576| 
+        ldiu      *+fp(1),r0            ; |1576| 
+        sti       r0,*+ar0(ir0)         ; |1576| 
+	.line	1542
+;----------------------------------------------------------------------
+; 1579 | VAR_Initialize(&FC[i].FLOW_OIL, c_volumetric_flow, u_vfr_barrel_day, 1.
+;     | 0, 1000.0, var_no_alarm);                                              
+;----------------------------------------------------------------------
+        ldp       @CL883,DP
+        ldiu      *+fp(1),ar2           ; |1579| 
+        mpyi      1336,ar2              ; |1579| 
+        addi      @CL883,ar2            ; |1579| Unsigned
+        ldp       @CL20,DP
+        ldiu      @CL20,r0              ; |1579| 
+        ldp       @CL19,DP
+        ldiu      66,rc                 ; |1579| 
+        ldfu      @CL19,f3              ; |1579| 
+        ldiu      135,rs                ; |1579| 
+        ldiu      4,re                  ; |1579| 
+        ldfu      1.0000000000e+00,f2   ; |1579| 
+        callu     r0                    ; far call to _VAR_Initialize	; |1579| 
                                         ; |1579| Far Call Occurs
 	.line	1543
 ;----------------------------------------------------------------------
-; 1580 | FC[i].FLOW_OIL.aux = i;                                                
+; 1580 | sprintf(FC[i].FLOW_OIL.name, "FC%d Oil Flow", i+1);                    
 ;----------------------------------------------------------------------
-        ldp       @CL888,DP
-        ldiu      *+fp(1),ir0           ; |1580| 
-        ldiu      @CL888,ar0            ; |1580| 
-        mpyi      1336,ir0              ; |1580| 
-        ldiu      *+fp(1),r0            ; |1580| 
-        sti       r0,*+ar0(ir0)         ; |1580| 
-	.line	1546
-;----------------------------------------------------------------------
-; 1583 | VAR_Initialize(&FC[i].FLOW_WATER, c_volumetric_flow, u_vfr_barrel_day,
-;     | 1.0, 1000.0, var_no_alarm);                                            
-;----------------------------------------------------------------------
-        ldiu      *+fp(1),ar2           ; |1583| 
-        ldp       @CL889,DP
-        mpyi      1336,ar2              ; |1583| 
-        addi      @CL889,ar2            ; |1583| Unsigned
-        ldp       @CL20,DP
-        ldiu      @CL20,r0              ; |1583| 
-        ldp       @CL19,DP
-        ldiu      135,rs                ; |1583| 
-        ldiu      4,re                  ; |1583| 
-        ldfu      @CL19,f3              ; |1583| 
-        ldiu      66,rc                 ; |1583| 
-        ldfu      1.0000000000e+00,f2   ; |1583| 
-        callu     r0                    ; far call to _VAR_Initialize	; |1583| 
-                                        ; |1583| Far Call Occurs
-	.line	1547
-;----------------------------------------------------------------------
-; 1584 | sprintf(FC[i].FLOW_WATER.name, "FC%d Water Flow", i+1);                
-;----------------------------------------------------------------------
-        ldiu      1,r0                  ; |1584| 
-        addi      *+fp(1),r0            ; |1584| 
-        ldp       @CL891,DP
-        push      r0                    ; |1584| 
-        ldiu      @CL891,r1             ; |1584| 
-        push      r1                    ; |1584| 
-        ldiu      *+fp(1),ar2           ; |1584| 
-        ldp       @CL890,DP
-        mpyi      1336,ar2              ; |1584| 
-        addi      @CL890,ar2            ; |1584| Unsigned
+        ldp       @CL885,DP
+        ldiu      1,r0                  ; |1580| 
+        ldiu      @CL885,r1             ; |1580| 
+        addi      *+fp(1),r0            ; |1580| 
+        push      r0                    ; |1580| 
+        push      r1                    ; |1580| 
+        ldiu      *+fp(1),ar2           ; |1580| 
+        ldp       @CL884,DP
+        mpyi      1336,ar2              ; |1580| 
+        addi      @CL884,ar2            ; |1580| Unsigned
         ldp       @CL24,DP
-        ldiu      @CL24,r0              ; |1584| 
-        callu     r0                    ; far call to _sprintf	; |1584| 
-                                        ; |1584| Far Call Occurs
-        subi      2,sp                  ; |1584| 
-	.line	1548
+        ldiu      @CL24,r0              ; |1580| 
+        callu     r0                    ; far call to _sprintf	; |1580| 
+                                        ; |1580| Far Call Occurs
+        subi      2,sp                  ; |1580| 
+	.line	1544
 ;----------------------------------------------------------------------
-; 1585 | VAR_Setup_Unit(&FC[i].FLOW_WATER, u_vfr_barrel_day, 1000000000.0, 0.0,
-;     | 1000000000.0, 0.0);                                                    
+; 1581 | VAR_Setup_Unit(&FC[i].FLOW_OIL, u_vfr_barrel_day, 1000000000.0, 0.0, 10
+;     | 00000000.0, 0.0);                                                      
 ;----------------------------------------------------------------------
-        ldfu      0.0000000000e+00,f1   ; |1585| 
         ldp       @CL764,DP
-        pushf     f1                    ; |1585| 
-        ldfu      @CL764,f0             ; |1585| 
-        pushf     f0                    ; |1585| 
+        ldfu      @CL764,f0             ; |1581| 
+        ldfu      0.0000000000e+00,f1   ; |1581| 
         ldp       @CL30,DP
-        ldiu      *+fp(1),ar2           ; |1585| 
-        ldiu      @CL30,r0              ; |1585| 
-        ldp       @CL889,DP
-        mpyi      1336,ar2              ; |1585| 
-        addi      @CL889,ar2            ; |1585| Unsigned
+        pushf     f1                    ; |1581| 
+        pushf     f0                    ; |1581| 
+        ldiu      @CL30,r0              ; |1581| 
+        ldiu      *+fp(1),ar2           ; |1581| 
+        ldp       @CL883,DP
+        mpyi      1336,ar2              ; |1581| 
+        addi      @CL883,ar2            ; |1581| Unsigned
         ldp       @CL764,DP
-        ldiu      135,rc                ; |1585| 
-        ldfu      @CL764,f2             ; |1585| 
-        ldfu      0.0000000000e+00,f3   ; |1585| 
-        callu     r0                    ; far call to _VAR_Setup_Unit	; |1585| 
-                                        ; |1585| Far Call Occurs
-        subi      2,sp                  ; |1585| 
-	.line	1549
+        ldfu      @CL764,f2             ; |1581| 
+        ldiu      135,rc                ; |1581| 
+        ldfu      0.0000000000e+00,f3   ; |1581| 
+        callu     r0                    ; far call to _VAR_Setup_Unit	; |1581| 
+                                        ; |1581| Far Call Occurs
+        subi      2,sp                  ; |1581| 
+	.line	1545
 ;----------------------------------------------------------------------
-; 1586 | VAR_Update(&FC[i].FLOW_WATER, 0.0, 0, 0);                              
+; 1582 | VAR_Update(&FC[i].FLOW_OIL, 0.0, 0, 0);                                
 ;----------------------------------------------------------------------
         ldp       @CL32,DP
-        ldiu      @CL32,r0              ; |1586| 
-        ldp       @CL889,DP
-        ldiu      *+fp(1),ar2           ; |1586| 
-        mpyi      1336,ar2              ; |1586| 
-        addi      @CL889,ar2            ; |1586| Unsigned
+        ldiu      *+fp(1),ar2           ; |1582| 
+        ldiu      @CL32,r0              ; |1582| 
+        ldp       @CL883,DP
+        mpyi      1336,ar2              ; |1582| 
+        addi      @CL883,ar2            ; |1582| Unsigned
         ldp       @CL31+0,DP
-        ldfu      @CL31+0,f2            ; |1586| 40b float hi half
+        ldfu      @CL31+0,f2            ; |1582| 40b float hi half
         ldp       @CL31+1,DP
-        ldiu      0,rc                  ; |1586| 
-        ldiu      @CL31+1,r2            ; |1586| 40b float lo half
-        ldiu      0,r3                  ; |1586| 
-        callu     r0                    ; far call to _VAR_Update	; |1586| 
+        ldiu      @CL31+1,r2            ; |1582| 40b float lo half
+        ldiu      0,rc                  ; |1582| 
+        ldiu      0,r3                  ; |1582| 
+        callu     r0                    ; far call to _VAR_Update	; |1582| 
+                                        ; |1582| Far Call Occurs
+	.line	1546
+;----------------------------------------------------------------------
+; 1583 | FC[i].FLOW_OIL.aux = i;                                                
+;----------------------------------------------------------------------
+        ldp       @CL886,DP
+        ldiu      *+fp(1),ir0           ; |1583| 
+        ldiu      @CL886,ar0            ; |1583| 
+        mpyi      1336,ir0              ; |1583| 
+        ldiu      *+fp(1),r0            ; |1583| 
+        sti       r0,*+ar0(ir0)         ; |1583| 
+	.line	1549
+;----------------------------------------------------------------------
+; 1586 | VAR_Initialize(&FC[i].FLOW_WATER, c_volumetric_flow, u_vfr_barrel_day,
+;     | 1.0, 1000.0, var_no_alarm);                                            
+;----------------------------------------------------------------------
+        ldiu      *+fp(1),ar2           ; |1586| 
+        ldp       @CL887,DP
+        mpyi      1336,ar2              ; |1586| 
+        addi      @CL887,ar2            ; |1586| Unsigned
+        ldp       @CL20,DP
+        ldiu      @CL20,r0              ; |1586| 
+        ldp       @CL19,DP
+        ldiu      135,rs                ; |1586| 
+        ldiu      4,re                  ; |1586| 
+        ldfu      @CL19,f3              ; |1586| 
+        ldiu      66,rc                 ; |1586| 
+        ldfu      1.0000000000e+00,f2   ; |1586| 
+        callu     r0                    ; far call to _VAR_Initialize	; |1586| 
                                         ; |1586| Far Call Occurs
 	.line	1550
 ;----------------------------------------------------------------------
-; 1587 | FC[i].FLOW_WATER.aux = i;                                              
+; 1587 | sprintf(FC[i].FLOW_WATER.name, "FC%d Water Flow", i+1);                
 ;----------------------------------------------------------------------
-        ldiu      *+fp(1),ir0           ; |1587| 
-        ldp       @CL892,DP
-        mpyi      1336,ir0              ; |1587| 
-        ldiu      @CL892,ar0            ; |1587| 
-        ldiu      *+fp(1),r0            ; |1587| 
-        sti       r0,*+ar0(ir0)         ; |1587| 
-	.line	1553
-;----------------------------------------------------------------------
-; 1590 | VAR_Initialize(&FC[i].FLOW_TOTAL, c_volumetric_flow, u_vfr_barrel_day,
-;     | 1.0, 1000.0, var_no_alarm);                                            
-;----------------------------------------------------------------------
-        ldiu      *+fp(1),ar2           ; |1590| 
-        ldp       @CL893,DP
-        mpyi      1336,ar2              ; |1590| 
-        addi      @CL893,ar2            ; |1590| Unsigned
-        ldp       @CL20,DP
-        ldiu      @CL20,r0              ; |1590| 
-        ldiu      66,rc                 ; |1590| 
-        ldp       @CL19,DP
-        ldiu      135,rs                ; |1590| 
-        ldiu      4,re                  ; |1590| 
-        ldfu      @CL19,f3              ; |1590| 
-        ldfu      1.0000000000e+00,f2   ; |1590| 
-        callu     r0                    ; far call to _VAR_Initialize	; |1590| 
-                                        ; |1590| Far Call Occurs
-	.line	1554
-;----------------------------------------------------------------------
-; 1591 | sprintf(FC[i].FLOW_TOTAL.name, "FC%d Total Flow", i+1);                
-;----------------------------------------------------------------------
-        ldiu      1,r0                  ; |1591| 
-        ldp       @CL895,DP
-        addi      *+fp(1),r0            ; |1591| 
-        ldiu      @CL895,r1             ; |1591| 
-        push      r0                    ; |1591| 
-        ldp       @CL894,DP
-        push      r1                    ; |1591| 
-        ldiu      *+fp(1),ar2           ; |1591| 
-        mpyi      1336,ar2              ; |1591| 
-        addi      @CL894,ar2            ; |1591| Unsigned
+        ldiu      1,r0                  ; |1587| 
+        addi      *+fp(1),r0            ; |1587| 
+        ldp       @CL889,DP
+        push      r0                    ; |1587| 
+        ldiu      @CL889,r1             ; |1587| 
+        push      r1                    ; |1587| 
+        ldiu      *+fp(1),ar2           ; |1587| 
+        ldp       @CL888,DP
+        mpyi      1336,ar2              ; |1587| 
+        addi      @CL888,ar2            ; |1587| Unsigned
         ldp       @CL24,DP
-        ldiu      @CL24,r0              ; |1591| 
-        callu     r0                    ; far call to _sprintf	; |1591| 
-                                        ; |1591| Far Call Occurs
-        subi      2,sp                  ; |1591| 
-	.line	1555
+        ldiu      @CL24,r0              ; |1587| 
+        callu     r0                    ; far call to _sprintf	; |1587| 
+                                        ; |1587| Far Call Occurs
+        subi      2,sp                  ; |1587| 
+	.line	1551
 ;----------------------------------------------------------------------
-; 1592 | VAR_Setup_Unit(&FC[i].FLOW_TOTAL, u_vfr_barrel_day, 1000000000.0, 0.0,
+; 1588 | VAR_Setup_Unit(&FC[i].FLOW_WATER, u_vfr_barrel_day, 1000000000.0, 0.0,
 ;     | 1000000000.0, 0.0);                                                    
 ;----------------------------------------------------------------------
+        ldfu      0.0000000000e+00,f1   ; |1588| 
         ldp       @CL764,DP
-        ldfu      0.0000000000e+00,f1   ; |1592| 
-        ldfu      @CL764,f0             ; |1592| 
-        pushf     f1                    ; |1592| 
+        pushf     f1                    ; |1588| 
+        ldfu      @CL764,f0             ; |1588| 
+        pushf     f0                    ; |1588| 
         ldp       @CL30,DP
-        pushf     f0                    ; |1592| 
-        ldiu      @CL30,r0              ; |1592| 
-        ldiu      *+fp(1),ar2           ; |1592| 
-        ldp       @CL893,DP
-        mpyi      1336,ar2              ; |1592| 
-        addi      @CL893,ar2            ; |1592| Unsigned
+        ldiu      *+fp(1),ar2           ; |1588| 
+        ldiu      @CL30,r0              ; |1588| 
+        ldp       @CL887,DP
+        mpyi      1336,ar2              ; |1588| 
+        addi      @CL887,ar2            ; |1588| Unsigned
         ldp       @CL764,DP
-        ldiu      135,rc                ; |1592| 
-        ldfu      @CL764,f2             ; |1592| 
-        ldfu      0.0000000000e+00,f3   ; |1592| 
-        callu     r0                    ; far call to _VAR_Setup_Unit	; |1592| 
-                                        ; |1592| Far Call Occurs
-        subi      2,sp                  ; |1592| 
-	.line	1556
+        ldiu      135,rc                ; |1588| 
+        ldfu      @CL764,f2             ; |1588| 
+        ldfu      0.0000000000e+00,f3   ; |1588| 
+        callu     r0                    ; far call to _VAR_Setup_Unit	; |1588| 
+                                        ; |1588| Far Call Occurs
+        subi      2,sp                  ; |1588| 
+	.line	1552
 ;----------------------------------------------------------------------
-; 1593 | VAR_Update(&FC[i].FLOW_TOTAL, 0.0, 0, 0);                              
+; 1589 | VAR_Update(&FC[i].FLOW_WATER, 0.0, 0, 0);                              
 ;----------------------------------------------------------------------
         ldp       @CL32,DP
-        ldiu      @CL32,r0              ; |1593| 
-        ldp       @CL893,DP
-        ldiu      *+fp(1),ar2           ; |1593| 
-        mpyi      1336,ar2              ; |1593| 
-        addi      @CL893,ar2            ; |1593| Unsigned
+        ldiu      @CL32,r0              ; |1589| 
+        ldp       @CL887,DP
+        ldiu      *+fp(1),ar2           ; |1589| 
+        mpyi      1336,ar2              ; |1589| 
+        addi      @CL887,ar2            ; |1589| Unsigned
         ldp       @CL31+0,DP
-        ldfu      @CL31+0,f2            ; |1593| 40b float hi half
+        ldfu      @CL31+0,f2            ; |1589| 40b float hi half
         ldp       @CL31+1,DP
-        ldiu      @CL31+1,r2            ; |1593| 40b float lo half
-        ldiu      0,rc                  ; |1593| 
-        ldiu      0,r3                  ; |1593| 
-        callu     r0                    ; far call to _VAR_Update	; |1593| 
+        ldiu      0,rc                  ; |1589| 
+        ldiu      @CL31+1,r2            ; |1589| 40b float lo half
+        ldiu      0,r3                  ; |1589| 
+        callu     r0                    ; far call to _VAR_Update	; |1589| 
+                                        ; |1589| Far Call Occurs
+	.line	1553
+;----------------------------------------------------------------------
+; 1590 | FC[i].FLOW_WATER.aux = i;                                              
+;----------------------------------------------------------------------
+        ldiu      *+fp(1),ir0           ; |1590| 
+        ldp       @CL890,DP
+        mpyi      1336,ir0              ; |1590| 
+        ldiu      @CL890,ar0            ; |1590| 
+        ldiu      *+fp(1),r0            ; |1590| 
+        sti       r0,*+ar0(ir0)         ; |1590| 
+	.line	1556
+;----------------------------------------------------------------------
+; 1593 | VAR_Initialize(&FC[i].FLOW_TOTAL, c_volumetric_flow, u_vfr_barrel_day,
+;     | 1.0, 1000.0, var_no_alarm);                                            
+;----------------------------------------------------------------------
+        ldiu      *+fp(1),ar2           ; |1593| 
+        ldp       @CL891,DP
+        mpyi      1336,ar2              ; |1593| 
+        addi      @CL891,ar2            ; |1593| Unsigned
+        ldp       @CL20,DP
+        ldiu      @CL20,r0              ; |1593| 
+        ldiu      66,rc                 ; |1593| 
+        ldp       @CL19,DP
+        ldiu      135,rs                ; |1593| 
+        ldiu      4,re                  ; |1593| 
+        ldfu      @CL19,f3              ; |1593| 
+        ldfu      1.0000000000e+00,f2   ; |1593| 
+        callu     r0                    ; far call to _VAR_Initialize	; |1593| 
                                         ; |1593| Far Call Occurs
 	.line	1557
 ;----------------------------------------------------------------------
-; 1594 | FC[i].FLOW_TOTAL.aux = i;                                              
+; 1594 | sprintf(FC[i].FLOW_TOTAL.name, "FC%d Total Flow", i+1);                
 ;----------------------------------------------------------------------
-        ldiu      *+fp(1),ir0           ; |1594| 
-        ldp       @CL896,DP
-        mpyi      1336,ir0              ; |1594| 
-        ldiu      @CL896,ar0            ; |1594| 
-        ldiu      *+fp(1),r0            ; |1594| 
-        sti       r0,*+ar0(ir0)         ; |1594| 
-	.line	1560
-;----------------------------------------------------------------------
-; 1597 | VAR_Initialize(&FC[i].NET_FLOW_OIL, c_volumetric_flow, u_vfr_barrel_day
-;     | , 1.0, 1000.0, var_no_alarm);                                          
-;----------------------------------------------------------------------
-        ldiu      *+fp(1),ar2           ; |1597| 
-        ldp       @CL897,DP
-        mpyi      1336,ar2              ; |1597| 
-        addi      @CL897,ar2            ; |1597| Unsigned
-        ldp       @CL20,DP
-        ldiu      @CL20,r0              ; |1597| 
-        ldp       @CL19,DP
-        ldiu      66,rc                 ; |1597| 
-        ldfu      @CL19,f3              ; |1597| 
-        ldiu      135,rs                ; |1597| 
-        ldiu      4,re                  ; |1597| 
-        ldfu      1.0000000000e+00,f2   ; |1597| 
-        callu     r0                    ; far call to _VAR_Initialize	; |1597| 
-                                        ; |1597| Far Call Occurs
-	.line	1561
-;----------------------------------------------------------------------
-; 1598 | sprintf(FC[i].NET_FLOW_OIL.name, "FC%d Net Oil Flow", i+1);            
-;----------------------------------------------------------------------
-        ldiu      1,r0                  ; |1598| 
-        addi      *+fp(1),r0            ; |1598| 
-        ldp       @CL899,DP
-        push      r0                    ; |1598| 
-        ldiu      @CL899,r1             ; |1598| 
-        push      r1                    ; |1598| 
-        ldiu      *+fp(1),ar2           ; |1598| 
-        ldp       @CL898,DP
-        mpyi      1336,ar2              ; |1598| 
-        addi      @CL898,ar2            ; |1598| Unsigned
+        ldiu      1,r0                  ; |1594| 
+        ldp       @CL893,DP
+        addi      *+fp(1),r0            ; |1594| 
+        ldiu      @CL893,r1             ; |1594| 
+        push      r0                    ; |1594| 
+        ldp       @CL892,DP
+        push      r1                    ; |1594| 
+        ldiu      *+fp(1),ar2           ; |1594| 
+        mpyi      1336,ar2              ; |1594| 
+        addi      @CL892,ar2            ; |1594| Unsigned
         ldp       @CL24,DP
-        ldiu      @CL24,r0              ; |1598| 
-        callu     r0                    ; far call to _sprintf	; |1598| 
-                                        ; |1598| Far Call Occurs
-        subi      2,sp                  ; |1598| 
-	.line	1562
+        ldiu      @CL24,r0              ; |1594| 
+        callu     r0                    ; far call to _sprintf	; |1594| 
+                                        ; |1594| Far Call Occurs
+        subi      2,sp                  ; |1594| 
+	.line	1558
 ;----------------------------------------------------------------------
-; 1599 | VAR_Setup_Unit(&FC[i].NET_FLOW_OIL, u_vfr_barrel_day, 1000000000.0, 0.0
-;     | , 1000000000.0, 0.0);                                                  
+; 1595 | VAR_Setup_Unit(&FC[i].FLOW_TOTAL, u_vfr_barrel_day, 1000000000.0, 0.0,
+;     | 1000000000.0, 0.0);                                                    
 ;----------------------------------------------------------------------
-        ldfu      0.0000000000e+00,f1   ; |1599| 
         ldp       @CL764,DP
-        pushf     f1                    ; |1599| 
-        ldfu      @CL764,f0             ; |1599| 
+        ldfu      0.0000000000e+00,f1   ; |1595| 
+        ldfu      @CL764,f0             ; |1595| 
+        pushf     f1                    ; |1595| 
         ldp       @CL30,DP
-        pushf     f0                    ; |1599| 
-        ldiu      @CL30,r0              ; |1599| 
-        ldp       @CL897,DP
-        ldiu      *+fp(1),ar2           ; |1599| 
-        mpyi      1336,ar2              ; |1599| 
-        addi      @CL897,ar2            ; |1599| Unsigned
+        pushf     f0                    ; |1595| 
+        ldiu      @CL30,r0              ; |1595| 
+        ldiu      *+fp(1),ar2           ; |1595| 
+        ldp       @CL891,DP
+        mpyi      1336,ar2              ; |1595| 
+        addi      @CL891,ar2            ; |1595| Unsigned
         ldp       @CL764,DP
-        ldfu      @CL764,f2             ; |1599| 
-        ldiu      135,rc                ; |1599| 
-        ldfu      0.0000000000e+00,f3   ; |1599| 
-        callu     r0                    ; far call to _VAR_Setup_Unit	; |1599| 
-                                        ; |1599| Far Call Occurs
-        subi      2,sp                  ; |1599| 
-	.line	1563
+        ldiu      135,rc                ; |1595| 
+        ldfu      @CL764,f2             ; |1595| 
+        ldfu      0.0000000000e+00,f3   ; |1595| 
+        callu     r0                    ; far call to _VAR_Setup_Unit	; |1595| 
+                                        ; |1595| Far Call Occurs
+        subi      2,sp                  ; |1595| 
+	.line	1559
 ;----------------------------------------------------------------------
-; 1600 | VAR_Update(&FC[i].NET_FLOW_OIL, 0.0, 0, 0);                            
+; 1596 | VAR_Update(&FC[i].FLOW_TOTAL, 0.0, 0, 0);                              
 ;----------------------------------------------------------------------
         ldp       @CL32,DP
-        ldiu      @CL32,r0              ; |1600| 
-        ldiu      *+fp(1),ar2           ; |1600| 
-        ldp       @CL897,DP
-        mpyi      1336,ar2              ; |1600| 
-        addi      @CL897,ar2            ; |1600| Unsigned
+        ldiu      @CL32,r0              ; |1596| 
+        ldp       @CL891,DP
+        ldiu      *+fp(1),ar2           ; |1596| 
+        mpyi      1336,ar2              ; |1596| 
+        addi      @CL891,ar2            ; |1596| Unsigned
         ldp       @CL31+0,DP
-        ldfu      @CL31+0,f2            ; |1600| 40b float hi half
+        ldfu      @CL31+0,f2            ; |1596| 40b float hi half
         ldp       @CL31+1,DP
-        ldiu      0,rc                  ; |1600| 
-        ldiu      @CL31+1,r2            ; |1600| 40b float lo half
-        ldiu      0,r3                  ; |1600| 
-        callu     r0                    ; far call to _VAR_Update	; |1600| 
+        ldiu      @CL31+1,r2            ; |1596| 40b float lo half
+        ldiu      0,rc                  ; |1596| 
+        ldiu      0,r3                  ; |1596| 
+        callu     r0                    ; far call to _VAR_Update	; |1596| 
+                                        ; |1596| Far Call Occurs
+	.line	1560
+;----------------------------------------------------------------------
+; 1597 | FC[i].FLOW_TOTAL.aux = i;                                              
+;----------------------------------------------------------------------
+        ldiu      *+fp(1),ir0           ; |1597| 
+        ldp       @CL894,DP
+        mpyi      1336,ir0              ; |1597| 
+        ldiu      @CL894,ar0            ; |1597| 
+        ldiu      *+fp(1),r0            ; |1597| 
+        sti       r0,*+ar0(ir0)         ; |1597| 
+	.line	1563
+;----------------------------------------------------------------------
+; 1600 | VAR_Initialize(&FC[i].NET_FLOW_OIL, c_volumetric_flow, u_vfr_barrel_day
+;     | , 1.0, 1000.0, var_no_alarm);                                          
+;----------------------------------------------------------------------
+        ldiu      *+fp(1),ar2           ; |1600| 
+        ldp       @CL895,DP
+        mpyi      1336,ar2              ; |1600| 
+        addi      @CL895,ar2            ; |1600| Unsigned
+        ldp       @CL20,DP
+        ldiu      @CL20,r0              ; |1600| 
+        ldp       @CL19,DP
+        ldiu      66,rc                 ; |1600| 
+        ldfu      @CL19,f3              ; |1600| 
+        ldiu      135,rs                ; |1600| 
+        ldiu      4,re                  ; |1600| 
+        ldfu      1.0000000000e+00,f2   ; |1600| 
+        callu     r0                    ; far call to _VAR_Initialize	; |1600| 
                                         ; |1600| Far Call Occurs
 	.line	1564
 ;----------------------------------------------------------------------
-; 1601 | FC[i].NET_FLOW_OIL.aux = i;                                            
+; 1601 | sprintf(FC[i].NET_FLOW_OIL.name, "FC%d Net Oil Flow", i+1);            
 ;----------------------------------------------------------------------
-        ldp       @CL900,DP
-        ldiu      *+fp(1),ir0           ; |1601| 
-        ldiu      @CL900,ar0            ; |1601| 
-        mpyi      1336,ir0              ; |1601| 
-        ldiu      *+fp(1),r0            ; |1601| 
-        sti       r0,*+ar0(ir0)         ; |1601| 
-	.line	1567
-;----------------------------------------------------------------------
-; 1604 | VAR_Initialize(&FC[i].NET_FLOW_WATER, c_volumetric_flow, u_vfr_barrel_d
-;     | ay, 1.0, 1000.0, var_no_alarm);                                        
-;----------------------------------------------------------------------
-        ldiu      *+fp(1),ar2           ; |1604| 
-        ldp       @CL901,DP
-        mpyi      1336,ar2              ; |1604| 
-        addi      @CL901,ar2            ; |1604| Unsigned
-        ldp       @CL20,DP
-        ldiu      @CL20,r0              ; |1604| 
-        ldp       @CL19,DP
-        ldfu      @CL19,f3              ; |1604| 
-        ldiu      135,rs                ; |1604| 
-        ldiu      4,re                  ; |1604| 
-        ldiu      66,rc                 ; |1604| 
-        ldfu      1.0000000000e+00,f2   ; |1604| 
-        callu     r0                    ; far call to _VAR_Initialize	; |1604| 
-                                        ; |1604| Far Call Occurs
-	.line	1568
-;----------------------------------------------------------------------
-; 1605 | sprintf(FC[i].NET_FLOW_WATER.name, "FC%d Net Water Flow", i+1);        
-;----------------------------------------------------------------------
-        ldiu      1,r0                  ; |1605| 
-        addi      *+fp(1),r0            ; |1605| 
-        ldp       @CL903,DP
-        push      r0                    ; |1605| 
-        ldiu      @CL903,r1             ; |1605| 
-        push      r1                    ; |1605| 
-        ldp       @CL902,DP
-        ldiu      *+fp(1),ar2           ; |1605| 
-        mpyi      1336,ar2              ; |1605| 
-        addi      @CL902,ar2            ; |1605| Unsigned
+        ldiu      1,r0                  ; |1601| 
+        addi      *+fp(1),r0            ; |1601| 
+        ldp       @CL897,DP
+        push      r0                    ; |1601| 
+        ldiu      @CL897,r1             ; |1601| 
+        push      r1                    ; |1601| 
+        ldiu      *+fp(1),ar2           ; |1601| 
+        ldp       @CL896,DP
+        mpyi      1336,ar2              ; |1601| 
+        addi      @CL896,ar2            ; |1601| Unsigned
         ldp       @CL24,DP
-        ldiu      @CL24,r0              ; |1605| 
-        callu     r0                    ; far call to _sprintf	; |1605| 
-                                        ; |1605| Far Call Occurs
-        subi      2,sp                  ; |1605| 
-	.line	1569
+        ldiu      @CL24,r0              ; |1601| 
+        callu     r0                    ; far call to _sprintf	; |1601| 
+                                        ; |1601| Far Call Occurs
+        subi      2,sp                  ; |1601| 
+	.line	1565
 ;----------------------------------------------------------------------
-; 1606 | VAR_Setup_Unit(&FC[i].NET_FLOW_WATER, u_vfr_barrel_day, 1000000000.0, 0
-;     | .0, 1000000000.0, 0.0);                                                
+; 1602 | VAR_Setup_Unit(&FC[i].NET_FLOW_OIL, u_vfr_barrel_day, 1000000000.0, 0.0
+;     | , 1000000000.0, 0.0);                                                  
 ;----------------------------------------------------------------------
-        ldfu      0.0000000000e+00,f1   ; |1606| 
+        ldfu      0.0000000000e+00,f1   ; |1602| 
         ldp       @CL764,DP
-        pushf     f1                    ; |1606| 
-        ldfu      @CL764,f0             ; |1606| 
+        pushf     f1                    ; |1602| 
+        ldfu      @CL764,f0             ; |1602| 
         ldp       @CL30,DP
-        pushf     f0                    ; |1606| 
-        ldiu      @CL30,r0              ; |1606| 
-        ldp       @CL901,DP
-        ldiu      *+fp(1),ar2           ; |1606| 
-        mpyi      1336,ar2              ; |1606| 
-        addi      @CL901,ar2            ; |1606| Unsigned
+        pushf     f0                    ; |1602| 
+        ldiu      @CL30,r0              ; |1602| 
+        ldp       @CL895,DP
+        ldiu      *+fp(1),ar2           ; |1602| 
+        mpyi      1336,ar2              ; |1602| 
+        addi      @CL895,ar2            ; |1602| Unsigned
         ldp       @CL764,DP
-        ldiu      135,rc                ; |1606| 
-        ldfu      @CL764,f2             ; |1606| 
-        ldfu      0.0000000000e+00,f3   ; |1606| 
-        callu     r0                    ; far call to _VAR_Setup_Unit	; |1606| 
-                                        ; |1606| Far Call Occurs
-        subi      2,sp                  ; |1606| 
-	.line	1570
+        ldfu      @CL764,f2             ; |1602| 
+        ldiu      135,rc                ; |1602| 
+        ldfu      0.0000000000e+00,f3   ; |1602| 
+        callu     r0                    ; far call to _VAR_Setup_Unit	; |1602| 
+                                        ; |1602| Far Call Occurs
+        subi      2,sp                  ; |1602| 
+	.line	1566
 ;----------------------------------------------------------------------
-; 1607 | VAR_Update(&FC[i].NET_FLOW_WATER, 0.0, 0, 0);                          
+; 1603 | VAR_Update(&FC[i].NET_FLOW_OIL, 0.0, 0, 0);                            
 ;----------------------------------------------------------------------
         ldp       @CL32,DP
-        ldiu      *+fp(1),ar2           ; |1607| 
-        ldiu      @CL32,r0              ; |1607| 
-        ldp       @CL901,DP
-        mpyi      1336,ar2              ; |1607| 
-        addi      @CL901,ar2            ; |1607| Unsigned
+        ldiu      @CL32,r0              ; |1603| 
+        ldiu      *+fp(1),ar2           ; |1603| 
+        ldp       @CL895,DP
+        mpyi      1336,ar2              ; |1603| 
+        addi      @CL895,ar2            ; |1603| Unsigned
         ldp       @CL31+0,DP
-        ldfu      @CL31+0,f2            ; |1607| 40b float hi half
+        ldfu      @CL31+0,f2            ; |1603| 40b float hi half
         ldp       @CL31+1,DP
-        ldiu      @CL31+1,r2            ; |1607| 40b float lo half
-        ldiu      0,rc                  ; |1607| 
-        ldiu      0,r3                  ; |1607| 
-        callu     r0                    ; far call to _VAR_Update	; |1607| 
+        ldiu      0,rc                  ; |1603| 
+        ldiu      @CL31+1,r2            ; |1603| 40b float lo half
+        ldiu      0,r3                  ; |1603| 
+        callu     r0                    ; far call to _VAR_Update	; |1603| 
+                                        ; |1603| Far Call Occurs
+	.line	1567
+;----------------------------------------------------------------------
+; 1604 | FC[i].NET_FLOW_OIL.aux = i;                                            
+;----------------------------------------------------------------------
+        ldp       @CL898,DP
+        ldiu      *+fp(1),ir0           ; |1604| 
+        ldiu      @CL898,ar0            ; |1604| 
+        mpyi      1336,ir0              ; |1604| 
+        ldiu      *+fp(1),r0            ; |1604| 
+        sti       r0,*+ar0(ir0)         ; |1604| 
+	.line	1570
+;----------------------------------------------------------------------
+; 1607 | VAR_Initialize(&FC[i].NET_FLOW_WATER, c_volumetric_flow, u_vfr_barrel_d
+;     | ay, 1.0, 1000.0, var_no_alarm);                                        
+;----------------------------------------------------------------------
+        ldiu      *+fp(1),ar2           ; |1607| 
+        ldp       @CL899,DP
+        mpyi      1336,ar2              ; |1607| 
+        addi      @CL899,ar2            ; |1607| Unsigned
+        ldp       @CL20,DP
+        ldiu      @CL20,r0              ; |1607| 
+        ldp       @CL19,DP
+        ldfu      @CL19,f3              ; |1607| 
+        ldiu      135,rs                ; |1607| 
+        ldiu      4,re                  ; |1607| 
+        ldiu      66,rc                 ; |1607| 
+        ldfu      1.0000000000e+00,f2   ; |1607| 
+        callu     r0                    ; far call to _VAR_Initialize	; |1607| 
                                         ; |1607| Far Call Occurs
 	.line	1571
 ;----------------------------------------------------------------------
-; 1608 | FC[i].NET_FLOW_WATER.aux = i;                                          
+; 1608 | sprintf(FC[i].NET_FLOW_WATER.name, "FC%d Net Water Flow", i+1);        
 ;----------------------------------------------------------------------
-        ldiu      *+fp(1),ir0           ; |1608| 
-        ldp       @CL904,DP
-        mpyi      1336,ir0              ; |1608| 
-        ldiu      @CL904,ar0            ; |1608| 
-        ldiu      *+fp(1),r0            ; |1608| 
-        sti       r0,*+ar0(ir0)         ; |1608| 
+        ldiu      1,r0                  ; |1608| 
+        addi      *+fp(1),r0            ; |1608| 
+        ldp       @CL901,DP
+        push      r0                    ; |1608| 
+        ldiu      @CL901,r1             ; |1608| 
+        push      r1                    ; |1608| 
+        ldp       @CL900,DP
+        ldiu      *+fp(1),ar2           ; |1608| 
+        mpyi      1336,ar2              ; |1608| 
+        addi      @CL900,ar2            ; |1608| Unsigned
+        ldp       @CL24,DP
+        ldiu      @CL24,r0              ; |1608| 
+        callu     r0                    ; far call to _sprintf	; |1608| 
+                                        ; |1608| Far Call Occurs
+        subi      2,sp                  ; |1608| 
+	.line	1572
+;----------------------------------------------------------------------
+; 1609 | VAR_Setup_Unit(&FC[i].NET_FLOW_WATER, u_vfr_barrel_day, 1000000000.0, 0
+;     | .0, 1000000000.0, 0.0);                                                
+;----------------------------------------------------------------------
+        ldfu      0.0000000000e+00,f1   ; |1609| 
+        ldp       @CL764,DP
+        pushf     f1                    ; |1609| 
+        ldfu      @CL764,f0             ; |1609| 
+        ldp       @CL30,DP
+        pushf     f0                    ; |1609| 
+        ldiu      @CL30,r0              ; |1609| 
+        ldp       @CL899,DP
+        ldiu      *+fp(1),ar2           ; |1609| 
+        mpyi      1336,ar2              ; |1609| 
+        addi      @CL899,ar2            ; |1609| Unsigned
+        ldp       @CL764,DP
+        ldiu      135,rc                ; |1609| 
+        ldfu      @CL764,f2             ; |1609| 
+        ldfu      0.0000000000e+00,f3   ; |1609| 
+        callu     r0                    ; far call to _VAR_Setup_Unit	; |1609| 
+                                        ; |1609| Far Call Occurs
+        subi      2,sp                  ; |1609| 
+	.line	1573
+;----------------------------------------------------------------------
+; 1610 | VAR_Update(&FC[i].NET_FLOW_WATER, 0.0, 0, 0);                          
+;----------------------------------------------------------------------
+        ldp       @CL32,DP
+        ldiu      *+fp(1),ar2           ; |1610| 
+        ldiu      @CL32,r0              ; |1610| 
+        ldp       @CL899,DP
+        mpyi      1336,ar2              ; |1610| 
+        addi      @CL899,ar2            ; |1610| Unsigned
+        ldp       @CL31+0,DP
+        ldfu      @CL31+0,f2            ; |1610| 40b float hi half
+        ldp       @CL31+1,DP
+        ldiu      @CL31+1,r2            ; |1610| 40b float lo half
+        ldiu      0,rc                  ; |1610| 
+        ldiu      0,r3                  ; |1610| 
+        callu     r0                    ; far call to _VAR_Update	; |1610| 
+                                        ; |1610| Far Call Occurs
 	.line	1574
 ;----------------------------------------------------------------------
-; 1611 | VAR_Initialize(&FC[i].NET_FLOW_TOTAL, c_volumetric_flow, u_vfr_barrel_d
-;     | ay, 1.0, 1000.0, var_no_alarm);                                        
+; 1611 | FC[i].NET_FLOW_WATER.aux = i;                                          
 ;----------------------------------------------------------------------
-        ldiu      135,rs                ; |1611| 
-        ldp       @CL905,DP
-        ldiu      *+fp(1),ar2           ; |1611| 
-        mpyi      1336,ar2              ; |1611| 
-        addi      @CL905,ar2            ; |1611| Unsigned
-        ldp       @CL20,DP
-        ldiu      4,re                  ; |1611| 
-        ldiu      @CL20,r0              ; |1611| 
-        ldp       @CL19,DP
-        ldiu      66,rc                 ; |1611| 
-        ldfu      @CL19,f3              ; |1611| 
-        ldfu      1.0000000000e+00,f2   ; |1611| 
-        callu     r0                    ; far call to _VAR_Initialize	; |1611| 
-                                        ; |1611| Far Call Occurs
-	.line	1575
-;----------------------------------------------------------------------
-; 1612 | sprintf(FC[i].NET_FLOW_TOTAL.name, "FC%d Net Total Flow", i+1); //R369 
-;----------------------------------------------------------------------
-        ldp       @CL907,DP
-        ldiu      1,r0                  ; |1612| 
-        ldiu      @CL907,r1             ; |1612| 
-        addi      *+fp(1),r0            ; |1612| 
-        push      r0                    ; |1612| 
-        push      r1                    ; |1612| 
-        ldiu      *+fp(1),ar2           ; |1612| 
-        ldp       @CL906,DP
-        mpyi      1336,ar2              ; |1612| 
-        addi      @CL906,ar2            ; |1612| Unsigned
-        ldp       @CL24,DP
-        ldiu      @CL24,r0              ; |1612| 
-        callu     r0                    ; far call to _sprintf	; |1612| 
-                                        ; |1612| Far Call Occurs
-        subi      2,sp                  ; |1612| 
-	.line	1576
-;----------------------------------------------------------------------
-; 1613 | FC[i].NET_FLOW_TOTAL.name_r = 369;                                     
-;----------------------------------------------------------------------
-        ldp       @CL908,DP
-        ldiu      *+fp(1),ir0           ; |1613| 
-        ldiu      @CL908,ar0            ; |1613| 
-        mpyi      1336,ir0              ; |1613| 
-        ldiu      369,r0                ; |1613| 
-        sti       r0,*+ar0(ir0)         ; |1613| 
+        ldiu      *+fp(1),ir0           ; |1611| 
+        ldp       @CL902,DP
+        mpyi      1336,ir0              ; |1611| 
+        ldiu      @CL902,ar0            ; |1611| 
+        ldiu      *+fp(1),r0            ; |1611| 
+        sti       r0,*+ar0(ir0)         ; |1611| 
 	.line	1577
 ;----------------------------------------------------------------------
-; 1614 | VAR_Setup_Unit(&FC[i].NET_FLOW_TOTAL, u_vfr_barrel_day, 1000000000.0, 0
+; 1614 | VAR_Initialize(&FC[i].NET_FLOW_TOTAL, c_volumetric_flow, u_vfr_barrel_d
+;     | ay, 1.0, 1000.0, var_no_alarm);                                        
+;----------------------------------------------------------------------
+        ldiu      135,rs                ; |1614| 
+        ldp       @CL903,DP
+        ldiu      *+fp(1),ar2           ; |1614| 
+        mpyi      1336,ar2              ; |1614| 
+        addi      @CL903,ar2            ; |1614| Unsigned
+        ldp       @CL20,DP
+        ldiu      4,re                  ; |1614| 
+        ldiu      @CL20,r0              ; |1614| 
+        ldp       @CL19,DP
+        ldiu      66,rc                 ; |1614| 
+        ldfu      @CL19,f3              ; |1614| 
+        ldfu      1.0000000000e+00,f2   ; |1614| 
+        callu     r0                    ; far call to _VAR_Initialize	; |1614| 
+                                        ; |1614| Far Call Occurs
+	.line	1578
+;----------------------------------------------------------------------
+; 1615 | sprintf(FC[i].NET_FLOW_TOTAL.name, "FC%d Net Total Flow", i+1); //R369 
+;----------------------------------------------------------------------
+        ldp       @CL905,DP
+        ldiu      1,r0                  ; |1615| 
+        ldiu      @CL905,r1             ; |1615| 
+        addi      *+fp(1),r0            ; |1615| 
+        push      r0                    ; |1615| 
+        push      r1                    ; |1615| 
+        ldiu      *+fp(1),ar2           ; |1615| 
+        ldp       @CL904,DP
+        mpyi      1336,ar2              ; |1615| 
+        addi      @CL904,ar2            ; |1615| Unsigned
+        ldp       @CL24,DP
+        ldiu      @CL24,r0              ; |1615| 
+        callu     r0                    ; far call to _sprintf	; |1615| 
+                                        ; |1615| Far Call Occurs
+        subi      2,sp                  ; |1615| 
+	.line	1579
+;----------------------------------------------------------------------
+; 1616 | FC[i].NET_FLOW_TOTAL.name_r = 369;                                     
+;----------------------------------------------------------------------
+        ldp       @CL906,DP
+        ldiu      *+fp(1),ir0           ; |1616| 
+        ldiu      @CL906,ar0            ; |1616| 
+        mpyi      1336,ir0              ; |1616| 
+        ldiu      369,r0                ; |1616| 
+        sti       r0,*+ar0(ir0)         ; |1616| 
+	.line	1580
+;----------------------------------------------------------------------
+; 1617 | VAR_Setup_Unit(&FC[i].NET_FLOW_TOTAL, u_vfr_barrel_day, 1000000000.0, 0
 ;     | .0, 1000000000.0, 0.0);                                                
 ;----------------------------------------------------------------------
         ldp       @CL764,DP
-        ldfu      0.0000000000e+00,f0   ; |1614| 
-        ldfu      @CL764,f1             ; |1614| 
+        ldfu      0.0000000000e+00,f0   ; |1617| 
+        ldfu      @CL764,f1             ; |1617| 
         ldp       @CL30,DP
-        pushf     f0                    ; |1614| 
-        ldiu      @CL30,r0              ; |1614| 
-        ldp       @CL905,DP
-        pushf     f1                    ; |1614| 
-        ldiu      *+fp(1),ar2           ; |1614| 
-        mpyi      1336,ar2              ; |1614| 
-        addi      @CL905,ar2            ; |1614| Unsigned
+        pushf     f0                    ; |1617| 
+        ldiu      @CL30,r0              ; |1617| 
+        ldp       @CL903,DP
+        pushf     f1                    ; |1617| 
+        ldiu      *+fp(1),ar2           ; |1617| 
+        mpyi      1336,ar2              ; |1617| 
+        addi      @CL903,ar2            ; |1617| Unsigned
         ldp       @CL764,DP
-        ldfu      @CL764,f2             ; |1614| 
-        ldiu      135,rc                ; |1614| 
-        ldfu      0.0000000000e+00,f3   ; |1614| 
-        callu     r0                    ; far call to _VAR_Setup_Unit	; |1614| 
-                                        ; |1614| Far Call Occurs
-        subi      2,sp                  ; |1614| 
-	.line	1578
+        ldfu      @CL764,f2             ; |1617| 
+        ldiu      135,rc                ; |1617| 
+        ldfu      0.0000000000e+00,f3   ; |1617| 
+        callu     r0                    ; far call to _VAR_Setup_Unit	; |1617| 
+                                        ; |1617| Far Call Occurs
+        subi      2,sp                  ; |1617| 
+	.line	1581
 ;----------------------------------------------------------------------
-; 1615 | VAR_Update(&FC[i].NET_FLOW_TOTAL, 0.0, 0, 0);                          
+; 1618 | VAR_Update(&FC[i].NET_FLOW_TOTAL, 0.0, 0, 0);                          
 ;----------------------------------------------------------------------
         ldp       @CL32,DP
-        ldiu      @CL32,r0              ; |1615| 
-        ldiu      *+fp(1),ar2           ; |1615| 
-        ldp       @CL905,DP
-        mpyi      1336,ar2              ; |1615| 
-        addi      @CL905,ar2            ; |1615| Unsigned
+        ldiu      @CL32,r0              ; |1618| 
+        ldiu      *+fp(1),ar2           ; |1618| 
+        ldp       @CL903,DP
+        mpyi      1336,ar2              ; |1618| 
+        addi      @CL903,ar2            ; |1618| Unsigned
         ldp       @CL31+0,DP
-        ldfu      @CL31+0,f2            ; |1615| 40b float hi half
+        ldfu      @CL31+0,f2            ; |1618| 40b float hi half
         ldp       @CL31+1,DP
-        ldiu      @CL31+1,r2            ; |1615| 40b float lo half
-        ldiu      0,rc                  ; |1615| 
-        ldiu      0,r3                  ; |1615| 
-        callu     r0                    ; far call to _VAR_Update	; |1615| 
-                                        ; |1615| Far Call Occurs
-	.line	1579
-;----------------------------------------------------------------------
-; 1616 | FC[i].NET_FLOW_TOTAL.aux = i;                                          
-;----------------------------------------------------------------------
-        ldp       @CL909,DP
-        ldiu      @CL909,ar0            ; |1616| 
-        ldiu      *+fp(1),ir0           ; |1616| 
-        mpyi      1336,ir0              ; |1616| 
-        ldiu      *+fp(1),r0            ; |1616| 
-        sti       r0,*+ar0(ir0)         ; |1616| 
+        ldiu      @CL31+1,r2            ; |1618| 40b float lo half
+        ldiu      0,rc                  ; |1618| 
+        ldiu      0,r3                  ; |1618| 
+        callu     r0                    ; far call to _VAR_Update	; |1618| 
+                                        ; |1618| Far Call Occurs
 	.line	1582
 ;----------------------------------------------------------------------
-; 1619 | VAR_Initialize(&FC[i].watercut, c_volume_per_volume, u_vpv_volume_perce
-;     | nt, 100.0, 1000.0, var_no_alarm);                                      
+; 1619 | FC[i].NET_FLOW_TOTAL.aux = i;                                          
 ;----------------------------------------------------------------------
-        ldiu      *+fp(1),ar2           ; |1619| 
-        ldp       @CL910,DP
-        mpyi      1336,ar2              ; |1619| 
-        addi      @CL910,ar2            ; |1619| Unsigned
-        ldp       @CL20,DP
-        ldiu      149,rs                ; |1619| 
-        ldiu      @CL20,r0              ; |1619| 
-        ldp       @CL19,DP
-        ldiu      4,re                  ; |1619| 
-        ldfu      @CL19,f3              ; |1619| 
-        ldiu      88,rc                 ; |1619| 
-        ldfu      1.0000000000e+02,f2   ; |1619| 
-        callu     r0                    ; far call to _VAR_Initialize	; |1619| 
-                                        ; |1619| Far Call Occurs
-	.line	1583
-;----------------------------------------------------------------------
-; 1620 | sprintf(FC[i].watercut.name, "FC%d Process", i+1);      //R365         
-;----------------------------------------------------------------------
-        ldiu      1,r0                  ; |1620| 
-        addi      *+fp(1),r0            ; |1620| 
-        ldp       @CL912,DP
-        push      r0                    ; |1620| 
-        ldiu      @CL912,r1             ; |1620| 
-        push      r1                    ; |1620| 
-        ldiu      *+fp(1),ar2           ; |1620| 
-        ldp       @CL911,DP
-        mpyi      1336,ar2              ; |1620| 
-        addi      @CL911,ar2            ; |1620| Unsigned
-        ldp       @CL24,DP
-        ldiu      @CL24,r0              ; |1620| 
-        callu     r0                    ; far call to _sprintf	; |1620| 
-                                        ; |1620| Far Call Occurs
-        subi      2,sp                  ; |1620| 
-	.line	1584
-;----------------------------------------------------------------------
-; 1621 | FC[i].watercut.name_r = 365;                                           
-;----------------------------------------------------------------------
-        ldp       @CL913,DP
-        ldiu      *+fp(1),ir0           ; |1621| 
-        ldiu      @CL913,ar0            ; |1621| 
-        mpyi      1336,ir0              ; |1621| 
-        ldiu      365,r0                ; |1621| 
-        sti       r0,*+ar0(ir0)         ; |1621| 
+        ldp       @CL907,DP
+        ldiu      @CL907,ar0            ; |1619| 
+        ldiu      *+fp(1),ir0           ; |1619| 
+        mpyi      1336,ir0              ; |1619| 
+        ldiu      *+fp(1),r0            ; |1619| 
+        sti       r0,*+ar0(ir0)         ; |1619| 
 	.line	1585
 ;----------------------------------------------------------------------
-; 1622 | VAR_Setup_Unit(&FC[i].watercut, u_vpv_volume_percent, 100.0, 0.0, 100.0
-;     | , 0.0);                                                                
+; 1622 | VAR_Initialize(&FC[i].watercut, c_volume_per_volume, u_vpv_volume_perce
+;     | nt, 100.0, 1000.0, var_no_alarm);                                      
 ;----------------------------------------------------------------------
-        ldfu      0.0000000000e+00,f1   ; |1622| 
-        pushf     f1                    ; |1622| 
-        ldfu      1.0000000000e+02,f0   ; |1622| 
-        ldp       @CL30,DP
-        pushf     f0                    ; |1622| 
-        ldiu      @CL30,r0              ; |1622| 
         ldiu      *+fp(1),ar2           ; |1622| 
-        ldp       @CL910,DP
+        ldp       @CL908,DP
         mpyi      1336,ar2              ; |1622| 
-        addi      @CL910,ar2            ; |1622| Unsigned
-        ldiu      149,rc                ; |1622| 
-        ldfu      0.0000000000e+00,f3   ; |1622| 
+        addi      @CL908,ar2            ; |1622| Unsigned
+        ldp       @CL20,DP
+        ldiu      149,rs                ; |1622| 
+        ldiu      @CL20,r0              ; |1622| 
+        ldp       @CL19,DP
+        ldiu      4,re                  ; |1622| 
+        ldfu      @CL19,f3              ; |1622| 
+        ldiu      88,rc                 ; |1622| 
         ldfu      1.0000000000e+02,f2   ; |1622| 
-        callu     r0                    ; far call to _VAR_Setup_Unit	; |1622| 
+        callu     r0                    ; far call to _VAR_Initialize	; |1622| 
                                         ; |1622| Far Call Occurs
-        subi      2,sp                  ; |1622| 
 	.line	1586
 ;----------------------------------------------------------------------
-; 1623 | VAR_Update(&FC[i].watercut, 0.0, 0, 0);                                
+; 1623 | sprintf(FC[i].watercut.name, "FC%d Process", i+1);      //R365         
 ;----------------------------------------------------------------------
-        ldp       @CL32,DP
-        ldiu      @CL32,r0              ; |1623| 
-        ldiu      *+fp(1),ar2           ; |1623| 
+        ldiu      1,r0                  ; |1623| 
+        addi      *+fp(1),r0            ; |1623| 
         ldp       @CL910,DP
+        push      r0                    ; |1623| 
+        ldiu      @CL910,r1             ; |1623| 
+        push      r1                    ; |1623| 
+        ldiu      *+fp(1),ar2           ; |1623| 
+        ldp       @CL909,DP
         mpyi      1336,ar2              ; |1623| 
-        addi      @CL910,ar2            ; |1623| Unsigned
-        ldp       @CL31+0,DP
-        ldfu      @CL31+0,f2            ; |1623| 40b float hi half
-        ldp       @CL31+1,DP
-        ldiu      0,rc                  ; |1623| 
-        ldiu      @CL31+1,r2            ; |1623| 40b float lo half
-        ldiu      0,r3                  ; |1623| 
-        callu     r0                    ; far call to _VAR_Update	; |1623| 
+        addi      @CL909,ar2            ; |1623| Unsigned
+        ldp       @CL24,DP
+        ldiu      @CL24,r0              ; |1623| 
+        callu     r0                    ; far call to _sprintf	; |1623| 
                                         ; |1623| Far Call Occurs
+        subi      2,sp                  ; |1623| 
 	.line	1587
 ;----------------------------------------------------------------------
-; 1624 | FC[i].watercut.aux = i;                                                
+; 1624 | FC[i].watercut.name_r = 365;                                           
 ;----------------------------------------------------------------------
-        ldp       @CL914,DP
-        ldiu      @CL914,ar0            ; |1624| 
+        ldp       @CL911,DP
         ldiu      *+fp(1),ir0           ; |1624| 
+        ldiu      @CL911,ar0            ; |1624| 
         mpyi      1336,ir0              ; |1624| 
-        ldiu      *+fp(1),r0            ; |1624| 
+        ldiu      365,r0                ; |1624| 
         sti       r0,*+ar0(ir0)         ; |1624| 
-	.line	1590
+	.line	1588
 ;----------------------------------------------------------------------
-; 1627 | VAR_Initialize(&FC[i].T, c_temperature, u_temp_C, 10.0, 10.0, var_no_bo
-;     | und|var_no_alarm);                                                     
+; 1625 | VAR_Setup_Unit(&FC[i].watercut, u_vpv_volume_percent, 100.0, 0.0, 100.0
+;     | , 0.0);                                                                
 ;----------------------------------------------------------------------
-        ldiu      *+fp(1),ar2           ; |1627| 
-        ldp       @CL915,DP
-        mpyi      1336,ar2              ; |1627| 
-        addi      @CL915,ar2            ; |1627| Unsigned
-        ldiu      32,rs                 ; |1627| 
-        ldiu      6,re                  ; |1627| 
-        ldp       @CL20,DP
-        ldiu      64,rc                 ; |1627| 
-        ldiu      @CL20,r0              ; |1627| 
-        ldfu      1.0000000000e+01,f3   ; |1627| 
-        ldfu      1.0000000000e+01,f2   ; |1627| 
-        callu     r0                    ; far call to _VAR_Initialize	; |1627| 
-                                        ; |1627| Far Call Occurs
-	.line	1591
+        ldfu      0.0000000000e+00,f1   ; |1625| 
+        pushf     f1                    ; |1625| 
+        ldfu      1.0000000000e+02,f0   ; |1625| 
+        ldp       @CL30,DP
+        pushf     f0                    ; |1625| 
+        ldiu      @CL30,r0              ; |1625| 
+        ldiu      *+fp(1),ar2           ; |1625| 
+        ldp       @CL908,DP
+        mpyi      1336,ar2              ; |1625| 
+        addi      @CL908,ar2            ; |1625| Unsigned
+        ldiu      149,rc                ; |1625| 
+        ldfu      0.0000000000e+00,f3   ; |1625| 
+        ldfu      1.0000000000e+02,f2   ; |1625| 
+        callu     r0                    ; far call to _VAR_Setup_Unit	; |1625| 
+                                        ; |1625| Far Call Occurs
+        subi      2,sp                  ; |1625| 
+	.line	1589
 ;----------------------------------------------------------------------
-; 1628 | sprintf(FC[i].T.name, "FC%d Temperature", i+1); //R368                 
-;----------------------------------------------------------------------
-        ldiu      1,r0                  ; |1628| 
-        addi      *+fp(1),r0            ; |1628| 
-        ldp       @CL917,DP
-        push      r0                    ; |1628| 
-        ldiu      @CL917,r1             ; |1628| 
-        push      r1                    ; |1628| 
-        ldp       @CL916,DP
-        ldiu      *+fp(1),ar2           ; |1628| 
-        mpyi      1336,ar2              ; |1628| 
-        addi      @CL916,ar2            ; |1628| Unsigned
-        ldp       @CL24,DP
-        ldiu      @CL24,r0              ; |1628| 
-        callu     r0                    ; far call to _sprintf	; |1628| 
-                                        ; |1628| Far Call Occurs
-        subi      2,sp                  ; |1628| 
-	.line	1592
-;----------------------------------------------------------------------
-; 1629 | FC[i].T.name_r = 368;                                                  
-;----------------------------------------------------------------------
-        ldiu      *+fp(1),ir0           ; |1629| 
-        ldp       @CL918,DP
-        mpyi      1336,ir0              ; |1629| 
-        ldiu      @CL918,ar0            ; |1629| 
-        ldiu      368,r0                ; |1629| 
-        sti       r0,*+ar0(ir0)         ; |1629| 
-	.line	1593
-;----------------------------------------------------------------------
-; 1630 | VAR_Update(&FC[i].T, 0.0, 0, 0);                                       
+; 1626 | VAR_Update(&FC[i].watercut, 0.0, 0, 0);                                
 ;----------------------------------------------------------------------
         ldp       @CL32,DP
-        ldiu      @CL32,r0              ; |1630| 
-        ldp       @CL915,DP
-        ldiu      *+fp(1),ar2           ; |1630| 
-        mpyi      1336,ar2              ; |1630| 
-        addi      @CL915,ar2            ; |1630| Unsigned
+        ldiu      @CL32,r0              ; |1626| 
+        ldiu      *+fp(1),ar2           ; |1626| 
+        ldp       @CL908,DP
+        mpyi      1336,ar2              ; |1626| 
+        addi      @CL908,ar2            ; |1626| Unsigned
         ldp       @CL31+0,DP
-        ldfu      @CL31+0,f2            ; |1630| 40b float hi half
+        ldfu      @CL31+0,f2            ; |1626| 40b float hi half
         ldp       @CL31+1,DP
-        ldiu      @CL31+1,r2            ; |1630| 40b float lo half
-        ldiu      0,rc                  ; |1630| 
-        ldiu      0,r3                  ; |1630| 
-        callu     r0                    ; far call to _VAR_Update	; |1630| 
+        ldiu      0,rc                  ; |1626| 
+        ldiu      @CL31+1,r2            ; |1626| 40b float lo half
+        ldiu      0,r3                  ; |1626| 
+        callu     r0                    ; far call to _VAR_Update	; |1626| 
+                                        ; |1626| Far Call Occurs
+	.line	1590
+;----------------------------------------------------------------------
+; 1627 | FC[i].watercut.aux = i;                                                
+;----------------------------------------------------------------------
+        ldp       @CL912,DP
+        ldiu      @CL912,ar0            ; |1627| 
+        ldiu      *+fp(1),ir0           ; |1627| 
+        mpyi      1336,ir0              ; |1627| 
+        ldiu      *+fp(1),r0            ; |1627| 
+        sti       r0,*+ar0(ir0)         ; |1627| 
+	.line	1593
+;----------------------------------------------------------------------
+; 1630 | VAR_Initialize(&FC[i].T, c_temperature, u_temp_C, 10.0, 10.0, var_no_bo
+;     | und|var_no_alarm);                                                     
+;----------------------------------------------------------------------
+        ldiu      *+fp(1),ar2           ; |1630| 
+        ldp       @CL913,DP
+        mpyi      1336,ar2              ; |1630| 
+        addi      @CL913,ar2            ; |1630| Unsigned
+        ldiu      32,rs                 ; |1630| 
+        ldiu      6,re                  ; |1630| 
+        ldp       @CL20,DP
+        ldiu      64,rc                 ; |1630| 
+        ldiu      @CL20,r0              ; |1630| 
+        ldfu      1.0000000000e+01,f3   ; |1630| 
+        ldfu      1.0000000000e+01,f2   ; |1630| 
+        callu     r0                    ; far call to _VAR_Initialize	; |1630| 
                                         ; |1630| Far Call Occurs
 	.line	1594
 ;----------------------------------------------------------------------
-; 1631 | FC[i].T.aux = i;                                                       
+; 1631 | sprintf(FC[i].T.name, "FC%d Temperature", i+1); //R368                 
 ;----------------------------------------------------------------------
-        ldiu      *+fp(1),ir0           ; |1631| 
-        ldp       @CL919,DP
-        mpyi      1336,ir0              ; |1631| 
-        ldiu      @CL919,ar0            ; |1631| 
-        ldiu      *+fp(1),r0            ; |1631| 
-        sti       r0,*+ar0(ir0)         ; |1631| 
-	.line	1597
-;----------------------------------------------------------------------
-; 1634 | VAR_Initialize(&FC[i].pressure, c_pressure, u_p_psi, 1.0, 1000.0, var_n
-;     | o_bound|var_no_alarm);                                                 
-;----------------------------------------------------------------------
-        ldiu      6,rs                  ; |1634| 
-        ldp       @CL920,DP
-        ldiu      *+fp(1),ar2           ; |1634| 
-        mpyi      1336,ar2              ; |1634| 
-        addi      @CL920,ar2            ; |1634| Unsigned
-        ldp       @CL20,DP
-        ldiu      6,re                  ; |1634| 
-        ldiu      @CL20,r0              ; |1634| 
-        ldp       @CL19,DP
-        ldiu      65,rc                 ; |1634| 
-        ldfu      @CL19,f3              ; |1634| 
-        ldfu      1.0000000000e+00,f2   ; |1634| 
-        callu     r0                    ; far call to _VAR_Initialize	; |1634| 
-                                        ; |1634| Far Call Occurs
-	.line	1598
-;----------------------------------------------------------------------
-; 1635 | sprintf(FC[i].pressure.name, "FC%d Pressure", i+1);     //R364         
-;----------------------------------------------------------------------
-        ldp       @CL922,DP
-        ldiu      1,r0                  ; |1635| 
-        ldiu      @CL922,r1             ; |1635| 
-        addi      *+fp(1),r0            ; |1635| 
-        push      r0                    ; |1635| 
-        push      r1                    ; |1635| 
-        ldiu      *+fp(1),ar2           ; |1635| 
-        ldp       @CL921,DP
-        mpyi      1336,ar2              ; |1635| 
-        addi      @CL921,ar2            ; |1635| Unsigned
+        ldiu      1,r0                  ; |1631| 
+        addi      *+fp(1),r0            ; |1631| 
+        ldp       @CL915,DP
+        push      r0                    ; |1631| 
+        ldiu      @CL915,r1             ; |1631| 
+        push      r1                    ; |1631| 
+        ldp       @CL914,DP
+        ldiu      *+fp(1),ar2           ; |1631| 
+        mpyi      1336,ar2              ; |1631| 
+        addi      @CL914,ar2            ; |1631| Unsigned
         ldp       @CL24,DP
-        ldiu      @CL24,r0              ; |1635| 
-        callu     r0                    ; far call to _sprintf	; |1635| 
-                                        ; |1635| Far Call Occurs
-        subi      2,sp                  ; |1635| 
-	.line	1599
+        ldiu      @CL24,r0              ; |1631| 
+        callu     r0                    ; far call to _sprintf	; |1631| 
+                                        ; |1631| Far Call Occurs
+        subi      2,sp                  ; |1631| 
+	.line	1595
 ;----------------------------------------------------------------------
-; 1636 | FC[i].pressure.name_r = 364;                                           
+; 1632 | FC[i].T.name_r = 368;                                                  
 ;----------------------------------------------------------------------
-        ldp       @CL923,DP
-        ldiu      *+fp(1),ir0           ; |1636| 
-        ldiu      @CL923,ar0            ; |1636| 
-        mpyi      1336,ir0              ; |1636| 
-        ldiu      364,r0                ; |1636| 
-        sti       r0,*+ar0(ir0)         ; |1636| 
-	.line	1600
+        ldiu      *+fp(1),ir0           ; |1632| 
+        ldp       @CL916,DP
+        mpyi      1336,ir0              ; |1632| 
+        ldiu      @CL916,ar0            ; |1632| 
+        ldiu      368,r0                ; |1632| 
+        sti       r0,*+ar0(ir0)         ; |1632| 
+	.line	1596
 ;----------------------------------------------------------------------
-; 1637 | VAR_Update(&FC[i].pressure, 0.0, 0, 0);                                
+; 1633 | VAR_Update(&FC[i].T, 0.0, 0, 0);                                       
 ;----------------------------------------------------------------------
         ldp       @CL32,DP
-        ldiu      *+fp(1),ar2           ; |1637| 
-        ldiu      @CL32,r0              ; |1637| 
-        ldp       @CL920,DP
-        mpyi      1336,ar2              ; |1637| 
-        addi      @CL920,ar2            ; |1637| Unsigned
+        ldiu      @CL32,r0              ; |1633| 
+        ldp       @CL913,DP
+        ldiu      *+fp(1),ar2           ; |1633| 
+        mpyi      1336,ar2              ; |1633| 
+        addi      @CL913,ar2            ; |1633| Unsigned
         ldp       @CL31+0,DP
-        ldfu      @CL31+0,f2            ; |1637| 40b float hi half
+        ldfu      @CL31+0,f2            ; |1633| 40b float hi half
         ldp       @CL31+1,DP
-        ldiu      @CL31+1,r2            ; |1637| 40b float lo half
-        ldiu      0,rc                  ; |1637| 
-        ldiu      0,r3                  ; |1637| 
-        callu     r0                    ; far call to _VAR_Update	; |1637| 
+        ldiu      @CL31+1,r2            ; |1633| 40b float lo half
+        ldiu      0,rc                  ; |1633| 
+        ldiu      0,r3                  ; |1633| 
+        callu     r0                    ; far call to _VAR_Update	; |1633| 
+                                        ; |1633| Far Call Occurs
+	.line	1597
+;----------------------------------------------------------------------
+; 1634 | FC[i].T.aux = i;                                                       
+;----------------------------------------------------------------------
+        ldiu      *+fp(1),ir0           ; |1634| 
+        ldp       @CL917,DP
+        mpyi      1336,ir0              ; |1634| 
+        ldiu      @CL917,ar0            ; |1634| 
+        ldiu      *+fp(1),r0            ; |1634| 
+        sti       r0,*+ar0(ir0)         ; |1634| 
+	.line	1600
+;----------------------------------------------------------------------
+; 1637 | VAR_Initialize(&FC[i].pressure, c_pressure, u_p_psi, 1.0, 1000.0, var_n
+;     | o_bound|var_no_alarm);                                                 
+;----------------------------------------------------------------------
+        ldiu      6,rs                  ; |1637| 
+        ldp       @CL918,DP
+        ldiu      *+fp(1),ar2           ; |1637| 
+        mpyi      1336,ar2              ; |1637| 
+        addi      @CL918,ar2            ; |1637| Unsigned
+        ldp       @CL20,DP
+        ldiu      6,re                  ; |1637| 
+        ldiu      @CL20,r0              ; |1637| 
+        ldp       @CL19,DP
+        ldiu      65,rc                 ; |1637| 
+        ldfu      @CL19,f3              ; |1637| 
+        ldfu      1.0000000000e+00,f2   ; |1637| 
+        callu     r0                    ; far call to _VAR_Initialize	; |1637| 
                                         ; |1637| Far Call Occurs
 	.line	1601
 ;----------------------------------------------------------------------
-; 1638 | FC[i].pressure.aux = i;                                                
+; 1638 | sprintf(FC[i].pressure.name, "FC%d Pressure", i+1);     //R364         
 ;----------------------------------------------------------------------
-        ldp       @CL924,DP
-        ldiu      *+fp(1),ir0           ; |1638| 
-        ldiu      @CL924,ar0            ; |1638| 
-        mpyi      1336,ir0              ; |1638| 
-        ldiu      *+fp(1),r0            ; |1638| 
-        sti       r0,*+ar0(ir0)         ; |1638| 
-	.line	1604
-;----------------------------------------------------------------------
-; 1641 | VAR_Initialize(&FC[i].density, c_mass_per_volume, u_mpv_kg_cm, 10.0, 10
-;     | 00.0, var_no_bound|var_no_alarm);                                      
-;----------------------------------------------------------------------
-        ldiu      *+fp(1),ar2           ; |1641| 
-        ldp       @CL925,DP
-        mpyi      1336,ar2              ; |1641| 
-        addi      @CL925,ar2            ; |1641| Unsigned
-        ldp       @CL20,DP
-        ldiu      @CL20,r0              ; |1641| 
-        ldiu      92,rs                 ; |1641| 
-        ldiu      6,re                  ; |1641| 
-        ldp       @CL19,DP
-        ldiu      73,rc                 ; |1641| 
-        ldfu      @CL19,f3              ; |1641| 
-        ldfu      1.0000000000e+01,f2   ; |1641| 
-        callu     r0                    ; far call to _VAR_Initialize	; |1641| 
-                                        ; |1641| Far Call Occurs
-	.line	1605
-;----------------------------------------------------------------------
-; 1642 | sprintf(FC[i].density.name, "FC%d Density", i+1);       //R372         
-;----------------------------------------------------------------------
-        ldiu      1,r0                  ; |1642| 
-        ldp       @CL927,DP
-        addi      *+fp(1),r0            ; |1642| 
-        ldiu      @CL927,r1             ; |1642| 
-        push      r0                    ; |1642| 
-        push      r1                    ; |1642| 
-        ldiu      *+fp(1),ar2           ; |1642| 
-        ldp       @CL926,DP
-        mpyi      1336,ar2              ; |1642| 
-        addi      @CL926,ar2            ; |1642| Unsigned
+        ldp       @CL920,DP
+        ldiu      1,r0                  ; |1638| 
+        ldiu      @CL920,r1             ; |1638| 
+        addi      *+fp(1),r0            ; |1638| 
+        push      r0                    ; |1638| 
+        push      r1                    ; |1638| 
+        ldiu      *+fp(1),ar2           ; |1638| 
+        ldp       @CL919,DP
+        mpyi      1336,ar2              ; |1638| 
+        addi      @CL919,ar2            ; |1638| Unsigned
         ldp       @CL24,DP
-        ldiu      @CL24,r0              ; |1642| 
-        callu     r0                    ; far call to _sprintf	; |1642| 
-                                        ; |1642| Far Call Occurs
-        subi      2,sp                  ; |1642| 
-	.line	1606
+        ldiu      @CL24,r0              ; |1638| 
+        callu     r0                    ; far call to _sprintf	; |1638| 
+                                        ; |1638| Far Call Occurs
+        subi      2,sp                  ; |1638| 
+	.line	1602
 ;----------------------------------------------------------------------
-; 1643 | FC[i].density.name_r = 372;                                            
+; 1639 | FC[i].pressure.name_r = 364;                                           
 ;----------------------------------------------------------------------
-        ldp       @CL928,DP
-        ldiu      *+fp(1),ir0           ; |1643| 
-        mpyi      1336,ir0              ; |1643| 
-        ldiu      @CL928,ar0            ; |1643| 
-        ldiu      372,r0                ; |1643| 
-        sti       r0,*+ar0(ir0)         ; |1643| 
-	.line	1607
+        ldp       @CL921,DP
+        ldiu      *+fp(1),ir0           ; |1639| 
+        ldiu      @CL921,ar0            ; |1639| 
+        mpyi      1336,ir0              ; |1639| 
+        ldiu      364,r0                ; |1639| 
+        sti       r0,*+ar0(ir0)         ; |1639| 
+	.line	1603
 ;----------------------------------------------------------------------
-; 1644 | VAR_Update(&FC[i].density, 0.0, 0, 0);                                 
+; 1640 | VAR_Update(&FC[i].pressure, 0.0, 0, 0);                                
 ;----------------------------------------------------------------------
         ldp       @CL32,DP
-        ldiu      @CL32,r0              ; |1644| 
-        ldp       @CL925,DP
-        ldiu      *+fp(1),ar2           ; |1644| 
-        mpyi      1336,ar2              ; |1644| 
-        addi      @CL925,ar2            ; |1644| Unsigned
+        ldiu      *+fp(1),ar2           ; |1640| 
+        ldiu      @CL32,r0              ; |1640| 
+        ldp       @CL918,DP
+        mpyi      1336,ar2              ; |1640| 
+        addi      @CL918,ar2            ; |1640| Unsigned
         ldp       @CL31+0,DP
-        ldfu      @CL31+0,f2            ; |1644| 40b float hi half
+        ldfu      @CL31+0,f2            ; |1640| 40b float hi half
         ldp       @CL31+1,DP
-        ldiu      @CL31+1,r2            ; |1644| 40b float lo half
-        ldiu      0,rc                  ; |1644| 
-        ldiu      0,r3                  ; |1644| 
-        callu     r0                    ; far call to _VAR_Update	; |1644| 
+        ldiu      @CL31+1,r2            ; |1640| 40b float lo half
+        ldiu      0,rc                  ; |1640| 
+        ldiu      0,r3                  ; |1640| 
+        callu     r0                    ; far call to _VAR_Update	; |1640| 
+                                        ; |1640| Far Call Occurs
+	.line	1604
+;----------------------------------------------------------------------
+; 1641 | FC[i].pressure.aux = i;                                                
+;----------------------------------------------------------------------
+        ldp       @CL922,DP
+        ldiu      *+fp(1),ir0           ; |1641| 
+        ldiu      @CL922,ar0            ; |1641| 
+        mpyi      1336,ir0              ; |1641| 
+        ldiu      *+fp(1),r0            ; |1641| 
+        sti       r0,*+ar0(ir0)         ; |1641| 
+	.line	1607
+;----------------------------------------------------------------------
+; 1644 | VAR_Initialize(&FC[i].density, c_mass_per_volume, u_mpv_kg_cm, 10.0, 10
+;     | 00.0, var_no_bound|var_no_alarm);                                      
+;----------------------------------------------------------------------
+        ldiu      *+fp(1),ar2           ; |1644| 
+        ldp       @CL923,DP
+        mpyi      1336,ar2              ; |1644| 
+        addi      @CL923,ar2            ; |1644| Unsigned
+        ldp       @CL20,DP
+        ldiu      @CL20,r0              ; |1644| 
+        ldiu      92,rs                 ; |1644| 
+        ldiu      6,re                  ; |1644| 
+        ldp       @CL19,DP
+        ldiu      73,rc                 ; |1644| 
+        ldfu      @CL19,f3              ; |1644| 
+        ldfu      1.0000000000e+01,f2   ; |1644| 
+        callu     r0                    ; far call to _VAR_Initialize	; |1644| 
                                         ; |1644| Far Call Occurs
+	.line	1608
+;----------------------------------------------------------------------
+; 1645 | sprintf(FC[i].density.name, "FC%d Density", i+1);       //R372         
+;----------------------------------------------------------------------
+        ldiu      1,r0                  ; |1645| 
+        ldp       @CL925,DP
+        addi      *+fp(1),r0            ; |1645| 
+        ldiu      @CL925,r1             ; |1645| 
+        push      r0                    ; |1645| 
+        push      r1                    ; |1645| 
+        ldiu      *+fp(1),ar2           ; |1645| 
+        ldp       @CL924,DP
+        mpyi      1336,ar2              ; |1645| 
+        addi      @CL924,ar2            ; |1645| Unsigned
+        ldp       @CL24,DP
+        ldiu      @CL24,r0              ; |1645| 
+        callu     r0                    ; far call to _sprintf	; |1645| 
+                                        ; |1645| Far Call Occurs
+        subi      2,sp                  ; |1645| 
 	.line	1609
 ;----------------------------------------------------------------------
-; 1646 | FC[i].density.aux                       = i;                           
+; 1646 | FC[i].density.name_r = 372;                                            
 ;----------------------------------------------------------------------
-        ldp       @CL929,DP
+        ldp       @CL926,DP
         ldiu      *+fp(1),ir0           ; |1646| 
-        ldiu      @CL929,ar0            ; |1646| 
         mpyi      1336,ir0              ; |1646| 
-        ldiu      *+fp(1),r0            ; |1646| 
+        ldiu      @CL926,ar0            ; |1646| 
+        ldiu      372,r0                ; |1646| 
         sti       r0,*+ar0(ir0)         ; |1646| 
 	.line	1610
 ;----------------------------------------------------------------------
-; 1647 | FC[i].density.vect1             = (int*)PDI_Density_Adj;               
-;----------------------------------------------------------------------
-        ldp       @CL930,DP
-        ldiu      @CL930,ar0            ; |1647| 
-        ldiu      *+fp(1),ir0           ; |1647| 
-        ldp       @CL931,DP
-        mpyi      1336,ir0              ; |1647| 
-        ldiu      @CL931,r0             ; |1647| 
-        sti       r0,*+ar0(ir0)         ; |1647| 
-	.line	1611
-;----------------------------------------------------------------------
-; 1648 | FC[i].density.vect2             = (int*)PDI_Density_Correction;        
-;----------------------------------------------------------------------
-        ldp       @CL932,DP
-        ldiu      @CL932,ar0            ; |1648| 
-        ldp       @CL933,DP
-        ldiu      *+fp(1),ir0           ; |1648| 
-        mpyi      1336,ir0              ; |1648| 
-        ldiu      @CL933,r0             ; |1648| 
-        sti       r0,*+ar0(ir0)         ; |1648| 
-	.line	1612
-;----------------------------------------------------------------------
-; 1649 | FC[i].density_adj                       = 0.0;                         
-;----------------------------------------------------------------------
-        ldiu      *+fp(1),ir0           ; |1649| 
-        ldp       @CL934,DP
-        mpyi      1336,ir0              ; |1649| 
-        ldiu      @CL934,ar0            ; |1649| 
-        ldfu      0.0000000000e+00,f0   ; |1649| 
-        stf       f0,*+ar0(ir0)         ; |1649| 
-	.line	1613
-;----------------------------------------------------------------------
-; 1650 | FC[i].density_PDI_corrected = API_error_num;                           
-;----------------------------------------------------------------------
-        ldp       @CL935,DP
-        ldiu      *+fp(1),ir0           ; |1650| 
-        ldiu      @CL935,ar0            ; |1650| 
-        ldp       @CL936,DP
-        mpyi      1336,ir0              ; |1650| 
-        ldfu      @CL936,f0             ; |1650| 
-        stf       f0,*+ar0(ir0)         ; |1650| 
-	.line	1617
-;----------------------------------------------------------------------
-; 1654 | VAR_Initialize(&FC[i].density_waterST, c_mass_per_volume, u_mpv_kg_cm,
-;     | 10.0, 1000.0, var_no_bound|var_no_alarm);                              
-;----------------------------------------------------------------------
-        ldiu      *+fp(1),ar2           ; |1654| 
-        ldp       @CL937,DP
-        mpyi      1336,ar2              ; |1654| 
-        addi      @CL937,ar2            ; |1654| Unsigned
-        ldp       @CL20,DP
-        ldiu      @CL20,r0              ; |1654| 
-        ldiu      73,rc                 ; |1654| 
-        ldiu      92,rs                 ; |1654| 
-        ldp       @CL19,DP
-        ldiu      6,re                  ; |1654| 
-        ldfu      @CL19,f3              ; |1654| 
-        ldfu      1.0000000000e+01,f2   ; |1654| 
-        callu     r0                    ; far call to _VAR_Initialize	; |1654| 
-                                        ; |1654| Far Call Occurs
-	.line	1618
-;----------------------------------------------------------------------
-; 1655 | sprintf(FC[i].density_waterST.name, "FC%d Water Density@ST", i+1);
-;     |  //R371                                                                
-;----------------------------------------------------------------------
-        ldiu      1,r0                  ; |1655| 
-        addi      *+fp(1),r0            ; |1655| 
-        ldp       @CL939,DP
-        push      r0                    ; |1655| 
-        ldiu      @CL939,r1             ; |1655| 
-        push      r1                    ; |1655| 
-        ldiu      *+fp(1),ar2           ; |1655| 
-        ldp       @CL938,DP
-        mpyi      1336,ar2              ; |1655| 
-        addi      @CL938,ar2            ; |1655| Unsigned
-        ldp       @CL24,DP
-        ldiu      @CL24,r0              ; |1655| 
-        callu     r0                    ; far call to _sprintf	; |1655| 
-                                        ; |1655| Far Call Occurs
-        subi      2,sp                  ; |1655| 
-	.line	1619
-;----------------------------------------------------------------------
-; 1656 | FC[i].density_waterST.name_r = 371;                                    
-;----------------------------------------------------------------------
-        ldiu      *+fp(1),ir0           ; |1656| 
-        ldp       @CL940,DP
-        mpyi      1336,ir0              ; |1656| 
-        ldiu      @CL940,ar0            ; |1656| 
-        ldiu      371,r0                ; |1656| 
-        sti       r0,*+ar0(ir0)         ; |1656| 
-	.line	1620
-;----------------------------------------------------------------------
-; 1657 | VAR_Update(&FC[i].density_waterST, 999.012, 0, 0);                     
+; 1647 | VAR_Update(&FC[i].density, 0.0, 0, 0);                                 
 ;----------------------------------------------------------------------
         ldp       @CL32,DP
-        ldiu      @CL32,r0              ; |1657| 
+        ldiu      @CL32,r0              ; |1647| 
+        ldp       @CL923,DP
+        ldiu      *+fp(1),ar2           ; |1647| 
+        mpyi      1336,ar2              ; |1647| 
+        addi      @CL923,ar2            ; |1647| Unsigned
+        ldp       @CL31+0,DP
+        ldfu      @CL31+0,f2            ; |1647| 40b float hi half
+        ldp       @CL31+1,DP
+        ldiu      @CL31+1,r2            ; |1647| 40b float lo half
+        ldiu      0,rc                  ; |1647| 
+        ldiu      0,r3                  ; |1647| 
+        callu     r0                    ; far call to _VAR_Update	; |1647| 
+                                        ; |1647| Far Call Occurs
+	.line	1612
+;----------------------------------------------------------------------
+; 1649 | FC[i].density.aux                       = i;                           
+;----------------------------------------------------------------------
+        ldp       @CL927,DP
+        ldiu      *+fp(1),ir0           ; |1649| 
+        ldiu      @CL927,ar0            ; |1649| 
+        mpyi      1336,ir0              ; |1649| 
+        ldiu      *+fp(1),r0            ; |1649| 
+        sti       r0,*+ar0(ir0)         ; |1649| 
+	.line	1613
+;----------------------------------------------------------------------
+; 1650 | FC[i].density.vect1             = (int*)PDI_Density_Adj;               
+;----------------------------------------------------------------------
+        ldp       @CL928,DP
+        ldiu      @CL928,ar0            ; |1650| 
+        ldiu      *+fp(1),ir0           ; |1650| 
+        ldp       @CL929,DP
+        mpyi      1336,ir0              ; |1650| 
+        ldiu      @CL929,r0             ; |1650| 
+        sti       r0,*+ar0(ir0)         ; |1650| 
+	.line	1614
+;----------------------------------------------------------------------
+; 1651 | FC[i].density.vect2             = (int*)PDI_Density_Correction;        
+;----------------------------------------------------------------------
+        ldp       @CL930,DP
+        ldiu      @CL930,ar0            ; |1651| 
+        ldp       @CL931,DP
+        ldiu      *+fp(1),ir0           ; |1651| 
+        mpyi      1336,ir0              ; |1651| 
+        ldiu      @CL931,r0             ; |1651| 
+        sti       r0,*+ar0(ir0)         ; |1651| 
+	.line	1615
+;----------------------------------------------------------------------
+; 1652 | FC[i].density_adj                       = 0.0;                         
+;----------------------------------------------------------------------
+        ldiu      *+fp(1),ir0           ; |1652| 
+        ldp       @CL932,DP
+        mpyi      1336,ir0              ; |1652| 
+        ldiu      @CL932,ar0            ; |1652| 
+        ldfu      0.0000000000e+00,f0   ; |1652| 
+        stf       f0,*+ar0(ir0)         ; |1652| 
+	.line	1616
+;----------------------------------------------------------------------
+; 1653 | FC[i].density_PDI_corrected = API_error_num;                           
+;----------------------------------------------------------------------
+        ldp       @CL933,DP
+        ldiu      *+fp(1),ir0           ; |1653| 
+        ldiu      @CL933,ar0            ; |1653| 
+        ldp       @CL934,DP
+        mpyi      1336,ir0              ; |1653| 
+        ldfu      @CL934,f0             ; |1653| 
+        stf       f0,*+ar0(ir0)         ; |1653| 
+	.line	1620
+;----------------------------------------------------------------------
+; 1657 | VAR_Initialize(&FC[i].density_waterST, c_mass_per_volume, u_mpv_kg_cm,
+;     | 10.0, 1000.0, var_no_bound|var_no_alarm);                              
+;----------------------------------------------------------------------
         ldiu      *+fp(1),ar2           ; |1657| 
-        ldp       @CL937,DP
+        ldp       @CL935,DP
         mpyi      1336,ar2              ; |1657| 
-        addi      @CL937,ar2            ; |1657| Unsigned
-        ldp       @CL941+0,DP
-        ldfu      @CL941+0,f2           ; |1657| 40b float hi half
-        ldp       @CL941+1,DP
-        ldiu      @CL941+1,r2           ; |1657| 40b float lo half
-        ldiu      0,rc                  ; |1657| 
-        ldiu      0,r3                  ; |1657| 
-        callu     r0                    ; far call to _VAR_Update	; |1657| 
+        addi      @CL935,ar2            ; |1657| Unsigned
+        ldp       @CL20,DP
+        ldiu      @CL20,r0              ; |1657| 
+        ldiu      73,rc                 ; |1657| 
+        ldiu      92,rs                 ; |1657| 
+        ldp       @CL19,DP
+        ldiu      6,re                  ; |1657| 
+        ldfu      @CL19,f3              ; |1657| 
+        ldfu      1.0000000000e+01,f2   ; |1657| 
+        callu     r0                    ; far call to _VAR_Initialize	; |1657| 
                                         ; |1657| Far Call Occurs
 	.line	1621
 ;----------------------------------------------------------------------
-; 1658 | FC[i].density_waterST.aux = i;                                         
+; 1658 | sprintf(FC[i].density_waterST.name, "FC%d Water Density@ST", i+1);
+;     |  //R371                                                                
 ;----------------------------------------------------------------------
-        ldp       @CL942,DP
-        ldiu      *+fp(1),ir0           ; |1658| 
-        ldiu      @CL942,ar0            ; |1658| 
-        mpyi      1336,ir0              ; |1658| 
-        ldiu      *+fp(1),r0            ; |1658| 
-        sti       r0,*+ar0(ir0)         ; |1658| 
-	.line	1625
-;----------------------------------------------------------------------
-; 1662 | VAR_Initialize(&FC[i].density_water, c_mass_per_volume, u_mpv_kg_cm, 10
-;     | .0, 1000.0, var_no_bound|var_no_alarm);                                
-;----------------------------------------------------------------------
-        ldiu      *+fp(1),ar2           ; |1662| 
-        ldp       @CL943,DP
-        mpyi      1336,ar2              ; |1662| 
-        addi      @CL943,ar2            ; |1662| Unsigned
-        ldp       @CL20,DP
-        ldiu      @CL20,r0              ; |1662| 
-        ldp       @CL19,DP
-        ldiu      92,rs                 ; |1662| 
-        ldiu      6,re                  ; |1662| 
-        ldiu      73,rc                 ; |1662| 
-        ldfu      @CL19,f3              ; |1662| 
-        ldfu      1.0000000000e+01,f2   ; |1662| 
-        callu     r0                    ; far call to _VAR_Initialize	; |1662| 
-                                        ; |1662| Far Call Occurs
-	.line	1626
-;----------------------------------------------------------------------
-; 1663 | sprintf(FC[i].density_water.name, "FC%d Water Density@PT", i+1);
-;     |  //R370                                                                
-;----------------------------------------------------------------------
-        ldiu      1,r0                  ; |1663| 
-        addi      *+fp(1),r0            ; |1663| 
-        ldp       @CL945,DP
-        push      r0                    ; |1663| 
-        ldiu      @CL945,r1             ; |1663| 
-        push      r1                    ; |1663| 
-        ldiu      *+fp(1),ar2           ; |1663| 
-        ldp       @CL944,DP
-        mpyi      1336,ar2              ; |1663| 
-        addi      @CL944,ar2            ; |1663| Unsigned
+        ldiu      1,r0                  ; |1658| 
+        addi      *+fp(1),r0            ; |1658| 
+        ldp       @CL937,DP
+        push      r0                    ; |1658| 
+        ldiu      @CL937,r1             ; |1658| 
+        push      r1                    ; |1658| 
+        ldiu      *+fp(1),ar2           ; |1658| 
+        ldp       @CL936,DP
+        mpyi      1336,ar2              ; |1658| 
+        addi      @CL936,ar2            ; |1658| Unsigned
         ldp       @CL24,DP
-        ldiu      @CL24,r0              ; |1663| 
-        callu     r0                    ; far call to _sprintf	; |1663| 
-                                        ; |1663| Far Call Occurs
-        subi      2,sp                  ; |1663| 
-	.line	1627
+        ldiu      @CL24,r0              ; |1658| 
+        callu     r0                    ; far call to _sprintf	; |1658| 
+                                        ; |1658| Far Call Occurs
+        subi      2,sp                  ; |1658| 
+	.line	1622
 ;----------------------------------------------------------------------
-; 1664 | FC[i].density_water.name_r = 370;                                      
+; 1659 | FC[i].density_waterST.name_r = 371;                                    
 ;----------------------------------------------------------------------
-        ldp       @CL946,DP
-        ldiu      *+fp(1),ir0           ; |1664| 
-        ldiu      @CL946,ar0            ; |1664| 
-        mpyi      1336,ir0              ; |1664| 
-        ldiu      370,r0                ; |1664| 
-        sti       r0,*+ar0(ir0)         ; |1664| 
-	.line	1628
+        ldiu      *+fp(1),ir0           ; |1659| 
+        ldp       @CL938,DP
+        mpyi      1336,ir0              ; |1659| 
+        ldiu      @CL938,ar0            ; |1659| 
+        ldiu      371,r0                ; |1659| 
+        sti       r0,*+ar0(ir0)         ; |1659| 
+	.line	1623
 ;----------------------------------------------------------------------
-; 1665 | VAR_Update(&FC[i].density_water, 999.012, 0, 0);                       
+; 1660 | VAR_Update(&FC[i].density_waterST, 999.012, 0, 0);                     
 ;----------------------------------------------------------------------
         ldp       @CL32,DP
+        ldiu      @CL32,r0              ; |1660| 
+        ldiu      *+fp(1),ar2           ; |1660| 
+        ldp       @CL935,DP
+        mpyi      1336,ar2              ; |1660| 
+        addi      @CL935,ar2            ; |1660| Unsigned
+        ldp       @CL939+0,DP
+        ldfu      @CL939+0,f2           ; |1660| 40b float hi half
+        ldp       @CL939+1,DP
+        ldiu      @CL939+1,r2           ; |1660| 40b float lo half
+        ldiu      0,rc                  ; |1660| 
+        ldiu      0,r3                  ; |1660| 
+        callu     r0                    ; far call to _VAR_Update	; |1660| 
+                                        ; |1660| Far Call Occurs
+	.line	1624
+;----------------------------------------------------------------------
+; 1661 | FC[i].density_waterST.aux = i;                                         
+;----------------------------------------------------------------------
+        ldp       @CL940,DP
+        ldiu      *+fp(1),ir0           ; |1661| 
+        ldiu      @CL940,ar0            ; |1661| 
+        mpyi      1336,ir0              ; |1661| 
+        ldiu      *+fp(1),r0            ; |1661| 
+        sti       r0,*+ar0(ir0)         ; |1661| 
+	.line	1628
+;----------------------------------------------------------------------
+; 1665 | VAR_Initialize(&FC[i].density_water, c_mass_per_volume, u_mpv_kg_cm, 10
+;     | .0, 1000.0, var_no_bound|var_no_alarm);                                
+;----------------------------------------------------------------------
         ldiu      *+fp(1),ar2           ; |1665| 
-        ldiu      @CL32,r0              ; |1665| 
-        ldp       @CL943,DP
+        ldp       @CL941,DP
         mpyi      1336,ar2              ; |1665| 
-        addi      @CL943,ar2            ; |1665| Unsigned
-        ldp       @CL941+0,DP
-        ldfu      @CL941+0,f2           ; |1665| 40b float hi half
-        ldp       @CL941+1,DP
-        ldiu      0,rc                  ; |1665| 
-        ldiu      @CL941+1,r2           ; |1665| 40b float lo half
-        ldiu      0,r3                  ; |1665| 
-        callu     r0                    ; far call to _VAR_Update	; |1665| 
+        addi      @CL941,ar2            ; |1665| Unsigned
+        ldp       @CL20,DP
+        ldiu      @CL20,r0              ; |1665| 
+        ldp       @CL19,DP
+        ldiu      92,rs                 ; |1665| 
+        ldiu      6,re                  ; |1665| 
+        ldiu      73,rc                 ; |1665| 
+        ldfu      @CL19,f3              ; |1665| 
+        ldfu      1.0000000000e+01,f2   ; |1665| 
+        callu     r0                    ; far call to _VAR_Initialize	; |1665| 
                                         ; |1665| Far Call Occurs
 	.line	1629
 ;----------------------------------------------------------------------
-; 1666 | FC[i].density_water.aux = i;                                           
+; 1666 | sprintf(FC[i].density_water.name, "FC%d Water Density@PT", i+1);
+;     |  //R370                                                                
 ;----------------------------------------------------------------------
-        ldp       @CL947,DP
-        ldiu      *+fp(1),ir0           ; |1666| 
-        ldiu      @CL947,ar0            ; |1666| 
-        mpyi      1336,ir0              ; |1666| 
-        ldiu      *+fp(1),r0            ; |1666| 
-        sti       r0,*+ar0(ir0)         ; |1666| 
-	.line	1633
+        ldiu      1,r0                  ; |1666| 
+        addi      *+fp(1),r0            ; |1666| 
+        ldp       @CL943,DP
+        push      r0                    ; |1666| 
+        ldiu      @CL943,r1             ; |1666| 
+        push      r1                    ; |1666| 
+        ldiu      *+fp(1),ar2           ; |1666| 
+        ldp       @CL942,DP
+        mpyi      1336,ar2              ; |1666| 
+        addi      @CL942,ar2            ; |1666| Unsigned
+        ldp       @CL24,DP
+        ldiu      @CL24,r0              ; |1666| 
+        callu     r0                    ; far call to _sprintf	; |1666| 
+                                        ; |1666| Far Call Occurs
+        subi      2,sp                  ; |1666| 
+	.line	1630
 ;----------------------------------------------------------------------
-; 1670 | VAR_Initialize(&FC[i].density_oilST, c_mass_per_volume, u_mpv_kg_cm, 10
+; 1667 | FC[i].density_water.name_r = 370;                                      
+;----------------------------------------------------------------------
+        ldp       @CL944,DP
+        ldiu      *+fp(1),ir0           ; |1667| 
+        ldiu      @CL944,ar0            ; |1667| 
+        mpyi      1336,ir0              ; |1667| 
+        ldiu      370,r0                ; |1667| 
+        sti       r0,*+ar0(ir0)         ; |1667| 
+	.line	1631
+;----------------------------------------------------------------------
+; 1668 | VAR_Update(&FC[i].density_water, 999.012, 0, 0);                       
+;----------------------------------------------------------------------
+        ldp       @CL32,DP
+        ldiu      *+fp(1),ar2           ; |1668| 
+        ldiu      @CL32,r0              ; |1668| 
+        ldp       @CL941,DP
+        mpyi      1336,ar2              ; |1668| 
+        addi      @CL941,ar2            ; |1668| Unsigned
+        ldp       @CL939+0,DP
+        ldfu      @CL939+0,f2           ; |1668| 40b float hi half
+        ldp       @CL939+1,DP
+        ldiu      0,rc                  ; |1668| 
+        ldiu      @CL939+1,r2           ; |1668| 40b float lo half
+        ldiu      0,r3                  ; |1668| 
+        callu     r0                    ; far call to _VAR_Update	; |1668| 
+                                        ; |1668| Far Call Occurs
+	.line	1632
+;----------------------------------------------------------------------
+; 1669 | FC[i].density_water.aux = i;                                           
+;----------------------------------------------------------------------
+        ldp       @CL945,DP
+        ldiu      *+fp(1),ir0           ; |1669| 
+        ldiu      @CL945,ar0            ; |1669| 
+        mpyi      1336,ir0              ; |1669| 
+        ldiu      *+fp(1),r0            ; |1669| 
+        sti       r0,*+ar0(ir0)         ; |1669| 
+	.line	1636
+;----------------------------------------------------------------------
+; 1673 | VAR_Initialize(&FC[i].density_oilST, c_mass_per_volume, u_mpv_kg_cm, 10
 ;     | .0, 1000.0, var_no_bound|var_no_alarm);  /*Correct oil density unit fro
 ;     | m API to kg/m3, ?check real value -RS*/                                
 ;----------------------------------------------------------------------
-        ldiu      *+fp(1),ar2           ; |1670| 
-        ldp       @CL948,DP
-        mpyi      1336,ar2              ; |1670| 
-        addi      @CL948,ar2            ; |1670| Unsigned
+        ldiu      *+fp(1),ar2           ; |1673| 
+        ldp       @CL946,DP
+        mpyi      1336,ar2              ; |1673| 
+        addi      @CL946,ar2            ; |1673| Unsigned
         ldp       @CL20,DP
-        ldiu      @CL20,r0              ; |1670| 
-        ldiu      92,rs                 ; |1670| 
+        ldiu      @CL20,r0              ; |1673| 
+        ldiu      92,rs                 ; |1673| 
         ldp       @CL19,DP
-        ldiu      6,re                  ; |1670| 
-        ldiu      73,rc                 ; |1670| 
-        ldfu      @CL19,f3              ; |1670| 
-        ldfu      1.0000000000e+01,f2   ; |1670| 
-        callu     r0                    ; far call to _VAR_Initialize	; |1670| 
-                                        ; |1670| Far Call Occurs
-	.line	1634
+        ldiu      6,re                  ; |1673| 
+        ldiu      73,rc                 ; |1673| 
+        ldfu      @CL19,f3              ; |1673| 
+        ldfu      1.0000000000e+01,f2   ; |1673| 
+        callu     r0                    ; far call to _VAR_Initialize	; |1673| 
+                                        ; |1673| Far Call Occurs
+	.line	1637
 ;----------------------------------------------------------------------
-; 1671 | sprintf(FC[i].density_oilST.name, "FC%d Oil Density@ST", i+1);  //R363 
+; 1674 | sprintf(FC[i].density_oilST.name, "FC%d Oil Density@ST", i+1);  //R363 
 ;----------------------------------------------------------------------
-        ldiu      1,r0                  ; |1671| 
-        ldp       @CL950,DP
-        addi      *+fp(1),r0            ; |1671| 
-        ldiu      @CL950,r1             ; |1671| 
-        push      r0                    ; |1671| 
-        push      r1                    ; |1671| 
-        ldiu      *+fp(1),ar2           ; |1671| 
-        ldp       @CL949,DP
-        mpyi      1336,ar2              ; |1671| 
-        addi      @CL949,ar2            ; |1671| Unsigned
+        ldiu      1,r0                  ; |1674| 
+        ldp       @CL948,DP
+        addi      *+fp(1),r0            ; |1674| 
+        ldiu      @CL948,r1             ; |1674| 
+        push      r0                    ; |1674| 
+        push      r1                    ; |1674| 
+        ldiu      *+fp(1),ar2           ; |1674| 
+        ldp       @CL947,DP
+        mpyi      1336,ar2              ; |1674| 
+        addi      @CL947,ar2            ; |1674| Unsigned
         ldp       @CL24,DP
-        ldiu      @CL24,r0              ; |1671| 
-        callu     r0                    ; far call to _sprintf	; |1671| 
-                                        ; |1671| Far Call Occurs
-        subi      2,sp                  ; |1671| 
-	.line	1635
+        ldiu      @CL24,r0              ; |1674| 
+        callu     r0                    ; far call to _sprintf	; |1674| 
+                                        ; |1674| Far Call Occurs
+        subi      2,sp                  ; |1674| 
+	.line	1638
 ;----------------------------------------------------------------------
-; 1672 | FC[i].density_oilST.name_r = 363;                                      
+; 1675 | FC[i].density_oilST.name_r = 363;                                      
 ;----------------------------------------------------------------------
-        ldp       @CL951,DP
-        ldiu      *+fp(1),ir0           ; |1672| 
-        ldiu      @CL951,ar0            ; |1672| 
-        mpyi      1336,ir0              ; |1672| 
-        ldiu      363,r0                ; |1672| 
-        sti       r0,*+ar0(ir0)         ; |1672| 
-	.line	1636
+        ldp       @CL949,DP
+        ldiu      *+fp(1),ir0           ; |1675| 
+        ldiu      @CL949,ar0            ; |1675| 
+        mpyi      1336,ir0              ; |1675| 
+        ldiu      363,r0                ; |1675| 
+        sti       r0,*+ar0(ir0)         ; |1675| 
+	.line	1639
 ;----------------------------------------------------------------------
-; 1673 | VAR_Update(&FC[i].density_oilST, 865.443/*32.0*/, 0, 0);
+; 1676 | VAR_Update(&FC[i].density_oilST, 865.443/*32.0*/, 0, 0);
 ;     |                                                                        
 ;     |                   /*Density 32.0 API equals to 865.443 kg/m3 (=141.5/(1
 ;     | 31.5+API)) -RS*/                                                       
 ;----------------------------------------------------------------------
         ldp       @CL32,DP
-        ldiu      @CL32,r0              ; |1673| 
-        ldiu      *+fp(1),ar2           ; |1673| 
-        ldp       @CL948,DP
-        mpyi      1336,ar2              ; |1673| 
-        addi      @CL948,ar2            ; |1673| Unsigned
-        ldp       @CL952+0,DP
-        ldfu      @CL952+0,f2           ; |1673| 40b float hi half
-        ldp       @CL952+1,DP
-        ldiu      0,rc                  ; |1673| 
-        ldiu      @CL952+1,r2           ; |1673| 40b float lo half
-        ldiu      0,r3                  ; |1673| 
-        callu     r0                    ; far call to _VAR_Update	; |1673| 
-                                        ; |1673| Far Call Occurs
-	.line	1637
+        ldiu      @CL32,r0              ; |1676| 
+        ldiu      *+fp(1),ar2           ; |1676| 
+        ldp       @CL946,DP
+        mpyi      1336,ar2              ; |1676| 
+        addi      @CL946,ar2            ; |1676| Unsigned
+        ldp       @CL950+0,DP
+        ldfu      @CL950+0,f2           ; |1676| 40b float hi half
+        ldp       @CL950+1,DP
+        ldiu      0,rc                  ; |1676| 
+        ldiu      @CL950+1,r2           ; |1676| 40b float lo half
+        ldiu      0,r3                  ; |1676| 
+        callu     r0                    ; far call to _VAR_Update	; |1676| 
+                                        ; |1676| Far Call Occurs
+	.line	1640
 ;----------------------------------------------------------------------
-; 1674 | FC[i].density_oilST.aux = i;                                           
+; 1677 | FC[i].density_oilST.aux = i;                                           
 ;----------------------------------------------------------------------
-        ldp       @CL953,DP
-        ldiu      *+fp(1),ir0           ; |1674| 
-        ldiu      @CL953,ar0            ; |1674| 
-        mpyi      1336,ir0              ; |1674| 
-        ldiu      *+fp(1),r0            ; |1674| 
-        sti       r0,*+ar0(ir0)         ; |1674| 
-	.line	1641
+        ldp       @CL951,DP
+        ldiu      *+fp(1),ir0           ; |1677| 
+        ldiu      @CL951,ar0            ; |1677| 
+        mpyi      1336,ir0              ; |1677| 
+        ldiu      *+fp(1),r0            ; |1677| 
+        sti       r0,*+ar0(ir0)         ; |1677| 
+	.line	1644
 ;----------------------------------------------------------------------
-; 1678 | VAR_Initialize(&FC[i].density_oil, c_mass_per_volume, u_mpv_kg_cm, 10.0
+; 1681 | VAR_Initialize(&FC[i].density_oil, c_mass_per_volume, u_mpv_kg_cm, 10.0
 ;     | , 1000.0, var_no_bound|var_no_alarm);    /*Correct oil density unit fro
 ;     | m API to kg/m3 -RS*/                                                   
 ;----------------------------------------------------------------------
-        ldiu      *+fp(1),ar2           ; |1678| 
-        ldp       @CL954,DP
-        mpyi      1336,ar2              ; |1678| 
-        addi      @CL954,ar2            ; |1678| Unsigned
-        ldp       @CL20,DP
-        ldiu      92,rs                 ; |1678| 
-        ldiu      @CL20,r0              ; |1678| 
-        ldp       @CL19,DP
-        ldiu      6,re                  ; |1678| 
-        ldfu      @CL19,f3              ; |1678| 
-        ldiu      73,rc                 ; |1678| 
-        ldfu      1.0000000000e+01,f2   ; |1678| 
-        callu     r0                    ; far call to _VAR_Initialize	; |1678| 
-                                        ; |1678| Far Call Occurs
-	.line	1642
-;----------------------------------------------------------------------
-; 1679 | sprintf(FC[i].density_oil.name, "FC%d Oil Density@PT", i+1);    //R362 
-;----------------------------------------------------------------------
-        ldp       @CL956,DP
-        ldiu      1,r0                  ; |1679| 
-        addi      *+fp(1),r0            ; |1679| 
-        ldiu      @CL956,r1             ; |1679| 
-        push      r0                    ; |1679| 
-        ldp       @CL955,DP
-        push      r1                    ; |1679| 
-        ldiu      *+fp(1),ar2           ; |1679| 
-        mpyi      1336,ar2              ; |1679| 
-        addi      @CL955,ar2            ; |1679| Unsigned
-        ldp       @CL24,DP
-        ldiu      @CL24,r0              ; |1679| 
-        callu     r0                    ; far call to _sprintf	; |1679| 
-                                        ; |1679| Far Call Occurs
-        subi      2,sp                  ; |1679| 
-	.line	1643
-;----------------------------------------------------------------------
-; 1680 | FC[i].density_oil.name_r = 362;                                        
-;----------------------------------------------------------------------
-        ldiu      *+fp(1),ir0           ; |1680| 
-        ldp       @CL957,DP
-        mpyi      1336,ir0              ; |1680| 
-        ldiu      @CL957,ar0            ; |1680| 
-        ldiu      362,r0                ; |1680| 
-        sti       r0,*+ar0(ir0)         ; |1680| 
-	.line	1644
-;----------------------------------------------------------------------
-; 1681 | VAR_Update(&FC[i].density_oil, 865.443, 0, 0);                         
-;----------------------------------------------------------------------
-        ldp       @CL32,DP
         ldiu      *+fp(1),ar2           ; |1681| 
-        ldiu      @CL32,r0              ; |1681| 
-        ldp       @CL954,DP
+        ldp       @CL952,DP
         mpyi      1336,ar2              ; |1681| 
-        addi      @CL954,ar2            ; |1681| Unsigned
-        ldp       @CL952+0,DP
-        ldfu      @CL952+0,f2           ; |1681| 40b float hi half
-        ldp       @CL952+1,DP
-        ldiu      @CL952+1,r2           ; |1681| 40b float lo half
-        ldiu      0,rc                  ; |1681| 
-        ldiu      0,r3                  ; |1681| 
-        callu     r0                    ; far call to _VAR_Update	; |1681| 
+        addi      @CL952,ar2            ; |1681| Unsigned
+        ldp       @CL20,DP
+        ldiu      92,rs                 ; |1681| 
+        ldiu      @CL20,r0              ; |1681| 
+        ldp       @CL19,DP
+        ldiu      6,re                  ; |1681| 
+        ldfu      @CL19,f3              ; |1681| 
+        ldiu      73,rc                 ; |1681| 
+        ldfu      1.0000000000e+01,f2   ; |1681| 
+        callu     r0                    ; far call to _VAR_Initialize	; |1681| 
                                         ; |1681| Far Call Occurs
 	.line	1645
 ;----------------------------------------------------------------------
-; 1682 | FC[i].density_oil.aux = i;                                             
+; 1682 | sprintf(FC[i].density_oil.name, "FC%d Oil Density@PT", i+1);    //R362 
 ;----------------------------------------------------------------------
-        ldp       @CL958,DP
-        ldiu      *+fp(1),ir0           ; |1682| 
-        ldiu      @CL958,ar0            ; |1682| 
-        mpyi      1336,ir0              ; |1682| 
-        ldiu      *+fp(1),r0            ; |1682| 
-        sti       r0,*+ar0(ir0)         ; |1682| 
-	.line	1648
-;----------------------------------------------------------------------
-; 1685 | VAR_Initialize(&FC[i].salinity, c_concentration, u_conc_perc_solid_per_
-;     | weight, 100.0, 100.0, var_no_bound|var_no_alarm);                      
-;----------------------------------------------------------------------
-        ldiu      105,rs                ; |1685| 
-        ldiu      6,re                  ; |1685| 
-        ldiu      *+fp(1),ar2           ; |1685| 
-        ldp       @CL959,DP
-        mpyi      1336,ar2              ; |1685| 
-        addi      @CL959,ar2            ; |1685| Unsigned
-        ldp       @CL20,DP
-        ldiu      90,rc                 ; |1685| 
-        ldiu      @CL20,r0              ; |1685| 
-        ldfu      1.0000000000e+02,f3   ; |1685| 
-        ldfu      1.0000000000e+02,f2   ; |1685| 
-        callu     r0                    ; far call to _VAR_Initialize	; |1685| 
-                                        ; |1685| Far Call Occurs
-	.line	1649
-;----------------------------------------------------------------------
-; 1686 | sprintf(FC[i].salinity.name, "FC%d Salinity", i+1);     //R366         
-;----------------------------------------------------------------------
-        ldiu      1,r0                  ; |1686| 
-        addi      *+fp(1),r0            ; |1686| 
-        ldp       @CL961,DP
-        push      r0                    ; |1686| 
-        ldiu      @CL961,r1             ; |1686| 
-        push      r1                    ; |1686| 
-        ldiu      *+fp(1),ar2           ; |1686| 
-        ldp       @CL960,DP
-        mpyi      1336,ar2              ; |1686| 
-        addi      @CL960,ar2            ; |1686| Unsigned
+        ldp       @CL954,DP
+        ldiu      1,r0                  ; |1682| 
+        addi      *+fp(1),r0            ; |1682| 
+        ldiu      @CL954,r1             ; |1682| 
+        push      r0                    ; |1682| 
+        ldp       @CL953,DP
+        push      r1                    ; |1682| 
+        ldiu      *+fp(1),ar2           ; |1682| 
+        mpyi      1336,ar2              ; |1682| 
+        addi      @CL953,ar2            ; |1682| Unsigned
         ldp       @CL24,DP
-        ldiu      @CL24,r0              ; |1686| 
-        callu     r0                    ; far call to _sprintf	; |1686| 
-                                        ; |1686| Far Call Occurs
-        subi      2,sp                  ; |1686| 
-	.line	1650
+        ldiu      @CL24,r0              ; |1682| 
+        callu     r0                    ; far call to _sprintf	; |1682| 
+                                        ; |1682| Far Call Occurs
+        subi      2,sp                  ; |1682| 
+	.line	1646
 ;----------------------------------------------------------------------
-; 1687 | FC[i].salinity.name_r = 366;                                           
+; 1683 | FC[i].density_oil.name_r = 362;                                        
 ;----------------------------------------------------------------------
-        ldiu      *+fp(1),ir0           ; |1687| 
-        ldp       @CL962,DP
-        mpyi      1336,ir0              ; |1687| 
-        ldiu      @CL962,ar0            ; |1687| 
-        ldiu      366,r0                ; |1687| 
-        sti       r0,*+ar0(ir0)         ; |1687| 
-	.line	1651
+        ldiu      *+fp(1),ir0           ; |1683| 
+        ldp       @CL955,DP
+        mpyi      1336,ir0              ; |1683| 
+        ldiu      @CL955,ar0            ; |1683| 
+        ldiu      362,r0                ; |1683| 
+        sti       r0,*+ar0(ir0)         ; |1683| 
+	.line	1647
 ;----------------------------------------------------------------------
-; 1688 | VAR_Update(&FC[i].salinity, 2.00, 0, 0);                               
+; 1684 | VAR_Update(&FC[i].density_oil, 865.443, 0, 0);                         
 ;----------------------------------------------------------------------
         ldp       @CL32,DP
+        ldiu      *+fp(1),ar2           ; |1684| 
+        ldiu      @CL32,r0              ; |1684| 
+        ldp       @CL952,DP
+        mpyi      1336,ar2              ; |1684| 
+        addi      @CL952,ar2            ; |1684| Unsigned
+        ldp       @CL950+0,DP
+        ldfu      @CL950+0,f2           ; |1684| 40b float hi half
+        ldp       @CL950+1,DP
+        ldiu      @CL950+1,r2           ; |1684| 40b float lo half
+        ldiu      0,rc                  ; |1684| 
+        ldiu      0,r3                  ; |1684| 
+        callu     r0                    ; far call to _VAR_Update	; |1684| 
+                                        ; |1684| Far Call Occurs
+	.line	1648
+;----------------------------------------------------------------------
+; 1685 | FC[i].density_oil.aux = i;                                             
+;----------------------------------------------------------------------
+        ldp       @CL956,DP
+        ldiu      *+fp(1),ir0           ; |1685| 
+        ldiu      @CL956,ar0            ; |1685| 
+        mpyi      1336,ir0              ; |1685| 
+        ldiu      *+fp(1),r0            ; |1685| 
+        sti       r0,*+ar0(ir0)         ; |1685| 
+	.line	1651
+;----------------------------------------------------------------------
+; 1688 | VAR_Initialize(&FC[i].salinity, c_concentration, u_conc_perc_solid_per_
+;     | weight, 100.0, 100.0, var_no_bound|var_no_alarm);                      
+;----------------------------------------------------------------------
+        ldiu      105,rs                ; |1688| 
+        ldiu      6,re                  ; |1688| 
         ldiu      *+fp(1),ar2           ; |1688| 
-        ldiu      @CL32,r0              ; |1688| 
-        ldp       @CL959,DP
+        ldp       @CL957,DP
         mpyi      1336,ar2              ; |1688| 
-        addi      @CL959,ar2            ; |1688| Unsigned
-        ldp       @CL116+0,DP
-        ldfu      @CL116+0,f2           ; |1688| 40b float hi half
-        ldp       @CL116+1,DP
-        ldiu      0,rc                  ; |1688| 
-        ldiu      @CL116+1,r2           ; |1688| 40b float lo half
-        ldiu      0,r3                  ; |1688| 
-        callu     r0                    ; far call to _VAR_Update	; |1688| 
+        addi      @CL957,ar2            ; |1688| Unsigned
+        ldp       @CL20,DP
+        ldiu      90,rc                 ; |1688| 
+        ldiu      @CL20,r0              ; |1688| 
+        ldfu      1.0000000000e+02,f3   ; |1688| 
+        ldfu      1.0000000000e+02,f2   ; |1688| 
+        callu     r0                    ; far call to _VAR_Initialize	; |1688| 
                                         ; |1688| Far Call Occurs
 	.line	1652
 ;----------------------------------------------------------------------
-; 1689 | FC[i].salinity.aux = i;                                                
+; 1689 | sprintf(FC[i].salinity.name, "FC%d Salinity", i+1);     //R366         
 ;----------------------------------------------------------------------
-        ldiu      *+fp(1),ir0           ; |1689| 
-        ldp       @CL963,DP
-        mpyi      1336,ir0              ; |1689| 
-        ldiu      @CL963,ar0            ; |1689| 
-        ldiu      *+fp(1),r0            ; |1689| 
-        sti       r0,*+ar0(ir0)         ; |1689| 
+        ldiu      1,r0                  ; |1689| 
+        addi      *+fp(1),r0            ; |1689| 
+        ldp       @CL959,DP
+        push      r0                    ; |1689| 
+        ldiu      @CL959,r1             ; |1689| 
+        push      r1                    ; |1689| 
+        ldiu      *+fp(1),ar2           ; |1689| 
+        ldp       @CL958,DP
+        mpyi      1336,ar2              ; |1689| 
+        addi      @CL958,ar2            ; |1689| Unsigned
+        ldp       @CL24,DP
+        ldiu      @CL24,r0              ; |1689| 
+        callu     r0                    ; far call to _sprintf	; |1689| 
+                                        ; |1689| Far Call Occurs
+        subi      2,sp                  ; |1689| 
+	.line	1653
+;----------------------------------------------------------------------
+; 1690 | FC[i].salinity.name_r = 366;                                           
+;----------------------------------------------------------------------
+        ldiu      *+fp(1),ir0           ; |1690| 
+        ldp       @CL960,DP
+        mpyi      1336,ir0              ; |1690| 
+        ldiu      @CL960,ar0            ; |1690| 
+        ldiu      366,r0                ; |1690| 
+        sti       r0,*+ar0(ir0)         ; |1690| 
+	.line	1654
+;----------------------------------------------------------------------
+; 1691 | VAR_Update(&FC[i].salinity, 2.00, 0, 0);                               
+;----------------------------------------------------------------------
+        ldp       @CL32,DP
+        ldiu      *+fp(1),ar2           ; |1691| 
+        ldiu      @CL32,r0              ; |1691| 
+        ldp       @CL957,DP
+        mpyi      1336,ar2              ; |1691| 
+        addi      @CL957,ar2            ; |1691| Unsigned
+        ldp       @CL116+0,DP
+        ldfu      @CL116+0,f2           ; |1691| 40b float hi half
+        ldp       @CL116+1,DP
+        ldiu      0,rc                  ; |1691| 
+        ldiu      @CL116+1,r2           ; |1691| 40b float lo half
+        ldiu      0,r3                  ; |1691| 
+        callu     r0                    ; far call to _VAR_Update	; |1691| 
+                                        ; |1691| Far Call Occurs
 	.line	1655
 ;----------------------------------------------------------------------
-; 1692 | VAR_Initialize(&FC[i].Meter_Factor, c_not_classified, u_generic_not_use
-;     | d, 10000.0, 100000.0, var_no_bound|var_no_alarm);                      
+; 1692 | FC[i].salinity.aux = i;                                                
 ;----------------------------------------------------------------------
-        ldiu      *+fp(1),ar2           ; |1692| 
-        ldp       @CL964,DP
-        mpyi      1336,ar2              ; |1692| 
-        addi      @CL964,ar2            ; |1692| Unsigned
-        ldp       @CL20,DP
-        ldiu      @CL20,r0              ; |1692| 
-        ldp       @CL965,DP
-        ldfu      @CL965,f3             ; |1692| 
-        ldp       @CL57,DP
-        ldfu      @CL57,f2              ; |1692| 
-        ldiu      0,rc                  ; |1692| 
-        ldiu      250,rs                ; |1692| 
-        ldiu      6,re                  ; |1692| 
-        callu     r0                    ; far call to _VAR_Initialize	; |1692| 
-                                        ; |1692| Far Call Occurs
-	.line	1656
-;----------------------------------------------------------------------
-; 1693 | sprintf(FC[i].Meter_Factor.name, "FC%d Meter Factor", i+1);     //R361 
-;----------------------------------------------------------------------
-        ldiu      1,r0                  ; |1693| 
-        ldp       @CL967,DP
-        addi      *+fp(1),r0            ; |1693| 
-        ldiu      @CL967,r1             ; |1693| 
-        push      r0                    ; |1693| 
-        ldp       @CL966,DP
-        push      r1                    ; |1693| 
-        ldiu      *+fp(1),ar2           ; |1693| 
-        mpyi      1336,ar2              ; |1693| 
-        addi      @CL966,ar2            ; |1693| Unsigned
-        ldp       @CL24,DP
-        ldiu      @CL24,r0              ; |1693| 
-        callu     r0                    ; far call to _sprintf	; |1693| 
-                                        ; |1693| Far Call Occurs
-        subi      2,sp                  ; |1693| 
-	.line	1657
-;----------------------------------------------------------------------
-; 1694 | FC[i].Meter_Factor.name_r = 361;                                       
-;----------------------------------------------------------------------
-        ldp       @CL968,DP
-        ldiu      *+fp(1),ir0           ; |1694| 
-        ldiu      @CL968,ar0            ; |1694| 
-        mpyi      1336,ir0              ; |1694| 
-        ldiu      361,r0                ; |1694| 
-        sti       r0,*+ar0(ir0)         ; |1694| 
+        ldiu      *+fp(1),ir0           ; |1692| 
+        ldp       @CL961,DP
+        mpyi      1336,ir0              ; |1692| 
+        ldiu      @CL961,ar0            ; |1692| 
+        ldiu      *+fp(1),r0            ; |1692| 
+        sti       r0,*+ar0(ir0)         ; |1692| 
 	.line	1658
 ;----------------------------------------------------------------------
-; 1695 | VAR_Update(&FC[i].Meter_Factor, 1.00, 0, 0);                           
+; 1695 | VAR_Initialize(&FC[i].Meter_Factor, c_not_classified, u_generic_not_use
+;     | d, 10000.0, 100000.0, var_no_bound|var_no_alarm);                      
 ;----------------------------------------------------------------------
-        ldp       @CL32,DP
-        ldiu      @CL32,r0              ; |1695| 
         ldiu      *+fp(1),ar2           ; |1695| 
-        ldp       @CL964,DP
+        ldp       @CL962,DP
         mpyi      1336,ar2              ; |1695| 
-        addi      @CL964,ar2            ; |1695| Unsigned
-        ldp       @CL44+0,DP
-        ldfu      @CL44+0,f2            ; |1695| 40b float hi half
-        ldp       @CL44+1,DP
+        addi      @CL962,ar2            ; |1695| Unsigned
+        ldp       @CL20,DP
+        ldiu      @CL20,r0              ; |1695| 
+        ldp       @CL963,DP
+        ldfu      @CL963,f3             ; |1695| 
+        ldp       @CL57,DP
+        ldfu      @CL57,f2              ; |1695| 
         ldiu      0,rc                  ; |1695| 
-        ldiu      @CL44+1,r2            ; |1695| 40b float lo half
-        ldiu      0,r3                  ; |1695| 
-        callu     r0                    ; far call to _VAR_Update	; |1695| 
+        ldiu      250,rs                ; |1695| 
+        ldiu      6,re                  ; |1695| 
+        callu     r0                    ; far call to _VAR_Initialize	; |1695| 
                                         ; |1695| Far Call Occurs
+	.line	1659
+;----------------------------------------------------------------------
+; 1696 | sprintf(FC[i].Meter_Factor.name, "FC%d Meter Factor", i+1);     //R361 
+;----------------------------------------------------------------------
+        ldiu      1,r0                  ; |1696| 
+        ldp       @CL965,DP
+        addi      *+fp(1),r0            ; |1696| 
+        ldiu      @CL965,r1             ; |1696| 
+        push      r0                    ; |1696| 
+        ldp       @CL964,DP
+        push      r1                    ; |1696| 
+        ldiu      *+fp(1),ar2           ; |1696| 
+        mpyi      1336,ar2              ; |1696| 
+        addi      @CL964,ar2            ; |1696| Unsigned
+        ldp       @CL24,DP
+        ldiu      @CL24,r0              ; |1696| 
+        callu     r0                    ; far call to _sprintf	; |1696| 
+                                        ; |1696| Far Call Occurs
+        subi      2,sp                  ; |1696| 
+	.line	1660
+;----------------------------------------------------------------------
+; 1697 | FC[i].Meter_Factor.name_r = 361;                                       
+;----------------------------------------------------------------------
+        ldp       @CL966,DP
+        ldiu      *+fp(1),ir0           ; |1697| 
+        ldiu      @CL966,ar0            ; |1697| 
+        mpyi      1336,ir0              ; |1697| 
+        ldiu      361,r0                ; |1697| 
+        sti       r0,*+ar0(ir0)         ; |1697| 
 	.line	1661
 ;----------------------------------------------------------------------
-; 1698 | VAR_Initialize(&FC[i].Shrinkage, c_not_classified, u_generic_not_used,
-;     | 10000.0, 100000.0, var_no_bound|var_no_alarm);                         
-;----------------------------------------------------------------------
-        ldiu      *+fp(1),ar2           ; |1698| 
-        ldp       @CL969,DP
-        mpyi      1336,ar2              ; |1698| 
-        addi      @CL969,ar2            ; |1698| Unsigned
-        ldp       @CL20,DP
-        ldiu      @CL20,r0              ; |1698| 
-        ldp       @CL965,DP
-        ldfu      @CL965,f3             ; |1698| 
-        ldp       @CL57,DP
-        ldfu      @CL57,f2              ; |1698| 
-        ldiu      250,rs                ; |1698| 
-        ldiu      6,re                  ; |1698| 
-        ldiu      0,rc                  ; |1698| 
-        callu     r0                    ; far call to _VAR_Initialize	; |1698| 
-                                        ; |1698| Far Call Occurs
-	.line	1662
-;----------------------------------------------------------------------
-; 1699 | sprintf(FC[i].Shrinkage.name, "FC%d Shrinkage", i+1);   //R367         
-;----------------------------------------------------------------------
-        ldiu      1,r0                  ; |1699| 
-        ldp       @CL971,DP
-        addi      *+fp(1),r0            ; |1699| 
-        ldiu      @CL971,r1             ; |1699| 
-        push      r0                    ; |1699| 
-        push      r1                    ; |1699| 
-        ldp       @CL970,DP
-        ldiu      *+fp(1),ar2           ; |1699| 
-        mpyi      1336,ar2              ; |1699| 
-        addi      @CL970,ar2            ; |1699| Unsigned
-        ldp       @CL24,DP
-        ldiu      @CL24,r0              ; |1699| 
-        callu     r0                    ; far call to _sprintf	; |1699| 
-                                        ; |1699| Far Call Occurs
-        subi      2,sp                  ; |1699| 
-	.line	1663
-;----------------------------------------------------------------------
-; 1700 | FC[i].Shrinkage.name_r = 367;                                          
-;----------------------------------------------------------------------
-        ldiu      *+fp(1),ir0           ; |1700| 
-        ldp       @CL972,DP
-        mpyi      1336,ir0              ; |1700| 
-        ldiu      @CL972,ar0            ; |1700| 
-        ldiu      367,r0                ; |1700| 
-        sti       r0,*+ar0(ir0)         ; |1700| 
-	.line	1664
-;----------------------------------------------------------------------
-; 1701 | VAR_Update(&FC[i].Shrinkage, 1.00, 0, 0);                              
+; 1698 | VAR_Update(&FC[i].Meter_Factor, 1.00, 0, 0);                           
 ;----------------------------------------------------------------------
         ldp       @CL32,DP
-        ldiu      *+fp(1),ar2           ; |1701| 
-        ldiu      @CL32,r0              ; |1701| 
-        ldp       @CL969,DP
-        mpyi      1336,ar2              ; |1701| 
-        addi      @CL969,ar2            ; |1701| Unsigned
+        ldiu      @CL32,r0              ; |1698| 
+        ldiu      *+fp(1),ar2           ; |1698| 
+        ldp       @CL962,DP
+        mpyi      1336,ar2              ; |1698| 
+        addi      @CL962,ar2            ; |1698| Unsigned
         ldp       @CL44+0,DP
-        ldfu      @CL44+0,f2            ; |1701| 40b float hi half
+        ldfu      @CL44+0,f2            ; |1698| 40b float hi half
         ldp       @CL44+1,DP
-        ldiu      @CL44+1,r2            ; |1701| 40b float lo half
+        ldiu      0,rc                  ; |1698| 
+        ldiu      @CL44+1,r2            ; |1698| 40b float lo half
+        ldiu      0,r3                  ; |1698| 
+        callu     r0                    ; far call to _VAR_Update	; |1698| 
+                                        ; |1698| Far Call Occurs
+	.line	1664
+;----------------------------------------------------------------------
+; 1701 | VAR_Initialize(&FC[i].Shrinkage, c_not_classified, u_generic_not_used,
+;     | 10000.0, 100000.0, var_no_bound|var_no_alarm);                         
+;----------------------------------------------------------------------
+        ldiu      *+fp(1),ar2           ; |1701| 
+        ldp       @CL967,DP
+        mpyi      1336,ar2              ; |1701| 
+        addi      @CL967,ar2            ; |1701| Unsigned
+        ldp       @CL20,DP
+        ldiu      @CL20,r0              ; |1701| 
+        ldp       @CL963,DP
+        ldfu      @CL963,f3             ; |1701| 
+        ldp       @CL57,DP
+        ldfu      @CL57,f2              ; |1701| 
+        ldiu      250,rs                ; |1701| 
+        ldiu      6,re                  ; |1701| 
         ldiu      0,rc                  ; |1701| 
-        ldiu      0,r3                  ; |1701| 
-        callu     r0                    ; far call to _VAR_Update	; |1701| 
+        callu     r0                    ; far call to _VAR_Initialize	; |1701| 
                                         ; |1701| Far Call Occurs
+	.line	1665
+;----------------------------------------------------------------------
+; 1702 | sprintf(FC[i].Shrinkage.name, "FC%d Shrinkage", i+1);   //R367         
+;----------------------------------------------------------------------
+        ldiu      1,r0                  ; |1702| 
+        ldp       @CL969,DP
+        addi      *+fp(1),r0            ; |1702| 
+        ldiu      @CL969,r1             ; |1702| 
+        push      r0                    ; |1702| 
+        push      r1                    ; |1702| 
+        ldp       @CL968,DP
+        ldiu      *+fp(1),ar2           ; |1702| 
+        mpyi      1336,ar2              ; |1702| 
+        addi      @CL968,ar2            ; |1702| Unsigned
+        ldp       @CL24,DP
+        ldiu      @CL24,r0              ; |1702| 
+        callu     r0                    ; far call to _sprintf	; |1702| 
+                                        ; |1702| Far Call Occurs
+        subi      2,sp                  ; |1702| 
 	.line	1666
 ;----------------------------------------------------------------------
-; 1703 | FC[i].API_TABLE                 = 'A'<<8;                              
+; 1703 | FC[i].Shrinkage.name_r = 367;                                          
 ;----------------------------------------------------------------------
-        ldp       @CL973,DP
         ldiu      *+fp(1),ir0           ; |1703| 
-        ldiu      @CL973,ar0            ; |1703| 
+        ldp       @CL970,DP
         mpyi      1336,ir0              ; |1703| 
-        ldiu      16640,r0              ; |1703| 
+        ldiu      @CL970,ar0            ; |1703| 
+        ldiu      367,r0                ; |1703| 
         sti       r0,*+ar0(ir0)         ; |1703| 
 	.line	1667
 ;----------------------------------------------------------------------
-; 1704 | FC[i].USE_PDI_TEMP              = TRUE;                                
+; 1704 | VAR_Update(&FC[i].Shrinkage, 1.00, 0, 0);                              
 ;----------------------------------------------------------------------
-        ldiu      *+fp(1),ir0           ; |1704| 
-        ldp       @CL974,DP
-        mpyi      1336,ir0              ; |1704| 
-        ldiu      @CL974,ar0            ; |1704| 
-        ldiu      1,r0                  ; |1704| 
-        sti       r0,*+ar0(ir0)         ; |1704| 
-	.line	1668
-;----------------------------------------------------------------------
-; 1705 | FC[i].USE_PDI_SALINITY  = TRUE;                                        
-;----------------------------------------------------------------------
-        ldiu      *+fp(1),ir0           ; |1705| 
-        ldp       @CL975,DP
-        mpyi      1336,ir0              ; |1705| 
-        ldiu      @CL975,ar0            ; |1705| 
-        sti       r0,*+ar0(ir0)         ; |1705| 
+        ldp       @CL32,DP
+        ldiu      *+fp(1),ar2           ; |1704| 
+        ldiu      @CL32,r0              ; |1704| 
+        ldp       @CL967,DP
+        mpyi      1336,ar2              ; |1704| 
+        addi      @CL967,ar2            ; |1704| Unsigned
+        ldp       @CL44+0,DP
+        ldfu      @CL44+0,f2            ; |1704| 40b float hi half
+        ldp       @CL44+1,DP
+        ldiu      @CL44+1,r2            ; |1704| 40b float lo half
+        ldiu      0,rc                  ; |1704| 
+        ldiu      0,r3                  ; |1704| 
+        callu     r0                    ; far call to _VAR_Update	; |1704| 
+                                        ; |1704| Far Call Occurs
 	.line	1669
 ;----------------------------------------------------------------------
-; 1706 | FC[i].MAN_TEMP                  = FALSE;                               
+; 1706 | FC[i].API_TABLE                 = 'A'<<8;                              
 ;----------------------------------------------------------------------
-        ldp       @CL976,DP
-        ldiu      @CL976,ar0            ; |1706| 
+        ldp       @CL971,DP
         ldiu      *+fp(1),ir0           ; |1706| 
+        ldiu      @CL971,ar0            ; |1706| 
         mpyi      1336,ir0              ; |1706| 
-        ldiu      0,r0                  ; |1706| 
+        ldiu      16640,r0              ; |1706| 
         sti       r0,*+ar0(ir0)         ; |1706| 
 	.line	1670
 ;----------------------------------------------------------------------
-; 1707 | FC[i].MAN_SALINITY              = FALSE;                               
+; 1707 | FC[i].USE_PDI_TEMP              = TRUE;                                
 ;----------------------------------------------------------------------
-        ldp       @CL977,DP
-        ldiu      @CL977,ar0            ; |1707| 
         ldiu      *+fp(1),ir0           ; |1707| 
+        ldp       @CL972,DP
         mpyi      1336,ir0              ; |1707| 
+        ldiu      @CL972,ar0            ; |1707| 
+        ldiu      1,r0                  ; |1707| 
         sti       r0,*+ar0(ir0)         ; |1707| 
 	.line	1671
 ;----------------------------------------------------------------------
-; 1708 | FC[i].MAN_WATERCUT              = FALSE;                               
+; 1708 | FC[i].USE_PDI_SALINITY  = TRUE;                                        
 ;----------------------------------------------------------------------
         ldiu      *+fp(1),ir0           ; |1708| 
-        ldp       @CL978,DP
+        ldp       @CL973,DP
         mpyi      1336,ir0              ; |1708| 
-        ldiu      @CL978,ar0            ; |1708| 
+        ldiu      @CL973,ar0            ; |1708| 
         sti       r0,*+ar0(ir0)         ; |1708| 
 	.line	1672
 ;----------------------------------------------------------------------
-; 1709 | FC[i].MAN_DENSITY               = FALSE;                               
+; 1709 | FC[i].MAN_TEMP                  = FALSE;                               
 ;----------------------------------------------------------------------
+        ldp       @CL974,DP
+        ldiu      @CL974,ar0            ; |1709| 
         ldiu      *+fp(1),ir0           ; |1709| 
-        ldp       @CL979,DP
         mpyi      1336,ir0              ; |1709| 
-        ldiu      @CL979,ar0            ; |1709| 
+        ldiu      0,r0                  ; |1709| 
         sti       r0,*+ar0(ir0)         ; |1709| 
 	.line	1673
 ;----------------------------------------------------------------------
-; 1710 | FC[i].MAN_PRESSURE              = FALSE;                               
+; 1710 | FC[i].MAN_SALINITY              = FALSE;                               
 ;----------------------------------------------------------------------
-        ldp       @CL980,DP
-        ldiu      @CL980,ar0            ; |1710| 
+        ldp       @CL975,DP
+        ldiu      @CL975,ar0            ; |1710| 
         ldiu      *+fp(1),ir0           ; |1710| 
         mpyi      1336,ir0              ; |1710| 
         sti       r0,*+ar0(ir0)         ; |1710| 
 	.line	1674
 ;----------------------------------------------------------------------
-; 1711 | FC[i].MAN_FLOW                  = FALSE;                               
+; 1711 | FC[i].MAN_WATERCUT              = FALSE;                               
 ;----------------------------------------------------------------------
-        ldp       @CL981,DP
-        ldiu      @CL981,ar0            ; |1711| 
         ldiu      *+fp(1),ir0           ; |1711| 
+        ldp       @CL976,DP
         mpyi      1336,ir0              ; |1711| 
+        ldiu      @CL976,ar0            ; |1711| 
         sti       r0,*+ar0(ir0)         ; |1711| 
 	.line	1675
 ;----------------------------------------------------------------------
-; 1712 | FC[i].VCFo                              = 1.0;                         
+; 1712 | FC[i].MAN_DENSITY               = FALSE;                               
 ;----------------------------------------------------------------------
-        ldp       @CL982,DP
         ldiu      *+fp(1),ir0           ; |1712| 
-        ldiu      @CL982,ar0            ; |1712| 
+        ldp       @CL977,DP
         mpyi      1336,ir0              ; |1712| 
-        ldfu      1.0000000000e+00,f0   ; |1712| 
-        stf       f0,*+ar0(ir0)         ; |1712| 
+        ldiu      @CL977,ar0            ; |1712| 
+        sti       r0,*+ar0(ir0)         ; |1712| 
 	.line	1676
 ;----------------------------------------------------------------------
-; 1713 | FC[i].VCFw                              = 1.0;                         
+; 1713 | FC[i].MAN_PRESSURE              = FALSE;                               
 ;----------------------------------------------------------------------
-        ldp       @CL983,DP
+        ldp       @CL978,DP
+        ldiu      @CL978,ar0            ; |1713| 
         ldiu      *+fp(1),ir0           ; |1713| 
-        ldiu      @CL983,ar0            ; |1713| 
         mpyi      1336,ir0              ; |1713| 
-        ldfu      1.0000000000e+00,f0   ; |1713| 
-        stf       f0,*+ar0(ir0)         ; |1713| 
+        sti       r0,*+ar0(ir0)         ; |1713| 
 	.line	1677
 ;----------------------------------------------------------------------
-; 1714 | FC[i].net_watercut              = 0.0;                                 
+; 1714 | FC[i].MAN_FLOW                  = FALSE;                               
 ;----------------------------------------------------------------------
-        ldp       @CL984,DP
+        ldp       @CL979,DP
+        ldiu      @CL979,ar0            ; |1714| 
         ldiu      *+fp(1),ir0           ; |1714| 
-        ldiu      @CL984,ar0            ; |1714| 
         mpyi      1336,ir0              ; |1714| 
-        ldfu      0.0000000000e+00,f0   ; |1714| 
-        stf       f0,*+ar0(ir0)         ; |1714| 
+        sti       r0,*+ar0(ir0)         ; |1714| 
 	.line	1678
 ;----------------------------------------------------------------------
-; 1715 | FC[i].a                                 = 0.0;                         
+; 1715 | FC[i].VCFo                              = 1.0;                         
 ;----------------------------------------------------------------------
+        ldp       @CL980,DP
         ldiu      *+fp(1),ir0           ; |1715| 
-        ldp       @CL985,DP
+        ldiu      @CL980,ar0            ; |1715| 
         mpyi      1336,ir0              ; |1715| 
-        ldiu      @CL985,ar0            ; |1715| 
-        ldfu      0.0000000000e+00,f0   ; |1715| 
+        ldfu      1.0000000000e+00,f0   ; |1715| 
         stf       f0,*+ar0(ir0)         ; |1715| 
+	.line	1679
+;----------------------------------------------------------------------
+; 1716 | FC[i].VCFw                              = 1.0;                         
+;----------------------------------------------------------------------
+        ldp       @CL981,DP
+        ldiu      *+fp(1),ir0           ; |1716| 
+        ldiu      @CL981,ar0            ; |1716| 
+        mpyi      1336,ir0              ; |1716| 
+        ldfu      1.0000000000e+00,f0   ; |1716| 
+        stf       f0,*+ar0(ir0)         ; |1716| 
 	.line	1680
 ;----------------------------------------------------------------------
-; 1717 | Set_FC_Units(0);                                                       
+; 1717 | FC[i].net_watercut              = 0.0;                                 
+;----------------------------------------------------------------------
+        ldp       @CL982,DP
+        ldiu      *+fp(1),ir0           ; |1717| 
+        ldiu      @CL982,ar0            ; |1717| 
+        mpyi      1336,ir0              ; |1717| 
+        ldfu      0.0000000000e+00,f0   ; |1717| 
+        stf       f0,*+ar0(ir0)         ; |1717| 
+	.line	1681
+;----------------------------------------------------------------------
+; 1718 | FC[i].a                                 = 0.0;                         
+;----------------------------------------------------------------------
+        ldiu      *+fp(1),ir0           ; |1718| 
+        ldp       @CL983,DP
+        mpyi      1336,ir0              ; |1718| 
+        ldiu      @CL983,ar0            ; |1718| 
+        ldfu      0.0000000000e+00,f0   ; |1718| 
+        stf       f0,*+ar0(ir0)         ; |1718| 
+	.line	1683
+;----------------------------------------------------------------------
+; 1720 | Set_FC_Units(0);                                                       
 ;----------------------------------------------------------------------
         ldp       @CL814,DP
-        ldiu      @CL814,r0             ; |1717| 
-        ldiu      0,ar2                 ; |1717| 
-        callu     r0                    ; far call to _Set_FC_Units	; |1717| 
-                                        ; |1717| Far Call Occurs
+        ldiu      @CL814,r0             ; |1720| 
+        ldiu      0,ar2                 ; |1720| 
+        callu     r0                    ; far call to _Set_FC_Units	; |1720| 
+                                        ; |1720| Far Call Occurs
 	.line	1414
         ldiu      1,r0                  ; |1451| 
         addi      *+fp(1),r0            ; |1451| 
@@ -15315,4802 +15324,4802 @@ L193:
         blt       L190                  ; |1451| 
 ;*      Branch Occurs to L190           ; |1451| 
 L203:        
-	.line	1684
+	.line	1687
 ;----------------------------------------------------------------------
-; 1721 | FC[0].pulse_v.vect                              = (int*)Set_Class_Units
+; 1724 | FC[0].pulse_v.vect                              = (int*)Set_Class_Units
 ;     | _Pulse1;                                                               
 ;----------------------------------------------------------------------
-        ldp       @CL986,DP
-        ldiu      @CL986,ar0            ; |1721| 
-        ldp       @CL987,DP
-        ldiu      @CL987,r0             ; |1721| 
-        sti       r0,*ar0               ; |1721| 
-	.line	1685
-;----------------------------------------------------------------------
-; 1722 | FC[1].pulse_v.vect                              = (int*)Set_Class_Units
-;     | _Pulse2;                                                               
-;----------------------------------------------------------------------
-        ldp       @CL988,DP
-        ldiu      @CL988,ar0            ; |1722| 
-        ldp       @CL989,DP
-        ldiu      @CL989,r0             ; |1722| 
-        sti       r0,*ar0               ; |1722| 
-	.line	1686
-;----------------------------------------------------------------------
-; 1723 | FC[2].pulse_v.vect                              = (int*)Set_Class_Units
-;     | _Pulse3;                                                               
-;----------------------------------------------------------------------
-        ldp       @CL990,DP
-        ldiu      @CL990,ar0            ; |1723| 
-        ldp       @CL991,DP
-        ldiu      @CL991,r0             ; |1723| 
-        sti       r0,*ar0               ; |1723| 
+        ldp       @CL984,DP
+        ldiu      @CL984,ar0            ; |1724| 
+        ldp       @CL985,DP
+        ldiu      @CL985,r0             ; |1724| 
+        sti       r0,*ar0               ; |1724| 
 	.line	1688
 ;----------------------------------------------------------------------
-; 1725 | FC[0].Z.vect    = (int*)Zero_FC1;                                      
+; 1725 | FC[1].pulse_v.vect                              = (int*)Set_Class_Units
+;     | _Pulse2;                                                               
 ;----------------------------------------------------------------------
-        ldp       @CL992,DP
-        ldiu      @CL992,ar0            ; |1725| 
-        ldp       @CL993,DP
-        ldiu      @CL993,r0             ; |1725| 
+        ldp       @CL986,DP
+        ldiu      @CL986,ar0            ; |1725| 
+        ldp       @CL987,DP
+        ldiu      @CL987,r0             ; |1725| 
         sti       r0,*ar0               ; |1725| 
 	.line	1689
 ;----------------------------------------------------------------------
-; 1726 | FC[1].Z.vect    = (int*)Zero_FC2;                                      
+; 1726 | FC[2].pulse_v.vect                              = (int*)Set_Class_Units
+;     | _Pulse3;                                                               
 ;----------------------------------------------------------------------
-        ldp       @CL994,DP
-        ldiu      @CL994,ar0            ; |1726| 
-        ldp       @CL995,DP
-        ldiu      @CL995,r0             ; |1726| 
+        ldp       @CL988,DP
+        ldiu      @CL988,ar0            ; |1726| 
+        ldp       @CL989,DP
+        ldiu      @CL989,r0             ; |1726| 
         sti       r0,*ar0               ; |1726| 
-	.line	1690
-;----------------------------------------------------------------------
-; 1727 | FC[2].Z.vect    = (int*)Zero_FC3;                                      
-;----------------------------------------------------------------------
-        ldp       @CL996,DP
-        ldiu      @CL996,ar0            ; |1727| 
-        ldp       @CL997,DP
-        ldiu      @CL997,r0             ; |1727| 
-        sti       r0,*ar0               ; |1727| 
 	.line	1691
 ;----------------------------------------------------------------------
-; 1728 | FC[0].Z.vect2   = NULL_PTR;                                            
+; 1728 | FC[0].Z.vect    = (int*)Zero_FC1;                                      
 ;----------------------------------------------------------------------
-        ldp       @CL998,DP
-        ldiu      @CL998,ar0            ; |1728| 
-        ldiu      0,r0                  ; |1728| 
+        ldp       @CL990,DP
+        ldiu      @CL990,ar0            ; |1728| 
+        ldp       @CL991,DP
+        ldiu      @CL991,r0             ; |1728| 
         sti       r0,*ar0               ; |1728| 
 	.line	1692
 ;----------------------------------------------------------------------
-; 1729 | FC[1].Z.vect2   = NULL_PTR;                                            
+; 1729 | FC[1].Z.vect    = (int*)Zero_FC2;                                      
 ;----------------------------------------------------------------------
-        ldp       @CL999,DP
-        ldiu      @CL999,ar0            ; |1729| 
+        ldp       @CL992,DP
+        ldiu      @CL992,ar0            ; |1729| 
+        ldp       @CL993,DP
+        ldiu      @CL993,r0             ; |1729| 
         sti       r0,*ar0               ; |1729| 
 	.line	1693
 ;----------------------------------------------------------------------
-; 1730 | FC[2].Z.vect2   = NULL_PTR;                                            
+; 1730 | FC[2].Z.vect    = (int*)Zero_FC3;                                      
 ;----------------------------------------------------------------------
-        ldp       @CL1000,DP
-        ldiu      @CL1000,ar0           ; |1730| 
+        ldp       @CL994,DP
+        ldiu      @CL994,ar0            ; |1730| 
+        ldp       @CL995,DP
+        ldiu      @CL995,r0             ; |1730| 
         sti       r0,*ar0               ; |1730| 
+	.line	1694
+;----------------------------------------------------------------------
+; 1731 | FC[0].Z.vect2   = NULL_PTR;                                            
+;----------------------------------------------------------------------
+        ldp       @CL996,DP
+        ldiu      @CL996,ar0            ; |1731| 
+        ldiu      0,r0                  ; |1731| 
+        sti       r0,*ar0               ; |1731| 
+	.line	1695
+;----------------------------------------------------------------------
+; 1732 | FC[1].Z.vect2   = NULL_PTR;                                            
+;----------------------------------------------------------------------
+        ldp       @CL997,DP
+        ldiu      @CL997,ar0            ; |1732| 
+        sti       r0,*ar0               ; |1732| 
 	.line	1696
 ;----------------------------------------------------------------------
-; 1733 | CALC_WC_DENSITY.val             = FALSE;                               
+; 1733 | FC[2].Z.vect2   = NULL_PTR;                                            
 ;----------------------------------------------------------------------
-        ldp       @CL1001,DP
-        ldiu      @CL1001,ar0           ; |1733| 
+        ldp       @CL998,DP
+        ldiu      @CL998,ar0            ; |1733| 
         sti       r0,*ar0               ; |1733| 
-	.line	1697
+	.line	1699
 ;----------------------------------------------------------------------
-; 1734 | CALC_WC_DENSITY.vect    = (int*)Disable_PDI_WC_Mode;                   
+; 1736 | CALC_WC_DENSITY.val             = FALSE;                               
 ;----------------------------------------------------------------------
-        ldp       @CL1002,DP
-        ldiu      @CL1002,ar0           ; |1734| 
-        ldp       @CL1003,DP
-        ldiu      @CL1003,r0            ; |1734| 
-        sti       r0,*ar0               ; |1734| 
-	.line	1698
-;----------------------------------------------------------------------
-; 1735 | CALC_WC_DENSITY.vect2   = NULL_PTR;                                    
-;----------------------------------------------------------------------
-        ldp       @CL1004,DP
-        ldiu      @CL1004,ar0           ; |1735| 
-        ldiu      0,r0                  ; |1735| 
-        sti       r0,*ar0               ; |1735| 
+        ldp       @CL999,DP
+        ldiu      @CL999,ar0            ; |1736| 
+        sti       r0,*ar0               ; |1736| 
 	.line	1700
 ;----------------------------------------------------------------------
-; 1737 | USE_PDI_WATERCUT.val    = TRUE;                                        
+; 1737 | CALC_WC_DENSITY.vect    = (int*)Disable_PDI_WC_Mode;                   
 ;----------------------------------------------------------------------
-        ldp       @CL1005,DP
-        ldiu      @CL1005,ar0           ; |1737| 
-        ldiu      1,r0                  ; |1737| 
+        ldp       @CL1000,DP
+        ldiu      @CL1000,ar0           ; |1737| 
+        ldp       @CL1001,DP
+        ldiu      @CL1001,r0            ; |1737| 
         sti       r0,*ar0               ; |1737| 
 	.line	1701
 ;----------------------------------------------------------------------
-; 1738 | USE_PDI_WATERCUT.vect   = (int*)Disable_WC_Density_Mode;               
+; 1738 | CALC_WC_DENSITY.vect2   = NULL_PTR;                                    
+;----------------------------------------------------------------------
+        ldp       @CL1002,DP
+        ldiu      @CL1002,ar0           ; |1738| 
+        ldiu      0,r0                  ; |1738| 
+        sti       r0,*ar0               ; |1738| 
+	.line	1703
+;----------------------------------------------------------------------
+; 1740 | USE_PDI_WATERCUT.val    = TRUE;                                        
+;----------------------------------------------------------------------
+        ldp       @CL1003,DP
+        ldiu      @CL1003,ar0           ; |1740| 
+        ldiu      1,r0                  ; |1740| 
+        sti       r0,*ar0               ; |1740| 
+	.line	1704
+;----------------------------------------------------------------------
+; 1741 | USE_PDI_WATERCUT.vect   = (int*)Disable_WC_Density_Mode;               
+;----------------------------------------------------------------------
+        ldp       @CL1004,DP
+        ldiu      @CL1004,ar0           ; |1741| 
+        ldp       @CL1005,DP
+        ldiu      @CL1005,r0            ; |1741| 
+        sti       r0,*ar0               ; |1741| 
+	.line	1705
+;----------------------------------------------------------------------
+; 1742 | USE_PDI_WATERCUT.vect2  = NULL_PTR;                                    
 ;----------------------------------------------------------------------
         ldp       @CL1006,DP
-        ldiu      @CL1006,ar0           ; |1738| 
-        ldp       @CL1007,DP
-        ldiu      @CL1007,r0            ; |1738| 
-        sti       r0,*ar0               ; |1738| 
-	.line	1702
-;----------------------------------------------------------------------
-; 1739 | USE_PDI_WATERCUT.vect2  = NULL_PTR;                                    
-;----------------------------------------------------------------------
-        ldp       @CL1008,DP
-        ldiu      @CL1008,ar0           ; |1739| 
-        ldiu      0,r0                  ; |1739| 
-        sti       r0,*ar0               ; |1739| 
-	.line	1706
-;----------------------------------------------------------------------
-; 1743 | for (i=0;i<VARUSERMAX;i++)                                             
-;----------------------------------------------------------------------
-        sti       r0,*+fp(1)            ; |1743| 
-        ldiu      1,r4                  ; |1746| 
-        cmpi      5,r0                  ; |1743| 
-        bge       L205                  ; |1743| 
-;*      Branch Occurs to L205           ; |1743| 
-L204:        
-	.line	1708
-;----------------------------------------------------------------------
-; 1745 | VAR_Initialize(&VARUSER[i], c_not_classified, u_generic_not_used, 100.0
-;     | , 100.0, var_no_bound|var_dampen|var_no_alarm);                        
-;----------------------------------------------------------------------
-        ldiu      *+fp(1),ar2           ; |1745| 
-        ldp       @CL1009,DP
-        mpyi      44,ar2                ; |1745| 
-        ldiu      250,rs                ; |1745| 
-        ldiu      7,re                  ; |1745| 
-        addi      @CL1009,ar2           ; |1745| Unsigned
-        ldp       @CL20,DP
-        ldiu      0,rc                  ; |1745| 
-        ldiu      @CL20,r0              ; |1745| 
-        ldfu      1.0000000000e+02,f3   ; |1745| 
-        ldfu      1.0000000000e+02,f2   ; |1745| 
-        callu     r0                    ; far call to _VAR_Initialize	; |1745| 
-                                        ; |1745| Far Call Occurs
+        ldiu      @CL1006,ar0           ; |1742| 
+        ldiu      0,r0                  ; |1742| 
+        sti       r0,*ar0               ; |1742| 
 	.line	1709
 ;----------------------------------------------------------------------
-; 1746 | sprintf(VARUSER[i].name, "User Variable %d", i+1);                     
+; 1746 | for (i=0;i<VARUSERMAX;i++)                                             
 ;----------------------------------------------------------------------
-        ldp       @CL1011,DP
-        ldiu      *+fp(1),r1            ; |1746| 
-        ldiu      @CL1011,r0            ; |1746| 
-        addi      r4,r1                 ; |1746| 
-        ldp       @CL1010,DP
-        push      r1                    ; |1746| 
-        push      r0                    ; |1746| 
-        ldiu      *+fp(1),ar2           ; |1746| 
-        mpyi      44,ar2                ; |1746| 
-        addi      @CL1010,ar2           ; |1746| Unsigned
+        sti       r0,*+fp(1)            ; |1746| 
+        ldiu      1,r4                  ; |1749| 
+        cmpi      5,r0                  ; |1746| 
+        bge       L205                  ; |1746| 
+;*      Branch Occurs to L205           ; |1746| 
+L204:        
+	.line	1711
+;----------------------------------------------------------------------
+; 1748 | VAR_Initialize(&VARUSER[i], c_not_classified, u_generic_not_used, 100.0
+;     | , 100.0, var_no_bound|var_dampen|var_no_alarm);                        
+;----------------------------------------------------------------------
+        ldiu      *+fp(1),ar2           ; |1748| 
+        ldp       @CL1007,DP
+        mpyi      44,ar2                ; |1748| 
+        ldiu      250,rs                ; |1748| 
+        ldiu      7,re                  ; |1748| 
+        addi      @CL1007,ar2           ; |1748| Unsigned
+        ldp       @CL20,DP
+        ldiu      0,rc                  ; |1748| 
+        ldiu      @CL20,r0              ; |1748| 
+        ldfu      1.0000000000e+02,f3   ; |1748| 
+        ldfu      1.0000000000e+02,f2   ; |1748| 
+        callu     r0                    ; far call to _VAR_Initialize	; |1748| 
+                                        ; |1748| Far Call Occurs
+	.line	1712
+;----------------------------------------------------------------------
+; 1749 | sprintf(VARUSER[i].name, "User Variable %d", i+1);                     
+;----------------------------------------------------------------------
+        ldp       @CL1009,DP
+        ldiu      *+fp(1),r1            ; |1749| 
+        ldiu      @CL1009,r0            ; |1749| 
+        addi      r4,r1                 ; |1749| 
+        ldp       @CL1008,DP
+        push      r1                    ; |1749| 
+        push      r0                    ; |1749| 
+        ldiu      *+fp(1),ar2           ; |1749| 
+        mpyi      44,ar2                ; |1749| 
+        addi      @CL1008,ar2           ; |1749| Unsigned
         ldp       @CL24,DP
-        ldiu      @CL24,r0              ; |1746| 
-        callu     r0                    ; far call to _sprintf	; |1746| 
-                                        ; |1746| Far Call Occurs
-        subi      2,sp                  ; |1746| 
-	.line	1710
+        ldiu      @CL24,r0              ; |1749| 
+        callu     r0                    ; far call to _sprintf	; |1749| 
+                                        ; |1749| Far Call Occurs
+        subi      2,sp                  ; |1749| 
+	.line	1713
 ;----------------------------------------------------------------------
-; 1747 | VAR_NaN(&VARUSER[i]);                                                  
-; 1751 | //HSALT.new                     = TRUE;                                
-; 1752 | //HSALT.ENABLED.val     = FALSE; //This was overriding the CSV enable o
+; 1750 | VAR_NaN(&VARUSER[i]);                                                  
+; 1754 | //HSALT.new                     = TRUE;                                
+; 1755 | //HSALT.ENABLED.val     = FALSE; //This was overriding the CSV enable o
 ;     | f HSALT -DHA 9/1/2015                                                  
 ;----------------------------------------------------------------------
-        ldiu      *+fp(1),ar2           ; |1747| 
-        ldp       @CL1009,DP
-        mpyi      44,ar2                ; |1747| 
-        addi      @CL1009,ar2           ; |1747| Unsigned
+        ldiu      *+fp(1),ar2           ; |1750| 
+        ldp       @CL1007,DP
+        mpyi      44,ar2                ; |1750| 
+        addi      @CL1007,ar2           ; |1750| Unsigned
         ldp       @CL21,DP
-        ldiu      @CL21,r0              ; |1747| 
-        callu     r0                    ; far call to _VAR_NaN	; |1747| 
-                                        ; |1747| Far Call Occurs
-	.line	1706
-        ldiu      1,r0                  ; |1743| 
-        addi      *+fp(1),r0            ; |1743| 
-        sti       r0,*+fp(1)            ; |1743| 
-        cmpi      5,r0                  ; |1743| 
-        blt       L204                  ; |1743| 
-;*      Branch Occurs to L204           ; |1743| 
+        ldiu      @CL21,r0              ; |1750| 
+        callu     r0                    ; far call to _VAR_NaN	; |1750| 
+                                        ; |1750| Far Call Occurs
+	.line	1709
+        ldiu      1,r0                  ; |1746| 
+        addi      *+fp(1),r0            ; |1746| 
+        sti       r0,*+fp(1)            ; |1746| 
+        cmpi      5,r0                  ; |1746| 
+        blt       L204                  ; |1746| 
+;*      Branch Occurs to L204           ; |1746| 
 L205:        
-	.line	1716
-;----------------------------------------------------------------------
-; 1753 | HSALT.ENABLED.vect      = (int*)HSALT_CLEAR;                           
-;----------------------------------------------------------------------
-        ldp       @CL1012,DP
-        ldiu      @CL1012,ar0           ; |1753| 
-        ldp       @CL1013,DP
-        ldiu      @CL1013,r0            ; |1753| 
-        sti       r0,*ar0               ; |1753| 
-	.line	1717
-;----------------------------------------------------------------------
-; 1754 | HSALT.S3                        = 0.0;                                 
-;----------------------------------------------------------------------
-        ldp       @CL1014,DP
-        ldiu      @CL1014,ar0           ; |1754| 
-        ldfu      0.0000000000e+00,f0   ; |1754| 
-        stf       f0,*ar0               ; |1754| 
-	.line	1718
-;----------------------------------------------------------------------
-; 1755 | HSALT.S2                        = 0.0;                                 
-;----------------------------------------------------------------------
-        ldp       @CL1015,DP
-        ldiu      @CL1015,ar0           ; |1755| 
-        ldfu      0.0000000000e+00,f0   ; |1755| 
-        stf       f0,*ar0               ; |1755| 
 	.line	1719
 ;----------------------------------------------------------------------
-; 1756 | HSALT.S1                        = 0.0;                                 
+; 1756 | HSALT.ENABLED.vect      = (int*)HSALT_CLEAR;                           
 ;----------------------------------------------------------------------
-        ldp       @CL1016,DP
-        ldiu      @CL1016,ar0           ; |1756| 
-        ldfu      0.0000000000e+00,f0   ; |1756| 
-        stf       f0,*ar0               ; |1756| 
+        ldp       @CL1010,DP
+        ldiu      @CL1010,ar0           ; |1756| 
+        ldp       @CL1011,DP
+        ldiu      @CL1011,r0            ; |1756| 
+        sti       r0,*ar0               ; |1756| 
 	.line	1720
 ;----------------------------------------------------------------------
-; 1757 | HSALT.S0                        = 0.0;                                 
+; 1757 | HSALT.S3                        = 0.0;                                 
 ;----------------------------------------------------------------------
-        ldp       @CL1017,DP
-        ldiu      @CL1017,ar0           ; |1757| 
+        ldp       @CL1012,DP
+        ldiu      @CL1012,ar0           ; |1757| 
         ldfu      0.0000000000e+00,f0   ; |1757| 
         stf       f0,*ar0               ; |1757| 
 	.line	1721
 ;----------------------------------------------------------------------
-; 1758 | HSALT.SP3A                      = 0.0;                                 
+; 1758 | HSALT.S2                        = 0.0;                                 
 ;----------------------------------------------------------------------
-        ldp       @CL1018,DP
-        ldiu      @CL1018,ar0           ; |1758| 
+        ldp       @CL1013,DP
+        ldiu      @CL1013,ar0           ; |1758| 
         ldfu      0.0000000000e+00,f0   ; |1758| 
         stf       f0,*ar0               ; |1758| 
 	.line	1722
 ;----------------------------------------------------------------------
-; 1759 | HSALT.SP2A                      = 0.0;                                 
+; 1759 | HSALT.S1                        = 0.0;                                 
 ;----------------------------------------------------------------------
-        ldp       @CL1019,DP
-        ldiu      @CL1019,ar0           ; |1759| 
+        ldp       @CL1014,DP
+        ldiu      @CL1014,ar0           ; |1759| 
         ldfu      0.0000000000e+00,f0   ; |1759| 
         stf       f0,*ar0               ; |1759| 
 	.line	1723
 ;----------------------------------------------------------------------
-; 1760 | HSALT.SP1A                      = 0.0;                                 
+; 1760 | HSALT.S0                        = 0.0;                                 
 ;----------------------------------------------------------------------
-        ldp       @CL1020,DP
-        ldiu      @CL1020,ar0           ; |1760| 
+        ldp       @CL1015,DP
+        ldiu      @CL1015,ar0           ; |1760| 
         ldfu      0.0000000000e+00,f0   ; |1760| 
         stf       f0,*ar0               ; |1760| 
 	.line	1724
 ;----------------------------------------------------------------------
-; 1761 | HSALT.SP0A                      = 3.0;                                 
+; 1761 | HSALT.SP3A                      = 0.0;                                 
 ;----------------------------------------------------------------------
-        ldp       @CL1021,DP
-        ldiu      @CL1021,ar0           ; |1761| 
-        ldfu      3.0000000000e+00,f0   ; |1761| 
+        ldp       @CL1016,DP
+        ldiu      @CL1016,ar0           ; |1761| 
+        ldfu      0.0000000000e+00,f0   ; |1761| 
         stf       f0,*ar0               ; |1761| 
 	.line	1725
 ;----------------------------------------------------------------------
-; 1762 | HSALT.SPLOA             = 0.02;                                        
+; 1762 | HSALT.SP2A                      = 0.0;                                 
 ;----------------------------------------------------------------------
-        ldp       @CL1022,DP
-        ldiu      @CL1022,ar0           ; |1762| 
-        ldp       @CL136,DP
-        ldfu      @CL136,f0             ; |1762| 
+        ldp       @CL1017,DP
+        ldiu      @CL1017,ar0           ; |1762| 
+        ldfu      0.0000000000e+00,f0   ; |1762| 
         stf       f0,*ar0               ; |1762| 
 	.line	1726
 ;----------------------------------------------------------------------
-; 1763 | HSALT.SPHIA             = 30.0;                                        
+; 1763 | HSALT.SP1A                      = 0.0;                                 
 ;----------------------------------------------------------------------
-        ldp       @CL1023,DP
-        ldiu      @CL1023,ar0           ; |1763| 
-        ldfu      3.0000000000e+01,f0   ; |1763| 
+        ldp       @CL1018,DP
+        ldiu      @CL1018,ar0           ; |1763| 
+        ldfu      0.0000000000e+00,f0   ; |1763| 
         stf       f0,*ar0               ; |1763| 
 	.line	1727
 ;----------------------------------------------------------------------
-; 1764 | HSALT.SP3B                      = 0.0;                                 
+; 1764 | HSALT.SP0A                      = 3.0;                                 
 ;----------------------------------------------------------------------
-        ldp       @CL1024,DP
-        ldiu      @CL1024,ar0           ; |1764| 
-        ldfu      0.0000000000e+00,f0   ; |1764| 
+        ldp       @CL1019,DP
+        ldiu      @CL1019,ar0           ; |1764| 
+        ldfu      3.0000000000e+00,f0   ; |1764| 
         stf       f0,*ar0               ; |1764| 
 	.line	1728
 ;----------------------------------------------------------------------
-; 1765 | HSALT.SP2B                      = 0.0;                                 
+; 1765 | HSALT.SPLOA             = 0.02;                                        
 ;----------------------------------------------------------------------
-        ldp       @CL1025,DP
-        ldiu      @CL1025,ar0           ; |1765| 
-        ldfu      0.0000000000e+00,f0   ; |1765| 
+        ldp       @CL1020,DP
+        ldiu      @CL1020,ar0           ; |1765| 
+        ldp       @CL136,DP
+        ldfu      @CL136,f0             ; |1765| 
         stf       f0,*ar0               ; |1765| 
 	.line	1729
 ;----------------------------------------------------------------------
-; 1766 | HSALT.SP1B                      = 0.0;                                 
+; 1766 | HSALT.SPHIA             = 30.0;                                        
 ;----------------------------------------------------------------------
-        ldp       @CL1026,DP
-        ldiu      @CL1026,ar0           ; |1766| 
-        ldfu      0.0000000000e+00,f0   ; |1766| 
+        ldp       @CL1021,DP
+        ldiu      @CL1021,ar0           ; |1766| 
+        ldfu      3.0000000000e+01,f0   ; |1766| 
         stf       f0,*ar0               ; |1766| 
 	.line	1730
 ;----------------------------------------------------------------------
-; 1767 | HSALT.SP0B                      = 8.0;                                 
+; 1767 | HSALT.SP3B                      = 0.0;                                 
 ;----------------------------------------------------------------------
-        ldp       @CL1027,DP
-        ldiu      @CL1027,ar0           ; |1767| 
-        ldfu      8.0000000000e+00,f0   ; |1767| 
+        ldp       @CL1022,DP
+        ldiu      @CL1022,ar0           ; |1767| 
+        ldfu      0.0000000000e+00,f0   ; |1767| 
         stf       f0,*ar0               ; |1767| 
 	.line	1731
 ;----------------------------------------------------------------------
-; 1768 | HSALT.SPLOB             = 0.02;                                        
+; 1768 | HSALT.SP2B                      = 0.0;                                 
 ;----------------------------------------------------------------------
-        ldp       @CL1028,DP
-        ldiu      @CL1028,ar0           ; |1768| 
-        ldp       @CL136,DP
-        ldfu      @CL136,f0             ; |1768| 
+        ldp       @CL1023,DP
+        ldiu      @CL1023,ar0           ; |1768| 
+        ldfu      0.0000000000e+00,f0   ; |1768| 
         stf       f0,*ar0               ; |1768| 
 	.line	1732
 ;----------------------------------------------------------------------
-; 1769 | HSALT.SPHIB             = 30.0;                                        
+; 1769 | HSALT.SP1B                      = 0.0;                                 
 ;----------------------------------------------------------------------
-        ldp       @CL1029,DP
-        ldiu      @CL1029,ar0           ; |1769| 
-        ldfu      3.0000000000e+01,f0   ; |1769| 
+        ldp       @CL1024,DP
+        ldiu      @CL1024,ar0           ; |1769| 
+        ldfu      0.0000000000e+00,f0   ; |1769| 
         stf       f0,*ar0               ; |1769| 
 	.line	1733
 ;----------------------------------------------------------------------
-; 1770 | HSALT.Fmin                      = 0.0;                                 
-; 1771 | //HSALT.Fmax                    = 0.0;                                 
+; 1770 | HSALT.SP0B                      = 8.0;                                 
 ;----------------------------------------------------------------------
-        ldp       @CL1030,DP
-        ldiu      @CL1030,ar0           ; |1770| 
-        ldfu      0.0000000000e+00,f0   ; |1770| 
+        ldp       @CL1025,DP
+        ldiu      @CL1025,ar0           ; |1770| 
+        ldfu      8.0000000000e+00,f0   ; |1770| 
         stf       f0,*ar0               ; |1770| 
+	.line	1734
+;----------------------------------------------------------------------
+; 1771 | HSALT.SPLOB             = 0.02;                                        
+;----------------------------------------------------------------------
+        ldp       @CL1026,DP
+        ldiu      @CL1026,ar0           ; |1771| 
+        ldp       @CL136,DP
+        ldfu      @CL136,f0             ; |1771| 
+        stf       f0,*ar0               ; |1771| 
 	.line	1735
 ;----------------------------------------------------------------------
-; 1772 | HSALT.Dmin                      = 0.0;                                 
+; 1772 | HSALT.SPHIB             = 30.0;                                        
 ;----------------------------------------------------------------------
-        ldp       @CL1031,DP
-        ldiu      @CL1031,ar0           ; |1772| 
-        ldfu      0.0000000000e+00,f0   ; |1772| 
+        ldp       @CL1027,DP
+        ldiu      @CL1027,ar0           ; |1772| 
+        ldfu      3.0000000000e+01,f0   ; |1772| 
         stf       f0,*ar0               ; |1772| 
 	.line	1736
 ;----------------------------------------------------------------------
-; 1773 | HSALT.Dmax                      = 0.0;                                 
+; 1773 | HSALT.Fmin                      = 0.0;                                 
+; 1774 | //HSALT.Fmax                    = 0.0;                                 
 ;----------------------------------------------------------------------
-        ldp       @CL1032,DP
-        ldiu      @CL1032,ar0           ; |1773| 
+        ldp       @CL1028,DP
+        ldiu      @CL1028,ar0           ; |1773| 
         ldfu      0.0000000000e+00,f0   ; |1773| 
         stf       f0,*ar0               ; |1773| 
-	.line	1737
-;----------------------------------------------------------------------
-; 1774 | HSALT.FBHI3             = 0.0;                                         
-;----------------------------------------------------------------------
-        ldp       @CL1033,DP
-        ldiu      @CL1033,ar0           ; |1774| 
-        ldfu      0.0000000000e+00,f0   ; |1774| 
-        stf       f0,*ar0               ; |1774| 
 	.line	1738
 ;----------------------------------------------------------------------
-; 1775 | HSALT.FBHI2             = 0.0;                                         
+; 1775 | HSALT.Dmin                      = 0.0;                                 
 ;----------------------------------------------------------------------
-        ldp       @CL1034,DP
-        ldiu      @CL1034,ar0           ; |1775| 
+        ldp       @CL1029,DP
+        ldiu      @CL1029,ar0           ; |1775| 
         ldfu      0.0000000000e+00,f0   ; |1775| 
         stf       f0,*ar0               ; |1775| 
 	.line	1739
 ;----------------------------------------------------------------------
-; 1776 | HSALT.FBHI1             = 0.0;                                         
+; 1776 | HSALT.Dmax                      = 0.0;                                 
 ;----------------------------------------------------------------------
-        ldp       @CL1035,DP
-        ldiu      @CL1035,ar0           ; |1776| 
+        ldp       @CL1030,DP
+        ldiu      @CL1030,ar0           ; |1776| 
         ldfu      0.0000000000e+00,f0   ; |1776| 
         stf       f0,*ar0               ; |1776| 
 	.line	1740
 ;----------------------------------------------------------------------
-; 1777 | HSALT.FBHI0             = 0.0;                                         
+; 1777 | HSALT.FBHI3             = 0.0;                                         
 ;----------------------------------------------------------------------
-        ldp       @CL1036,DP
-        ldiu      @CL1036,ar0           ; |1777| 
+        ldp       @CL1031,DP
+        ldiu      @CL1031,ar0           ; |1777| 
         ldfu      0.0000000000e+00,f0   ; |1777| 
         stf       f0,*ar0               ; |1777| 
 	.line	1741
 ;----------------------------------------------------------------------
-; 1778 | HSALT.FBLO3             = 0.0;                                         
+; 1778 | HSALT.FBHI2             = 0.0;                                         
 ;----------------------------------------------------------------------
-        ldp       @CL1037,DP
-        ldiu      @CL1037,ar0           ; |1778| 
+        ldp       @CL1032,DP
+        ldiu      @CL1032,ar0           ; |1778| 
         ldfu      0.0000000000e+00,f0   ; |1778| 
         stf       f0,*ar0               ; |1778| 
 	.line	1742
 ;----------------------------------------------------------------------
-; 1779 | HSALT.FBLO2             = 0.0;                                         
+; 1779 | HSALT.FBHI1             = 0.0;                                         
 ;----------------------------------------------------------------------
-        ldp       @CL1038,DP
-        ldiu      @CL1038,ar0           ; |1779| 
+        ldp       @CL1033,DP
+        ldiu      @CL1033,ar0           ; |1779| 
         ldfu      0.0000000000e+00,f0   ; |1779| 
         stf       f0,*ar0               ; |1779| 
 	.line	1743
 ;----------------------------------------------------------------------
-; 1780 | HSALT.FBLO1             = 0.0;                                         
+; 1780 | HSALT.FBHI0             = 0.0;                                         
 ;----------------------------------------------------------------------
-        ldp       @CL1039,DP
-        ldiu      @CL1039,ar0           ; |1780| 
+        ldp       @CL1034,DP
+        ldiu      @CL1034,ar0           ; |1780| 
         ldfu      0.0000000000e+00,f0   ; |1780| 
         stf       f0,*ar0               ; |1780| 
 	.line	1744
 ;----------------------------------------------------------------------
-; 1781 | HSALT.FBLO0             = 0.0;                                         
+; 1781 | HSALT.FBLO3             = 0.0;                                         
 ;----------------------------------------------------------------------
-        ldp       @CL1040,DP
-        ldiu      @CL1040,ar0           ; |1781| 
+        ldp       @CL1035,DP
+        ldiu      @CL1035,ar0           ; |1781| 
         ldfu      0.0000000000e+00,f0   ; |1781| 
         stf       f0,*ar0               ; |1781| 
+	.line	1745
+;----------------------------------------------------------------------
+; 1782 | HSALT.FBLO2             = 0.0;                                         
+;----------------------------------------------------------------------
+        ldp       @CL1036,DP
+        ldiu      @CL1036,ar0           ; |1782| 
+        ldfu      0.0000000000e+00,f0   ; |1782| 
+        stf       f0,*ar0               ; |1782| 
+	.line	1746
+;----------------------------------------------------------------------
+; 1783 | HSALT.FBLO1             = 0.0;                                         
+;----------------------------------------------------------------------
+        ldp       @CL1037,DP
+        ldiu      @CL1037,ar0           ; |1783| 
+        ldfu      0.0000000000e+00,f0   ; |1783| 
+        stf       f0,*ar0               ; |1783| 
 	.line	1747
 ;----------------------------------------------------------------------
-; 1784 | for (i=0;i<SPADMAX;i++)                                                
+; 1784 | HSALT.FBLO0             = 0.0;                                         
 ;----------------------------------------------------------------------
-        ldiu      0,r0                  ; |1784| 
-        sti       r0,*+fp(1)            ; |1784| 
-        ldiu      0,r1                  ; |1785| 
-        cmpi      50,r0                 ; |1784| 
-        bge       L207                  ; |1784| 
-;*      Branch Occurs to L207           ; |1784| 
-L206:        
-	.line	1748
-;----------------------------------------------------------------------
-; 1785 | SPAD[i] = 0x0000;                                                      
-;----------------------------------------------------------------------
-        ldp       @CL1041,DP
-        ldiu      *+fp(1),ir0           ; |1785| 
-        ldiu      @CL1041,ar0           ; |1785| 
-        sti       r1,*+ar0(ir0)         ; |1785| 
-	.line	1747
-        ldiu      1,r0                  ; |1784| 
-        addi      *+fp(1),r0            ; |1784| 
-        sti       r0,*+fp(1)            ; |1784| 
-        cmpi      50,r0                 ; |1784| 
-        blt       L206                  ; |1784| 
-;*      Branch Occurs to L206           ; |1784| 
-L207:        
+        ldp       @CL1038,DP
+        ldiu      @CL1038,ar0           ; |1784| 
+        ldfu      0.0000000000e+00,f0   ; |1784| 
+        stf       f0,*ar0               ; |1784| 
 	.line	1750
 ;----------------------------------------------------------------------
-; 1787 | DIO_Autosave_on_pair_boundary = FALSE;                                 
+; 1787 | for (i=0;i<SPADMAX;i++)                                                
 ;----------------------------------------------------------------------
-        ldp       @CL1042,DP
-        ldiu      @CL1042,ar0           ; |1787| 
         ldiu      0,r0                  ; |1787| 
-        sti       r0,*ar0               ; |1787| 
-	.line	1752
+        sti       r0,*+fp(1)            ; |1787| 
+        ldiu      0,r1                  ; |1788| 
+        cmpi      50,r0                 ; |1787| 
+        bge       L207                  ; |1787| 
+;*      Branch Occurs to L207           ; |1787| 
+L206:        
+	.line	1751
 ;----------------------------------------------------------------------
-; 1789 | for (i=0;i<UART_MAX;i++)                                               
+; 1788 | SPAD[i] = 0x0000;                                                      
 ;----------------------------------------------------------------------
-        sti       r0,*+fp(1)            ; |1789| 
-        ldiu      0,r1                  ; |1793| 
-        ldiu      0,r2                  ; |1791| 
-        cmpi      8,r0                  ; |1789| 
-        bge       L209                  ; |1789| 
-;*      Branch Occurs to L209           ; |1789| 
-L208:        
-	.line	1754
+        ldp       @CL1039,DP
+        ldiu      *+fp(1),ir0           ; |1788| 
+        ldiu      @CL1039,ar0           ; |1788| 
+        sti       r1,*+ar0(ir0)         ; |1788| 
+	.line	1750
+        ldiu      1,r0                  ; |1787| 
+        addi      *+fp(1),r0            ; |1787| 
+        sti       r0,*+fp(1)            ; |1787| 
+        cmpi      50,r0                 ; |1787| 
+        blt       L206                  ; |1787| 
+;*      Branch Occurs to L206           ; |1787| 
+L207:        
+	.line	1753
 ;----------------------------------------------------------------------
-; 1791 | DIO_CLEAR_PORT_COUNT[i].val             = FALSE;                       
+; 1790 | DIO_Autosave_on_pair_boundary = FALSE;                                 
 ;----------------------------------------------------------------------
-        ldiu      *+fp(1),ir0           ; |1791| 
-        ldp       @CL1043,DP
-        mpyi      3,ir0                 ; |1791| 
-        ldiu      @CL1043,ar0           ; |1791| 
-        sti       r2,*+ar0(ir0)         ; |1791| 
+        ldp       @CL1040,DP
+        ldiu      @CL1040,ar0           ; |1790| 
+        ldiu      0,r0                  ; |1790| 
+        sti       r0,*ar0               ; |1790| 
 	.line	1755
 ;----------------------------------------------------------------------
-; 1792 | DIO_CLEAR_PORT_COUNT[i].vect    = (int*)CLEAR_PORT_COUNT;              
+; 1792 | for (i=0;i<UART_MAX;i++)                                               
 ;----------------------------------------------------------------------
-        ldp       @CL1044,DP
-        ldiu      @CL1044,ar0           ; |1792| 
-        ldiu      *+fp(1),ir0           ; |1792| 
-        ldp       @CL1045,DP
-        mpyi      3,ir0                 ; |1792| 
-        ldiu      @CL1045,r0            ; |1792| 
-        sti       r0,*+ar0(ir0)         ; |1792| 
-	.line	1756
+        sti       r0,*+fp(1)            ; |1792| 
+        ldiu      0,r1                  ; |1796| 
+        ldiu      0,r2                  ; |1794| 
+        cmpi      8,r0                  ; |1792| 
+        bge       L209                  ; |1792| 
+;*      Branch Occurs to L209           ; |1792| 
+L208:        
+	.line	1757
 ;----------------------------------------------------------------------
-; 1793 | DIO_CLEAR_PORT_COUNT[i].vect2   = NULL_PTR;                            
+; 1794 | DIO_CLEAR_PORT_COUNT[i].val             = FALSE;                       
 ;----------------------------------------------------------------------
-        ldp       @CL1046,DP
-        ldiu      *+fp(1),ir0           ; |1793| 
-        ldiu      @CL1046,ar0           ; |1793| 
-        mpyi      3,ir0                 ; |1793| 
-        sti       r1,*+ar0(ir0)         ; |1793| 
-	.line	1752
-        ldiu      1,r0                  ; |1789| 
-        addi      *+fp(1),r0            ; |1789| 
-        sti       r0,*+fp(1)            ; |1789| 
-        cmpi      8,r0                  ; |1789| 
-        blt       L208                  ; |1789| 
-;*      Branch Occurs to L208           ; |1789| 
-L209:        
+        ldiu      *+fp(1),ir0           ; |1794| 
+        ldp       @CL1041,DP
+        mpyi      3,ir0                 ; |1794| 
+        ldiu      @CL1041,ar0           ; |1794| 
+        sti       r2,*+ar0(ir0)         ; |1794| 
+	.line	1758
+;----------------------------------------------------------------------
+; 1795 | DIO_CLEAR_PORT_COUNT[i].vect    = (int*)CLEAR_PORT_COUNT;              
+;----------------------------------------------------------------------
+        ldp       @CL1042,DP
+        ldiu      @CL1042,ar0           ; |1795| 
+        ldiu      *+fp(1),ir0           ; |1795| 
+        ldp       @CL1043,DP
+        mpyi      3,ir0                 ; |1795| 
+        ldiu      @CL1043,r0            ; |1795| 
+        sti       r0,*+ar0(ir0)         ; |1795| 
 	.line	1759
 ;----------------------------------------------------------------------
-; 1796 | OIL_CALC_MODE                   = 0;                                   
+; 1796 | DIO_CLEAR_PORT_COUNT[i].vect2   = NULL_PTR;                            
 ;----------------------------------------------------------------------
-        ldp       @CL1047,DP
-        ldiu      @CL1047,ar0           ; |1796| 
-        ldiu      0,r0                  ; |1796| 
-        sti       r0,*ar0               ; |1796| 
-	.line	1760
-;----------------------------------------------------------------------
-; 1797 | OIL_CALC_MAX[0]                 = 0.0;                                 
-;----------------------------------------------------------------------
-        ldp       @CL1048,DP
-        ldiu      @CL1048,ar0           ; |1797| 
-        ldfu      0.0000000000e+00,f0   ; |1797| 
-        stf       f0,*ar0               ; |1797| 
-	.line	1761
-;----------------------------------------------------------------------
-; 1798 | OIL_CALC_MAX[1]                 = 0.0;                                 
-;----------------------------------------------------------------------
-        ldp       @CL1049,DP
-        ldiu      @CL1049,ar0           ; |1798| 
-        ldfu      0.0000000000e+00,f0   ; |1798| 
-        stf       f0,*ar0               ; |1798| 
+        ldp       @CL1044,DP
+        ldiu      *+fp(1),ir0           ; |1796| 
+        ldiu      @CL1044,ar0           ; |1796| 
+        mpyi      3,ir0                 ; |1796| 
+        sti       r1,*+ar0(ir0)         ; |1796| 
+	.line	1755
+        ldiu      1,r0                  ; |1792| 
+        addi      *+fp(1),r0            ; |1792| 
+        sti       r0,*+fp(1)            ; |1792| 
+        cmpi      8,r0                  ; |1792| 
+        blt       L208                  ; |1792| 
+;*      Branch Occurs to L208           ; |1792| 
+L209:        
 	.line	1762
 ;----------------------------------------------------------------------
-; 1799 | OIL_CALC_CUTOFF                 = OIL_CALC_MAX[0];                     
+; 1799 | OIL_CALC_MODE                   = 0;                                   
 ;----------------------------------------------------------------------
-        ldp       @CL1048,DP
-        ldiu      @CL1048,ar0           ; |1799| 
-        ldp       @CL1050,DP
-        ldiu      @CL1050,ar1           ; |1799| 
-        ldfu      *ar0,f0               ; |1799| 
-        stf       f0,*ar1               ; |1799| 
+        ldp       @CL1045,DP
+        ldiu      @CL1045,ar0           ; |1799| 
+        ldiu      0,r0                  ; |1799| 
+        sti       r0,*ar0               ; |1799| 
 	.line	1763
 ;----------------------------------------------------------------------
-; 1800 | OSC_OIL_CALC                    = 0;                                   
+; 1800 | OIL_CALC_MAX[0]                 = 0.0;                                 
 ;----------------------------------------------------------------------
-        ldp       @CL1051,DP
-        ldiu      @CL1051,ar0           ; |1800| 
-        ldiu      0,r0                  ; |1800| 
-        sti       r0,*ar0               ; |1800| 
+        ldp       @CL1046,DP
+        ldiu      @CL1046,ar0           ; |1800| 
+        ldfu      0.0000000000e+00,f0   ; |1800| 
+        stf       f0,*ar0               ; |1800| 
 	.line	1764
 ;----------------------------------------------------------------------
-; 1801 | OSC_WATER_CALC                  = 2;                                   
+; 1801 | OIL_CALC_MAX[1]                 = 0.0;                                 
 ;----------------------------------------------------------------------
-        ldp       @CL1052,DP
-        ldiu      @CL1052,ar0           ; |1801| 
-        ldiu      2,r0                  ; |1801| 
-        sti       r0,*ar0               ; |1801| 
+        ldp       @CL1047,DP
+        ldiu      @CL1047,ar0           ; |1801| 
+        ldfu      0.0000000000e+00,f0   ; |1801| 
+        stf       f0,*ar0               ; |1801| 
 	.line	1765
 ;----------------------------------------------------------------------
-; 1802 | OSWITCH                                 = 1;                           
+; 1802 | OIL_CALC_CUTOFF                 = OIL_CALC_MAX[0];                     
 ;----------------------------------------------------------------------
-        ldp       @CL1053,DP
-        ldiu      @CL1053,ar0           ; |1802| 
-        ldiu      1,r0                  ; |1802| 
-        sti       r0,*ar0               ; |1802| 
+        ldp       @CL1046,DP
+        ldiu      @CL1046,ar0           ; |1802| 
+        ldp       @CL1048,DP
+        ldiu      @CL1048,ar1           ; |1802| 
+        ldfu      *ar0,f0               ; |1802| 
+        stf       f0,*ar1               ; |1802| 
 	.line	1766
 ;----------------------------------------------------------------------
-; 1803 | EXTUNE                                  = 0;                           
+; 1803 | OSC_OIL_CALC                    = 0;                                   
 ;----------------------------------------------------------------------
-        ldp       @CL1054,DP
-        ldiu      @CL1054,ar0           ; |1803| 
+        ldp       @CL1049,DP
+        ldiu      @CL1049,ar0           ; |1803| 
         ldiu      0,r0                  ; |1803| 
         sti       r0,*ar0               ; |1803| 
 	.line	1767
 ;----------------------------------------------------------------------
-; 1804 | VT_SELECT                               = 0;                           
+; 1804 | OSC_WATER_CALC                  = 2;                                   
 ;----------------------------------------------------------------------
-        ldp       @CL545,DP
-        ldiu      @CL545,ar0            ; |1804| 
+        ldp       @CL1050,DP
+        ldiu      @CL1050,ar0           ; |1804| 
+        ldiu      2,r0                  ; |1804| 
         sti       r0,*ar0               ; |1804| 
 	.line	1768
 ;----------------------------------------------------------------------
-; 1805 | ENABLED[OSC_OIL_CALC]   = TRUE;                                        
+; 1805 | OSWITCH                                 = 1;                           
 ;----------------------------------------------------------------------
         ldp       @CL1051,DP
         ldiu      @CL1051,ar0           ; |1805| 
-        ldp       @CL566,DP
-        ldiu      *ar0,ir0              ; |1805| 
-        ldiu      @CL566,ar1            ; |1805| 
         ldiu      1,r0                  ; |1805| 
-        sti       r0,*+ar1(ir0)         ; |1805| 
+        sti       r0,*ar0               ; |1805| 
 	.line	1769
 ;----------------------------------------------------------------------
-; 1806 | ENABLED[OSC_WATER_CALC] = TRUE;                                        
+; 1806 | EXTUNE                                  = 0;                           
 ;----------------------------------------------------------------------
         ldp       @CL1052,DP
-        ldiu      @CL1052,ar1           ; |1806| 
-        ldp       @CL566,DP
-        ldiu      *ar1,ir0              ; |1806| 
-        ldiu      @CL566,ar0            ; |1806| 
-        sti       r0,*+ar0(ir0)         ; |1806| 
+        ldiu      @CL1052,ar0           ; |1806| 
+        ldiu      0,r0                  ; |1806| 
+        sti       r0,*ar0               ; |1806| 
 	.line	1770
 ;----------------------------------------------------------------------
-; 1807 | IRDA_ENABLE                     = 0x0001;                              
+; 1807 | VT_SELECT                               = 0;                           
 ;----------------------------------------------------------------------
-        ldp       @CL1055,DP
-        ldiu      @CL1055,ar0           ; |1807| 
+        ldp       @CL545,DP
+        ldiu      @CL545,ar0            ; |1807| 
         sti       r0,*ar0               ; |1807| 
 	.line	1771
 ;----------------------------------------------------------------------
-; 1808 | RLY[0].MODE                     = 0;                                   
+; 1808 | ENABLED[OSC_OIL_CALC]   = TRUE;                                        
 ;----------------------------------------------------------------------
-        ldp       @CL1056,DP
-        ldiu      @CL1056,ar0           ; |1808| 
-        ldiu      0,r0                  ; |1808| 
-        sti       r0,*ar0               ; |1808| 
+        ldp       @CL1049,DP
+        ldiu      @CL1049,ar0           ; |1808| 
+        ldp       @CL566,DP
+        ldiu      *ar0,ir0              ; |1808| 
+        ldiu      @CL566,ar1            ; |1808| 
+        ldiu      1,r0                  ; |1808| 
+        sti       r0,*+ar1(ir0)         ; |1808| 
 	.line	1772
 ;----------------------------------------------------------------------
-; 1809 | RLY[0].STATUS_MASK              = 0xFFFF;                              
+; 1809 | ENABLED[OSC_WATER_CALC] = TRUE;                                        
 ;----------------------------------------------------------------------
-        ldp       @CL1057,DP
-        ldiu      @CL1057,ar0           ; |1809| 
-        ldp       @CL301,DP
-        ldiu      @CL301,r0             ; |1809| 
-        sti       r0,*ar0               ; |1809| 
+        ldp       @CL1050,DP
+        ldiu      @CL1050,ar1           ; |1809| 
+        ldp       @CL566,DP
+        ldiu      *ar1,ir0              ; |1809| 
+        ldiu      @CL566,ar0            ; |1809| 
+        sti       r0,*+ar0(ir0)         ; |1809| 
 	.line	1773
 ;----------------------------------------------------------------------
-; 1810 | RLY[0].v.val                    = 0;                                   
+; 1810 | IRDA_ENABLE                     = 0x0001;                              
 ;----------------------------------------------------------------------
-        ldp       @CL1058,DP
-        ldiu      @CL1058,ar0           ; |1810| 
-        ldiu      0,r0                  ; |1810| 
+        ldp       @CL1053,DP
+        ldiu      @CL1053,ar0           ; |1810| 
         sti       r0,*ar0               ; |1810| 
 	.line	1774
 ;----------------------------------------------------------------------
-; 1811 | RLY[0].v.vect                   = (int*) &Set_RLY_Units;               
+; 1811 | RLY[0].MODE                     = 0;                                   
 ;----------------------------------------------------------------------
-        ldp       @CL1059,DP
-        ldiu      @CL1059,ar0           ; |1811| 
-        ldp       @CL1060,DP
-        ldiu      @CL1060,r0            ; |1811| 
+        ldp       @CL1054,DP
+        ldiu      @CL1054,ar0           ; |1811| 
+        ldiu      0,r0                  ; |1811| 
         sti       r0,*ar0               ; |1811| 
 	.line	1775
 ;----------------------------------------------------------------------
-; 1812 | RLY[0].ON.val                   = FALSE;                               
+; 1812 | RLY[0].STATUS_MASK              = 0xFFFF;                              
 ;----------------------------------------------------------------------
-        ldp       @CL1061,DP
-        ldiu      @CL1061,ar0           ; |1812| 
-        ldiu      0,r0                  ; |1812| 
+        ldp       @CL1055,DP
+        ldiu      @CL1055,ar0           ; |1812| 
+        ldp       @CL301,DP
+        ldiu      @CL301,r0             ; |1812| 
         sti       r0,*ar0               ; |1812| 
 	.line	1776
 ;----------------------------------------------------------------------
-; 1813 | RLY[0].ON.vect                  = NULL_PTR;                            
+; 1813 | RLY[0].v.val                    = 0;                                   
 ;----------------------------------------------------------------------
-        ldp       @CL1062,DP
-        ldiu      @CL1062,ar0           ; |1813| 
+        ldp       @CL1056,DP
+        ldiu      @CL1056,ar0           ; |1813| 
+        ldiu      0,r0                  ; |1813| 
         sti       r0,*ar0               ; |1813| 
+	.line	1777
+;----------------------------------------------------------------------
+; 1814 | RLY[0].v.vect                   = (int*) &Set_RLY_Units;               
+;----------------------------------------------------------------------
+        ldp       @CL1057,DP
+        ldiu      @CL1057,ar0           ; |1814| 
+        ldp       @CL1058,DP
+        ldiu      @CL1058,r0            ; |1814| 
+        sti       r0,*ar0               ; |1814| 
 	.line	1778
 ;----------------------------------------------------------------------
-; 1815 | v = HART_Lookup(RLY[0].v.val, &ui, (int*)&HART_DV_Table);              
+; 1815 | RLY[0].ON.val                   = FALSE;                               
 ;----------------------------------------------------------------------
-        ldp       @CL1058,DP
-        ldiu      @CL1058,ar0           ; |1815| 
-        ldp       @CL1064,DP
-        ldiu      fp,r2                 ; |1815| 
-        ldiu      @CL1064,r0            ; |1815| 
-        ldiu      *ar0,ar2              ; |1815| 
-        ldp       @CL1063,DP
-        ldiu      @CL1063,r3            ; |1815| 
-        addi      6,r2                  ; |1815| 
-        callu     r0                    ; far call to _HART_Lookup	; |1815| 
-                                        ; |1815| Far Call Occurs
-        sti       r0,*+fp(5)            ; |1815| 
+        ldp       @CL1059,DP
+        ldiu      @CL1059,ar0           ; |1815| 
+        ldiu      0,r0                  ; |1815| 
+        sti       r0,*ar0               ; |1815| 
 	.line	1779
 ;----------------------------------------------------------------------
-; 1816 | if ((v!=(VAR*)0) && (v!=&REG_DUMMY))                                   
+; 1816 | RLY[0].ON.vect                  = NULL_PTR;                            
 ;----------------------------------------------------------------------
-        cmpi      0,r0                  ; |1816| 
-        beq       L212                  ; |1816| 
-;*      Branch Occurs to L212           ; |1816| 
-        ldp       @CL18,DP
-        cmpi      @CL18,r0              ; |1816| 
-        beq       L212                  ; |1816| 
-;*      Branch Occurs to L212           ; |1816| 
+        ldp       @CL1060,DP
+        ldiu      @CL1060,ar0           ; |1816| 
+        sti       r0,*ar0               ; |1816| 
 	.line	1781
 ;----------------------------------------------------------------------
-; 1818 | RLY[0].setpoint = VAR_Get_Unit_Param(v, reg_direct_bmax, 0, 0);        
+; 1818 | v = HART_Lookup(RLY[0].v.val, &ui, (int*)&HART_DV_Table);              
+;----------------------------------------------------------------------
+        ldp       @CL1056,DP
+        ldiu      @CL1056,ar0           ; |1818| 
+        ldp       @CL1062,DP
+        ldiu      fp,r2                 ; |1818| 
+        ldiu      @CL1062,r0            ; |1818| 
+        ldiu      *ar0,ar2              ; |1818| 
+        ldp       @CL1061,DP
+        ldiu      @CL1061,r3            ; |1818| 
+        addi      6,r2                  ; |1818| 
+        callu     r0                    ; far call to _HART_Lookup	; |1818| 
+                                        ; |1818| Far Call Occurs
+        sti       r0,*+fp(5)            ; |1818| 
+	.line	1782
+;----------------------------------------------------------------------
+; 1819 | if ((v!=(VAR*)0) && (v!=&REG_DUMMY))                                   
+;----------------------------------------------------------------------
+        cmpi      0,r0                  ; |1819| 
+        beq       L212                  ; |1819| 
+;*      Branch Occurs to L212           ; |1819| 
+        ldp       @CL18,DP
+        cmpi      @CL18,r0              ; |1819| 
+        beq       L212                  ; |1819| 
+;*      Branch Occurs to L212           ; |1819| 
+	.line	1784
+;----------------------------------------------------------------------
+; 1821 | RLY[0].setpoint = VAR_Get_Unit_Param(v, reg_direct_bmax, 0, 0);        
 ;----------------------------------------------------------------------
         ldp       @CL351,DP
         ldiu      r0,ar2
-        ldiu      @CL351,r0             ; |1818| 
-        ldiu      0,rc                  ; |1818| 
+        ldiu      @CL351,r0             ; |1821| 
+        ldiu      0,rc                  ; |1821| 
         ldp       @CL353,DP
-        ldiu      0,r3                  ; |1818| 
-        ldiu      @CL353,r2             ; |1818| 
-        callu     r0                    ; far call to _VAR_Get_Unit_Param	; |1818| 
-                                        ; |1818| Far Call Occurs
+        ldiu      0,r3                  ; |1821| 
+        ldiu      @CL353,r2             ; |1821| 
+        callu     r0                    ; far call to _VAR_Get_Unit_Param	; |1821| 
+                                        ; |1821| Far Call Occurs
+        ldp       @CL1063,DP
+        ldiu      @CL1063,ar0           ; |1821| 
+        stf       f0,*ar0               ; |1821| 
+	.line	1785
+;----------------------------------------------------------------------
+; 1822 | RLY[0].class    = v->class;                                            
+;----------------------------------------------------------------------
+        ldp       @CL1064,DP
+        ldiu      *+fp(5),ar0           ; |1822| 
+        ldiu      @CL1064,ar1           ; |1822| 
+        ldiu      *+ar0(15),r0          ; |1822| 
+        sti       r0,*ar1               ; |1822| 
+	.line	1786
+;----------------------------------------------------------------------
+; 1823 | RLY[0].unit     = v->unit & 0xFF;                                      
+; 1825 | else                                                                   
+;----------------------------------------------------------------------
         ldp       @CL1065,DP
-        ldiu      @CL1065,ar0           ; |1818| 
-        stf       f0,*ar0               ; |1818| 
-	.line	1782
-;----------------------------------------------------------------------
-; 1819 | RLY[0].class    = v->class;                                            
-;----------------------------------------------------------------------
-        ldp       @CL1066,DP
-        ldiu      *+fp(5),ar0           ; |1819| 
-        ldiu      @CL1066,ar1           ; |1819| 
-        ldiu      *+ar0(15),r0          ; |1819| 
-        sti       r0,*ar1               ; |1819| 
-	.line	1783
-;----------------------------------------------------------------------
-; 1820 | RLY[0].unit     = v->unit & 0xFF;                                      
-; 1822 | else                                                                   
-;----------------------------------------------------------------------
-        ldp       @CL1067,DP
-        ldiu      *+fp(5),ar0           ; |1820| 
-        ldiu      255,r0                ; |1820| 
-        ldiu      @CL1067,ar1           ; |1820| 
-        and       *+ar0(13),r0          ; |1820| 
-        sti       r0,*ar1               ; |1820| 
+        ldiu      *+fp(5),ar0           ; |1823| 
+        ldiu      255,r0                ; |1823| 
+        ldiu      @CL1065,ar1           ; |1823| 
+        and       *+ar0(13),r0          ; |1823| 
+        sti       r0,*ar1               ; |1823| 
         bu        L213                  ; |37| 
 ;*      Branch Occurs to L213           ; |37| 
 L212:        
-	.line	1787
-;----------------------------------------------------------------------
-; 1824 | RLY[0].class    = c_volume_per_volume;                                 
-;----------------------------------------------------------------------
-        ldp       @CL1066,DP
-        ldiu      @CL1066,ar0           ; |1824| 
-        ldiu      88,r0                 ; |1824| 
-        sti       r0,*ar0               ; |1824| 
-	.line	1788
-;----------------------------------------------------------------------
-; 1825 | RLY[0].unit     = u_vpv_volume_percent & 0xFF;                         
-;----------------------------------------------------------------------
-        ldp       @CL1067,DP
-        ldiu      @CL1067,ar0           ; |1825| 
-        ldiu      149,r0                ; |1825| 
-        sti       r0,*ar0               ; |1825| 
-	.line	1789
-;----------------------------------------------------------------------
-; 1826 | RLY[0].setpoint = 100.0;                                               
-;----------------------------------------------------------------------
-        ldp       @CL1065,DP
-        ldiu      @CL1065,ar0           ; |1826| 
-        ldfu      1.0000000000e+02,f0   ; |1826| 
-        stf       f0,*ar0               ; |1826| 
 	.line	1790
 ;----------------------------------------------------------------------
-; 1827 | RLY[0].v.val    = -1;                                                  
+; 1827 | RLY[0].class    = c_volume_per_volume;                                 
 ;----------------------------------------------------------------------
-        ldp       @CL1058,DP
-        ldiu      @CL1058,ar0           ; |1827| 
-        ldiu      -1,r0                 ; |1827| 
+        ldp       @CL1064,DP
+        ldiu      @CL1064,ar0           ; |1827| 
+        ldiu      88,r0                 ; |1827| 
         sti       r0,*ar0               ; |1827| 
-L213:        
+	.line	1791
+;----------------------------------------------------------------------
+; 1828 | RLY[0].unit     = u_vpv_volume_percent & 0xFF;                         
+;----------------------------------------------------------------------
+        ldp       @CL1065,DP
+        ldiu      @CL1065,ar0           ; |1828| 
+        ldiu      149,r0                ; |1828| 
+        sti       r0,*ar0               ; |1828| 
+	.line	1792
+;----------------------------------------------------------------------
+; 1829 | RLY[0].setpoint = 100.0;                                               
+;----------------------------------------------------------------------
+        ldp       @CL1063,DP
+        ldiu      @CL1063,ar0           ; |1829| 
+        ldfu      1.0000000000e+02,f0   ; |1829| 
+        stf       f0,*ar0               ; |1829| 
 	.line	1793
 ;----------------------------------------------------------------------
-; 1830 | RLY[1].MODE             = 1;                                           
+; 1830 | RLY[0].v.val    = -1;                                                  
 ;----------------------------------------------------------------------
-        ldp       @CL1068,DP
-        ldiu      @CL1068,ar0           ; |1830| 
-        ldiu      1,r0                  ; |1830| 
+        ldp       @CL1056,DP
+        ldiu      @CL1056,ar0           ; |1830| 
+        ldiu      -1,r0                 ; |1830| 
         sti       r0,*ar0               ; |1830| 
-	.line	1794
-;----------------------------------------------------------------------
-; 1831 | RLY[1].STATUS_MASK      = 0xFFFF;                                      
-;----------------------------------------------------------------------
-        ldp       @CL1069,DP
-        ldiu      @CL1069,ar0           ; |1831| 
-        ldp       @CL301,DP
-        ldiu      @CL301,r0             ; |1831| 
-        sti       r0,*ar0               ; |1831| 
-	.line	1795
-;----------------------------------------------------------------------
-; 1832 | RLY[1].v.val            = 0;                                           
-;----------------------------------------------------------------------
-        ldp       @CL1070,DP
-        ldiu      @CL1070,ar0           ; |1832| 
-        ldiu      0,r0                  ; |1832| 
-        sti       r0,*ar0               ; |1832| 
+L213:        
 	.line	1796
 ;----------------------------------------------------------------------
-; 1833 | RLY[1].v.vect           = (int*) &Set_RLY_Units;                       
+; 1833 | RLY[1].MODE             = 1;                                           
 ;----------------------------------------------------------------------
-        ldp       @CL1071,DP
-        ldiu      @CL1071,ar0           ; |1833| 
-        ldp       @CL1060,DP
-        ldiu      @CL1060,r0            ; |1833| 
+        ldp       @CL1066,DP
+        ldiu      @CL1066,ar0           ; |1833| 
+        ldiu      1,r0                  ; |1833| 
         sti       r0,*ar0               ; |1833| 
 	.line	1797
 ;----------------------------------------------------------------------
-; 1834 | RLY[1].ON.val           = FALSE;                                       
+; 1834 | RLY[1].STATUS_MASK      = 0xFFFF;                                      
 ;----------------------------------------------------------------------
-        ldp       @CL1072,DP
-        ldiu      @CL1072,ar0           ; |1834| 
-        ldiu      0,r0                  ; |1834| 
+        ldp       @CL1067,DP
+        ldiu      @CL1067,ar0           ; |1834| 
+        ldp       @CL301,DP
+        ldiu      @CL301,r0             ; |1834| 
         sti       r0,*ar0               ; |1834| 
 	.line	1798
 ;----------------------------------------------------------------------
-; 1835 | RLY[1].ON.vect          = NULL_PTR;                                    
+; 1835 | RLY[1].v.val            = 0;                                           
 ;----------------------------------------------------------------------
-        ldp       @CL1073,DP
-        ldiu      @CL1073,ar0           ; |1835| 
+        ldp       @CL1068,DP
+        ldiu      @CL1068,ar0           ; |1835| 
+        ldiu      0,r0                  ; |1835| 
         sti       r0,*ar0               ; |1835| 
+	.line	1799
+;----------------------------------------------------------------------
+; 1836 | RLY[1].v.vect           = (int*) &Set_RLY_Units;                       
+;----------------------------------------------------------------------
+        ldp       @CL1069,DP
+        ldiu      @CL1069,ar0           ; |1836| 
+        ldp       @CL1058,DP
+        ldiu      @CL1058,r0            ; |1836| 
+        sti       r0,*ar0               ; |1836| 
 	.line	1800
 ;----------------------------------------------------------------------
-; 1837 | v = HART_Lookup(RLY[1].v.val, &ui, (int*)&HART_DV_Table);              
+; 1837 | RLY[1].ON.val           = FALSE;                                       
 ;----------------------------------------------------------------------
         ldp       @CL1070,DP
-        ldiu      fp,r2                 ; |1837| 
         ldiu      @CL1070,ar0           ; |1837| 
-        ldp       @CL1064,DP
-        ldiu      *ar0,ar2              ; |1837| 
-        ldiu      @CL1064,r0            ; |1837| 
-        ldp       @CL1063,DP
-        addi      6,r2                  ; |1837| 
-        ldiu      @CL1063,r3            ; |1837| 
-        callu     r0                    ; far call to _HART_Lookup	; |1837| 
-                                        ; |1837| Far Call Occurs
-        sti       r0,*+fp(5)            ; |1837| 
+        ldiu      0,r0                  ; |1837| 
+        sti       r0,*ar0               ; |1837| 
 	.line	1801
 ;----------------------------------------------------------------------
-; 1838 | if ((v!=(VAR*)0) && (v!=&REG_DUMMY))                                   
+; 1838 | RLY[1].ON.vect          = NULL_PTR;                                    
 ;----------------------------------------------------------------------
-        cmpi      0,r0                  ; |1838| 
-        beq       L216                  ; |1838| 
-;*      Branch Occurs to L216           ; |1838| 
-        ldp       @CL18,DP
-        cmpi      @CL18,r0              ; |1838| 
-        beq       L216                  ; |1838| 
-;*      Branch Occurs to L216           ; |1838| 
+        ldp       @CL1071,DP
+        ldiu      @CL1071,ar0           ; |1838| 
+        sti       r0,*ar0               ; |1838| 
 	.line	1803
 ;----------------------------------------------------------------------
-; 1840 | RLY[1].setpoint = VAR_Get_Unit_Param(v, reg_direct_bmax, 0, 0);        
+; 1840 | v = HART_Lookup(RLY[1].v.val, &ui, (int*)&HART_DV_Table);              
+;----------------------------------------------------------------------
+        ldp       @CL1068,DP
+        ldiu      fp,r2                 ; |1840| 
+        ldiu      @CL1068,ar0           ; |1840| 
+        ldp       @CL1062,DP
+        ldiu      *ar0,ar2              ; |1840| 
+        ldiu      @CL1062,r0            ; |1840| 
+        ldp       @CL1061,DP
+        addi      6,r2                  ; |1840| 
+        ldiu      @CL1061,r3            ; |1840| 
+        callu     r0                    ; far call to _HART_Lookup	; |1840| 
+                                        ; |1840| Far Call Occurs
+        sti       r0,*+fp(5)            ; |1840| 
+	.line	1804
+;----------------------------------------------------------------------
+; 1841 | if ((v!=(VAR*)0) && (v!=&REG_DUMMY))                                   
+;----------------------------------------------------------------------
+        cmpi      0,r0                  ; |1841| 
+        beq       L216                  ; |1841| 
+;*      Branch Occurs to L216           ; |1841| 
+        ldp       @CL18,DP
+        cmpi      @CL18,r0              ; |1841| 
+        beq       L216                  ; |1841| 
+;*      Branch Occurs to L216           ; |1841| 
+	.line	1806
+;----------------------------------------------------------------------
+; 1843 | RLY[1].setpoint = VAR_Get_Unit_Param(v, reg_direct_bmax, 0, 0);        
 ;----------------------------------------------------------------------
         ldp       @CL351,DP
         ldiu      r0,ar2
-        ldiu      @CL351,r0             ; |1840| 
-        ldiu      0,rc                  ; |1840| 
+        ldiu      @CL351,r0             ; |1843| 
+        ldiu      0,rc                  ; |1843| 
         ldp       @CL353,DP
-        ldiu      0,r3                  ; |1840| 
-        ldiu      @CL353,r2             ; |1840| 
-        callu     r0                    ; far call to _VAR_Get_Unit_Param	; |1840| 
-                                        ; |1840| Far Call Occurs
+        ldiu      0,r3                  ; |1843| 
+        ldiu      @CL353,r2             ; |1843| 
+        callu     r0                    ; far call to _VAR_Get_Unit_Param	; |1843| 
+                                        ; |1843| Far Call Occurs
+        ldp       @CL1072,DP
+        ldiu      @CL1072,ar0           ; |1843| 
+        stf       f0,*ar0               ; |1843| 
+	.line	1807
+;----------------------------------------------------------------------
+; 1844 | RLY[1].class    = v->class;                                            
+;----------------------------------------------------------------------
+        ldp       @CL1073,DP
+        ldiu      *+fp(5),ar1           ; |1844| 
+        ldiu      @CL1073,ar0           ; |1844| 
+        ldiu      *+ar1(15),r0          ; |1844| 
+        sti       r0,*ar0               ; |1844| 
+	.line	1808
+;----------------------------------------------------------------------
+; 1845 | RLY[1].unit     = v->unit;                                             
+; 1847 | else                                                                   
+;----------------------------------------------------------------------
         ldp       @CL1074,DP
-        ldiu      @CL1074,ar0           ; |1840| 
-        stf       f0,*ar0               ; |1840| 
-	.line	1804
-;----------------------------------------------------------------------
-; 1841 | RLY[1].class    = v->class;                                            
-;----------------------------------------------------------------------
-        ldp       @CL1075,DP
-        ldiu      *+fp(5),ar1           ; |1841| 
-        ldiu      @CL1075,ar0           ; |1841| 
-        ldiu      *+ar1(15),r0          ; |1841| 
-        sti       r0,*ar0               ; |1841| 
-	.line	1805
-;----------------------------------------------------------------------
-; 1842 | RLY[1].unit     = v->unit;                                             
-; 1844 | else                                                                   
-;----------------------------------------------------------------------
-        ldp       @CL1076,DP
-        ldiu      *+fp(5),ar1           ; |1842| 
-        ldiu      @CL1076,ar0           ; |1842| 
-        ldiu      *+ar1(13),r0          ; |1842| 
-        sti       r0,*ar0               ; |1842| 
+        ldiu      *+fp(5),ar1           ; |1845| 
+        ldiu      @CL1074,ar0           ; |1845| 
+        ldiu      *+ar1(13),r0          ; |1845| 
+        sti       r0,*ar0               ; |1845| 
         bu        L217                  ; |37| 
 ;*      Branch Occurs to L217           ; |37| 
 L216:        
-	.line	1809
-;----------------------------------------------------------------------
-; 1846 | RLY[1].class    = c_volume_per_volume;                                 
-;----------------------------------------------------------------------
-        ldp       @CL1075,DP
-        ldiu      @CL1075,ar0           ; |1846| 
-        ldiu      88,r0                 ; |1846| 
-        sti       r0,*ar0               ; |1846| 
-	.line	1810
-;----------------------------------------------------------------------
-; 1847 | RLY[1].unit     = u_vpv_volume_percent;                                
-;----------------------------------------------------------------------
-        ldp       @CL1076,DP
-        ldiu      @CL1076,ar0           ; |1847| 
-        ldiu      149,r0                ; |1847| 
-        sti       r0,*ar0               ; |1847| 
-	.line	1811
-;----------------------------------------------------------------------
-; 1848 | RLY[1].setpoint = 100.0;                                               
-;----------------------------------------------------------------------
-        ldp       @CL1074,DP
-        ldiu      @CL1074,ar0           ; |1848| 
-        ldfu      1.0000000000e+02,f0   ; |1848| 
-        stf       f0,*ar0               ; |1848| 
 	.line	1812
 ;----------------------------------------------------------------------
-; 1849 | RLY[1].v.val    = -1;                                                  
+; 1849 | RLY[1].class    = c_volume_per_volume;                                 
 ;----------------------------------------------------------------------
-        ldp       @CL1070,DP
-        ldiu      @CL1070,ar0           ; |1849| 
-        ldiu      -1,r0                 ; |1849| 
+        ldp       @CL1073,DP
+        ldiu      @CL1073,ar0           ; |1849| 
+        ldiu      88,r0                 ; |1849| 
         sti       r0,*ar0               ; |1849| 
+	.line	1813
+;----------------------------------------------------------------------
+; 1850 | RLY[1].unit     = u_vpv_volume_percent;                                
+;----------------------------------------------------------------------
+        ldp       @CL1074,DP
+        ldiu      @CL1074,ar0           ; |1850| 
+        ldiu      149,r0                ; |1850| 
+        sti       r0,*ar0               ; |1850| 
+	.line	1814
+;----------------------------------------------------------------------
+; 1851 | RLY[1].setpoint = 100.0;                                               
+;----------------------------------------------------------------------
+        ldp       @CL1072,DP
+        ldiu      @CL1072,ar0           ; |1851| 
+        ldfu      1.0000000000e+02,f0   ; |1851| 
+        stf       f0,*ar0               ; |1851| 
+	.line	1815
+;----------------------------------------------------------------------
+; 1852 | RLY[1].v.val    = -1;                                                  
+;----------------------------------------------------------------------
+        ldp       @CL1068,DP
+        ldiu      @CL1068,ar0           ; |1852| 
+        ldiu      -1,r0                 ; |1852| 
+        sti       r0,*ar0               ; |1852| 
 L217:        
-	.line	1816
-;----------------------------------------------------------------------
-; 1853 | Density_Correction_Mode.val  = 0;                                      
-;----------------------------------------------------------------------
-        ldp       @CL1077,DP
-        ldiu      @CL1077,ar0           ; |1853| 
-        ldiu      0,r0                  ; |1853| 
-        sti       r0,*ar0               ; |1853| 
-	.line	1817
-;----------------------------------------------------------------------
-; 1854 | Density_Correction_Mode.vect = (int*)Set_Density_Correction;           
-;----------------------------------------------------------------------
-        ldp       @CL1078,DP
-        ldiu      @CL1078,ar0           ; |1854| 
-        ldp       @CL1079,DP
-        ldiu      @CL1079,r0            ; |1854| 
-        sti       r0,*ar0               ; |1854| 
-	.line	1818
-;----------------------------------------------------------------------
-; 1855 | DCM_PORT.val                             = 3;                          
-;----------------------------------------------------------------------
-        ldp       @CL1080,DP
-        ldiu      @CL1080,ar0           ; |1855| 
-        ldiu      3,r0                  ; |1855| 
-        sti       r0,*ar0               ; |1855| 
 	.line	1819
 ;----------------------------------------------------------------------
-; 1856 | DCM_PORT.vect                            = (int*)Set_Density_Correction
-;     | ;                                                                      
+; 1856 | Density_Correction_Mode.val  = 0;                                      
 ;----------------------------------------------------------------------
-        ldp       @CL1081,DP
-        ldiu      @CL1081,ar0           ; |1856| 
-        ldp       @CL1079,DP
-        ldiu      @CL1079,r0            ; |1856| 
+        ldp       @CL1075,DP
+        ldiu      @CL1075,ar0           ; |1856| 
+        ldiu      0,r0                  ; |1856| 
         sti       r0,*ar0               ; |1856| 
 	.line	1820
 ;----------------------------------------------------------------------
-; 1857 | DensityCF_D0                             = 0.0;                        
+; 1857 | Density_Correction_Mode.vect = (int*)Set_Density_Correction;           
 ;----------------------------------------------------------------------
-        ldp       @CL1082,DP
-        ldiu      @CL1082,ar0           ; |1857| 
-        ldfu      0.0000000000e+00,f0   ; |1857| 
-        stf       f0,*ar0               ; |1857| 
+        ldp       @CL1076,DP
+        ldiu      @CL1076,ar0           ; |1857| 
+        ldp       @CL1077,DP
+        ldiu      @CL1077,r0            ; |1857| 
+        sti       r0,*ar0               ; |1857| 
 	.line	1821
 ;----------------------------------------------------------------------
-; 1858 | DensityCFD_D1                            = 1.0;                        
+; 1858 | DCM_PORT.val                             = 3;                          
 ;----------------------------------------------------------------------
-        ldp       @CL1083,DP
-        ldiu      @CL1083,ar0           ; |1858| 
-        ldfu      1.0000000000e+00,f0   ; |1858| 
-        stf       f0,*ar0               ; |1858| 
+        ldp       @CL1078,DP
+        ldiu      @CL1078,ar0           ; |1858| 
+        ldiu      3,r0                  ; |1858| 
+        sti       r0,*ar0               ; |1858| 
 	.line	1822
 ;----------------------------------------------------------------------
-; 1859 | DensityCFT_D1                            = 0.0;                        
+; 1859 | DCM_PORT.vect                            = (int*)Set_Density_Correction
+;     | ;                                                                      
 ;----------------------------------------------------------------------
-        ldp       @CL1084,DP
-        ldiu      @CL1084,ar0           ; |1859| 
-        ldfu      0.0000000000e+00,f0   ; |1859| 
-        stf       f0,*ar0               ; |1859| 
-	.line	1826
+        ldp       @CL1079,DP
+        ldiu      @CL1079,ar0           ; |1859| 
+        ldp       @CL1077,DP
+        ldiu      @CL1077,r0            ; |1859| 
+        sti       r0,*ar0               ; |1859| 
+	.line	1823
 ;----------------------------------------------------------------------
-; 1863 | VAR_Initialize(&Density_D3, c_analytical, u_mfgr_specific_none, 100.0,
-;     | 10000.0, var_no_bound|var_no_alarm);                                   
+; 1860 | DensityCF_D0                             = 0.0;                        
 ;----------------------------------------------------------------------
-        ldiu      81,rc                 ; |1863| 
-        ldp       @CL20,DP
-        ldiu      6,re                  ; |1863| 
-        ldiu      @CL20,r0              ; |1863| 
-        ldp       @CL57,DP
-        ldiu      240,rs                ; |1863| 
-        ldfu      @CL57,f3              ; |1863| 
-        ldp       @CL1085,DP
-        ldfu      1.0000000000e+02,f2   ; |1863| 
-        ldiu      @CL1085,ar2           ; |1863| 
-        callu     r0                    ; far call to _VAR_Initialize	; |1863| 
-                                        ; |1863| Far Call Occurs
-	.line	1827
+        ldp       @CL1080,DP
+        ldiu      @CL1080,ar0           ; |1860| 
+        ldfu      0.0000000000e+00,f0   ; |1860| 
+        stf       f0,*ar0               ; |1860| 
+	.line	1824
 ;----------------------------------------------------------------------
-; 1864 | sprintf(Density_D3.name, "Density Adj 3rd Ord.");       //R344         
+; 1861 | DensityCFD_D1                            = 1.0;                        
 ;----------------------------------------------------------------------
-        ldp       @CL1086,DP
-        ldiu      @CL1086,r1            ; |1864| 
-        ldp       @CL24,DP
-        ldiu      @CL24,r0              ; |1864| 
-        ldp       @CL1087,DP
-        ldiu      @CL1087,ar2           ; |1864| 
-        push      r1                    ; |1864| 
-        callu     r0                    ; far call to _sprintf	; |1864| 
-                                        ; |1864| Far Call Occurs
-        subi      1,sp                  ; |1864| 
-	.line	1828
+        ldp       @CL1081,DP
+        ldiu      @CL1081,ar0           ; |1861| 
+        ldfu      1.0000000000e+00,f0   ; |1861| 
+        stf       f0,*ar0               ; |1861| 
+	.line	1825
 ;----------------------------------------------------------------------
-; 1865 | Density_D3.name_r = 344;                                               
+; 1862 | DensityCFT_D1                            = 0.0;                        
 ;----------------------------------------------------------------------
-        ldp       @CL1088,DP
-        ldiu      @CL1088,ar0           ; |1865| 
-        ldiu      344,r0                ; |1865| 
-        sti       r0,*ar0               ; |1865| 
+        ldp       @CL1082,DP
+        ldiu      @CL1082,ar0           ; |1862| 
+        ldfu      0.0000000000e+00,f0   ; |1862| 
+        stf       f0,*ar0               ; |1862| 
 	.line	1829
 ;----------------------------------------------------------------------
-; 1866 | VAR_Update(&Density_D3, 0.00, 0, 0);                                   
+; 1866 | VAR_Initialize(&Density_D3, c_analytical, u_mfgr_specific_none, 100.0,
+;     | 10000.0, var_no_bound|var_no_alarm);                                   
 ;----------------------------------------------------------------------
-        ldp       @CL32,DP
-        ldiu      @CL32,r0              ; |1866| 
-        ldp       @CL31+0,DP
-        ldfu      @CL31+0,f2            ; |1866| 40b float hi half
-        ldp       @CL31+1,DP
-        ldiu      @CL31+1,r2            ; |1866| 40b float lo half
-        ldp       @CL1085,DP
-        ldiu      0,rc                  ; |1866| 
-        ldiu      @CL1085,ar2           ; |1866| 
-        ldiu      0,r3                  ; |1866| 
-        callu     r0                    ; far call to _VAR_Update	; |1866| 
+        ldiu      81,rc                 ; |1866| 
+        ldp       @CL20,DP
+        ldiu      6,re                  ; |1866| 
+        ldiu      @CL20,r0              ; |1866| 
+        ldp       @CL57,DP
+        ldiu      240,rs                ; |1866| 
+        ldfu      @CL57,f3              ; |1866| 
+        ldp       @CL1083,DP
+        ldfu      1.0000000000e+02,f2   ; |1866| 
+        ldiu      @CL1083,ar2           ; |1866| 
+        callu     r0                    ; far call to _VAR_Initialize	; |1866| 
                                         ; |1866| Far Call Occurs
+	.line	1830
+;----------------------------------------------------------------------
+; 1867 | sprintf(Density_D3.name, "Density Adj 3rd Ord.");       //R344         
+;----------------------------------------------------------------------
+        ldp       @CL1084,DP
+        ldiu      @CL1084,r1            ; |1867| 
+        ldp       @CL24,DP
+        ldiu      @CL24,r0              ; |1867| 
+        ldp       @CL1085,DP
+        ldiu      @CL1085,ar2           ; |1867| 
+        push      r1                    ; |1867| 
+        callu     r0                    ; far call to _sprintf	; |1867| 
+                                        ; |1867| Far Call Occurs
+        subi      1,sp                  ; |1867| 
+	.line	1831
+;----------------------------------------------------------------------
+; 1868 | Density_D3.name_r = 344;                                               
+;----------------------------------------------------------------------
+        ldp       @CL1086,DP
+        ldiu      @CL1086,ar0           ; |1868| 
+        ldiu      344,r0                ; |1868| 
+        sti       r0,*ar0               ; |1868| 
 	.line	1832
 ;----------------------------------------------------------------------
-; 1869 | VAR_Initialize(&Density_D2, c_analytical, u_mfgr_specific_none, 100.0,
+; 1869 | VAR_Update(&Density_D3, 0.00, 0, 0);                                   
+;----------------------------------------------------------------------
+        ldp       @CL32,DP
+        ldiu      @CL32,r0              ; |1869| 
+        ldp       @CL31+0,DP
+        ldfu      @CL31+0,f2            ; |1869| 40b float hi half
+        ldp       @CL31+1,DP
+        ldiu      @CL31+1,r2            ; |1869| 40b float lo half
+        ldp       @CL1083,DP
+        ldiu      0,rc                  ; |1869| 
+        ldiu      @CL1083,ar2           ; |1869| 
+        ldiu      0,r3                  ; |1869| 
+        callu     r0                    ; far call to _VAR_Update	; |1869| 
+                                        ; |1869| Far Call Occurs
+	.line	1835
+;----------------------------------------------------------------------
+; 1872 | VAR_Initialize(&Density_D2, c_analytical, u_mfgr_specific_none, 100.0,
 ;     | 10000.0, var_no_bound|var_no_alarm);                                   
 ;----------------------------------------------------------------------
         ldp       @CL20,DP
-        ldiu      @CL20,r0              ; |1869| 
+        ldiu      @CL20,r0              ; |1872| 
         ldp       @CL57,DP
-        ldiu      81,rc                 ; |1869| 
-        ldfu      @CL57,f3              ; |1869| 
-        ldfu      1.0000000000e+02,f2   ; |1869| 
-        ldp       @CL1089,DP
-        ldiu      6,re                  ; |1869| 
-        ldiu      240,rs                ; |1869| 
-        ldiu      @CL1089,ar2           ; |1869| 
-        callu     r0                    ; far call to _VAR_Initialize	; |1869| 
-                                        ; |1869| Far Call Occurs
-	.line	1833
+        ldiu      81,rc                 ; |1872| 
+        ldfu      @CL57,f3              ; |1872| 
+        ldfu      1.0000000000e+02,f2   ; |1872| 
+        ldp       @CL1087,DP
+        ldiu      6,re                  ; |1872| 
+        ldiu      240,rs                ; |1872| 
+        ldiu      @CL1087,ar2           ; |1872| 
+        callu     r0                    ; far call to _VAR_Initialize	; |1872| 
+                                        ; |1872| Far Call Occurs
+	.line	1836
 ;----------------------------------------------------------------------
-; 1870 | sprintf(Density_D2.name, "Density Adj 2nd Ord.");       //R345         
+; 1873 | sprintf(Density_D2.name, "Density Adj 2nd Ord.");       //R345         
+;----------------------------------------------------------------------
+        ldp       @CL1088,DP
+        ldiu      @CL1088,r1            ; |1873| 
+        ldp       @CL24,DP
+        ldiu      @CL24,r0              ; |1873| 
+        ldp       @CL1089,DP
+        ldiu      @CL1089,ar2           ; |1873| 
+        push      r1                    ; |1873| 
+        callu     r0                    ; far call to _sprintf	; |1873| 
+                                        ; |1873| Far Call Occurs
+        subi      1,sp                  ; |1873| 
+	.line	1837
+;----------------------------------------------------------------------
+; 1874 | Density_D2.name_r = 345;                                               
 ;----------------------------------------------------------------------
         ldp       @CL1090,DP
-        ldiu      @CL1090,r1            ; |1870| 
-        ldp       @CL24,DP
-        ldiu      @CL24,r0              ; |1870| 
-        ldp       @CL1091,DP
-        ldiu      @CL1091,ar2           ; |1870| 
-        push      r1                    ; |1870| 
-        callu     r0                    ; far call to _sprintf	; |1870| 
-                                        ; |1870| Far Call Occurs
-        subi      1,sp                  ; |1870| 
-	.line	1834
+        ldiu      @CL1090,ar0           ; |1874| 
+        ldiu      345,r0                ; |1874| 
+        sti       r0,*ar0               ; |1874| 
+	.line	1838
 ;----------------------------------------------------------------------
-; 1871 | Density_D2.name_r = 345;                                               
-;----------------------------------------------------------------------
-        ldp       @CL1092,DP
-        ldiu      @CL1092,ar0           ; |1871| 
-        ldiu      345,r0                ; |1871| 
-        sti       r0,*ar0               ; |1871| 
-	.line	1835
-;----------------------------------------------------------------------
-; 1872 | VAR_Update(&Density_D2, 0.00, 0, 0);                                   
+; 1875 | VAR_Update(&Density_D2, 0.00, 0, 0);                                   
 ;----------------------------------------------------------------------
         ldp       @CL32,DP
-        ldiu      @CL32,r0              ; |1872| 
+        ldiu      @CL32,r0              ; |1875| 
         ldp       @CL31+0,DP
-        ldfu      @CL31+0,f2            ; |1872| 40b float hi half
+        ldfu      @CL31+0,f2            ; |1875| 40b float hi half
         ldp       @CL31+1,DP
-        ldiu      @CL31+1,r2            ; |1872| 40b float lo half
-        ldiu      0,rc                  ; |1872| 
-        ldp       @CL1089,DP
-        ldiu      0,r3                  ; |1872| 
-        ldiu      @CL1089,ar2           ; |1872| 
-        callu     r0                    ; far call to _VAR_Update	; |1872| 
-                                        ; |1872| Far Call Occurs
-	.line	1839
+        ldiu      @CL31+1,r2            ; |1875| 40b float lo half
+        ldiu      0,rc                  ; |1875| 
+        ldp       @CL1087,DP
+        ldiu      0,r3                  ; |1875| 
+        ldiu      @CL1087,ar2           ; |1875| 
+        callu     r0                    ; far call to _VAR_Update	; |1875| 
+                                        ; |1875| Far Call Occurs
+	.line	1842
 ;----------------------------------------------------------------------
-; 1876 | VAR_Initialize(&Density_D1, c_analytical, u_mfgr_specific_perc_per_API_
+; 1879 | VAR_Initialize(&Density_D1, c_analytical, u_mfgr_specific_perc_per_API_
 ;     | 60F, 100.0, 10000.0, var_no_bound|var_no_alarm);                       
 ;----------------------------------------------------------------------
         ldp       @CL20,DP
-        ldiu      @CL20,r0              ; |1876| 
+        ldiu      @CL20,r0              ; |1879| 
         ldp       @CL57,DP
-        ldfu      @CL57,f3              ; |1876| 
-        ldp       @CL1093,DP
-        ldiu      @CL1093,ar2           ; |1876| 
-        ldiu      81,rc                 ; |1876| 
-        ldiu      6,re                  ; |1876| 
-        ldiu      246,rs                ; |1876| 
-        ldfu      1.0000000000e+02,f2   ; |1876| 
-        callu     r0                    ; far call to _VAR_Initialize	; |1876| 
-                                        ; |1876| Far Call Occurs
-	.line	1840
+        ldfu      @CL57,f3              ; |1879| 
+        ldp       @CL1091,DP
+        ldiu      @CL1091,ar2           ; |1879| 
+        ldiu      81,rc                 ; |1879| 
+        ldiu      6,re                  ; |1879| 
+        ldiu      246,rs                ; |1879| 
+        ldfu      1.0000000000e+02,f2   ; |1879| 
+        callu     r0                    ; far call to _VAR_Initialize	; |1879| 
+                                        ; |1879| Far Call Occurs
+	.line	1843
 ;----------------------------------------------------------------------
-; 1877 | sprintf(Density_D1.name, "Density Adj Slope");  //R346                 
+; 1880 | sprintf(Density_D1.name, "Density Adj Slope");  //R346                 
+;----------------------------------------------------------------------
+        ldp       @CL1092,DP
+        ldiu      @CL1092,r1            ; |1880| 
+        ldp       @CL24,DP
+        ldiu      @CL24,r0              ; |1880| 
+        ldp       @CL1093,DP
+        ldiu      @CL1093,ar2           ; |1880| 
+        push      r1                    ; |1880| 
+        callu     r0                    ; far call to _sprintf	; |1880| 
+                                        ; |1880| Far Call Occurs
+        subi      1,sp                  ; |1880| 
+	.line	1844
+;----------------------------------------------------------------------
+; 1881 | Density_D1.name_r = 346;                                               
 ;----------------------------------------------------------------------
         ldp       @CL1094,DP
-        ldiu      @CL1094,r1            ; |1877| 
-        ldp       @CL24,DP
-        ldiu      @CL24,r0              ; |1877| 
-        ldp       @CL1095,DP
-        ldiu      @CL1095,ar2           ; |1877| 
-        push      r1                    ; |1877| 
-        callu     r0                    ; far call to _sprintf	; |1877| 
-                                        ; |1877| Far Call Occurs
-        subi      1,sp                  ; |1877| 
-	.line	1841
-;----------------------------------------------------------------------
-; 1878 | Density_D1.name_r = 346;                                               
-;----------------------------------------------------------------------
-        ldp       @CL1096,DP
-        ldiu      @CL1096,ar0           ; |1878| 
-        ldiu      346,r0                ; |1878| 
-        sti       r0,*ar0               ; |1878| 
-	.line	1842
-;----------------------------------------------------------------------
-; 1879 | VAR_Update(&Density_D1, 0.16, 0, 0);                                   
-;----------------------------------------------------------------------
-        ldp       @CL32,DP
-        ldiu      @CL32,r0              ; |1879| 
-        ldp       @CL1097+0,DP
-        ldfu      @CL1097+0,f2          ; |1879| 40b float hi half
-        ldp       @CL1097+1,DP
-        ldiu      0,rc                  ; |1879| 
-        ldiu      @CL1097+1,r2          ; |1879| 40b float lo half
-        ldp       @CL1093,DP
-        ldiu      0,r3                  ; |1879| 
-        ldiu      @CL1093,ar2           ; |1879| 
-        callu     r0                    ; far call to _VAR_Update	; |1879| 
-                                        ; |1879| Far Call Occurs
+        ldiu      @CL1094,ar0           ; |1881| 
+        ldiu      346,r0                ; |1881| 
+        sti       r0,*ar0               ; |1881| 
 	.line	1845
 ;----------------------------------------------------------------------
-; 1882 | VAR_Initialize(&Density_D0, c_analytical, u_ana_percent, 100.0, 10000.0
+; 1882 | VAR_Update(&Density_D1, 0.16, 0, 0);                                   
+;----------------------------------------------------------------------
+        ldp       @CL32,DP
+        ldiu      @CL32,r0              ; |1882| 
+        ldp       @CL1095+0,DP
+        ldfu      @CL1095+0,f2          ; |1882| 40b float hi half
+        ldp       @CL1095+1,DP
+        ldiu      0,rc                  ; |1882| 
+        ldiu      @CL1095+1,r2          ; |1882| 40b float lo half
+        ldp       @CL1091,DP
+        ldiu      0,r3                  ; |1882| 
+        ldiu      @CL1091,ar2           ; |1882| 
+        callu     r0                    ; far call to _VAR_Update	; |1882| 
+                                        ; |1882| Far Call Occurs
+	.line	1848
+;----------------------------------------------------------------------
+; 1885 | VAR_Initialize(&Density_D0, c_analytical, u_ana_percent, 100.0, 10000.0
 ;     | , var_no_bound|var_no_alarm);                                          
 ;----------------------------------------------------------------------
         ldp       @CL20,DP
-        ldiu      @CL20,r0              ; |1882| 
+        ldiu      @CL20,r0              ; |1885| 
         ldp       @CL57,DP
-        ldfu      @CL57,f3              ; |1882| 
-        ldiu      81,rc                 ; |1882| 
-        ldfu      1.0000000000e+02,f2   ; |1882| 
-        ldp       @CL1098,DP
-        ldiu      6,re                  ; |1882| 
-        ldiu      57,rs                 ; |1882| 
-        ldiu      @CL1098,ar2           ; |1882| 
-        callu     r0                    ; far call to _VAR_Initialize	; |1882| 
-                                        ; |1882| Far Call Occurs
-	.line	1846
+        ldfu      @CL57,f3              ; |1885| 
+        ldiu      81,rc                 ; |1885| 
+        ldfu      1.0000000000e+02,f2   ; |1885| 
+        ldp       @CL1096,DP
+        ldiu      6,re                  ; |1885| 
+        ldiu      57,rs                 ; |1885| 
+        ldiu      @CL1096,ar2           ; |1885| 
+        callu     r0                    ; far call to _VAR_Initialize	; |1885| 
+                                        ; |1885| Far Call Occurs
+	.line	1849
 ;----------------------------------------------------------------------
-; 1883 | sprintf(Density_D0.name, "Density Adj Offset"); //R347                 
+; 1886 | sprintf(Density_D0.name, "Density Adj Offset"); //R347                 
+;----------------------------------------------------------------------
+        ldp       @CL1097,DP
+        ldiu      @CL1097,r1            ; |1886| 
+        ldp       @CL24,DP
+        ldiu      @CL24,r0              ; |1886| 
+        ldp       @CL1098,DP
+        push      r1                    ; |1886| 
+        ldiu      @CL1098,ar2           ; |1886| 
+        callu     r0                    ; far call to _sprintf	; |1886| 
+                                        ; |1886| Far Call Occurs
+        subi      1,sp                  ; |1886| 
+	.line	1850
+;----------------------------------------------------------------------
+; 1887 | Density_D0.name_r = 347;                                               
 ;----------------------------------------------------------------------
         ldp       @CL1099,DP
-        ldiu      @CL1099,r1            ; |1883| 
-        ldp       @CL24,DP
-        ldiu      @CL24,r0              ; |1883| 
-        ldp       @CL1100,DP
-        push      r1                    ; |1883| 
-        ldiu      @CL1100,ar2           ; |1883| 
-        callu     r0                    ; far call to _sprintf	; |1883| 
-                                        ; |1883| Far Call Occurs
-        subi      1,sp                  ; |1883| 
-	.line	1847
-;----------------------------------------------------------------------
-; 1884 | Density_D0.name_r = 347;                                               
-;----------------------------------------------------------------------
-        ldp       @CL1101,DP
-        ldiu      @CL1101,ar0           ; |1884| 
-        ldiu      347,r0                ; |1884| 
-        sti       r0,*ar0               ; |1884| 
-	.line	1848
-;----------------------------------------------------------------------
-; 1885 | VAR_Update(&Density_D0, 0.0, 0, 0);                                    
-;----------------------------------------------------------------------
-        ldp       @CL32,DP
-        ldiu      @CL32,r0              ; |1885| 
-        ldp       @CL31+0,DP
-        ldfu      @CL31+0,f2            ; |1885| 40b float hi half
-        ldp       @CL31+1,DP
-        ldiu      0,rc                  ; |1885| 
-        ldiu      @CL31+1,r2            ; |1885| 40b float lo half
-        ldp       @CL1098,DP
-        ldiu      0,r3                  ; |1885| 
-        ldiu      @CL1098,ar2           ; |1885| 
-        callu     r0                    ; far call to _VAR_Update	; |1885| 
-                                        ; |1885| Far Call Occurs
+        ldiu      @CL1099,ar0           ; |1887| 
+        ldiu      347,r0                ; |1887| 
+        sti       r0,*ar0               ; |1887| 
 	.line	1851
 ;----------------------------------------------------------------------
-; 1888 | VAR_Initialize(&Density_Cal, c_mass_per_volume, u_mpv_deg_API_60F, 100.
+; 1888 | VAR_Update(&Density_D0, 0.0, 0, 0);                                    
+;----------------------------------------------------------------------
+        ldp       @CL32,DP
+        ldiu      @CL32,r0              ; |1888| 
+        ldp       @CL31+0,DP
+        ldfu      @CL31+0,f2            ; |1888| 40b float hi half
+        ldp       @CL31+1,DP
+        ldiu      0,rc                  ; |1888| 
+        ldiu      @CL31+1,r2            ; |1888| 40b float lo half
+        ldp       @CL1096,DP
+        ldiu      0,r3                  ; |1888| 
+        ldiu      @CL1096,ar2           ; |1888| 
+        callu     r0                    ; far call to _VAR_Update	; |1888| 
+                                        ; |1888| Far Call Occurs
+	.line	1854
+;----------------------------------------------------------------------
+; 1891 | VAR_Initialize(&Density_Cal, c_mass_per_volume, u_mpv_deg_API_60F, 100.
 ;     | 0, 10000.0, var_no_bound|var_no_alarm);                                
 ;----------------------------------------------------------------------
         ldp       @CL20,DP
-        ldiu      @CL20,r0              ; |1888| 
+        ldiu      @CL20,r0              ; |1891| 
         ldp       @CL57,DP
-        ldiu      6,re                  ; |1888| 
-        ldiu      105,rs                ; |1888| 
-        ldfu      @CL57,f3              ; |1888| 
-        ldiu      73,rc                 ; |1888| 
-        ldp       @CL1102,DP
-        ldfu      1.0000000000e+02,f2   ; |1888| 
-        ldiu      @CL1102,ar2           ; |1888| 
-        callu     r0                    ; far call to _VAR_Initialize	; |1888| 
-                                        ; |1888| Far Call Occurs
-	.line	1852
-;----------------------------------------------------------------------
-; 1889 | sprintf(Density_Cal.name, "Calibration Density");                      
-;----------------------------------------------------------------------
-        ldp       @CL1103,DP
-        ldiu      @CL1103,r1            ; |1889| 
-        ldp       @CL24,DP
-        ldiu      @CL24,r0              ; |1889| 
-        ldp       @CL1104,DP
-        ldiu      @CL1104,ar2           ; |1889| 
-        push      r1                    ; |1889| 
-        callu     r0                    ; far call to _sprintf	; |1889| 
-                                        ; |1889| Far Call Occurs
-        subi      1,sp                  ; |1889| 
-	.line	1853
-;----------------------------------------------------------------------
-; 1890 | VAR_Update(&Density_Cal, 32.00, 0, 0);                                 
-;----------------------------------------------------------------------
-        ldp       @CL32,DP
-        ldiu      @CL32,r0              ; |1890| 
-        ldp       @CL1105+0,DP
-        ldfu      @CL1105+0,f2          ; |1890| 40b float hi half
-        ldp       @CL1105+1,DP
-        ldiu      @CL1105+1,r2          ; |1890| 40b float lo half
-        ldiu      0,rc                  ; |1890| 
-        ldp       @CL1102,DP
-        ldiu      0,r3                  ; |1890| 
-        ldiu      @CL1102,ar2           ; |1890| 
-        callu     r0                    ; far call to _VAR_Update	; |1890| 
-                                        ; |1890| Far Call Occurs
+        ldiu      6,re                  ; |1891| 
+        ldiu      105,rs                ; |1891| 
+        ldfu      @CL57,f3              ; |1891| 
+        ldiu      73,rc                 ; |1891| 
+        ldp       @CL1100,DP
+        ldfu      1.0000000000e+02,f2   ; |1891| 
+        ldiu      @CL1100,ar2           ; |1891| 
+        callu     r0                    ; far call to _VAR_Initialize	; |1891| 
+                                        ; |1891| Far Call Occurs
 	.line	1855
 ;----------------------------------------------------------------------
-; 1892 | Density_Cal_Unit.val  = u_mpv_deg_API_60F;                             
+; 1892 | sprintf(Density_Cal.name, "Calibration Density");                      
 ;----------------------------------------------------------------------
-        ldp       @CL1106,DP
-        ldiu      @CL1106,ar0           ; |1892| 
-        ldiu      105,r0                ; |1892| 
-        sti       r0,*ar0               ; |1892| 
+        ldp       @CL1101,DP
+        ldiu      @CL1101,r1            ; |1892| 
+        ldp       @CL24,DP
+        ldiu      @CL24,r0              ; |1892| 
+        ldp       @CL1102,DP
+        ldiu      @CL1102,ar2           ; |1892| 
+        push      r1                    ; |1892| 
+        callu     r0                    ; far call to _sprintf	; |1892| 
+                                        ; |1892| Far Call Occurs
+        subi      1,sp                  ; |1892| 
 	.line	1856
 ;----------------------------------------------------------------------
-; 1893 | Density_Cal_Unit.vect = (int*)Set_Density_Cal_Unit;                    
+; 1893 | VAR_Update(&Density_Cal, 32.00, 0, 0);                                 
 ;----------------------------------------------------------------------
-        ldp       @CL1107,DP
-        ldiu      @CL1107,ar0           ; |1893| 
-        ldp       @CL1108,DP
-        ldiu      @CL1108,r0            ; |1893| 
-        sti       r0,*ar0               ; |1893| 
-	.line	1861
+        ldp       @CL32,DP
+        ldiu      @CL32,r0              ; |1893| 
+        ldp       @CL1103+0,DP
+        ldfu      @CL1103+0,f2          ; |1893| 40b float hi half
+        ldp       @CL1103+1,DP
+        ldiu      @CL1103+1,r2          ; |1893| 40b float lo half
+        ldiu      0,rc                  ; |1893| 
+        ldp       @CL1100,DP
+        ldiu      0,r3                  ; |1893| 
+        ldiu      @CL1100,ar2           ; |1893| 
+        callu     r0                    ; far call to _VAR_Update	; |1893| 
+                                        ; |1893| Far Call Occurs
+	.line	1858
 ;----------------------------------------------------------------------
-; 1898 | VAR_Initialize(&ALYESKA.DESTINATION_ADDRESS, c_not_classified, u_mfgr_s
+; 1895 | Density_Cal_Unit.val  = u_mpv_deg_API_60F;                             
+;----------------------------------------------------------------------
+        ldp       @CL1104,DP
+        ldiu      @CL1104,ar0           ; |1895| 
+        ldiu      105,r0                ; |1895| 
+        sti       r0,*ar0               ; |1895| 
+	.line	1859
+;----------------------------------------------------------------------
+; 1896 | Density_Cal_Unit.vect = (int*)Set_Density_Cal_Unit;                    
+;----------------------------------------------------------------------
+        ldp       @CL1105,DP
+        ldiu      @CL1105,ar0           ; |1896| 
+        ldp       @CL1106,DP
+        ldiu      @CL1106,r0            ; |1896| 
+        sti       r0,*ar0               ; |1896| 
+	.line	1864
+;----------------------------------------------------------------------
+; 1901 | VAR_Initialize(&ALYESKA.DESTINATION_ADDRESS, c_not_classified, u_mfgr_s
 ;     | pecific_none, 100.0, 1000.0, var_no_alarm);                            
 ;----------------------------------------------------------------------
         ldp       @CL20,DP
-        ldiu      @CL20,r0              ; |1898| 
+        ldiu      @CL20,r0              ; |1901| 
         ldp       @CL19,DP
-        ldfu      @CL19,f3              ; |1898| 
-        ldp       @CL1109,DP
-        ldiu      4,re                  ; |1898| 
-        ldiu      240,rs                ; |1898| 
-        ldiu      0,rc                  ; |1898| 
-        ldiu      @CL1109,ar2           ; |1898| 
-        ldfu      1.0000000000e+02,f2   ; |1898| 
-        callu     r0                    ; far call to _VAR_Initialize	; |1898| 
-                                        ; |1898| Far Call Occurs
-	.line	1862
-;----------------------------------------------------------------------
-; 1899 | sprintf(ALYESKA.DESTINATION_ADDRESS.name, "PLC Data Address");         
-;----------------------------------------------------------------------
-        ldp       @CL1110,DP
-        ldiu      @CL1110,r1            ; |1899| 
-        ldp       @CL24,DP
-        ldiu      @CL24,r0              ; |1899| 
-        ldp       @CL1111,DP
-        push      r1                    ; |1899| 
-        ldiu      @CL1111,ar2           ; |1899| 
-        callu     r0                    ; far call to _sprintf	; |1899| 
-                                        ; |1899| Far Call Occurs
-        subi      1,sp                  ; |1899| 
-	.line	1863
-;----------------------------------------------------------------------
-; 1900 | VAR_Setup_Unit(&ALYESKA.DESTINATION_ADDRESS, u_mfgr_specific_none, 6553
-;     | 6.0, 1.0, 65536.0, 1.0);                                               
-;----------------------------------------------------------------------
-        ldp       @CL1112,DP
-        ldfu      @CL1112,f0            ; |1900| 
-        ldp       @CL30,DP
-        ldiu      @CL30,rs              ; |1900| 
-        ldp       @CL1112,DP
-        ldfu      @CL1112,f2            ; |1900| 
-        ldfu      1.0000000000e+00,f1   ; |1900| 
-        ldp       @CL1109,DP
-        pushf     f1                    ; |1900| 
-        ldiu      @CL1109,ar2           ; |1900| 
-        pushf     f0                    ; |1900| 
-        ldfu      1.0000000000e+00,f3   ; |1900| 
-        ldiu      240,rc                ; |1900| 
-        callu     rs                    ; far call to _VAR_Setup_Unit	; |1900| 
-                                        ; |1900| Far Call Occurs
-        subi      2,sp                  ; |1900| 
-	.line	1864
-;----------------------------------------------------------------------
-; 1901 | VAR_Update(&ALYESKA.DESTINATION_ADDRESS, 41.0, 0, 0);                  
-;----------------------------------------------------------------------
-        ldp       @CL32,DP
-        ldiu      @CL32,r0              ; |1901| 
-        ldp       @CL1113+0,DP
-        ldfu      @CL1113+0,f2          ; |1901| 40b float hi half
-        ldp       @CL1113+1,DP
-        ldiu      @CL1113+1,r2          ; |1901| 40b float lo half
-        ldp       @CL1109,DP
-        ldiu      0,r3                  ; |1901| 
-        ldiu      @CL1109,ar2           ; |1901| 
+        ldfu      @CL19,f3              ; |1901| 
+        ldp       @CL1107,DP
+        ldiu      4,re                  ; |1901| 
+        ldiu      240,rs                ; |1901| 
         ldiu      0,rc                  ; |1901| 
-        callu     r0                    ; far call to _VAR_Update	; |1901| 
+        ldiu      @CL1107,ar2           ; |1901| 
+        ldfu      1.0000000000e+02,f2   ; |1901| 
+        callu     r0                    ; far call to _VAR_Initialize	; |1901| 
                                         ; |1901| Far Call Occurs
+	.line	1865
+;----------------------------------------------------------------------
+; 1902 | sprintf(ALYESKA.DESTINATION_ADDRESS.name, "PLC Data Address");         
+;----------------------------------------------------------------------
+        ldp       @CL1108,DP
+        ldiu      @CL1108,r1            ; |1902| 
+        ldp       @CL24,DP
+        ldiu      @CL24,r0              ; |1902| 
+        ldp       @CL1109,DP
+        push      r1                    ; |1902| 
+        ldiu      @CL1109,ar2           ; |1902| 
+        callu     r0                    ; far call to _sprintf	; |1902| 
+                                        ; |1902| Far Call Occurs
+        subi      1,sp                  ; |1902| 
 	.line	1866
 ;----------------------------------------------------------------------
-; 1903 | ALYESKA.WATERCUT                = 0.0;                                 
+; 1903 | VAR_Setup_Unit(&ALYESKA.DESTINATION_ADDRESS, u_mfgr_specific_none, 6553
+;     | 6.0, 1.0, 65536.0, 1.0);                                               
 ;----------------------------------------------------------------------
-        ldp       @CL1114,DP
-        ldiu      @CL1114,ar0           ; |1903| 
-        ldfu      0.0000000000e+00,f0   ; |1903| 
-        stf       f0,*ar0               ; |1903| 
+        ldp       @CL1110,DP
+        ldfu      @CL1110,f0            ; |1903| 
+        ldp       @CL30,DP
+        ldiu      @CL30,rs              ; |1903| 
+        ldp       @CL1110,DP
+        ldfu      @CL1110,f2            ; |1903| 
+        ldfu      1.0000000000e+00,f1   ; |1903| 
+        ldp       @CL1107,DP
+        pushf     f1                    ; |1903| 
+        ldiu      @CL1107,ar2           ; |1903| 
+        pushf     f0                    ; |1903| 
+        ldfu      1.0000000000e+00,f3   ; |1903| 
+        ldiu      240,rc                ; |1903| 
+        callu     rs                    ; far call to _VAR_Setup_Unit	; |1903| 
+                                        ; |1903| Far Call Occurs
+        subi      2,sp                  ; |1903| 
 	.line	1867
 ;----------------------------------------------------------------------
-; 1904 | ALYESKA.FLOW_RATE               = 0.0;                                 
+; 1904 | VAR_Update(&ALYESKA.DESTINATION_ADDRESS, 41.0, 0, 0);                  
 ;----------------------------------------------------------------------
-        ldp       @CL1115,DP
-        ldiu      @CL1115,ar0           ; |1904| 
-        ldfu      0.0000000000e+00,f0   ; |1904| 
-        stf       f0,*ar0               ; |1904| 
-	.line	1868
-;----------------------------------------------------------------------
-; 1905 | ALYESKA.TEMPERATURE             = 0.0;                                 
-;----------------------------------------------------------------------
-        ldp       @CL1116,DP
-        ldiu      @CL1116,ar0           ; |1905| 
-        ldfu      0.0000000000e+00,f0   ; |1905| 
-        stf       f0,*ar0               ; |1905| 
+        ldp       @CL32,DP
+        ldiu      @CL32,r0              ; |1904| 
+        ldp       @CL1111+0,DP
+        ldfu      @CL1111+0,f2          ; |1904| 40b float hi half
+        ldp       @CL1111+1,DP
+        ldiu      @CL1111+1,r2          ; |1904| 40b float lo half
+        ldp       @CL1107,DP
+        ldiu      0,r3                  ; |1904| 
+        ldiu      @CL1107,ar2           ; |1904| 
+        ldiu      0,rc                  ; |1904| 
+        callu     r0                    ; far call to _VAR_Update	; |1904| 
+                                        ; |1904| Far Call Occurs
 	.line	1869
 ;----------------------------------------------------------------------
-; 1906 | ALYESKA.DENSITY                 = 0.0;                                 
+; 1906 | ALYESKA.WATERCUT                = 0.0;                                 
 ;----------------------------------------------------------------------
-        ldp       @CL1117,DP
-        ldiu      @CL1117,ar0           ; |1906| 
+        ldp       @CL1112,DP
+        ldiu      @CL1112,ar0           ; |1906| 
         ldfu      0.0000000000e+00,f0   ; |1906| 
         stf       f0,*ar0               ; |1906| 
 	.line	1870
 ;----------------------------------------------------------------------
-; 1907 | ALYESKA.VISCOSITY               = 0.0;                                 
+; 1907 | ALYESKA.FLOW_RATE               = 0.0;                                 
 ;----------------------------------------------------------------------
-        ldp       @CL1118,DP
-        ldiu      @CL1118,ar0           ; |1907| 
+        ldp       @CL1113,DP
+        ldiu      @CL1113,ar0           ; |1907| 
         ldfu      0.0000000000e+00,f0   ; |1907| 
         stf       f0,*ar0               ; |1907| 
+	.line	1871
+;----------------------------------------------------------------------
+; 1908 | ALYESKA.TEMPERATURE             = 0.0;                                 
+;----------------------------------------------------------------------
+        ldp       @CL1114,DP
+        ldiu      @CL1114,ar0           ; |1908| 
+        ldfu      0.0000000000e+00,f0   ; |1908| 
+        stf       f0,*ar0               ; |1908| 
 	.line	1872
 ;----------------------------------------------------------------------
-; 1909 | ALYESKA.iWATERCUTz              = 0;                                   
+; 1909 | ALYESKA.DENSITY                 = 0.0;                                 
 ;----------------------------------------------------------------------
-        ldp       @CL1119,DP
-        ldiu      @CL1119,ar0           ; |1909| 
-        ldiu      0,r0                  ; |1909| 
-        sti       r0,*ar0               ; |1909| 
+        ldp       @CL1115,DP
+        ldiu      @CL1115,ar0           ; |1909| 
+        ldfu      0.0000000000e+00,f0   ; |1909| 
+        stf       f0,*ar0               ; |1909| 
 	.line	1873
 ;----------------------------------------------------------------------
-; 1910 | ALYESKA.iWATERCUT               = 0;                                   
+; 1910 | ALYESKA.VISCOSITY               = 0.0;                                 
 ;----------------------------------------------------------------------
-        ldp       @CL1120,DP
-        ldiu      @CL1120,ar0           ; |1910| 
-        sti       r0,*ar0               ; |1910| 
-	.line	1874
-;----------------------------------------------------------------------
-; 1911 | ALYESKA.iFLOW_RATE              = 0;                                   
-;----------------------------------------------------------------------
-        ldp       @CL1121,DP
-        ldiu      @CL1121,ar0           ; |1911| 
-        sti       r0,*ar0               ; |1911| 
+        ldp       @CL1116,DP
+        ldiu      @CL1116,ar0           ; |1910| 
+        ldfu      0.0000000000e+00,f0   ; |1910| 
+        stf       f0,*ar0               ; |1910| 
 	.line	1875
 ;----------------------------------------------------------------------
-; 1912 | ALYESKA.iTEMPERATURE    = 0;                                           
+; 1912 | ALYESKA.iWATERCUTz              = 0;                                   
 ;----------------------------------------------------------------------
-        ldp       @CL1122,DP
-        ldiu      @CL1122,ar0           ; |1912| 
+        ldp       @CL1117,DP
+        ldiu      @CL1117,ar0           ; |1912| 
+        ldiu      0,r0                  ; |1912| 
         sti       r0,*ar0               ; |1912| 
 	.line	1876
 ;----------------------------------------------------------------------
-; 1913 | ALYESKA.iDENSITY                = 0;                                   
+; 1913 | ALYESKA.iWATERCUT               = 0;                                   
 ;----------------------------------------------------------------------
-        ldp       @CL1123,DP
-        ldiu      @CL1123,ar0           ; |1913| 
+        ldp       @CL1118,DP
+        ldiu      @CL1118,ar0           ; |1913| 
         sti       r0,*ar0               ; |1913| 
 	.line	1877
 ;----------------------------------------------------------------------
-; 1914 | ALYESKA.iVISCOSITY              = 0;                                   
+; 1914 | ALYESKA.iFLOW_RATE              = 0;                                   
 ;----------------------------------------------------------------------
-        ldp       @CL1124,DP
-        ldiu      @CL1124,ar0           ; |1914| 
+        ldp       @CL1119,DP
+        ldiu      @CL1119,ar0           ; |1914| 
         sti       r0,*ar0               ; |1914| 
+	.line	1878
+;----------------------------------------------------------------------
+; 1915 | ALYESKA.iTEMPERATURE    = 0;                                           
+;----------------------------------------------------------------------
+        ldp       @CL1120,DP
+        ldiu      @CL1120,ar0           ; |1915| 
+        sti       r0,*ar0               ; |1915| 
 	.line	1879
 ;----------------------------------------------------------------------
-; 1916 | ALYESKA.maxWATERCUTz    = 3.0;                                         
+; 1916 | ALYESKA.iDENSITY                = 0;                                   
 ;----------------------------------------------------------------------
-        ldp       @CL1125,DP
-        ldiu      @CL1125,ar0           ; |1916| 
-        ldfu      3.0000000000e+00,f0   ; |1916| 
-        stf       f0,*ar0               ; |1916| 
+        ldp       @CL1121,DP
+        ldiu      @CL1121,ar0           ; |1916| 
+        sti       r0,*ar0               ; |1916| 
 	.line	1880
 ;----------------------------------------------------------------------
-; 1917 | ALYESKA.maxWATERCUT             = 20.0;                                
+; 1917 | ALYESKA.iVISCOSITY              = 0;                                   
 ;----------------------------------------------------------------------
-        ldp       @CL1126,DP
-        ldiu      @CL1126,ar0           ; |1917| 
-        ldfu      2.0000000000e+01,f0   ; |1917| 
-        stf       f0,*ar0               ; |1917| 
-	.line	1881
-;----------------------------------------------------------------------
-; 1918 | ALYESKA.maxFLOW_RATE    = 30.0;                                        
-;----------------------------------------------------------------------
-        ldp       @CL1127,DP
-        ldiu      @CL1127,ar0           ; |1918| 
-        ldfu      3.0000000000e+01,f0   ; |1918| 
-        stf       f0,*ar0               ; |1918| 
+        ldp       @CL1122,DP
+        ldiu      @CL1122,ar0           ; |1917| 
+        sti       r0,*ar0               ; |1917| 
 	.line	1882
 ;----------------------------------------------------------------------
-; 1919 | ALYESKA.maxTEMPERATURE  = 160.0;                                       
+; 1919 | ALYESKA.maxWATERCUTz    = 3.0;                                         
 ;----------------------------------------------------------------------
-        ldp       @CL1128,DP
-        ldiu      @CL1128,ar0           ; |1919| 
-        ldfu      1.6000000000e+02,f0   ; |1919| 
+        ldp       @CL1123,DP
+        ldiu      @CL1123,ar0           ; |1919| 
+        ldfu      3.0000000000e+00,f0   ; |1919| 
         stf       f0,*ar0               ; |1919| 
 	.line	1883
 ;----------------------------------------------------------------------
-; 1920 | ALYESKA.maxDENSITY              = 1.0;                                 
+; 1920 | ALYESKA.maxWATERCUT             = 20.0;                                
 ;----------------------------------------------------------------------
-        ldp       @CL1129,DP
-        ldiu      @CL1129,ar0           ; |1920| 
-        ldfu      1.0000000000e+00,f0   ; |1920| 
+        ldp       @CL1124,DP
+        ldiu      @CL1124,ar0           ; |1920| 
+        ldfu      2.0000000000e+01,f0   ; |1920| 
         stf       f0,*ar0               ; |1920| 
 	.line	1884
 ;----------------------------------------------------------------------
-; 1921 | ALYESKA.maxVISCOSITY    = 10.0;                                        
+; 1921 | ALYESKA.maxFLOW_RATE    = 30.0;                                        
 ;----------------------------------------------------------------------
-        ldp       @CL1130,DP
-        ldiu      @CL1130,ar0           ; |1921| 
-        ldfu      1.0000000000e+01,f0   ; |1921| 
+        ldp       @CL1125,DP
+        ldiu      @CL1125,ar0           ; |1921| 
+        ldfu      3.0000000000e+01,f0   ; |1921| 
         stf       f0,*ar0               ; |1921| 
+	.line	1885
+;----------------------------------------------------------------------
+; 1922 | ALYESKA.maxTEMPERATURE  = 160.0;                                       
+;----------------------------------------------------------------------
+        ldp       @CL1126,DP
+        ldiu      @CL1126,ar0           ; |1922| 
+        ldfu      1.6000000000e+02,f0   ; |1922| 
+        stf       f0,*ar0               ; |1922| 
 	.line	1886
 ;----------------------------------------------------------------------
-; 1923 | ALYESKA.minWATERCUTz    = 0.0;                                         
+; 1923 | ALYESKA.maxDENSITY              = 1.0;                                 
 ;----------------------------------------------------------------------
-        ldp       @CL1131,DP
-        ldiu      @CL1131,ar0           ; |1923| 
-        ldfu      0.0000000000e+00,f0   ; |1923| 
+        ldp       @CL1127,DP
+        ldiu      @CL1127,ar0           ; |1923| 
+        ldfu      1.0000000000e+00,f0   ; |1923| 
         stf       f0,*ar0               ; |1923| 
 	.line	1887
 ;----------------------------------------------------------------------
-; 1924 | ALYESKA.minWATERCUT             = 0.0;                                 
+; 1924 | ALYESKA.maxVISCOSITY    = 10.0;                                        
 ;----------------------------------------------------------------------
-        ldp       @CL1132,DP
-        ldiu      @CL1132,ar0           ; |1924| 
-        ldfu      0.0000000000e+00,f0   ; |1924| 
+        ldp       @CL1128,DP
+        ldiu      @CL1128,ar0           ; |1924| 
+        ldfu      1.0000000000e+01,f0   ; |1924| 
         stf       f0,*ar0               ; |1924| 
-	.line	1888
-;----------------------------------------------------------------------
-; 1925 | ALYESKA.minFLOW_RATE    = 0.0;                                         
-;----------------------------------------------------------------------
-        ldp       @CL1133,DP
-        ldiu      @CL1133,ar0           ; |1925| 
-        ldfu      0.0000000000e+00,f0   ; |1925| 
-        stf       f0,*ar0               ; |1925| 
 	.line	1889
 ;----------------------------------------------------------------------
-; 1926 | ALYESKA.minTEMPERATURE  = 60.0;                                        
+; 1926 | ALYESKA.minWATERCUTz    = 0.0;                                         
 ;----------------------------------------------------------------------
-        ldp       @CL1134,DP
-        ldiu      @CL1134,ar0           ; |1926| 
-        ldfu      6.0000000000e+01,f0   ; |1926| 
+        ldp       @CL1129,DP
+        ldiu      @CL1129,ar0           ; |1926| 
+        ldfu      0.0000000000e+00,f0   ; |1926| 
         stf       f0,*ar0               ; |1926| 
 	.line	1890
 ;----------------------------------------------------------------------
-; 1927 | ALYESKA.minDENSITY              = 0.7;                                 
+; 1927 | ALYESKA.minWATERCUT             = 0.0;                                 
 ;----------------------------------------------------------------------
-        ldp       @CL1135,DP
-        ldiu      @CL1135,ar0           ; |1927| 
-        ldp       @CL1136,DP
-        ldfu      @CL1136,f0            ; |1927| 
+        ldp       @CL1130,DP
+        ldiu      @CL1130,ar0           ; |1927| 
+        ldfu      0.0000000000e+00,f0   ; |1927| 
         stf       f0,*ar0               ; |1927| 
 	.line	1891
 ;----------------------------------------------------------------------
-; 1928 | ALYESKA.minVISCOSITY    = 0.5;                                         
+; 1928 | ALYESKA.minFLOW_RATE    = 0.0;                                         
 ;----------------------------------------------------------------------
-        ldp       @CL1137,DP
-        ldiu      @CL1137,ar0           ; |1928| 
-        ldp       @CL1138,DP
-        ldfu      @CL1138,f0            ; |1928| 
+        ldp       @CL1131,DP
+        ldiu      @CL1131,ar0           ; |1928| 
+        ldfu      0.0000000000e+00,f0   ; |1928| 
         stf       f0,*ar0               ; |1928| 
+	.line	1892
+;----------------------------------------------------------------------
+; 1929 | ALYESKA.minTEMPERATURE  = 60.0;                                        
+;----------------------------------------------------------------------
+        ldp       @CL1132,DP
+        ldiu      @CL1132,ar0           ; |1929| 
+        ldfu      6.0000000000e+01,f0   ; |1929| 
+        stf       f0,*ar0               ; |1929| 
 	.line	1893
 ;----------------------------------------------------------------------
-; 1930 | ALYESKA.ENABLED                 = FALSE;                               
+; 1930 | ALYESKA.minDENSITY              = 0.7;                                 
 ;----------------------------------------------------------------------
-        ldp       @CL1139,DP
-        ldiu      @CL1139,ar0           ; |1930| 
-        ldiu      0,r0                  ; |1930| 
-        sti       r0,*ar0               ; |1930| 
-	.line	1899
+        ldp       @CL1133,DP
+        ldiu      @CL1133,ar0           ; |1930| 
+        ldp       @CL1134,DP
+        ldfu      @CL1134,f0            ; |1930| 
+        stf       f0,*ar0               ; |1930| 
+	.line	1894
 ;----------------------------------------------------------------------
-; 1936 | VAR_Initialize(&REG_alarm_relay_delay,                  c_time, u_time_
+; 1931 | ALYESKA.minVISCOSITY    = 0.5;                                         
+;----------------------------------------------------------------------
+        ldp       @CL1135,DP
+        ldiu      @CL1135,ar0           ; |1931| 
+        ldp       @CL1136,DP
+        ldfu      @CL1136,f0            ; |1931| 
+        stf       f0,*ar0               ; |1931| 
+	.line	1896
+;----------------------------------------------------------------------
+; 1933 | ALYESKA.ENABLED                 = FALSE;                               
+;----------------------------------------------------------------------
+        ldp       @CL1137,DP
+        ldiu      @CL1137,ar0           ; |1933| 
+        ldiu      0,r0                  ; |1933| 
+        sti       r0,*ar0               ; |1933| 
+	.line	1902
+;----------------------------------------------------------------------
+; 1939 | VAR_Initialize(&REG_alarm_relay_delay,                  c_time, u_time_
 ;     | sec, 1.0, 1.0, var_no_bound|var_no_alarm);                             
 ;----------------------------------------------------------------------
         ldp       @CL20,DP
-        ldiu      @CL20,r0              ; |1936| 
-        ldp       @CL1140,DP
-        ldiu      @CL1140,ar2           ; |1936| 
-        ldiu      51,rs                 ; |1936| 
-        ldiu      6,re                  ; |1936| 
-        ldfu      1.0000000000e+00,f3   ; |1936| 
-        ldfu      1.0000000000e+00,f2   ; |1936| 
-        ldiu      70,rc                 ; |1936| 
-        callu     r0                    ; far call to _VAR_Initialize	; |1936| 
-                                        ; |1936| Far Call Occurs
-	.line	1900
-;----------------------------------------------------------------------
-; 1937 | VAR_Initialize(&REG_flow_meter_type,                    c_not_used, u_g
-;     | eneric_not_used, 1.0, 1.0, var_no_bound|var_no_alarm);                 
-;----------------------------------------------------------------------
-        ldiu      250,rc                ; |1937| 
-        ldiu      6,re                  ; |1937| 
-        ldp       @CL20,DP
-        ldiu      250,rs                ; |1937| 
-        ldiu      @CL20,r0              ; |1937| 
-        ldp       @CL1141,DP
-        ldfu      1.0000000000e+00,f3   ; |1937| 
-        ldfu      1.0000000000e+00,f2   ; |1937| 
-        ldiu      @CL1141,ar2           ; |1937| 
-        callu     r0                    ; far call to _VAR_Initialize	; |1937| 
-                                        ; |1937| Far Call Occurs
-	.line	1901
-;----------------------------------------------------------------------
-; 1938 | VAR_Initialize(&REG_flow_volume_unit,                   c_not_used, u_g
-;     | eneric_not_used, 1.0, 1.0, var_no_bound|var_no_alarm);                 
-;----------------------------------------------------------------------
-        ldp       @CL20,DP
-        ldiu      @CL20,r0              ; |1938| 
-        ldp       @CL1142,DP
-        ldiu      250,rc                ; |1938| 
-        ldiu      6,re                  ; |1938| 
-        ldiu      250,rs                ; |1938| 
-        ldfu      1.0000000000e+00,f3   ; |1938| 
-        ldfu      1.0000000000e+00,f2   ; |1938| 
-        ldiu      @CL1142,ar2           ; |1938| 
-        callu     r0                    ; far call to _VAR_Initialize	; |1938| 
-                                        ; |1938| Far Call Occurs
-	.line	1902
-;----------------------------------------------------------------------
-; 1939 | VAR_Initialize(&REG_flow_rate_time_unit,                c_not_used, u_g
-;     | eneric_not_used, 1.0, 1.0, var_no_bound|var_no_alarm);                 
-;----------------------------------------------------------------------
-        ldp       @CL20,DP
-        ldiu      250,rc                ; |1939| 
-        ldiu      6,re                  ; |1939| 
-        ldiu      250,rs                ; |1939| 
         ldiu      @CL20,r0              ; |1939| 
+        ldp       @CL1138,DP
+        ldiu      @CL1138,ar2           ; |1939| 
+        ldiu      51,rs                 ; |1939| 
+        ldiu      6,re                  ; |1939| 
         ldfu      1.0000000000e+00,f3   ; |1939| 
-        ldp       @CL1143,DP
         ldfu      1.0000000000e+00,f2   ; |1939| 
-        ldiu      @CL1143,ar2           ; |1939| 
+        ldiu      70,rc                 ; |1939| 
         callu     r0                    ; far call to _VAR_Initialize	; |1939| 
                                         ; |1939| Far Call Occurs
 	.line	1903
 ;----------------------------------------------------------------------
-; 1940 | VAR_Initialize(&REG_count_per_flow_unit,                c_not_used, u_g
+; 1940 | VAR_Initialize(&REG_flow_meter_type,                    c_not_used, u_g
 ;     | eneric_not_used, 1.0, 1.0, var_no_bound|var_no_alarm);                 
 ;----------------------------------------------------------------------
-        ldp       @CL20,DP
-        ldiu      @CL20,r0              ; |1940| 
         ldiu      250,rc                ; |1940| 
         ldiu      6,re                  ; |1940| 
-        ldp       @CL1144,DP
+        ldp       @CL20,DP
         ldiu      250,rs                ; |1940| 
+        ldiu      @CL20,r0              ; |1940| 
+        ldp       @CL1139,DP
         ldfu      1.0000000000e+00,f3   ; |1940| 
         ldfu      1.0000000000e+00,f2   ; |1940| 
-        ldiu      @CL1144,ar2           ; |1940| 
+        ldiu      @CL1139,ar2           ; |1940| 
         callu     r0                    ; far call to _VAR_Initialize	; |1940| 
                                         ; |1940| Far Call Occurs
 	.line	1904
 ;----------------------------------------------------------------------
-; 1941 | VAR_Initialize(&REG_20mA_max_flow_rate_input,   c_not_used, u_generic_n
-;     | ot_used, 1.0, 1.0, var_no_bound|var_no_alarm);                         
+; 1941 | VAR_Initialize(&REG_flow_volume_unit,                   c_not_used, u_g
+;     | eneric_not_used, 1.0, 1.0, var_no_bound|var_no_alarm);                 
 ;----------------------------------------------------------------------
         ldp       @CL20,DP
         ldiu      @CL20,r0              ; |1941| 
-        ldp       @CL1145,DP
+        ldp       @CL1140,DP
         ldiu      250,rc                ; |1941| 
         ldiu      6,re                  ; |1941| 
         ldiu      250,rs                ; |1941| 
         ldfu      1.0000000000e+00,f3   ; |1941| 
         ldfu      1.0000000000e+00,f2   ; |1941| 
-        ldiu      @CL1145,ar2           ; |1941| 
+        ldiu      @CL1140,ar2           ; |1941| 
         callu     r0                    ; far call to _VAR_Initialize	; |1941| 
                                         ; |1941| Far Call Occurs
 	.line	1905
 ;----------------------------------------------------------------------
-; 1942 | VAR_Initialize(&REG_accumulator_display_format, c_not_used, u_generic_n
-;     | ot_used, 1.0, 1.0, var_no_bound|var_no_alarm);                         
+; 1942 | VAR_Initialize(&REG_flow_rate_time_unit,                c_not_used, u_g
+;     | eneric_not_used, 1.0, 1.0, var_no_bound|var_no_alarm);                 
 ;----------------------------------------------------------------------
         ldp       @CL20,DP
-        ldiu      @CL20,r0              ; |1942| 
         ldiu      250,rc                ; |1942| 
         ldiu      6,re                  ; |1942| 
         ldiu      250,rs                ; |1942| 
+        ldiu      @CL20,r0              ; |1942| 
         ldfu      1.0000000000e+00,f3   ; |1942| 
-        ldp       @CL1146,DP
+        ldp       @CL1141,DP
         ldfu      1.0000000000e+00,f2   ; |1942| 
-        ldiu      @CL1146,ar2           ; |1942| 
+        ldiu      @CL1141,ar2           ; |1942| 
         callu     r0                    ; far call to _VAR_Initialize	; |1942| 
                                         ; |1942| Far Call Occurs
 	.line	1906
 ;----------------------------------------------------------------------
-; 1943 | VAR_Initialize(&REG_HART_response_delay,                c_not_used, u_m
-;     | fgr_specific_ct, 1.0, 1.0, var_no_bound|var_no_alarm);                 
+; 1943 | VAR_Initialize(&REG_count_per_flow_unit,                c_not_used, u_g
+;     | eneric_not_used, 1.0, 1.0, var_no_bound|var_no_alarm);                 
 ;----------------------------------------------------------------------
         ldp       @CL20,DP
         ldiu      @CL20,r0              ; |1943| 
-        ldp       @CL1147,DP
-        ldiu      @CL1147,ar2           ; |1943| 
         ldiu      250,rc                ; |1943| 
         ldiu      6,re                  ; |1943| 
-        ldiu      243,rs                ; |1943| 
+        ldp       @CL1142,DP
+        ldiu      250,rs                ; |1943| 
         ldfu      1.0000000000e+00,f3   ; |1943| 
         ldfu      1.0000000000e+00,f2   ; |1943| 
+        ldiu      @CL1142,ar2           ; |1943| 
         callu     r0                    ; far call to _VAR_Initialize	; |1943| 
                                         ; |1943| Far Call Occurs
 	.line	1907
 ;----------------------------------------------------------------------
-; 1944 | VAR_Initialize(&REG_HART_num_preamble,                  c_not_used, u_g
-;     | eneric_not_used, 1.0, 1.0, var_no_bound|var_no_alarm);                 
+; 1944 | VAR_Initialize(&REG_20mA_max_flow_rate_input,   c_not_used, u_generic_n
+;     | ot_used, 1.0, 1.0, var_no_bound|var_no_alarm);                         
 ;----------------------------------------------------------------------
+        ldp       @CL20,DP
+        ldiu      @CL20,r0              ; |1944| 
+        ldp       @CL1143,DP
         ldiu      250,rc                ; |1944| 
         ldiu      6,re                  ; |1944| 
         ldiu      250,rs                ; |1944| 
-        ldp       @CL20,DP
         ldfu      1.0000000000e+00,f3   ; |1944| 
-        ldiu      @CL20,r0              ; |1944| 
-        ldp       @CL1148,DP
         ldfu      1.0000000000e+00,f2   ; |1944| 
-        ldiu      @CL1148,ar2           ; |1944| 
+        ldiu      @CL1143,ar2           ; |1944| 
         callu     r0                    ; far call to _VAR_Initialize	; |1944| 
                                         ; |1944| Far Call Occurs
 	.line	1908
 ;----------------------------------------------------------------------
-; 1945 | VAR_Initialize(&REG_reference_currrent_mode,    c_not_used, u_generic_n
+; 1945 | VAR_Initialize(&REG_accumulator_display_format, c_not_used, u_generic_n
 ;     | ot_used, 1.0, 1.0, var_no_bound|var_no_alarm);                         
 ;----------------------------------------------------------------------
         ldp       @CL20,DP
         ldiu      @CL20,r0              ; |1945| 
-        ldp       @CL1149,DP
         ldiu      250,rc                ; |1945| 
         ldiu      6,re                  ; |1945| 
         ldiu      250,rs                ; |1945| 
         ldfu      1.0000000000e+00,f3   ; |1945| 
+        ldp       @CL1144,DP
         ldfu      1.0000000000e+00,f2   ; |1945| 
-        ldiu      @CL1149,ar2           ; |1945| 
+        ldiu      @CL1144,ar2           ; |1945| 
         callu     r0                    ; far call to _VAR_Initialize	; |1945| 
                                         ; |1945| Far Call Occurs
 	.line	1909
 ;----------------------------------------------------------------------
-; 1946 | VAR_Initialize(&REG_density_correction_mode,    c_not_used, u_generic_n
-;     | ot_used, 1.0, 1.0, var_no_bound|var_no_alarm);                         
+; 1946 | VAR_Initialize(&REG_HART_response_delay,                c_not_used, u_m
+;     | fgr_specific_ct, 1.0, 1.0, var_no_bound|var_no_alarm);                 
 ;----------------------------------------------------------------------
         ldp       @CL20,DP
         ldiu      @CL20,r0              ; |1946| 
-        ldp       @CL1150,DP
+        ldp       @CL1145,DP
+        ldiu      @CL1145,ar2           ; |1946| 
         ldiu      250,rc                ; |1946| 
         ldiu      6,re                  ; |1946| 
-        ldiu      250,rs                ; |1946| 
-        ldiu      @CL1150,ar2           ; |1946| 
+        ldiu      243,rs                ; |1946| 
         ldfu      1.0000000000e+00,f3   ; |1946| 
         ldfu      1.0000000000e+00,f2   ; |1946| 
         callu     r0                    ; far call to _VAR_Initialize	; |1946| 
                                         ; |1946| Far Call Occurs
 	.line	1910
 ;----------------------------------------------------------------------
-; 1947 | VAR_Initialize(&REG_port1_Baud_Rate,                    c_not_used, u_g
+; 1947 | VAR_Initialize(&REG_HART_num_preamble,                  c_not_used, u_g
 ;     | eneric_not_used, 1.0, 1.0, var_no_bound|var_no_alarm);                 
 ;----------------------------------------------------------------------
-        ldp       @CL20,DP
-        ldiu      @CL20,r0              ; |1947| 
-        ldp       @CL1151,DP
-        ldiu      @CL1151,ar2           ; |1947| 
-        ldfu      1.0000000000e+00,f3   ; |1947| 
-        ldfu      1.0000000000e+00,f2   ; |1947| 
         ldiu      250,rc                ; |1947| 
         ldiu      6,re                  ; |1947| 
         ldiu      250,rs                ; |1947| 
+        ldp       @CL20,DP
+        ldfu      1.0000000000e+00,f3   ; |1947| 
+        ldiu      @CL20,r0              ; |1947| 
+        ldp       @CL1146,DP
+        ldfu      1.0000000000e+00,f2   ; |1947| 
+        ldiu      @CL1146,ar2           ; |1947| 
         callu     r0                    ; far call to _VAR_Initialize	; |1947| 
                                         ; |1947| Far Call Occurs
 	.line	1911
 ;----------------------------------------------------------------------
-; 1948 | VAR_Initialize(&REG_port1_parity,                               c_not_u
-;     | sed, u_generic_not_used, 1.0, 1.0, var_no_bound|var_no_alarm);         
+; 1948 | VAR_Initialize(&REG_reference_currrent_mode,    c_not_used, u_generic_n
+;     | ot_used, 1.0, 1.0, var_no_bound|var_no_alarm);                         
 ;----------------------------------------------------------------------
         ldp       @CL20,DP
         ldiu      @CL20,r0              ; |1948| 
-        ldp       @CL1152,DP
-        ldiu      @CL1152,ar2           ; |1948| 
-        ldfu      1.0000000000e+00,f3   ; |1948| 
-        ldfu      1.0000000000e+00,f2   ; |1948| 
+        ldp       @CL1147,DP
         ldiu      250,rc                ; |1948| 
         ldiu      6,re                  ; |1948| 
         ldiu      250,rs                ; |1948| 
+        ldfu      1.0000000000e+00,f3   ; |1948| 
+        ldfu      1.0000000000e+00,f2   ; |1948| 
+        ldiu      @CL1147,ar2           ; |1948| 
         callu     r0                    ; far call to _VAR_Initialize	; |1948| 
                                         ; |1948| Far Call Occurs
 	.line	1912
 ;----------------------------------------------------------------------
-; 1949 | VAR_Initialize(&REG_port1_stop_bits,                    c_not_used, u_g
-;     | eneric_not_used, 1.0, 1.0, var_no_bound|var_no_alarm);                 
+; 1949 | VAR_Initialize(&REG_density_correction_mode,    c_not_used, u_generic_n
+;     | ot_used, 1.0, 1.0, var_no_bound|var_no_alarm);                         
 ;----------------------------------------------------------------------
+        ldp       @CL20,DP
+        ldiu      @CL20,r0              ; |1949| 
+        ldp       @CL1148,DP
         ldiu      250,rc                ; |1949| 
         ldiu      6,re                  ; |1949| 
-        ldp       @CL20,DP
         ldiu      250,rs                ; |1949| 
-        ldiu      @CL20,r0              ; |1949| 
+        ldiu      @CL1148,ar2           ; |1949| 
         ldfu      1.0000000000e+00,f3   ; |1949| 
-        ldp       @CL1153,DP
         ldfu      1.0000000000e+00,f2   ; |1949| 
-        ldiu      @CL1153,ar2           ; |1949| 
         callu     r0                    ; far call to _VAR_Initialize	; |1949| 
                                         ; |1949| Far Call Occurs
+	.line	1913
+;----------------------------------------------------------------------
+; 1950 | VAR_Initialize(&REG_port1_Baud_Rate,                    c_not_used, u_g
+;     | eneric_not_used, 1.0, 1.0, var_no_bound|var_no_alarm);                 
+;----------------------------------------------------------------------
+        ldp       @CL20,DP
+        ldiu      @CL20,r0              ; |1950| 
+        ldp       @CL1149,DP
+        ldiu      @CL1149,ar2           ; |1950| 
+        ldfu      1.0000000000e+00,f3   ; |1950| 
+        ldfu      1.0000000000e+00,f2   ; |1950| 
+        ldiu      250,rc                ; |1950| 
+        ldiu      6,re                  ; |1950| 
+        ldiu      250,rs                ; |1950| 
+        callu     r0                    ; far call to _VAR_Initialize	; |1950| 
+                                        ; |1950| Far Call Occurs
+	.line	1914
+;----------------------------------------------------------------------
+; 1951 | VAR_Initialize(&REG_port1_parity,                               c_not_u
+;     | sed, u_generic_not_used, 1.0, 1.0, var_no_bound|var_no_alarm);         
+;----------------------------------------------------------------------
+        ldp       @CL20,DP
+        ldiu      @CL20,r0              ; |1951| 
+        ldp       @CL1150,DP
+        ldiu      @CL1150,ar2           ; |1951| 
+        ldfu      1.0000000000e+00,f3   ; |1951| 
+        ldfu      1.0000000000e+00,f2   ; |1951| 
+        ldiu      250,rc                ; |1951| 
+        ldiu      6,re                  ; |1951| 
+        ldiu      250,rs                ; |1951| 
+        callu     r0                    ; far call to _VAR_Initialize	; |1951| 
+                                        ; |1951| Far Call Occurs
 	.line	1915
 ;----------------------------------------------------------------------
-; 1952 | AMETEK                                                  = FALSE;       
+; 1952 | VAR_Initialize(&REG_port1_stop_bits,                    c_not_used, u_g
+;     | eneric_not_used, 1.0, 1.0, var_no_bound|var_no_alarm);                 
 ;----------------------------------------------------------------------
-        ldp       @CL1154,DP
-        ldiu      @CL1154,ar0           ; |1952| 
-        ldiu      0,r0                  ; |1952| 
-        sti       r0,*ar0               ; |1952| 
-	.line	1916
-;----------------------------------------------------------------------
-; 1953 | DIO_PV_PERCMASS                                 = FALSE;               
-;----------------------------------------------------------------------
-        ldp       @CL1155,DP
-        ldiu      @CL1155,ar0           ; |1953| 
-        sti       r0,*ar0               ; |1953| 
-	.line	1917
-;----------------------------------------------------------------------
-; 1954 | DIO_MSVE                                                = 0;           
-;----------------------------------------------------------------------
-        ldp       @CL1156,DP
-        ldiu      @CL1156,ar0           ; |1954| 
-        sti       r0,*ar0               ; |1954| 
+        ldiu      250,rc                ; |1952| 
+        ldiu      6,re                  ; |1952| 
+        ldp       @CL20,DP
+        ldiu      250,rs                ; |1952| 
+        ldiu      @CL20,r0              ; |1952| 
+        ldfu      1.0000000000e+00,f3   ; |1952| 
+        ldp       @CL1151,DP
+        ldfu      1.0000000000e+00,f2   ; |1952| 
+        ldiu      @CL1151,ar2           ; |1952| 
+        callu     r0                    ; far call to _VAR_Initialize	; |1952| 
+                                        ; |1952| Far Call Occurs
 	.line	1918
 ;----------------------------------------------------------------------
-; 1955 | DIO_IDEC_ENABLE                                 = TRUE;                
+; 1955 | AMETEK                                                  = FALSE;       
 ;----------------------------------------------------------------------
-        ldp       @CL1157,DP
-        ldiu      @CL1157,ar0           ; |1955| 
-        ldiu      1,r0                  ; |1955| 
+        ldp       @CL1152,DP
+        ldiu      @CL1152,ar0           ; |1955| 
+        ldiu      0,r0                  ; |1955| 
         sti       r0,*ar0               ; |1955| 
 	.line	1919
 ;----------------------------------------------------------------------
-; 1956 | DIO_SYSTEM_RESET.val                    = FALSE;                       
+; 1956 | DIO_PV_PERCMASS                                 = FALSE;               
 ;----------------------------------------------------------------------
-        ldp       @CL1158,DP
-        ldiu      @CL1158,ar0           ; |1956| 
-        ldiu      0,r0                  ; |1956| 
+        ldp       @CL1153,DP
+        ldiu      @CL1153,ar0           ; |1956| 
         sti       r0,*ar0               ; |1956| 
 	.line	1920
 ;----------------------------------------------------------------------
-; 1957 | DIO_SYSTEM_RESTART.val                  = FALSE;                       
+; 1957 | DIO_MSVE                                                = 0;           
 ;----------------------------------------------------------------------
-        ldp       @CL1159,DP
-        ldiu      @CL1159,ar0           ; |1957| 
+        ldp       @CL1154,DP
+        ldiu      @CL1154,ar0           ; |1957| 
         sti       r0,*ar0               ; |1957| 
 	.line	1921
 ;----------------------------------------------------------------------
-; 1958 | DIO_BUILT_IN_TEST.val                   = TRUE;                        
+; 1958 | DIO_IDEC_ENABLE                                 = TRUE;                
 ;----------------------------------------------------------------------
-        ldp       @CL1160,DP
-        ldiu      @CL1160,ar0           ; |1958| 
+        ldp       @CL1155,DP
+        ldiu      @CL1155,ar0           ; |1958| 
         ldiu      1,r0                  ; |1958| 
         sti       r0,*ar0               ; |1958| 
 	.line	1922
 ;----------------------------------------------------------------------
-; 1959 | DIO_RESET_FACTORY_DEFAULTS.val  = FALSE;                               
+; 1959 | DIO_SYSTEM_RESET.val                    = FALSE;                       
 ;----------------------------------------------------------------------
-        ldp       @CL1161,DP
-        ldiu      @CL1161,ar0           ; |1959| 
+        ldp       @CL1156,DP
+        ldiu      @CL1156,ar0           ; |1959| 
         ldiu      0,r0                  ; |1959| 
         sti       r0,*ar0               ; |1959| 
 	.line	1923
 ;----------------------------------------------------------------------
-; 1960 | DIO_ERROR.val                                   = TRUE;                
+; 1960 | DIO_SYSTEM_RESTART.val                  = FALSE;                       
 ;----------------------------------------------------------------------
-        ldp       @CL1162,DP
-        ldiu      @CL1162,ar0           ; |1960| 
-        ldiu      1,r0                  ; |1960| 
+        ldp       @CL1157,DP
+        ldiu      @CL1157,ar0           ; |1960| 
         sti       r0,*ar0               ; |1960| 
 	.line	1924
 ;----------------------------------------------------------------------
-; 1961 | DIO_ALARM.val                                   = FALSE;               
+; 1961 | DIO_BUILT_IN_TEST.val                   = TRUE;                        
 ;----------------------------------------------------------------------
-        ldp       @CL1163,DP
-        ldiu      @CL1163,ar0           ; |1961| 
-        ldiu      0,r0                  ; |1961| 
+        ldp       @CL1158,DP
+        ldiu      @CL1158,ar0           ; |1961| 
+        ldiu      1,r0                  ; |1961| 
         sti       r0,*ar0               ; |1961| 
 	.line	1925
 ;----------------------------------------------------------------------
-; 1962 | DIO_RESTORE_USER_CONFIG.val     = FALSE;                               
+; 1962 | DIO_RESET_FACTORY_DEFAULTS.val  = FALSE;                               
 ;----------------------------------------------------------------------
-        ldp       @CL1164,DP
-        ldiu      @CL1164,ar0           ; |1962| 
+        ldp       @CL1159,DP
+        ldiu      @CL1159,ar0           ; |1962| 
+        ldiu      0,r0                  ; |1962| 
         sti       r0,*ar0               ; |1962| 
 	.line	1926
 ;----------------------------------------------------------------------
-; 1963 | DIO_RESTORE_USER_CONFIG.val     = FALSE;                               
+; 1963 | DIO_ERROR.val                                   = TRUE;                
 ;----------------------------------------------------------------------
-        ldiu      @CL1164,ar0           ; |1963| 
+        ldp       @CL1160,DP
+        ldiu      @CL1160,ar0           ; |1963| 
+        ldiu      1,r0                  ; |1963| 
         sti       r0,*ar0               ; |1963| 
 	.line	1927
 ;----------------------------------------------------------------------
-; 1964 | DIO_SAVE_USER_CONFIG.val                = FALSE;                       
+; 1964 | DIO_ALARM.val                                   = FALSE;               
 ;----------------------------------------------------------------------
-        ldp       @CL1165,DP
-        ldiu      @CL1165,ar0           ; |1964| 
+        ldp       @CL1161,DP
+        ldiu      @CL1161,ar0           ; |1964| 
+        ldiu      0,r0                  ; |1964| 
         sti       r0,*ar0               ; |1964| 
 	.line	1928
 ;----------------------------------------------------------------------
-; 1965 | DIO_RESEARCH_MODE.val                   = FALSE;                       
+; 1965 | DIO_RESTORE_USER_CONFIG.val     = FALSE;                               
 ;----------------------------------------------------------------------
-        ldp       @CL1166,DP
-        ldiu      @CL1166,ar0           ; |1965| 
+        ldp       @CL1162,DP
+        ldiu      @CL1162,ar0           ; |1965| 
         sti       r0,*ar0               ; |1965| 
 	.line	1929
 ;----------------------------------------------------------------------
-; 1966 | DIO_SAVE_FACTORY_CONFIG.val     = FALSE;                               
+; 1966 | DIO_RESTORE_USER_CONFIG.val     = FALSE;                               
 ;----------------------------------------------------------------------
-        ldp       @CL1167,DP
-        ldiu      @CL1167,ar0           ; |1966| 
+        ldiu      @CL1162,ar0           ; |1966| 
         sti       r0,*ar0               ; |1966| 
 	.line	1930
 ;----------------------------------------------------------------------
-; 1967 | DIO_RESTORE_BASICS.val                  = FALSE;                       
+; 1967 | DIO_SAVE_USER_CONFIG.val                = FALSE;                       
 ;----------------------------------------------------------------------
-        ldp       @CL1168,DP
-        ldiu      @CL1168,ar0           ; |1967| 
+        ldp       @CL1163,DP
+        ldiu      @CL1163,ar0           ; |1967| 
         sti       r0,*ar0               ; |1967| 
 	.line	1931
 ;----------------------------------------------------------------------
-; 1968 | DIO_CAP_OIL.val                                 = FALSE;               
+; 1968 | DIO_RESEARCH_MODE.val                   = FALSE;                       
 ;----------------------------------------------------------------------
-        ldp       @CL1169,DP
-        ldiu      @CL1169,ar0           ; |1968| 
+        ldp       @CL1164,DP
+        ldiu      @CL1164,ar0           ; |1968| 
         sti       r0,*ar0               ; |1968| 
 	.line	1932
 ;----------------------------------------------------------------------
-; 1969 | DIO_CAP_WATER.val                               = FALSE;               
+; 1969 | DIO_SAVE_FACTORY_CONFIG.val     = FALSE;                               
 ;----------------------------------------------------------------------
-        ldp       @CL1170,DP
-        ldiu      @CL1170,ar0           ; |1969| 
+        ldp       @CL1165,DP
+        ldiu      @CL1165,ar0           ; |1969| 
         sti       r0,*ar0               ; |1969| 
 	.line	1933
 ;----------------------------------------------------------------------
-; 1970 | DIO_CCM_START.val                               = FALSE;               
+; 1970 | DIO_RESTORE_BASICS.val                  = FALSE;                       
 ;----------------------------------------------------------------------
-        ldp       @CL1171,DP
-        ldiu      @CL1171,ar0           ; |1970| 
+        ldp       @CL1166,DP
+        ldiu      @CL1166,ar0           ; |1970| 
         sti       r0,*ar0               ; |1970| 
 	.line	1934
 ;----------------------------------------------------------------------
-; 1971 | DIO_CCM_PURGE_STAT.val                  = FALSE;                       
+; 1971 | DIO_CAP_OIL.val                                 = FALSE;               
 ;----------------------------------------------------------------------
-        ldp       @CL1172,DP
-        ldiu      @CL1172,ar0           ; |1971| 
+        ldp       @CL1167,DP
+        ldiu      @CL1167,ar0           ; |1971| 
         sti       r0,*ar0               ; |1971| 
-	.line	1938
+	.line	1935
 ;----------------------------------------------------------------------
-; 1975 | VAR_Initialize(&REG_CCM_TEST_STAT, c_not_classified, u_mfgr_specific_no
-;     | ne, 1.0, 1.0, var_no_alarm|var_round);                                 
+; 1972 | DIO_CAP_WATER.val                               = FALSE;               
 ;----------------------------------------------------------------------
-        ldiu      0,rc                  ; |1975| 
-        ldiu      260,re                ; |1975| 
-        ldiu      240,rs                ; |1975| 
-        ldp       @CL20,DP
-        ldfu      1.0000000000e+00,f3   ; |1975| 
-        ldiu      @CL20,r0              ; |1975| 
-        ldp       @CL1173,DP
-        ldfu      1.0000000000e+00,f2   ; |1975| 
-        ldiu      @CL1173,ar2           ; |1975| 
-        callu     r0                    ; far call to _VAR_Initialize	; |1975| 
-                                        ; |1975| Far Call Occurs
-	.line	1939
+        ldp       @CL1168,DP
+        ldiu      @CL1168,ar0           ; |1972| 
+        sti       r0,*ar0               ; |1972| 
+	.line	1936
 ;----------------------------------------------------------------------
-; 1976 | sprintf(REG_CCM_TEST_STAT.name, "TEST IN PROGRESS");    //R328         
+; 1973 | DIO_CCM_START.val                               = FALSE;               
 ;----------------------------------------------------------------------
-        ldp       @CL1174,DP
-        ldiu      @CL1174,r1            ; |1976| 
-        ldp       @CL24,DP
-        ldiu      @CL24,r0              ; |1976| 
-        ldp       @CL1175,DP
-        push      r1                    ; |1976| 
-        ldiu      @CL1175,ar2           ; |1976| 
-        callu     r0                    ; far call to _sprintf	; |1976| 
-                                        ; |1976| Far Call Occurs
-        subi      1,sp                  ; |1976| 
-	.line	1940
+        ldp       @CL1169,DP
+        ldiu      @CL1169,ar0           ; |1973| 
+        sti       r0,*ar0               ; |1973| 
+	.line	1937
 ;----------------------------------------------------------------------
-; 1977 | REG_CCM_TEST_STAT.name_r = 328;                                        
+; 1974 | DIO_CCM_PURGE_STAT.val                  = FALSE;                       
 ;----------------------------------------------------------------------
-        ldp       @CL1176,DP
-        ldiu      @CL1176,ar0           ; |1977| 
-        ldiu      328,r0                ; |1977| 
-        sti       r0,*ar0               ; |1977| 
+        ldp       @CL1170,DP
+        ldiu      @CL1170,ar0           ; |1974| 
+        sti       r0,*ar0               ; |1974| 
 	.line	1941
 ;----------------------------------------------------------------------
-; 1978 | VAR_Setup_Unit(&REG_CCM_TEST_STAT, u_mfgr_specific_none, 1.0, 0.0, 1.0,
+; 1978 | VAR_Initialize(&REG_CCM_TEST_STAT, c_not_classified, u_mfgr_specific_no
+;     | ne, 1.0, 1.0, var_no_alarm|var_round);                                 
+;----------------------------------------------------------------------
+        ldiu      0,rc                  ; |1978| 
+        ldiu      260,re                ; |1978| 
+        ldiu      240,rs                ; |1978| 
+        ldp       @CL20,DP
+        ldfu      1.0000000000e+00,f3   ; |1978| 
+        ldiu      @CL20,r0              ; |1978| 
+        ldp       @CL1171,DP
+        ldfu      1.0000000000e+00,f2   ; |1978| 
+        ldiu      @CL1171,ar2           ; |1978| 
+        callu     r0                    ; far call to _VAR_Initialize	; |1978| 
+                                        ; |1978| Far Call Occurs
+	.line	1942
+;----------------------------------------------------------------------
+; 1979 | sprintf(REG_CCM_TEST_STAT.name, "TEST IN PROGRESS");    //R328         
+;----------------------------------------------------------------------
+        ldp       @CL1172,DP
+        ldiu      @CL1172,r1            ; |1979| 
+        ldp       @CL24,DP
+        ldiu      @CL24,r0              ; |1979| 
+        ldp       @CL1173,DP
+        push      r1                    ; |1979| 
+        ldiu      @CL1173,ar2           ; |1979| 
+        callu     r0                    ; far call to _sprintf	; |1979| 
+                                        ; |1979| Far Call Occurs
+        subi      1,sp                  ; |1979| 
+	.line	1943
+;----------------------------------------------------------------------
+; 1980 | REG_CCM_TEST_STAT.name_r = 328;                                        
+;----------------------------------------------------------------------
+        ldp       @CL1174,DP
+        ldiu      @CL1174,ar0           ; |1980| 
+        ldiu      328,r0                ; |1980| 
+        sti       r0,*ar0               ; |1980| 
+	.line	1944
+;----------------------------------------------------------------------
+; 1981 | VAR_Setup_Unit(&REG_CCM_TEST_STAT, u_mfgr_specific_none, 1.0, 0.0, 1.0,
 ;     |  0.0);                                                                 
 ;----------------------------------------------------------------------
         ldp       @CL30,DP
-        ldiu      @CL30,rs              ; |1978| 
-        ldp       @CL1173,DP
-        ldfu      0.0000000000e+00,f0   ; |1978| 
-        ldfu      1.0000000000e+00,f1   ; |1978| 
-        pushf     f0                    ; |1978| 
-        ldfu      0.0000000000e+00,f3   ; |1978| 
-        ldfu      1.0000000000e+00,f2   ; |1978| 
-        ldiu      @CL1173,ar2           ; |1978| 
-        ldiu      240,rc                ; |1978| 
-        pushf     f1                    ; |1978| 
-        callu     rs                    ; far call to _VAR_Setup_Unit	; |1978| 
-                                        ; |1978| Far Call Occurs
-        subi      2,sp                  ; |1978| 
-	.line	1942
-;----------------------------------------------------------------------
-; 1979 | VAR_Update(&REG_CCM_TEST_STAT, 0.0, 0, 0);                             
-;----------------------------------------------------------------------
-        ldp       @CL32,DP
-        ldiu      @CL32,r0              ; |1979| 
-        ldp       @CL31+0,DP
-        ldfu      @CL31+0,f2            ; |1979| 40b float hi half
-        ldp       @CL31+1,DP
-        ldiu      @CL31+1,r2            ; |1979| 40b float lo half
-        ldp       @CL1173,DP
-        ldiu      @CL1173,ar2           ; |1979| 
-        ldiu      0,r3                  ; |1979| 
-        ldiu      0,rc                  ; |1979| 
-        callu     r0                    ; far call to _VAR_Update	; |1979| 
-                                        ; |1979| Far Call Occurs
+        ldiu      @CL30,rs              ; |1981| 
+        ldp       @CL1171,DP
+        ldfu      0.0000000000e+00,f0   ; |1981| 
+        ldfu      1.0000000000e+00,f1   ; |1981| 
+        pushf     f0                    ; |1981| 
+        ldfu      0.0000000000e+00,f3   ; |1981| 
+        ldfu      1.0000000000e+00,f2   ; |1981| 
+        ldiu      @CL1171,ar2           ; |1981| 
+        ldiu      240,rc                ; |1981| 
+        pushf     f1                    ; |1981| 
+        callu     rs                    ; far call to _VAR_Setup_Unit	; |1981| 
+                                        ; |1981| Far Call Occurs
+        subi      2,sp                  ; |1981| 
 	.line	1945
 ;----------------------------------------------------------------------
-; 1982 | VAR_Initialize(&REG_CCM_PURGE_STAT, c_not_classified, u_mfgr_specific_n
+; 1982 | VAR_Update(&REG_CCM_TEST_STAT, 0.0, 0, 0);                             
+;----------------------------------------------------------------------
+        ldp       @CL32,DP
+        ldiu      @CL32,r0              ; |1982| 
+        ldp       @CL31+0,DP
+        ldfu      @CL31+0,f2            ; |1982| 40b float hi half
+        ldp       @CL31+1,DP
+        ldiu      @CL31+1,r2            ; |1982| 40b float lo half
+        ldp       @CL1171,DP
+        ldiu      @CL1171,ar2           ; |1982| 
+        ldiu      0,r3                  ; |1982| 
+        ldiu      0,rc                  ; |1982| 
+        callu     r0                    ; far call to _VAR_Update	; |1982| 
+                                        ; |1982| Far Call Occurs
+	.line	1948
+;----------------------------------------------------------------------
+; 1985 | VAR_Initialize(&REG_CCM_PURGE_STAT, c_not_classified, u_mfgr_specific_n
 ;     | one, 1.0, 1.0, var_no_alarm|var_round);                                
 ;----------------------------------------------------------------------
         ldp       @CL20,DP
-        ldiu      240,rs                ; |1982| 
-        ldiu      @CL20,r0              ; |1982| 
-        ldiu      260,re                ; |1982| 
-        ldiu      0,rc                  ; |1982| 
-        ldp       @CL1177,DP
-        ldfu      1.0000000000e+00,f3   ; |1982| 
-        ldfu      1.0000000000e+00,f2   ; |1982| 
-        ldiu      @CL1177,ar2           ; |1982| 
-        callu     r0                    ; far call to _VAR_Initialize	; |1982| 
-                                        ; |1982| Far Call Occurs
-	.line	1946
+        ldiu      240,rs                ; |1985| 
+        ldiu      @CL20,r0              ; |1985| 
+        ldiu      260,re                ; |1985| 
+        ldiu      0,rc                  ; |1985| 
+        ldp       @CL1175,DP
+        ldfu      1.0000000000e+00,f3   ; |1985| 
+        ldfu      1.0000000000e+00,f2   ; |1985| 
+        ldiu      @CL1175,ar2           ; |1985| 
+        callu     r0                    ; far call to _VAR_Initialize	; |1985| 
+                                        ; |1985| Far Call Occurs
+	.line	1949
 ;----------------------------------------------------------------------
-; 1983 | sprintf(REG_CCM_PURGE_STAT.name, "PURGING");                           
+; 1986 | sprintf(REG_CCM_PURGE_STAT.name, "PURGING");                           
 ;----------------------------------------------------------------------
-        ldp       @CL1178,DP
-        ldiu      @CL1178,r1            ; |1983| 
+        ldp       @CL1176,DP
+        ldiu      @CL1176,r1            ; |1986| 
         ldp       @CL24,DP
-        ldiu      @CL24,r0              ; |1983| 
-        ldp       @CL1179,DP
-        push      r1                    ; |1983| 
-        ldiu      @CL1179,ar2           ; |1983| 
-        callu     r0                    ; far call to _sprintf	; |1983| 
-                                        ; |1983| Far Call Occurs
-        subi      1,sp                  ; |1983| 
-	.line	1947
+        ldiu      @CL24,r0              ; |1986| 
+        ldp       @CL1177,DP
+        push      r1                    ; |1986| 
+        ldiu      @CL1177,ar2           ; |1986| 
+        callu     r0                    ; far call to _sprintf	; |1986| 
+                                        ; |1986| Far Call Occurs
+        subi      1,sp                  ; |1986| 
+	.line	1950
 ;----------------------------------------------------------------------
-; 1984 | VAR_Setup_Unit(&REG_CCM_PURGE_STAT, u_mfgr_specific_none, 1.0, 0.0, 1.0
+; 1987 | VAR_Setup_Unit(&REG_CCM_PURGE_STAT, u_mfgr_specific_none, 1.0, 0.0, 1.0
 ;     | , 0.0);                                                                
 ;----------------------------------------------------------------------
         ldp       @CL30,DP
-        ldfu      0.0000000000e+00,f0   ; |1984| 
-        ldiu      @CL30,rs              ; |1984| 
-        pushf     f0                    ; |1984| 
-        ldfu      1.0000000000e+00,f1   ; |1984| 
-        ldp       @CL1177,DP
-        pushf     f1                    ; |1984| 
-        ldiu      240,rc                ; |1984| 
-        ldiu      @CL1177,ar2           ; |1984| 
-        ldfu      0.0000000000e+00,f3   ; |1984| 
-        ldfu      1.0000000000e+00,f2   ; |1984| 
-        callu     rs                    ; far call to _VAR_Setup_Unit	; |1984| 
-                                        ; |1984| Far Call Occurs
-        subi      2,sp                  ; |1984| 
-	.line	1948
-;----------------------------------------------------------------------
-; 1985 | VAR_Update(&REG_CCM_PURGE_STAT, 0.0, 0, 0);                            
-;----------------------------------------------------------------------
-        ldp       @CL32,DP
-        ldiu      @CL32,r0              ; |1985| 
-        ldp       @CL31+0,DP
-        ldfu      @CL31+0,f2            ; |1985| 40b float hi half
-        ldp       @CL31+1,DP
-        ldiu      @CL31+1,r2            ; |1985| 40b float lo half
-        ldiu      0,rc                  ; |1985| 
-        ldp       @CL1177,DP
-        ldiu      0,r3                  ; |1985| 
-        ldiu      @CL1177,ar2           ; |1985| 
-        callu     r0                    ; far call to _VAR_Update	; |1985| 
-                                        ; |1985| Far Call Occurs
-	.line	1950
-;----------------------------------------------------------------------
-; 1987 | DIO_CCM_PURGE_TIME.val                  = FALSE;                       
-;----------------------------------------------------------------------
-        ldp       @CL1180,DP
-        ldiu      @CL1180,ar0           ; |1987| 
-        ldiu      0,r0                  ; |1987| 
-        sti       r0,*ar0               ; |1987| 
+        ldfu      0.0000000000e+00,f0   ; |1987| 
+        ldiu      @CL30,rs              ; |1987| 
+        pushf     f0                    ; |1987| 
+        ldfu      1.0000000000e+00,f1   ; |1987| 
+        ldp       @CL1175,DP
+        pushf     f1                    ; |1987| 
+        ldiu      240,rc                ; |1987| 
+        ldiu      @CL1175,ar2           ; |1987| 
+        ldfu      0.0000000000e+00,f3   ; |1987| 
+        ldfu      1.0000000000e+00,f2   ; |1987| 
+        callu     rs                    ; far call to _VAR_Setup_Unit	; |1987| 
+                                        ; |1987| Far Call Occurs
+        subi      2,sp                  ; |1987| 
 	.line	1951
 ;----------------------------------------------------------------------
-; 1988 | DIO_AUX_FREQ_MODE                               = 0x0000;              
+; 1988 | VAR_Update(&REG_CCM_PURGE_STAT, 0.0, 0, 0);                            
 ;----------------------------------------------------------------------
-        ldp       @CL1181,DP
-        ldiu      @CL1181,ar0           ; |1988| 
-        sti       r0,*ar0               ; |1988| 
-	.line	1952
-;----------------------------------------------------------------------
-; 1989 | DIO_PORT_IGNORE_DATA_EXCEPTION  = 0x0001;                              
-;----------------------------------------------------------------------
-        ldp       @CL1182,DP
-        ldiu      @CL1182,ar0           ; |1989| 
-        ldiu      1,r0                  ; |1989| 
-        sti       r0,*ar0               ; |1989| 
+        ldp       @CL32,DP
+        ldiu      @CL32,r0              ; |1988| 
+        ldp       @CL31+0,DP
+        ldfu      @CL31+0,f2            ; |1988| 40b float hi half
+        ldp       @CL31+1,DP
+        ldiu      @CL31+1,r2            ; |1988| 40b float lo half
+        ldiu      0,rc                  ; |1988| 
+        ldp       @CL1175,DP
+        ldiu      0,r3                  ; |1988| 
+        ldiu      @CL1175,ar2           ; |1988| 
+        callu     r0                    ; far call to _VAR_Update	; |1988| 
+                                        ; |1988| Far Call Occurs
 	.line	1953
 ;----------------------------------------------------------------------
-; 1990 | DIO_CLEAR_COUNTERS.val                  = FALSE;        /* Reset Accumu
-;     | lators */                                                              
+; 1990 | DIO_CCM_PURGE_TIME.val                  = FALSE;                       
 ;----------------------------------------------------------------------
-        ldp       @CL1183,DP
-        ldiu      @CL1183,ar0           ; |1990| 
+        ldp       @CL1178,DP
+        ldiu      @CL1178,ar0           ; |1990| 
         ldiu      0,r0                  ; |1990| 
         sti       r0,*ar0               ; |1990| 
 	.line	1954
 ;----------------------------------------------------------------------
-; 1991 | DIO_TOTALIZER_CONTROL.val               = TRUE;         /* Enable Accum
-;     | ulators  */                                                            
+; 1991 | DIO_AUX_FREQ_MODE                               = 0x0000;              
 ;----------------------------------------------------------------------
-        ldp       @CL1184,DP
-        ldiu      @CL1184,ar0           ; |1991| 
-        ldiu      1,r0                  ; |1991| 
+        ldp       @CL1179,DP
+        ldiu      @CL1179,ar0           ; |1991| 
         sti       r0,*ar0               ; |1991| 
 	.line	1955
 ;----------------------------------------------------------------------
-; 1992 | DIO_HART_5.val                                  = TRUE;                
+; 1992 | DIO_PORT_IGNORE_DATA_EXCEPTION  = 0x0001;                              
 ;----------------------------------------------------------------------
-        ldp       @CL1185,DP
-        ldiu      @CL1185,ar0           ; |1992| 
+        ldp       @CL1180,DP
+        ldiu      @CL1180,ar0           ; |1992| 
+        ldiu      1,r0                  ; |1992| 
         sti       r0,*ar0               ; |1992| 
 	.line	1956
 ;----------------------------------------------------------------------
-; 1993 | DIO_BUILT_IN_TEST_ENABLE.val    = TRUE;                                
+; 1993 | DIO_CLEAR_COUNTERS.val                  = FALSE;        /* Reset Accumu
+;     | lators */                                                              
 ;----------------------------------------------------------------------
-        ldp       @CL1186,DP
-        ldiu      @CL1186,ar0           ; |1993| 
+        ldp       @CL1181,DP
+        ldiu      @CL1181,ar0           ; |1993| 
+        ldiu      0,r0                  ; |1993| 
         sti       r0,*ar0               ; |1993| 
 	.line	1957
 ;----------------------------------------------------------------------
-; 1994 | DIO_HEATER_DISABLE.val                  = FALSE;                       
+; 1994 | DIO_TOTALIZER_CONTROL.val               = TRUE;         /* Enable Accum
+;     | ulators  */                                                            
 ;----------------------------------------------------------------------
-        ldp       @CL1187,DP
-        ldiu      @CL1187,ar0           ; |1994| 
-        ldiu      0,r0                  ; |1994| 
+        ldp       @CL1182,DP
+        ldiu      @CL1182,ar0           ; |1994| 
+        ldiu      1,r0                  ; |1994| 
         sti       r0,*ar0               ; |1994| 
 	.line	1958
 ;----------------------------------------------------------------------
-; 1995 | DIO_DUMMY.val                                   = FALSE;               
+; 1995 | DIO_HART_5.val                                  = TRUE;                
 ;----------------------------------------------------------------------
-        ldp       @CL1188,DP
-        ldiu      @CL1188,ar0           ; |1995| 
+        ldp       @CL1183,DP
+        ldiu      @CL1183,ar0           ; |1995| 
         sti       r0,*ar0               ; |1995| 
 	.line	1959
 ;----------------------------------------------------------------------
-; 1996 | LOOP_ENABLED.val                                = TRUE;                
+; 1996 | DIO_BUILT_IN_TEST_ENABLE.val    = TRUE;                                
 ;----------------------------------------------------------------------
-        ldp       @CL1189,DP
-        ldiu      @CL1189,ar0           ; |1996| 
-        ldiu      1,r0                  ; |1996| 
+        ldp       @CL1184,DP
+        ldiu      @CL1184,ar0           ; |1996| 
         sti       r0,*ar0               ; |1996| 
 	.line	1960
 ;----------------------------------------------------------------------
-; 1997 | DATA_CHANGE.val                                 = FALSE;               
+; 1997 | DIO_HEATER_DISABLE.val                  = FALSE;                       
 ;----------------------------------------------------------------------
-        ldp       @CL1190,DP
-        ldiu      @CL1190,ar0           ; |1997| 
+        ldp       @CL1185,DP
+        ldiu      @CL1185,ar0           ; |1997| 
         ldiu      0,r0                  ; |1997| 
         sti       r0,*ar0               ; |1997| 
 	.line	1961
 ;----------------------------------------------------------------------
-; 1998 | DIO_BEEP.val                                    = FALSE;               
+; 1998 | DIO_DUMMY.val                                   = FALSE;               
 ;----------------------------------------------------------------------
-        ldp       @CL1191,DP
-        ldiu      @CL1191,ar0           ; |1998| 
+        ldp       @CL1186,DP
+        ldiu      @CL1186,ar0           ; |1998| 
         sti       r0,*ar0               ; |1998| 
+	.line	1962
+;----------------------------------------------------------------------
+; 1999 | LOOP_ENABLED.val                                = TRUE;                
+;----------------------------------------------------------------------
+        ldp       @CL1187,DP
+        ldiu      @CL1187,ar0           ; |1999| 
+        ldiu      1,r0                  ; |1999| 
+        sti       r0,*ar0               ; |1999| 
+	.line	1963
+;----------------------------------------------------------------------
+; 2000 | DATA_CHANGE.val                                 = FALSE;               
+;----------------------------------------------------------------------
+        ldp       @CL1188,DP
+        ldiu      @CL1188,ar0           ; |2000| 
+        ldiu      0,r0                  ; |2000| 
+        sti       r0,*ar0               ; |2000| 
 	.line	1964
 ;----------------------------------------------------------------------
-; 2001 | DIO_MANUAL_RESET.val    = FALSE;                /* Coil for Enabling Ma
+; 2001 | DIO_BEEP.val                                    = FALSE;               
+;----------------------------------------------------------------------
+        ldp       @CL1189,DP
+        ldiu      @CL1189,ar0           ; |2001| 
+        sti       r0,*ar0               ; |2001| 
+	.line	1967
+;----------------------------------------------------------------------
+; 2004 | DIO_MANUAL_RESET.val    = FALSE;                /* Coil for Enabling Ma
 ;     | nual HSALT Reset */                                                    
 ;----------------------------------------------------------------------
+        ldp       @CL1190,DP
+        ldiu      @CL1190,ar0           ; |2004| 
+        sti       r0,*ar0               ; |2004| 
+	.line	1968
+;----------------------------------------------------------------------
+; 2005 | DIO_MANUAL_RESET.vect   = NULL_PTR;                                    
+;----------------------------------------------------------------------
+        ldp       @CL1191,DP
+        ldiu      @CL1191,ar0           ; |2005| 
+        sti       r0,*ar0               ; |2005| 
+	.line	1969
+;----------------------------------------------------------------------
+; 2006 | DIO_MANUAL_RESET.vect2  = NULL_PTR;                                    
+; 2009 | // new boxcar routine                                                  
+;----------------------------------------------------------------------
         ldp       @CL1192,DP
-        ldiu      @CL1192,ar0           ; |2001| 
-        sti       r0,*ar0               ; |2001| 
-	.line	1965
+        ldiu      @CL1192,ar0           ; |2006| 
+        sti       r0,*ar0               ; |2006| 
+	.line	1973
 ;----------------------------------------------------------------------
-; 2002 | DIO_MANUAL_RESET.vect   = NULL_PTR;                                    
-;----------------------------------------------------------------------
-        ldp       @CL1193,DP
-        ldiu      @CL1193,ar0           ; |2002| 
-        sti       r0,*ar0               ; |2002| 
-	.line	1966
-;----------------------------------------------------------------------
-; 2003 | DIO_MANUAL_RESET.vect2  = NULL_PTR;                                    
-; 2006 | // new boxcar routine                                                  
-;----------------------------------------------------------------------
-        ldp       @CL1194,DP
-        ldiu      @CL1194,ar0           ; |2003| 
-        sti       r0,*ar0               ; |2003| 
-	.line	1970
-;----------------------------------------------------------------------
-; 2007 | DIO_TIME_RESET.val          = FALSE;                // Coil for Enablin
+; 2010 | DIO_TIME_RESET.val          = FALSE;                // Coil for Enablin
 ;     | g Time Reset                                                           
 ;----------------------------------------------------------------------
-        ldp       @CL1195,DP
-        ldiu      @CL1195,ar0           ; |2007| 
-        sti       r0,*ar0               ; |2007| 
-	.line	1971
+        ldp       @CL1193,DP
+        ldiu      @CL1193,ar0           ; |2010| 
+        sti       r0,*ar0               ; |2010| 
+	.line	1974
 ;----------------------------------------------------------------------
-; 2008 | DIO_TIME_RESET.vect         = NULL_PTR;                                
+; 2011 | DIO_TIME_RESET.vect         = NULL_PTR;                                
+;----------------------------------------------------------------------
+        ldp       @CL1194,DP
+        ldiu      @CL1194,ar0           ; |2011| 
+        sti       r0,*ar0               ; |2011| 
+	.line	1975
+;----------------------------------------------------------------------
+; 2012 | DIO_TIME_RESET.vect2        = NULL_PTR;                                
+;----------------------------------------------------------------------
+        ldp       @CL1195,DP
+        ldiu      @CL1195,ar0           ; |2012| 
+        sti       r0,*ar0               ; |2012| 
+	.line	1985
+;----------------------------------------------------------------------
+; 2022 | DIO_PORT_DEFAULTS.val   = 0;                                           
 ;----------------------------------------------------------------------
         ldp       @CL1196,DP
-        ldiu      @CL1196,ar0           ; |2008| 
-        sti       r0,*ar0               ; |2008| 
-	.line	1972
+        ldiu      @CL1196,ar0           ; |2022| 
+        sti       r0,*ar0               ; |2022| 
+	.line	1986
 ;----------------------------------------------------------------------
-; 2009 | DIO_TIME_RESET.vect2        = NULL_PTR;                                
+; 2023 | DIO_PORT_DEFAULTS.vect  = (int*)Submit_Serial_Defaults;                
 ;----------------------------------------------------------------------
         ldp       @CL1197,DP
-        ldiu      @CL1197,ar0           ; |2009| 
-        sti       r0,*ar0               ; |2009| 
-	.line	1982
-;----------------------------------------------------------------------
-; 2019 | DIO_PORT_DEFAULTS.val   = 0;                                           
-;----------------------------------------------------------------------
+        ldiu      @CL1197,ar0           ; |2023| 
         ldp       @CL1198,DP
-        ldiu      @CL1198,ar0           ; |2019| 
-        sti       r0,*ar0               ; |2019| 
-	.line	1983
-;----------------------------------------------------------------------
-; 2020 | DIO_PORT_DEFAULTS.vect  = (int*)Submit_Serial_Defaults;                
-;----------------------------------------------------------------------
-        ldp       @CL1199,DP
-        ldiu      @CL1199,ar0           ; |2020| 
-        ldp       @CL1200,DP
-        ldiu      @CL1200,r0            ; |2020| 
-        sti       r0,*ar0               ; |2020| 
-	.line	1984
-;----------------------------------------------------------------------
-; 2021 | DIO_PORT_DEFAULTS.vect2 = NULL_PTR;                                    
-;----------------------------------------------------------------------
-        ldp       @CL1201,DP
-        ldiu      @CL1201,ar0           ; |2021| 
-        ldiu      0,r0                  ; |2021| 
-        sti       r0,*ar0               ; |2021| 
+        ldiu      @CL1198,r0            ; |2023| 
+        sti       r0,*ar0               ; |2023| 
 	.line	1987
 ;----------------------------------------------------------------------
-; 2024 | DIO_BEEP.vect                                   = (int*)BEEP_ON;       
+; 2024 | DIO_PORT_DEFAULTS.vect2 = NULL_PTR;                                    
 ;----------------------------------------------------------------------
-        ldp       @CL1202,DP
-        ldiu      @CL1202,ar0           ; |2024| 
-        ldp       @CL1203,DP
-        ldiu      @CL1203,r0            ; |2024| 
+        ldp       @CL1199,DP
+        ldiu      @CL1199,ar0           ; |2024| 
+        ldiu      0,r0                  ; |2024| 
         sti       r0,*ar0               ; |2024| 
-	.line	1988
-;----------------------------------------------------------------------
-; 2025 | DATA_CHANGE.vect                                = NULL_PTR;            
-;----------------------------------------------------------------------
-        ldp       @CL1204,DP
-        ldiu      @CL1204,ar0           ; |2025| 
-        ldiu      0,r0                  ; |2025| 
-        sti       r0,*ar0               ; |2025| 
-	.line	1989
-;----------------------------------------------------------------------
-; 2026 | LOOP_ENABLED.vect                               = NULL_PTR;            
-;----------------------------------------------------------------------
-        ldp       @CL1205,DP
-        ldiu      @CL1205,ar0           ; |2026| 
-        sti       r0,*ar0               ; |2026| 
 	.line	1990
 ;----------------------------------------------------------------------
-; 2027 | DIO_CCM_START.vect                              = (int*)CCM_START;     
+; 2027 | DIO_BEEP.vect                                   = (int*)BEEP_ON;       
 ;----------------------------------------------------------------------
-        ldp       @CL1206,DP
-        ldiu      @CL1206,ar0           ; |2027| 
-        ldp       @CL1207,DP
-        ldiu      @CL1207,r0            ; |2027| 
+        ldp       @CL1200,DP
+        ldiu      @CL1200,ar0           ; |2027| 
+        ldp       @CL1201,DP
+        ldiu      @CL1201,r0            ; |2027| 
         sti       r0,*ar0               ; |2027| 
 	.line	1991
 ;----------------------------------------------------------------------
-; 2028 | DIO_CCM_PURGE_STAT.vect                 = NULL_PTR;                    
+; 2028 | DATA_CHANGE.vect                                = NULL_PTR;            
 ;----------------------------------------------------------------------
-        ldp       @CL1208,DP
-        ldiu      @CL1208,ar0           ; |2028| 
+        ldp       @CL1202,DP
+        ldiu      @CL1202,ar0           ; |2028| 
         ldiu      0,r0                  ; |2028| 
         sti       r0,*ar0               ; |2028| 
 	.line	1992
 ;----------------------------------------------------------------------
-; 2029 | DIO_CCM_PURGE_TIME.vect                 = NULL_PTR;                    
+; 2029 | LOOP_ENABLED.vect                               = NULL_PTR;            
 ;----------------------------------------------------------------------
-        ldp       @CL1209,DP
-        ldiu      @CL1209,ar0           ; |2029| 
+        ldp       @CL1203,DP
+        ldiu      @CL1203,ar0           ; |2029| 
         sti       r0,*ar0               ; |2029| 
 	.line	1993
 ;----------------------------------------------------------------------
-; 2030 | DIO_DUMMY.vect                                  = NULL_PTR;            
+; 2030 | DIO_CCM_START.vect                              = (int*)CCM_START;     
 ;----------------------------------------------------------------------
-        ldp       @CL1210,DP
-        ldiu      @CL1210,ar0           ; |2030| 
+        ldp       @CL1204,DP
+        ldiu      @CL1204,ar0           ; |2030| 
+        ldp       @CL1205,DP
+        ldiu      @CL1205,r0            ; |2030| 
         sti       r0,*ar0               ; |2030| 
 	.line	1994
 ;----------------------------------------------------------------------
-; 2031 | DIO_HEATER_DISABLE.vect                 = (int*)Disable_Heater;        
+; 2031 | DIO_CCM_PURGE_STAT.vect                 = NULL_PTR;                    
 ;----------------------------------------------------------------------
-        ldp       @CL1211,DP
-        ldiu      @CL1211,ar0           ; |2031| 
-        ldp       @CL1212,DP
-        ldiu      @CL1212,r0            ; |2031| 
+        ldp       @CL1206,DP
+        ldiu      @CL1206,ar0           ; |2031| 
+        ldiu      0,r0                  ; |2031| 
         sti       r0,*ar0               ; |2031| 
 	.line	1995
 ;----------------------------------------------------------------------
-; 2032 | DIO_SYSTEM_RESET.vect                   = (int*)Submit_Reset;          
+; 2032 | DIO_CCM_PURGE_TIME.vect                 = NULL_PTR;                    
 ;----------------------------------------------------------------------
-        ldp       @CL1213,DP
-        ldiu      @CL1213,ar0           ; |2032| 
-        ldp       @CL1214,DP
-        ldiu      @CL1214,r0            ; |2032| 
+        ldp       @CL1207,DP
+        ldiu      @CL1207,ar0           ; |2032| 
         sti       r0,*ar0               ; |2032| 
 	.line	1996
 ;----------------------------------------------------------------------
-; 2033 | DIO_SYSTEM_RESTART.vect                 = (int*)Submit_Restart;        
+; 2033 | DIO_DUMMY.vect                                  = NULL_PTR;            
 ;----------------------------------------------------------------------
-        ldp       @CL1215,DP
-        ldiu      @CL1215,ar0           ; |2033| 
-        ldp       @CL1216,DP
-        ldiu      @CL1216,r0            ; |2033| 
+        ldp       @CL1208,DP
+        ldiu      @CL1208,ar0           ; |2033| 
         sti       r0,*ar0               ; |2033| 
 	.line	1997
 ;----------------------------------------------------------------------
-; 2034 | DIO_BUILT_IN_TEST.vect                  = (int*)Submit_SELF_TEST;      
+; 2034 | DIO_HEATER_DISABLE.vect                 = (int*)Disable_Heater;        
 ;----------------------------------------------------------------------
-        ldp       @CL1217,DP
-        ldiu      @CL1217,ar0           ; |2034| 
-        ldp       @CL1218,DP
-        ldiu      @CL1218,r0            ; |2034| 
+        ldp       @CL1209,DP
+        ldiu      @CL1209,ar0           ; |2034| 
+        ldp       @CL1210,DP
+        ldiu      @CL1210,r0            ; |2034| 
         sti       r0,*ar0               ; |2034| 
 	.line	1998
 ;----------------------------------------------------------------------
-; 2035 | DIO_BUILT_IN_TEST_ENABLE.vect   = NULL_PTR;                            
+; 2035 | DIO_SYSTEM_RESET.vect                   = (int*)Submit_Reset;          
 ;----------------------------------------------------------------------
-        ldp       @CL1219,DP
-        ldiu      @CL1219,ar0           ; |2035| 
-        ldiu      0,r0                  ; |2035| 
+        ldp       @CL1211,DP
+        ldiu      @CL1211,ar0           ; |2035| 
+        ldp       @CL1212,DP
+        ldiu      @CL1212,r0            ; |2035| 
         sti       r0,*ar0               ; |2035| 
 	.line	1999
 ;----------------------------------------------------------------------
-; 2036 | DIO_RESET_FACTORY_DEFAULTS.vect = (int*)Submit_Restore_CFG_FACTORY;    
+; 2036 | DIO_SYSTEM_RESTART.vect                 = (int*)Submit_Restart;        
 ;----------------------------------------------------------------------
-        ldp       @CL1220,DP
-        ldiu      @CL1220,ar0           ; |2036| 
-        ldp       @CL1221,DP
-        ldiu      @CL1221,r0            ; |2036| 
+        ldp       @CL1213,DP
+        ldiu      @CL1213,ar0           ; |2036| 
+        ldp       @CL1214,DP
+        ldiu      @CL1214,r0            ; |2036| 
         sti       r0,*ar0               ; |2036| 
 	.line	2000
 ;----------------------------------------------------------------------
-; 2037 | DIO_ERROR.vect                                  = (int*)Clear_Diagnosti
-;     | cs;                                                                    
+; 2037 | DIO_BUILT_IN_TEST.vect                  = (int*)Submit_SELF_TEST;      
 ;----------------------------------------------------------------------
-        ldp       @CL1222,DP
-        ldiu      @CL1222,ar0           ; |2037| 
-        ldp       @CL1223,DP
-        ldiu      @CL1223,r0            ; |2037| 
+        ldp       @CL1215,DP
+        ldiu      @CL1215,ar0           ; |2037| 
+        ldp       @CL1216,DP
+        ldiu      @CL1216,r0            ; |2037| 
         sti       r0,*ar0               ; |2037| 
 	.line	2001
 ;----------------------------------------------------------------------
-; 2038 | DIO_ALARM.vect                                  = NULL_PTR;            
+; 2038 | DIO_BUILT_IN_TEST_ENABLE.vect   = NULL_PTR;                            
 ;----------------------------------------------------------------------
-        ldp       @CL1224,DP
-        ldiu      @CL1224,ar0           ; |2038| 
+        ldp       @CL1217,DP
+        ldiu      @CL1217,ar0           ; |2038| 
         ldiu      0,r0                  ; |2038| 
         sti       r0,*ar0               ; |2038| 
 	.line	2002
 ;----------------------------------------------------------------------
-; 2039 | DIO_RESTORE_USER_CONFIG.vect    = (int*)Submit_Restore_CFG_USER;       
+; 2039 | DIO_RESET_FACTORY_DEFAULTS.vect = (int*)Submit_Restore_CFG_FACTORY;    
 ;----------------------------------------------------------------------
-        ldp       @CL1225,DP
-        ldiu      @CL1225,ar0           ; |2039| 
-        ldp       @CL1226,DP
-        ldiu      @CL1226,r0            ; |2039| 
+        ldp       @CL1218,DP
+        ldiu      @CL1218,ar0           ; |2039| 
+        ldp       @CL1219,DP
+        ldiu      @CL1219,r0            ; |2039| 
         sti       r0,*ar0               ; |2039| 
 	.line	2003
 ;----------------------------------------------------------------------
-; 2040 | DIO_SAVE_USER_CONFIG.vect               = (int*)Submit_Write_CFG_USER; 
+; 2040 | DIO_ERROR.vect                                  = (int*)Clear_Diagnosti
+;     | cs;                                                                    
 ;----------------------------------------------------------------------
-        ldp       @CL1227,DP
-        ldiu      @CL1227,ar0           ; |2040| 
-        ldp       @CL471,DP
-        ldiu      @CL471,r0             ; |2040| 
+        ldp       @CL1220,DP
+        ldiu      @CL1220,ar0           ; |2040| 
+        ldp       @CL1221,DP
+        ldiu      @CL1221,r0            ; |2040| 
         sti       r0,*ar0               ; |2040| 
 	.line	2004
 ;----------------------------------------------------------------------
-; 2041 | DIO_RESEARCH_MODE.vect                  = (int*)Set_Research_Mode;     
+; 2041 | DIO_ALARM.vect                                  = NULL_PTR;            
 ;----------------------------------------------------------------------
-        ldp       @CL1228,DP
-        ldiu      @CL1228,ar0           ; |2041| 
-        ldp       @CL1229,DP
-        ldiu      @CL1229,r0            ; |2041| 
+        ldp       @CL1222,DP
+        ldiu      @CL1222,ar0           ; |2041| 
+        ldiu      0,r0                  ; |2041| 
         sti       r0,*ar0               ; |2041| 
 	.line	2005
 ;----------------------------------------------------------------------
-; 2042 | DIO_SAVE_FACTORY_CONFIG.vect    = (int*)Submit_Write_CFG_FACTORY;      
+; 2042 | DIO_RESTORE_USER_CONFIG.vect    = (int*)Submit_Restore_CFG_USER;       
 ;----------------------------------------------------------------------
-        ldp       @CL1230,DP
-        ldiu      @CL1230,ar0           ; |2042| 
-        ldp       @CL1231,DP
-        ldiu      @CL1231,r0            ; |2042| 
+        ldp       @CL1223,DP
+        ldiu      @CL1223,ar0           ; |2042| 
+        ldp       @CL1224,DP
+        ldiu      @CL1224,r0            ; |2042| 
         sti       r0,*ar0               ; |2042| 
 	.line	2006
 ;----------------------------------------------------------------------
-; 2043 | DIO_RESTORE_BASICS.vect                 = (int*)Submit_Setup_Basics;   
+; 2043 | DIO_SAVE_USER_CONFIG.vect               = (int*)Submit_Write_CFG_USER; 
 ;----------------------------------------------------------------------
-        ldp       @CL1232,DP
-        ldiu      @CL1232,ar0           ; |2043| 
-        ldp       @CL1233,DP
-        ldiu      @CL1233,r0            ; |2043| 
+        ldp       @CL1225,DP
+        ldiu      @CL1225,ar0           ; |2043| 
+        ldp       @CL471,DP
+        ldiu      @CL471,r0             ; |2043| 
         sti       r0,*ar0               ; |2043| 
 	.line	2007
 ;----------------------------------------------------------------------
-; 2044 | DIO_CAP_OIL.vect                                = (int*)Capture_Watercu
-;     | t_Oil;                                                                 
+; 2044 | DIO_RESEARCH_MODE.vect                  = (int*)Set_Research_Mode;     
 ;----------------------------------------------------------------------
-        ldp       @CL1234,DP
-        ldiu      @CL1234,ar0           ; |2044| 
-        ldp       @CL1235,DP
-        ldiu      @CL1235,r0            ; |2044| 
+        ldp       @CL1226,DP
+        ldiu      @CL1226,ar0           ; |2044| 
+        ldp       @CL1227,DP
+        ldiu      @CL1227,r0            ; |2044| 
         sti       r0,*ar0               ; |2044| 
 	.line	2008
 ;----------------------------------------------------------------------
-; 2045 | DIO_CAP_WATER.vect                              = (int*)Capture_Watercu
-;     | t_Water;                                                               
+; 2045 | DIO_SAVE_FACTORY_CONFIG.vect    = (int*)Submit_Write_CFG_FACTORY;      
 ;----------------------------------------------------------------------
-        ldp       @CL1236,DP
-        ldiu      @CL1236,ar0           ; |2045| 
-        ldp       @CL1237,DP
-        ldiu      @CL1237,r0            ; |2045| 
+        ldp       @CL1228,DP
+        ldiu      @CL1228,ar0           ; |2045| 
+        ldp       @CL1229,DP
+        ldiu      @CL1229,r0            ; |2045| 
         sti       r0,*ar0               ; |2045| 
 	.line	2009
 ;----------------------------------------------------------------------
-; 2046 | DIO_CLEAR_COUNTERS.vect                 = (int*)Clear_Accumulators;    
+; 2046 | DIO_RESTORE_BASICS.vect                 = (int*)Submit_Setup_Basics;   
 ;----------------------------------------------------------------------
-        ldp       @CL1238,DP
-        ldiu      @CL1238,ar0           ; |2046| 
-        ldp       @CL1239,DP
-        ldiu      @CL1239,r0            ; |2046| 
+        ldp       @CL1230,DP
+        ldiu      @CL1230,ar0           ; |2046| 
+        ldp       @CL1231,DP
+        ldiu      @CL1231,r0            ; |2046| 
         sti       r0,*ar0               ; |2046| 
 	.line	2010
 ;----------------------------------------------------------------------
-; 2047 | DIO_TOTALIZER_CONTROL.vect              = (int*)Totalizer_Control;     
+; 2047 | DIO_CAP_OIL.vect                                = (int*)Capture_Watercu
+;     | t_Oil;                                                                 
 ;----------------------------------------------------------------------
-        ldp       @CL1240,DP
-        ldiu      @CL1240,ar0           ; |2047| 
-        ldp       @CL1241,DP
-        ldiu      @CL1241,r0            ; |2047| 
+        ldp       @CL1232,DP
+        ldiu      @CL1232,ar0           ; |2047| 
+        ldp       @CL1233,DP
+        ldiu      @CL1233,r0            ; |2047| 
         sti       r0,*ar0               ; |2047| 
 	.line	2011
 ;----------------------------------------------------------------------
-; 2048 | DIO_HART_5.vect                                 = (int*)HART_5;        
+; 2048 | DIO_CAP_WATER.vect                              = (int*)Capture_Watercu
+;     | t_Water;                                                               
 ;----------------------------------------------------------------------
-        ldp       @CL1242,DP
-        ldiu      @CL1242,ar0           ; |2048| 
-        ldp       @CL1243,DP
-        ldiu      @CL1243,r0            ; |2048| 
+        ldp       @CL1234,DP
+        ldiu      @CL1234,ar0           ; |2048| 
+        ldp       @CL1235,DP
+        ldiu      @CL1235,r0            ; |2048| 
         sti       r0,*ar0               ; |2048| 
+	.line	2012
+;----------------------------------------------------------------------
+; 2049 | DIO_CLEAR_COUNTERS.vect                 = (int*)Clear_Accumulators;    
+;----------------------------------------------------------------------
+        ldp       @CL1236,DP
+        ldiu      @CL1236,ar0           ; |2049| 
+        ldp       @CL1237,DP
+        ldiu      @CL1237,r0            ; |2049| 
+        sti       r0,*ar0               ; |2049| 
+	.line	2013
+;----------------------------------------------------------------------
+; 2050 | DIO_TOTALIZER_CONTROL.vect              = (int*)Totalizer_Control;     
+;----------------------------------------------------------------------
+        ldp       @CL1238,DP
+        ldiu      @CL1238,ar0           ; |2050| 
+        ldp       @CL1239,DP
+        ldiu      @CL1239,r0            ; |2050| 
+        sti       r0,*ar0               ; |2050| 
 	.line	2014
 ;----------------------------------------------------------------------
-; 2051 | DIO_BEEP.vect2                                          = NULL_PTR;    
+; 2051 | DIO_HART_5.vect                                 = (int*)HART_5;        
 ;----------------------------------------------------------------------
-        ldp       @CL1244,DP
-        ldiu      @CL1244,ar0           ; |2051| 
-        ldiu      0,r0                  ; |2051| 
+        ldp       @CL1240,DP
+        ldiu      @CL1240,ar0           ; |2051| 
+        ldp       @CL1241,DP
+        ldiu      @CL1241,r0            ; |2051| 
         sti       r0,*ar0               ; |2051| 
-	.line	2015
-;----------------------------------------------------------------------
-; 2052 | DATA_CHANGE.vect2                                       = NULL_PTR;    
-;----------------------------------------------------------------------
-        ldp       @CL1245,DP
-        ldiu      @CL1245,ar0           ; |2052| 
-        sti       r0,*ar0               ; |2052| 
-	.line	2016
-;----------------------------------------------------------------------
-; 2053 | LOOP_ENABLED.vect2                                      = NULL_PTR;    
-;----------------------------------------------------------------------
-        ldp       @CL1246,DP
-        ldiu      @CL1246,ar0           ; |2053| 
-        sti       r0,*ar0               ; |2053| 
 	.line	2017
 ;----------------------------------------------------------------------
-; 2054 | DIO_CCM_START.vect2                             = NULL_PTR;            
+; 2054 | DIO_BEEP.vect2                                          = NULL_PTR;    
 ;----------------------------------------------------------------------
-        ldp       @CL1247,DP
-        ldiu      @CL1247,ar0           ; |2054| 
+        ldp       @CL1242,DP
+        ldiu      @CL1242,ar0           ; |2054| 
+        ldiu      0,r0                  ; |2054| 
         sti       r0,*ar0               ; |2054| 
 	.line	2018
 ;----------------------------------------------------------------------
-; 2055 | DIO_CCM_PURGE_STAT.vect2                        = NULL_PTR;            
+; 2055 | DATA_CHANGE.vect2                                       = NULL_PTR;    
 ;----------------------------------------------------------------------
-        ldp       @CL1248,DP
-        ldiu      @CL1248,ar0           ; |2055| 
+        ldp       @CL1243,DP
+        ldiu      @CL1243,ar0           ; |2055| 
         sti       r0,*ar0               ; |2055| 
 	.line	2019
 ;----------------------------------------------------------------------
-; 2056 | DIO_CCM_PURGE_TIME.vect2                        = NULL_PTR;            
+; 2056 | LOOP_ENABLED.vect2                                      = NULL_PTR;    
 ;----------------------------------------------------------------------
-        ldp       @CL1249,DP
-        ldiu      @CL1249,ar0           ; |2056| 
+        ldp       @CL1244,DP
+        ldiu      @CL1244,ar0           ; |2056| 
         sti       r0,*ar0               ; |2056| 
 	.line	2020
 ;----------------------------------------------------------------------
-; 2057 | DIO_DUMMY.vect2                                         = NULL_PTR;    
+; 2057 | DIO_CCM_START.vect2                             = NULL_PTR;            
 ;----------------------------------------------------------------------
-        ldp       @CL1250,DP
-        ldiu      @CL1250,ar0           ; |2057| 
+        ldp       @CL1245,DP
+        ldiu      @CL1245,ar0           ; |2057| 
         sti       r0,*ar0               ; |2057| 
 	.line	2021
 ;----------------------------------------------------------------------
-; 2058 | DIO_HEATER_DISABLE.vect2                        = NULL_PTR;            
+; 2058 | DIO_CCM_PURGE_STAT.vect2                        = NULL_PTR;            
 ;----------------------------------------------------------------------
-        ldp       @CL1251,DP
-        ldiu      @CL1251,ar0           ; |2058| 
+        ldp       @CL1246,DP
+        ldiu      @CL1246,ar0           ; |2058| 
         sti       r0,*ar0               ; |2058| 
 	.line	2022
 ;----------------------------------------------------------------------
-; 2059 | DIO_SYSTEM_RESET.vect2                          = NULL_PTR;            
+; 2059 | DIO_CCM_PURGE_TIME.vect2                        = NULL_PTR;            
 ;----------------------------------------------------------------------
-        ldp       @CL1252,DP
-        ldiu      @CL1252,ar0           ; |2059| 
+        ldp       @CL1247,DP
+        ldiu      @CL1247,ar0           ; |2059| 
         sti       r0,*ar0               ; |2059| 
 	.line	2023
 ;----------------------------------------------------------------------
-; 2060 | DIO_SYSTEM_RESTART.vect2                        = NULL_PTR;            
+; 2060 | DIO_DUMMY.vect2                                         = NULL_PTR;    
 ;----------------------------------------------------------------------
-        ldp       @CL1253,DP
-        ldiu      @CL1253,ar0           ; |2060| 
+        ldp       @CL1248,DP
+        ldiu      @CL1248,ar0           ; |2060| 
         sti       r0,*ar0               ; |2060| 
 	.line	2024
 ;----------------------------------------------------------------------
-; 2061 | DIO_BUILT_IN_TEST.vect2                         = NULL_PTR;            
+; 2061 | DIO_HEATER_DISABLE.vect2                        = NULL_PTR;            
 ;----------------------------------------------------------------------
-        ldp       @CL1254,DP
-        ldiu      @CL1254,ar0           ; |2061| 
+        ldp       @CL1249,DP
+        ldiu      @CL1249,ar0           ; |2061| 
         sti       r0,*ar0               ; |2061| 
 	.line	2025
 ;----------------------------------------------------------------------
-; 2062 | DIO_BUILT_IN_TEST_ENABLE.vect2          = NULL_PTR;                    
+; 2062 | DIO_SYSTEM_RESET.vect2                          = NULL_PTR;            
 ;----------------------------------------------------------------------
-        ldp       @CL1255,DP
-        ldiu      @CL1255,ar0           ; |2062| 
+        ldp       @CL1250,DP
+        ldiu      @CL1250,ar0           ; |2062| 
         sti       r0,*ar0               ; |2062| 
 	.line	2026
 ;----------------------------------------------------------------------
-; 2063 | DIO_RESET_FACTORY_DEFAULTS.vect2        = NULL_PTR;                    
+; 2063 | DIO_SYSTEM_RESTART.vect2                        = NULL_PTR;            
 ;----------------------------------------------------------------------
-        ldp       @CL1256,DP
-        ldiu      @CL1256,ar0           ; |2063| 
+        ldp       @CL1251,DP
+        ldiu      @CL1251,ar0           ; |2063| 
         sti       r0,*ar0               ; |2063| 
 	.line	2027
 ;----------------------------------------------------------------------
-; 2064 | DIO_ERROR.vect2                                         = NULL_PTR;    
+; 2064 | DIO_BUILT_IN_TEST.vect2                         = NULL_PTR;            
 ;----------------------------------------------------------------------
-        ldp       @CL1257,DP
-        ldiu      @CL1257,ar0           ; |2064| 
+        ldp       @CL1252,DP
+        ldiu      @CL1252,ar0           ; |2064| 
         sti       r0,*ar0               ; |2064| 
 	.line	2028
 ;----------------------------------------------------------------------
-; 2065 | DIO_ALARM.vect2                                         = NULL_PTR;    
+; 2065 | DIO_BUILT_IN_TEST_ENABLE.vect2          = NULL_PTR;                    
 ;----------------------------------------------------------------------
-        ldp       @CL1258,DP
-        ldiu      @CL1258,ar0           ; |2065| 
+        ldp       @CL1253,DP
+        ldiu      @CL1253,ar0           ; |2065| 
         sti       r0,*ar0               ; |2065| 
 	.line	2029
 ;----------------------------------------------------------------------
-; 2066 | DIO_RESTORE_USER_CONFIG.vect2           = NULL_PTR;                    
+; 2066 | DIO_RESET_FACTORY_DEFAULTS.vect2        = NULL_PTR;                    
 ;----------------------------------------------------------------------
-        ldp       @CL1259,DP
-        ldiu      @CL1259,ar0           ; |2066| 
+        ldp       @CL1254,DP
+        ldiu      @CL1254,ar0           ; |2066| 
         sti       r0,*ar0               ; |2066| 
 	.line	2030
 ;----------------------------------------------------------------------
-; 2067 | DIO_SAVE_USER_CONFIG.vect2                      = NULL_PTR;            
+; 2067 | DIO_ERROR.vect2                                         = NULL_PTR;    
 ;----------------------------------------------------------------------
-        ldp       @CL1260,DP
-        ldiu      @CL1260,ar0           ; |2067| 
+        ldp       @CL1255,DP
+        ldiu      @CL1255,ar0           ; |2067| 
         sti       r0,*ar0               ; |2067| 
 	.line	2031
 ;----------------------------------------------------------------------
-; 2068 | DIO_RESEARCH_MODE.vect2                         = NULL_PTR;            
+; 2068 | DIO_ALARM.vect2                                         = NULL_PTR;    
 ;----------------------------------------------------------------------
-        ldp       @CL1261,DP
-        ldiu      @CL1261,ar0           ; |2068| 
+        ldp       @CL1256,DP
+        ldiu      @CL1256,ar0           ; |2068| 
         sti       r0,*ar0               ; |2068| 
 	.line	2032
 ;----------------------------------------------------------------------
-; 2069 | DIO_SAVE_FACTORY_CONFIG.vect2           = NULL_PTR;                    
+; 2069 | DIO_RESTORE_USER_CONFIG.vect2           = NULL_PTR;                    
 ;----------------------------------------------------------------------
-        ldp       @CL1262,DP
-        ldiu      @CL1262,ar0           ; |2069| 
+        ldp       @CL1257,DP
+        ldiu      @CL1257,ar0           ; |2069| 
         sti       r0,*ar0               ; |2069| 
 	.line	2033
 ;----------------------------------------------------------------------
-; 2070 | DIO_RESTORE_BASICS.vect2                        = NULL_PTR;            
+; 2070 | DIO_SAVE_USER_CONFIG.vect2                      = NULL_PTR;            
 ;----------------------------------------------------------------------
-        ldp       @CL1263,DP
-        ldiu      @CL1263,ar0           ; |2070| 
+        ldp       @CL1258,DP
+        ldiu      @CL1258,ar0           ; |2070| 
         sti       r0,*ar0               ; |2070| 
 	.line	2034
 ;----------------------------------------------------------------------
-; 2071 | DIO_CAP_OIL.vect2                                       = NULL_PTR;    
+; 2071 | DIO_RESEARCH_MODE.vect2                         = NULL_PTR;            
 ;----------------------------------------------------------------------
-        ldp       @CL1264,DP
-        ldiu      @CL1264,ar0           ; |2071| 
+        ldp       @CL1259,DP
+        ldiu      @CL1259,ar0           ; |2071| 
         sti       r0,*ar0               ; |2071| 
 	.line	2035
 ;----------------------------------------------------------------------
-; 2072 | DIO_CAP_WATER.vect2                             = NULL_PTR;            
+; 2072 | DIO_SAVE_FACTORY_CONFIG.vect2           = NULL_PTR;                    
 ;----------------------------------------------------------------------
-        ldp       @CL1265,DP
-        ldiu      @CL1265,ar0           ; |2072| 
+        ldp       @CL1260,DP
+        ldiu      @CL1260,ar0           ; |2072| 
         sti       r0,*ar0               ; |2072| 
 	.line	2036
 ;----------------------------------------------------------------------
-; 2073 | DIO_CLEAR_COUNTERS.vect2                        = NULL_PTR;            
+; 2073 | DIO_RESTORE_BASICS.vect2                        = NULL_PTR;            
 ;----------------------------------------------------------------------
-        ldp       @CL1266,DP
-        ldiu      @CL1266,ar0           ; |2073| 
+        ldp       @CL1261,DP
+        ldiu      @CL1261,ar0           ; |2073| 
         sti       r0,*ar0               ; |2073| 
 	.line	2037
 ;----------------------------------------------------------------------
-; 2074 | DIO_TOTALIZER_CONTROL.vect2             = NULL_PTR;                    
+; 2074 | DIO_CAP_OIL.vect2                                       = NULL_PTR;    
 ;----------------------------------------------------------------------
-        ldp       @CL1267,DP
-        ldiu      @CL1267,ar0           ; |2074| 
+        ldp       @CL1262,DP
+        ldiu      @CL1262,ar0           ; |2074| 
         sti       r0,*ar0               ; |2074| 
 	.line	2038
 ;----------------------------------------------------------------------
-; 2075 | DIO_HART_5.vect2                                        = NULL_PTR;    
+; 2075 | DIO_CAP_WATER.vect2                             = NULL_PTR;            
 ;----------------------------------------------------------------------
-        ldp       @CL1268,DP
-        ldiu      @CL1268,ar0           ; |2075| 
+        ldp       @CL1263,DP
+        ldiu      @CL1263,ar0           ; |2075| 
         sti       r0,*ar0               ; |2075| 
+	.line	2039
+;----------------------------------------------------------------------
+; 2076 | DIO_CLEAR_COUNTERS.vect2                        = NULL_PTR;            
+;----------------------------------------------------------------------
+        ldp       @CL1264,DP
+        ldiu      @CL1264,ar0           ; |2076| 
+        sti       r0,*ar0               ; |2076| 
+	.line	2040
+;----------------------------------------------------------------------
+; 2077 | DIO_TOTALIZER_CONTROL.vect2             = NULL_PTR;                    
+;----------------------------------------------------------------------
+        ldp       @CL1265,DP
+        ldiu      @CL1265,ar0           ; |2077| 
+        sti       r0,*ar0               ; |2077| 
 	.line	2041
 ;----------------------------------------------------------------------
-; 2078 | DIO_uP_GET.val  = FALSE;                                               
+; 2078 | DIO_HART_5.vect2                                        = NULL_PTR;    
 ;----------------------------------------------------------------------
-        ldp       @CL1269,DP
-        ldiu      @CL1269,ar0           ; |2078| 
+        ldp       @CL1266,DP
+        ldiu      @CL1266,ar0           ; |2078| 
         sti       r0,*ar0               ; |2078| 
-	.line	2042
-;----------------------------------------------------------------------
-; 2079 | DIO_uP_SET.val  = FALSE;                                               
-;----------------------------------------------------------------------
-        ldp       @CL1270,DP
-        ldiu      @CL1270,ar0           ; |2079| 
-        sti       r0,*ar0               ; |2079| 
-	.line	2043
-;----------------------------------------------------------------------
-; 2080 | DIO_uP_GET.vect = (int*)Submit_GET_uP_CONFIG;                          
-;----------------------------------------------------------------------
-        ldp       @CL1271,DP
-        ldiu      @CL1271,ar0           ; |2080| 
-        ldp       @CL1272,DP
-        ldiu      @CL1272,r0            ; |2080| 
-        sti       r0,*ar0               ; |2080| 
 	.line	2044
 ;----------------------------------------------------------------------
-; 2081 | DIO_uP_SET.vect = (int*)Submit_STORE_uP_CONFIG;                        
+; 2081 | DIO_uP_GET.val  = FALSE;                                               
 ;----------------------------------------------------------------------
-        ldp       @CL1273,DP
-        ldiu      @CL1273,ar0           ; |2081| 
-        ldp       @CL1274,DP
-        ldiu      @CL1274,r0            ; |2081| 
+        ldp       @CL1267,DP
+        ldiu      @CL1267,ar0           ; |2081| 
         sti       r0,*ar0               ; |2081| 
+	.line	2045
+;----------------------------------------------------------------------
+; 2082 | DIO_uP_SET.val  = FALSE;                                               
+;----------------------------------------------------------------------
+        ldp       @CL1268,DP
+        ldiu      @CL1268,ar0           ; |2082| 
+        sti       r0,*ar0               ; |2082| 
 	.line	2046
 ;----------------------------------------------------------------------
-; 2083 | DIO_COMM_GET.val  = FALSE;                                             
+; 2083 | DIO_uP_GET.vect = (int*)Submit_GET_uP_CONFIG;                          
 ;----------------------------------------------------------------------
-        ldp       @CL1275,DP
-        ldiu      @CL1275,ar0           ; |2083| 
-        ldiu      0,r0                  ; |2083| 
+        ldp       @CL1269,DP
+        ldiu      @CL1269,ar0           ; |2083| 
+        ldp       @CL1270,DP
+        ldiu      @CL1270,r0            ; |2083| 
         sti       r0,*ar0               ; |2083| 
 	.line	2047
 ;----------------------------------------------------------------------
-; 2084 | DIO_COMM_SET.val  = FALSE;                                             
+; 2084 | DIO_uP_SET.vect = (int*)Submit_STORE_uP_CONFIG;                        
 ;----------------------------------------------------------------------
-        ldp       @CL1276,DP
-        ldiu      @CL1276,ar0           ; |2084| 
+        ldp       @CL1271,DP
+        ldiu      @CL1271,ar0           ; |2084| 
+        ldp       @CL1272,DP
+        ldiu      @CL1272,r0            ; |2084| 
         sti       r0,*ar0               ; |2084| 
-	.line	2048
-;----------------------------------------------------------------------
-; 2085 | DIO_COMM_GET.vect = (int*)Submit_GET_COMM_CONFIG;                      
-;----------------------------------------------------------------------
-        ldp       @CL1277,DP
-        ldiu      @CL1277,ar0           ; |2085| 
-        ldp       @CL1278,DP
-        ldiu      @CL1278,r0            ; |2085| 
-        sti       r0,*ar0               ; |2085| 
 	.line	2049
 ;----------------------------------------------------------------------
-; 2086 | DIO_COMM_SET.vect = (int*)Submit_STORE_COMM_CONFIG;                    
+; 2086 | DIO_COMM_GET.val  = FALSE;                                             
 ;----------------------------------------------------------------------
-        ldp       @CL1279,DP
-        ldiu      @CL1279,ar0           ; |2086| 
-        ldp       @CL1280,DP
-        ldiu      @CL1280,r0            ; |2086| 
+        ldp       @CL1273,DP
+        ldiu      @CL1273,ar0           ; |2086| 
+        ldiu      0,r0                  ; |2086| 
         sti       r0,*ar0               ; |2086| 
+	.line	2050
+;----------------------------------------------------------------------
+; 2087 | DIO_COMM_SET.val  = FALSE;                                             
+;----------------------------------------------------------------------
+        ldp       @CL1274,DP
+        ldiu      @CL1274,ar0           ; |2087| 
+        sti       r0,*ar0               ; |2087| 
 	.line	2051
 ;----------------------------------------------------------------------
-; 2088 | DIO_ANALYZER_GET.val  = FALSE;                                         
+; 2088 | DIO_COMM_GET.vect = (int*)Submit_GET_COMM_CONFIG;                      
 ;----------------------------------------------------------------------
-        ldp       @CL1281,DP
-        ldiu      @CL1281,ar0           ; |2088| 
-        ldiu      0,r0                  ; |2088| 
+        ldp       @CL1275,DP
+        ldiu      @CL1275,ar0           ; |2088| 
+        ldp       @CL1276,DP
+        ldiu      @CL1276,r0            ; |2088| 
         sti       r0,*ar0               ; |2088| 
 	.line	2052
 ;----------------------------------------------------------------------
-; 2089 | DIO_ANALYZER_SET.val  = FALSE;                                         
+; 2089 | DIO_COMM_SET.vect = (int*)Submit_STORE_COMM_CONFIG;                    
 ;----------------------------------------------------------------------
-        ldp       @CL1282,DP
-        ldiu      @CL1282,ar0           ; |2089| 
+        ldp       @CL1277,DP
+        ldiu      @CL1277,ar0           ; |2089| 
+        ldp       @CL1278,DP
+        ldiu      @CL1278,r0            ; |2089| 
         sti       r0,*ar0               ; |2089| 
-	.line	2053
-;----------------------------------------------------------------------
-; 2090 | DIO_ANALYZER_GET.vect = (int*)Submit_GET_ANALYZER_CONFIG;              
-;----------------------------------------------------------------------
-        ldp       @CL1283,DP
-        ldiu      @CL1283,ar0           ; |2090| 
-        ldp       @CL1284,DP
-        ldiu      @CL1284,r0            ; |2090| 
-        sti       r0,*ar0               ; |2090| 
 	.line	2054
 ;----------------------------------------------------------------------
-; 2091 | DIO_ANALYZER_SET.vect = (int*)Submit_STORE_ANALYZER_CONFIG;            
+; 2091 | DIO_ANALYZER_GET.val  = FALSE;                                         
 ;----------------------------------------------------------------------
-        ldp       @CL1285,DP
-        ldiu      @CL1285,ar0           ; |2091| 
-        ldp       @CL1286,DP
-        ldiu      @CL1286,r0            ; |2091| 
+        ldp       @CL1279,DP
+        ldiu      @CL1279,ar0           ; |2091| 
+        ldiu      0,r0                  ; |2091| 
         sti       r0,*ar0               ; |2091| 
+	.line	2055
+;----------------------------------------------------------------------
+; 2092 | DIO_ANALYZER_SET.val  = FALSE;                                         
+;----------------------------------------------------------------------
+        ldp       @CL1280,DP
+        ldiu      @CL1280,ar0           ; |2092| 
+        sti       r0,*ar0               ; |2092| 
 	.line	2056
 ;----------------------------------------------------------------------
-; 2093 | DIO_POWER_GET.val  = FALSE;                                            
+; 2093 | DIO_ANALYZER_GET.vect = (int*)Submit_GET_ANALYZER_CONFIG;              
 ;----------------------------------------------------------------------
-        ldp       @CL1287,DP
-        ldiu      @CL1287,ar0           ; |2093| 
-        ldiu      0,r0                  ; |2093| 
+        ldp       @CL1281,DP
+        ldiu      @CL1281,ar0           ; |2093| 
+        ldp       @CL1282,DP
+        ldiu      @CL1282,r0            ; |2093| 
         sti       r0,*ar0               ; |2093| 
 	.line	2057
 ;----------------------------------------------------------------------
-; 2094 | DIO_POWER_SET.val  = FALSE;                                            
+; 2094 | DIO_ANALYZER_SET.vect = (int*)Submit_STORE_ANALYZER_CONFIG;            
 ;----------------------------------------------------------------------
-        ldp       @CL1288,DP
-        ldiu      @CL1288,ar0           ; |2094| 
+        ldp       @CL1283,DP
+        ldiu      @CL1283,ar0           ; |2094| 
+        ldp       @CL1284,DP
+        ldiu      @CL1284,r0            ; |2094| 
         sti       r0,*ar0               ; |2094| 
-	.line	2058
-;----------------------------------------------------------------------
-; 2095 | DIO_POWER_GET.vect = (int*)Submit_GET_POWER_CONFIG;                    
-;----------------------------------------------------------------------
-        ldp       @CL1289,DP
-        ldiu      @CL1289,ar0           ; |2095| 
-        ldp       @CL1290,DP
-        ldiu      @CL1290,r0            ; |2095| 
-        sti       r0,*ar0               ; |2095| 
 	.line	2059
 ;----------------------------------------------------------------------
-; 2096 | DIO_POWER_SET.vect = (int*)Submit_STORE_POWER_CONFIG;                  
+; 2096 | DIO_POWER_GET.val  = FALSE;                                            
 ;----------------------------------------------------------------------
-        ldp       @CL1291,DP
-        ldiu      @CL1291,ar0           ; |2096| 
-        ldp       @CL1292,DP
-        ldiu      @CL1292,r0            ; |2096| 
+        ldp       @CL1285,DP
+        ldiu      @CL1285,ar0           ; |2096| 
+        ldiu      0,r0                  ; |2096| 
         sti       r0,*ar0               ; |2096| 
+	.line	2060
+;----------------------------------------------------------------------
+; 2097 | DIO_POWER_SET.val  = FALSE;                                            
+;----------------------------------------------------------------------
+        ldp       @CL1286,DP
+        ldiu      @CL1286,ar0           ; |2097| 
+        sti       r0,*ar0               ; |2097| 
 	.line	2061
 ;----------------------------------------------------------------------
-; 2098 | DIO_ANALOGIO_GET.val  = FALSE;                                         
+; 2098 | DIO_POWER_GET.vect = (int*)Submit_GET_POWER_CONFIG;                    
 ;----------------------------------------------------------------------
-        ldp       @CL1293,DP
-        ldiu      @CL1293,ar0           ; |2098| 
-        ldiu      0,r0                  ; |2098| 
+        ldp       @CL1287,DP
+        ldiu      @CL1287,ar0           ; |2098| 
+        ldp       @CL1288,DP
+        ldiu      @CL1288,r0            ; |2098| 
         sti       r0,*ar0               ; |2098| 
 	.line	2062
 ;----------------------------------------------------------------------
-; 2099 | DIO_ANALOGIO_SET.val  = FALSE;                                         
+; 2099 | DIO_POWER_SET.vect = (int*)Submit_STORE_POWER_CONFIG;                  
 ;----------------------------------------------------------------------
-        ldp       @CL1294,DP
-        ldiu      @CL1294,ar0           ; |2099| 
+        ldp       @CL1289,DP
+        ldiu      @CL1289,ar0           ; |2099| 
+        ldp       @CL1290,DP
+        ldiu      @CL1290,r0            ; |2099| 
         sti       r0,*ar0               ; |2099| 
-	.line	2063
-;----------------------------------------------------------------------
-; 2100 | DIO_ANALOGIO_GET.vect = (int*)Submit_GET_ANALOGIO_CONFIG;              
-;----------------------------------------------------------------------
-        ldp       @CL1295,DP
-        ldiu      @CL1295,ar0           ; |2100| 
-        ldp       @CL1296,DP
-        ldiu      @CL1296,r0            ; |2100| 
-        sti       r0,*ar0               ; |2100| 
 	.line	2064
 ;----------------------------------------------------------------------
-; 2101 | DIO_ANALOGIO_SET.vect = (int*)Submit_STORE_ANALOGIO_CONFIG;            
+; 2101 | DIO_ANALOGIO_GET.val  = FALSE;                                         
 ;----------------------------------------------------------------------
-        ldp       @CL1297,DP
-        ldiu      @CL1297,ar0           ; |2101| 
-        ldp       @CL1298,DP
-        ldiu      @CL1298,r0            ; |2101| 
+        ldp       @CL1291,DP
+        ldiu      @CL1291,ar0           ; |2101| 
+        ldiu      0,r0                  ; |2101| 
         sti       r0,*ar0               ; |2101| 
+	.line	2065
+;----------------------------------------------------------------------
+; 2102 | DIO_ANALOGIO_SET.val  = FALSE;                                         
+;----------------------------------------------------------------------
+        ldp       @CL1292,DP
+        ldiu      @CL1292,ar0           ; |2102| 
+        sti       r0,*ar0               ; |2102| 
 	.line	2066
 ;----------------------------------------------------------------------
-; 2103 | DIO_DISPLAY_GET.val  = FALSE;                                          
+; 2103 | DIO_ANALOGIO_GET.vect = (int*)Submit_GET_ANALOGIO_CONFIG;              
 ;----------------------------------------------------------------------
-        ldp       @CL1299,DP
-        ldiu      @CL1299,ar0           ; |2103| 
-        ldiu      0,r0                  ; |2103| 
+        ldp       @CL1293,DP
+        ldiu      @CL1293,ar0           ; |2103| 
+        ldp       @CL1294,DP
+        ldiu      @CL1294,r0            ; |2103| 
         sti       r0,*ar0               ; |2103| 
 	.line	2067
 ;----------------------------------------------------------------------
-; 2104 | DIO_DISPLAY_SET.val  = FALSE;                                          
+; 2104 | DIO_ANALOGIO_SET.vect = (int*)Submit_STORE_ANALOGIO_CONFIG;            
 ;----------------------------------------------------------------------
-        ldp       @CL1300,DP
-        ldiu      @CL1300,ar0           ; |2104| 
+        ldp       @CL1295,DP
+        ldiu      @CL1295,ar0           ; |2104| 
+        ldp       @CL1296,DP
+        ldiu      @CL1296,r0            ; |2104| 
         sti       r0,*ar0               ; |2104| 
-	.line	2068
-;----------------------------------------------------------------------
-; 2105 | DIO_DISPLAY_GET.vect = (int*)Submit_GET_DISPLAY_CONFIG;                
-;----------------------------------------------------------------------
-        ldp       @CL1301,DP
-        ldiu      @CL1301,ar0           ; |2105| 
-        ldp       @CL1302,DP
-        ldiu      @CL1302,r0            ; |2105| 
-        sti       r0,*ar0               ; |2105| 
 	.line	2069
 ;----------------------------------------------------------------------
-; 2106 | DIO_DISPLAY_SET.vect = (int*)Submit_STORE_DISPLAY_CONFIG;              
+; 2106 | DIO_DISPLAY_GET.val  = FALSE;                                          
 ;----------------------------------------------------------------------
-        ldp       @CL1303,DP
-        ldiu      @CL1303,ar0           ; |2106| 
-        ldp       @CL1304,DP
-        ldiu      @CL1304,r0            ; |2106| 
+        ldp       @CL1297,DP
+        ldiu      @CL1297,ar0           ; |2106| 
+        ldiu      0,r0                  ; |2106| 
         sti       r0,*ar0               ; |2106| 
+	.line	2070
+;----------------------------------------------------------------------
+; 2107 | DIO_DISPLAY_SET.val  = FALSE;                                          
+;----------------------------------------------------------------------
+        ldp       @CL1298,DP
+        ldiu      @CL1298,ar0           ; |2107| 
+        sti       r0,*ar0               ; |2107| 
 	.line	2071
 ;----------------------------------------------------------------------
-; 2108 | DIO_MOTHERBOARD_GET.val  = FALSE;                                      
+; 2108 | DIO_DISPLAY_GET.vect = (int*)Submit_GET_DISPLAY_CONFIG;                
 ;----------------------------------------------------------------------
-        ldp       @CL1305,DP
-        ldiu      @CL1305,ar0           ; |2108| 
-        ldiu      0,r0                  ; |2108| 
+        ldp       @CL1299,DP
+        ldiu      @CL1299,ar0           ; |2108| 
+        ldp       @CL1300,DP
+        ldiu      @CL1300,r0            ; |2108| 
         sti       r0,*ar0               ; |2108| 
 	.line	2072
 ;----------------------------------------------------------------------
-; 2109 | DIO_MOTHERBOARD_SET.val  = FALSE;                                      
+; 2109 | DIO_DISPLAY_SET.vect = (int*)Submit_STORE_DISPLAY_CONFIG;              
 ;----------------------------------------------------------------------
-        ldp       @CL1306,DP
-        ldiu      @CL1306,ar0           ; |2109| 
+        ldp       @CL1301,DP
+        ldiu      @CL1301,ar0           ; |2109| 
+        ldp       @CL1302,DP
+        ldiu      @CL1302,r0            ; |2109| 
         sti       r0,*ar0               ; |2109| 
-	.line	2073
-;----------------------------------------------------------------------
-; 2110 | DIO_MOTHERBOARD_GET.vect = (int*)Submit_GET_MOTHERBOARD_CONFIG;        
-;----------------------------------------------------------------------
-        ldp       @CL1307,DP
-        ldiu      @CL1307,ar0           ; |2110| 
-        ldp       @CL1308,DP
-        ldiu      @CL1308,r0            ; |2110| 
-        sti       r0,*ar0               ; |2110| 
 	.line	2074
 ;----------------------------------------------------------------------
-; 2111 | DIO_MOTHERBOARD_SET.vect = (int*)Submit_STORE_MOTHERBOARD_CONFIG;      
+; 2111 | DIO_MOTHERBOARD_GET.val  = FALSE;                                      
 ;----------------------------------------------------------------------
-        ldp       @CL1309,DP
-        ldiu      @CL1309,ar0           ; |2111| 
-        ldp       @CL1310,DP
-        ldiu      @CL1310,r0            ; |2111| 
+        ldp       @CL1303,DP
+        ldiu      @CL1303,ar0           ; |2111| 
+        ldiu      0,r0                  ; |2111| 
         sti       r0,*ar0               ; |2111| 
+	.line	2075
+;----------------------------------------------------------------------
+; 2112 | DIO_MOTHERBOARD_SET.val  = FALSE;                                      
+;----------------------------------------------------------------------
+        ldp       @CL1304,DP
+        ldiu      @CL1304,ar0           ; |2112| 
+        sti       r0,*ar0               ; |2112| 
 	.line	2076
 ;----------------------------------------------------------------------
-; 2113 | DIO_uP_GET.vect2                        = NULL_PTR;                    
+; 2113 | DIO_MOTHERBOARD_GET.vect = (int*)Submit_GET_MOTHERBOARD_CONFIG;        
 ;----------------------------------------------------------------------
-        ldp       @CL1311,DP
-        ldiu      @CL1311,ar0           ; |2113| 
-        ldiu      0,r0                  ; |2113| 
+        ldp       @CL1305,DP
+        ldiu      @CL1305,ar0           ; |2113| 
+        ldp       @CL1306,DP
+        ldiu      @CL1306,r0            ; |2113| 
         sti       r0,*ar0               ; |2113| 
 	.line	2077
 ;----------------------------------------------------------------------
-; 2114 | DIO_uP_SET.vect2                        = NULL_PTR;                    
+; 2114 | DIO_MOTHERBOARD_SET.vect = (int*)Submit_STORE_MOTHERBOARD_CONFIG;      
 ;----------------------------------------------------------------------
-        ldp       @CL1312,DP
-        ldiu      @CL1312,ar0           ; |2114| 
+        ldp       @CL1307,DP
+        ldiu      @CL1307,ar0           ; |2114| 
+        ldp       @CL1308,DP
+        ldiu      @CL1308,r0            ; |2114| 
         sti       r0,*ar0               ; |2114| 
-	.line	2078
-;----------------------------------------------------------------------
-; 2115 | DIO_COMM_GET.vect2                      = NULL_PTR;                    
-;----------------------------------------------------------------------
-        ldp       @CL1313,DP
-        ldiu      @CL1313,ar0           ; |2115| 
-        sti       r0,*ar0               ; |2115| 
 	.line	2079
 ;----------------------------------------------------------------------
-; 2116 | DIO_COMM_SET.vect2                      = NULL_PTR;                    
+; 2116 | DIO_uP_GET.vect2                        = NULL_PTR;                    
 ;----------------------------------------------------------------------
-        ldp       @CL1314,DP
-        ldiu      @CL1314,ar0           ; |2116| 
+        ldp       @CL1309,DP
+        ldiu      @CL1309,ar0           ; |2116| 
+        ldiu      0,r0                  ; |2116| 
         sti       r0,*ar0               ; |2116| 
 	.line	2080
 ;----------------------------------------------------------------------
-; 2117 | DIO_ANALYZER_GET.vect2          = NULL_PTR;                            
+; 2117 | DIO_uP_SET.vect2                        = NULL_PTR;                    
 ;----------------------------------------------------------------------
-        ldp       @CL1315,DP
-        ldiu      @CL1315,ar0           ; |2117| 
+        ldp       @CL1310,DP
+        ldiu      @CL1310,ar0           ; |2117| 
         sti       r0,*ar0               ; |2117| 
 	.line	2081
 ;----------------------------------------------------------------------
-; 2118 | DIO_ANALYZER_SET.vect2          = NULL_PTR;                            
+; 2118 | DIO_COMM_GET.vect2                      = NULL_PTR;                    
 ;----------------------------------------------------------------------
-        ldp       @CL1316,DP
-        ldiu      @CL1316,ar0           ; |2118| 
+        ldp       @CL1311,DP
+        ldiu      @CL1311,ar0           ; |2118| 
         sti       r0,*ar0               ; |2118| 
 	.line	2082
 ;----------------------------------------------------------------------
-; 2119 | DIO_POWER_GET.vect2             = NULL_PTR;                            
+; 2119 | DIO_COMM_SET.vect2                      = NULL_PTR;                    
 ;----------------------------------------------------------------------
-        ldp       @CL1317,DP
-        ldiu      @CL1317,ar0           ; |2119| 
+        ldp       @CL1312,DP
+        ldiu      @CL1312,ar0           ; |2119| 
         sti       r0,*ar0               ; |2119| 
 	.line	2083
 ;----------------------------------------------------------------------
-; 2120 | DIO_POWER_SET.vect2             = NULL_PTR;                            
+; 2120 | DIO_ANALYZER_GET.vect2          = NULL_PTR;                            
 ;----------------------------------------------------------------------
-        ldp       @CL1318,DP
-        ldiu      @CL1318,ar0           ; |2120| 
+        ldp       @CL1313,DP
+        ldiu      @CL1313,ar0           ; |2120| 
         sti       r0,*ar0               ; |2120| 
 	.line	2084
 ;----------------------------------------------------------------------
-; 2121 | DIO_ANALOGIO_GET.vect2          = NULL_PTR;                            
+; 2121 | DIO_ANALYZER_SET.vect2          = NULL_PTR;                            
 ;----------------------------------------------------------------------
-        ldp       @CL1319,DP
-        ldiu      @CL1319,ar0           ; |2121| 
+        ldp       @CL1314,DP
+        ldiu      @CL1314,ar0           ; |2121| 
         sti       r0,*ar0               ; |2121| 
 	.line	2085
 ;----------------------------------------------------------------------
-; 2122 | DIO_ANALOGIO_SET.vect2          = NULL_PTR;                            
+; 2122 | DIO_POWER_GET.vect2             = NULL_PTR;                            
 ;----------------------------------------------------------------------
-        ldp       @CL1320,DP
-        ldiu      @CL1320,ar0           ; |2122| 
+        ldp       @CL1315,DP
+        ldiu      @CL1315,ar0           ; |2122| 
         sti       r0,*ar0               ; |2122| 
 	.line	2086
 ;----------------------------------------------------------------------
-; 2123 | DIO_DISPLAY_GET.vect2           = NULL_PTR;                            
+; 2123 | DIO_POWER_SET.vect2             = NULL_PTR;                            
 ;----------------------------------------------------------------------
-        ldp       @CL1321,DP
-        ldiu      @CL1321,ar0           ; |2123| 
+        ldp       @CL1316,DP
+        ldiu      @CL1316,ar0           ; |2123| 
         sti       r0,*ar0               ; |2123| 
 	.line	2087
 ;----------------------------------------------------------------------
-; 2124 | DIO_DISPLAY_SET.vect2           = NULL_PTR;                            
+; 2124 | DIO_ANALOGIO_GET.vect2          = NULL_PTR;                            
 ;----------------------------------------------------------------------
-        ldp       @CL1322,DP
-        ldiu      @CL1322,ar0           ; |2124| 
+        ldp       @CL1317,DP
+        ldiu      @CL1317,ar0           ; |2124| 
         sti       r0,*ar0               ; |2124| 
 	.line	2088
 ;----------------------------------------------------------------------
-; 2125 | DIO_MOTHERBOARD_GET.vect2       = NULL_PTR;                            
+; 2125 | DIO_ANALOGIO_SET.vect2          = NULL_PTR;                            
 ;----------------------------------------------------------------------
-        ldp       @CL1323,DP
-        ldiu      @CL1323,ar0           ; |2125| 
+        ldp       @CL1318,DP
+        ldiu      @CL1318,ar0           ; |2125| 
         sti       r0,*ar0               ; |2125| 
 	.line	2089
 ;----------------------------------------------------------------------
-; 2126 | DIO_MOTHERBOARD_SET.vect2       = NULL_PTR;                            
+; 2126 | DIO_DISPLAY_GET.vect2           = NULL_PTR;                            
 ;----------------------------------------------------------------------
-        ldp       @CL1324,DP
-        ldiu      @CL1324,ar0           ; |2126| 
+        ldp       @CL1319,DP
+        ldiu      @CL1319,ar0           ; |2126| 
         sti       r0,*ar0               ; |2126| 
+	.line	2090
+;----------------------------------------------------------------------
+; 2127 | DIO_DISPLAY_SET.vect2           = NULL_PTR;                            
+;----------------------------------------------------------------------
+        ldp       @CL1320,DP
+        ldiu      @CL1320,ar0           ; |2127| 
+        sti       r0,*ar0               ; |2127| 
 	.line	2091
 ;----------------------------------------------------------------------
-; 2128 | HART_VAR_LIST[0]                = 0;                                   
+; 2128 | DIO_MOTHERBOARD_GET.vect2       = NULL_PTR;                            
 ;----------------------------------------------------------------------
-        ldp       @CL1325,DP
-        ldiu      @CL1325,ar0           ; |2128| 
+        ldp       @CL1321,DP
+        ldiu      @CL1321,ar0           ; |2128| 
         sti       r0,*ar0               ; |2128| 
 	.line	2092
 ;----------------------------------------------------------------------
-; 2129 | HART_VAR_LIST[1]                = 1;                                   
+; 2129 | DIO_MOTHERBOARD_SET.vect2       = NULL_PTR;                            
 ;----------------------------------------------------------------------
-        ldp       @CL1326,DP
-        ldiu      @CL1326,ar0           ; |2129| 
-        ldiu      1,r0                  ; |2129| 
+        ldp       @CL1322,DP
+        ldiu      @CL1322,ar0           ; |2129| 
         sti       r0,*ar0               ; |2129| 
-	.line	2093
-;----------------------------------------------------------------------
-; 2130 | HART_VAR_LIST[2]                = 2;                                   
-;----------------------------------------------------------------------
-        ldp       @CL1327,DP
-        ldiu      @CL1327,ar0           ; |2130| 
-        ldiu      2,r0                  ; |2130| 
-        sti       r0,*ar0               ; |2130| 
 	.line	2094
 ;----------------------------------------------------------------------
-; 2131 | HART_VAR_LIST[3]                = var_not_used;                        
+; 2131 | HART_VAR_LIST[0]                = 0;                                   
 ;----------------------------------------------------------------------
-        ldp       @CL1328,DP
-        ldiu      @CL1328,ar0           ; |2131| 
-        ldiu      250,r0                ; |2131| 
+        ldp       @CL1323,DP
+        ldiu      @CL1323,ar0           ; |2131| 
         sti       r0,*ar0               ; |2131| 
 	.line	2095
 ;----------------------------------------------------------------------
-; 2132 | HART_BURST_VAR_LIST[0]  = 0;                                           
+; 2132 | HART_VAR_LIST[1]                = 1;                                   
 ;----------------------------------------------------------------------
-        ldp       @CL1329,DP
-        ldiu      @CL1329,ar0           ; |2132| 
-        ldiu      0,r0                  ; |2132| 
+        ldp       @CL1324,DP
+        ldiu      @CL1324,ar0           ; |2132| 
+        ldiu      1,r0                  ; |2132| 
         sti       r0,*ar0               ; |2132| 
 	.line	2096
 ;----------------------------------------------------------------------
-; 2133 | HART_BURST_VAR_LIST[1]  = 1;                                           
+; 2133 | HART_VAR_LIST[2]                = 2;                                   
 ;----------------------------------------------------------------------
-        ldp       @CL1330,DP
-        ldiu      @CL1330,ar0           ; |2133| 
-        ldiu      1,r0                  ; |2133| 
+        ldp       @CL1325,DP
+        ldiu      @CL1325,ar0           ; |2133| 
+        ldiu      2,r0                  ; |2133| 
         sti       r0,*ar0               ; |2133| 
 	.line	2097
 ;----------------------------------------------------------------------
-; 2134 | HART_BURST_VAR_LIST[2]  = 2;                                           
+; 2134 | HART_VAR_LIST[3]                = var_not_used;                        
 ;----------------------------------------------------------------------
-        ldp       @CL1331,DP
-        ldiu      @CL1331,ar0           ; |2134| 
-        ldiu      2,r0                  ; |2134| 
+        ldp       @CL1326,DP
+        ldiu      @CL1326,ar0           ; |2134| 
+        ldiu      250,r0                ; |2134| 
         sti       r0,*ar0               ; |2134| 
 	.line	2098
 ;----------------------------------------------------------------------
-; 2135 | HART_BURST_VAR_LIST[3]  = var_not_used;                                
+; 2135 | HART_BURST_VAR_LIST[0]  = 0;                                           
 ;----------------------------------------------------------------------
-        ldp       @CL1332,DP
-        ldiu      @CL1332,ar0           ; |2135| 
-        ldiu      250,r0                ; |2135| 
+        ldp       @CL1327,DP
+        ldiu      @CL1327,ar0           ; |2135| 
+        ldiu      0,r0                  ; |2135| 
         sti       r0,*ar0               ; |2135| 
 	.line	2099
 ;----------------------------------------------------------------------
-; 2136 | HART_BURST_CMD                  = HART_CMD_Read_PV;                    
+; 2136 | HART_BURST_VAR_LIST[1]  = 1;                                           
 ;----------------------------------------------------------------------
-        ldp       @CL1333,DP
-        ldiu      @CL1333,ar0           ; |2136| 
+        ldp       @CL1328,DP
+        ldiu      @CL1328,ar0           ; |2136| 
         ldiu      1,r0                  ; |2136| 
         sti       r0,*ar0               ; |2136| 
 	.line	2100
 ;----------------------------------------------------------------------
-; 2137 | HART_BURST_MODE             = FALSE;                                   
+; 2137 | HART_BURST_VAR_LIST[2]  = 2;                                           
 ;----------------------------------------------------------------------
-        ldp       @CL1334,DP
-        ldiu      @CL1334,ar0           ; |2137| 
-        ldiu      0,r0                  ; |2137| 
+        ldp       @CL1329,DP
+        ldiu      @CL1329,ar0           ; |2137| 
+        ldiu      2,r0                  ; |2137| 
         sti       r0,*ar0               ; |2137| 
+	.line	2101
+;----------------------------------------------------------------------
+; 2138 | HART_BURST_VAR_LIST[3]  = var_not_used;                                
+;----------------------------------------------------------------------
+        ldp       @CL1330,DP
+        ldiu      @CL1330,ar0           ; |2138| 
+        ldiu      250,r0                ; |2138| 
+        sti       r0,*ar0               ; |2138| 
 	.line	2102
 ;----------------------------------------------------------------------
-; 2139 | TEMP_OIL_MAX    = 0;                                                   
+; 2139 | HART_BURST_CMD                  = HART_CMD_Read_PV;                    
 ;----------------------------------------------------------------------
-        ldp       @CL1335,DP
-        ldiu      @CL1335,ar0           ; |2139| 
-        ldfu      0.0000000000e+00,f0   ; |2139| 
-        stf       f0,*ar0               ; |2139| 
+        ldp       @CL1331,DP
+        ldiu      @CL1331,ar0           ; |2139| 
+        ldiu      1,r0                  ; |2139| 
+        sti       r0,*ar0               ; |2139| 
 	.line	2103
 ;----------------------------------------------------------------------
-; 2140 | TEMP_WATER_MAX  = 0;                                                   
+; 2140 | HART_BURST_MODE             = FALSE;                                   
 ;----------------------------------------------------------------------
-        ldp       @CL1336,DP
-        ldiu      @CL1336,ar0           ; |2140| 
-        ldfu      0.0000000000e+00,f0   ; |2140| 
-        stf       f0,*ar0               ; |2140| 
-	.line	2104
+        ldp       @CL1332,DP
+        ldiu      @CL1332,ar0           ; |2140| 
+        ldiu      0,r0                  ; |2140| 
+        sti       r0,*ar0               ; |2140| 
+	.line	2105
 ;----------------------------------------------------------------------
-; 2141 | SALT_MAX                = 0;                                           
+; 2142 | TEMP_OIL_MAX    = 0;                                                   
 ;----------------------------------------------------------------------
-        ldp       @CL1337,DP
-        ldiu      @CL1337,ar0           ; |2141| 
-        ldfu      0.0000000000e+00,f0   ; |2141| 
-        stf       f0,*ar0               ; |2141| 
+        ldp       @CL1333,DP
+        ldiu      @CL1333,ar0           ; |2142| 
+        ldfu      0.0000000000e+00,f0   ; |2142| 
+        stf       f0,*ar0               ; |2142| 
 	.line	2106
 ;----------------------------------------------------------------------
-; 2143 | for (i=0;i<10;i++)                                                     
+; 2143 | TEMP_WATER_MAX  = 0;                                                   
 ;----------------------------------------------------------------------
-        ldiu      0,r0                  ; |2143| 
-        sti       r0,*+fp(1)            ; |2143| 
-        cmpi      10,r0                 ; |2143| 
-        bge       L224                  ; |2143| 
-;*      Branch Occurs to L224           ; |2143| 
+        ldp       @CL1334,DP
+        ldiu      @CL1334,ar0           ; |2143| 
+        ldfu      0.0000000000e+00,f0   ; |2143| 
+        stf       f0,*ar0               ; |2143| 
+	.line	2107
+;----------------------------------------------------------------------
+; 2144 | SALT_MAX                = 0;                                           
+;----------------------------------------------------------------------
+        ldp       @CL1335,DP
+        ldiu      @CL1335,ar0           ; |2144| 
+        ldfu      0.0000000000e+00,f0   ; |2144| 
+        stf       f0,*ar0               ; |2144| 
+	.line	2109
+;----------------------------------------------------------------------
+; 2146 | for (i=0;i<10;i++)                                                     
+;----------------------------------------------------------------------
+        ldiu      0,r0                  ; |2146| 
+        sti       r0,*+fp(1)            ; |2146| 
+        cmpi      10,r0                 ; |2146| 
+        bge       L224                  ; |2146| 
+;*      Branch Occurs to L224           ; |2146| 
 L221:        
-	.line	2108
-;----------------------------------------------------------------------
-; 2145 | TEMPS_OIL[i] = 0.0;                                                    
-;----------------------------------------------------------------------
-        ldp       @CL1338,DP
-        ldiu      *+fp(1),ir0           ; |2145| 
-        ldiu      @CL1338,ar0           ; |2145| 
-        ldfu      0.0000000000e+00,f0   ; |2145| 
-        stf       f0,*+ar0(ir0)         ; |2145| 
-	.line	2110
-;----------------------------------------------------------------------
-; 2147 | for (j=0;j<4;j++)                                                      
-;----------------------------------------------------------------------
-        ldiu      0,r0                  ; |2147| 
-        sti       r0,*+fp(2)            ; |2147| 
-        ldiu      r0,r1
-        cmpi      4,r1                  ; |2147| 
-        ldfu      0.0000000000e+00,f0   ; |2148| 
-        bge       L223                  ; |2147| 
-;*      Branch Occurs to L223           ; |2147| 
-L222:        
 	.line	2111
 ;----------------------------------------------------------------------
-; 2148 | COEFF_TEMP_OIL[i][j] = 0.0;                                            
+; 2148 | TEMPS_OIL[i] = 0.0;                                                    
 ;----------------------------------------------------------------------
+        ldp       @CL1336,DP
         ldiu      *+fp(1),ir0           ; |2148| 
-        ldp       @CL1339,DP
-        ash       2,ir0                 ; |2148| 
-        ldiu      @CL1339,ar0           ; |2148| 
-        addi      *+fp(2),ir0           ; |2148| Unsigned
+        ldiu      @CL1336,ar0           ; |2148| 
+        ldfu      0.0000000000e+00,f0   ; |2148| 
         stf       f0,*+ar0(ir0)         ; |2148| 
-	.line	2110
-        ldiu      1,r1                  ; |2147| 
-        addi      *+fp(2),r1            ; |2147| 
-        sti       r1,*+fp(2)            ; |2147| 
-        cmpi      4,r1                  ; |2147| 
-        blt       L222                  ; |2147| 
-;*      Branch Occurs to L222           ; |2147| 
-L223:        
-	.line	2106
-        ldiu      1,r0                  ; |2143| 
-        addi      *+fp(1),r0            ; |2143| 
-        sti       r0,*+fp(1)            ; |2143| 
-        cmpi      10,r0                 ; |2143| 
-        blt       L221                  ; |2143| 
-;*      Branch Occurs to L221           ; |2143| 
-L224:        
+	.line	2113
+;----------------------------------------------------------------------
+; 2150 | for (j=0;j<4;j++)                                                      
+;----------------------------------------------------------------------
+        ldiu      0,r0                  ; |2150| 
+        sti       r0,*+fp(2)            ; |2150| 
+        ldiu      r0,r1
+        cmpi      4,r1                  ; |2150| 
+        ldfu      0.0000000000e+00,f0   ; |2151| 
+        bge       L223                  ; |2150| 
+;*      Branch Occurs to L223           ; |2150| 
+L222:        
 	.line	2114
 ;----------------------------------------------------------------------
-; 2151 | for (k=0;k<20;k++)                                                     
+; 2151 | COEFF_TEMP_OIL[i][j] = 0.0;                                            
 ;----------------------------------------------------------------------
-        ldiu      0,r0                  ; |2151| 
-        sti       r0,*+fp(3)            ; |2151| 
-        cmpi      20,r0                 ; |2151| 
-        bge       L230                  ; |2151| 
-;*      Branch Occurs to L230           ; |2151| 
+        ldiu      *+fp(1),ir0           ; |2151| 
+        ldp       @CL1337,DP
+        ash       2,ir0                 ; |2151| 
+        ldiu      @CL1337,ar0           ; |2151| 
+        addi      *+fp(2),ir0           ; |2151| Unsigned
+        stf       f0,*+ar0(ir0)         ; |2151| 
+	.line	2113
+        ldiu      1,r1                  ; |2150| 
+        addi      *+fp(2),r1            ; |2150| 
+        sti       r1,*+fp(2)            ; |2150| 
+        cmpi      4,r1                  ; |2150| 
+        blt       L222                  ; |2150| 
+;*      Branch Occurs to L222           ; |2150| 
+L223:        
+	.line	2109
+        ldiu      1,r0                  ; |2146| 
+        addi      *+fp(1),r0            ; |2146| 
+        sti       r0,*+fp(1)            ; |2146| 
+        cmpi      10,r0                 ; |2146| 
+        blt       L221                  ; |2146| 
+;*      Branch Occurs to L221           ; |2146| 
+L224:        
+	.line	2117
+;----------------------------------------------------------------------
+; 2154 | for (k=0;k<20;k++)                                                     
+;----------------------------------------------------------------------
+        ldiu      0,r0                  ; |2154| 
+        sti       r0,*+fp(3)            ; |2154| 
+        cmpi      20,r0                 ; |2154| 
+        bge       L230                  ; |2154| 
+;*      Branch Occurs to L230           ; |2154| 
 L225:        
-	.line	2116
+	.line	2119
 ;----------------------------------------------------------------------
-; 2153 | SALTS[k] = 0.0;                                                        
+; 2156 | SALTS[k] = 0.0;                                                        
 ;----------------------------------------------------------------------
-        ldp       @CL1340,DP
-        ldiu      *+fp(3),ir0           ; |2153| 
-        ldiu      @CL1340,ar0           ; |2153| 
-        ldfu      0.0000000000e+00,f0   ; |2153| 
-        stf       f0,*+ar0(ir0)         ; |2153| 
-	.line	2118
+        ldp       @CL1338,DP
+        ldiu      *+fp(3),ir0           ; |2156| 
+        ldiu      @CL1338,ar0           ; |2156| 
+        ldfu      0.0000000000e+00,f0   ; |2156| 
+        stf       f0,*+ar0(ir0)         ; |2156| 
+	.line	2121
 ;----------------------------------------------------------------------
-; 2155 | for (i=0;i<15;i++)                                                     
+; 2158 | for (i=0;i<15;i++)                                                     
 ;----------------------------------------------------------------------
-        ldiu      0,r0                  ; |2155| 
-        sti       r0,*+fp(1)            ; |2155| 
-        cmpi      15,r0                 ; |2155| 
-        bge       L229                  ; |2155| 
-;*      Branch Occurs to L229           ; |2155| 
+        ldiu      0,r0                  ; |2158| 
+        sti       r0,*+fp(1)            ; |2158| 
+        cmpi      15,r0                 ; |2158| 
+        bge       L229                  ; |2158| 
+;*      Branch Occurs to L229           ; |2158| 
 L226:        
-	.line	2120
-;----------------------------------------------------------------------
-; 2157 | TEMPS_WATER[i] = 0.0;                                                  
-;----------------------------------------------------------------------
-        ldp       @CL1341,DP
-        ldiu      *+fp(1),ir0           ; |2157| 
-        ldiu      @CL1341,ar0           ; |2157| 
-        ldfu      0.0000000000e+00,f0   ; |2157| 
-        stf       f0,*+ar0(ir0)         ; |2157| 
-	.line	2122
-;----------------------------------------------------------------------
-; 2159 | for (j=0;j<4;j++)                                                      
-;----------------------------------------------------------------------
-        ldiu      0,r0                  ; |2159| 
-        sti       r0,*+fp(2)            ; |2159| 
-        ldfu      0.0000000000e+00,f1   ; |2160| 
-        cmpi      4,r0                  ; |2159| 
-        bge       L228                  ; |2159| 
-;*      Branch Occurs to L228           ; |2159| 
-L227:        
 	.line	2123
 ;----------------------------------------------------------------------
-; 2160 | COEFF_SALT_TEMP_WATER[k][i][j] = 0.0;                                  
+; 2160 | TEMPS_WATER[i] = 0.0;                                                  
 ;----------------------------------------------------------------------
-        ldiu      *+fp(1),r2            ; |2160| 
-        ldiu      *+fp(3),r0            ; |2160| 
-        ldp       @CL1342,DP
-        ash       2,r2                  ; |2160| 
-        mpyi      60,r0                 ; |2160| 
-        ldiu      @CL1342,ar0           ; |2160| 
-        addi3     r2,r0,ir0             ; |2160| Unsigned
-        addi      *+fp(2),ir0           ; |2160| Unsigned
-        stf       f1,*+ar0(ir0)         ; |2160| 
-	.line	2122
-        ldiu      1,r0                  ; |2159| 
-        addi      *+fp(2),r0            ; |2159| 
-        sti       r0,*+fp(2)            ; |2159| 
-        cmpi      4,r0                  ; |2159| 
-        blt       L227                  ; |2159| 
-;*      Branch Occurs to L227           ; |2159| 
+        ldp       @CL1339,DP
+        ldiu      *+fp(1),ir0           ; |2160| 
+        ldiu      @CL1339,ar0           ; |2160| 
+        ldfu      0.0000000000e+00,f0   ; |2160| 
+        stf       f0,*+ar0(ir0)         ; |2160| 
+	.line	2125
+;----------------------------------------------------------------------
+; 2162 | for (j=0;j<4;j++)                                                      
+;----------------------------------------------------------------------
+        ldiu      0,r0                  ; |2162| 
+        sti       r0,*+fp(2)            ; |2162| 
+        ldfu      0.0000000000e+00,f1   ; |2163| 
+        cmpi      4,r0                  ; |2162| 
+        bge       L228                  ; |2162| 
+;*      Branch Occurs to L228           ; |2162| 
+L227:        
+	.line	2126
+;----------------------------------------------------------------------
+; 2163 | COEFF_SALT_TEMP_WATER[k][i][j] = 0.0;                                  
+;----------------------------------------------------------------------
+        ldiu      *+fp(1),r2            ; |2163| 
+        ldiu      *+fp(3),r0            ; |2163| 
+        ldp       @CL1340,DP
+        ash       2,r2                  ; |2163| 
+        mpyi      60,r0                 ; |2163| 
+        ldiu      @CL1340,ar0           ; |2163| 
+        addi3     r2,r0,ir0             ; |2163| Unsigned
+        addi      *+fp(2),ir0           ; |2163| Unsigned
+        stf       f1,*+ar0(ir0)         ; |2163| 
+	.line	2125
+        ldiu      1,r0                  ; |2162| 
+        addi      *+fp(2),r0            ; |2162| 
+        sti       r0,*+fp(2)            ; |2162| 
+        cmpi      4,r0                  ; |2162| 
+        blt       L227                  ; |2162| 
+;*      Branch Occurs to L227           ; |2162| 
 L228:        
-	.line	2118
-        ldiu      1,r0                  ; |2155| 
-        addi      *+fp(1),r0            ; |2155| 
-        sti       r0,*+fp(1)            ; |2155| 
-        cmpi      15,r0                 ; |2155| 
-        blt       L226                  ; |2155| 
-;*      Branch Occurs to L226           ; |2155| 
+	.line	2121
+        ldiu      1,r0                  ; |2158| 
+        addi      *+fp(1),r0            ; |2158| 
+        sti       r0,*+fp(1)            ; |2158| 
+        cmpi      15,r0                 ; |2158| 
+        blt       L226                  ; |2158| 
+;*      Branch Occurs to L226           ; |2158| 
 L229:        
-	.line	2114
-        ldiu      1,r0                  ; |2151| 
-        addi      *+fp(3),r0            ; |2151| 
-        sti       r0,*+fp(3)            ; |2151| 
-        cmpi      20,r0                 ; |2151| 
-        blt       L225                  ; |2151| 
-;*      Branch Occurs to L225           ; |2151| 
+	.line	2117
+        ldiu      1,r0                  ; |2154| 
+        addi      *+fp(3),r0            ; |2154| 
+        sti       r0,*+fp(3)            ; |2154| 
+        cmpi      20,r0                 ; |2154| 
+        blt       L225                  ; |2154| 
+;*      Branch Occurs to L225           ; |2154| 
 L230:        
-	.line	2127
-;----------------------------------------------------------------------
-; 2164 | COEFF_C0        = 0;                                                   
-;----------------------------------------------------------------------
-        ldp       @CL1343,DP
-        ldiu      @CL1343,ar0           ; |2164| 
-        ldfu      0.0000000000e+00,f0   ; |2164| 
-        stf       f0,*ar0               ; |2164| 
-	.line	2128
-;----------------------------------------------------------------------
-; 2165 | COEFF_FA2       = 1.0/1000.0;                                          
-;----------------------------------------------------------------------
-        ldp       @CL1344,DP
-        ldiu      @CL1344,ar0           ; |2165| 
-        ldp       @CL1345,DP
-        ldfu      @CL1345,f0            ; |2165| 
-        stf       f0,*ar0               ; |2165| 
-	.line	2129
-;----------------------------------------------------------------------
-; 2166 | COEFF_FA1       = 0;                                                   
-;----------------------------------------------------------------------
-        ldp       @CL1346,DP
-        ldiu      @CL1346,ar0           ; |2166| 
-        ldfu      0.0000000000e+00,f0   ; |2166| 
-        stf       f0,*ar0               ; |2166| 
 	.line	2130
 ;----------------------------------------------------------------------
-; 2167 | COEFF_FB2       = 0;                                                   
+; 2167 | COEFF_C0        = 0;                                                   
 ;----------------------------------------------------------------------
-        ldp       @CL1347,DP
-        ldiu      @CL1347,ar0           ; |2167| 
+        ldp       @CL1341,DP
+        ldiu      @CL1341,ar0           ; |2167| 
         ldfu      0.0000000000e+00,f0   ; |2167| 
         stf       f0,*ar0               ; |2167| 
 	.line	2131
 ;----------------------------------------------------------------------
-; 2168 | COEFF_FB1       = 0;                                                   
+; 2168 | COEFF_FA2       = 1.0/1000.0;                                          
 ;----------------------------------------------------------------------
-        ldp       @CL1348,DP
-        ldiu      @CL1348,ar0           ; |2168| 
-        ldfu      0.0000000000e+00,f0   ; |2168| 
+        ldp       @CL1342,DP
+        ldiu      @CL1342,ar0           ; |2168| 
+        ldp       @CL1343,DP
+        ldfu      @CL1343,f0            ; |2168| 
         stf       f0,*ar0               ; |2168| 
 	.line	2132
 ;----------------------------------------------------------------------
-; 2169 | COEFF_RPA2      = 0;                                                   
+; 2169 | COEFF_FA1       = 0;                                                   
 ;----------------------------------------------------------------------
-        ldp       @CL1349,DP
-        ldiu      @CL1349,ar0           ; |2169| 
+        ldp       @CL1344,DP
+        ldiu      @CL1344,ar0           ; |2169| 
         ldfu      0.0000000000e+00,f0   ; |2169| 
         stf       f0,*ar0               ; |2169| 
 	.line	2133
 ;----------------------------------------------------------------------
-; 2170 | COEFF_RPA1      = 0;                                                   
+; 2170 | COEFF_FB2       = 0;                                                   
 ;----------------------------------------------------------------------
-        ldp       @CL1350,DP
-        ldiu      @CL1350,ar0           ; |2170| 
+        ldp       @CL1345,DP
+        ldiu      @CL1345,ar0           ; |2170| 
         ldfu      0.0000000000e+00,f0   ; |2170| 
         stf       f0,*ar0               ; |2170| 
 	.line	2134
 ;----------------------------------------------------------------------
-; 2171 | COEFF_RPB2      = 0;                                                   
+; 2171 | COEFF_FB1       = 0;                                                   
 ;----------------------------------------------------------------------
-        ldp       @CL1351,DP
-        ldiu      @CL1351,ar0           ; |2171| 
+        ldp       @CL1346,DP
+        ldiu      @CL1346,ar0           ; |2171| 
         ldfu      0.0000000000e+00,f0   ; |2171| 
         stf       f0,*ar0               ; |2171| 
 	.line	2135
 ;----------------------------------------------------------------------
-; 2172 | COEFF_RPB1      = 0;                                                   
+; 2172 | COEFF_RPA2      = 0;                                                   
 ;----------------------------------------------------------------------
-        ldp       @CL1352,DP
-        ldiu      @CL1352,ar0           ; |2172| 
+        ldp       @CL1347,DP
+        ldiu      @CL1347,ar0           ; |2172| 
         ldfu      0.0000000000e+00,f0   ; |2172| 
         stf       f0,*ar0               ; |2172| 
 	.line	2136
 ;----------------------------------------------------------------------
-; 2173 | COEFF_IPA2      = 0;                                                   
+; 2173 | COEFF_RPA1      = 0;                                                   
 ;----------------------------------------------------------------------
-        ldp       @CL1353,DP
-        ldiu      @CL1353,ar0           ; |2173| 
+        ldp       @CL1348,DP
+        ldiu      @CL1348,ar0           ; |2173| 
         ldfu      0.0000000000e+00,f0   ; |2173| 
         stf       f0,*ar0               ; |2173| 
 	.line	2137
 ;----------------------------------------------------------------------
-; 2174 | COEFF_IPA1      = 0;                                                   
+; 2174 | COEFF_RPB2      = 0;                                                   
 ;----------------------------------------------------------------------
-        ldp       @CL1354,DP
-        ldiu      @CL1354,ar0           ; |2174| 
+        ldp       @CL1349,DP
+        ldiu      @CL1349,ar0           ; |2174| 
         ldfu      0.0000000000e+00,f0   ; |2174| 
         stf       f0,*ar0               ; |2174| 
 	.line	2138
 ;----------------------------------------------------------------------
-; 2175 | COEFF_IPB2      = 0;                                                   
+; 2175 | COEFF_RPB1      = 0;                                                   
 ;----------------------------------------------------------------------
-        ldp       @CL1355,DP
-        ldiu      @CL1355,ar0           ; |2175| 
+        ldp       @CL1350,DP
+        ldiu      @CL1350,ar0           ; |2175| 
         ldfu      0.0000000000e+00,f0   ; |2175| 
         stf       f0,*ar0               ; |2175| 
 	.line	2139
 ;----------------------------------------------------------------------
-; 2176 | COEFF_IPB1      = 0;                                                   
+; 2176 | COEFF_IPA2      = 0;                                                   
 ;----------------------------------------------------------------------
-        ldp       @CL1356,DP
-        ldiu      @CL1356,ar0           ; |2176| 
+        ldp       @CL1351,DP
+        ldiu      @CL1351,ar0           ; |2176| 
         ldfu      0.0000000000e+00,f0   ; |2176| 
         stf       f0,*ar0               ; |2176| 
 	.line	2140
 ;----------------------------------------------------------------------
-; 2177 | COEFF_T2        = 0;                                                   
+; 2177 | COEFF_IPA1      = 0;                                                   
 ;----------------------------------------------------------------------
-        ldp       @CL1357,DP
-        ldiu      @CL1357,ar0           ; |2177| 
+        ldp       @CL1352,DP
+        ldiu      @CL1352,ar0           ; |2177| 
         ldfu      0.0000000000e+00,f0   ; |2177| 
         stf       f0,*ar0               ; |2177| 
 	.line	2141
 ;----------------------------------------------------------------------
-; 2178 | COEFF_T1        = 0;                                                   
+; 2178 | COEFF_IPB2      = 0;                                                   
 ;----------------------------------------------------------------------
-        ldp       @CL1358,DP
-        ldiu      @CL1358,ar0           ; |2178| 
+        ldp       @CL1353,DP
+        ldiu      @CL1353,ar0           ; |2178| 
         ldfu      0.0000000000e+00,f0   ; |2178| 
         stf       f0,*ar0               ; |2178| 
 	.line	2142
 ;----------------------------------------------------------------------
-; 2179 | COEFF_D2        = 0;  /*PPM Analyzer with MicroMotion density RS*/     
+; 2179 | COEFF_IPB1      = 0;                                                   
 ;----------------------------------------------------------------------
-        ldp       @CL1359,DP
-        ldiu      @CL1359,ar0           ; |2179| 
+        ldp       @CL1354,DP
+        ldiu      @CL1354,ar0           ; |2179| 
         ldfu      0.0000000000e+00,f0   ; |2179| 
         stf       f0,*ar0               ; |2179| 
 	.line	2143
 ;----------------------------------------------------------------------
-; 2180 | COEFF_D1        = 0;  /*PPM Analyzer with MicroMotion density RS*/     
+; 2180 | COEFF_T2        = 0;                                                   
 ;----------------------------------------------------------------------
-        ldp       @CL1360,DP
-        ldiu      @CL1360,ar0           ; |2180| 
+        ldp       @CL1355,DP
+        ldiu      @CL1355,ar0           ; |2180| 
         ldfu      0.0000000000e+00,f0   ; |2180| 
         stf       f0,*ar0               ; |2180| 
+	.line	2144
+;----------------------------------------------------------------------
+; 2181 | COEFF_T1        = 0;                                                   
+;----------------------------------------------------------------------
+        ldp       @CL1356,DP
+        ldiu      @CL1356,ar0           ; |2181| 
+        ldfu      0.0000000000e+00,f0   ; |2181| 
+        stf       f0,*ar0               ; |2181| 
 	.line	2145
 ;----------------------------------------------------------------------
-; 2182 | for (i=0;i< 1;i++)                                                     
+; 2182 | COEFF_D2        = 0;  /*PPM Analyzer with MicroMotion density RS*/     
 ;----------------------------------------------------------------------
-        ldiu      0,r0                  ; |2182| 
-        sti       r0,*+fp(1)            ; |2182| 
-        ldiu      r0,r1
-        cmpi      0,r1                  ; |2182| 
-        bgt       L232                  ; |2182| 
-;*      Branch Occurs to L232           ; |2182| 
-L231:        
+        ldp       @CL1357,DP
+        ldiu      @CL1357,ar0           ; |2182| 
+        ldfu      0.0000000000e+00,f0   ; |2182| 
+        stf       f0,*ar0               ; |2182| 
 	.line	2146
 ;----------------------------------------------------------------------
-; 2183 | STR_VER[i]      = 0x0000;                                              
+; 2183 | COEFF_D1        = 0;  /*PPM Analyzer with MicroMotion density RS*/     
 ;----------------------------------------------------------------------
-        ldp       @CL1361,DP
-        ldiu      *+fp(1),ir0           ; |2183| 
-        ldiu      @CL1361,ar0           ; |2183| 
-        sti       r0,*+ar0(ir0)         ; |2183| 
-	.line	2145
-        ldiu      1,r1                  ; |2182| 
-        addi      *+fp(1),r1            ; |2182| 
-        sti       r1,*+fp(1)            ; |2182| 
-        cmpi      0,r1                  ; |2182| 
-        ble       L231                  ; |2182| 
-;*      Branch Occurs to L231           ; |2182| 
-L232:        
+        ldp       @CL1358,DP
+        ldiu      @CL1358,ar0           ; |2183| 
+        ldfu      0.0000000000e+00,f0   ; |2183| 
+        stf       f0,*ar0               ; |2183| 
 	.line	2148
 ;----------------------------------------------------------------------
-; 2185 | for (i=0;i< 2;i++)                                                     
+; 2185 | for (i=0;i< 1;i++)                                                     
 ;----------------------------------------------------------------------
         ldiu      0,r0                  ; |2185| 
         sti       r0,*+fp(1)            ; |2185| 
         ldiu      r0,r1
-        cmpi      2,r1                  ; |2185| 
-        bge       L234                  ; |2185| 
-;*      Branch Occurs to L234           ; |2185| 
-L233:        
+        cmpi      0,r1                  ; |2185| 
+        bgt       L232                  ; |2185| 
+;*      Branch Occurs to L232           ; |2185| 
+L231:        
 	.line	2149
 ;----------------------------------------------------------------------
-; 2186 | STR_INIT[i]  = 0x0000;                                                 
+; 2186 | STR_VER[i]      = 0x0000;                                              
 ;----------------------------------------------------------------------
-        ldp       @CL1362,DP
+        ldp       @CL1359,DP
         ldiu      *+fp(1),ir0           ; |2186| 
-        ldiu      @CL1362,ar0           ; |2186| 
+        ldiu      @CL1359,ar0           ; |2186| 
         sti       r0,*+ar0(ir0)         ; |2186| 
 	.line	2148
         ldiu      1,r1                  ; |2185| 
         addi      *+fp(1),r1            ; |2185| 
         sti       r1,*+fp(1)            ; |2185| 
-        cmpi      2,r1                  ; |2185| 
-        blt       L233                  ; |2185| 
-;*      Branch Occurs to L233           ; |2185| 
-L234:        
+        cmpi      0,r1                  ; |2185| 
+        ble       L231                  ; |2185| 
+;*      Branch Occurs to L231           ; |2185| 
+L232:        
 	.line	2151
 ;----------------------------------------------------------------------
-; 2188 | c = (char*)&copyright;                                                 
+; 2188 | for (i=0;i< 2;i++)                                                     
 ;----------------------------------------------------------------------
-        ldp       @CL1363,DP
-        ldiu      @CL1363,r0            ; |2188| 
-        sti       r0,*+fp(4)            ; |2188| 
+        ldiu      0,r0                  ; |2188| 
+        sti       r0,*+fp(1)            ; |2188| 
+        ldiu      r0,r1
+        cmpi      2,r1                  ; |2188| 
+        bge       L234                  ; |2188| 
+;*      Branch Occurs to L234           ; |2188| 
+L233:        
 	.line	2152
 ;----------------------------------------------------------------------
-; 2189 | for (i=0;i<20;i++)                                                     
+; 2189 | STR_INIT[i]  = 0x0000;                                                 
 ;----------------------------------------------------------------------
-        ldiu      0,r0                  ; |2189| 
-        sti       r0,*+fp(1)            ; |2189| 
-        cmpi      20,r0                 ; |2189| 
-        bge       L240                  ; |2189| 
-;*      Branch Occurs to L240           ; |2189| 
-L235:        
+        ldp       @CL1360,DP
+        ldiu      *+fp(1),ir0           ; |2189| 
+        ldiu      @CL1360,ar0           ; |2189| 
+        sti       r0,*+ar0(ir0)         ; |2189| 
+	.line	2151
+        ldiu      1,r1                  ; |2188| 
+        addi      *+fp(1),r1            ; |2188| 
+        sti       r1,*+fp(1)            ; |2188| 
+        cmpi      2,r1                  ; |2188| 
+        blt       L233                  ; |2188| 
+;*      Branch Occurs to L233           ; |2188| 
+L234:        
 	.line	2154
 ;----------------------------------------------------------------------
-; 2191 | if (c[2*i] == 0x00)                                                    
+; 2191 | c = (char*)&copyright;                                                 
 ;----------------------------------------------------------------------
-        ldiu      *+fp(1),ar0           ; |2191| 
-        ldiu      *+fp(4),ir0           ; |2191| 
-        ash       1,ar0                 ; |2191| 
-        ldiu      *+ar0(ir0),r0         ; |2191| 
-        cmpi      0,r0                  ; |2191| 
-        beq       L240                  ; |2191| 
-;*      Branch Occurs to L240           ; |2191| 
+        ldp       @CL1361,DP
+        ldiu      @CL1361,r0            ; |2191| 
+        sti       r0,*+fp(4)            ; |2191| 
 	.line	2155
 ;----------------------------------------------------------------------
-; 2192 | break;                                                                 
+; 2192 | for (i=0;i<20;i++)                                                     
 ;----------------------------------------------------------------------
+        ldiu      0,r0                  ; |2192| 
+        sti       r0,*+fp(1)            ; |2192| 
+        cmpi      20,r0                 ; |2192| 
+        bge       L240                  ; |2192| 
+;*      Branch Occurs to L240           ; |2192| 
+L235:        
 	.line	2157
 ;----------------------------------------------------------------------
-; 2194 | STR_Copyright[i] = c[2*i]<<8;                                          
+; 2194 | if (c[2*i] == 0x00)                                                    
 ;----------------------------------------------------------------------
-        ldiu      ir0,ir1               ; |2194| 
         ldiu      *+fp(1),ar0           ; |2194| 
-        ldp       @CL1364,DP
-        ldiu      8,r0                  ; |2194| 
-        ldiu      ar0,ir0               ; |2194| 
+        ldiu      *+fp(4),ir0           ; |2194| 
         ash       1,ar0                 ; |2194| 
-        ldiu      @CL1364,ar1           ; |2194| 
-        ash3      r0,*+ar0(ir1),r0      ; |2194| 
-        sti       r0,*+ar1(ir0)         ; |2194| 
-	.line	2159
+        ldiu      *+ar0(ir0),r0         ; |2194| 
+        cmpi      0,r0                  ; |2194| 
+        beq       L240                  ; |2194| 
+;*      Branch Occurs to L240           ; |2194| 
+	.line	2158
 ;----------------------------------------------------------------------
-; 2196 | if (c[2*i+1] == 0x00)                                                  
+; 2195 | break;                                                                 
 ;----------------------------------------------------------------------
-        ldiu      *+fp(1),ar0           ; |2196| 
-        ash       1,ar0                 ; |2196| 
-        addi      *+fp(4),ar0           ; |2196| Unsigned
-        ldiu      *+ar0(1),r0           ; |2196| 
-        cmpi      0,r0                  ; |2196| 
-        bne       L239                  ; |2196| 
-;*      Branch Occurs to L239           ; |2196| 
-	.line	2161
+	.line	2160
 ;----------------------------------------------------------------------
-; 2198 | STR_Copyright[i] |= 0x0020;                                            
+; 2197 | STR_Copyright[i] = c[2*i]<<8;                                          
 ;----------------------------------------------------------------------
-        ldp       @CL1364,DP
-        ldiu      *+fp(1),ar0           ; |2198| 
-        ldiu      @CL1364,ir0           ; |2198| 
-        ldiu      32,r0                 ; |2198| 
-        or3       r0,*+ar0(ir0),r0      ; |2198| 
-        sti       r0,*+ar0(ir0)         ; |2198| 
+        ldiu      ir0,ir1               ; |2197| 
+        ldiu      *+fp(1),ar0           ; |2197| 
+        ldp       @CL1362,DP
+        ldiu      8,r0                  ; |2197| 
+        ldiu      ar0,ir0               ; |2197| 
+        ash       1,ar0                 ; |2197| 
+        ldiu      @CL1362,ar1           ; |2197| 
+        ash3      r0,*+ar0(ir1),r0      ; |2197| 
+        sti       r0,*+ar1(ir0)         ; |2197| 
 	.line	2162
 ;----------------------------------------------------------------------
-; 2199 | i++;                                                                   
+; 2199 | if (c[2*i+1] == 0x00)                                                  
 ;----------------------------------------------------------------------
-        ldiu      1,r0                  ; |2199| 
-        addi      *+fp(1),r0            ; |2199| 
-        sti       r0,*+fp(1)            ; |2199| 
-	.line	2163
+        ldiu      *+fp(1),ar0           ; |2199| 
+        ash       1,ar0                 ; |2199| 
+        addi      *+fp(4),ar0           ; |2199| Unsigned
+        ldiu      *+ar0(1),r0           ; |2199| 
+        cmpi      0,r0                  ; |2199| 
+        bne       L239                  ; |2199| 
+;*      Branch Occurs to L239           ; |2199| 
+	.line	2164
 ;----------------------------------------------------------------------
-; 2200 | break;                                                                 
-; 2202 | else                                                                   
+; 2201 | STR_Copyright[i] |= 0x0020;                                            
 ;----------------------------------------------------------------------
-        bu        L240                  ; |2200| 
-;*      Branch Occurs to L240           ; |2200| 
-L239:        
+        ldp       @CL1362,DP
+        ldiu      *+fp(1),ar0           ; |2201| 
+        ldiu      @CL1362,ir0           ; |2201| 
+        ldiu      32,r0                 ; |2201| 
+        or3       r0,*+ar0(ir0),r0      ; |2201| 
+        sti       r0,*+ar0(ir0)         ; |2201| 
+	.line	2165
+;----------------------------------------------------------------------
+; 2202 | i++;                                                                   
+;----------------------------------------------------------------------
+        ldiu      1,r0                  ; |2202| 
+        addi      *+fp(1),r0            ; |2202| 
+        sti       r0,*+fp(1)            ; |2202| 
 	.line	2166
 ;----------------------------------------------------------------------
-; 2203 | STR_Copyright[i] |= (int)(c[2*i+1]);                                   
+; 2203 | break;                                                                 
+; 2205 | else                                                                   
 ;----------------------------------------------------------------------
-        ldiu      *+fp(1),ar0           ; |2203| 
-        ldp       @CL1364,DP
-        ldiu      ar0,ar1               ; |2203| 
-        ash       1,ar0                 ; |2203| 
-        ldiu      @CL1364,ir0           ; |2203| 
-        addi      *+fp(4),ar0           ; |2203| Unsigned
-        or3       *+ar1(ir0),*+ar0,r0   ; |2203| 
-        sti       r0,*+ar1(ir0)         ; |2203| 
-	.line	2152
-        ldiu      1,r0                  ; |2189| 
-        addi      *+fp(1),r0            ; |2189| 
-        sti       r0,*+fp(1)            ; |2189| 
-        cmpi      20,r0                 ; |2189| 
-        blt       L235                  ; |2189| 
-;*      Branch Occurs to L235           ; |2189| 
+        bu        L240                  ; |2203| 
+;*      Branch Occurs to L240           ; |2203| 
+L239:        
+	.line	2169
+;----------------------------------------------------------------------
+; 2206 | STR_Copyright[i] |= (int)(c[2*i+1]);                                   
+;----------------------------------------------------------------------
+        ldiu      *+fp(1),ar0           ; |2206| 
+        ldp       @CL1362,DP
+        ldiu      ar0,ar1               ; |2206| 
+        ash       1,ar0                 ; |2206| 
+        ldiu      @CL1362,ir0           ; |2206| 
+        addi      *+fp(4),ar0           ; |2206| Unsigned
+        or3       *+ar1(ir0),*+ar0,r0   ; |2206| 
+        sti       r0,*+ar1(ir0)         ; |2206| 
+	.line	2155
+        ldiu      1,r0                  ; |2192| 
+        addi      *+fp(1),r0            ; |2192| 
+        sti       r0,*+fp(1)            ; |2192| 
+        cmpi      20,r0                 ; |2192| 
+        blt       L235                  ; |2192| 
+;*      Branch Occurs to L235           ; |2192| 
 L240:        
-	.line	2169
-;----------------------------------------------------------------------
-; 2206 | for (i  ;i<20;i++)                                                     
-;----------------------------------------------------------------------
-        ldiu      *+fp(1),r1            ; |2206| 
-        cmpi      20,r1                 ; |2206| 
-        ldiu      8224,r0               ; |2207| 
-        bge       L242                  ; |2206| 
-;*      Branch Occurs to L242           ; |2206| 
-L241:        
-	.line	2170
-;----------------------------------------------------------------------
-; 2207 | STR_Copyright[i]         = 0x2020;                                     
-;----------------------------------------------------------------------
-        ldp       @CL1364,DP
-        ldiu      *+fp(1),ir0           ; |2207| 
-        ldiu      @CL1364,ar0           ; |2207| 
-        sti       r0,*+ar0(ir0)         ; |2207| 
-	.line	2169
-        ldiu      1,r1                  ; |2206| 
-        addi      *+fp(1),r1            ; |2206| 
-        sti       r1,*+fp(1)            ; |2206| 
-        cmpi      20,r1                 ; |2206| 
-        blt       L241                  ; |2206| 
-;*      Branch Occurs to L241           ; |2206| 
-L242:        
 	.line	2172
 ;----------------------------------------------------------------------
-; 2209 | for (i=0;i<10;i++)                                                     
+; 2209 | for (i  ;i<20;i++)                                                     
 ;----------------------------------------------------------------------
-        ldiu      0,r0                  ; |2209| 
-        sti       r0,*+fp(1)            ; |2209| 
-        ldiu      r0,r1
-        cmpi      10,r1                 ; |2209| 
+        ldiu      *+fp(1),r1            ; |2209| 
+        cmpi      20,r1                 ; |2209| 
         ldiu      8224,r0               ; |2210| 
-        bge       L244                  ; |2209| 
-;*      Branch Occurs to L244           ; |2209| 
-L243:        
+        bge       L242                  ; |2209| 
+;*      Branch Occurs to L242           ; |2209| 
+L241:        
 	.line	2173
 ;----------------------------------------------------------------------
-; 2210 | STR_Analyzer_Info[i] = 0x2020;                                         
+; 2210 | STR_Copyright[i]         = 0x2020;                                     
 ;----------------------------------------------------------------------
-        ldp       @CL1365,DP
+        ldp       @CL1362,DP
         ldiu      *+fp(1),ir0           ; |2210| 
-        ldiu      @CL1365,ar0           ; |2210| 
+        ldiu      @CL1362,ar0           ; |2210| 
         sti       r0,*+ar0(ir0)         ; |2210| 
 	.line	2172
         ldiu      1,r1                  ; |2209| 
         addi      *+fp(1),r1            ; |2209| 
         sti       r1,*+fp(1)            ; |2209| 
-        cmpi      10,r1                 ; |2209| 
-        blt       L243                  ; |2209| 
-;*      Branch Occurs to L243           ; |2209| 
-L244:        
+        cmpi      20,r1                 ; |2209| 
+        blt       L241                  ; |2209| 
+;*      Branch Occurs to L241           ; |2209| 
+L242:        
 	.line	2175
 ;----------------------------------------------------------------------
-; 2212 | for (i=0;i<4 ;i++)                                                     
+; 2212 | for (i=0;i<10;i++)                                                     
 ;----------------------------------------------------------------------
         ldiu      0,r0                  ; |2212| 
         sti       r0,*+fp(1)            ; |2212| 
         ldiu      r0,r1
-        cmpi      4,r1                  ; |2212| 
+        cmpi      10,r1                 ; |2212| 
         ldiu      8224,r0               ; |2213| 
-        bge       L246                  ; |2212| 
-;*      Branch Occurs to L246           ; |2212| 
-L245:        
+        bge       L244                  ; |2212| 
+;*      Branch Occurs to L244           ; |2212| 
+L243:        
 	.line	2176
 ;----------------------------------------------------------------------
-; 2213 | STR_HART_Tag[i]      = 0x2020;                                         
+; 2213 | STR_Analyzer_Info[i] = 0x2020;                                         
 ;----------------------------------------------------------------------
-        ldp       @CL1366,DP
+        ldp       @CL1363,DP
         ldiu      *+fp(1),ir0           ; |2213| 
-        ldiu      @CL1366,ar0           ; |2213| 
+        ldiu      @CL1363,ar0           ; |2213| 
         sti       r0,*+ar0(ir0)         ; |2213| 
 	.line	2175
         ldiu      1,r1                  ; |2212| 
         addi      *+fp(1),r1            ; |2212| 
         sti       r1,*+fp(1)            ; |2212| 
-        cmpi      4,r1                  ; |2212| 
-        blt       L245                  ; |2212| 
-;*      Branch Occurs to L245           ; |2212| 
-L246:        
+        cmpi      10,r1                 ; |2212| 
+        blt       L243                  ; |2212| 
+;*      Branch Occurs to L243           ; |2212| 
+L244:        
 	.line	2178
 ;----------------------------------------------------------------------
-; 2215 | for (i=0;i<16;i++)                                                     
+; 2215 | for (i=0;i<4 ;i++)                                                     
 ;----------------------------------------------------------------------
         ldiu      0,r0                  ; |2215| 
         sti       r0,*+fp(1)            ; |2215| 
         ldiu      r0,r1
-        cmpi      16,r1                 ; |2215| 
-        bge       L248                  ; |2215| 
-;*      Branch Occurs to L248           ; |2215| 
-L247:        
+        cmpi      4,r1                  ; |2215| 
+        ldiu      8224,r0               ; |2216| 
+        bge       L246                  ; |2215| 
+;*      Branch Occurs to L246           ; |2215| 
+L245:        
 	.line	2179
 ;----------------------------------------------------------------------
-; 2216 | STR_HART_Tag_Long[i] = 0x0000;                                         
+; 2216 | STR_HART_Tag[i]      = 0x2020;                                         
 ;----------------------------------------------------------------------
-        ldp       @CL1367,DP
+        ldp       @CL1364,DP
         ldiu      *+fp(1),ir0           ; |2216| 
-        ldiu      @CL1367,ar0           ; |2216| 
+        ldiu      @CL1364,ar0           ; |2216| 
         sti       r0,*+ar0(ir0)         ; |2216| 
 	.line	2178
         ldiu      1,r1                  ; |2215| 
         addi      *+fp(1),r1            ; |2215| 
         sti       r1,*+fp(1)            ; |2215| 
-        cmpi      16,r1                 ; |2215| 
-        blt       L247                  ; |2215| 
-;*      Branch Occurs to L247           ; |2215| 
-L248:        
+        cmpi      4,r1                  ; |2215| 
+        blt       L245                  ; |2215| 
+;*      Branch Occurs to L245           ; |2215| 
+L246:        
 	.line	2181
 ;----------------------------------------------------------------------
-; 2218 | for (i=0;i<8 ;i++)                                                     
+; 2218 | for (i=0;i<16;i++)                                                     
 ;----------------------------------------------------------------------
         ldiu      0,r0                  ; |2218| 
         sti       r0,*+fp(1)            ; |2218| 
         ldiu      r0,r1
-        cmpi      8,r1                  ; |2218| 
-        ldiu      8224,r0               ; |2219| 
-        bge       L250                  ; |2218| 
-;*      Branch Occurs to L250           ; |2218| 
-L249:        
+        cmpi      16,r1                 ; |2218| 
+        bge       L248                  ; |2218| 
+;*      Branch Occurs to L248           ; |2218| 
+L247:        
 	.line	2182
 ;----------------------------------------------------------------------
-; 2219 | STR_HART_Desc[i]     = 0x2020;                                         
+; 2219 | STR_HART_Tag_Long[i] = 0x0000;                                         
 ;----------------------------------------------------------------------
-        ldp       @CL1368,DP
+        ldp       @CL1365,DP
         ldiu      *+fp(1),ir0           ; |2219| 
-        ldiu      @CL1368,ar0           ; |2219| 
+        ldiu      @CL1365,ar0           ; |2219| 
         sti       r0,*+ar0(ir0)         ; |2219| 
 	.line	2181
         ldiu      1,r1                  ; |2218| 
         addi      *+fp(1),r1            ; |2218| 
         sti       r1,*+fp(1)            ; |2218| 
-        cmpi      8,r1                  ; |2218| 
-        blt       L249                  ; |2218| 
-;*      Branch Occurs to L249           ; |2218| 
-L250:        
+        cmpi      16,r1                 ; |2218| 
+        blt       L247                  ; |2218| 
+;*      Branch Occurs to L247           ; |2218| 
+L248:        
 	.line	2184
 ;----------------------------------------------------------------------
-; 2221 | for (i=0;i<16;i++)                                                     
+; 2221 | for (i=0;i<8 ;i++)                                                     
 ;----------------------------------------------------------------------
         ldiu      0,r0                  ; |2221| 
         sti       r0,*+fp(1)            ; |2221| 
         ldiu      r0,r1
-        cmpi      16,r1                 ; |2221| 
+        cmpi      8,r1                  ; |2221| 
         ldiu      8224,r0               ; |2222| 
-        bge       L252                  ; |2221| 
-;*      Branch Occurs to L252           ; |2221| 
-L251:        
+        bge       L250                  ; |2221| 
+;*      Branch Occurs to L250           ; |2221| 
+L249:        
 	.line	2185
 ;----------------------------------------------------------------------
-; 2222 | STR_HART_Msg[i]      = 0x2020;                                         
+; 2222 | STR_HART_Desc[i]     = 0x2020;                                         
 ;----------------------------------------------------------------------
-        ldp       @CL1369,DP
+        ldp       @CL1366,DP
         ldiu      *+fp(1),ir0           ; |2222| 
-        ldiu      @CL1369,ar0           ; |2222| 
+        ldiu      @CL1366,ar0           ; |2222| 
         sti       r0,*+ar0(ir0)         ; |2222| 
 	.line	2184
         ldiu      1,r1                  ; |2221| 
         addi      *+fp(1),r1            ; |2221| 
         sti       r1,*+fp(1)            ; |2221| 
-        cmpi      16,r1                 ; |2221| 
-        blt       L251                  ; |2221| 
-;*      Branch Occurs to L251           ; |2221| 
-L252:        
+        cmpi      8,r1                  ; |2221| 
+        blt       L249                  ; |2221| 
+;*      Branch Occurs to L249           ; |2221| 
+L250:        
 	.line	2187
 ;----------------------------------------------------------------------
-; 2224 | for (i=0;i<8 ;i++)                                                     
+; 2224 | for (i=0;i<16;i++)                                                     
 ;----------------------------------------------------------------------
         ldiu      0,r0                  ; |2224| 
         sti       r0,*+fp(1)            ; |2224| 
         ldiu      r0,r1
-        cmpi      8,r1                  ; |2224| 
+        cmpi      16,r1                 ; |2224| 
         ldiu      8224,r0               ; |2225| 
-        bge       L254                  ; |2224| 
-;*      Branch Occurs to L254           ; |2224| 
-L253:        
+        bge       L252                  ; |2224| 
+;*      Branch Occurs to L252           ; |2224| 
+L251:        
 	.line	2188
 ;----------------------------------------------------------------------
-; 2225 | STR_ASSY_Date[i]     = 0x2020;   /* add profile version -RS*/          
+; 2225 | STR_HART_Msg[i]      = 0x2020;                                         
 ;----------------------------------------------------------------------
-        ldp       @CL1370,DP
+        ldp       @CL1367,DP
         ldiu      *+fp(1),ir0           ; |2225| 
-        ldiu      @CL1370,ar0           ; |2225| 
+        ldiu      @CL1367,ar0           ; |2225| 
         sti       r0,*+ar0(ir0)         ; |2225| 
 	.line	2187
         ldiu      1,r1                  ; |2224| 
         addi      *+fp(1),r1            ; |2224| 
         sti       r1,*+fp(1)            ; |2224| 
-        cmpi      8,r1                  ; |2224| 
-        blt       L253                  ; |2224| 
-;*      Branch Occurs to L253           ; |2224| 
-L254:        
+        cmpi      16,r1                 ; |2224| 
+        blt       L251                  ; |2224| 
+;*      Branch Occurs to L251           ; |2224| 
+L252:        
 	.line	2190
 ;----------------------------------------------------------------------
-; 2227 | for (i=0;i<10;i++)                                                     
+; 2227 | for (i=0;i<8 ;i++)                                                     
 ;----------------------------------------------------------------------
         ldiu      0,r0                  ; |2227| 
         sti       r0,*+fp(1)            ; |2227| 
         ldiu      r0,r1
-        cmpi      10,r1                 ; |2227| 
+        cmpi      8,r1                  ; |2227| 
         ldiu      8224,r0               ; |2228| 
-        bge       L256                  ; |2227| 
-;*      Branch Occurs to L256           ; |2227| 
-L255:        
+        bge       L254                  ; |2227| 
+;*      Branch Occurs to L254           ; |2227| 
+L253:        
 	.line	2191
 ;----------------------------------------------------------------------
-; 2228 | STR_Analyzer_PV[i]       = 0x2020;                                     
+; 2228 | STR_ASSY_Date[i]     = 0x2020;   /* add profile version -RS*/          
 ;----------------------------------------------------------------------
-        ldp       @CL1371,DP
+        ldp       @CL1368,DP
         ldiu      *+fp(1),ir0           ; |2228| 
-        ldiu      @CL1371,ar0           ; |2228| 
+        ldiu      @CL1368,ar0           ; |2228| 
         sti       r0,*+ar0(ir0)         ; |2228| 
 	.line	2190
         ldiu      1,r1                  ; |2227| 
         addi      *+fp(1),r1            ; |2227| 
         sti       r1,*+fp(1)            ; |2227| 
-        cmpi      10,r1                 ; |2227| 
-        blt       L255                  ; |2227| 
-;*      Branch Occurs to L255           ; |2227| 
-L256:        
+        cmpi      8,r1                  ; |2227| 
+        blt       L253                  ; |2227| 
+;*      Branch Occurs to L253           ; |2227| 
+L254:        
 	.line	2193
 ;----------------------------------------------------------------------
-; 2230 | for (i=0;i<4 ;i++)                                                     
+; 2230 | for (i=0;i<10;i++)                                                     
 ;----------------------------------------------------------------------
         ldiu      0,r0                  ; |2230| 
         sti       r0,*+fp(1)            ; |2230| 
         ldiu      r0,r1
-        cmpi      4,r1                  ; |2230| 
+        cmpi      10,r1                 ; |2230| 
         ldiu      8224,r0               ; |2231| 
-        bge       L258                  ; |2230| 
-;*      Branch Occurs to L258           ; |2230| 
-L257:        
+        bge       L256                  ; |2230| 
+;*      Branch Occurs to L256           ; |2230| 
+L255:        
 	.line	2194
 ;----------------------------------------------------------------------
-; 2231 | STR_Analyzer_UNIT[i] = 0x2020;                                         
+; 2231 | STR_Analyzer_PV[i]       = 0x2020;                                     
 ;----------------------------------------------------------------------
-        ldp       @CL1372,DP
+        ldp       @CL1369,DP
         ldiu      *+fp(1),ir0           ; |2231| 
-        ldiu      @CL1372,ar0           ; |2231| 
+        ldiu      @CL1369,ar0           ; |2231| 
         sti       r0,*+ar0(ir0)         ; |2231| 
 	.line	2193
         ldiu      1,r1                  ; |2230| 
         addi      *+fp(1),r1            ; |2230| 
         sti       r1,*+fp(1)            ; |2230| 
-        cmpi      4,r1                  ; |2230| 
-        blt       L257                  ; |2230| 
-;*      Branch Occurs to L257           ; |2230| 
-L258:        
+        cmpi      10,r1                 ; |2230| 
+        blt       L255                  ; |2230| 
+;*      Branch Occurs to L255           ; |2230| 
+L256:        
 	.line	2196
 ;----------------------------------------------------------------------
-; 2233 | STR_HART_Date[0]        = 0x0101;       /* byte1 = day, byte0 = month *
-;     | /                                                                      
+; 2233 | for (i=0;i<4 ;i++)                                                     
 ;----------------------------------------------------------------------
-        ldp       @CL1373,DP
-        ldiu      @CL1373,ar0           ; |2233| 
-        ldiu      257,r0                ; |2233| 
-        sti       r0,*ar0               ; |2233| 
+        ldiu      0,r0                  ; |2233| 
+        sti       r0,*+fp(1)            ; |2233| 
+        ldiu      r0,r1
+        cmpi      4,r1                  ; |2233| 
+        ldiu      8224,r0               ; |2234| 
+        bge       L258                  ; |2233| 
+;*      Branch Occurs to L258           ; |2233| 
+L257:        
 	.line	2197
 ;----------------------------------------------------------------------
-; 2234 | STR_HART_Date[1]        = 0x6600;       /* byte1 = year-1900, byte0 = N
-;     | ot Used */                                                             
+; 2234 | STR_Analyzer_UNIT[i] = 0x2020;                                         
 ;----------------------------------------------------------------------
-        ldp       @CL1374,DP
-        ldiu      @CL1374,ar0           ; |2234| 
-        ldiu      26112,r0              ; |2234| 
-        sti       r0,*ar0               ; |2234| 
+        ldp       @CL1370,DP
+        ldiu      *+fp(1),ir0           ; |2234| 
+        ldiu      @CL1370,ar0           ; |2234| 
+        sti       r0,*+ar0(ir0)         ; |2234| 
+	.line	2196
+        ldiu      1,r1                  ; |2233| 
+        addi      *+fp(1),r1            ; |2233| 
+        sti       r1,*+fp(1)            ; |2233| 
+        cmpi      4,r1                  ; |2233| 
+        blt       L257                  ; |2233| 
+;*      Branch Occurs to L257           ; |2233| 
+L258:        
+	.line	2199
+;----------------------------------------------------------------------
+; 2236 | STR_HART_Date[0]        = 0x0101;       /* byte1 = day, byte0 = month *
+;     | /                                                                      
+;----------------------------------------------------------------------
+        ldp       @CL1371,DP
+        ldiu      @CL1371,ar0           ; |2236| 
+        ldiu      257,r0                ; |2236| 
+        sti       r0,*ar0               ; |2236| 
 	.line	2200
 ;----------------------------------------------------------------------
-; 2237 | VAR_Initialize(&Oil_Phase_Filter, c_not_used, u_generic_not_used, 1.0,
+; 2237 | STR_HART_Date[1]        = 0x6600;       /* byte1 = year-1900, byte0 = N
+;     | ot Used */                                                             
+;----------------------------------------------------------------------
+        ldp       @CL1372,DP
+        ldiu      @CL1372,ar0           ; |2237| 
+        ldiu      26112,r0              ; |2237| 
+        sti       r0,*ar0               ; |2237| 
+	.line	2203
+;----------------------------------------------------------------------
+; 2240 | VAR_Initialize(&Oil_Phase_Filter, c_not_used, u_generic_not_used, 1.0,
 ;     | 1.0, var_no_alarm|var_round);                                          
 ;----------------------------------------------------------------------
-        ldiu      250,rc                ; |2237| 
-        ldiu      260,re                ; |2237| 
-        ldiu      250,rs                ; |2237| 
+        ldiu      250,rc                ; |2240| 
+        ldiu      260,re                ; |2240| 
+        ldiu      250,rs                ; |2240| 
         ldp       @CL20,DP
-        ldfu      1.0000000000e+00,f3   ; |2237| 
-        ldiu      @CL20,r0              ; |2237| 
-        ldp       @CL1375,DP
-        ldfu      1.0000000000e+00,f2   ; |2237| 
-        ldiu      @CL1375,ar2           ; |2237| 
-        callu     r0                    ; far call to _VAR_Initialize	; |2237| 
-                                        ; |2237| Far Call Occurs
-	.line	2201
+        ldfu      1.0000000000e+00,f3   ; |2240| 
+        ldiu      @CL20,r0              ; |2240| 
+        ldp       @CL1373,DP
+        ldfu      1.0000000000e+00,f2   ; |2240| 
+        ldiu      @CL1373,ar2           ; |2240| 
+        callu     r0                    ; far call to _VAR_Initialize	; |2240| 
+                                        ; |2240| Far Call Occurs
+	.line	2204
 ;----------------------------------------------------------------------
-; 2238 | sprintf(Oil_Phase_Filter.name, "Oil Cont. Filter");                    
+; 2241 | sprintf(Oil_Phase_Filter.name, "Oil Cont. Filter");                    
 ;----------------------------------------------------------------------
-        ldp       @CL1376,DP
-        ldiu      @CL1376,r1            ; |2238| 
+        ldp       @CL1374,DP
+        ldiu      @CL1374,r1            ; |2241| 
         ldp       @CL24,DP
-        ldiu      @CL24,r0              ; |2238| 
-        ldp       @CL1377,DP
-        push      r1                    ; |2238| 
-        ldiu      @CL1377,ar2           ; |2238| 
-        callu     r0                    ; far call to _sprintf	; |2238| 
-                                        ; |2238| Far Call Occurs
-        subi      1,sp                  ; |2238| 
-	.line	2202
+        ldiu      @CL24,r0              ; |2241| 
+        ldp       @CL1375,DP
+        push      r1                    ; |2241| 
+        ldiu      @CL1375,ar2           ; |2241| 
+        callu     r0                    ; far call to _sprintf	; |2241| 
+                                        ; |2241| Far Call Occurs
+        subi      1,sp                  ; |2241| 
+	.line	2205
 ;----------------------------------------------------------------------
-; 2239 | VAR_Setup_Unit(&Oil_Phase_Filter, u_mfgr_specific_none, 6.0, 0.0, 6.0,
+; 2242 | VAR_Setup_Unit(&Oil_Phase_Filter, u_mfgr_specific_none, 6.0, 0.0, 6.0,
 ;     | 0.0);                                                                  
 ;----------------------------------------------------------------------
         ldp       @CL30,DP
-        ldiu      @CL30,rs              ; |2239| 
-        ldfu      0.0000000000e+00,f1   ; |2239| 
-        ldp       @CL1375,DP
-        ldfu      6.0000000000e+00,f0   ; |2239| 
-        pushf     f1                    ; |2239| 
-        ldiu      @CL1375,ar2           ; |2239| 
-        pushf     f0                    ; |2239| 
-        ldfu      0.0000000000e+00,f3   ; |2239| 
-        ldfu      6.0000000000e+00,f2   ; |2239| 
-        ldiu      240,rc                ; |2239| 
-        callu     rs                    ; far call to _VAR_Setup_Unit	; |2239| 
-                                        ; |2239| Far Call Occurs
-        subi      2,sp                  ; |2239| 
-	.line	2203
-;----------------------------------------------------------------------
-; 2240 | VAR_Update(&Oil_Phase_Filter, 0.0, 0, 0);                              
-;----------------------------------------------------------------------
-        ldp       @CL32,DP
-        ldiu      @CL32,r0              ; |2240| 
-        ldp       @CL31+0,DP
-        ldfu      @CL31+0,f2            ; |2240| 40b float hi half
-        ldp       @CL31+1,DP
-        ldiu      @CL31+1,r2            ; |2240| 40b float lo half
-        ldp       @CL1375,DP
-        ldiu      0,rc                  ; |2240| 
-        ldiu      @CL1375,ar2           ; |2240| 
-        ldiu      0,r3                  ; |2240| 
-        callu     r0                    ; far call to _VAR_Update	; |2240| 
-                                        ; |2240| Far Call Occurs
+        ldiu      @CL30,rs              ; |2242| 
+        ldfu      0.0000000000e+00,f1   ; |2242| 
+        ldp       @CL1373,DP
+        ldfu      6.0000000000e+00,f0   ; |2242| 
+        pushf     f1                    ; |2242| 
+        ldiu      @CL1373,ar2           ; |2242| 
+        pushf     f0                    ; |2242| 
+        ldfu      0.0000000000e+00,f3   ; |2242| 
+        ldfu      6.0000000000e+00,f2   ; |2242| 
+        ldiu      240,rc                ; |2242| 
+        callu     rs                    ; far call to _VAR_Setup_Unit	; |2242| 
+                                        ; |2242| Far Call Occurs
+        subi      2,sp                  ; |2242| 
 	.line	2206
 ;----------------------------------------------------------------------
-; 2243 | VAR_Initialize(&Oil_Phase_Maximum, c_not_used, u_generic_not_used, 1.0,
+; 2243 | VAR_Update(&Oil_Phase_Filter, 0.0, 0, 0);                              
+;----------------------------------------------------------------------
+        ldp       @CL32,DP
+        ldiu      @CL32,r0              ; |2243| 
+        ldp       @CL31+0,DP
+        ldfu      @CL31+0,f2            ; |2243| 40b float hi half
+        ldp       @CL31+1,DP
+        ldiu      @CL31+1,r2            ; |2243| 40b float lo half
+        ldp       @CL1373,DP
+        ldiu      0,rc                  ; |2243| 
+        ldiu      @CL1373,ar2           ; |2243| 
+        ldiu      0,r3                  ; |2243| 
+        callu     r0                    ; far call to _VAR_Update	; |2243| 
+                                        ; |2243| Far Call Occurs
+	.line	2209
+;----------------------------------------------------------------------
+; 2246 | VAR_Initialize(&Oil_Phase_Maximum, c_not_used, u_generic_not_used, 1.0,
 ;     |  1.0, var_no_alarm|var_round);                                         
 ;----------------------------------------------------------------------
         ldp       @CL20,DP
-        ldiu      @CL20,r0              ; |2243| 
-        ldp       @CL1378,DP
-        ldiu      @CL1378,ar2           ; |2243| 
-        ldiu      260,re                ; |2243| 
-        ldfu      1.0000000000e+00,f3   ; |2243| 
-        ldfu      1.0000000000e+00,f2   ; |2243| 
-        ldiu      250,rc                ; |2243| 
-        ldiu      250,rs                ; |2243| 
-        callu     r0                    ; far call to _VAR_Initialize	; |2243| 
-                                        ; |2243| Far Call Occurs
-	.line	2207
+        ldiu      @CL20,r0              ; |2246| 
+        ldp       @CL1376,DP
+        ldiu      @CL1376,ar2           ; |2246| 
+        ldiu      260,re                ; |2246| 
+        ldfu      1.0000000000e+00,f3   ; |2246| 
+        ldfu      1.0000000000e+00,f2   ; |2246| 
+        ldiu      250,rc                ; |2246| 
+        ldiu      250,rs                ; |2246| 
+        callu     r0                    ; far call to _VAR_Initialize	; |2246| 
+                                        ; |2246| Far Call Occurs
+	.line	2210
 ;----------------------------------------------------------------------
-; 2244 | sprintf(Oil_Phase_Maximum.name, "Oil Cont. Maximum");                  
+; 2247 | sprintf(Oil_Phase_Maximum.name, "Oil Cont. Maximum");                  
 ;----------------------------------------------------------------------
-        ldp       @CL1379,DP
-        ldiu      @CL1379,r1            ; |2244| 
+        ldp       @CL1377,DP
+        ldiu      @CL1377,r1            ; |2247| 
         ldp       @CL24,DP
-        ldiu      @CL24,r0              ; |2244| 
-        ldp       @CL1380,DP
-        push      r1                    ; |2244| 
-        ldiu      @CL1380,ar2           ; |2244| 
-        callu     r0                    ; far call to _sprintf	; |2244| 
-                                        ; |2244| Far Call Occurs
-        subi      1,sp                  ; |2244| 
-	.line	2208
+        ldiu      @CL24,r0              ; |2247| 
+        ldp       @CL1378,DP
+        push      r1                    ; |2247| 
+        ldiu      @CL1378,ar2           ; |2247| 
+        callu     r0                    ; far call to _sprintf	; |2247| 
+                                        ; |2247| Far Call Occurs
+        subi      1,sp                  ; |2247| 
+	.line	2211
 ;----------------------------------------------------------------------
-; 2245 | VAR_Setup_Unit(&Oil_Phase_Maximum, u_mfgr_specific_none, 100.0, 0.0, 10
+; 2248 | VAR_Setup_Unit(&Oil_Phase_Maximum, u_mfgr_specific_none, 100.0, 0.0, 10
 ;     | 0.0, 0.0);                                                             
 ;----------------------------------------------------------------------
         ldp       @CL30,DP
-        ldfu      0.0000000000e+00,f0   ; |2245| 
-        ldiu      @CL30,rs              ; |2245| 
-        ldfu      1.0000000000e+02,f1   ; |2245| 
-        pushf     f0                    ; |2245| 
-        ldp       @CL1378,DP
-        ldfu      0.0000000000e+00,f3   ; |2245| 
-        ldfu      1.0000000000e+02,f2   ; |2245| 
-        ldiu      240,rc                ; |2245| 
-        pushf     f1                    ; |2245| 
-        ldiu      @CL1378,ar2           ; |2245| 
-        callu     rs                    ; far call to _VAR_Setup_Unit	; |2245| 
-                                        ; |2245| Far Call Occurs
-        subi      2,sp                  ; |2245| 
-	.line	2209
-;----------------------------------------------------------------------
-; 2246 | VAR_Update(&Oil_Phase_Maximum, 80.0, 0, 0);                            
-;----------------------------------------------------------------------
-        ldp       @CL32,DP
-        ldiu      @CL32,r0              ; |2246| 
-        ldp       @CL632+0,DP
-        ldfu      @CL632+0,f2           ; |2246| 40b float hi half
-        ldp       @CL632+1,DP
-        ldiu      @CL632+1,r2           ; |2246| 40b float lo half
-        ldp       @CL1378,DP
-        ldiu      @CL1378,ar2           ; |2246| 
-        ldiu      0,r3                  ; |2246| 
-        ldiu      0,rc                  ; |2246| 
-        callu     r0                    ; far call to _VAR_Update	; |2246| 
-                                        ; |2246| Far Call Occurs
+        ldfu      0.0000000000e+00,f0   ; |2248| 
+        ldiu      @CL30,rs              ; |2248| 
+        ldfu      1.0000000000e+02,f1   ; |2248| 
+        pushf     f0                    ; |2248| 
+        ldp       @CL1376,DP
+        ldfu      0.0000000000e+00,f3   ; |2248| 
+        ldfu      1.0000000000e+02,f2   ; |2248| 
+        ldiu      240,rc                ; |2248| 
+        pushf     f1                    ; |2248| 
+        ldiu      @CL1376,ar2           ; |2248| 
+        callu     rs                    ; far call to _VAR_Setup_Unit	; |2248| 
+                                        ; |2248| Far Call Occurs
+        subi      2,sp                  ; |2248| 
 	.line	2212
 ;----------------------------------------------------------------------
-; 2249 | VAR_Initialize(&Water_Phase_Filter, c_not_used, u_generic_not_used, 1.0
+; 2249 | VAR_Update(&Oil_Phase_Maximum, 80.0, 0, 0);                            
+;----------------------------------------------------------------------
+        ldp       @CL32,DP
+        ldiu      @CL32,r0              ; |2249| 
+        ldp       @CL632+0,DP
+        ldfu      @CL632+0,f2           ; |2249| 40b float hi half
+        ldp       @CL632+1,DP
+        ldiu      @CL632+1,r2           ; |2249| 40b float lo half
+        ldp       @CL1376,DP
+        ldiu      @CL1376,ar2           ; |2249| 
+        ldiu      0,r3                  ; |2249| 
+        ldiu      0,rc                  ; |2249| 
+        callu     r0                    ; far call to _VAR_Update	; |2249| 
+                                        ; |2249| Far Call Occurs
+	.line	2215
+;----------------------------------------------------------------------
+; 2252 | VAR_Initialize(&Water_Phase_Filter, c_not_used, u_generic_not_used, 1.0
 ;     | , 1.0, var_no_alarm|var_round);                                        
 ;----------------------------------------------------------------------
         ldp       @CL20,DP
-        ldiu      @CL20,r0              ; |2249| 
-        ldiu      250,rc                ; |2249| 
-        ldp       @CL1381,DP
-        ldiu      250,rs                ; |2249| 
-        ldfu      1.0000000000e+00,f3   ; |2249| 
-        ldfu      1.0000000000e+00,f2   ; |2249| 
-        ldiu      @CL1381,ar2           ; |2249| 
-        ldiu      260,re                ; |2249| 
-        callu     r0                    ; far call to _VAR_Initialize	; |2249| 
-                                        ; |2249| Far Call Occurs
-	.line	2213
+        ldiu      @CL20,r0              ; |2252| 
+        ldiu      250,rc                ; |2252| 
+        ldp       @CL1379,DP
+        ldiu      250,rs                ; |2252| 
+        ldfu      1.0000000000e+00,f3   ; |2252| 
+        ldfu      1.0000000000e+00,f2   ; |2252| 
+        ldiu      @CL1379,ar2           ; |2252| 
+        ldiu      260,re                ; |2252| 
+        callu     r0                    ; far call to _VAR_Initialize	; |2252| 
+                                        ; |2252| Far Call Occurs
+	.line	2216
 ;----------------------------------------------------------------------
-; 2250 | sprintf(Water_Phase_Filter.name, "Water Cont. Filter");                
+; 2253 | sprintf(Water_Phase_Filter.name, "Water Cont. Filter");                
 ;----------------------------------------------------------------------
-        ldp       @CL1382,DP
-        ldiu      @CL1382,r1            ; |2250| 
+        ldp       @CL1380,DP
+        ldiu      @CL1380,r1            ; |2253| 
         ldp       @CL24,DP
-        ldiu      @CL24,r0              ; |2250| 
-        ldp       @CL1383,DP
-        push      r1                    ; |2250| 
-        ldiu      @CL1383,ar2           ; |2250| 
-        callu     r0                    ; far call to _sprintf	; |2250| 
-                                        ; |2250| Far Call Occurs
-        subi      1,sp                  ; |2250| 
-	.line	2214
+        ldiu      @CL24,r0              ; |2253| 
+        ldp       @CL1381,DP
+        push      r1                    ; |2253| 
+        ldiu      @CL1381,ar2           ; |2253| 
+        callu     r0                    ; far call to _sprintf	; |2253| 
+                                        ; |2253| Far Call Occurs
+        subi      1,sp                  ; |2253| 
+	.line	2217
 ;----------------------------------------------------------------------
-; 2251 | VAR_Setup_Unit(&Water_Phase_Filter, u_mfgr_specific_none, 6.0, 0.0, 6.0
+; 2254 | VAR_Setup_Unit(&Water_Phase_Filter, u_mfgr_specific_none, 6.0, 0.0, 6.0
 ;     | , 0.0);                                                                
 ;----------------------------------------------------------------------
-        ldfu      6.0000000000e+00,f1   ; |2251| 
+        ldfu      6.0000000000e+00,f1   ; |2254| 
         ldp       @CL30,DP
-        ldfu      0.0000000000e+00,f3   ; |2251| 
-        ldiu      @CL30,rs              ; |2251| 
-        ldp       @CL1381,DP
-        ldfu      6.0000000000e+00,f2   ; |2251| 
-        ldiu      @CL1381,ar2           ; |2251| 
-        ldfu      0.0000000000e+00,f0   ; |2251| 
-        pushf     f0                    ; |2251| 
-        pushf     f1                    ; |2251| 
-        ldiu      240,rc                ; |2251| 
-        callu     rs                    ; far call to _VAR_Setup_Unit	; |2251| 
-                                        ; |2251| Far Call Occurs
-        subi      2,sp                  ; |2251| 
-	.line	2215
-;----------------------------------------------------------------------
-; 2252 | VAR_Update(&Water_Phase_Filter, 0.0, 0, 0);                            
-;----------------------------------------------------------------------
-        ldp       @CL32,DP
-        ldiu      @CL32,r0              ; |2252| 
-        ldp       @CL31+0,DP
-        ldfu      @CL31+0,f2            ; |2252| 40b float hi half
-        ldp       @CL31+1,DP
-        ldiu      0,rc                  ; |2252| 
-        ldiu      @CL31+1,r2            ; |2252| 40b float lo half
-        ldp       @CL1381,DP
-        ldiu      0,r3                  ; |2252| 
-        ldiu      @CL1381,ar2           ; |2252| 
-        callu     r0                    ; far call to _VAR_Update	; |2252| 
-                                        ; |2252| Far Call Occurs
+        ldfu      0.0000000000e+00,f3   ; |2254| 
+        ldiu      @CL30,rs              ; |2254| 
+        ldp       @CL1379,DP
+        ldfu      6.0000000000e+00,f2   ; |2254| 
+        ldiu      @CL1379,ar2           ; |2254| 
+        ldfu      0.0000000000e+00,f0   ; |2254| 
+        pushf     f0                    ; |2254| 
+        pushf     f1                    ; |2254| 
+        ldiu      240,rc                ; |2254| 
+        callu     rs                    ; far call to _VAR_Setup_Unit	; |2254| 
+                                        ; |2254| Far Call Occurs
+        subi      2,sp                  ; |2254| 
 	.line	2218
 ;----------------------------------------------------------------------
-; 2255 | VAR_Initialize(&Water_Phase_Minimum, c_not_used, u_generic_not_used, 1.
+; 2255 | VAR_Update(&Water_Phase_Filter, 0.0, 0, 0);                            
+;----------------------------------------------------------------------
+        ldp       @CL32,DP
+        ldiu      @CL32,r0              ; |2255| 
+        ldp       @CL31+0,DP
+        ldfu      @CL31+0,f2            ; |2255| 40b float hi half
+        ldp       @CL31+1,DP
+        ldiu      0,rc                  ; |2255| 
+        ldiu      @CL31+1,r2            ; |2255| 40b float lo half
+        ldp       @CL1379,DP
+        ldiu      0,r3                  ; |2255| 
+        ldiu      @CL1379,ar2           ; |2255| 
+        callu     r0                    ; far call to _VAR_Update	; |2255| 
+                                        ; |2255| Far Call Occurs
+	.line	2221
+;----------------------------------------------------------------------
+; 2258 | VAR_Initialize(&Water_Phase_Minimum, c_not_used, u_generic_not_used, 1.
 ;     | 0, 1.0, var_no_alarm|var_round);                                       
 ;----------------------------------------------------------------------
         ldp       @CL20,DP
-        ldiu      @CL20,r0              ; |2255| 
-        ldiu      260,re                ; |2255| 
-        ldiu      250,rs                ; |2255| 
-        ldp       @CL1384,DP
-        ldiu      250,rc                ; |2255| 
-        ldfu      1.0000000000e+00,f3   ; |2255| 
-        ldfu      1.0000000000e+00,f2   ; |2255| 
-        ldiu      @CL1384,ar2           ; |2255| 
-        callu     r0                    ; far call to _VAR_Initialize	; |2255| 
-                                        ; |2255| Far Call Occurs
-	.line	2219
+        ldiu      @CL20,r0              ; |2258| 
+        ldiu      260,re                ; |2258| 
+        ldiu      250,rs                ; |2258| 
+        ldp       @CL1382,DP
+        ldiu      250,rc                ; |2258| 
+        ldfu      1.0000000000e+00,f3   ; |2258| 
+        ldfu      1.0000000000e+00,f2   ; |2258| 
+        ldiu      @CL1382,ar2           ; |2258| 
+        callu     r0                    ; far call to _VAR_Initialize	; |2258| 
+                                        ; |2258| Far Call Occurs
+	.line	2222
 ;----------------------------------------------------------------------
-; 2256 | sprintf(Water_Phase_Minimum.name, "Water Cont. Minimum");              
+; 2259 | sprintf(Water_Phase_Minimum.name, "Water Cont. Minimum");              
 ;----------------------------------------------------------------------
-        ldp       @CL1385,DP
-        ldiu      @CL1385,r1            ; |2256| 
+        ldp       @CL1383,DP
+        ldiu      @CL1383,r1            ; |2259| 
         ldp       @CL24,DP
-        ldiu      @CL24,r0              ; |2256| 
-        ldp       @CL1386,DP
-        ldiu      @CL1386,ar2           ; |2256| 
-        push      r1                    ; |2256| 
-        callu     r0                    ; far call to _sprintf	; |2256| 
-                                        ; |2256| Far Call Occurs
-        subi      1,sp                  ; |2256| 
-	.line	2220
+        ldiu      @CL24,r0              ; |2259| 
+        ldp       @CL1384,DP
+        ldiu      @CL1384,ar2           ; |2259| 
+        push      r1                    ; |2259| 
+        callu     r0                    ; far call to _sprintf	; |2259| 
+                                        ; |2259| Far Call Occurs
+        subi      1,sp                  ; |2259| 
+	.line	2223
 ;----------------------------------------------------------------------
-; 2257 | VAR_Setup_Unit(&Water_Phase_Minimum, u_mfgr_specific_none, 100.0, 0.0,
+; 2260 | VAR_Setup_Unit(&Water_Phase_Minimum, u_mfgr_specific_none, 100.0, 0.0,
 ;     | 100.0, 0.0);                                                           
 ;----------------------------------------------------------------------
         ldp       @CL30,DP
-        ldiu      @CL30,rs              ; |2257| 
-        ldfu      0.0000000000e+00,f0   ; |2257| 
-        pushf     f0                    ; |2257| 
-        ldiu      240,rc                ; |2257| 
-        ldfu      1.0000000000e+02,f1   ; |2257| 
-        ldp       @CL1384,DP
-        ldfu      0.0000000000e+00,f3   ; |2257| 
-        ldfu      1.0000000000e+02,f2   ; |2257| 
-        pushf     f1                    ; |2257| 
-        ldiu      @CL1384,ar2           ; |2257| 
-        callu     rs                    ; far call to _VAR_Setup_Unit	; |2257| 
-                                        ; |2257| Far Call Occurs
-        subi      2,sp                  ; |2257| 
-	.line	2221
-;----------------------------------------------------------------------
-; 2258 | VAR_Update(&Water_Phase_Minimum, 65.0, 0, 0);                          
-;----------------------------------------------------------------------
-        ldp       @CL32,DP
-        ldiu      @CL32,r0              ; |2258| 
-        ldp       @CL1387+0,DP
-        ldfu      @CL1387+0,f2          ; |2258| 40b float hi half
-        ldp       @CL1387+1,DP
-        ldiu      @CL1387+1,r2          ; |2258| 40b float lo half
-        ldp       @CL1384,DP
-        ldiu      0,r3                  ; |2258| 
-        ldiu      @CL1384,ar2           ; |2258| 
-        ldiu      0,rc                  ; |2258| 
-        callu     r0                    ; far call to _VAR_Update	; |2258| 
-                                        ; |2258| Far Call Occurs
+        ldiu      @CL30,rs              ; |2260| 
+        ldfu      0.0000000000e+00,f0   ; |2260| 
+        pushf     f0                    ; |2260| 
+        ldiu      240,rc                ; |2260| 
+        ldfu      1.0000000000e+02,f1   ; |2260| 
+        ldp       @CL1382,DP
+        ldfu      0.0000000000e+00,f3   ; |2260| 
+        ldfu      1.0000000000e+02,f2   ; |2260| 
+        pushf     f1                    ; |2260| 
+        ldiu      @CL1382,ar2           ; |2260| 
+        callu     rs                    ; far call to _VAR_Setup_Unit	; |2260| 
+                                        ; |2260| Far Call Occurs
+        subi      2,sp                  ; |2260| 
 	.line	2224
 ;----------------------------------------------------------------------
-; 2261 | Copy_CAPDATA(&Cap_Oil, 0, 1);   /* clear */                            
+; 2261 | VAR_Update(&Water_Phase_Minimum, 65.0, 0, 0);                          
 ;----------------------------------------------------------------------
-        ldp       @CL1389,DP
-        ldiu      @CL1389,r0            ; |2261| 
-        ldp       @CL1388,DP
-        ldiu      @CL1388,ar2           ; |2261| 
-        ldiu      1,r3                  ; |2261| 
-        ldiu      0,r2                  ; |2261| 
-        callu     r0                    ; far call to _Copy_CAPDATA	; |2261| 
+        ldp       @CL32,DP
+        ldiu      @CL32,r0              ; |2261| 
+        ldp       @CL1385+0,DP
+        ldfu      @CL1385+0,f2          ; |2261| 40b float hi half
+        ldp       @CL1385+1,DP
+        ldiu      @CL1385+1,r2          ; |2261| 40b float lo half
+        ldp       @CL1382,DP
+        ldiu      0,r3                  ; |2261| 
+        ldiu      @CL1382,ar2           ; |2261| 
+        ldiu      0,rc                  ; |2261| 
+        callu     r0                    ; far call to _VAR_Update	; |2261| 
                                         ; |2261| Far Call Occurs
-	.line	2225
+	.line	2227
 ;----------------------------------------------------------------------
-; 2262 | VAR_Initialize(&Num_Oil_Samples, c_not_used, u_generic_not_used, 1.0, 1
+; 2264 | Copy_CAPDATA(&Cap_Oil, 0, 1);   /* clear */                            
+;----------------------------------------------------------------------
+        ldp       @CL1387,DP
+        ldiu      @CL1387,r0            ; |2264| 
+        ldp       @CL1386,DP
+        ldiu      @CL1386,ar2           ; |2264| 
+        ldiu      1,r3                  ; |2264| 
+        ldiu      0,r2                  ; |2264| 
+        callu     r0                    ; far call to _Copy_CAPDATA	; |2264| 
+                                        ; |2264| Far Call Occurs
+	.line	2228
+;----------------------------------------------------------------------
+; 2265 | VAR_Initialize(&Num_Oil_Samples, c_not_used, u_generic_not_used, 1.0, 1
 ;     | .0, var_no_alarm|var_round);                                           
 ;----------------------------------------------------------------------
         ldp       @CL20,DP
-        ldiu      @CL20,r0              ; |2262| 
-        ldiu      250,rc                ; |2262| 
-        ldp       @CL1390,DP
-        ldiu      250,rs                ; |2262| 
-        ldiu      260,re                ; |2262| 
-        ldiu      @CL1390,ar2           ; |2262| 
-        ldfu      1.0000000000e+00,f3   ; |2262| 
-        ldfu      1.0000000000e+00,f2   ; |2262| 
-        callu     r0                    ; far call to _VAR_Initialize	; |2262| 
-                                        ; |2262| Far Call Occurs
-	.line	2226
+        ldiu      @CL20,r0              ; |2265| 
+        ldiu      250,rc                ; |2265| 
+        ldp       @CL1388,DP
+        ldiu      250,rs                ; |2265| 
+        ldiu      260,re                ; |2265| 
+        ldiu      @CL1388,ar2           ; |2265| 
+        ldfu      1.0000000000e+00,f3   ; |2265| 
+        ldfu      1.0000000000e+00,f2   ; |2265| 
+        callu     r0                    ; far call to _VAR_Initialize	; |2265| 
+                                        ; |2265| Far Call Occurs
+	.line	2229
 ;----------------------------------------------------------------------
-; 2263 | sprintf(Num_Oil_Samples.name, "#Oil Phase Samples");                   
+; 2266 | sprintf(Num_Oil_Samples.name, "#Oil Phase Samples");                   
 ;----------------------------------------------------------------------
-        ldp       @CL1391,DP
-        ldiu      @CL1391,r1            ; |2263| 
+        ldp       @CL1389,DP
+        ldiu      @CL1389,r1            ; |2266| 
         ldp       @CL24,DP
-        ldiu      @CL24,r0              ; |2263| 
-        ldp       @CL1392,DP
-        push      r1                    ; |2263| 
-        ldiu      @CL1392,ar2           ; |2263| 
-        callu     r0                    ; far call to _sprintf	; |2263| 
-                                        ; |2263| Far Call Occurs
-        subi      1,sp                  ; |2263| 
-	.line	2227
+        ldiu      @CL24,r0              ; |2266| 
+        ldp       @CL1390,DP
+        push      r1                    ; |2266| 
+        ldiu      @CL1390,ar2           ; |2266| 
+        callu     r0                    ; far call to _sprintf	; |2266| 
+                                        ; |2266| Far Call Occurs
+        subi      1,sp                  ; |2266| 
+	.line	2230
 ;----------------------------------------------------------------------
-; 2264 | VAR_Setup_Unit(&Num_Oil_Samples, u_mfgr_specific_none, 6000.0, 1.0, 600
+; 2267 | VAR_Setup_Unit(&Num_Oil_Samples, u_mfgr_specific_none, 6000.0, 1.0, 600
 ;     | 0.0, 1.0);   /*new salt cal routine manual stop RS*/                   
 ;----------------------------------------------------------------------
-        ldp       @CL1393,DP
-        ldfu      @CL1393,f0            ; |2264| 
+        ldp       @CL1391,DP
+        ldfu      @CL1391,f0            ; |2267| 
         ldp       @CL30,DP
-        ldiu      @CL30,rs              ; |2264| 
-        ldp       @CL1393,DP
-        ldfu      1.0000000000e+00,f1   ; |2264| 
-        ldfu      @CL1393,f2            ; |2264| 
-        ldiu      240,rc                ; |2264| 
-        ldp       @CL1390,DP
-        pushf     f1                    ; |2264| 
-        ldiu      @CL1390,ar2           ; |2264| 
-        ldfu      1.0000000000e+00,f3   ; |2264| 
-        pushf     f0                    ; |2264| 
-        callu     rs                    ; far call to _VAR_Setup_Unit	; |2264| 
-                                        ; |2264| Far Call Occurs
-        subi      2,sp                  ; |2264| 
-	.line	2228
+        ldiu      @CL30,rs              ; |2267| 
+        ldp       @CL1391,DP
+        ldfu      1.0000000000e+00,f1   ; |2267| 
+        ldfu      @CL1391,f2            ; |2267| 
+        ldiu      240,rc                ; |2267| 
+        ldp       @CL1388,DP
+        pushf     f1                    ; |2267| 
+        ldiu      @CL1388,ar2           ; |2267| 
+        ldfu      1.0000000000e+00,f3   ; |2267| 
+        pushf     f0                    ; |2267| 
+        callu     rs                    ; far call to _VAR_Setup_Unit	; |2267| 
+                                        ; |2267| Far Call Occurs
+        subi      2,sp                  ; |2267| 
+	.line	2231
 ;----------------------------------------------------------------------
-; 2265 | VAR_Update(&Num_Oil_Samples, CAPTURE_SAMPLES, 0, 0);
+; 2268 | VAR_Update(&Num_Oil_Samples, CAPTURE_SAMPLES, 0, 0);
 ;     |                                          /*new salt cal routine manual 
 ;     | stop RS*/                                                              
 ;----------------------------------------------------------------------
         ldp       @CL32,DP
-        ldiu      @CL32,r0              ; |2265| 
-        ldp       @CL1394+0,DP
-        ldfu      @CL1394+0,f2          ; |2265| 40b float hi half
-        ldp       @CL1394+1,DP
-        ldiu      @CL1394+1,r2          ; |2265| 40b float lo half
-        ldp       @CL1390,DP
-        ldiu      0,rc                  ; |2265| 
-        ldiu      0,r3                  ; |2265| 
-        ldiu      @CL1390,ar2           ; |2265| 
-        callu     r0                    ; far call to _VAR_Update	; |2265| 
-                                        ; |2265| Far Call Occurs
-	.line	2231
-;----------------------------------------------------------------------
-; 2268 | Copy_CAPDATA(&Cap_Water, 0, 1); /* clear */                            
-;----------------------------------------------------------------------
-        ldp       @CL1389,DP
-        ldiu      @CL1389,r0            ; |2268| 
-        ldp       @CL1395,DP
-        ldiu      @CL1395,ar2           ; |2268| 
-        ldiu      1,r3                  ; |2268| 
-        ldiu      0,r2                  ; |2268| 
-        callu     r0                    ; far call to _Copy_CAPDATA	; |2268| 
+        ldiu      @CL32,r0              ; |2268| 
+        ldp       @CL1392+0,DP
+        ldfu      @CL1392+0,f2          ; |2268| 40b float hi half
+        ldp       @CL1392+1,DP
+        ldiu      @CL1392+1,r2          ; |2268| 40b float lo half
+        ldp       @CL1388,DP
+        ldiu      0,rc                  ; |2268| 
+        ldiu      0,r3                  ; |2268| 
+        ldiu      @CL1388,ar2           ; |2268| 
+        callu     r0                    ; far call to _VAR_Update	; |2268| 
                                         ; |2268| Far Call Occurs
-	.line	2232
+	.line	2234
 ;----------------------------------------------------------------------
-; 2269 | VAR_Initialize(&Num_Water_Samples, c_not_used, u_generic_not_used, 1.0,
+; 2271 | Copy_CAPDATA(&Cap_Water, 0, 1); /* clear */                            
+;----------------------------------------------------------------------
+        ldp       @CL1387,DP
+        ldiu      @CL1387,r0            ; |2271| 
+        ldp       @CL1393,DP
+        ldiu      @CL1393,ar2           ; |2271| 
+        ldiu      1,r3                  ; |2271| 
+        ldiu      0,r2                  ; |2271| 
+        callu     r0                    ; far call to _Copy_CAPDATA	; |2271| 
+                                        ; |2271| Far Call Occurs
+	.line	2235
+;----------------------------------------------------------------------
+; 2272 | VAR_Initialize(&Num_Water_Samples, c_not_used, u_generic_not_used, 1.0,
 ;     |  1.0, var_no_alarm|var_round);                                         
 ;----------------------------------------------------------------------
         ldp       @CL20,DP
-        ldiu      250,rc                ; |2269| 
-        ldiu      260,re                ; |2269| 
-        ldiu      250,rs                ; |2269| 
-        ldiu      @CL20,r0              ; |2269| 
-        ldfu      1.0000000000e+00,f3   ; |2269| 
-        ldp       @CL1396,DP
-        ldfu      1.0000000000e+00,f2   ; |2269| 
-        ldiu      @CL1396,ar2           ; |2269| 
-        callu     r0                    ; far call to _VAR_Initialize	; |2269| 
-                                        ; |2269| Far Call Occurs
-	.line	2233
+        ldiu      250,rc                ; |2272| 
+        ldiu      260,re                ; |2272| 
+        ldiu      250,rs                ; |2272| 
+        ldiu      @CL20,r0              ; |2272| 
+        ldfu      1.0000000000e+00,f3   ; |2272| 
+        ldp       @CL1394,DP
+        ldfu      1.0000000000e+00,f2   ; |2272| 
+        ldiu      @CL1394,ar2           ; |2272| 
+        callu     r0                    ; far call to _VAR_Initialize	; |2272| 
+                                        ; |2272| Far Call Occurs
+	.line	2236
 ;----------------------------------------------------------------------
-; 2270 | sprintf(Num_Water_Samples.name, "#Water Phase Samples");               
+; 2273 | sprintf(Num_Water_Samples.name, "#Water Phase Samples");               
 ;----------------------------------------------------------------------
-        ldp       @CL1397,DP
-        ldiu      @CL1397,r1            ; |2270| 
+        ldp       @CL1395,DP
+        ldiu      @CL1395,r1            ; |2273| 
         ldp       @CL24,DP
-        ldiu      @CL24,r0              ; |2270| 
-        ldp       @CL1398,DP
-        push      r1                    ; |2270| 
-        ldiu      @CL1398,ar2           ; |2270| 
-        callu     r0                    ; far call to _sprintf	; |2270| 
-                                        ; |2270| Far Call Occurs
-        subi      1,sp                  ; |2270| 
-	.line	2234
+        ldiu      @CL24,r0              ; |2273| 
+        ldp       @CL1396,DP
+        push      r1                    ; |2273| 
+        ldiu      @CL1396,ar2           ; |2273| 
+        callu     r0                    ; far call to _sprintf	; |2273| 
+                                        ; |2273| Far Call Occurs
+        subi      1,sp                  ; |2273| 
+	.line	2237
 ;----------------------------------------------------------------------
-; 2271 | VAR_Setup_Unit(&Num_Water_Samples, u_mfgr_specific_none, 6000.0, 1.0, 6
+; 2274 | VAR_Setup_Unit(&Num_Water_Samples, u_mfgr_specific_none, 6000.0, 1.0, 6
 ;     | 000.0, 1.0); /*new salt cal routine manual stop RS*/                   
 ;----------------------------------------------------------------------
-        ldp       @CL1393,DP
-        ldfu      @CL1393,f1            ; |2271| 
+        ldp       @CL1391,DP
+        ldfu      @CL1391,f1            ; |2274| 
         ldp       @CL30,DP
-        ldiu      @CL30,rs              ; |2271| 
-        ldp       @CL1393,DP
-        ldfu      @CL1393,f2            ; |2271| 
-        ldfu      1.0000000000e+00,f0   ; |2271| 
-        ldp       @CL1396,DP
-        pushf     f0                    ; |2271| 
-        ldiu      @CL1396,ar2           ; |2271| 
-        pushf     f1                    ; |2271| 
-        ldiu      240,rc                ; |2271| 
-        ldfu      1.0000000000e+00,f3   ; |2271| 
-        callu     rs                    ; far call to _VAR_Setup_Unit	; |2271| 
-                                        ; |2271| Far Call Occurs
-        subi      2,sp                  ; |2271| 
-	.line	2235
+        ldiu      @CL30,rs              ; |2274| 
+        ldp       @CL1391,DP
+        ldfu      @CL1391,f2            ; |2274| 
+        ldfu      1.0000000000e+00,f0   ; |2274| 
+        ldp       @CL1394,DP
+        pushf     f0                    ; |2274| 
+        ldiu      @CL1394,ar2           ; |2274| 
+        pushf     f1                    ; |2274| 
+        ldiu      240,rc                ; |2274| 
+        ldfu      1.0000000000e+00,f3   ; |2274| 
+        callu     rs                    ; far call to _VAR_Setup_Unit	; |2274| 
+                                        ; |2274| Far Call Occurs
+        subi      2,sp                  ; |2274| 
+	.line	2238
 ;----------------------------------------------------------------------
-; 2272 | VAR_Update(&Num_Water_Samples, CAPTURE_SAMPLES, 0, 0);
+; 2275 | VAR_Update(&Num_Water_Samples, CAPTURE_SAMPLES, 0, 0);
 ;     |                                          /*new salt cal routine manual 
 ;     | stop, initial value change from 5 to 30, not use it as indicate of comp
 ;     | lete RS*/                                                              
 ;----------------------------------------------------------------------
         ldp       @CL32,DP
-        ldiu      @CL32,r0              ; |2272| 
-        ldp       @CL1394+0,DP
-        ldfu      @CL1394+0,f2          ; |2272| 40b float hi half
-        ldp       @CL1394+1,DP
-        ldiu      @CL1394+1,r2          ; |2272| 40b float lo half
-        ldp       @CL1396,DP
-        ldiu      0,rc                  ; |2272| 
-        ldiu      @CL1396,ar2           ; |2272| 
-        ldiu      0,r3                  ; |2272| 
-        callu     r0                    ; far call to _VAR_Update	; |2272| 
-                                        ; |2272| Far Call Occurs
-	.line	2237
-;----------------------------------------------------------------------
-; 2274 | for (i=0;i<SMAX;i++)                                                   
-;----------------------------------------------------------------------
-        ldiu      0,r0                  ; |2274| 
-        sti       r0,*+fp(1)            ; |2274| 
-        ldiu      8,r3                  ; |2285| 
-        ldiu      24,r2                 ; |2284| 
-        ldiu      8,ir1                 ; |2296| 
-        ldiu      8,bk                  ; |2284| 
-        ldiu      16,re                 ; |2295| 
-        ldiu      16,r1                 ; |2284| 
-        ldiu      24,rc                 ; |2295| 
-        ldiu      8,rs                  ; |2295| 
-        cmpi      60,r0                 ; |2274| 
-        bge       L262                  ; |2274| 
-;*      Branch Occurs to L262           ; |2274| 
-L261:        
-	.line	2239
-;----------------------------------------------------------------------
-; 2276 | Cap_Records[i].Watercut[0]                              = Cap_Oil.Water
-;     | cut;                                                                   
-;----------------------------------------------------------------------
-        ldp       @CL1400,DP
-        ldiu      *+fp(1),ir0           ; |2276| 
-        ldiu      @CL1400,ar0           ; |2276| 
-        ldp       @CL1399,DP
-        mpyi      20,ir0                ; |2276| 
-        ldiu      @CL1399,ar1           ; |2276| 
-        ldfu      *ar0,f0               ; |2276| 
-        stf       f0,*+ar1(ir0)         ; |2276| 
+        ldiu      @CL32,r0              ; |2275| 
+        ldp       @CL1392+0,DP
+        ldfu      @CL1392+0,f2          ; |2275| 40b float hi half
+        ldp       @CL1392+1,DP
+        ldiu      @CL1392+1,r2          ; |2275| 40b float lo half
+        ldp       @CL1394,DP
+        ldiu      0,rc                  ; |2275| 
+        ldiu      @CL1394,ar2           ; |2275| 
+        ldiu      0,r3                  ; |2275| 
+        callu     r0                    ; far call to _VAR_Update	; |2275| 
+                                        ; |2275| Far Call Occurs
 	.line	2240
 ;----------------------------------------------------------------------
-; 2277 | Cap_Records[i].Temperature[0]                   = Cap_Oil.Temperature; 
+; 2277 | for (i=0;i<SMAX;i++)                                                   
 ;----------------------------------------------------------------------
-        ldp       @CL1402,DP
-        ldiu      @CL1402,ar0           ; |2277| 
-        ldiu      *+fp(1),ir0           ; |2277| 
-        ldp       @CL1401,DP
-        mpyi      20,ir0                ; |2277| 
-        ldiu      @CL1401,ar1           ; |2277| 
-        ldfu      *ar0,f0               ; |2277| 
-        stf       f0,*+ar1(ir0)         ; |2277| 
-	.line	2241
-;----------------------------------------------------------------------
-; 2278 | Cap_Records[i].Salinity[0]                              = Cap_Oil.Salin
-;     | ity;                                                                   
-;----------------------------------------------------------------------
-        ldp       @CL1404,DP
-        ldiu      @CL1404,ar0           ; |2278| 
-        ldp       @CL1403,DP
-        ldiu      *+fp(1),ir0           ; |2278| 
-        ldiu      @CL1403,ar1           ; |2278| 
-        mpyi      20,ir0                ; |2278| 
-        ldfu      *ar0,f0               ; |2278| 
-        stf       f0,*+ar1(ir0)         ; |2278| 
+        ldiu      0,r0                  ; |2277| 
+        sti       r0,*+fp(1)            ; |2277| 
+        ldiu      8,r3                  ; |2288| 
+        ldiu      24,r2                 ; |2287| 
+        ldiu      8,ir1                 ; |2299| 
+        ldiu      8,bk                  ; |2287| 
+        ldiu      16,re                 ; |2298| 
+        ldiu      16,r1                 ; |2287| 
+        ldiu      24,rc                 ; |2298| 
+        ldiu      8,rs                  ; |2298| 
+        cmpi      60,r0                 ; |2277| 
+        bge       L262                  ; |2277| 
+;*      Branch Occurs to L262           ; |2277| 
+L261:        
 	.line	2242
 ;----------------------------------------------------------------------
-; 2279 | Cap_Records[i].Frequency_Oil[0]                 = Cap_Oil.Frequency_Oil
-;     | ;                                                                      
+; 2279 | Cap_Records[i].Watercut[0]                              = Cap_Oil.Water
+;     | cut;                                                                   
 ;----------------------------------------------------------------------
-        ldp       @CL1406,DP
-        ldiu      @CL1406,ar0           ; |2279| 
-        ldp       @CL1405,DP
+        ldp       @CL1398,DP
         ldiu      *+fp(1),ir0           ; |2279| 
-        ldiu      @CL1405,ar1           ; |2279| 
+        ldiu      @CL1398,ar0           ; |2279| 
+        ldp       @CL1397,DP
         mpyi      20,ir0                ; |2279| 
+        ldiu      @CL1397,ar1           ; |2279| 
         ldfu      *ar0,f0               ; |2279| 
         stf       f0,*+ar1(ir0)         ; |2279| 
 	.line	2243
 ;----------------------------------------------------------------------
-; 2280 | Cap_Records[i].Frequency_Water[0]               = Cap_Oil.Frequency_Wat
-;     | er;                                                                    
+; 2280 | Cap_Records[i].Temperature[0]                   = Cap_Oil.Temperature; 
 ;----------------------------------------------------------------------
-        ldp       @CL1408,DP
-        ldiu      @CL1408,ar0           ; |2280| 
+        ldp       @CL1400,DP
+        ldiu      @CL1400,ar0           ; |2280| 
         ldiu      *+fp(1),ir0           ; |2280| 
-        ldp       @CL1407,DP
+        ldp       @CL1399,DP
         mpyi      20,ir0                ; |2280| 
-        ldiu      @CL1407,ar1           ; |2280| 
+        ldiu      @CL1399,ar1           ; |2280| 
         ldfu      *ar0,f0               ; |2280| 
         stf       f0,*+ar1(ir0)         ; |2280| 
 	.line	2244
 ;----------------------------------------------------------------------
-; 2281 | Cap_Records[i].RefPower_Oil[0]                  = Cap_Oil.RefPower_Oil;
+; 2281 | Cap_Records[i].Salinity[0]                              = Cap_Oil.Salin
+;     | ity;                                                                   
 ;----------------------------------------------------------------------
-        ldp       @CL1410,DP
-        ldiu      @CL1410,ar0           ; |2281| 
-        ldp       @CL1409,DP
+        ldp       @CL1402,DP
+        ldiu      @CL1402,ar0           ; |2281| 
+        ldp       @CL1401,DP
         ldiu      *+fp(1),ir0           ; |2281| 
+        ldiu      @CL1401,ar1           ; |2281| 
         mpyi      20,ir0                ; |2281| 
-        ldiu      @CL1409,ar1           ; |2281| 
         ldfu      *ar0,f0               ; |2281| 
         stf       f0,*+ar1(ir0)         ; |2281| 
 	.line	2245
 ;----------------------------------------------------------------------
-; 2282 | Cap_Records[i].RefPower_Water[0]                = Cap_Oil.RefPower_Wate
-;     | r;                                                                     
+; 2282 | Cap_Records[i].Frequency_Oil[0]                 = Cap_Oil.Frequency_Oil
+;     | ;                                                                      
 ;----------------------------------------------------------------------
-        ldp       @CL1412,DP
-        ldiu      @CL1412,ar0           ; |2282| 
-        ldp       @CL1411,DP
-        ldiu      @CL1411,ar1           ; |2282| 
+        ldp       @CL1404,DP
+        ldiu      @CL1404,ar0           ; |2282| 
+        ldp       @CL1403,DP
         ldiu      *+fp(1),ir0           ; |2282| 
+        ldiu      @CL1403,ar1           ; |2282| 
         mpyi      20,ir0                ; |2282| 
         ldfu      *ar0,f0               ; |2282| 
         stf       f0,*+ar1(ir0)         ; |2282| 
 	.line	2246
 ;----------------------------------------------------------------------
-; 2283 | Cap_Records[i].Dadj[0]                                  = Cap_Oil.Dadj;
+; 2283 | Cap_Records[i].Frequency_Water[0]               = Cap_Oil.Frequency_Wat
+;     | er;                                                                    
 ;----------------------------------------------------------------------
-        ldp       @CL1414,DP
+        ldp       @CL1406,DP
+        ldiu      @CL1406,ar0           ; |2283| 
         ldiu      *+fp(1),ir0           ; |2283| 
-        ldiu      @CL1414,ar0           ; |2283| 
-        ldp       @CL1413,DP
+        ldp       @CL1405,DP
         mpyi      20,ir0                ; |2283| 
-        ldiu      @CL1413,ar1           ; |2283| 
+        ldiu      @CL1405,ar1           ; |2283| 
         ldfu      *ar0,f0               ; |2283| 
         stf       f0,*+ar1(ir0)         ; |2283| 
 	.line	2247
 ;----------------------------------------------------------------------
-; 2284 | Cap_Records[i].Time_MONTH_DAY_HH_MM[0]  = (Cap_Oil.Time_MONTH<<24)|(Cap
-;     | _Oil.Time_DAY<<16)|(Cap_Oil.Time_HH<<8)|(Cap_Oil.Time_MM);             
+; 2284 | Cap_Records[i].RefPower_Oil[0]                  = Cap_Oil.RefPower_Oil;
 ;----------------------------------------------------------------------
-        ldp       @CL1419,DP
-        ldiu      @CL1419,ar0           ; |2284| 
-        ldp       @CL1418,DP
+        ldp       @CL1408,DP
+        ldiu      @CL1408,ar0           ; |2284| 
+        ldp       @CL1407,DP
         ldiu      *+fp(1),ir0           ; |2284| 
-        ldiu      @CL1418,ar2           ; |2284| 
-        ldp       @CL1417,DP
         mpyi      20,ir0                ; |2284| 
-        ldiu      @CL1417,ar1           ; |2284| 
-        ash3      r1,*ar2,ar2           ; |2284| 
-        ash3      r2,*ar0,r0            ; |2284| 
-        ldp       @CL1416,DP
-        ash3      bk,*ar1,ar1           ; |2284| 
-        ldiu      @CL1416,ar0           ; |2284| 
-        or3       r0,ar2,r0             ; |2284| 
-        ldp       @CL1415,DP
-        or3       r0,ar1,r0             ; |2284| 
-        ldiu      @CL1415,ar4           ; |2284| 
-        or3       r0,*ar0,r0            ; |2284| 
-        sti       r0,*+ar4(ir0)         ; |2284| 
+        ldiu      @CL1407,ar1           ; |2284| 
+        ldfu      *ar0,f0               ; |2284| 
+        stf       f0,*+ar1(ir0)         ; |2284| 
 	.line	2248
 ;----------------------------------------------------------------------
-; 2285 | Cap_Records[i].CLRSTAT_Time_YEAR[0]             = (Cap_Oil.Time_YEAR<<8
-;     | )|(Cap_Oil.Time_DAY_OF_WEEK);                                          
+; 2285 | Cap_Records[i].RefPower_Water[0]                = Cap_Oil.RefPower_Wate
+;     | r;                                                                     
 ;----------------------------------------------------------------------
-        ldp       @CL1422,DP
-        ldiu      @CL1422,ar2           ; |2285| 
-        ldp       @CL1421,DP
+        ldp       @CL1410,DP
+        ldiu      @CL1410,ar0           ; |2285| 
+        ldp       @CL1409,DP
+        ldiu      @CL1409,ar1           ; |2285| 
         ldiu      *+fp(1),ir0           ; |2285| 
-        ldiu      @CL1421,ar1           ; |2285| 
         mpyi      20,ir0                ; |2285| 
-        ldp       @CL1420,DP
-        ash3      r3,*ar2,r0            ; |2285| 
-        ldiu      @CL1420,ar0           ; |2285| 
-        or3       r0,*ar1,r0            ; |2285| 
-        sti       r0,*+ar0(ir0)         ; |2285| 
+        ldfu      *ar0,f0               ; |2285| 
+        stf       f0,*+ar1(ir0)         ; |2285| 
+	.line	2249
+;----------------------------------------------------------------------
+; 2286 | Cap_Records[i].Dadj[0]                                  = Cap_Oil.Dadj;
+;----------------------------------------------------------------------
+        ldp       @CL1412,DP
+        ldiu      *+fp(1),ir0           ; |2286| 
+        ldiu      @CL1412,ar0           ; |2286| 
+        ldp       @CL1411,DP
+        mpyi      20,ir0                ; |2286| 
+        ldiu      @CL1411,ar1           ; |2286| 
+        ldfu      *ar0,f0               ; |2286| 
+        stf       f0,*+ar1(ir0)         ; |2286| 
 	.line	2250
 ;----------------------------------------------------------------------
-; 2287 | Cap_Records[i].Watercut[1]                              = Cap_Water.Wat
-;     | ercut;                                                                 
+; 2287 | Cap_Records[i].Time_MONTH_DAY_HH_MM[0]  = (Cap_Oil.Time_MONTH<<24)|(Cap
+;     | _Oil.Time_DAY<<16)|(Cap_Oil.Time_HH<<8)|(Cap_Oil.Time_MM);             
 ;----------------------------------------------------------------------
-        ldp       @CL1424,DP
+        ldp       @CL1417,DP
+        ldiu      @CL1417,ar0           ; |2287| 
+        ldp       @CL1416,DP
         ldiu      *+fp(1),ir0           ; |2287| 
-        ldiu      @CL1424,ar0           ; |2287| 
-        ldp       @CL1423,DP
+        ldiu      @CL1416,ar2           ; |2287| 
+        ldp       @CL1415,DP
         mpyi      20,ir0                ; |2287| 
-        ldiu      @CL1423,ar1           ; |2287| 
-        ldfu      *ar0,f0               ; |2287| 
-        stf       f0,*+ar1(ir0)         ; |2287| 
+        ldiu      @CL1415,ar1           ; |2287| 
+        ash3      r1,*ar2,ar2           ; |2287| 
+        ash3      r2,*ar0,r0            ; |2287| 
+        ldp       @CL1414,DP
+        ash3      bk,*ar1,ar1           ; |2287| 
+        ldiu      @CL1414,ar0           ; |2287| 
+        or3       r0,ar2,r0             ; |2287| 
+        ldp       @CL1413,DP
+        or3       r0,ar1,r0             ; |2287| 
+        ldiu      @CL1413,ar4           ; |2287| 
+        or3       r0,*ar0,r0            ; |2287| 
+        sti       r0,*+ar4(ir0)         ; |2287| 
 	.line	2251
 ;----------------------------------------------------------------------
-; 2288 | Cap_Records[i].Temperature[1]                   = Cap_Water.Temperature
-;     | ;                                                                      
+; 2288 | Cap_Records[i].CLRSTAT_Time_YEAR[0]             = (Cap_Oil.Time_YEAR<<8
+;     | )|(Cap_Oil.Time_DAY_OF_WEEK);                                          
 ;----------------------------------------------------------------------
-        ldp       @CL1426,DP
-        ldiu      @CL1426,ar0           ; |2288| 
-        ldp       @CL1425,DP
-        ldiu      @CL1425,ar1           ; |2288| 
+        ldp       @CL1420,DP
+        ldiu      @CL1420,ar2           ; |2288| 
+        ldp       @CL1419,DP
         ldiu      *+fp(1),ir0           ; |2288| 
+        ldiu      @CL1419,ar1           ; |2288| 
         mpyi      20,ir0                ; |2288| 
-        ldfu      *ar0,f0               ; |2288| 
-        stf       f0,*+ar1(ir0)         ; |2288| 
-	.line	2252
-;----------------------------------------------------------------------
-; 2289 | Cap_Records[i].Salinity[1]                              = Cap_Water.Sal
-;     | inity;                                                                 
-;----------------------------------------------------------------------
-        ldp       @CL1428,DP
-        ldiu      *+fp(1),ir0           ; |2289| 
-        ldiu      @CL1428,ar1           ; |2289| 
-        ldp       @CL1427,DP
-        mpyi      20,ir0                ; |2289| 
-        ldiu      @CL1427,ar0           ; |2289| 
-        ldfu      *ar1,f0               ; |2289| 
-        stf       f0,*+ar0(ir0)         ; |2289| 
+        ldp       @CL1418,DP
+        ash3      r3,*ar2,r0            ; |2288| 
+        ldiu      @CL1418,ar0           ; |2288| 
+        or3       r0,*ar1,r0            ; |2288| 
+        sti       r0,*+ar0(ir0)         ; |2288| 
 	.line	2253
 ;----------------------------------------------------------------------
-; 2290 | Cap_Records[i].Frequency_Oil[1]                 = Cap_Water.Frequency_O
-;     | il;                                                                    
+; 2290 | Cap_Records[i].Watercut[1]                              = Cap_Water.Wat
+;     | ercut;                                                                 
 ;----------------------------------------------------------------------
-        ldp       @CL1430,DP
-        ldiu      @CL1430,ar1           ; |2290| 
-        ldp       @CL1429,DP
+        ldp       @CL1422,DP
         ldiu      *+fp(1),ir0           ; |2290| 
-        ldiu      @CL1429,ar0           ; |2290| 
+        ldiu      @CL1422,ar0           ; |2290| 
+        ldp       @CL1421,DP
         mpyi      20,ir0                ; |2290| 
-        ldfu      *ar1,f0               ; |2290| 
-        stf       f0,*+ar0(ir0)         ; |2290| 
+        ldiu      @CL1421,ar1           ; |2290| 
+        ldfu      *ar0,f0               ; |2290| 
+        stf       f0,*+ar1(ir0)         ; |2290| 
 	.line	2254
 ;----------------------------------------------------------------------
-; 2291 | Cap_Records[i].Frequency_Water[1]               = Cap_Water.Frequency_W
-;     | ater;                                                                  
+; 2291 | Cap_Records[i].Temperature[1]                   = Cap_Water.Temperature
+;     | ;                                                                      
 ;----------------------------------------------------------------------
-        ldp       @CL1432,DP
+        ldp       @CL1424,DP
+        ldiu      @CL1424,ar0           ; |2291| 
+        ldp       @CL1423,DP
+        ldiu      @CL1423,ar1           ; |2291| 
         ldiu      *+fp(1),ir0           ; |2291| 
-        ldiu      @CL1432,ar1           ; |2291| 
-        ldp       @CL1431,DP
         mpyi      20,ir0                ; |2291| 
-        ldiu      @CL1431,ar0           ; |2291| 
-        ldfu      *ar1,f0               ; |2291| 
-        stf       f0,*+ar0(ir0)         ; |2291| 
+        ldfu      *ar0,f0               ; |2291| 
+        stf       f0,*+ar1(ir0)         ; |2291| 
 	.line	2255
 ;----------------------------------------------------------------------
-; 2292 | Cap_Records[i].RefPower_Oil[1]                  = Cap_Water.RefPower_Oi
-;     | l;                                                                     
+; 2292 | Cap_Records[i].Salinity[1]                              = Cap_Water.Sal
+;     | inity;                                                                 
 ;----------------------------------------------------------------------
-        ldp       @CL1434,DP
-        ldiu      @CL1434,ar1           ; |2292| 
+        ldp       @CL1426,DP
         ldiu      *+fp(1),ir0           ; |2292| 
-        ldp       @CL1433,DP
+        ldiu      @CL1426,ar1           ; |2292| 
+        ldp       @CL1425,DP
         mpyi      20,ir0                ; |2292| 
-        ldiu      @CL1433,ar0           ; |2292| 
+        ldiu      @CL1425,ar0           ; |2292| 
         ldfu      *ar1,f0               ; |2292| 
         stf       f0,*+ar0(ir0)         ; |2292| 
 	.line	2256
 ;----------------------------------------------------------------------
-; 2293 | Cap_Records[i].RefPower_Water[1]                = Cap_Water.RefPower_Wa
-;     | ter;                                                                   
+; 2293 | Cap_Records[i].Frequency_Oil[1]                 = Cap_Water.Frequency_O
+;     | il;                                                                    
 ;----------------------------------------------------------------------
-        ldp       @CL1436,DP
-        ldiu      @CL1436,ar1           ; |2293| 
-        ldp       @CL1435,DP
+        ldp       @CL1428,DP
+        ldiu      @CL1428,ar1           ; |2293| 
+        ldp       @CL1427,DP
         ldiu      *+fp(1),ir0           ; |2293| 
-        ldiu      @CL1435,ar0           ; |2293| 
+        ldiu      @CL1427,ar0           ; |2293| 
         mpyi      20,ir0                ; |2293| 
         ldfu      *ar1,f0               ; |2293| 
         stf       f0,*+ar0(ir0)         ; |2293| 
 	.line	2257
 ;----------------------------------------------------------------------
-; 2294 | Cap_Records[i].Dadj[1]                                  = Cap_Water.Dad
-;     | j;                                                                     
+; 2294 | Cap_Records[i].Frequency_Water[1]               = Cap_Water.Frequency_W
+;     | ater;                                                                  
 ;----------------------------------------------------------------------
-        ldp       @CL1438,DP
-        ldiu      @CL1438,ar1           ; |2294| 
-        ldp       @CL1437,DP
+        ldp       @CL1430,DP
         ldiu      *+fp(1),ir0           ; |2294| 
+        ldiu      @CL1430,ar1           ; |2294| 
+        ldp       @CL1429,DP
         mpyi      20,ir0                ; |2294| 
-        ldiu      @CL1437,ar0           ; |2294| 
+        ldiu      @CL1429,ar0           ; |2294| 
         ldfu      *ar1,f0               ; |2294| 
         stf       f0,*+ar0(ir0)         ; |2294| 
 	.line	2258
 ;----------------------------------------------------------------------
-; 2295 | Cap_Records[i].Time_MONTH_DAY_HH_MM[1]  = (Cap_Water.Time_MONTH<<24)|(C
-;     | ap_Water.Time_DAY<<16)|(Cap_Water.Time_HH<<8)|(Cap_Water.Time_MM);     
+; 2295 | Cap_Records[i].RefPower_Oil[1]                  = Cap_Water.RefPower_Oi
+;     | l;                                                                     
 ;----------------------------------------------------------------------
-        ldp       @CL1443,DP
-        ldiu      @CL1443,ar0           ; |2295| 
-        ldp       @CL1442,DP
-        ldiu      @CL1442,ar2           ; |2295| 
-        ldp       @CL1441,DP
-        ldiu      @CL1441,ar1           ; |2295| 
-        ldp       @CL1440,DP
-        ash3      rc,*ar0,r0            ; |2295| 
-        ldiu      @CL1440,ar0           ; |2295| 
-        ash3      re,*ar2,ar2           ; |2295| 
+        ldp       @CL1432,DP
+        ldiu      @CL1432,ar1           ; |2295| 
         ldiu      *+fp(1),ir0           ; |2295| 
-        or3       r0,ar2,r0             ; |2295| 
-        ash3      rs,*ar1,ar1           ; |2295| 
-        or3       r0,ar1,r0             ; |2295| 
-        ldp       @CL1439,DP
+        ldp       @CL1431,DP
         mpyi      20,ir0                ; |2295| 
-        ldiu      @CL1439,ar4           ; |2295| 
-        or3       r0,*ar0,r0            ; |2295| 
-        sti       r0,*+ar4(ir0)         ; |2295| 
+        ldiu      @CL1431,ar0           ; |2295| 
+        ldfu      *ar1,f0               ; |2295| 
+        stf       f0,*+ar0(ir0)         ; |2295| 
 	.line	2259
 ;----------------------------------------------------------------------
-; 2296 | Cap_Records[i].CLRSTAT_Time_YEAR[1]             = (Cap_Water.Time_YEAR<
-;     | <8)|(Cap_Water.Time_DAY_OF_WEEK);                                      
+; 2296 | Cap_Records[i].RefPower_Water[1]                = Cap_Water.RefPower_Wa
+;     | ter;                                                                   
 ;----------------------------------------------------------------------
-        ldp       @CL1446,DP
-        ldiu      @CL1446,ar2           ; |2296| 
-        ldp       @CL1445,DP
-        ldiu      @CL1445,ar1           ; |2296| 
+        ldp       @CL1434,DP
+        ldiu      @CL1434,ar1           ; |2296| 
+        ldp       @CL1433,DP
         ldiu      *+fp(1),ir0           ; |2296| 
-        ldp       @CL1444,DP
+        ldiu      @CL1433,ar0           ; |2296| 
         mpyi      20,ir0                ; |2296| 
-        ash3      ir1,*ar2,r0           ; |2296| 
-        ldiu      @CL1444,ar0           ; |2296| 
-        or3       r0,*ar1,r0            ; |2296| 
-        sti       r0,*+ar0(ir0)         ; |2296| 
-	.line	2237
-        ldiu      1,r0                  ; |2274| 
-        addi      *+fp(1),r0            ; |2274| 
-        sti       r0,*+fp(1)            ; |2274| 
-        cmpi      60,r0                 ; |2274| 
-        blt       L261                  ; |2274| 
-;*      Branch Occurs to L261           ; |2274| 
-L262:        
+        ldfu      *ar1,f0               ; |2296| 
+        stf       f0,*+ar0(ir0)         ; |2296| 
+	.line	2260
+;----------------------------------------------------------------------
+; 2297 | Cap_Records[i].Dadj[1]                                  = Cap_Water.Dad
+;     | j;                                                                     
+;----------------------------------------------------------------------
+        ldp       @CL1436,DP
+        ldiu      @CL1436,ar1           ; |2297| 
+        ldp       @CL1435,DP
+        ldiu      *+fp(1),ir0           ; |2297| 
+        mpyi      20,ir0                ; |2297| 
+        ldiu      @CL1435,ar0           ; |2297| 
+        ldfu      *ar1,f0               ; |2297| 
+        stf       f0,*+ar0(ir0)         ; |2297| 
+	.line	2261
+;----------------------------------------------------------------------
+; 2298 | Cap_Records[i].Time_MONTH_DAY_HH_MM[1]  = (Cap_Water.Time_MONTH<<24)|(C
+;     | ap_Water.Time_DAY<<16)|(Cap_Water.Time_HH<<8)|(Cap_Water.Time_MM);     
+;----------------------------------------------------------------------
+        ldp       @CL1441,DP
+        ldiu      @CL1441,ar0           ; |2298| 
+        ldp       @CL1440,DP
+        ldiu      @CL1440,ar2           ; |2298| 
+        ldp       @CL1439,DP
+        ldiu      @CL1439,ar1           ; |2298| 
+        ldp       @CL1438,DP
+        ash3      rc,*ar0,r0            ; |2298| 
+        ldiu      @CL1438,ar0           ; |2298| 
+        ash3      re,*ar2,ar2           ; |2298| 
+        ldiu      *+fp(1),ir0           ; |2298| 
+        or3       r0,ar2,r0             ; |2298| 
+        ash3      rs,*ar1,ar1           ; |2298| 
+        or3       r0,ar1,r0             ; |2298| 
+        ldp       @CL1437,DP
+        mpyi      20,ir0                ; |2298| 
+        ldiu      @CL1437,ar4           ; |2298| 
+        or3       r0,*ar0,r0            ; |2298| 
+        sti       r0,*+ar4(ir0)         ; |2298| 
 	.line	2262
 ;----------------------------------------------------------------------
-; 2299 | Port_Defaults(TRUE);                                                   
+; 2299 | Cap_Records[i].CLRSTAT_Time_YEAR[1]             = (Cap_Water.Time_YEAR<
+;     | <8)|(Cap_Water.Time_DAY_OF_WEEK);                                      
 ;----------------------------------------------------------------------
-        ldp       @CL1447,DP
-        ldiu      1,ar2                 ; |2299| 
-        ldiu      @CL1447,r0            ; |2299| 
-        callu     r0                    ; far call to _Port_Defaults	; |2299| 
-                                        ; |2299| Far Call Occurs
-	.line	2264
+        ldp       @CL1444,DP
+        ldiu      @CL1444,ar2           ; |2299| 
+        ldp       @CL1443,DP
+        ldiu      @CL1443,ar1           ; |2299| 
+        ldiu      *+fp(1),ir0           ; |2299| 
+        ldp       @CL1442,DP
+        mpyi      20,ir0                ; |2299| 
+        ash3      ir1,*ar2,r0           ; |2299| 
+        ldiu      @CL1442,ar0           ; |2299| 
+        or3       r0,*ar1,r0            ; |2299| 
+        sti       r0,*+ar0(ir0)         ; |2299| 
+	.line	2240
+        ldiu      1,r0                  ; |2277| 
+        addi      *+fp(1),r0            ; |2277| 
+        sti       r0,*+fp(1)            ; |2277| 
+        cmpi      60,r0                 ; |2277| 
+        blt       L261                  ; |2277| 
+;*      Branch Occurs to L261           ; |2277| 
+L262:        
+	.line	2265
 ;----------------------------------------------------------------------
-; 2301 | CHANGE = TRUE;  // This triggers the save button on the IDEC           
+; 2302 | Port_Defaults(TRUE);                                                   
 ;----------------------------------------------------------------------
-        ldp       @CL1448,DP
-        ldiu      @CL1448,ar0           ; |2301| 
-        ldiu      1,r0                  ; |2301| 
-        sti       r0,*ar0               ; |2301| 
+        ldp       @CL1445,DP
+        ldiu      1,ar2                 ; |2302| 
+        ldiu      @CL1445,r0            ; |2302| 
+        callu     r0                    ; far call to _Port_Defaults	; |2302| 
+                                        ; |2302| Far Call Occurs
 	.line	2267
 ;----------------------------------------------------------------------
-; 2304 | DIAGNOSTICS_MASK[0]     = 0xFFFF;                                      
+; 2304 | CHANGE = TRUE;  // This triggers the save button on the IDEC           
 ;----------------------------------------------------------------------
-        ldp       @CL1449,DP
-        ldiu      @CL1449,ar0           ; |2304| 
-        ldp       @CL301,DP
-        ldiu      @CL301,r0             ; |2304| 
+        ldp       @CL1446,DP
+        ldiu      @CL1446,ar0           ; |2304| 
+        ldiu      1,r0                  ; |2304| 
         sti       r0,*ar0               ; |2304| 
-	.line	2268
-;----------------------------------------------------------------------
-; 2305 | DIAGNOSTICS_MASK[1]     = 0xFFFF;                                      
-;----------------------------------------------------------------------
-        ldp       @CL1450,DP
-        ldiu      @CL1450,ar0           ; |2305| 
-        ldp       @CL301,DP
-        ldiu      @CL301,r0             ; |2305| 
-        sti       r0,*ar0               ; |2305| 
-	.line	2269
-;----------------------------------------------------------------------
-; 2306 | DIAGNOSTICS[0]                  = ERROR_RESET_BASICS;                  
-;----------------------------------------------------------------------
-        ldp       @CL1451,DP
-        ldiu      @CL1451,ar0           ; |2306| 
-        ldp       @CL1452,DP
-        ldiu      @CL1452,r0            ; |2306| 
-        sti       r0,*ar0               ; |2306| 
 	.line	2270
 ;----------------------------------------------------------------------
-; 2307 | DIAGNOSTICS[1]                  = ERROR_NONE;                          
+; 2307 | DIAGNOSTICS_MASK[0]     = 0xFFFF;                                      
 ;----------------------------------------------------------------------
-        ldp       @CL1453,DP
-        ldiu      @CL1453,ar0           ; |2307| 
-        ldiu      0,r0                  ; |2307| 
+        ldp       @CL1447,DP
+        ldiu      @CL1447,ar0           ; |2307| 
+        ldp       @CL301,DP
+        ldiu      @CL301,r0             ; |2307| 
         sti       r0,*ar0               ; |2307| 
 	.line	2271
 ;----------------------------------------------------------------------
-; 2308 | DIAGNOSTICS_MSG_CODE    = M_ERROR_RESET;                               
+; 2308 | DIAGNOSTICS_MASK[1]     = 0xFFFF;                                      
 ;----------------------------------------------------------------------
-        ldp       @CL1454,DP
-        ldiu      @CL1454,ar0           ; |2308| 
-        ldiu      15,r0                 ; |2308| 
+        ldp       @CL1448,DP
+        ldiu      @CL1448,ar0           ; |2308| 
+        ldp       @CL301,DP
+        ldiu      @CL301,r0             ; |2308| 
         sti       r0,*ar0               ; |2308| 
 	.line	2272
 ;----------------------------------------------------------------------
-; 2309 | DIAGNOSTICS_ERROR_CODE  = E_ERROR_NONE;                                
+; 2309 | DIAGNOSTICS[0]                  = ERROR_RESET_BASICS;                  
 ;----------------------------------------------------------------------
-        ldp       @CL1455,DP
-        ldiu      @CL1455,ar0           ; |2309| 
-        ldiu      0,r0                  ; |2309| 
+        ldp       @CL1449,DP
+        ldiu      @CL1449,ar0           ; |2309| 
+        ldp       @CL1450,DP
+        ldiu      @CL1450,r0            ; |2309| 
         sti       r0,*ar0               ; |2309| 
-	.line	2275
+	.line	2273
 ;----------------------------------------------------------------------
-; 2312 | VAR_Initialize(&REG_DIAG[0], c_not_classified, u_mfgr_specific_none, 1.
-;     | 0, 1.0, var_no_bound|var_no_alarm|var_round);                          
-;----------------------------------------------------------------------
-        ldiu      240,rs                ; |2312| 
-        ldp       @CL1456,DP
-        ldiu      262,re                ; |2312| 
-        ldiu      @CL1456,ar2           ; |2312| 
-        ldp       @CL20,DP
-        ldiu      0,rc                  ; |2312| 
-        ldiu      @CL20,r0              ; |2312| 
-        ldfu      1.0000000000e+00,f3   ; |2312| 
-        ldfu      1.0000000000e+00,f2   ; |2312| 
-        callu     r0                    ; far call to _VAR_Initialize	; |2312| 
-                                        ; |2312| Far Call Occurs
-	.line	2276
-;----------------------------------------------------------------------
-; 2313 | sprintf(REG_DIAG[0].name, "Diagnostics");       //R329                 
-;----------------------------------------------------------------------
-        ldp       @CL1458,DP
-        ldiu      @CL1458,r1            ; |2313| 
-        ldp       @CL1457,DP
-        ldiu      @CL1457,ar2           ; |2313| 
-        ldp       @CL24,DP
-        push      r1                    ; |2313| 
-        ldiu      @CL24,r0              ; |2313| 
-        callu     r0                    ; far call to _sprintf	; |2313| 
-                                        ; |2313| Far Call Occurs
-        subi      1,sp                  ; |2313| 
-	.line	2277
-;----------------------------------------------------------------------
-; 2314 | REG_DIAG[0].name_r = 329;                                              
-;----------------------------------------------------------------------
-        ldp       @CL1459,DP
-        ldiu      @CL1459,ar0           ; |2314| 
-        ldiu      329,r0                ; |2314| 
-        sti       r0,*ar0               ; |2314| 
-	.line	2278
-;----------------------------------------------------------------------
-; 2315 | VAR_Update(&REG_DIAG[0], DIAGNOSTICS[0], 0, 0);                        
+; 2310 | DIAGNOSTICS[1]                  = ERROR_NONE;                          
 ;----------------------------------------------------------------------
         ldp       @CL1451,DP
-        ldiu      @CL1451,ar0           ; |2315| 
-        ldp       @CL1456,DP
-        ldiu      @CL1456,ar2           ; |2315| 
-        ldp       @CL32,DP
-        ldiu      @CL32,r0              ; |2315| 
-        ldiu      *ar0,r1               ; |2315| 
-        ldiu      0,rc                  ; |2315| 
-        float     r1,f2                 ; |2315| 
-        ldiu      0,r3                  ; |2315| 
-        callu     r0                    ; far call to _VAR_Update	; |2315| 
-                                        ; |2315| Far Call Occurs
-	.line	2281
+        ldiu      @CL1451,ar0           ; |2310| 
+        ldiu      0,r0                  ; |2310| 
+        sti       r0,*ar0               ; |2310| 
+	.line	2274
 ;----------------------------------------------------------------------
-; 2318 | VAR_Initialize(&REG_DIAG[1], c_not_classified, u_mfgr_specific_none, 1.
-;     | 0, 1.0, var_no_bound|var_no_alarm|var_round);                          
+; 2311 | DIAGNOSTICS_MSG_CODE    = M_ERROR_RESET;                               
 ;----------------------------------------------------------------------
-        ldp       @CL1460,DP
-        ldiu      @CL1460,ar2           ; |2318| 
-        ldp       @CL20,DP
-        ldiu      @CL20,r0              ; |2318| 
-        ldiu      240,rs                ; |2318| 
-        ldiu      262,re                ; |2318| 
-        ldiu      0,rc                  ; |2318| 
-        ldfu      1.0000000000e+00,f3   ; |2318| 
-        ldfu      1.0000000000e+00,f2   ; |2318| 
-        callu     r0                    ; far call to _VAR_Initialize	; |2318| 
-                                        ; |2318| Far Call Occurs
-	.line	2282
+        ldp       @CL1452,DP
+        ldiu      @CL1452,ar0           ; |2311| 
+        ldiu      15,r0                 ; |2311| 
+        sti       r0,*ar0               ; |2311| 
+	.line	2275
 ;----------------------------------------------------------------------
-; 2319 | sprintf(REG_DIAG[1].name, "Extended Diagnostics");      //R330         
-;----------------------------------------------------------------------
-        ldp       @CL1462,DP
-        ldiu      @CL1462,r1            ; |2319| 
-        ldp       @CL1461,DP
-        ldiu      @CL1461,ar2           ; |2319| 
-        ldp       @CL24,DP
-        push      r1                    ; |2319| 
-        ldiu      @CL24,r0              ; |2319| 
-        callu     r0                    ; far call to _sprintf	; |2319| 
-                                        ; |2319| Far Call Occurs
-        subi      1,sp                  ; |2319| 
-	.line	2283
-;----------------------------------------------------------------------
-; 2320 | REG_DIAG[1].name_r = 330;                                              
-;----------------------------------------------------------------------
-        ldp       @CL1463,DP
-        ldiu      @CL1463,ar0           ; |2320| 
-        ldiu      330,r0                ; |2320| 
-        sti       r0,*ar0               ; |2320| 
-	.line	2284
-;----------------------------------------------------------------------
-; 2321 | VAR_Update(&REG_DIAG[1], DIAGNOSTICS[1], 0, 0);                        
+; 2312 | DIAGNOSTICS_ERROR_CODE  = E_ERROR_NONE;                                
 ;----------------------------------------------------------------------
         ldp       @CL1453,DP
-        ldiu      @CL1453,ar0           ; |2321| 
-        ldp       @CL1460,DP
-        ldiu      *ar0,r1               ; |2321| 
-        ldiu      @CL1460,ar2           ; |2321| 
-        float     r1,f2                 ; |2321| 
+        ldiu      @CL1453,ar0           ; |2312| 
+        ldiu      0,r0                  ; |2312| 
+        sti       r0,*ar0               ; |2312| 
+	.line	2278
+;----------------------------------------------------------------------
+; 2315 | VAR_Initialize(&REG_DIAG[0], c_not_classified, u_mfgr_specific_none, 1.
+;     | 0, 1.0, var_no_bound|var_no_alarm|var_round);                          
+;----------------------------------------------------------------------
+        ldiu      240,rs                ; |2315| 
+        ldp       @CL1454,DP
+        ldiu      262,re                ; |2315| 
+        ldiu      @CL1454,ar2           ; |2315| 
+        ldp       @CL20,DP
+        ldiu      0,rc                  ; |2315| 
+        ldiu      @CL20,r0              ; |2315| 
+        ldfu      1.0000000000e+00,f3   ; |2315| 
+        ldfu      1.0000000000e+00,f2   ; |2315| 
+        callu     r0                    ; far call to _VAR_Initialize	; |2315| 
+                                        ; |2315| Far Call Occurs
+	.line	2279
+;----------------------------------------------------------------------
+; 2316 | sprintf(REG_DIAG[0].name, "Diagnostics");       //R329                 
+;----------------------------------------------------------------------
+        ldp       @CL1456,DP
+        ldiu      @CL1456,r1            ; |2316| 
+        ldp       @CL1455,DP
+        ldiu      @CL1455,ar2           ; |2316| 
+        ldp       @CL24,DP
+        push      r1                    ; |2316| 
+        ldiu      @CL24,r0              ; |2316| 
+        callu     r0                    ; far call to _sprintf	; |2316| 
+                                        ; |2316| Far Call Occurs
+        subi      1,sp                  ; |2316| 
+	.line	2280
+;----------------------------------------------------------------------
+; 2317 | REG_DIAG[0].name_r = 329;                                              
+;----------------------------------------------------------------------
+        ldp       @CL1457,DP
+        ldiu      @CL1457,ar0           ; |2317| 
+        ldiu      329,r0                ; |2317| 
+        sti       r0,*ar0               ; |2317| 
+	.line	2281
+;----------------------------------------------------------------------
+; 2318 | VAR_Update(&REG_DIAG[0], DIAGNOSTICS[0], 0, 0);                        
+;----------------------------------------------------------------------
+        ldp       @CL1449,DP
+        ldiu      @CL1449,ar0           ; |2318| 
+        ldp       @CL1454,DP
+        ldiu      @CL1454,ar2           ; |2318| 
         ldp       @CL32,DP
+        ldiu      @CL32,r0              ; |2318| 
+        ldiu      *ar0,r1               ; |2318| 
+        ldiu      0,rc                  ; |2318| 
+        float     r1,f2                 ; |2318| 
+        ldiu      0,r3                  ; |2318| 
+        callu     r0                    ; far call to _VAR_Update	; |2318| 
+                                        ; |2318| Far Call Occurs
+	.line	2284
+;----------------------------------------------------------------------
+; 2321 | VAR_Initialize(&REG_DIAG[1], c_not_classified, u_mfgr_specific_none, 1.
+;     | 0, 1.0, var_no_bound|var_no_alarm|var_round);                          
+;----------------------------------------------------------------------
+        ldp       @CL1458,DP
+        ldiu      @CL1458,ar2           ; |2321| 
+        ldp       @CL20,DP
+        ldiu      @CL20,r0              ; |2321| 
+        ldiu      240,rs                ; |2321| 
+        ldiu      262,re                ; |2321| 
         ldiu      0,rc                  ; |2321| 
-        ldiu      @CL32,r0              ; |2321| 
-        ldiu      0,r3                  ; |2321| 
-        callu     r0                    ; far call to _VAR_Update	; |2321| 
+        ldfu      1.0000000000e+00,f3   ; |2321| 
+        ldfu      1.0000000000e+00,f2   ; |2321| 
+        callu     r0                    ; far call to _VAR_Initialize	; |2321| 
                                         ; |2321| Far Call Occurs
+	.line	2285
+;----------------------------------------------------------------------
+; 2322 | sprintf(REG_DIAG[1].name, "Extended Diagnostics");      //R330         
+;----------------------------------------------------------------------
+        ldp       @CL1460,DP
+        ldiu      @CL1460,r1            ; |2322| 
+        ldp       @CL1459,DP
+        ldiu      @CL1459,ar2           ; |2322| 
+        ldp       @CL24,DP
+        push      r1                    ; |2322| 
+        ldiu      @CL24,r0              ; |2322| 
+        callu     r0                    ; far call to _sprintf	; |2322| 
+                                        ; |2322| Far Call Occurs
+        subi      1,sp                  ; |2322| 
+	.line	2286
+;----------------------------------------------------------------------
+; 2323 | REG_DIAG[1].name_r = 330;                                              
+;----------------------------------------------------------------------
+        ldp       @CL1461,DP
+        ldiu      @CL1461,ar0           ; |2323| 
+        ldiu      330,r0                ; |2323| 
+        sti       r0,*ar0               ; |2323| 
 	.line	2287
 ;----------------------------------------------------------------------
-; 2324 | VAR_Initialize(&REG_DIAG[2], c_not_classified, u_mfgr_specific_none, 1.
-;     | 0, 1.0, var_no_bound|var_no_alarm|var_round);                          
+; 2324 | VAR_Update(&REG_DIAG[1], DIAGNOSTICS[1], 0, 0);                        
 ;----------------------------------------------------------------------
-        ldiu      240,rs                ; |2324| 
-        ldp       @CL1464,DP
-        ldiu      262,re                ; |2324| 
-        ldiu      @CL1464,ar2           ; |2324| 
-        ldp       @CL20,DP
+        ldp       @CL1451,DP
+        ldiu      @CL1451,ar0           ; |2324| 
+        ldp       @CL1458,DP
+        ldiu      *ar0,r1               ; |2324| 
+        ldiu      @CL1458,ar2           ; |2324| 
+        float     r1,f2                 ; |2324| 
+        ldp       @CL32,DP
         ldiu      0,rc                  ; |2324| 
-        ldiu      @CL20,r0              ; |2324| 
-        ldfu      1.0000000000e+00,f3   ; |2324| 
-        ldfu      1.0000000000e+00,f2   ; |2324| 
-        callu     r0                    ; far call to _VAR_Initialize	; |2324| 
+        ldiu      @CL32,r0              ; |2324| 
+        ldiu      0,r3                  ; |2324| 
+        callu     r0                    ; far call to _VAR_Update	; |2324| 
                                         ; |2324| Far Call Occurs
-	.line	2288
-;----------------------------------------------------------------------
-; 2325 | sprintf(REG_DIAG[2].name, "Error Code");        //R331                 
-;----------------------------------------------------------------------
-        ldp       @CL1466,DP
-        ldiu      @CL1466,r1            ; |2325| 
-        ldp       @CL1465,DP
-        ldiu      @CL1465,ar2           ; |2325| 
-        ldp       @CL24,DP
-        push      r1                    ; |2325| 
-        ldiu      @CL24,r0              ; |2325| 
-        callu     r0                    ; far call to _sprintf	; |2325| 
-                                        ; |2325| Far Call Occurs
-        subi      1,sp                  ; |2325| 
-	.line	2289
-;----------------------------------------------------------------------
-; 2326 | REG_DIAG[2].name_r = 331;                                              
-;----------------------------------------------------------------------
-        ldp       @CL1467,DP
-        ldiu      @CL1467,ar0           ; |2326| 
-        ldiu      331,r0                ; |2326| 
-        sti       r0,*ar0               ; |2326| 
 	.line	2290
 ;----------------------------------------------------------------------
-; 2327 | VAR_Update(&REG_DIAG[2], DIAGNOSTICS_ERROR_CODE, 0, 0);                
+; 2327 | VAR_Initialize(&REG_DIAG[2], c_not_classified, u_mfgr_specific_none, 1.
+;     | 0, 1.0, var_no_bound|var_no_alarm|var_round);                          
 ;----------------------------------------------------------------------
-        ldp       @CL1455,DP
-        ldiu      @CL1455,ar0           ; |2327| 
-        ldp       @CL1464,DP
-        ldiu      @CL1464,ar2           ; |2327| 
-        ldiu      *ar0,r1               ; |2327| 
-        ldp       @CL32,DP
-        float     r1,f2                 ; |2327| 
-        ldiu      @CL32,r0              ; |2327| 
+        ldiu      240,rs                ; |2327| 
+        ldp       @CL1462,DP
+        ldiu      262,re                ; |2327| 
+        ldiu      @CL1462,ar2           ; |2327| 
+        ldp       @CL20,DP
         ldiu      0,rc                  ; |2327| 
-        ldiu      0,r3                  ; |2327| 
-        callu     r0                    ; far call to _VAR_Update	; |2327| 
+        ldiu      @CL20,r0              ; |2327| 
+        ldfu      1.0000000000e+00,f3   ; |2327| 
+        ldfu      1.0000000000e+00,f2   ; |2327| 
+        callu     r0                    ; far call to _VAR_Initialize	; |2327| 
                                         ; |2327| Far Call Occurs
+	.line	2291
+;----------------------------------------------------------------------
+; 2328 | sprintf(REG_DIAG[2].name, "Error Code");        //R331                 
+;----------------------------------------------------------------------
+        ldp       @CL1464,DP
+        ldiu      @CL1464,r1            ; |2328| 
+        ldp       @CL1463,DP
+        ldiu      @CL1463,ar2           ; |2328| 
+        ldp       @CL24,DP
+        push      r1                    ; |2328| 
+        ldiu      @CL24,r0              ; |2328| 
+        callu     r0                    ; far call to _sprintf	; |2328| 
+                                        ; |2328| Far Call Occurs
+        subi      1,sp                  ; |2328| 
+	.line	2292
+;----------------------------------------------------------------------
+; 2329 | REG_DIAG[2].name_r = 331;                                              
+;----------------------------------------------------------------------
+        ldp       @CL1465,DP
+        ldiu      @CL1465,ar0           ; |2329| 
+        ldiu      331,r0                ; |2329| 
+        sti       r0,*ar0               ; |2329| 
 	.line	2293
 ;----------------------------------------------------------------------
-; 2330 | VAR_Initialize(&REG_DIAG[3], c_not_classified, u_mfgr_specific_none, 1.
-;     | 0, 1.0, var_no_bound|var_no_alarm|var_round);                          
+; 2330 | VAR_Update(&REG_DIAG[2], DIAGNOSTICS_ERROR_CODE, 0, 0);                
 ;----------------------------------------------------------------------
-        ldp       @CL1468,DP
-        ldiu      240,rs                ; |2330| 
-        ldiu      262,re                ; |2330| 
-        ldiu      @CL1468,ar2           ; |2330| 
-        ldp       @CL20,DP
+        ldp       @CL1453,DP
+        ldiu      @CL1453,ar0           ; |2330| 
+        ldp       @CL1462,DP
+        ldiu      @CL1462,ar2           ; |2330| 
+        ldiu      *ar0,r1               ; |2330| 
+        ldp       @CL32,DP
+        float     r1,f2                 ; |2330| 
+        ldiu      @CL32,r0              ; |2330| 
         ldiu      0,rc                  ; |2330| 
-        ldiu      @CL20,r0              ; |2330| 
-        ldfu      1.0000000000e+00,f3   ; |2330| 
-        ldfu      1.0000000000e+00,f2   ; |2330| 
-        callu     r0                    ; far call to _VAR_Initialize	; |2330| 
+        ldiu      0,r3                  ; |2330| 
+        callu     r0                    ; far call to _VAR_Update	; |2330| 
                                         ; |2330| Far Call Occurs
-	.line	2294
-;----------------------------------------------------------------------
-; 2331 | sprintf(REG_DIAG[3].name, "Message Code");      //R332                 
-;----------------------------------------------------------------------
-        ldp       @CL1470,DP
-        ldiu      @CL1470,r1            ; |2331| 
-        ldp       @CL1469,DP
-        ldiu      @CL1469,ar2           ; |2331| 
-        ldp       @CL24,DP
-        push      r1                    ; |2331| 
-        ldiu      @CL24,r0              ; |2331| 
-        callu     r0                    ; far call to _sprintf	; |2331| 
-                                        ; |2331| Far Call Occurs
-        subi      1,sp                  ; |2331| 
-	.line	2295
-;----------------------------------------------------------------------
-; 2332 | REG_DIAG[3].name_r = 332;                                              
-;----------------------------------------------------------------------
-        ldp       @CL1471,DP
-        ldiu      @CL1471,ar0           ; |2332| 
-        ldiu      332,r0                ; |2332| 
-        sti       r0,*ar0               ; |2332| 
 	.line	2296
 ;----------------------------------------------------------------------
-; 2333 | VAR_Update(&REG_DIAG[3], DIAGNOSTICS_MSG_CODE, 0, 0);                  
-;----------------------------------------------------------------------
-        ldp       @CL1454,DP
-        ldiu      @CL1454,ar0           ; |2333| 
-        ldp       @CL1468,DP
-        ldiu      0,rc                  ; |2333| 
-        ldiu      @CL1468,ar2           ; |2333| 
-        ldp       @CL32,DP
-        ldiu      *ar0,r1               ; |2333| 
-        ldiu      @CL32,r0              ; |2333| 
-        float     r1,f2                 ; |2333| 
-        ldiu      0,r3                  ; |2333| 
-        callu     r0                    ; far call to _VAR_Update	; |2333| 
-                                        ; |2333| Far Call Occurs
-	.line	2299
-;----------------------------------------------------------------------
-; 2336 | VAR_Initialize(&REG_DIAG[4], c_not_classified, u_mfgr_specific_none, 1.
+; 2333 | VAR_Initialize(&REG_DIAG[3], c_not_classified, u_mfgr_specific_none, 1.
 ;     | 0, 1.0, var_no_bound|var_no_alarm|var_round);                          
 ;----------------------------------------------------------------------
-        ldp       @CL1472,DP
-        ldiu      @CL1472,ar2           ; |2336| 
+        ldp       @CL1466,DP
+        ldiu      240,rs                ; |2333| 
+        ldiu      262,re                ; |2333| 
+        ldiu      @CL1466,ar2           ; |2333| 
         ldp       @CL20,DP
-        ldiu      0,rc                  ; |2336| 
-        ldiu      @CL20,r0              ; |2336| 
-        ldiu      240,rs                ; |2336| 
-        ldiu      262,re                ; |2336| 
-        ldfu      1.0000000000e+00,f3   ; |2336| 
-        ldfu      1.0000000000e+00,f2   ; |2336| 
-        callu     r0                    ; far call to _VAR_Initialize	; |2336| 
-                                        ; |2336| Far Call Occurs
-	.line	2300
+        ldiu      0,rc                  ; |2333| 
+        ldiu      @CL20,r0              ; |2333| 
+        ldfu      1.0000000000e+00,f3   ; |2333| 
+        ldfu      1.0000000000e+00,f2   ; |2333| 
+        callu     r0                    ; far call to _VAR_Initialize	; |2333| 
+                                        ; |2333| Far Call Occurs
+	.line	2297
 ;----------------------------------------------------------------------
-; 2337 | sprintf(REG_DIAG[4].name, "HART Response Code");        //R333         
+; 2334 | sprintf(REG_DIAG[3].name, "Message Code");      //R332                 
 ;----------------------------------------------------------------------
-        ldp       @CL1474,DP
-        ldiu      @CL1474,r1            ; |2337| 
-        ldp       @CL1473,DP
-        ldiu      @CL1473,ar2           ; |2337| 
+        ldp       @CL1468,DP
+        ldiu      @CL1468,r1            ; |2334| 
+        ldp       @CL1467,DP
+        ldiu      @CL1467,ar2           ; |2334| 
         ldp       @CL24,DP
-        ldiu      @CL24,r0              ; |2337| 
-        push      r1                    ; |2337| 
-        callu     r0                    ; far call to _sprintf	; |2337| 
-                                        ; |2337| Far Call Occurs
-        subi      1,sp                  ; |2337| 
-	.line	2301
+        push      r1                    ; |2334| 
+        ldiu      @CL24,r0              ; |2334| 
+        callu     r0                    ; far call to _sprintf	; |2334| 
+                                        ; |2334| Far Call Occurs
+        subi      1,sp                  ; |2334| 
+	.line	2298
 ;----------------------------------------------------------------------
-; 2338 | REG_DIAG[4].name_r = 333;                                              
+; 2335 | REG_DIAG[3].name_r = 332;                                              
 ;----------------------------------------------------------------------
-        ldp       @CL1475,DP
-        ldiu      @CL1475,ar0           ; |2338| 
-        ldiu      333,r0                ; |2338| 
-        sti       r0,*ar0               ; |2338| 
+        ldp       @CL1469,DP
+        ldiu      @CL1469,ar0           ; |2335| 
+        ldiu      332,r0                ; |2335| 
+        sti       r0,*ar0               ; |2335| 
+	.line	2299
+;----------------------------------------------------------------------
+; 2336 | VAR_Update(&REG_DIAG[3], DIAGNOSTICS_MSG_CODE, 0, 0);                  
+;----------------------------------------------------------------------
+        ldp       @CL1452,DP
+        ldiu      @CL1452,ar0           ; |2336| 
+        ldp       @CL1466,DP
+        ldiu      0,rc                  ; |2336| 
+        ldiu      @CL1466,ar2           ; |2336| 
+        ldp       @CL32,DP
+        ldiu      *ar0,r1               ; |2336| 
+        ldiu      @CL32,r0              ; |2336| 
+        float     r1,f2                 ; |2336| 
+        ldiu      0,r3                  ; |2336| 
+        callu     r0                    ; far call to _VAR_Update	; |2336| 
+                                        ; |2336| Far Call Occurs
 	.line	2302
 ;----------------------------------------------------------------------
-; 2339 | VAR_Update(&REG_DIAG[4], 0, 0, 0);                                     
+; 2339 | VAR_Initialize(&REG_DIAG[4], c_not_classified, u_mfgr_specific_none, 1.
+;     | 0, 1.0, var_no_bound|var_no_alarm|var_round);                          
+;----------------------------------------------------------------------
+        ldp       @CL1470,DP
+        ldiu      @CL1470,ar2           ; |2339| 
+        ldp       @CL20,DP
+        ldiu      0,rc                  ; |2339| 
+        ldiu      @CL20,r0              ; |2339| 
+        ldiu      240,rs                ; |2339| 
+        ldiu      262,re                ; |2339| 
+        ldfu      1.0000000000e+00,f3   ; |2339| 
+        ldfu      1.0000000000e+00,f2   ; |2339| 
+        callu     r0                    ; far call to _VAR_Initialize	; |2339| 
+                                        ; |2339| Far Call Occurs
+	.line	2303
+;----------------------------------------------------------------------
+; 2340 | sprintf(REG_DIAG[4].name, "HART Response Code");        //R333         
 ;----------------------------------------------------------------------
         ldp       @CL1472,DP
-        ldiu      @CL1472,ar2           ; |2339| 
-        ldp       @CL32,DP
-        ldiu      @CL32,r0              ; |2339| 
-        ldp       @CL31+0,DP
-        ldfu      @CL31+0,f2            ; |2339| 40b float hi half
-        ldp       @CL31+1,DP
-        ldiu      @CL31+1,r2            ; |2339| 40b float lo half
-        ldiu      0,rc                  ; |2339| 
-        ldiu      0,r3                  ; |2339| 
-        callu     r0                    ; far call to _VAR_Update	; |2339| 
-                                        ; |2339| Far Call Occurs
+        ldiu      @CL1472,r1            ; |2340| 
+        ldp       @CL1471,DP
+        ldiu      @CL1471,ar2           ; |2340| 
+        ldp       @CL24,DP
+        ldiu      @CL24,r0              ; |2340| 
+        push      r1                    ; |2340| 
+        callu     r0                    ; far call to _sprintf	; |2340| 
+                                        ; |2340| Far Call Occurs
+        subi      1,sp                  ; |2340| 
 	.line	2304
 ;----------------------------------------------------------------------
-; 2341 | ENABLE_WDOG;                                                           
+; 2341 | REG_DIAG[4].name_r = 333;                                              
+;----------------------------------------------------------------------
+        ldp       @CL1473,DP
+        ldiu      @CL1473,ar0           ; |2341| 
+        ldiu      333,r0                ; |2341| 
+        sti       r0,*ar0               ; |2341| 
+	.line	2305
+;----------------------------------------------------------------------
+; 2342 | VAR_Update(&REG_DIAG[4], 0, 0, 0);                                     
+;----------------------------------------------------------------------
+        ldp       @CL1470,DP
+        ldiu      @CL1470,ar2           ; |2342| 
+        ldp       @CL32,DP
+        ldiu      @CL32,r0              ; |2342| 
+        ldp       @CL31+0,DP
+        ldfu      @CL31+0,f2            ; |2342| 40b float hi half
+        ldp       @CL31+1,DP
+        ldiu      @CL31+1,r2            ; |2342| 40b float lo half
+        ldiu      0,rc                  ; |2342| 
+        ldiu      0,r3                  ; |2342| 
+        callu     r0                    ; far call to _VAR_Update	; |2342| 
+                                        ; |2342| Far Call Occurs
+	.line	2307
+;----------------------------------------------------------------------
+; 2344 | ENABLE_WDOG;                                                           
 ;----------------------------------------------------------------------
 	push	ST			
 	andn	2000h, ST	
         ldp       @CL2,DP
-        ldiu      @CL2,ar0              ; |2341| 
-        ldiu      8,r0                  ; |2341| 
-        or3       r0,*ar0,r0            ; |2341| 
-        sti       r0,*ar0               ; |2341| 
-        ldiu      128,r0                ; |2341| 
-        or3       r0,*ar0,r0            ; |2341| 
-        sti       r0,*ar0               ; |2341| 
+        ldiu      @CL2,ar0              ; |2344| 
+        ldiu      8,r0                  ; |2344| 
+        or3       r0,*ar0,r0            ; |2344| 
+        sti       r0,*ar0               ; |2344| 
+        ldiu      128,r0                ; |2344| 
+        or3       r0,*ar0,r0            ; |2344| 
+        sti       r0,*ar0               ; |2344| 
 	pop		ST			
-	.line	2305
+	.line	2308
 ;----------------------------------------------------------------------
-; 2342 | GIEP;                                                                  
+; 2345 | GIEP;                                                                  
 ;----------------------------------------------------------------------
 	pop		ST			
-	.line	2306
+	.line	2309
                                         ; Begin Epilog Code
         ldiu      *-fp(1),r1
         ldiu      *fp,fp
@@ -20121,7 +20130,7 @@ L262:
         subi      9,sp
         bu        r1
 ;*      Branch Occurs to r1 
-	.endfunc	2343,000001010h,7
+	.endfunc	2346,000001010h,7
 
 
 
@@ -23089,9 +23098,9 @@ SL171:	.byte	"HART Response Code",0
 	.bss	CL936,1
 	.bss	CL937,1
 	.bss	CL938,1
-	.bss	CL939,1
+	.bss	CL939,2
 	.bss	CL940,1
-	.bss	CL941,2
+	.bss	CL941,1
 	.bss	CL942,1
 	.bss	CL943,1
 	.bss	CL944,1
@@ -23100,9 +23109,9 @@ SL171:	.byte	"HART Response Code",0
 	.bss	CL947,1
 	.bss	CL948,1
 	.bss	CL949,1
-	.bss	CL950,1
+	.bss	CL950,2
 	.bss	CL951,1
-	.bss	CL952,2
+	.bss	CL952,1
 	.bss	CL953,1
 	.bss	CL954,1
 	.bss	CL955,1
@@ -23245,25 +23254,25 @@ SL171:	.byte	"HART Response Code",0
 	.bss	CL1092,1
 	.bss	CL1093,1
 	.bss	CL1094,1
-	.bss	CL1095,1
+	.bss	CL1095,2
 	.bss	CL1096,1
-	.bss	CL1097,2
+	.bss	CL1097,1
 	.bss	CL1098,1
 	.bss	CL1099,1
 	.bss	CL1100,1
 	.bss	CL1101,1
 	.bss	CL1102,1
-	.bss	CL1103,1
+	.bss	CL1103,2
 	.bss	CL1104,1
-	.bss	CL1105,2
+	.bss	CL1105,1
 	.bss	CL1106,1
 	.bss	CL1107,1
 	.bss	CL1108,1
 	.bss	CL1109,1
 	.bss	CL1110,1
-	.bss	CL1111,1
+	.bss	CL1111,2
 	.bss	CL1112,1
-	.bss	CL1113,2
+	.bss	CL1113,1
 	.bss	CL1114,1
 	.bss	CL1115,1
 	.bss	CL1116,1
@@ -23535,16 +23544,16 @@ SL171:	.byte	"HART Response Code",0
 	.bss	CL1382,1
 	.bss	CL1383,1
 	.bss	CL1384,1
-	.bss	CL1385,1
+	.bss	CL1385,2
 	.bss	CL1386,1
-	.bss	CL1387,2
+	.bss	CL1387,1
 	.bss	CL1388,1
 	.bss	CL1389,1
 	.bss	CL1390,1
 	.bss	CL1391,1
-	.bss	CL1392,1
+	.bss	CL1392,2
 	.bss	CL1393,1
-	.bss	CL1394,2
+	.bss	CL1394,1
 	.bss	CL1395,1
 	.bss	CL1396,1
 	.bss	CL1397,1
@@ -23624,11 +23633,9 @@ SL171:	.byte	"HART Response Code",0
 	.bss	CL1471,1
 	.bss	CL1472,1
 	.bss	CL1473,1
-	.bss	CL1474,1
-	.bss	CL1475,1
 
 	.sect	".cinit"
-	.field  	1512,32
+	.field  	1510,32
 	.field  	CL1+0,32
 	.field  	9437203,32
 	.field  	9437188,32
@@ -24529,7 +24536,6 @@ SL171:	.byte	"HART Response Code",0
 	.field  	_FC+801,32
 	.field  	_FC+823,32
 	.field  	SL131,32
-	.word   	017189680H ; double  1.000000000000000e+07
 	.field  	_FC+807,32
 	.field  	_FC+849,32
 	.field  	_FC+871,32
@@ -24538,7 +24544,6 @@ SL171:	.byte	"HART Response Code",0
 	.field  	_FC+897,32
 	.field  	_FC+919,32
 	.field  	SL133,32
-	.word   	01A3EBC20H ; double  1.000000000000000e+08
 	.field  	_FC+903,32
 	.field  	_FC+941,32
 	.field  	_FC+963,32

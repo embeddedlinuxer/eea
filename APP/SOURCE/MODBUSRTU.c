@@ -5994,8 +5994,8 @@ void MB_RX_C4(int id)
 	i_CCM_Level 		 	= CCM_VESSEL_LEVEL[0].val * 10.0;
 	i_CCM_Pressure_Setpoint = CCM_SETPOINT_PRESSURE[0].val * 100.0;
 	i_CCM_Pressure 			= CCM_VESSEL_PRESSURE[0].val * 100.0;
-	i_CCM_Gas_Valve 		= AO[2].CURRENT_PERCENT_OF_RANGE.val * 10.0;
-	i_CCM_Liquid_Valve 		= AO[1].CURRENT_PERCENT_OF_RANGE.val * 10.0;
+	i_CCM_Gas_Valve 		= AO[2].CURRENT_PERCENT_OF_RANGE.val * 10.0; // Gas valve
+	i_CCM_Liquid_Valve 		= AO[1].CURRENT_PERCENT_OF_RANGE.val * 10.0; // Liquid valve
 	i_CCM_Flow 				= FC[0].FLOW_TOTAL.val * 100.0;
 	i_CCM_Flow_Oil 			= FC[0].FLOW_OIL.val * 100.0;
 	i_CCM_Flow_Water 		= FC[0].FLOW_WATER.val * 100.0;

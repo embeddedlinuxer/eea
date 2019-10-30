@@ -1,6 +1,6 @@
 ;******************************************************************************
 ;* TMS320C3x/4x ANSI C Code Generator                            Version 5.11 *
-;* Date/Time created: Thu Sep 19 14:35:14 2019                                *
+;* Date/Time created: Wed Oct 30 07:48:38 2019                                *
 ;******************************************************************************
 	.regalias	; enable floating point register aliases
 fp	.set	ar3
@@ -17,7 +17,7 @@ FP	.set	ar3
 ;*   Calls              : Normal Library ASM calls                            *
 ;*   Debug Info         : Standard TI Debug Information                       *
 ;******************************************************************************
-;	C:\tic3x4x\c3x4x\cgtools\bin\ac30.exe -@_65G.AAA 
+;	C:\tic3x4x\c3x4x\cgtools\bin\ac30.exe -@_DK8.AAA 
 	.file	"modbusrtu.c"
 	.file	"G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\GLBLS.H"
 	.file	"G:\workspace\EEA\V615\INCLUDE\stdarg.h"
@@ -908,7 +908,7 @@ _mb_int:
 	.field  	65644,32		; _mb_int[186] @ 5952
 	.field  	_i_CCM_Flow_Gas,32		; _mb_int[187] @ 5984
 	.field  	786542,32		; _mb_int[188] @ 6016
-	.field  	3,32		; _mb_int[189] @ 6048
+	.field  	4,32		; _mb_int[189] @ 6048
 	.field  	268501115,32		; _mb_int[190] @ 6080
 	.field  	_bubble+32,32		; _mb_int[191] @ 6112
 	.field  	268501116,32		; _mb_int[192] @ 6144
@@ -39174,7 +39174,7 @@ L1442:
 	.line	136
 ;----------------------------------------------------------------------
 ; 5997 | i_CCM_Gas_Valve                 = AO[2].CURRENT_PERCENT_OF_RANGE.val *
-;     | 10.0;                                                                  
+;     | 10.0; // Gas valve                                                     
 ;----------------------------------------------------------------------
         ldp       @CL566,DP
         ldiu      @CL566,ar1            ; |5997| 
@@ -39191,7 +39191,7 @@ L1442:
 	.line	137
 ;----------------------------------------------------------------------
 ; 5998 | i_CCM_Liquid_Valve              = AO[1].CURRENT_PERCENT_OF_RANGE.val *
-;     | 10.0;                                                                  
+;     | 10.0; // Liquid valve                                                  
 ;----------------------------------------------------------------------
         ldp       @CL573,DP
         ldiu      @CL573,ar0            ; |5998| 

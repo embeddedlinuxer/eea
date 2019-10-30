@@ -1,7 +1,7 @@
-VER = 6.15.03
-VER2 = 6_15_03
+VER = 6.15.04
+VER2 = 6_15_04
 
-BUGS = "64 - Maximum number limit on FC Accumulator (http://bug.phasedynamics.com/bugzilla/show_bug.cgi?id=64)"
+BUGS = "Bug 71 - Liquid valve not fully open when over pressured (http://bug.phasedynamics.com/bugzilla/show_bug.cgi?id=71)"
 
 ##############################################
 ##############################################

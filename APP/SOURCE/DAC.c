@@ -583,11 +583,16 @@ double PID(int loop)
 	if (AO[loop].PID_enable_failsafe && AO[loop].PID_fail)
 	{/* failsafe and failed */
 		PID_Init(loop);
-		
+    // DKOH | OCT-29-2019 | [Bug 62] v6.13.32 Failsafe seems to be working the opposite http://bug.phasedynamics.com/bugzilla/show_bug.cgi?id=62
+	/*	
 		if (AO[loop].REVERSE) 
 			return 0.0;
 		else 
 			return 100.0;
+    */
+
+			return 100.0;
+    // DKOH | OCT-29-2019 | [Bug 62] v6.13.32 Failsafe seems to be working the opposite http://bug.phasedynamics.com/bugzilla/show_bug.cgi?id=62
 	}
 	
 	/**** Get time interval. ****/

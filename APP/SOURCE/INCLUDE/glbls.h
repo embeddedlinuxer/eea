@@ -45,10 +45,11 @@
 /// V6.15.01 | May-16-2019 | Fixed incorrect HART enabling sequence in STR_Anlyzer_Info[] array 
 /// V6.15.02 | Jul-11-2019 | Fixed. Incorrect max_addr was set on ports other than port 0 in HART_5.
 /// V6.15.03 | Sep-19-2019 | Fixed. Bug 64 - Maximum number limit on FC Accumulator
+/// V6.15.04 | Oct-28-2019 | Fixed. Bug 71 - Liquid valve not fully open when over pressure
 /////////////////////////////////////////////////////////////////////////////
 
 #define FIRMWARE_VERSION	 			615
-#define FIRMWARE_SUBVERSION				03
+#define FIRMWARE_SUBVERSION				04
 
 /*
 	SUBVERSION CHANGES: ('->' arrow denotes partially non-cumulative release, i.e. a separate branch)

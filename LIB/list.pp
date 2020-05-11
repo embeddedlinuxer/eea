@@ -1,4 +1,4 @@
-#line 112 "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\GLBLS.H"
+#line 120 "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\GLBLS.H"
 extern const char* copyright;
 extern const char* credit;
 #line 8 "G:\workspace\EEA\V615\INCLUDE\stdarg.h"
@@ -509,7 +509,7 @@ extern BOOL GATE_TIMEOUT;
 extern float TIME0;
 extern float TIME1;
 
-#line 115 "G:\workspace\EEA\V615\INCLUDE\I2C.H"
+#line 89 "G:\workspace\EEA\V615\INCLUDE\I2C.H"
 extern void I2C_RX_BYTE(unsigned char* b, BOOL ack);
 extern BOOL I2C_TX_BYTE(unsigned char b);
 extern BOOL Read_I2C(int addr, int n, unsigned char* p);
@@ -538,7 +538,7 @@ extern unsigned char RTC[10];
  
  
 
-#line 154
+#line 128
 extern void I2C_RX_BYTE_5(unsigned char* b, BOOL ack);
 extern BOOL I2C_TX_BYTE_5(unsigned char b);
 extern BOOL Read_I2C_5(int addr, int n, unsigned char* p);
@@ -1008,13 +1008,13 @@ extern int* vect_m;
 extern unsigned int TOIEEE(float v);
 extern float FMIEEE(unsigned int v);
 
-#line 159 "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\GLBLS.H"
+#line 167 "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\GLBLS.H"
 extern unsigned int CLOCK;
 extern BOOL LED_GREEN;
 extern BOOL OSWITCH;
 extern void c_int00(void);
 
-#line 203
+#line 211
 extern unsigned int ESN_USER[5];
 extern unsigned int ESN_MFGR[5];
 
@@ -1424,7 +1424,7 @@ extern float stream_delta_temp[60];
 
 
  
-#line 633
+#line 641
 #pragma DATA_SECTION(OIL_PHASE_ONLY_ENABLE,"CFG")
 extern float OIL_PHASE_ONLY_ENABLE[60];
 #pragma DATA_SECTION(WATER_PHASE_ONLY_ENABLE,"CFG")
@@ -1607,7 +1607,7 @@ extern BOOL BOXCAR_RESET;
 
 
  
-#line 822
+#line 830
 #pragma DATA_SECTION(REG_CCM_TEST_STAT,"CFG")         
 extern VAR REG_CCM_TEST_STAT;                         
 
@@ -1781,11 +1781,11 @@ extern VAR EXTENDED_FW_VERSION_ENABLE;
 #pragma DATA_SECTION(GAS_ENTRAINED,"CFG")
 extern COIL GAS_ENTRAINED;  
  
-#line 1006
+#line 1014
 #pragma DATA_SECTION(GAS_ENTRAINED_DENS_DETECT,"CFG")
 extern COIL GAS_ENTRAINED_DENS_DETECT;   
  
-#line 1022
+#line 1030
 enum Pulse_Input_Type
 {
 	PULSE_GAS_TEMP 		= 1,
@@ -1808,7 +1808,7 @@ enum Pulse_Input_Type
 
 
 
-#line 1057
+#line 1065
 #pragma DATA_SECTION(boxcar_expire_val,"CFG")
 extern VAR boxcar_expire_val;
 
@@ -1898,6 +1898,12 @@ extern COIL WATER_PHASE_ONLY;
  
 extern BOOL TRIM_RTD_LO;
 extern BOOL TRIM_RTD_HI;   
+
+ 
+#pragma DATA_SECTION(RELAY1_REVERT,"CFG")
+extern COIL RELAY1_REVERT;
+#pragma DATA_SECTION(RELAY2_REVERT,"CFG")
+extern COIL RELAY2_REVERT;
 
     
 #pragma DATA_SECTION(CAP_WATER_STOP,"CFG")
@@ -2105,7 +2111,7 @@ typedef struct 	{
 	    		} CORIOLIS;
 extern CORIOLIS COR[5];
 
-#line 1385
+#line 1399
 typedef struct 	{
 					float	p_delta;
 					float	p_static;
@@ -2271,7 +2277,7 @@ extern float compatibility_dummy;
 
 
 		 
-#line 1581
+#line 1595
 #pragma DATA_SECTION(ALFAT_RX,"internal_RAM")
 extern	char	ALFAT_RX[128]; 
 
@@ -2370,7 +2376,7 @@ extern VAR Hsalt_Min_WC;
 #pragma DATA_SECTION(AVG_RESET,"CFG")
 extern COIL AVG_RESET;
 
-#line 1683
+#line 1697
 extern void Setup_Basics(void);
 
 #line 44 "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\HART.H"

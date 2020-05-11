@@ -1,6 +1,6 @@
 ;******************************************************************************
 ;* TMS320C3x/4x ANSI C Code Generator                            Version 5.11 *
-;* Date/Time created: Wed Oct 30 07:48:33 2019                                *
+;* Date/Time created: Tue May  5 09:11:47 2020                                *
 ;******************************************************************************
 	.regalias	; enable floating point register aliases
 fp	.set	ar3
@@ -17,7 +17,7 @@ FP	.set	ar3
 ;*   Calls              : Normal Library ASM calls                            *
 ;*   Debug Info         : Standard TI Debug Information                       *
 ;******************************************************************************
-;	C:\tic3x4x\c3x4x\cgtools\bin\ac30.exe -@_C1S.AAA 
+;	C:\tic3x4x\c3x4x\cgtools\bin\ac30.exe -@_B4G.AAA 
 	.file	"main.c"
 	.file	"G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\GLBLS.H"
 	.file	"G:\workspace\EEA\V615\INCLUDE\stdarg.h"
@@ -4821,124 +4821,110 @@ L70:
         and3      r0,*ar0,r0            ; |627| 
         sti       r0,*ar0               ; |627| 
 	pop		ST			
-	.line	60
+	.line	61
 ;----------------------------------------------------------------------
-; 628 | CLOCK = CLOCK_DEFAULT;                                                 
+; 629 | CLOCK = CLOCK_DEFAULT;                                                 
 ;----------------------------------------------------------------------
         ldp       @CL386,DP
-        ldiu      @CL386,ar0            ; |628| 
+        ldiu      @CL386,ar0            ; |629| 
         ldp       @CL387,DP
-        ldiu      @CL387,r0             ; |628| 
-        sti       r0,*ar0               ; |628| 
-	.line	62
+        ldiu      @CL387,r0             ; |629| 
+        sti       r0,*ar0               ; |629| 
+	.line	63
 ;----------------------------------------------------------------------
-; 630 | LCD_INIT();                                                            
+; 631 | LCD_INIT();                                                            
 ;----------------------------------------------------------------------
         ldp       @CL388,DP
-        ldiu      @CL388,r0             ; |630| 
-        callu     r0                    ; far call to _LCD_INIT	; |630| 
-                                        ; |630| Far Call Occurs
-	.line	65
+        ldiu      @CL388,r0             ; |631| 
+        callu     r0                    ; far call to _LCD_INIT	; |631| 
+                                        ; |631| Far Call Occurs
+	.line	66
 ;----------------------------------------------------------------------
-; 633 | for (i=0;i<4;i++)                                                      
+; 634 | for (i=0;i<4;i++)                                                      
 ;----------------------------------------------------------------------
-        ldiu      0,r0                  ; |633| 
-        sti       r0,*+fp(1)            ; |633| 
-        cmpi      4,r0                  ; |633| 
-        bhs       L74                   ; |633| 
-;*      Branch Occurs to L74            ; |633| 
+        ldiu      0,r0                  ; |634| 
+        sti       r0,*+fp(1)            ; |634| 
+        cmpi      4,r0                  ; |634| 
+        bhs       L74                   ; |634| 
+;*      Branch Occurs to L74            ; |634| 
 L71:        
-	.line	67
-;----------------------------------------------------------------------
-; 635 | for (j=0;j<101;j++)                                                    
-;----------------------------------------------------------------------
-        ldiu      0,r0                  ; |635| 
-        sti       r0,*+fp(2)            ; |635| 
-        cmpi      101,r0                ; |635| 
-        ldiu      32,r1                 ; |636| 
-        bhs       L73                   ; |635| 
-;*      Branch Occurs to L73            ; |635| 
-L72:        
 	.line	68
 ;----------------------------------------------------------------------
-; 636 | LCD_DISPLAY[i][j] = 0x20;                                              
+; 636 | for (j=0;j<101;j++)                                                    
 ;----------------------------------------------------------------------
-        ldiu      *+fp(1),ir0           ; |636| 
+        ldiu      0,r0                  ; |636| 
+        sti       r0,*+fp(2)            ; |636| 
+        cmpi      101,r0                ; |636| 
+        ldiu      32,r1                 ; |637| 
+        bhs       L73                   ; |636| 
+;*      Branch Occurs to L73            ; |636| 
+L72:        
+	.line	69
+;----------------------------------------------------------------------
+; 637 | LCD_DISPLAY[i][j] = 0x20;                                              
+;----------------------------------------------------------------------
+        ldiu      *+fp(1),ir0           ; |637| 
         ldp       @CL389,DP
-        mpyi      101,ir0               ; |636| 
-        ldiu      @CL389,ar0            ; |636| 
-        addi      *+fp(2),ir0           ; |636| Unsigned
-        sti       r1,*+ar0(ir0)         ; |636| 
-	.line	67
-        ldiu      1,r0                  ; |635| 
-        addi      *+fp(2),r0            ; |635| Unsigned
-        sti       r0,*+fp(2)            ; |635| 
-        cmpi      101,r0                ; |635| 
-        blo       L72                   ; |635| 
-;*      Branch Occurs to L72            ; |635| 
+        mpyi      101,ir0               ; |637| 
+        ldiu      @CL389,ar0            ; |637| 
+        addi      *+fp(2),ir0           ; |637| Unsigned
+        sti       r1,*+ar0(ir0)         ; |637| 
+	.line	68
+        ldiu      1,r0                  ; |636| 
+        addi      *+fp(2),r0            ; |636| Unsigned
+        sti       r0,*+fp(2)            ; |636| 
+        cmpi      101,r0                ; |636| 
+        blo       L72                   ; |636| 
+;*      Branch Occurs to L72            ; |636| 
 L73:        
-	.line	65
-        ldiu      1,r0                  ; |633| 
-        addi      *+fp(1),r0            ; |633| Unsigned
-        sti       r0,*+fp(1)            ; |633| 
-        cmpi      4,r0                  ; |633| 
-        blo       L71                   ; |633| 
-;*      Branch Occurs to L71            ; |633| 
+	.line	66
+        ldiu      1,r0                  ; |634| 
+        addi      *+fp(1),r0            ; |634| Unsigned
+        sti       r0,*+fp(1)            ; |634| 
+        cmpi      4,r0                  ; |634| 
+        blo       L71                   ; |634| 
+;*      Branch Occurs to L71            ; |634| 
 L74:        
-	.line	71
-;----------------------------------------------------------------------
-; 639 | hwu = (HW_VER & 0x0078)>>3;                                            
-;----------------------------------------------------------------------
-        ldp       @CL372,DP
-        ldiu      @CL372,ar0            ; |639| 
-        ldiu      120,r0                ; |639| 
-        and3      r0,*ar0,r0            ; |639| 
-        lsh       -3,r0                 ; |639| 
-        sti       r0,*+fp(68)           ; |639| 
 	.line	72
 ;----------------------------------------------------------------------
-; 640 | hwl = HW_VER & 0x0007;                                                 
+; 640 | hwu = (HW_VER & 0x0078)>>3;                                            
 ;----------------------------------------------------------------------
+        ldp       @CL372,DP
         ldiu      @CL372,ar0            ; |640| 
-        ldiu      7,r0                  ; |640| 
+        ldiu      120,r0                ; |640| 
         and3      r0,*ar0,r0            ; |640| 
-        sti       r0,*+fp(69)           ; |640| 
+        lsh       -3,r0                 ; |640| 
+        sti       r0,*+fp(68)           ; |640| 
 	.line	73
 ;----------------------------------------------------------------------
-; 641 | fw      = FIRMWARE_VERSION/100.0;                                      
+; 641 | hwl = HW_VER & 0x0007;                                                 
 ;----------------------------------------------------------------------
-        ldp       @CL390,DP
-        ldfu      @CL390,f0             ; |641| 
-        stf       f0,*+fp(67)           ; |641| 
+        ldiu      @CL372,ar0            ; |641| 
+        ldiu      7,r0                  ; |641| 
+        and3      r0,*ar0,r0            ; |641| 
+        sti       r0,*+fp(69)           ; |641| 
 	.line	74
 ;----------------------------------------------------------------------
-; 642 | i       = FIRMWARE_SUBVERSION;                                         
-; 647 | #ifndef RUSS_TRANSLATION_ENABLED                                       
+; 642 | fw      = FIRMWARE_VERSION/100.0;                                      
 ;----------------------------------------------------------------------
-        ldiu      4,r0                  ; |642| 
-        sti       r0,*+fp(1)            ; |642| 
-	.line	80
+        ldp       @CL390,DP
+        ldfu      @CL390,f0             ; |642| 
+        stf       f0,*+fp(67)           ; |642| 
+	.line	75
 ;----------------------------------------------------------------------
-; 648 | sprintf(LCD_DISPLAY[0],"Phase Dynamics, Inc."); //R87                  
+; 643 | i       = FIRMWARE_SUBVERSION;                                         
+; 648 | #ifndef RUSS_TRANSLATION_ENABLED                                       
 ;----------------------------------------------------------------------
-        ldp       @CL391,DP
-        ldiu      @CL391,r1             ; |648| 
-        ldp       @CL389,DP
-        ldiu      @CL389,ar2            ; |648| 
-        ldp       @CL16,DP
-        push      r1                    ; |648| 
-        ldiu      @CL16,r0              ; |648| 
-        callu     r0                    ; far call to _sprintf	; |648| 
-                                        ; |648| Far Call Occurs
-        subi      1,sp                  ; |648| 
+        ldiu      6,r0                  ; |643| 
+        sti       r0,*+fp(1)            ; |643| 
 	.line	81
 ;----------------------------------------------------------------------
-; 649 | sprintf(LCD_DISPLAY[1],"Initializing Data..."); //R378                 
+; 649 | sprintf(LCD_DISPLAY[0],"Phase Dynamics, Inc."); //R87                  
 ;----------------------------------------------------------------------
-        ldp       @CL393,DP
-        ldiu      @CL393,r1             ; |649| 
-        ldp       @CL392,DP
-        ldiu      @CL392,ar2            ; |649| 
+        ldp       @CL391,DP
+        ldiu      @CL391,r1             ; |649| 
+        ldp       @CL389,DP
+        ldiu      @CL389,ar2            ; |649| 
         ldp       @CL16,DP
         push      r1                    ; |649| 
         ldiu      @CL16,r0              ; |649| 
@@ -4947,96 +4933,92 @@ L74:
         subi      1,sp                  ; |649| 
 	.line	82
 ;----------------------------------------------------------------------
-; 650 | sprintf(LCD_DISPLAY[2],"HW Version:    %2d.%02d", hwu, hwl);    //R377
-;     |                                                                        
+; 650 | sprintf(LCD_DISPLAY[1],"Initializing Data..."); //R378                 
 ;----------------------------------------------------------------------
-        ldp       @CL395,DP
-        ldiu      @CL395,r1             ; |650| 
-        ldiu      *+fp(69),r2           ; |650| 
-        push      r2                    ; |650| 
-        ldp       @CL394,DP
-        ldiu      *+fp(68),r2           ; |650| 
-        ldiu      @CL394,ar2            ; |650| 
-        push      r2                    ; |650| 
+        ldp       @CL393,DP
+        ldiu      @CL393,r1             ; |650| 
+        ldp       @CL392,DP
+        ldiu      @CL392,ar2            ; |650| 
         ldp       @CL16,DP
         push      r1                    ; |650| 
         ldiu      @CL16,r0              ; |650| 
         callu     r0                    ; far call to _sprintf	; |650| 
                                         ; |650| Far Call Occurs
-        subi      3,sp                  ; |650| 
+        subi      1,sp                  ; |650| 
 	.line	83
 ;----------------------------------------------------------------------
-; 651 | sprintf(LCD_DISPLAY[3],"FW Version:  %4.2f.%02i", fw, i);       //R375 
-; 652 | #endif                                                                 
+; 651 | sprintf(LCD_DISPLAY[2],"HW Version:    %2d.%02d", hwu, hwl);    //R377
+;     |                                                                        
 ;----------------------------------------------------------------------
-        ldp       @CL397,DP
-        ldiu      @CL397,r2             ; |651| 
-        ldp       @CL396,DP
-        ldiu      *+fp(1),r1            ; |651| 
-        ldiu      @CL396,ar2            ; |651| 
-        push      r1                    ; |651| 
-        ldp       @CL16,DP
-        ldfu      *+fp(67),f1           ; |651| 
-        pushf     f1                    ; |651| 
-        ldiu      @CL16,r0              ; |651| 
+        ldp       @CL395,DP
+        ldiu      @CL395,r1             ; |651| 
+        ldiu      *+fp(69),r2           ; |651| 
         push      r2                    ; |651| 
+        ldp       @CL394,DP
+        ldiu      *+fp(68),r2           ; |651| 
+        ldiu      @CL394,ar2            ; |651| 
+        push      r2                    ; |651| 
+        ldp       @CL16,DP
+        push      r1                    ; |651| 
+        ldiu      @CL16,r0              ; |651| 
         callu     r0                    ; far call to _sprintf	; |651| 
                                         ; |651| Far Call Occurs
         subi      3,sp                  ; |651| 
-	.line	117
+	.line	84
 ;----------------------------------------------------------------------
-; 685 | LCD_PAGE();                                                            
+; 652 | sprintf(LCD_DISPLAY[3],"FW Version:  %4.2f.%02i", fw, i);       //R375 
+; 653 | #endif                                                                 
 ;----------------------------------------------------------------------
-        ldp       @CL398,DP
-        ldiu      @CL398,r0             ; |685| 
-        callu     r0                    ; far call to _LCD_PAGE	; |685| 
-                                        ; |685| Far Call Occurs
+        ldp       @CL397,DP
+        ldiu      @CL397,r2             ; |652| 
+        ldp       @CL396,DP
+        ldiu      *+fp(1),r1            ; |652| 
+        ldiu      @CL396,ar2            ; |652| 
+        push      r1                    ; |652| 
+        ldp       @CL16,DP
+        ldfu      *+fp(67),f1           ; |652| 
+        pushf     f1                    ; |652| 
+        ldiu      @CL16,r0              ; |652| 
+        push      r2                    ; |652| 
+        callu     r0                    ; far call to _sprintf	; |652| 
+                                        ; |652| Far Call Occurs
+        subi      3,sp                  ; |652| 
 	.line	118
 ;----------------------------------------------------------------------
-; 686 | MENU_INIT();                                                           
+; 686 | LCD_PAGE();                                                            
 ;----------------------------------------------------------------------
-        ldp       @CL399,DP
-        ldiu      @CL399,r0             ; |686| 
-        callu     r0                    ; far call to _MENU_INIT	; |686| 
+        ldp       @CL398,DP
+        ldiu      @CL398,r0             ; |686| 
+        callu     r0                    ; far call to _LCD_PAGE	; |686| 
                                         ; |686| Far Call Occurs
 	.line	119
 ;----------------------------------------------------------------------
-; 687 | Initialize_Variables();                                                
-; 689 | #ifndef RUSS_TRANSLATION_ENABLED                                       
-; 690 | switch (ANALYZER_MODE.val)                                             
+; 687 | MENU_INIT();                                                           
+;----------------------------------------------------------------------
+        ldp       @CL399,DP
+        ldiu      @CL399,r0             ; |687| 
+        callu     r0                    ; far call to _MENU_INIT	; |687| 
+                                        ; |687| Far Call Occurs
+	.line	120
+;----------------------------------------------------------------------
+; 688 | Initialize_Variables();                                                
+; 690 | #ifndef RUSS_TRANSLATION_ENABLED                                       
+; 691 | switch (ANALYZER_MODE.val)                                             
 ;----------------------------------------------------------------------
         ldp       @CL400,DP
-        ldiu      @CL400,r0             ; |687| 
-        callu     r0                    ; far call to _Initialize_Variables	; |687| 
-                                        ; |687| Far Call Occurs
+        ldiu      @CL400,r0             ; |688| 
+        callu     r0                    ; far call to _Initialize_Variables	; |688| 
+                                        ; |688| Far Call Occurs
         bu        L82                   ; |568| 
 ;*      Branch Occurs to L82            ; |568| 
 L75:        
-	.line	124
+	.line	125
 ;----------------------------------------------------------------------
-; 692 | case SUB_LOW:           sprintf(LCD_DISPLAY[1]," Low Range Analyzer ");
+; 693 | case SUB_LOW:           sprintf(LCD_DISPLAY[1]," Low Range Analyzer ");
 ;     |  break;                                                                
 ;----------------------------------------------------------------------
         ldp       @CL401,DP
-        ldiu      @CL401,r1             ; |692| 
-        ldp       @CL392,DP
-        ldiu      @CL392,ar2            ; |692| 
-        ldp       @CL16,DP
-        push      r1                    ; |692| 
-        ldiu      @CL16,r0              ; |692| 
-        callu     r0                    ; far call to _sprintf	; |692| 
-                                        ; |692| Far Call Occurs
-        subi      1,sp                  ; |692| 
-        bu        L88                   ; |692| 
-;*      Branch Occurs to L88            ; |692| 
-L76:        
-	.line	125
-;----------------------------------------------------------------------
-; 693 | case SUB_MID:           sprintf(LCD_DISPLAY[1]," Mid Range Analyzer ");
-;     |  break;                                                                
-;----------------------------------------------------------------------
-        ldp       @CL402,DP
-        ldiu      @CL402,r1             ; |693| 
+        ldiu      @CL401,r1             ; |693| 
         ldp       @CL392,DP
         ldiu      @CL392,ar2            ; |693| 
         ldp       @CL16,DP
@@ -5047,14 +5029,14 @@ L76:
         subi      1,sp                  ; |693| 
         bu        L88                   ; |693| 
 ;*      Branch Occurs to L88            ; |693| 
-L77:        
+L76:        
 	.line	126
 ;----------------------------------------------------------------------
-; 694 | case SUB_HIGH:          sprintf(LCD_DISPLAY[1],"High Range Analyzer ");
+; 694 | case SUB_MID:           sprintf(LCD_DISPLAY[1]," Mid Range Analyzer ");
 ;     |  break;                                                                
 ;----------------------------------------------------------------------
-        ldp       @CL403,DP
-        ldiu      @CL403,r1             ; |694| 
+        ldp       @CL402,DP
+        ldiu      @CL402,r1             ; |694| 
         ldp       @CL392,DP
         ldiu      @CL392,ar2            ; |694| 
         ldp       @CL16,DP
@@ -5065,14 +5047,14 @@ L77:
         subi      1,sp                  ; |694| 
         bu        L88                   ; |694| 
 ;*      Branch Occurs to L88            ; |694| 
-L78:        
+L77:        
 	.line	127
 ;----------------------------------------------------------------------
-; 695 | case SUB_FULL:          sprintf(LCD_DISPLAY[1],"Full Range Analyzer ");
+; 695 | case SUB_HIGH:          sprintf(LCD_DISPLAY[1],"High Range Analyzer ");
 ;     |  break;                                                                
 ;----------------------------------------------------------------------
-        ldp       @CL404,DP
-        ldiu      @CL404,r1             ; |695| 
+        ldp       @CL403,DP
+        ldiu      @CL403,r1             ; |695| 
         ldp       @CL392,DP
         ldiu      @CL392,ar2            ; |695| 
         ldp       @CL16,DP
@@ -5083,14 +5065,14 @@ L78:
         subi      1,sp                  ; |695| 
         bu        L88                   ; |695| 
 ;*      Branch Occurs to L88            ; |695| 
-L79:        
+L78:        
 	.line	128
 ;----------------------------------------------------------------------
-; 696 | case SUB_CCM:           sprintf(LCD_DISPLAY[1],"  CCM Application   ");
+; 696 | case SUB_FULL:          sprintf(LCD_DISPLAY[1],"Full Range Analyzer ");
 ;     |  break;                                                                
 ;----------------------------------------------------------------------
-        ldp       @CL405,DP
-        ldiu      @CL405,r1             ; |696| 
+        ldp       @CL404,DP
+        ldiu      @CL404,r1             ; |696| 
         ldp       @CL392,DP
         ldiu      @CL392,ar2            ; |696| 
         ldp       @CL16,DP
@@ -5101,14 +5083,14 @@ L79:
         subi      1,sp                  ; |696| 
         bu        L88                   ; |696| 
 ;*      Branch Occurs to L88            ; |696| 
-L80:        
+L79:        
 	.line	129
 ;----------------------------------------------------------------------
-; 697 | case SUB_ANALYZER:      sprintf(LCD_DISPLAY[1],"      Analyzer      ");
+; 697 | case SUB_CCM:           sprintf(LCD_DISPLAY[1],"  CCM Application   ");
 ;     |  break;                                                                
 ;----------------------------------------------------------------------
-        ldp       @CL406,DP
-        ldiu      @CL406,r1             ; |697| 
+        ldp       @CL405,DP
+        ldiu      @CL405,r1             ; |697| 
         ldp       @CL392,DP
         ldiu      @CL392,ar2            ; |697| 
         ldp       @CL16,DP
@@ -5119,455 +5101,457 @@ L80:
         subi      1,sp                  ; |697| 
         bu        L88                   ; |697| 
 ;*      Branch Occurs to L88            ; |697| 
+L80:        
 	.line	130
 ;----------------------------------------------------------------------
-; 698 | default: break;                                                        
-; 700 | #else                                                                  
-; 701 | if(RUSS)                                                               
-; 703 | switch (ANALYZER_MODE.val)                                             
-; 705 |         case SUB_LOW:                                                  
-; 706 |                 sprintf(code_line,"48B8B72EE0B861BE2E42BB61B46FBC6570")
+; 698 | case SUB_ANALYZER:      sprintf(LCD_DISPLAY[1],"      Analyzer      ");
+;     |  break;                                                                
+;----------------------------------------------------------------------
+        ldp       @CL406,DP
+        ldiu      @CL406,r1             ; |698| 
+        ldp       @CL392,DP
+        ldiu      @CL392,ar2            ; |698| 
+        ldp       @CL16,DP
+        push      r1                    ; |698| 
+        ldiu      @CL16,r0              ; |698| 
+        callu     r0                    ; far call to _sprintf	; |698| 
+                                        ; |698| Far Call Occurs
+        subi      1,sp                  ; |698| 
+        bu        L88                   ; |698| 
+;*      Branch Occurs to L88            ; |698| 
+	.line	131
+;----------------------------------------------------------------------
+; 699 | default: break;                                                        
+; 701 | #else                                                                  
+; 702 | if(RUSS)                                                               
+; 704 | switch (ANALYZER_MODE.val)                                             
+; 706 |         case SUB_LOW:                                                  
+; 707 |                 sprintf(code_line,"48B8B72EE0B861BE2E42BB61B46FBC6570")
 ;     | ; //R380                                                               
-; 707 |                 Make_Russian_Line(code_line, out_str);                 
-; 708 |                 sprintf(LCD_DISPLAY[1],"%s",out_str);                  
-; 709 |                 break;                                                 
-; 710 |         case SUB_MID:                                                  
-; 711 |                 sprintf(code_line,"4370E32EE0B861BE2E42BB61B46FBC6570")
+; 708 |                 Make_Russian_Line(code_line, out_str);                 
+; 709 |                 sprintf(LCD_DISPLAY[1],"%s",out_str);                  
+; 710 |                 break;                                                 
+; 711 |         case SUB_MID:                                                  
+; 712 |                 sprintf(code_line,"4370E32EE0B861BE2E42BB61B46FBC6570")
 ;     | ; //R381                                                               
-; 712 |                 Make_Russian_Line(code_line, out_str);                 
-; 713 |                 sprintf(LCD_DISPLAY[1],"%s",out_str);                  
-; 714 |                 break;                                                 
-; 715 |         case SUB_HIGH:                                                 
-; 716 |                 sprintf(code_line,"426570782EE0B861BE2E42BB61B46FBC6570
+; 713 |                 Make_Russian_Line(code_line, out_str);                 
+; 714 |                 sprintf(LCD_DISPLAY[1],"%s",out_str);                  
+; 715 |                 break;                                                 
+; 716 |         case SUB_HIGH:                                                 
+; 717 |                 sprintf(code_line,"426570782EE0B861BE2E42BB61B46FBC6570
 ;     | "); //R376                                                             
-; 717 |                 Make_Russian_Line(code_line, out_str);                 
-; 718 |                 sprintf(LCD_DISPLAY[1],"%s",out_str);                  
-; 719 |                 break;                                                 
-; 720 |         case SUB_FULL:                                                 
-; 721 |                 sprintf(code_line,"A86FBBBD2EE0B861BE2E42BB61B46FBC6570
+; 718 |                 Make_Russian_Line(code_line, out_str);                 
+; 719 |                 sprintf(LCD_DISPLAY[1],"%s",out_str);                  
+; 720 |                 break;                                                 
+; 721 |         case SUB_FULL:                                                 
+; 722 |                 sprintf(code_line,"A86FBBBD2EE0B861BE2E42BB61B46FBC6570
 ;     | "); //R374                                                             
-; 722 |                 Make_Russian_Line(code_line, out_str);                 
-; 723 |                 sprintf(LCD_DISPLAY[1],"%s",out_str);                  
-; 724 |                 break;                                                 
-; 725 |         default: break;                                                
-; 727 | else                                                                   
-; 729 | case SUB_LOW:           sprintf(LCD_DISPLAY[1]," Low Range Analyzer ");
+; 723 |                 Make_Russian_Line(code_line, out_str);                 
+; 724 |                 sprintf(LCD_DISPLAY[1],"%s",out_str);                  
+; 725 |                 break;                                                 
+; 726 |         default: break;                                                
+; 728 | else                                                                   
+; 730 | case SUB_LOW:           sprintf(LCD_DISPLAY[1]," Low Range Analyzer ");
 ;     |  break;                                                                
-; 730 | case SUB_MID:           sprintf(LCD_DISPLAY[1]," Mid Range Analyzer ");
+; 731 | case SUB_MID:           sprintf(LCD_DISPLAY[1]," Mid Range Analyzer ");
 ;     |  break;                                                                
-; 731 | case SUB_HIGH:          sprintf(LCD_DISPLAY[1],"High Range Analyzer ");
+; 732 | case SUB_HIGH:          sprintf(LCD_DISPLAY[1],"High Range Analyzer ");
 ;     |  break;                                                                
-; 732 | case SUB_FULL:          sprintf(LCD_DISPLAY[1],"Full Range Analyzer ");
+; 733 | case SUB_FULL:          sprintf(LCD_DISPLAY[1],"Full Range Analyzer ");
 ;     |  break;                                                                
-; 733 | case SUB_CCM:           sprintf(LCD_DISPLAY[1],"  CCM Application   ");
+; 734 | case SUB_CCM:           sprintf(LCD_DISPLAY[1],"  CCM Application   ");
 ;     |  break;                                                                
-; 734 | case SUB_ANALYZER:      sprintf(LCD_DISPLAY[1],"      Analyzer      ");
+; 735 | case SUB_ANALYZER:      sprintf(LCD_DISPLAY[1],"      Analyzer      ");
 ;     |  break;                                                                
-; 735 | default: break;                                                        
-; 737 | #endif                                                                 
+; 736 | default: break;                                                        
+; 738 | #endif                                                                 
 ;----------------------------------------------------------------------
 L82:        
-	.line	122
+	.line	123
         ldp       @CL99,DP
-        ldiu      @CL99,ar0             ; |690| 
-        ldiu      *ar0,r0               ; |690| 
-        cmpi      0,r0                  ; |690| 
-        beq       L75                   ; |690| 
-;*      Branch Occurs to L75            ; |690| 
-        cmpi      1,r0                  ; |690| 
-        beq       L78                   ; |690| 
-;*      Branch Occurs to L78            ; |690| 
-        cmpi      2,r0                  ; |690| 
-        beq       L80                   ; |690| 
-;*      Branch Occurs to L80            ; |690| 
-        cmpi      3,r0                  ; |690| 
-        beq       L76                   ; |690| 
-;*      Branch Occurs to L76            ; |690| 
-        cmpi      4,r0                  ; |690| 
-        beq       L77                   ; |690| 
-;*      Branch Occurs to L77            ; |690| 
-        cmpi      6,r0                  ; |690| 
-        beq       L79                   ; |690| 
-;*      Branch Occurs to L79            ; |690| 
+        ldiu      @CL99,ar0             ; |691| 
+        ldiu      *ar0,r0               ; |691| 
+        cmpi      0,r0                  ; |691| 
+        beq       L75                   ; |691| 
+;*      Branch Occurs to L75            ; |691| 
+        cmpi      1,r0                  ; |691| 
+        beq       L78                   ; |691| 
+;*      Branch Occurs to L78            ; |691| 
+        cmpi      2,r0                  ; |691| 
+        beq       L80                   ; |691| 
+;*      Branch Occurs to L80            ; |691| 
+        cmpi      3,r0                  ; |691| 
+        beq       L76                   ; |691| 
+;*      Branch Occurs to L76            ; |691| 
+        cmpi      4,r0                  ; |691| 
+        beq       L77                   ; |691| 
+;*      Branch Occurs to L77            ; |691| 
+        cmpi      6,r0                  ; |691| 
+        beq       L79                   ; |691| 
+;*      Branch Occurs to L79            ; |691| 
 L88:        
-	.line	171
-;----------------------------------------------------------------------
-; 739 | LCD_PAGE();                                                            
-;----------------------------------------------------------------------
-        ldp       @CL398,DP
-        ldiu      @CL398,r0             ; |739| 
-        callu     r0                    ; far call to _LCD_PAGE	; |739| 
-                                        ; |739| Far Call Occurs
 	.line	172
 ;----------------------------------------------------------------------
-; 740 | RTC_setup();                                                           
+; 740 | LCD_PAGE();                                                            
 ;----------------------------------------------------------------------
-        ldp       @CL407,DP
-        ldiu      @CL407,r0             ; |740| 
-        callu     r0                    ; far call to _RTC_setup	; |740| 
+        ldp       @CL398,DP
+        ldiu      @CL398,r0             ; |740| 
+        callu     r0                    ; far call to _LCD_PAGE	; |740| 
                                         ; |740| Far Call Occurs
 	.line	173
 ;----------------------------------------------------------------------
-; 741 | Setup_Timer(0, 11.0/(2.0*115200.0));                                   
+; 741 | RTC_setup();                                                           
 ;----------------------------------------------------------------------
-        ldp       @CL408,DP
-        ldfu      @CL408,f2             ; |741| 
-        ldp       @CL409,DP
-        ldiu      0,ar2                 ; |741| 
-        ldiu      @CL409,r0             ; |741| 
-        callu     r0                    ; far call to _Setup_Timer	; |741| 
+        ldp       @CL407,DP
+        ldiu      @CL407,r0             ; |741| 
+        callu     r0                    ; far call to _RTC_setup	; |741| 
                                         ; |741| Far Call Occurs
 	.line	174
 ;----------------------------------------------------------------------
-; 742 | Setup_Timer(1, 0);                                                     
+; 742 | Setup_Timer(0, 11.0/(2.0*115200.0));                                   
 ;----------------------------------------------------------------------
+        ldp       @CL408,DP
+        ldfu      @CL408,f2             ; |742| 
         ldp       @CL409,DP
-        ldiu      1,ar2                 ; |742| 
+        ldiu      0,ar2                 ; |742| 
         ldiu      @CL409,r0             ; |742| 
-        ldfu      0.0000000000e+00,f2   ; |742| 
         callu     r0                    ; far call to _Setup_Timer	; |742| 
                                         ; |742| Far Call Occurs
 	.line	175
 ;----------------------------------------------------------------------
-; 743 | VAR_DAMP_Init(0);                                                      
+; 743 | Setup_Timer(1, 0);                                                     
 ;----------------------------------------------------------------------
-        ldp       @CL410,DP
-        ldiu      @CL410,r0             ; |743| 
-        ldiu      0,ar2                 ; |743| 
-        callu     r0                    ; far call to _VAR_DAMP_Init	; |743| 
+        ldp       @CL409,DP
+        ldiu      1,ar2                 ; |743| 
+        ldiu      @CL409,r0             ; |743| 
+        ldfu      0.0000000000e+00,f2   ; |743| 
+        callu     r0                    ; far call to _Setup_Timer	; |743| 
                                         ; |743| Far Call Occurs
 	.line	176
 ;----------------------------------------------------------------------
-; 744 | Initialize_Periodic_Events();                                          
+; 744 | VAR_DAMP_Init(0);                                                      
 ;----------------------------------------------------------------------
-        ldp       @CL411,DP
-        ldiu      @CL411,r0             ; |744| 
-        callu     r0                    ; far call to _Initialize_Periodic_Events	; |744| 
+        ldp       @CL410,DP
+        ldiu      @CL410,r0             ; |744| 
+        ldiu      0,ar2                 ; |744| 
+        callu     r0                    ; far call to _VAR_DAMP_Init	; |744| 
                                         ; |744| Far Call Occurs
 	.line	177
 ;----------------------------------------------------------------------
-; 745 | Setup_Serial_Port0();                                                  
+; 745 | Initialize_Periodic_Events();                                          
+;----------------------------------------------------------------------
+        ldp       @CL411,DP
+        ldiu      @CL411,r0             ; |745| 
+        callu     r0                    ; far call to _Initialize_Periodic_Events	; |745| 
+                                        ; |745| Far Call Occurs
+	.line	178
+;----------------------------------------------------------------------
+; 746 | Setup_Serial_Port0();                                                  
 ;----------------------------------------------------------------------
         ldp       @CL412,DP
-        ldiu      @CL412,r0             ; |745| 
-        callu     r0                    ; far call to _Setup_Serial_Port0	; |745| 
-                                        ; |745| Far Call Occurs
-	.line	179
-;----------------------------------------------------------------------
-; 747 | for (i=0;i<ADC_MAX;i++)                                                
-;----------------------------------------------------------------------
-        ldiu      0,r0                  ; |747| 
-        sti       r0,*+fp(1)            ; |747| 
-        cmpi      12,r0                 ; |747| 
-        bhs       L90                   ; |747| 
-;*      Branch Occurs to L90            ; |747| 
-L89:        
+        ldiu      @CL412,r0             ; |746| 
+        callu     r0                    ; far call to _Setup_Serial_Port0	; |746| 
+                                        ; |746| Far Call Occurs
 	.line	180
 ;----------------------------------------------------------------------
-; 748 | Setup_ADC(i);                                                          
+; 748 | for (i=0;i<ADC_MAX;i++)                                                
+;----------------------------------------------------------------------
+        ldiu      0,r0                  ; |748| 
+        sti       r0,*+fp(1)            ; |748| 
+        cmpi      12,r0                 ; |748| 
+        bhs       L90                   ; |748| 
+;*      Branch Occurs to L90            ; |748| 
+L89:        
+	.line	181
+;----------------------------------------------------------------------
+; 749 | Setup_ADC(i);                                                          
 ;----------------------------------------------------------------------
         ldp       @CL413,DP
-        ldiu      *+fp(1),ar2           ; |748| 
-        ldiu      @CL413,r0             ; |748| 
-        callu     r0                    ; far call to _Setup_ADC	; |748| 
-                                        ; |748| Far Call Occurs
-	.line	179
-        ldiu      1,r0                  ; |747| 
-        addi      *+fp(1),r0            ; |747| Unsigned
-        sti       r0,*+fp(1)            ; |747| 
-        cmpi      12,r0                 ; |747| 
-        blo       L89                   ; |747| 
-;*      Branch Occurs to L89            ; |747| 
+        ldiu      *+fp(1),ar2           ; |749| 
+        ldiu      @CL413,r0             ; |749| 
+        callu     r0                    ; far call to _Setup_ADC	; |749| 
+                                        ; |749| Far Call Occurs
+	.line	180
+        ldiu      1,r0                  ; |748| 
+        addi      *+fp(1),r0            ; |748| Unsigned
+        sti       r0,*+fp(1)            ; |748| 
+        cmpi      12,r0                 ; |748| 
+        blo       L89                   ; |748| 
+;*      Branch Occurs to L89            ; |748| 
 L90:        
-	.line	182
-;----------------------------------------------------------------------
-; 750 | for (i=0;i<DAC_MAX;i++)                                                
-;----------------------------------------------------------------------
-        ldiu      0,r0                  ; |750| 
-        sti       r0,*+fp(1)            ; |750| 
-        cmpi      12,r0                 ; |750| 
-        bhs       L92                   ; |750| 
-;*      Branch Occurs to L92            ; |750| 
-L91:        
 	.line	183
 ;----------------------------------------------------------------------
-; 751 | Setup_DAC(i);                                                          
+; 751 | for (i=0;i<DAC_MAX;i++)                                                
+;----------------------------------------------------------------------
+        ldiu      0,r0                  ; |751| 
+        sti       r0,*+fp(1)            ; |751| 
+        cmpi      12,r0                 ; |751| 
+        bhs       L92                   ; |751| 
+;*      Branch Occurs to L92            ; |751| 
+L91:        
+	.line	184
+;----------------------------------------------------------------------
+; 752 | Setup_DAC(i);                                                          
 ;----------------------------------------------------------------------
         ldp       @CL414,DP
-        ldiu      *+fp(1),ar2           ; |751| 
-        ldiu      @CL414,r0             ; |751| 
-        callu     r0                    ; far call to _Setup_DAC	; |751| 
-                                        ; |751| Far Call Occurs
-	.line	182
-        ldiu      1,r0                  ; |750| 
-        addi      *+fp(1),r0            ; |750| Unsigned
-        sti       r0,*+fp(1)            ; |750| 
-        cmpi      12,r0                 ; |750| 
-        blo       L91                   ; |750| 
-;*      Branch Occurs to L91            ; |750| 
+        ldiu      *+fp(1),ar2           ; |752| 
+        ldiu      @CL414,r0             ; |752| 
+        callu     r0                    ; far call to _Setup_DAC	; |752| 
+                                        ; |752| Far Call Occurs
+	.line	183
+        ldiu      1,r0                  ; |751| 
+        addi      *+fp(1),r0            ; |751| Unsigned
+        sti       r0,*+fp(1)            ; |751| 
+        cmpi      12,r0                 ; |751| 
+        blo       L91                   ; |751| 
+;*      Branch Occurs to L91            ; |751| 
 L92:        
-	.line	185
-;----------------------------------------------------------------------
-; 753 | if ((REG_TEMPERATURE_EXTERNAL.unit & 0xFF) == u_temp_C)                
-;----------------------------------------------------------------------
-        ldp       @CL415,DP
-        ldiu      @CL415,ar0            ; |753| 
-        ldiu      255,r0                ; |753| 
-        and3      r0,*ar0,r0            ; |753| 
-        cmpi      32,r0                 ; |753| 
-        bne       L94                   ; |753| 
-;*      Branch Occurs to L94            ; |753| 
 	.line	186
 ;----------------------------------------------------------------------
-; 754 | DIO_TEMP_C.val = TRUE;                                                 
-; 755 | else                                                                   
+; 754 | if ((REG_TEMPERATURE_EXTERNAL.unit & 0xFF) == u_temp_C)                
+;----------------------------------------------------------------------
+        ldp       @CL415,DP
+        ldiu      @CL415,ar0            ; |754| 
+        ldiu      255,r0                ; |754| 
+        and3      r0,*ar0,r0            ; |754| 
+        cmpi      32,r0                 ; |754| 
+        bne       L94                   ; |754| 
+;*      Branch Occurs to L94            ; |754| 
+	.line	187
+;----------------------------------------------------------------------
+; 755 | DIO_TEMP_C.val = TRUE;                                                 
+; 756 | else                                                                   
 ;----------------------------------------------------------------------
         ldp       @CL416,DP
-        ldiu      @CL416,ar0            ; |754| 
-        ldiu      1,r0                  ; |754| 
-        sti       r0,*ar0               ; |754| 
+        ldiu      @CL416,ar0            ; |755| 
+        ldiu      1,r0                  ; |755| 
+        sti       r0,*ar0               ; |755| 
         bu        L95                   ; |568| 
 ;*      Branch Occurs to L95            ; |568| 
 L94:        
-	.line	188
+	.line	189
 ;----------------------------------------------------------------------
-; 756 | DIO_TEMP_C.val = FALSE;                                                
+; 757 | DIO_TEMP_C.val = FALSE;                                                
 ;----------------------------------------------------------------------
         ldp       @CL416,DP
-        ldiu      @CL416,ar0            ; |756| 
-        ldiu      0,r0                  ; |756| 
-        sti       r0,*ar0               ; |756| 
+        ldiu      @CL416,ar0            ; |757| 
+        ldiu      0,r0                  ; |757| 
+        sti       r0,*ar0               ; |757| 
 L95:        
-	.line	190
-;----------------------------------------------------------------------
-; 758 | if (DIO_BUILT_IN_TEST_ENABLE.val)                                      
-;----------------------------------------------------------------------
-        ldp       @CL417,DP
-        ldiu      @CL417,ar0            ; |758| 
-        ldiu      *ar0,r0               ; |758| 
-        cmpi      0,r0                  ; |758| 
-        beq       L97                   ; |758| 
-;*      Branch Occurs to L97            ; |758| 
 	.line	191
 ;----------------------------------------------------------------------
-; 759 | Self_Test_FULL();                                                      
+; 759 | if (DIO_BUILT_IN_TEST_ENABLE.val)                                      
+;----------------------------------------------------------------------
+        ldp       @CL417,DP
+        ldiu      @CL417,ar0            ; |759| 
+        ldiu      *ar0,r0               ; |759| 
+        cmpi      0,r0                  ; |759| 
+        beq       L97                   ; |759| 
+;*      Branch Occurs to L97            ; |759| 
+	.line	192
+;----------------------------------------------------------------------
+; 760 | Self_Test_FULL();                                                      
 ;----------------------------------------------------------------------
         ldp       @CL418,DP
-        ldiu      @CL418,r0             ; |759| 
-        callu     r0                    ; far call to _Self_Test_FULL	; |759| 
-                                        ; |759| Far Call Occurs
+        ldiu      @CL418,r0             ; |760| 
+        callu     r0                    ; far call to _Self_Test_FULL	; |760| 
+                                        ; |760| Far Call Occurs
 L97:        
-	.line	194
+	.line	195
 ;----------------------------------------------------------------------
-; 762 | ENABLE_EXTINT1;                                                        
+; 763 | ENABLE_EXTINT1;                                                        
 ;----------------------------------------------------------------------
 	push	ST			
 	andn	2000h, ST	
         ldp       @CL379,DP
-        ldiu      @CL379,ar0            ; |762| 
-        ldiu      2,r0                  ; |762| 
-        or3       r0,*ar0,r0            ; |762| 
-        sti       r0,*ar0               ; |762| 
+        ldiu      @CL379,ar0            ; |763| 
+        ldiu      2,r0                  ; |763| 
+        or3       r0,*ar0,r0            ; |763| 
+        sti       r0,*ar0               ; |763| 
 	pop		ST			
-	.line	195
-;----------------------------------------------------------------------
-; 763 | ENABLE_INT1;                                                           
-;----------------------------------------------------------------------
-	or		0002h, IE
 	.line	196
 ;----------------------------------------------------------------------
-; 764 | CLEAR_INT1;                                                            
+; 764 | ENABLE_INT1;                                                           
+;----------------------------------------------------------------------
+	or		0002h, IE
+	.line	197
+;----------------------------------------------------------------------
+; 765 | CLEAR_INT1;                                                            
 ;----------------------------------------------------------------------
 	andn	0002h, IF
-	.line	199
+	.line	200
 ;----------------------------------------------------------------------
-; 767 | ENABLE_IRDA; //enable IrDA (USB)                                       
+; 768 | ENABLE_IRDA; //enable IrDA (USB)                                       
 ;----------------------------------------------------------------------
 	push	ST			
 	andn	2000h, ST	
         ldp       @CL5,DP
-        ldiu      @CL5,ar0              ; |767| 
-        ldiu      16,r0                 ; |767| 
-        or3       r0,*ar0,r0            ; |767| 
-        sti       r0,*ar0               ; |767| 
+        ldiu      @CL5,ar0              ; |768| 
+        ldiu      16,r0                 ; |768| 
+        or3       r0,*ar0,r0            ; |768| 
+        sti       r0,*ar0               ; |768| 
 	pop		ST			
-	.line	201
+	.line	202
 ;----------------------------------------------------------------------
-; 769 | if (LOG_STATUS == ALFAT_CONTINUE_LOG)                                  
+; 770 | if (LOG_STATUS == ALFAT_CONTINUE_LOG)                                  
 ;----------------------------------------------------------------------
         ldp       @CL419,DP
-        ldiu      @CL419,ar0            ; |769| 
-        ldiu      *ar0,r0               ; |769| 
-        cmpi      82,r0                 ; |769| 
-        bne       L99                   ; |769| 
-;*      Branch Occurs to L99            ; |769| 
-	.line	203
+        ldiu      @CL419,ar0            ; |770| 
+        ldiu      *ar0,r0               ; |770| 
+        cmpi      82,r0                 ; |770| 
+        bne       L99                   ; |770| 
+;*      Branch Occurs to L99            ; |770| 
+	.line	204
 ;----------------------------------------------------------------------
-; 771 | Timer_Insert(&TMR_ALFAT_LOG,0,TMR_action_replace);                     
+; 772 | Timer_Insert(&TMR_ALFAT_LOG,0,TMR_action_replace);                     
 ;----------------------------------------------------------------------
         ldp       @CL421,DP
-        ldiu      @CL421,r0             ; |771| 
-        ldiu      1,r3                  ; |771| 
+        ldiu      @CL421,r0             ; |772| 
+        ldiu      1,r3                  ; |772| 
         ldp       @CL420,DP
-        ldiu      0,r2                  ; |771| 
-        ldiu      @CL420,ar2            ; |771| 
-        callu     r0                    ; far call to _Timer_Insert	; |771| 
-                                        ; |771| Far Call Occurs
+        ldiu      0,r2                  ; |772| 
+        ldiu      @CL420,ar2            ; |772| 
+        callu     r0                    ; far call to _Timer_Insert	; |772| 
+                                        ; |772| Far Call Occurs
 L99:        
-	.line	206
-;----------------------------------------------------------------------
-; 774 | Port_Defaults(FALSE);                                                  
-;----------------------------------------------------------------------
-        ldp       @CL422,DP
-        ldiu      0,ar2                 ; |774| 
-        ldiu      @CL422,r0             ; |774| 
-        callu     r0                    ; far call to _Port_Defaults	; |774| 
-                                        ; |774| Far Call Occurs
 	.line	207
 ;----------------------------------------------------------------------
-; 775 | Disable_Heater();                                                      
+; 775 | Port_Defaults(FALSE);                                                  
+;----------------------------------------------------------------------
+        ldp       @CL422,DP
+        ldiu      0,ar2                 ; |775| 
+        ldiu      @CL422,r0             ; |775| 
+        callu     r0                    ; far call to _Port_Defaults	; |775| 
+                                        ; |775| Far Call Occurs
+	.line	208
+;----------------------------------------------------------------------
+; 776 | Disable_Heater();                                                      
 ;----------------------------------------------------------------------
         ldp       @CL423,DP
-        ldiu      @CL423,r0             ; |775| 
-        callu     r0                    ; far call to _Disable_Heater	; |775| 
-                                        ; |775| Far Call Occurs
-	.line	210
-;----------------------------------------------------------------------
-; 778 | RESET_COUNTER++;                                                       
-;----------------------------------------------------------------------
-        ldp       @CL424,DP
-        ldiu      @CL424,ar0            ; |778| 
-        ldiu      1,r0                  ; |778| 
-        addi3     r0,*ar0,r0            ; |778| 
-        sti       r0,*ar0               ; |778| 
+        ldiu      @CL423,r0             ; |776| 
+        callu     r0                    ; far call to _Disable_Heater	; |776| 
+                                        ; |776| Far Call Occurs
 	.line	211
 ;----------------------------------------------------------------------
-; 779 | Write_CFG_USER();                                                      
+; 779 | RESET_COUNTER++;                                                       
+;----------------------------------------------------------------------
+        ldp       @CL424,DP
+        ldiu      @CL424,ar0            ; |779| 
+        ldiu      1,r0                  ; |779| 
+        addi3     r0,*ar0,r0            ; |779| 
+        sti       r0,*ar0               ; |779| 
+	.line	212
+;----------------------------------------------------------------------
+; 780 | Write_CFG_USER();                                                      
 ;----------------------------------------------------------------------
         ldp       @CL425,DP
-        ldiu      @CL425,r0             ; |779| 
-        callu     r0                    ; far call to _Write_CFG_USER	; |779| 
-                                        ; |779| Far Call Occurs
-	.line	214
-;----------------------------------------------------------------------
-; 782 | if (!DEMO)                                                             
-;----------------------------------------------------------------------
-        ldp       @CL426,DP
-        ldiu      @CL426,ar0            ; |782| 
-        ldiu      *ar0,r0               ; |782| 
-        cmpi      0,r0                  ; |782| 
-        bne       L101                  ; |782| 
-;*      Branch Occurs to L101           ; |782| 
+        ldiu      @CL425,r0             ; |780| 
+        callu     r0                    ; far call to _Write_CFG_USER	; |780| 
+                                        ; |780| Far Call Occurs
 	.line	215
 ;----------------------------------------------------------------------
-; 783 | Clear_Accumulators(0);                                                 
+; 783 | if (!DEMO)                                                             
+;----------------------------------------------------------------------
+        ldp       @CL426,DP
+        ldiu      @CL426,ar0            ; |783| 
+        ldiu      *ar0,r0               ; |783| 
+        cmpi      0,r0                  ; |783| 
+        bne       L101                  ; |783| 
+;*      Branch Occurs to L101           ; |783| 
+	.line	216
+;----------------------------------------------------------------------
+; 784 | Clear_Accumulators(0);                                                 
 ;----------------------------------------------------------------------
         ldp       @CL427,DP
-        ldiu      0,ar2                 ; |783| 
-        ldiu      @CL427,r0             ; |783| 
-        callu     r0                    ; far call to _Clear_Accumulators	; |783| 
-                                        ; |783| Far Call Occurs
+        ldiu      0,ar2                 ; |784| 
+        ldiu      @CL427,r0             ; |784| 
+        callu     r0                    ; far call to _Clear_Accumulators	; |784| 
+                                        ; |784| Far Call Occurs
 L101:        
-	.line	218
-;----------------------------------------------------------------------
-; 786 | VT_SELECT       = 0;                                                   
-;----------------------------------------------------------------------
-        ldp       @CL428,DP
-        ldiu      @CL428,ar0            ; |786| 
-        ldiu      0,r0                  ; |786| 
-        sti       r0,*ar0               ; |786| 
 	.line	219
 ;----------------------------------------------------------------------
-; 787 | OSWITCH         = 1;                                                   
+; 787 | VT_SELECT       = 0;                                                   
 ;----------------------------------------------------------------------
-        ldp       @CL429,DP
-        ldiu      @CL429,ar0            ; |787| 
-        ldiu      1,r0                  ; |787| 
+        ldp       @CL428,DP
+        ldiu      @CL428,ar0            ; |787| 
+        ldiu      0,r0                  ; |787| 
         sti       r0,*ar0               ; |787| 
 	.line	220
 ;----------------------------------------------------------------------
-; 788 | SELECT_LOAD_EXT;                                                       
+; 788 | OSWITCH         = 1;                                                   
+;----------------------------------------------------------------------
+        ldp       @CL429,DP
+        ldiu      @CL429,ar0            ; |788| 
+        ldiu      1,r0                  ; |788| 
+        sti       r0,*ar0               ; |788| 
+	.line	221
+;----------------------------------------------------------------------
+; 789 | SELECT_LOAD_EXT;                                                       
 ;----------------------------------------------------------------------
 	push	ST			
 	andn	2000h, ST	
         ldp       @CL430,DP
-        ldiu      @CL430,ar0            ; |788| 
-        or3       r0,*ar0,r0            ; |788| 
-        sti       r0,*ar0               ; |788| 
+        ldiu      @CL430,ar0            ; |789| 
+        or3       r0,*ar0,r0            ; |789| 
+        sti       r0,*ar0               ; |789| 
 	pop		ST			
-	.line	222
+	.line	223
 ;----------------------------------------------------------------------
-; 790 | if (EXTUNE)                                                            
+; 791 | if (EXTUNE)                                                            
 ;----------------------------------------------------------------------
         ldp       @CL431,DP
-        ldiu      @CL431,ar0            ; |790| 
-        ldiu      *ar0,r0               ; |790| 
-        cmpi      0,r0                  ; |790| 
-        beq       L103                  ; |790| 
-;*      Branch Occurs to L103           ; |790| 
-	.line	224
+        ldiu      @CL431,ar0            ; |791| 
+        ldiu      *ar0,r0               ; |791| 
+        cmpi      0,r0                  ; |791| 
+        beq       L103                  ; |791| 
+;*      Branch Occurs to L103           ; |791| 
+	.line	225
 ;----------------------------------------------------------------------
-; 792 | VAR_Update(&REG_DAC[DAC_VTUNE], REG_VTUNE_SET[VT_SELECT].calc_val, 0, 0
+; 793 | VAR_Update(&REG_DAC[DAC_VTUNE], REG_VTUNE_SET[VT_SELECT].calc_val, 0, 0
 ;     | );                                                                     
 ;----------------------------------------------------------------------
         ldp       @CL428,DP
-        ldiu      @CL428,ar0            ; |792| 
+        ldiu      @CL428,ar0            ; |793| 
         ldp       @CL432,DP
-        ldiu      44,r0                 ; |792| 
-        ldiu      @CL432,ar2            ; |792| 
-        mpyi3     r0,*ar0,ar0           ; |792| 
+        ldiu      44,r0                 ; |793| 
+        ldiu      @CL432,ar2            ; |793| 
+        mpyi3     r0,*ar0,ar0           ; |793| 
         ldp       @CL433,DP
-        ldiu      0,rc                  ; |792| 
-        addi      @CL433,ar0            ; |792| Unsigned
-        ldp       @CL67,DP
-        ldfu      *ar0,f2               ; |792| 40b float hi half
-        ldiu      @CL67,r0              ; |792| 
-        ldiu      *+ar0,r2              ; |792| 40b float lo half
-        ldiu      0,r3                  ; |792| 
-        callu     r0                    ; far call to _VAR_Update	; |792| 
-                                        ; |792| Far Call Occurs
-	.line	225
-;----------------------------------------------------------------------
-; 793 | VAR_Update(&REG_DAC[DAC_TUNESEL], 5.0, 0, 0);                          
-; 795 | else                                                                   
-;----------------------------------------------------------------------
-        ldp       @CL434,DP
-        ldiu      @CL434,ar2            ; |793| 
-        ldp       @CL67,DP
-        ldiu      @CL67,r0              ; |793| 
-        ldp       @CL435+0,DP
-        ldfu      @CL435+0,f2           ; |793| 40b float hi half
-        ldp       @CL435+1,DP
         ldiu      0,rc                  ; |793| 
-        ldiu      @CL435+1,r2           ; |793| 40b float lo half
+        addi      @CL433,ar0            ; |793| Unsigned
+        ldp       @CL67,DP
+        ldfu      *ar0,f2               ; |793| 40b float hi half
+        ldiu      @CL67,r0              ; |793| 
+        ldiu      *+ar0,r2              ; |793| 40b float lo half
         ldiu      0,r3                  ; |793| 
         callu     r0                    ; far call to _VAR_Update	; |793| 
                                         ; |793| Far Call Occurs
+	.line	226
+;----------------------------------------------------------------------
+; 794 | VAR_Update(&REG_DAC[DAC_TUNESEL], 5.0, 0, 0);                          
+; 796 | else                                                                   
+;----------------------------------------------------------------------
+        ldp       @CL434,DP
+        ldiu      @CL434,ar2            ; |794| 
+        ldp       @CL67,DP
+        ldiu      @CL67,r0              ; |794| 
+        ldp       @CL435+0,DP
+        ldfu      @CL435+0,f2           ; |794| 40b float hi half
+        ldp       @CL435+1,DP
+        ldiu      0,rc                  ; |794| 
+        ldiu      @CL435+1,r2           ; |794| 40b float lo half
+        ldiu      0,r3                  ; |794| 
+        callu     r0                    ; far call to _VAR_Update	; |794| 
+                                        ; |794| Far Call Occurs
         bu        L104                  ; |568| 
 ;*      Branch Occurs to L104           ; |568| 
 L103:        
-	.line	229
-;----------------------------------------------------------------------
-; 797 | VAR_Update(&REG_DAC[DAC_VTUNE], 0.0, 0, 0);                            
-;----------------------------------------------------------------------
-        ldp       @CL432,DP
-        ldiu      @CL432,ar2            ; |797| 
-        ldp       @CL67,DP
-        ldiu      @CL67,r0              ; |797| 
-        ldp       @CL80+0,DP
-        ldfu      @CL80+0,f2            ; |797| 40b float hi half
-        ldp       @CL80+1,DP
-        ldiu      0,rc                  ; |797| 
-        ldiu      @CL80+1,r2            ; |797| 40b float lo half
-        ldiu      0,r3                  ; |797| 
-        callu     r0                    ; far call to _VAR_Update	; |797| 
-                                        ; |797| Far Call Occurs
 	.line	230
 ;----------------------------------------------------------------------
-; 798 | VAR_Update(&REG_DAC[DAC_TUNESEL], 0.0, 0, 0);                          
+; 798 | VAR_Update(&REG_DAC[DAC_VTUNE], 0.0, 0, 0);                            
 ;----------------------------------------------------------------------
-        ldp       @CL434,DP
-        ldiu      @CL434,ar2            ; |798| 
+        ldp       @CL432,DP
+        ldiu      @CL432,ar2            ; |798| 
         ldp       @CL67,DP
         ldiu      @CL67,r0              ; |798| 
         ldp       @CL80+0,DP
@@ -5578,92 +5562,108 @@ L103:
         ldiu      0,r3                  ; |798| 
         callu     r0                    ; far call to _VAR_Update	; |798| 
                                         ; |798| Far Call Occurs
+	.line	231
+;----------------------------------------------------------------------
+; 799 | VAR_Update(&REG_DAC[DAC_TUNESEL], 0.0, 0, 0);                          
+;----------------------------------------------------------------------
+        ldp       @CL434,DP
+        ldiu      @CL434,ar2            ; |799| 
+        ldp       @CL67,DP
+        ldiu      @CL67,r0              ; |799| 
+        ldp       @CL80+0,DP
+        ldfu      @CL80+0,f2            ; |799| 40b float hi half
+        ldp       @CL80+1,DP
+        ldiu      0,rc                  ; |799| 
+        ldiu      @CL80+1,r2            ; |799| 40b float lo half
+        ldiu      0,r3                  ; |799| 
+        callu     r0                    ; far call to _VAR_Update	; |799| 
+                                        ; |799| Far Call Occurs
 L104:        
-	.line	233
-;----------------------------------------------------------------------
-; 801 | if (!SA)                                                               
-;----------------------------------------------------------------------
-        ldp       @CL374,DP
-        ldiu      @CL374,ar0            ; |801| 
-        ldiu      *ar0,r0               ; |801| 
-        cmpi      0,r0                  ; |801| 
-        bne       L106                  ; |801| 
-;*      Branch Occurs to L106           ; |801| 
 	.line	234
 ;----------------------------------------------------------------------
-; 802 | Write_DAC(DAC_TUNESEL);                                                
+; 802 | if (!SA)                                                               
+;----------------------------------------------------------------------
+        ldp       @CL374,DP
+        ldiu      @CL374,ar0            ; |802| 
+        ldiu      *ar0,r0               ; |802| 
+        cmpi      0,r0                  ; |802| 
+        bne       L106                  ; |802| 
+;*      Branch Occurs to L106           ; |802| 
+	.line	235
+;----------------------------------------------------------------------
+; 803 | Write_DAC(DAC_TUNESEL);                                                
 ;----------------------------------------------------------------------
         ldp       @CL436,DP
-        ldiu      11,ar2                ; |802| 
-        ldiu      @CL436,r0             ; |802| 
-        callu     r0                    ; far call to _Write_DAC	; |802| 
-                                        ; |802| Far Call Occurs
+        ldiu      11,ar2                ; |803| 
+        ldiu      @CL436,r0             ; |803| 
+        callu     r0                    ; far call to _Write_DAC	; |803| 
+                                        ; |803| Far Call Occurs
 L106:        
-	.line	236
-;----------------------------------------------------------------------
-; 804 | Write_DAC(DAC_VTUNE);                                                  
-;----------------------------------------------------------------------
-        ldp       @CL436,DP
-        ldiu      10,ar2                ; |804| 
-        ldiu      @CL436,r0             ; |804| 
-        callu     r0                    ; far call to _Write_DAC	; |804| 
-                                        ; |804| Far Call Occurs
 	.line	237
 ;----------------------------------------------------------------------
-; 805 | Set_Research_Mode();            /* start sampling */                   
+; 805 | Write_DAC(DAC_VTUNE);                                                  
+;----------------------------------------------------------------------
+        ldp       @CL436,DP
+        ldiu      10,ar2                ; |805| 
+        ldiu      @CL436,r0             ; |805| 
+        callu     r0                    ; far call to _Write_DAC	; |805| 
+                                        ; |805| Far Call Occurs
+	.line	238
+;----------------------------------------------------------------------
+; 806 | Set_Research_Mode();            /* start sampling */                   
 ;----------------------------------------------------------------------
         ldp       @CL437,DP
-        ldiu      @CL437,r0             ; |805| 
-        callu     r0                    ; far call to _Set_Research_Mode	; |805| 
-                                        ; |805| Far Call Occurs
-	.line	240
-;----------------------------------------------------------------------
-; 808 | if (MEM)                                                               
-;----------------------------------------------------------------------
-        ldp       @CL2,DP
-        ldiu      @CL2,ar0              ; |808| 
-        ldiu      *ar0,r0               ; |808| 
-        cmpi      0,r0                  ; |808| 
-        beq       L108                  ; |808| 
-;*      Branch Occurs to L108           ; |808| 
+        ldiu      @CL437,r0             ; |806| 
+        callu     r0                    ; far call to _Set_Research_Mode	; |806| 
+                                        ; |806| Far Call Occurs
 	.line	241
 ;----------------------------------------------------------------------
-; 809 | Debug();                                                               
+; 809 | if (MEM)                                                               
+;----------------------------------------------------------------------
+        ldp       @CL2,DP
+        ldiu      @CL2,ar0              ; |809| 
+        ldiu      *ar0,r0               ; |809| 
+        cmpi      0,r0                  ; |809| 
+        beq       L108                  ; |809| 
+;*      Branch Occurs to L108           ; |809| 
+	.line	242
+;----------------------------------------------------------------------
+; 810 | Debug();                                                               
 ;----------------------------------------------------------------------
         ldp       @CL438,DP
-        ldiu      @CL438,r0             ; |809| 
-        callu     r0                    ; far call to _Debug	; |809| 
-                                        ; |809| Far Call Occurs
+        ldiu      @CL438,r0             ; |810| 
+        callu     r0                    ; far call to _Debug	; |810| 
+                                        ; |810| Far Call Occurs
 L108:        
-	.line	243
+	.line	244
 ;----------------------------------------------------------------------
-; 811 | ENABLE_WDOG;                                                           
+; 812 | ENABLE_WDOG;                                                           
 ;----------------------------------------------------------------------
 	push	ST			
 	andn	2000h, ST	
         ldp       @CL5,DP
-        ldiu      @CL5,ar0              ; |811| 
-        ldiu      8,r0                  ; |811| 
-        or3       r0,*ar0,r0            ; |811| 
-        sti       r0,*ar0               ; |811| 
-        ldiu      128,r0                ; |811| 
-        or3       r0,*ar0,r0            ; |811| 
-        sti       r0,*ar0               ; |811| 
-	pop		ST			
-	.line	244
-;----------------------------------------------------------------------
-; 812 | INITIALIZING = FALSE;                                                  
-;----------------------------------------------------------------------
-        ldp       @CL380,DP
-        ldiu      @CL380,ar0            ; |812| 
-        ldiu      0,r0                  ; |812| 
+        ldiu      @CL5,ar0              ; |812| 
+        ldiu      8,r0                  ; |812| 
+        or3       r0,*ar0,r0            ; |812| 
         sti       r0,*ar0               ; |812| 
+        ldiu      128,r0                ; |812| 
+        or3       r0,*ar0,r0            ; |812| 
+        sti       r0,*ar0               ; |812| 
+	pop		ST			
 	.line	245
 ;----------------------------------------------------------------------
-; 813 | GIE;                                                                   
+; 813 | INITIALIZING = FALSE;                                                  
+;----------------------------------------------------------------------
+        ldp       @CL380,DP
+        ldiu      @CL380,ar0            ; |813| 
+        ldiu      0,r0                  ; |813| 
+        sti       r0,*ar0               ; |813| 
+	.line	246
+;----------------------------------------------------------------------
+; 814 | GIE;                                                                   
 ;----------------------------------------------------------------------
 	or		2000h, ST	
-	.line	246
+	.line	247
                                         ; Begin Epilog Code
         ldiu      *-fp(1),r1
         ldiu      *fp,fp
@@ -5671,14 +5671,14 @@ L108:
         subi      71,sp
         bu        r1
 ;*      Branch Occurs to r1 
-	.endfunc	814,000000000h,69
+	.endfunc	815,000000000h,69
 
 
 	.sect	 ".text"
 
 	.global	_Make_Russian_Line
 	.sym	_Make_Russian_Line,_Make_Russian_Line,32,2,0
-	.func	816
+	.func	817
 ;******************************************************************************
 ;* FUNCTION NAME: _Make_Russian_Line                                          *
 ;*                                                                            *
@@ -5702,152 +5702,152 @@ _Make_Russian_Line:
 	.sym	_c,6,50,1,96,,3
 	.line	1
 ;----------------------------------------------------------------------
-; 816 | void Make_Russian_Line(char code[], char out_str[])                    
+; 817 | void Make_Russian_Line(char code[], char out_str[])                    
 ;----------------------------------------------------------------------
         push      fp
         ldiu      sp,fp
         addi      8,sp
 	.line	2
 ;----------------------------------------------------------------------
-; 818 | int i;                                                                 
-; 819 | long int l_code_val;                                                   
-; 820 | unsigned char code_val;                                                
-; 821 | char c[3];                                                             
+; 819 | int i;                                                                 
+; 820 | long int l_code_val;                                                   
+; 821 | unsigned char code_val;                                                
+; 822 | char c[3];                                                             
 ;----------------------------------------------------------------------
-        sti       r2,*+fp(2)            ; |817| 
-        sti       ar2,*+fp(1)           ; |817| 
+        sti       r2,*+fp(2)            ; |818| 
+        sti       ar2,*+fp(1)           ; |818| 
 	.line	8
 ;----------------------------------------------------------------------
-; 823 | sprintf(out_str,"                    "); //clear string                
+; 824 | sprintf(out_str,"                    "); //clear string                
 ;----------------------------------------------------------------------
         ldp       @CL439,DP
-        ldiu      @CL439,r0             ; |823| 
+        ldiu      @CL439,r0             ; |824| 
         ldp       @CL16,DP
-        push      r0                    ; |823| 
-        ldiu      *+fp(2),ar2           ; |823| 
-        ldiu      @CL16,r0              ; |823| 
-        callu     r0                    ; far call to _sprintf	; |823| 
-                                        ; |823| Far Call Occurs
-        subi      1,sp                  ; |823| 
+        push      r0                    ; |824| 
+        ldiu      *+fp(2),ar2           ; |824| 
+        ldiu      @CL16,r0              ; |824| 
+        callu     r0                    ; far call to _sprintf	; |824| 
+                                        ; |824| Far Call Occurs
+        subi      1,sp                  ; |824| 
 	.line	10
 ;----------------------------------------------------------------------
-; 825 | c[2] = NULL;                                                           
+; 826 | c[2] = NULL;                                                           
 ;----------------------------------------------------------------------
-        ldiu      fp,ar0                ; |825| 
-        addi      8,ar0                 ; |825| 
-        ldiu      0,r0                  ; |825| 
-        sti       r0,*ar0               ; |825| 
+        ldiu      fp,ar0                ; |826| 
+        addi      8,ar0                 ; |826| 
+        ldiu      0,r0                  ; |826| 
+        sti       r0,*ar0               ; |826| 
 	.line	12
 ;----------------------------------------------------------------------
-; 827 | for(i=0;i<40;i=i+2) // LCD: 20-length line = 40-length character code  
+; 828 | for(i=0;i<40;i=i+2) // LCD: 20-length line = 40-length character code  
 ;----------------------------------------------------------------------
-        sti       r0,*+fp(3)            ; |827| 
-        cmpi      40,r0                 ; |827| 
-        bge       L116                  ; |827| 
-;*      Branch Occurs to L116           ; |827| 
+        sti       r0,*+fp(3)            ; |828| 
+        cmpi      40,r0                 ; |828| 
+        bge       L116                  ; |828| 
+;*      Branch Occurs to L116           ; |828| 
 L112:        
 	.line	14
 ;----------------------------------------------------------------------
-; 829 | c[0] = code[i];                                                        
-;----------------------------------------------------------------------
-        ldiu      fp,ar0                ; |829| 
-        ldiu      *+fp(1),ir0           ; |829| 
-        ldiu      *+fp(3),ar1           ; |829| 
-        addi      6,ar0                 ; |829| 
-        ldiu      *+ar1(ir0),r0         ; |829| 
-        sti       r0,*ar0               ; |829| 
-	.line	15
-;----------------------------------------------------------------------
-; 830 | if (c[0] == NULL) //end of string - null terminated                    
+; 830 | c[0] = code[i];                                                        
 ;----------------------------------------------------------------------
         ldiu      fp,ar0                ; |830| 
+        ldiu      *+fp(1),ir0           ; |830| 
+        ldiu      *+fp(3),ar1           ; |830| 
         addi      6,ar0                 ; |830| 
-        ldiu      *ar0,r0               ; |830| 
-        cmpi      0,r0                  ; |830| 
-        beq       L116                  ; |830| 
-;*      Branch Occurs to L116           ; |830| 
+        ldiu      *+ar1(ir0),r0         ; |830| 
+        sti       r0,*ar0               ; |830| 
+	.line	15
+;----------------------------------------------------------------------
+; 831 | if (c[0] == NULL) //end of string - null terminated                    
+;----------------------------------------------------------------------
+        ldiu      fp,ar0                ; |831| 
+        addi      6,ar0                 ; |831| 
+        ldiu      *ar0,r0               ; |831| 
+        cmpi      0,r0                  ; |831| 
+        beq       L116                  ; |831| 
+;*      Branch Occurs to L116           ; |831| 
 	.line	16
 ;----------------------------------------------------------------------
-; 831 | break;                                                                 
+; 832 | break;                                                                 
 ;----------------------------------------------------------------------
 	.line	18
 ;----------------------------------------------------------------------
-; 833 | c[1] = code[i+1];                                                      
+; 834 | c[1] = code[i+1];                                                      
 ;----------------------------------------------------------------------
-        ldiu      *+fp(3),ar1           ; |833| 
-        ldiu      fp,ar0                ; |833| 
-        addi      *+fp(1),ar1           ; |833| Unsigned
-        addi      7,ar0                 ; |833| 
-        ldiu      *+ar1(1),r0           ; |833| 
-        sti       r0,*ar0               ; |833| 
+        ldiu      *+fp(3),ar1           ; |834| 
+        ldiu      fp,ar0                ; |834| 
+        addi      *+fp(1),ar1           ; |834| Unsigned
+        addi      7,ar0                 ; |834| 
+        ldiu      *+ar1(1),r0           ; |834| 
+        sti       r0,*ar0               ; |834| 
 	.line	19
 ;----------------------------------------------------------------------
-; 834 | if (c[1] == NULL) //end of string - null terminated                    
+; 835 | if (c[1] == NULL) //end of string - null terminated                    
 ;----------------------------------------------------------------------
-        ldiu      fp,ar0                ; |834| 
-        addi      7,ar0                 ; |834| 
-        ldiu      *ar0,r0               ; |834| 
-        cmpi      0,r0                  ; |834| 
-        beq       L116                  ; |834| 
-;*      Branch Occurs to L116           ; |834| 
+        ldiu      fp,ar0                ; |835| 
+        addi      7,ar0                 ; |835| 
+        ldiu      *ar0,r0               ; |835| 
+        cmpi      0,r0                  ; |835| 
+        beq       L116                  ; |835| 
+;*      Branch Occurs to L116           ; |835| 
 	.line	20
 ;----------------------------------------------------------------------
-; 835 | break;                                                                 
+; 836 | break;                                                                 
 ;----------------------------------------------------------------------
 	.line	22
 ;----------------------------------------------------------------------
-; 837 | l_code_val = strtol(c,NULL,16); //read in 2-char string as 2-digit hex 
+; 838 | l_code_val = strtol(c,NULL,16); //read in 2-char string as 2-digit hex 
 ;----------------------------------------------------------------------
         ldp       @CL440,DP
-        ldiu      fp,ar2                ; |837| 
-        ldiu      16,r3                 ; |837| 
-        ldiu      0,r2                  ; |837| 
-        ldiu      @CL440,r0             ; |837| 
-        addi      6,ar2                 ; |837| 
-        callu     r0                    ; far call to _strtol	; |837| 
-                                        ; |837| Far Call Occurs
-        sti       r0,*+fp(4)            ; |837| 
+        ldiu      fp,ar2                ; |838| 
+        ldiu      16,r3                 ; |838| 
+        ldiu      0,r2                  ; |838| 
+        ldiu      @CL440,r0             ; |838| 
+        addi      6,ar2                 ; |838| 
+        callu     r0                    ; far call to _strtol	; |838| 
+                                        ; |838| Far Call Occurs
+        sti       r0,*+fp(4)            ; |838| 
 	.line	24
 ;----------------------------------------------------------------------
-; 839 | if (l_code_val > 0xFF) //error checking                                
+; 840 | if (l_code_val > 0xFF) //error checking                                
 ;----------------------------------------------------------------------
-        cmpi      255,r0                ; |839| 
-        bgt       L116                  ; |839| 
-;*      Branch Occurs to L116           ; |839| 
+        cmpi      255,r0                ; |840| 
+        bgt       L116                  ; |840| 
+;*      Branch Occurs to L116           ; |840| 
 	.line	25
 ;----------------------------------------------------------------------
-; 840 | break;                                                                 
+; 841 | break;                                                                 
 ;----------------------------------------------------------------------
 	.line	26
 ;----------------------------------------------------------------------
-; 841 | code_val = (unsigned char)l_code_val; //long char -> u_char            
+; 842 | code_val = (unsigned char)l_code_val; //long char -> u_char            
 ;----------------------------------------------------------------------
-        ldiu      *+fp(4),r0            ; |841| 
-        sti       r0,*+fp(5)            ; |841| 
+        ldiu      *+fp(4),r0            ; |842| 
+        sti       r0,*+fp(5)            ; |842| 
 	.line	28
 ;----------------------------------------------------------------------
-; 843 | out_str[i/2] = code_val; //this character string now has non-ascii char
+; 844 | out_str[i/2] = code_val; //this character string now has non-ascii char
 ;     | acters                                                                 
 ;----------------------------------------------------------------------
-        ldiu      *+fp(3),r1            ; |843| 
-        ldiu      *+fp(2),ir0           ; |843| 
-        ldiu      r1,r0                 ; |843| 
-        lsh       -31,r0                ; |843| 
-        addi3     r0,r1,ar0             ; |843| 
-        ash       -1,ar0                ; |843| 
-        ldiu      *+fp(5),r0            ; |843| 
-        sti       r0,*+ar0(ir0)         ; |843| 
+        ldiu      *+fp(3),r1            ; |844| 
+        ldiu      *+fp(2),ir0           ; |844| 
+        ldiu      r1,r0                 ; |844| 
+        lsh       -31,r0                ; |844| 
+        addi3     r0,r1,ar0             ; |844| 
+        ash       -1,ar0                ; |844| 
+        ldiu      *+fp(5),r0            ; |844| 
+        sti       r0,*+ar0(ir0)         ; |844| 
 	.line	12
-        ldiu      2,r0                  ; |827| 
-        addi      *+fp(3),r0            ; |827| 
-        sti       r0,*+fp(3)            ; |827| 
-        cmpi      40,r0                 ; |827| 
-        blt       L112                  ; |827| 
-;*      Branch Occurs to L112           ; |827| 
+        ldiu      2,r0                  ; |828| 
+        addi      *+fp(3),r0            ; |828| 
+        sti       r0,*+fp(3)            ; |828| 
+        cmpi      40,r0                 ; |828| 
+        blt       L112                  ; |828| 
+;*      Branch Occurs to L112           ; |828| 
 L116:        
 	.line	31
 ;----------------------------------------------------------------------
-; 846 | out_str[20] == NULL;  //append null after padding                      
+; 847 | out_str[20] == NULL;  //append null after padding                      
 ;----------------------------------------------------------------------
 	.line	32
                                         ; Begin Epilog Code
@@ -5857,14 +5857,14 @@ L116:
         subi      10,sp
         bu        r1
 ;*      Branch Occurs to r1 
-	.endfunc	847,000000000h,8
+	.endfunc	848,000000000h,8
 
 
 	.sect	 "internal_RAM"
 
 	.global	_main
 	.sym	_main,_main,36,2,0
-	.func	865
+	.func	866
 ;******************************************************************************
 ;* FUNCTION NAME: _main                                                       *
 ;*                                                                            *
@@ -5878,43 +5878,43 @@ L116:
 _main:
 	.line	1
 ;----------------------------------------------------------------------
-; 865 | main()                                                                 
-; 867 | while (TRUE)                                                           
+; 866 | main()                                                                 
+; 868 | while (TRUE)                                                           
 ;----------------------------------------------------------------------
         push      fp
         ldiu      sp,fp
 L120:        
 	.line	5
 ;----------------------------------------------------------------------
-; 869 | TICKLE_WATCHDOG;                                                       
+; 870 | TICKLE_WATCHDOG;                                                       
 ;----------------------------------------------------------------------
 	push	ST			
 	andn	2000h, ST	
         ldp       @CL5,DP
-        ldiu      @CL5,ar0              ; |869| 
-        ldiu      128,r0                ; |869| 
-        or3       r0,*ar0,r0            ; |869| 
-        sti       r0,*ar0               ; |869| 
+        ldiu      @CL5,ar0              ; |870| 
+        ldiu      128,r0                ; |870| 
+        or3       r0,*ar0,r0            ; |870| 
+        sti       r0,*ar0               ; |870| 
 	pop		ST			
 	.line	7
 ;----------------------------------------------------------------------
-; 871 | LCD_PAGE();                                                            
+; 872 | LCD_PAGE();                                                            
 ;----------------------------------------------------------------------
         ldp       @CL398,DP
-        ldiu      @CL398,r0             ; |871| 
-        callu     r0                    ; far call to _LCD_PAGE	; |871| 
-                                        ; |871| Far Call Occurs
+        ldiu      @CL398,r0             ; |872| 
+        callu     r0                    ; far call to _LCD_PAGE	; |872| 
+                                        ; |872| Far Call Occurs
 	.line	8
 ;----------------------------------------------------------------------
-; 872 | Execute();                                                             
+; 873 | Execute();                                                             
 ;----------------------------------------------------------------------
-        call      _Execute              ; |872| 
-                                        ; |872| Call Occurs
+        call      _Execute              ; |873| 
+                                        ; |873| Call Occurs
 	.line	9
-        bu        L120                  ; |873| 
-;*      Branch Occurs to L120           ; |873| 
+        bu        L120                  ; |874| 
+;*      Branch Occurs to L120           ; |874| 
 	.line	10
-	.endfunc	874,000000000h,0
+	.endfunc	875,000000000h,0
 
 
 ;******************************************************************************

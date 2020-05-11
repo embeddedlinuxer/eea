@@ -45,7 +45,7 @@ BOOL I2C_TX_BYTE(unsigned char b)
 	for (i=0;i<8;i++)
 	{
 		if (dat&0x80)
-		{/* manditory brackets */
+		{/* mandatory brackets */
 			SDA_TX_HI;
 		}
 		else
@@ -405,13 +405,12 @@ BOOL RTC_setup(void)
 	
 	RTC[9] |= 0x40;	/* enable FT output */
 	
-	Write_DS1340(8, 2, &RTC[0]);
-	Write_DS1340(7, 1, &RTC[9]);
+	Write_DS1340(8, 2, &RTC[0]); // Trickle Charger 0x08
+	Write_DS1340(7, 1, &RTC[9]); // FT Register     0x07
 
 	if (RTC[2]&0x80)
 	{/* enable the osc if it is disabled */
 		RTC[2] &= 0x3F;
-		
 		Write_DS1340(0, 1, &RTC[2]);
 	}
 

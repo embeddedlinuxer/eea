@@ -3930,23 +3930,75 @@ void Update_Relays(void)
 
 		RLY[i].ON.val = r;
 
-		if (RLY[0].ON.val)
-		{
-			RELAY1_ON;
-		}
-		else
-		{
-			RELAY1_OFF;
-		}
+        if (RLY[0].ON.val)
+        {
+            //RELAY1_ON; Bug#86 DKOH May 4, 2020
+            if (RELAY1_REVERT.val) 
+            {
+                RELAY1_OFF;
+            }
+            else 
+            {
+                RELAY1_ON;
+            }
+        }
+        else
+        {
+            //RELAY1_OFF; Bug#86 DKOH May 4, 2020
+            if (RELAY1_REVERT.val) 
+            {
+                RELAY1_ON;
+            }
+            else 
+            {
+                RELAY1_OFF;
+            }
+        }
 
-		if (RLY[1].ON.val)
-		{
-			RELAY2_ON;
-		}
-		else
-		{
-			RELAY2_OFF;
-		}
+        if (RLY[1].ON.val)
+        {
+            //RELAY2_ON; Bug#86 DKOH May 4, 2020
+            if (RELAY2_REVERT.val) 
+            {
+                RELAY2_OFF;
+            }
+            else 
+            {    
+                RELAY2_ON;
+            }
+        }
+        else
+        {
+            //RELAY2_OFF; Bug#86 DKOH May 4, 2020
+            if (RELAY2_REVERT.val) 
+            {
+                RELAY2_ON;
+            }
+            else 
+            { 
+                RELAY2_OFF;
+            }
+        }
+
+/*
+        if (RLY[0].ON.val)
+        {
+            RELAY1_ON;
+        }
+        else
+        {
+            RELAY1_OFF;
+        }
+
+        if (RLY[1].ON.val)
+        {
+            RELAY2_ON;
+        }
+        else
+        {
+            RELAY2_OFF;
+        }
+*/
 	}
 }
 

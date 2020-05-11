@@ -281,7 +281,15 @@ void Setup_Basics(void)
 		WATER_PHASE_ONLY.val 	= FALSE;         
 		WATER_PHASE_ONLY.vect 	= (int*)Mirror_To_Stream_Table; 
 		WATER_PHASE_ONLY.vect2 	= NULL_PTR;
-        
+       
+        /*RELAY A and B revert - Bug#86 - DKOH, MAY 4, 2020 */
+        RELAY1_REVERT.val       = FALSE;
+        RELAY1_REVERT.vect      = NULL_PTR;
+        RELAY1_REVERT.vect2     = NULL_PTR;
+        RELAY2_REVERT.val       = FALSE;
+        RELAY2_REVERT.vect      = NULL_PTR;
+        RELAY2_REVERT.vect2     = NULL_PTR;
+ 
         /*Close Gas Valve when Level too high for Anadarko Bulk RS*/
         BULK_LEVEL_ENABLED.val = FALSE;
         BULK_LEVEL_ENABLED.vect = NULL_PTR;

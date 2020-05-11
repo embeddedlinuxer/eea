@@ -1,11 +1,11 @@
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE    1
 
         1                   ;******************************************************************************
         2                   ;* TMS320C3x/4x ANSI C Code Generator                            Version 5.11 *
-        3                   ;* Date/Time created: Wed Oct 30 07:48:44 2019                                *
+        3                   ;* Date/Time created: Tue May  5 09:11:57 2020                                *
         4                   ;******************************************************************************
         5                           .regalias       ; enable floating point register aliases
         6          0000000b fp      .set    ar3
@@ -22,7 +22,7 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE    1
        17                   ;*   Calls              : Normal Library ASM calls                            *
        18                   ;*   Debug Info         : Standard TI Debug Information                       *
        19                   ;******************************************************************************
-       20                   ;       C:\tic3x4x\c3x4x\cgtools\bin\ac30.exe -@_74G.AAA 
+       20                   ;       C:\tic3x4x\c3x4x\cgtools\bin\ac30.exe -@_GQ8.AAA 
        21                           .file   "i2c.c"
        22                           .file   "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\GLBLS.H"
        23                           .file   "G:\workspace\EEA\V615\INCLUDE\stdarg.h"
@@ -57,8 +57,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE    1
        52                           .eos
        53                           .sym    _FILE,0,8,13,224,.fake2
        54                           .sym    _fpos_t,0,5,13,32
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE    2
 
@@ -116,8 +116,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE    2
       106                           .member _prev,0,20,8,32
       107                           .member _next,32,20,8,32
       108                           .eos
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE    3
 
@@ -175,8 +175,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE    3
       160                           .member _buff,160,62,8,9600,,300
       161                           .member _sum,9760,4,8,32
       162                           .member _locked,9792,14,8,32
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE    4
 
@@ -234,8 +234,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE    4
       214                           .member _ai,1536,4,8,32
       215                           .member _start,1568,4,8,32
       216                           .member _i,1600,4,8,32
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE    5
 
@@ -293,8 +293,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE    5
       268                           .eos
       269                           .sym    _MPKT,0,8,13,672,.fake14
       270                           .file   "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\ADC.H"
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE    6
 
@@ -352,8 +352,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE    6
       322                           .stag   .fake17,128
       323                           .member _prev,0,20,8,32
       324                           .member _next,32,20,8,32
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE    7
 
@@ -411,8 +411,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE    7
       376                           .member _menu_list_top,832,14,8,32
       377                           .member _menu_list_operations,864,14,8,32
       378                           .member _menu_list_configurations,896,14,8,32
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE    8
 
@@ -470,8 +470,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE    8
       430                           .member _Start_SS,64,4,8,32
       431                           .member _Start_MONTH,96,4,8,32
       432                           .member _Start_DAY,128,4,8,32
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE    9
 
@@ -529,8 +529,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE    9
       484                           .member _counter,32,4,8,32
       485                           .eos
       486                           .sym    _Boxcar_Var,0,8,13,64,.fake24
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   10
 
@@ -588,8 +588,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   10
       538                           .member _left_pickup_value,768,6,8,32
       539                           .member _right_pickup_value,800,6,8,32
       540                           .member _drive_gain,832,6,8,32
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   11
 
@@ -647,8 +647,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   11
       592                           .member _net_watercut_mass,15712,6,8,32
       593                           .member _Dadj,15744,6,8,32
       594                           .member _NET_FLOW_OIL,15776,8,8,1408,.fake6
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   12
 
@@ -706,8 +706,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   12
       646                           .member _AUTHORIZATION_CODE2,42656,14,8,32
       647                           .member _AUTHORIZATION_CODE3,42688,14,8,32
       648                           .member _AUTHORIZATION_CODE4,42720,14,8,32
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   13
 
@@ -765,8 +765,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   13
       700                           .member _SP1B,2080,6,8,32
       701                           .member _SP0B,2112,6,8,32
       702                           .member _SPLOB,2144,6,8,32
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   14
 
@@ -824,8 +824,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   14
       754 00000003 154a0301         sti       ar2,*+fp(1)           ; |38| 
       755                           .line   7
       756                   ;----------------------------------------------------------------------
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   15
 
@@ -883,8 +883,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   15
       808 0000001a 50600004         ldiu      4,r0                  ; |56| 
       809 0000001b 25a0c000         or3       r0,*ar0,r0            ; |56| 
       810 0000001c 1540c000         sti       r0,*ar0               ; |56| 
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   16
 
@@ -942,8 +942,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   16
       862                   ;----------------------------------------------------------------------
       863                   ;  63 | SCL_HI;                                                                
       864                   ;----------------------------------------------------------------------
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   17
 
@@ -1001,8 +1001,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   17
       916 00000052 6e46ffff                 .word   6E46FFFFh       
       917 00000053 0e290000                 POP             AR1                     
       918                           .line   37
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   18
 
@@ -1060,8 +1060,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   18
       970 0000005d 500b0014         ldiu      sp,fp
       971 0000005e 02740004         addi      4,sp
       972                           .line   2
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   19
 
@@ -1119,8 +1119,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   19
      1024                   ;----------------------------------------------------------------------
      1025 00000075 50600010         ldiu      16,r0                 ; |104| 
      1026 00000076 27c000c0         tstb3     *ar0,r0               ; |104| 
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   20
 
@@ -1178,8 +1178,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   20
      1078                   ; 113 | ENABLE_SDA_TX;                                                         
      1079                   ;----------------------------------------------------------------------
      1080 0000008f 08700000-        ldp       @CL1,DP
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   21
 
@@ -1237,8 +1237,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   21
      1132 000000ae 0f290000                 PUSH    AR1                     
      1133 000000af 08690019                 LDI             25,AR1          
      1134 000000b0 6e46ffff                 .word   6E46FFFFh       
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   22
 
@@ -1296,8 +1296,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   22
      1186                   ;----------------------------------------------------------------------
      1187 000000b9 0f2b0000         push      fp
      1188 000000ba 500b0014         ldiu      sp,fp
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   23
 
@@ -1355,8 +1355,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   23
      1240 000000de 08690032                 LDI             50,AR1          
      1241 000000df 6e46ffff                 .word   6E46FFFFh       
      1242 000000e0 0e290000                 POP             AR1                     
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   24
 
@@ -1414,8 +1414,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   24
      1294                   ;----------------------------------------------------------------------
      1295 000000f2 04e00000         cmpi      0,r0                  ; |165| 
      1296 000000f3 6a060003         bne       L26                   ; |165| 
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   25
 
@@ -1473,8 +1473,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   25
      1348                   ; 178 | break;                                                                 
      1349                   ;----------------------------------------------------------------------
      1350 00000106 6a000006         bu        L32                   ; |178| 
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   26
 
@@ -1532,8 +1532,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   26
      1402 0000012b 6e46ffff                 .word   6E46FFFFh       
      1403 0000012c 0e290000                 POP             AR1                     
      1404                           .line   46
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   27
 
@@ -1591,8 +1591,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   27
      1456 00000134 02740008         addi      8,sp
      1457                           .line   2
      1458                   ;----------------------------------------------------------------------
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   28
 
@@ -1650,8 +1650,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   28
      1510                           .line   13
      1511                   ;----------------------------------------------------------------------
      1512                   ; 216 | dat = addr | 0x01;                              /* address with read bi
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   29
 
@@ -1709,8 +1709,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   29
      1564 0000016d 6a060003         bne       L39                   ; |227| 
      1565                   ;*      Branch Occurs to L39            ; |227| 
      1566                           .line   26
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   30
 
@@ -1768,8 +1768,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   30
      1618 00000186 504a0302         ldiu      *+fp(2),ar2           ; |236| 
      1619 00000187 08700000-        ldp       @CL3,DP
      1620 00000188 024a0303         addi      *+fp(3),ar2           ; |236| Unsigned
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   31
 
@@ -1827,8 +1827,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   31
      1672                   ; 243 | return r;                                                              
      1673                   ;----------------------------------------------------------------------
      1674 000001ae 50400308         ldiu      *+fp(8),r0            ; |243| 
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   32
 
@@ -1886,8 +1886,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   32
      1726                   ; 264 | BOOL ack;                       /* Error checks */                     
      1727                   ; 265 | BOOL r;                         /* Write success*/                     
      1728                   ;----------------------------------------------------------------------
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   33
 
@@ -1945,8 +1945,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   33
      1780 00000029 0e290000                 POP             AR1                     
      1781                           .line   14
      1782                   ;----------------------------------------------------------------------
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   34
 
@@ -2004,8 +2004,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   34
      1834                   ;*      Branch Occurs to L50            ; |284| 
      1835                           .line   27
      1836                   ;----------------------------------------------------------------------
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   35
 
@@ -2063,8 +2063,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   35
      1888                   ;*      Branch Occurs to L56            ; |297| 
      1889 00000050          L53:        
      1890                           .line   31
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   36
 
@@ -2122,8 +2122,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   36
      1942                   ;----------------------------------------------------------------------
      1943                   ; 306 | GIEP;                                                                  
      1944                   ;----------------------------------------------------------------------
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   37
 
@@ -2181,8 +2181,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   37
      1996 0000007c 0f2b0000         push      fp
      1997 0000007d 500b0014         ldiu      sp,fp
      1998 0000007e 02740008         addi      8,sp
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   38
 
@@ -2240,8 +2240,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   38
      2050                   ; 340 | I2C_START;                                                             
      2051                   ; 342 | while(TRUE)                                                            
      2052                   ;----------------------------------------------------------------------
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   39
 
@@ -2299,8 +2299,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   39
      2104                   ; 347 | if (!ack)                                                              
      2105                   ;----------------------------------------------------------------------
      2106 000000b8 04e00000         cmpi      0,r0                  ; |347| 
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   40
 
@@ -2358,8 +2358,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   40
      2158                   ;----------------------------------------------------------------------
      2159 000000ca 504a0304         ldiu      *+fp(4),ar2           ; |360| 
      2160 000000cb 08700000-        ldp       @CL3,DP
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   41
 
@@ -2417,8 +2417,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   41
      2212 000000f1 1540c000         sti       r0,*ar0               ; |366| 
      2213 000000f2 0f290000                 PUSH    AR1                     
      2214 000000f3 08690032                 LDI             50,AR1          
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   42
 
@@ -2476,8 +2476,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   42
      2266                   ; 388 | _GIEP;                                                                 
      2267                   ;----------------------------------------------------------------------
      2268 00000003 0f350000         push    ST                      
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   43
 
@@ -2535,8 +2535,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   43
      2320 0000001b 1540c000         sti       r0,*ar0               ; |399| 
      2321                           .line   18
      2322                   ;----------------------------------------------------------------------
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   44
 
@@ -2582,7 +2582,7 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   44
      2362 00000030 15400009         sti       r0,*+ar0(9)           ; |406| 
      2363                           .line   25
      2364                   ;----------------------------------------------------------------------
-     2365                   ; 408 | Write_DS1340(8, 2, &RTC[0]);                                           
+     2365                   ; 408 | Write_DS1340(8, 2, &RTC[0]); // Trickle Charger 0x08                   
      2366                   ;----------------------------------------------------------------------
      2367 00000031 502301d0-        ldiu      @CL5,r3               ; |408| 
      2368 00000032 08700000-        ldp       @CL4,DP
@@ -2593,9 +2593,9 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   44
      2373                                                           ; |408| Far Call Occurs
      2374                           .line   26
      2375                   ;----------------------------------------------------------------------
-     2376                   ; 409 | Write_DS1340(7, 1, &RTC[9]);                                           
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+     2376                   ; 409 | Write_DS1340(7, 1, &RTC[9]); // FT Register     0x07                   
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   45
 
@@ -2627,51 +2627,51 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   45
      2402 00000045 5060003f         ldiu      63,r0                 ; |413| 
      2403 00000046 02c00002         and       *+ar0(2),r0           ; |413| 
      2404 00000047 15400002         sti       r0,*+ar0(2)           ; |413| 
-     2405                           .line   32
+     2405                           .line   31
      2406                   ;----------------------------------------------------------------------
-     2407                   ; 415 | Write_DS1340(0, 1, &RTC[2]);                                           
+     2407                   ; 414 | Write_DS1340(0, 1, &RTC[2]);                                           
      2408                   ;----------------------------------------------------------------------
      2409 00000048 08700000-        ldp       @CL11,DP
-     2410 00000049 502301d6-        ldiu      @CL11,r3              ; |415| 
+     2410 00000049 502301d6-        ldiu      @CL11,r3              ; |414| 
      2411 0000004a 08700000-        ldp       @CL4,DP
-     2412 0000004b 506a0000         ldiu      0,ar2                 ; |415| 
-     2413 0000004c 502001cf-        ldiu      @CL4,r0               ; |415| 
-     2414 0000004d 50620001         ldiu      1,r2                  ; |415| 
-     2415 0000004e 70000000         callu     r0                    ; far call to _Write_DS1340     ; |415| 
-     2416                                                           ; |415| Far Call Occurs
+     2412 0000004b 506a0000         ldiu      0,ar2                 ; |414| 
+     2413 0000004c 502001cf-        ldiu      @CL4,r0               ; |414| 
+     2414 0000004d 50620001         ldiu      1,r2                  ; |414| 
+     2415 0000004e 70000000         callu     r0                    ; far call to _Write_DS1340     ; |414| 
+     2416                                                           ; |414| Far Call Occurs
      2417 0000004f          L79:        
-     2418                           .line   35
+     2418                           .line   34
      2419                   ;----------------------------------------------------------------------
-     2420                   ; 418 | GIEP;                                                                  
+     2420                   ; 417 | GIEP;                                                                  
      2421                   ;----------------------------------------------------------------------
      2422 0000004f 0e350000         pop             ST                      
-     2423                           .line   36
+     2423                           .line   35
      2424                   ;----------------------------------------------------------------------
-     2425                   ; 419 | return TRUE;                                                           
+     2425                   ; 418 | return TRUE;                                                           
      2426                   ;----------------------------------------------------------------------
-     2427 00000050 50600001         ldiu      1,r0                  ; |419| 
+     2427 00000050 50600001         ldiu      1,r0                  ; |418| 
      2428 00000051          L80:        
-     2429                           .line   37
+     2429                           .line   36
      2430                                                           ; Begin Epilog Code
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   46
 
-     2431 00000051 50410b01         ldiu      *-fp(1),r1            ; |420| 
-     2432 00000052 504bc300         ldiu      *fp,fp                ; |420| 
+     2431 00000051 50410b01         ldiu      *-fp(1),r1            ; |419| 
+     2432 00000052 504bc300         ldiu      *fp,fp                ; |419| 
      2433                                                           ; Unallocate the Frame
-     2434 00000053 18740003         subi      3,sp                  ; |420| 
+     2434 00000053 18740003         subi      3,sp                  ; |419| 
      2435 00000054 68000001         bu        r1
      2436                   ;*      Branch Occurs to r1 
-     2437                           .endfunc        420,000000000h,1
+     2437                           .endfunc        419,000000000h,1
      2438                   
      2439                   
      2440 000001b3                  .sect    "internal_RAM"
      2441                   
      2442                           .global _Write_MC24C02_Record
      2443                           .sym    _Write_MC24C02_Record,_Write_MC24C02_Record,46,2,0
-     2444                           .func   435
+     2444                           .func   434
      2445                   ;******************************************************************************
      2446                   ;* FUNCTION NAME: _Write_MC24C02_Record                                       *
      2447                   ;*                                                                            *
@@ -2696,464 +2696,464 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   46
      2466                           .sym    _ack,7,14,1,32
      2467                           .line   1
      2468                   ;----------------------------------------------------------------------
-     2469                   ; 435 | BOOL Write_MC24C02_Record(int addr, unsigned char* p)                  
+     2469                   ; 434 | BOOL Write_MC24C02_Record(int addr, unsigned char* p)                  
      2470                   ;----------------------------------------------------------------------
      2471 000001b3 0f2b0000         push      fp
      2472 000001b4 500b0014         ldiu      sp,fp
      2473 000001b5 02740007         addi      7,sp
      2474                           .line   2
      2475                   ;----------------------------------------------------------------------
-     2476                   ; 437 | int i,j,k,r;    /* counter; counter; address error accumulator; return
+     2476                   ; 436 | int i,j,k,r;    /* counter; counter; address error accumulator; return
      2477                   ;     |  */                                                                    
-     2478                   ; 438 | BOOL ack;               /* transfer check
+     2478                   ; 437 | BOOL ack;               /* transfer check
      2479                   ;     |                                                  */                    
      2480                   ;----------------------------------------------------------------------
-     2481 000001b6 15420302         sti       r2,*+fp(2)            ; |436| 
-     2482 000001b7 154a0301         sti       ar2,*+fp(1)           ; |436| 
+     2481 000001b6 15420302         sti       r2,*+fp(2)            ; |435| 
+     2482 000001b7 154a0301         sti       ar2,*+fp(1)           ; |435| 
      2483                           .line   6
      2484                   ;----------------------------------------------------------------------
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   47
 
-     2485                   ; 440 | _GIEP;                                                                 
+     2485                   ; 439 | _GIEP;                                                                 
      2486                   ;----------------------------------------------------------------------
      2487 000001b8 0f350000         push    ST                      
      2488 000001b9 03752000         andn    2000h, ST       
      2489                           .line   8
      2490                   ;----------------------------------------------------------------------
-     2491                   ; 442 | for (i=0;i<256;i++)                                                    
+     2491                   ; 441 | for (i=0;i<256;i++)                                                    
      2492                   ;----------------------------------------------------------------------
-     2493 000001ba 50600000         ldiu      0,r0                  ; |442| 
-     2494 000001bb 15400303         sti       r0,*+fp(3)            ; |442| 
-     2495 000001bc 04e00100         cmpi      256,r0                ; |442| 
-     2496 000001bd 506100ff         ldiu      255,r1                ; |443| 
-     2497 000001be 6a0a0009         bge       L84                   ; |442| 
-     2498                   ;*      Branch Occurs to L84            ; |442| 
+     2493 000001ba 50600000         ldiu      0,r0                  ; |441| 
+     2494 000001bb 15400303         sti       r0,*+fp(3)            ; |441| 
+     2495 000001bc 04e00100         cmpi      256,r0                ; |441| 
+     2496 000001bd 506100ff         ldiu      255,r1                ; |442| 
+     2497 000001be 6a0a0009         bge       L84                   ; |441| 
+     2498                   ;*      Branch Occurs to L84            ; |441| 
      2499 000001bf          L83:        
      2500                           .line   9
      2501                   ;----------------------------------------------------------------------
-     2502                   ; 443 | p[i] &= 0xFF;                                                          
+     2502                   ; 442 | p[i] &= 0xFF;                                                          
      2503                   ;----------------------------------------------------------------------
-     2504 000001bf 50510302         ldiu      *+fp(2),ir0           ; |443| 
-     2505 000001c0 50480303         ldiu      *+fp(3),ar0           ; |443| 
-     2506 000001c1 21a04001         and3      r1,*+ar0(ir0),r0      ; |443| 
-     2507 000001c2 15404000         sti       r0,*+ar0(ir0)         ; |443| 
+     2504 000001bf 50510302         ldiu      *+fp(2),ir0           ; |442| 
+     2505 000001c0 50480303         ldiu      *+fp(3),ar0           ; |442| 
+     2506 000001c1 21a04001         and3      r1,*+ar0(ir0),r0      ; |442| 
+     2507 000001c2 15404000         sti       r0,*+ar0(ir0)         ; |442| 
      2508                           .line   8
-     2509 000001c3 50600001         ldiu      1,r0                  ; |442| 
-     2510 000001c4 02400303         addi      *+fp(3),r0            ; |442| 
-     2511 000001c5 15400303         sti       r0,*+fp(3)            ; |442| 
-     2512 000001c6 04e00100         cmpi      256,r0                ; |442| 
-     2513 000001c7 6a07fff7         blt       L83                   ; |442| 
-     2514                   ;*      Branch Occurs to L83            ; |442| 
+     2509 000001c3 50600001         ldiu      1,r0                  ; |441| 
+     2510 000001c4 02400303         addi      *+fp(3),r0            ; |441| 
+     2511 000001c5 15400303         sti       r0,*+fp(3)            ; |441| 
+     2512 000001c6 04e00100         cmpi      256,r0                ; |441| 
+     2513 000001c7 6a07fff7         blt       L83                   ; |441| 
+     2514                   ;*      Branch Occurs to L83            ; |441| 
      2515 000001c8          L84:        
      2516                           .line   11
      2517                   ;----------------------------------------------------------------------
-     2518                   ; 445 | r = TRUE;                                                              
+     2518                   ; 444 | r = TRUE;                                                              
      2519                   ;----------------------------------------------------------------------
-     2520 000001c8 50600001         ldiu      1,r0                  ; |445| 
-     2521 000001c9 15400306         sti       r0,*+fp(6)            ; |445| 
+     2520 000001c8 50600001         ldiu      1,r0                  ; |444| 
+     2521 000001c9 15400306         sti       r0,*+fp(6)            ; |444| 
      2522                           .line   13
      2523                   ;----------------------------------------------------------------------
-     2524                   ; 447 | for(j=0;j<16;j++)                                                      
+     2524                   ; 446 | for(j=0;j<16;j++)                                                      
      2525                   ;----------------------------------------------------------------------
-     2526 000001ca 50600000         ldiu      0,r0                  ; |447| 
-     2527 000001cb 15400304         sti       r0,*+fp(4)            ; |447| 
-     2528 000001cc 04e00010         cmpi      16,r0                 ; |447| 
-     2529 000001cd 6a0a00a1         bge       L101                  ; |447| 
-     2530                   ;*      Branch Occurs to L101           ; |447| 
+     2526 000001ca 50600000         ldiu      0,r0                  ; |446| 
+     2527 000001cb 15400304         sti       r0,*+fp(4)            ; |446| 
+     2528 000001cc 04e00010         cmpi      16,r0                 ; |446| 
+     2529 000001cd 6a0a00a1         bge       L101                  ; |446| 
+     2530                   ;*      Branch Occurs to L101           ; |446| 
      2531 000001ce          L85:        
      2532                           .line   15
      2533                   ;----------------------------------------------------------------------
-     2534                   ; 449 | k = 0;                                                                 
-     2535                   ; 450 | while(1)                                                               
+     2534                   ; 448 | k = 0;                                                                 
+     2535                   ; 449 | while(1)                                                               
      2536                   ;----------------------------------------------------------------------
-     2537 000001ce 50600000         ldiu      0,r0                  ; |449| 
-     2538 000001cf 15400305         sti       r0,*+fp(5)            ; |449| 
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+     2537 000001ce 50600000         ldiu      0,r0                  ; |448| 
+     2538 000001cf 15400305         sti       r0,*+fp(5)            ; |448| 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   48
 
      2539 000001d0          L86:        
      2540                           .line   18
      2541                   ;----------------------------------------------------------------------
-     2542                   ; 452 | I2C_START;                                                             
+     2542                   ; 451 | I2C_START;                                                             
      2543                   ;----------------------------------------------------------------------
      2544 000001d0 08700000-        ldp       @CL1,DP
-     2545 000001d1 502801cc-        ldiu      @CL1,ar0              ; |452| 
-     2546 000001d2 50600004         ldiu      4,r0                  ; |452| 
-     2547 000001d3 25a0c000         or3       r0,*ar0,r0            ; |452| 
-     2548 000001d4 1540c000         sti       r0,*ar0               ; |452| 
-     2549 000001d5 50600001         ldiu      1,r0                  ; |452| 
-     2550 000001d6 25a0c000         or3       r0,*ar0,r0            ; |452| 
-     2551 000001d7 1540c000         sti       r0,*ar0               ; |452| 
-     2552 000001d8 50600008         ldiu      8,r0                  ; |452| 
-     2553 000001d9 25a0c000         or3       r0,*ar0,r0            ; |452| 
-     2554 000001da 1540c000         sti       r0,*ar0               ; |452| 
-     2555 000001db 50600002         ldiu      2,r0                  ; |452| 
-     2556 000001dc 25a0c000         or3       r0,*ar0,r0            ; |452| 
-     2557 000001dd 1540c000         sti       r0,*ar0               ; |452| 
+     2545 000001d1 502801cc-        ldiu      @CL1,ar0              ; |451| 
+     2546 000001d2 50600004         ldiu      4,r0                  ; |451| 
+     2547 000001d3 25a0c000         or3       r0,*ar0,r0            ; |451| 
+     2548 000001d4 1540c000         sti       r0,*ar0               ; |451| 
+     2549 000001d5 50600001         ldiu      1,r0                  ; |451| 
+     2550 000001d6 25a0c000         or3       r0,*ar0,r0            ; |451| 
+     2551 000001d7 1540c000         sti       r0,*ar0               ; |451| 
+     2552 000001d8 50600008         ldiu      8,r0                  ; |451| 
+     2553 000001d9 25a0c000         or3       r0,*ar0,r0            ; |451| 
+     2554 000001da 1540c000         sti       r0,*ar0               ; |451| 
+     2555 000001db 50600002         ldiu      2,r0                  ; |451| 
+     2556 000001dc 25a0c000         or3       r0,*ar0,r0            ; |451| 
+     2557 000001dd 1540c000         sti       r0,*ar0               ; |451| 
      2558 000001de 0f290000                 PUSH    AR1                     
      2559 000001df 08690032                 LDI             50,AR1          
      2560 000001e0 6e46ffff                 .word   6E46FFFFh       
      2561 000001e1 0e290000                 POP             AR1                     
-     2562 000001e2 506000fe         ldiu      254,r0                ; |452| 
-     2563 000001e3 21a0c000         and3      r0,*ar0,r0            ; |452| 
-     2564 000001e4 1540c000         sti       r0,*ar0               ; |452| 
+     2562 000001e2 506000fe         ldiu      254,r0                ; |451| 
+     2563 000001e3 21a0c000         and3      r0,*ar0,r0            ; |451| 
+     2564 000001e4 1540c000         sti       r0,*ar0               ; |451| 
      2565 000001e5 0f290000                 PUSH    AR1                     
      2566 000001e6 08690032                 LDI             50,AR1          
      2567 000001e7 6e46ffff                 .word   6E46FFFFh       
      2568 000001e8 0e290000                 POP             AR1                     
-     2569 000001e9 506000fb         ldiu      251,r0                ; |452| 
-     2570 000001ea 21a0c000         and3      r0,*ar0,r0            ; |452| 
-     2571 000001eb 1540c000         sti       r0,*ar0               ; |452| 
+     2569 000001e9 506000fb         ldiu      251,r0                ; |451| 
+     2570 000001ea 21a0c000         and3      r0,*ar0,r0            ; |451| 
+     2571 000001eb 1540c000         sti       r0,*ar0               ; |451| 
      2572 000001ec 0f290000                 PUSH    AR1                     
      2573 000001ed 08690032                 LDI             50,AR1          
      2574 000001ee 6e46ffff                 .word   6E46FFFFh       
      2575 000001ef 0e290000                 POP             AR1                     
      2576                           .line   19
      2577                   ;----------------------------------------------------------------------
-     2578                   ; 453 | ack = I2C_TX_BYTE(addr);                /* address without read bit set
+     2578                   ; 452 | ack = I2C_TX_BYTE(addr);                /* address without read bit set
      2579                   ;     |  */                                                                    
      2580                   ;----------------------------------------------------------------------
      2581 000001f0 08700000-        ldp       @CL2,DP
-     2582 000001f1 502001cd-        ldiu      @CL2,r0               ; |453| 
-     2583 000001f2 504a0301         ldiu      *+fp(1),ar2           ; |453| 
-     2584 000001f3 70000000         callu     r0                    ; far call to _I2C_TX_BYTE      ; |453| 
-     2585                                                           ; |453| Far Call Occurs
-     2586 000001f4 15400307         sti       r0,*+fp(7)            ; |453| 
+     2582 000001f1 502001cd-        ldiu      @CL2,r0               ; |452| 
+     2583 000001f2 504a0301         ldiu      *+fp(1),ar2           ; |452| 
+     2584 000001f3 70000000         callu     r0                    ; far call to _I2C_TX_BYTE      ; |452| 
+     2585                                                           ; |452| Far Call Occurs
+     2586 000001f4 15400307         sti       r0,*+fp(7)            ; |452| 
      2587                           .line   21
      2588                   ;----------------------------------------------------------------------
-     2589                   ; 455 | if (!ack)                                               /* address erro
+     2589                   ; 454 | if (!ack)                                               /* address erro
      2590                   ;     | r */                                                                   
      2591                   ;----------------------------------------------------------------------
-     2592 000001f5 04e00000         cmpi      0,r0                  ; |455| 
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+     2592 000001f5 04e00000         cmpi      0,r0                  ; |454| 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   49
 
-     2593 000001f6 6a06002b         bne       L92                   ; |455| 
-     2594                   ;*      Branch Occurs to L92            ; |455| 
+     2593 000001f6 6a06002b         bne       L92                   ; |454| 
+     2594                   ;*      Branch Occurs to L92            ; |454| 
      2595                           .line   22
      2596                   ;----------------------------------------------------------------------
-     2597                   ; 456 | k++;                                                                   
-     2598                   ; 457 | else                                                                   
+     2597                   ; 455 | k++;                                                                   
+     2598                   ; 456 | else                                                                   
      2599                   ;----------------------------------------------------------------------
-     2600 000001f7 50600001         ldiu      1,r0                  ; |456| 
-     2601 000001f8 02400305         addi      *+fp(5),r0            ; |456| 
-     2602 000001f9 15400305         sti       r0,*+fp(5)            ; |456| 
-     2603 000001fa 6a000000         bu        L89                   ; |434| 
-     2604                   ;*      Branch Occurs to L89            ; |434| 
+     2600 000001f7 50600001         ldiu      1,r0                  ; |455| 
+     2601 000001f8 02400305         addi      *+fp(5),r0            ; |455| 
+     2602 000001f9 15400305         sti       r0,*+fp(5)            ; |455| 
+     2603 000001fa 6a000000         bu        L89                   ; |433| 
+     2604                   ;*      Branch Occurs to L89            ; |433| 
      2605                           .line   24
      2606                   ;----------------------------------------------------------------------
-     2607                   ; 458 | break;                                          /* address OK, continue
+     2607                   ; 457 | break;                                          /* address OK, continue
      2608                   ;     |  */                                                                    
      2609                   ;----------------------------------------------------------------------
      2610 000001fb          L89:        
      2611                           .line   26
      2612                   ;----------------------------------------------------------------------
-     2613                   ; 460 | if (k>=50)                                                             
+     2613                   ; 459 | if (k>=50)                                                             
      2614                   ;----------------------------------------------------------------------
-     2615 000001fb 50400305         ldiu      *+fp(5),r0            ; |460| 
-     2616 000001fc 04e00032         cmpi      50,r0                 ; |460| 
-     2617 000001fd 6a070003         blt       L91                   ; |460| 
-     2618                   ;*      Branch Occurs to L91            ; |460| 
+     2615 000001fb 50400305         ldiu      *+fp(5),r0            ; |459| 
+     2616 000001fc 04e00032         cmpi      50,r0                 ; |459| 
+     2617 000001fd 6a070003         blt       L91                   ; |459| 
+     2618                   ;*      Branch Occurs to L91            ; |459| 
      2619                           .line   28
      2620                   ;----------------------------------------------------------------------
-     2621                   ; 462 | r = FALSE;                                                             
+     2621                   ; 461 | r = FALSE;                                                             
      2622                   ;----------------------------------------------------------------------
-     2623 000001fe 50600000         ldiu      0,r0                  ; |462| 
-     2624 000001ff 15400306         sti       r0,*+fp(6)            ; |462| 
+     2623 000001fe 50600000         ldiu      0,r0                  ; |461| 
+     2624 000001ff 15400306         sti       r0,*+fp(6)            ; |461| 
      2625                           .line   29
      2626                   ;----------------------------------------------------------------------
-     2627                   ; 463 | break;                                                                 
+     2627                   ; 462 | break;                                                                 
      2628                   ;----------------------------------------------------------------------
-     2629 00000200 6a000021         bu        L92                   ; |463| 
-     2630                   ;*      Branch Occurs to L92            ; |463| 
+     2629 00000200 6a000021         bu        L92                   ; |462| 
+     2630                   ;*      Branch Occurs to L92            ; |462| 
      2631 00000201          L91:        
      2632                           .line   32
      2633                   ;----------------------------------------------------------------------
-     2634                   ; 466 | I2C_STOP;                                                              
+     2634                   ; 465 | I2C_STOP;                                                              
      2635                   ;----------------------------------------------------------------------
      2636 00000201 08700000-        ldp       @CL1,DP
-     2637 00000202 502801cc-        ldiu      @CL1,ar0              ; |466| 
-     2638 00000203 50600002         ldiu      2,r0                  ; |466| 
-     2639 00000204 25a0c000         or3       r0,*ar0,r0            ; |466| 
-     2640 00000205 1540c000         sti       r0,*ar0               ; |466| 
-     2641 00000206 506000fe         ldiu      254,r0                ; |466| 
-     2642 00000207 21a0c000         and3      r0,*ar0,r0            ; |466| 
-     2643 00000208 1540c000         sti       r0,*ar0               ; |466| 
+     2637 00000202 502801cc-        ldiu      @CL1,ar0              ; |465| 
+     2638 00000203 50600002         ldiu      2,r0                  ; |465| 
+     2639 00000204 25a0c000         or3       r0,*ar0,r0            ; |465| 
+     2640 00000205 1540c000         sti       r0,*ar0               ; |465| 
+     2641 00000206 506000fe         ldiu      254,r0                ; |465| 
+     2642 00000207 21a0c000         and3      r0,*ar0,r0            ; |465| 
+     2643 00000208 1540c000         sti       r0,*ar0               ; |465| 
      2644 00000209 0f290000                 PUSH    AR1                     
      2645 0000020a 08690032                 LDI             50,AR1          
      2646 0000020b 6e46ffff                 .word   6E46FFFFh       
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   50
 
      2647 0000020c 0e290000                 POP             AR1                     
-     2648 0000020d 50600004         ldiu      4,r0                  ; |466| 
-     2649 0000020e 25a0c000         or3       r0,*ar0,r0            ; |466| 
-     2650 0000020f 1540c000         sti       r0,*ar0               ; |466| 
-     2651 00000210 506000f7         ldiu      247,r0                ; |466| 
-     2652 00000211 21a0c000         and3      r0,*ar0,r0            ; |466| 
-     2653 00000212 1540c000         sti       r0,*ar0               ; |466| 
+     2648 0000020d 50600004         ldiu      4,r0                  ; |465| 
+     2649 0000020e 25a0c000         or3       r0,*ar0,r0            ; |465| 
+     2650 0000020f 1540c000         sti       r0,*ar0               ; |465| 
+     2651 00000210 506000f7         ldiu      247,r0                ; |465| 
+     2652 00000211 21a0c000         and3      r0,*ar0,r0            ; |465| 
+     2653 00000212 1540c000         sti       r0,*ar0               ; |465| 
      2654 00000213 0f290000                 PUSH    AR1                     
      2655 00000214 08690032                 LDI             50,AR1          
      2656 00000215 6e46ffff                 .word   6E46FFFFh       
      2657 00000216 0e290000                 POP             AR1                     
-     2658 00000217 50600001         ldiu      1,r0                  ; |466| 
-     2659 00000218 25a0c000         or3       r0,*ar0,r0            ; |466| 
-     2660 00000219 1540c000         sti       r0,*ar0               ; |466| 
-     2661 0000021a 506000fd         ldiu      253,r0                ; |466| 
-     2662 0000021b 21a0c000         and3      r0,*ar0,r0            ; |466| 
-     2663 0000021c 1540c000         sti       r0,*ar0               ; |466| 
+     2658 00000217 50600001         ldiu      1,r0                  ; |465| 
+     2659 00000218 25a0c000         or3       r0,*ar0,r0            ; |465| 
+     2660 00000219 1540c000         sti       r0,*ar0               ; |465| 
+     2661 0000021a 506000fd         ldiu      253,r0                ; |465| 
+     2662 0000021b 21a0c000         and3      r0,*ar0,r0            ; |465| 
+     2663 0000021c 1540c000         sti       r0,*ar0               ; |465| 
      2664 0000021d 0f290000                 PUSH    AR1                     
      2665 0000021e 08690032                 LDI             50,AR1          
      2666 0000021f 6e46ffff                 .word   6E46FFFFh       
      2667 00000220 0e290000                 POP             AR1                     
      2668                           .line   33
-     2669 00000221 6a00ffae         bu        L86                   ; |467| 
-     2670                   ;*      Branch Occurs to L86            ; |467| 
+     2669 00000221 6a00ffae         bu        L86                   ; |466| 
+     2670                   ;*      Branch Occurs to L86            ; |466| 
      2671 00000222          L92:        
      2672                           .line   35
      2673                   ;----------------------------------------------------------------------
-     2674                   ; 469 | if (r==FALSE)                                           /* address fail
+     2674                   ; 468 | if (r==FALSE)                                           /* address fail
      2675                   ;     | ure, return */                                                         
      2676                   ;----------------------------------------------------------------------
-     2677 00000222 50400306         ldiu      *+fp(6),r0            ; |469| 
-     2678 00000223 04e00000         cmpi      0,r0                  ; |469| 
-     2679 00000224 6a05004a         beq       L101                  ; |469| 
-     2680                   ;*      Branch Occurs to L101           ; |469| 
+     2677 00000222 50400306         ldiu      *+fp(6),r0            ; |468| 
+     2678 00000223 04e00000         cmpi      0,r0                  ; |468| 
+     2679 00000224 6a05004a         beq       L101                  ; |468| 
+     2680                   ;*      Branch Occurs to L101           ; |468| 
      2681                           .line   36
      2682                   ;----------------------------------------------------------------------
-     2683                   ; 470 | break;                                                                 
+     2683                   ; 469 | break;                                                                 
      2684                   ;----------------------------------------------------------------------
      2685                           .line   38
      2686                   ;----------------------------------------------------------------------
-     2687                   ; 472 | ack = I2C_TX_BYTE(j*16);                        /* set the pointer */  
+     2687                   ; 471 | ack = I2C_TX_BYTE(j*16);                        /* set the pointer */  
      2688                   ;----------------------------------------------------------------------
-     2689 00000225 504a0304         ldiu      *+fp(4),ar2           ; |472| 
+     2689 00000225 504a0304         ldiu      *+fp(4),ar2           ; |471| 
      2690 00000226 08700000-        ldp       @CL2,DP
-     2691 00000227 03ea0004         ash       4,ar2                 ; |472| 
-     2692 00000228 502001cd-        ldiu      @CL2,r0               ; |472| 
-     2693 00000229 70000000         callu     r0                    ; far call to _I2C_TX_BYTE      ; |472| 
-     2694                                                           ; |472| Far Call Occurs
-     2695 0000022a 15400307         sti       r0,*+fp(7)            ; |472| 
+     2691 00000227 03ea0004         ash       4,ar2                 ; |471| 
+     2692 00000228 502001cd-        ldiu      @CL2,r0               ; |471| 
+     2693 00000229 70000000         callu     r0                    ; far call to _I2C_TX_BYTE      ; |471| 
+     2694                                                           ; |471| Far Call Occurs
+     2695 0000022a 15400307         sti       r0,*+fp(7)            ; |471| 
      2696                           .line   40
      2697                   ;----------------------------------------------------------------------
-     2698                   ; 474 | if (!ack)                                                              
+     2698                   ; 473 | if (!ack)                                                              
      2699                   ;----------------------------------------------------------------------
-     2700 0000022b 04e00000         cmpi      0,r0                  ; |474| 
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+     2700 0000022b 04e00000         cmpi      0,r0                  ; |473| 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   51
 
-     2701 0000022c 6a060003         bne       L95                   ; |474| 
-     2702                   ;*      Branch Occurs to L95            ; |474| 
+     2701 0000022c 6a060003         bne       L95                   ; |473| 
+     2702                   ;*      Branch Occurs to L95            ; |473| 
      2703                           .line   42
      2704                   ;----------------------------------------------------------------------
-     2705                   ; 476 | r = FALSE;                                                             
+     2705                   ; 475 | r = FALSE;                                                             
      2706                   ;----------------------------------------------------------------------
-     2707 0000022d 50600000         ldiu      0,r0                  ; |476| 
-     2708 0000022e 15400306         sti       r0,*+fp(6)            ; |476| 
+     2707 0000022d 50600000         ldiu      0,r0                  ; |475| 
+     2708 0000022e 15400306         sti       r0,*+fp(6)            ; |475| 
      2709                           .line   43
      2710                   ;----------------------------------------------------------------------
-     2711                   ; 477 | break;                                                                 
+     2711                   ; 476 | break;                                                                 
      2712                   ;----------------------------------------------------------------------
-     2713 0000022f 6a00003f         bu        L101                  ; |477| 
-     2714                   ;*      Branch Occurs to L101           ; |477| 
+     2713 0000022f 6a00003f         bu        L101                  ; |476| 
+     2714                   ;*      Branch Occurs to L101           ; |476| 
      2715 00000230          L95:        
      2716                           .line   46
      2717                   ;----------------------------------------------------------------------
-     2718                   ; 480 | for(i=0;i<16;i++)                                                      
+     2718                   ; 479 | for(i=0;i<16;i++)                                                      
      2719                   ;----------------------------------------------------------------------
-     2720 00000230 50600000         ldiu      0,r0                  ; |480| 
-     2721 00000231 15400303         sti       r0,*+fp(3)            ; |480| 
-     2722 00000232 04e00010         cmpi      16,r0                 ; |480| 
-     2723 00000233 6a0a0013         bge       L99                   ; |480| 
-     2724                   ;*      Branch Occurs to L99            ; |480| 
+     2720 00000230 50600000         ldiu      0,r0                  ; |479| 
+     2721 00000231 15400303         sti       r0,*+fp(3)            ; |479| 
+     2722 00000232 04e00010         cmpi      16,r0                 ; |479| 
+     2723 00000233 6a0a0013         bge       L99                   ; |479| 
+     2724                   ;*      Branch Occurs to L99            ; |479| 
      2725 00000234          L96:        
      2726                           .line   48
      2727                   ;----------------------------------------------------------------------
-     2728                   ; 482 | ack = I2C_TX_BYTE(p[j*16+i]);                                          
+     2728                   ; 481 | ack = I2C_TX_BYTE(p[j*16+i]);                                          
      2729                   ;----------------------------------------------------------------------
-     2730 00000234 50510304         ldiu      *+fp(4),ir0           ; |482| 
+     2730 00000234 50510304         ldiu      *+fp(4),ir0           ; |481| 
      2731 00000235 08700000-        ldp       @CL2,DP
-     2732 00000236 03f10004         ash       4,ir0                 ; |482| 
-     2733 00000237 50480303         ldiu      *+fp(3),ar0           ; |482| 
-     2734 00000238 02510302         addi      *+fp(2),ir0           ; |482| Unsigned
-     2735 00000239 502001cd-        ldiu      @CL2,r0               ; |482| 
-     2736 0000023a 504a4000         ldiu      *+ar0(ir0),ar2        ; |482| 
-     2737 0000023b 70000000         callu     r0                    ; far call to _I2C_TX_BYTE      ; |482| 
-     2738                                                           ; |482| Far Call Occurs
-     2739 0000023c 15400307         sti       r0,*+fp(7)            ; |482| 
+     2732 00000236 03f10004         ash       4,ir0                 ; |481| 
+     2733 00000237 50480303         ldiu      *+fp(3),ar0           ; |481| 
+     2734 00000238 02510302         addi      *+fp(2),ir0           ; |481| Unsigned
+     2735 00000239 502001cd-        ldiu      @CL2,r0               ; |481| 
+     2736 0000023a 504a4000         ldiu      *+ar0(ir0),ar2        ; |481| 
+     2737 0000023b 70000000         callu     r0                    ; far call to _I2C_TX_BYTE      ; |481| 
+     2738                                                           ; |481| Far Call Occurs
+     2739 0000023c 15400307         sti       r0,*+fp(7)            ; |481| 
      2740                           .line   50
      2741                   ;----------------------------------------------------------------------
-     2742                   ; 484 | if (!ack)                                                              
+     2742                   ; 483 | if (!ack)                                                              
      2743                   ;----------------------------------------------------------------------
-     2744 0000023d 04e00000         cmpi      0,r0                  ; |484| 
-     2745 0000023e 6a060003         bne       L98                   ; |484| 
-     2746                   ;*      Branch Occurs to L98            ; |484| 
+     2744 0000023d 04e00000         cmpi      0,r0                  ; |483| 
+     2745 0000023e 6a060003         bne       L98                   ; |483| 
+     2746                   ;*      Branch Occurs to L98            ; |483| 
      2747                           .line   52
      2748                   ;----------------------------------------------------------------------
-     2749                   ; 486 | r = FALSE;                                                             
+     2749                   ; 485 | r = FALSE;                                                             
      2750                   ;----------------------------------------------------------------------
-     2751 0000023f 50600000         ldiu      0,r0                  ; |486| 
-     2752 00000240 15400306         sti       r0,*+fp(6)            ; |486| 
+     2751 0000023f 50600000         ldiu      0,r0                  ; |485| 
+     2752 00000240 15400306         sti       r0,*+fp(6)            ; |485| 
      2753                           .line   53
      2754                   ;----------------------------------------------------------------------
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   52
 
-     2755                   ; 487 | break;                                                                 
+     2755                   ; 486 | break;                                                                 
      2756                   ;----------------------------------------------------------------------
-     2757 00000241 6a000005         bu        L99                   ; |487| 
-     2758                   ;*      Branch Occurs to L99            ; |487| 
+     2757 00000241 6a000005         bu        L99                   ; |486| 
+     2758                   ;*      Branch Occurs to L99            ; |486| 
      2759 00000242          L98:        
      2760                           .line   46
-     2761 00000242 50600001         ldiu      1,r0                  ; |480| 
-     2762 00000243 02400303         addi      *+fp(3),r0            ; |480| 
-     2763 00000244 15400303         sti       r0,*+fp(3)            ; |480| 
-     2764 00000245 04e00010         cmpi      16,r0                 ; |480| 
-     2765 00000246 6a07ffed         blt       L96                   ; |480| 
-     2766                   ;*      Branch Occurs to L96            ; |480| 
+     2761 00000242 50600001         ldiu      1,r0                  ; |479| 
+     2762 00000243 02400303         addi      *+fp(3),r0            ; |479| 
+     2763 00000244 15400303         sti       r0,*+fp(3)            ; |479| 
+     2764 00000245 04e00010         cmpi      16,r0                 ; |479| 
+     2765 00000246 6a07ffed         blt       L96                   ; |479| 
+     2766                   ;*      Branch Occurs to L96            ; |479| 
      2767 00000247          L99:        
      2768                           .line   57
      2769                   ;----------------------------------------------------------------------
-     2770                   ; 491 | if (r==FALSE)                                           /* transfer fai
+     2770                   ; 490 | if (r==FALSE)                                           /* transfer fai
      2771                   ;     | lure, return */                                                        
      2772                   ;----------------------------------------------------------------------
-     2773 00000247 50400306         ldiu      *+fp(6),r0            ; |491| 
-     2774 00000248 04e00000         cmpi      0,r0                  ; |491| 
-     2775 00000249 6a050025         beq       L101                  ; |491| 
-     2776                   ;*      Branch Occurs to L101           ; |491| 
+     2773 00000247 50400306         ldiu      *+fp(6),r0            ; |490| 
+     2774 00000248 04e00000         cmpi      0,r0                  ; |490| 
+     2775 00000249 6a050025         beq       L101                  ; |490| 
+     2776                   ;*      Branch Occurs to L101           ; |490| 
      2777                           .line   58
      2778                   ;----------------------------------------------------------------------
-     2779                   ; 492 | break;                                                                 
+     2779                   ; 491 | break;                                                                 
      2780                   ;----------------------------------------------------------------------
      2781                           .line   60
      2782                   ;----------------------------------------------------------------------
-     2783                   ; 494 | I2C_STOP;                                                              
+     2783                   ; 493 | I2C_STOP;                                                              
      2784                   ;----------------------------------------------------------------------
      2785 0000024a 08700000-        ldp       @CL1,DP
-     2786 0000024b 502801cc-        ldiu      @CL1,ar0              ; |494| 
-     2787 0000024c 50600002         ldiu      2,r0                  ; |494| 
-     2788 0000024d 25a0c000         or3       r0,*ar0,r0            ; |494| 
-     2789 0000024e 1540c000         sti       r0,*ar0               ; |494| 
-     2790 0000024f 506000fe         ldiu      254,r0                ; |494| 
-     2791 00000250 21a0c000         and3      r0,*ar0,r0            ; |494| 
-     2792 00000251 1540c000         sti       r0,*ar0               ; |494| 
+     2786 0000024b 502801cc-        ldiu      @CL1,ar0              ; |493| 
+     2787 0000024c 50600002         ldiu      2,r0                  ; |493| 
+     2788 0000024d 25a0c000         or3       r0,*ar0,r0            ; |493| 
+     2789 0000024e 1540c000         sti       r0,*ar0               ; |493| 
+     2790 0000024f 506000fe         ldiu      254,r0                ; |493| 
+     2791 00000250 21a0c000         and3      r0,*ar0,r0            ; |493| 
+     2792 00000251 1540c000         sti       r0,*ar0               ; |493| 
      2793 00000252 0f290000                 PUSH    AR1                     
      2794 00000253 08690032                 LDI             50,AR1          
      2795 00000254 6e46ffff                 .word   6E46FFFFh       
      2796 00000255 0e290000                 POP             AR1                     
-     2797 00000256 50600004         ldiu      4,r0                  ; |494| 
-     2798 00000257 25a0c000         or3       r0,*ar0,r0            ; |494| 
-     2799 00000258 1540c000         sti       r0,*ar0               ; |494| 
-     2800 00000259 506000f7         ldiu      247,r0                ; |494| 
-     2801 0000025a 21a0c000         and3      r0,*ar0,r0            ; |494| 
-     2802 0000025b 1540c000         sti       r0,*ar0               ; |494| 
+     2797 00000256 50600004         ldiu      4,r0                  ; |493| 
+     2798 00000257 25a0c000         or3       r0,*ar0,r0            ; |493| 
+     2799 00000258 1540c000         sti       r0,*ar0               ; |493| 
+     2800 00000259 506000f7         ldiu      247,r0                ; |493| 
+     2801 0000025a 21a0c000         and3      r0,*ar0,r0            ; |493| 
+     2802 0000025b 1540c000         sti       r0,*ar0               ; |493| 
      2803 0000025c 0f290000                 PUSH    AR1                     
      2804 0000025d 08690032                 LDI             50,AR1          
      2805 0000025e 6e46ffff                 .word   6E46FFFFh       
      2806 0000025f 0e290000                 POP             AR1                     
-     2807 00000260 50600001         ldiu      1,r0                  ; |494| 
-     2808 00000261 25a0c000         or3       r0,*ar0,r0            ; |494| 
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+     2807 00000260 50600001         ldiu      1,r0                  ; |493| 
+     2808 00000261 25a0c000         or3       r0,*ar0,r0            ; |493| 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   53
 
-     2809 00000262 1540c000         sti       r0,*ar0               ; |494| 
-     2810 00000263 506000fd         ldiu      253,r0                ; |494| 
-     2811 00000264 21a0c000         and3      r0,*ar0,r0            ; |494| 
-     2812 00000265 1540c000         sti       r0,*ar0               ; |494| 
+     2809 00000262 1540c000         sti       r0,*ar0               ; |493| 
+     2810 00000263 506000fd         ldiu      253,r0                ; |493| 
+     2811 00000264 21a0c000         and3      r0,*ar0,r0            ; |493| 
+     2812 00000265 1540c000         sti       r0,*ar0               ; |493| 
      2813 00000266 0f290000                 PUSH    AR1                     
      2814 00000267 08690032                 LDI             50,AR1          
      2815 00000268 6e46ffff                 .word   6E46FFFFh       
      2816 00000269 0e290000                 POP             AR1                     
      2817                           .line   13
-     2818 0000026a 50600001         ldiu      1,r0                  ; |447| 
-     2819 0000026b 02400304         addi      *+fp(4),r0            ; |447| 
-     2820 0000026c 15400304         sti       r0,*+fp(4)            ; |447| 
-     2821 0000026d 04e00010         cmpi      16,r0                 ; |447| 
-     2822 0000026e 6a07ff5f         blt       L85                   ; |447| 
-     2823                   ;*      Branch Occurs to L85            ; |447| 
+     2818 0000026a 50600001         ldiu      1,r0                  ; |446| 
+     2819 0000026b 02400304         addi      *+fp(4),r0            ; |446| 
+     2820 0000026c 15400304         sti       r0,*+fp(4)            ; |446| 
+     2821 0000026d 04e00010         cmpi      16,r0                 ; |446| 
+     2822 0000026e 6a07ff5f         blt       L85                   ; |446| 
+     2823                   ;*      Branch Occurs to L85            ; |446| 
      2824 0000026f          L101:        
      2825                           .line   63
      2826                   ;----------------------------------------------------------------------
-     2827                   ; 497 | I2C_STOP;                                                              
+     2827                   ; 496 | I2C_STOP;                                                              
      2828                   ;----------------------------------------------------------------------
      2829 0000026f 08700000-        ldp       @CL1,DP
-     2830 00000270 502801cc-        ldiu      @CL1,ar0              ; |497| 
-     2831 00000271 50600002         ldiu      2,r0                  ; |497| 
-     2832 00000272 25a0c000         or3       r0,*ar0,r0            ; |497| 
-     2833 00000273 1540c000         sti       r0,*ar0               ; |497| 
-     2834 00000274 506000fe         ldiu      254,r0                ; |497| 
-     2835 00000275 21a0c000         and3      r0,*ar0,r0            ; |497| 
-     2836 00000276 1540c000         sti       r0,*ar0               ; |497| 
+     2830 00000270 502801cc-        ldiu      @CL1,ar0              ; |496| 
+     2831 00000271 50600002         ldiu      2,r0                  ; |496| 
+     2832 00000272 25a0c000         or3       r0,*ar0,r0            ; |496| 
+     2833 00000273 1540c000         sti       r0,*ar0               ; |496| 
+     2834 00000274 506000fe         ldiu      254,r0                ; |496| 
+     2835 00000275 21a0c000         and3      r0,*ar0,r0            ; |496| 
+     2836 00000276 1540c000         sti       r0,*ar0               ; |496| 
      2837 00000277 0f290000                 PUSH    AR1                     
      2838 00000278 08690032                 LDI             50,AR1          
      2839 00000279 6e46ffff                 .word   6E46FFFFh       
      2840 0000027a 0e290000                 POP             AR1                     
-     2841 0000027b 50600004         ldiu      4,r0                  ; |497| 
-     2842 0000027c 25a0c000         or3       r0,*ar0,r0            ; |497| 
-     2843 0000027d 1540c000         sti       r0,*ar0               ; |497| 
-     2844 0000027e 506000f7         ldiu      247,r0                ; |497| 
-     2845 0000027f 21a0c000         and3      r0,*ar0,r0            ; |497| 
-     2846 00000280 1540c000         sti       r0,*ar0               ; |497| 
+     2841 0000027b 50600004         ldiu      4,r0                  ; |496| 
+     2842 0000027c 25a0c000         or3       r0,*ar0,r0            ; |496| 
+     2843 0000027d 1540c000         sti       r0,*ar0               ; |496| 
+     2844 0000027e 506000f7         ldiu      247,r0                ; |496| 
+     2845 0000027f 21a0c000         and3      r0,*ar0,r0            ; |496| 
+     2846 00000280 1540c000         sti       r0,*ar0               ; |496| 
      2847 00000281 0f290000                 PUSH    AR1                     
      2848 00000282 08690032                 LDI             50,AR1          
      2849 00000283 6e46ffff                 .word   6E46FFFFh       
      2850 00000284 0e290000                 POP             AR1                     
-     2851 00000285 50600001         ldiu      1,r0                  ; |497| 
-     2852 00000286 25a0c000         or3       r0,*ar0,r0            ; |497| 
-     2853 00000287 1540c000         sti       r0,*ar0               ; |497| 
-     2854 00000288 506000fd         ldiu      253,r0                ; |497| 
-     2855 00000289 21a0c000         and3      r0,*ar0,r0            ; |497| 
-     2856 0000028a 1540c000         sti       r0,*ar0               ; |497| 
+     2851 00000285 50600001         ldiu      1,r0                  ; |496| 
+     2852 00000286 25a0c000         or3       r0,*ar0,r0            ; |496| 
+     2853 00000287 1540c000         sti       r0,*ar0               ; |496| 
+     2854 00000288 506000fd         ldiu      253,r0                ; |496| 
+     2855 00000289 21a0c000         and3      r0,*ar0,r0            ; |496| 
+     2856 0000028a 1540c000         sti       r0,*ar0               ; |496| 
      2857 0000028b 0f290000                 PUSH    AR1                     
      2858 0000028c 08690032                 LDI             50,AR1          
      2859 0000028d 6e46ffff                 .word   6E46FFFFh       
      2860 0000028e 0e290000                 POP             AR1                     
      2861                           .line   64
      2862                   ;----------------------------------------------------------------------
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   54
 
-     2863                   ; 498 | GIEP;                                                                  
+     2863                   ; 497 | GIEP;                                                                  
      2864                   ;----------------------------------------------------------------------
      2865 0000028f 0e350000         pop             ST                      
      2866                           .line   66
      2867                   ;----------------------------------------------------------------------
-     2868                   ; 500 | return r;                                                              
+     2868                   ; 499 | return r;                                                              
      2869                   ;----------------------------------------------------------------------
-     2870 00000290 50400306         ldiu      *+fp(6),r0            ; |500| 
+     2870 00000290 50400306         ldiu      *+fp(6),r0            ; |499| 
      2871                           .line   67
      2872                                                           ; Begin Epilog Code
-     2873 00000291 50410b01         ldiu      *-fp(1),r1            ; |501| 
-     2874 00000292 504bc300         ldiu      *fp,fp                ; |501| 
+     2873 00000291 50410b01         ldiu      *-fp(1),r1            ; |500| 
+     2874 00000292 504bc300         ldiu      *fp,fp                ; |500| 
      2875                                                           ; Unallocate the Frame
-     2876 00000293 18740009         subi      9,sp                  ; |501| 
+     2876 00000293 18740009         subi      9,sp                  ; |500| 
      2877 00000294 68000001         bu        r1
      2878                   ;*      Branch Occurs to r1 
-     2879                           .endfunc        501,000000000h,7
+     2879                           .endfunc        500,000000000h,7
      2880                   
      2881                   
      2882 00000295                  .sect    "internal_RAM"
      2883                   
      2884                           .global _Read_MC24C02_Record
      2885                           .sym    _Read_MC24C02_Record,_Read_MC24C02_Record,46,2,0
-     2886                           .func   516
+     2886                           .func   515
      2887                   ;******************************************************************************
      2888                   ;* FUNCTION NAME: _Read_MC24C02_Record                                        *
      2889                   ;*                                                                            *
@@ -3178,191 +3178,191 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   54
      2908                           .sym    _ack,7,14,1,32
      2909                           .line   1
      2910                   ;----------------------------------------------------------------------
-     2911                   ; 516 | BOOL Read_MC24C02_Record(int addr, unsigned char* p)                   
+     2911                   ; 515 | BOOL Read_MC24C02_Record(int addr, unsigned char* p)                   
      2912                   ;----------------------------------------------------------------------
      2913 00000295 0f2b0000         push      fp
      2914 00000296 500b0014         ldiu      sp,fp
      2915 00000297 02740007         addi      7,sp
      2916                           .line   2
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   55
 
      2917                   ;----------------------------------------------------------------------
-     2918                   ; 518 | int i,j,k,r;    /* byte counter; counter; address error accumulator; re
+     2918                   ; 517 | int i,j,k,r;    /* byte counter; counter; address error accumulator; re
      2919                   ;     | turn */                                                                
-     2920                   ; 519 | BOOL ack;               /* check I2C operations
+     2920                   ; 518 | BOOL ack;               /* check I2C operations
      2921                   ;     |                                                  */                    
      2922                   ;----------------------------------------------------------------------
-     2923 00000298 15420302         sti       r2,*+fp(2)            ; |517| 
-     2924 00000299 154a0301         sti       ar2,*+fp(1)           ; |517| 
+     2923 00000298 15420302         sti       r2,*+fp(2)            ; |516| 
+     2924 00000299 154a0301         sti       ar2,*+fp(1)           ; |516| 
      2925                           .line   6
      2926                   ;----------------------------------------------------------------------
-     2927                   ; 521 | _GIEP;                                                                 
+     2927                   ; 520 | _GIEP;                                                                 
      2928                   ;----------------------------------------------------------------------
      2929 0000029a 0f350000         push    ST                      
      2930 0000029b 03752000         andn    2000h, ST       
      2931                           .line   7
      2932                   ;----------------------------------------------------------------------
-     2933                   ; 522 | r = TRUE;                                                              
+     2933                   ; 521 | r = TRUE;                                                              
      2934                   ;----------------------------------------------------------------------
-     2935 0000029c 50600001         ldiu      1,r0                  ; |522| 
-     2936 0000029d 15400306         sti       r0,*+fp(6)            ; |522| 
+     2935 0000029c 50600001         ldiu      1,r0                  ; |521| 
+     2936 0000029d 15400306         sti       r0,*+fp(6)            ; |521| 
      2937                           .line   9
      2938                   ;----------------------------------------------------------------------
-     2939                   ; 524 | for(j=0;j<16;j++)                                                      
+     2939                   ; 523 | for(j=0;j<16;j++)                                                      
      2940                   ;----------------------------------------------------------------------
-     2941 0000029e 50600000         ldiu      0,r0                  ; |524| 
-     2942 0000029f 15400304         sti       r0,*+fp(4)            ; |524| 
-     2943 000002a0 04e00010         cmpi      16,r0                 ; |524| 
-     2944 000002a1 6a0a00cb         bge       L120                  ; |524| 
-     2945                   ;*      Branch Occurs to L120           ; |524| 
+     2941 0000029e 50600000         ldiu      0,r0                  ; |523| 
+     2942 0000029f 15400304         sti       r0,*+fp(4)            ; |523| 
+     2943 000002a0 04e00010         cmpi      16,r0                 ; |523| 
+     2944 000002a1 6a0a00cb         bge       L120                  ; |523| 
+     2945                   ;*      Branch Occurs to L120           ; |523| 
      2946 000002a2          L105:        
      2947                           .line   11
      2948                   ;----------------------------------------------------------------------
-     2949                   ; 526 | k = 0;                                                                 
-     2950                   ; 528 | while(1)                                                               
+     2949                   ; 525 | k = 0;                                                                 
+     2950                   ; 527 | while(1)                                                               
      2951                   ;----------------------------------------------------------------------
-     2952 000002a2 50600000         ldiu      0,r0                  ; |526| 
-     2953 000002a3 15400305         sti       r0,*+fp(5)            ; |526| 
+     2952 000002a2 50600000         ldiu      0,r0                  ; |525| 
+     2953 000002a3 15400305         sti       r0,*+fp(5)            ; |525| 
      2954 000002a4          L106:        
      2955                           .line   15
      2956                   ;----------------------------------------------------------------------
-     2957                   ; 530 | I2C_START;                                                             
+     2957                   ; 529 | I2C_START;                                                             
      2958                   ;----------------------------------------------------------------------
      2959 000002a4 08700000-        ldp       @CL1,DP
-     2960 000002a5 502801cc-        ldiu      @CL1,ar0              ; |530| 
-     2961 000002a6 50600004         ldiu      4,r0                  ; |530| 
-     2962 000002a7 25a0c000         or3       r0,*ar0,r0            ; |530| 
-     2963 000002a8 1540c000         sti       r0,*ar0               ; |530| 
-     2964 000002a9 50600001         ldiu      1,r0                  ; |530| 
-     2965 000002aa 25a0c000         or3       r0,*ar0,r0            ; |530| 
-     2966 000002ab 1540c000         sti       r0,*ar0               ; |530| 
-     2967 000002ac 50600008         ldiu      8,r0                  ; |530| 
-     2968 000002ad 25a0c000         or3       r0,*ar0,r0            ; |530| 
-     2969 000002ae 1540c000         sti       r0,*ar0               ; |530| 
-     2970 000002af 50600002         ldiu      2,r0                  ; |530| 
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+     2960 000002a5 502801cc-        ldiu      @CL1,ar0              ; |529| 
+     2961 000002a6 50600004         ldiu      4,r0                  ; |529| 
+     2962 000002a7 25a0c000         or3       r0,*ar0,r0            ; |529| 
+     2963 000002a8 1540c000         sti       r0,*ar0               ; |529| 
+     2964 000002a9 50600001         ldiu      1,r0                  ; |529| 
+     2965 000002aa 25a0c000         or3       r0,*ar0,r0            ; |529| 
+     2966 000002ab 1540c000         sti       r0,*ar0               ; |529| 
+     2967 000002ac 50600008         ldiu      8,r0                  ; |529| 
+     2968 000002ad 25a0c000         or3       r0,*ar0,r0            ; |529| 
+     2969 000002ae 1540c000         sti       r0,*ar0               ; |529| 
+     2970 000002af 50600002         ldiu      2,r0                  ; |529| 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   56
 
-     2971 000002b0 25a0c000         or3       r0,*ar0,r0            ; |530| 
-     2972 000002b1 1540c000         sti       r0,*ar0               ; |530| 
+     2971 000002b0 25a0c000         or3       r0,*ar0,r0            ; |529| 
+     2972 000002b1 1540c000         sti       r0,*ar0               ; |529| 
      2973 000002b2 0f290000                 PUSH    AR1                     
      2974 000002b3 08690032                 LDI             50,AR1          
      2975 000002b4 6e46ffff                 .word   6E46FFFFh       
      2976 000002b5 0e290000                 POP             AR1                     
-     2977 000002b6 506000fe         ldiu      254,r0                ; |530| 
-     2978 000002b7 21a0c000         and3      r0,*ar0,r0            ; |530| 
-     2979 000002b8 1540c000         sti       r0,*ar0               ; |530| 
+     2977 000002b6 506000fe         ldiu      254,r0                ; |529| 
+     2978 000002b7 21a0c000         and3      r0,*ar0,r0            ; |529| 
+     2979 000002b8 1540c000         sti       r0,*ar0               ; |529| 
      2980 000002b9 0f290000                 PUSH    AR1                     
      2981 000002ba 08690032                 LDI             50,AR1          
      2982 000002bb 6e46ffff                 .word   6E46FFFFh       
      2983 000002bc 0e290000                 POP             AR1                     
-     2984 000002bd 506000fb         ldiu      251,r0                ; |530| 
-     2985 000002be 21a0c000         and3      r0,*ar0,r0            ; |530| 
-     2986 000002bf 1540c000         sti       r0,*ar0               ; |530| 
+     2984 000002bd 506000fb         ldiu      251,r0                ; |529| 
+     2985 000002be 21a0c000         and3      r0,*ar0,r0            ; |529| 
+     2986 000002bf 1540c000         sti       r0,*ar0               ; |529| 
      2987 000002c0 0f290000                 PUSH    AR1                     
      2988 000002c1 08690032                 LDI             50,AR1          
      2989 000002c2 6e46ffff                 .word   6E46FFFFh       
      2990 000002c3 0e290000                 POP             AR1                     
      2991                           .line   16
      2992                   ;----------------------------------------------------------------------
-     2993                   ; 531 | ack = I2C_TX_BYTE(addr);                /* address without read bit set
+     2993                   ; 530 | ack = I2C_TX_BYTE(addr);                /* address without read bit set
      2994                   ;     |  */                                                                    
      2995                   ;----------------------------------------------------------------------
      2996 000002c4 08700000-        ldp       @CL2,DP
-     2997 000002c5 502001cd-        ldiu      @CL2,r0               ; |531| 
-     2998 000002c6 504a0301         ldiu      *+fp(1),ar2           ; |531| 
-     2999 000002c7 70000000         callu     r0                    ; far call to _I2C_TX_BYTE      ; |531| 
-     3000                                                           ; |531| Far Call Occurs
-     3001 000002c8 15400307         sti       r0,*+fp(7)            ; |531| 
+     2997 000002c5 502001cd-        ldiu      @CL2,r0               ; |530| 
+     2998 000002c6 504a0301         ldiu      *+fp(1),ar2           ; |530| 
+     2999 000002c7 70000000         callu     r0                    ; far call to _I2C_TX_BYTE      ; |530| 
+     3000                                                           ; |530| Far Call Occurs
+     3001 000002c8 15400307         sti       r0,*+fp(7)            ; |530| 
      3002                           .line   18
      3003                   ;----------------------------------------------------------------------
-     3004                   ; 533 | if (!ack)                                               /* accumulate a
+     3004                   ; 532 | if (!ack)                                               /* accumulate a
      3005                   ;     | ddress errrors   */                                                    
      3006                   ;----------------------------------------------------------------------
-     3007 000002c9 04e00000         cmpi      0,r0                  ; |533| 
-     3008 000002ca 6a06002b         bne       L112                  ; |533| 
-     3009                   ;*      Branch Occurs to L112           ; |533| 
+     3007 000002c9 04e00000         cmpi      0,r0                  ; |532| 
+     3008 000002ca 6a06002b         bne       L112                  ; |532| 
+     3009                   ;*      Branch Occurs to L112           ; |532| 
      3010                           .line   19
      3011                   ;----------------------------------------------------------------------
-     3012                   ; 534 | k++;                                                                   
-     3013                   ; 535 | else                                                                   
+     3012                   ; 533 | k++;                                                                   
+     3013                   ; 534 | else                                                                   
      3014                   ;----------------------------------------------------------------------
-     3015 000002cb 50600001         ldiu      1,r0                  ; |534| 
-     3016 000002cc 02400305         addi      *+fp(5),r0            ; |534| 
-     3017 000002cd 15400305         sti       r0,*+fp(5)            ; |534| 
-     3018 000002ce 6a000000         bu        L109                  ; |515| 
-     3019                   ;*      Branch Occurs to L109           ; |515| 
+     3015 000002cb 50600001         ldiu      1,r0                  ; |533| 
+     3016 000002cc 02400305         addi      *+fp(5),r0            ; |533| 
+     3017 000002cd 15400305         sti       r0,*+fp(5)            ; |533| 
+     3018 000002ce 6a000000         bu        L109                  ; |514| 
+     3019                   ;*      Branch Occurs to L109           ; |514| 
      3020                           .line   21
      3021                   ;----------------------------------------------------------------------
-     3022                   ; 536 | break;                                                                 
+     3022                   ; 535 | break;                                                                 
      3023                   ;----------------------------------------------------------------------
      3024 000002cf          L109:        
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   57
 
      3025                           .line   23
      3026                   ;----------------------------------------------------------------------
-     3027                   ; 538 | if (k>=50)                                                             
+     3027                   ; 537 | if (k>=50)                                                             
      3028                   ;----------------------------------------------------------------------
-     3029 000002cf 50400305         ldiu      *+fp(5),r0            ; |538| 
-     3030 000002d0 04e00032         cmpi      50,r0                 ; |538| 
-     3031 000002d1 6a070003         blt       L111                  ; |538| 
-     3032                   ;*      Branch Occurs to L111           ; |538| 
+     3029 000002cf 50400305         ldiu      *+fp(5),r0            ; |537| 
+     3030 000002d0 04e00032         cmpi      50,r0                 ; |537| 
+     3031 000002d1 6a070003         blt       L111                  ; |537| 
+     3032                   ;*      Branch Occurs to L111           ; |537| 
      3033                           .line   25
      3034                   ;----------------------------------------------------------------------
-     3035                   ; 540 | r = FALSE;                                                             
+     3035                   ; 539 | r = FALSE;                                                             
      3036                   ;----------------------------------------------------------------------
-     3037 000002d2 50600000         ldiu      0,r0                  ; |540| 
-     3038 000002d3 15400306         sti       r0,*+fp(6)            ; |540| 
+     3037 000002d2 50600000         ldiu      0,r0                  ; |539| 
+     3038 000002d3 15400306         sti       r0,*+fp(6)            ; |539| 
      3039                           .line   26
      3040                   ;----------------------------------------------------------------------
-     3041                   ; 541 | break;                                                                 
+     3041                   ; 540 | break;                                                                 
      3042                   ;----------------------------------------------------------------------
-     3043 000002d4 6a000021         bu        L112                  ; |541| 
-     3044                   ;*      Branch Occurs to L112           ; |541| 
+     3043 000002d4 6a000021         bu        L112                  ; |540| 
+     3044                   ;*      Branch Occurs to L112           ; |540| 
      3045 000002d5          L111:        
      3046                           .line   29
      3047                   ;----------------------------------------------------------------------
-     3048                   ; 544 | I2C_STOP;                                                              
+     3048                   ; 543 | I2C_STOP;                                                              
      3049                   ;----------------------------------------------------------------------
      3050 000002d5 08700000-        ldp       @CL1,DP
-     3051 000002d6 502801cc-        ldiu      @CL1,ar0              ; |544| 
-     3052 000002d7 50600002         ldiu      2,r0                  ; |544| 
-     3053 000002d8 25a0c000         or3       r0,*ar0,r0            ; |544| 
-     3054 000002d9 1540c000         sti       r0,*ar0               ; |544| 
-     3055 000002da 506000fe         ldiu      254,r0                ; |544| 
-     3056 000002db 21a0c000         and3      r0,*ar0,r0            ; |544| 
-     3057 000002dc 1540c000         sti       r0,*ar0               ; |544| 
+     3051 000002d6 502801cc-        ldiu      @CL1,ar0              ; |543| 
+     3052 000002d7 50600002         ldiu      2,r0                  ; |543| 
+     3053 000002d8 25a0c000         or3       r0,*ar0,r0            ; |543| 
+     3054 000002d9 1540c000         sti       r0,*ar0               ; |543| 
+     3055 000002da 506000fe         ldiu      254,r0                ; |543| 
+     3056 000002db 21a0c000         and3      r0,*ar0,r0            ; |543| 
+     3057 000002dc 1540c000         sti       r0,*ar0               ; |543| 
      3058 000002dd 0f290000                 PUSH    AR1                     
      3059 000002de 08690032                 LDI             50,AR1          
      3060 000002df 6e46ffff                 .word   6E46FFFFh       
      3061 000002e0 0e290000                 POP             AR1                     
-     3062 000002e1 50600004         ldiu      4,r0                  ; |544| 
-     3063 000002e2 25a0c000         or3       r0,*ar0,r0            ; |544| 
-     3064 000002e3 1540c000         sti       r0,*ar0               ; |544| 
-     3065 000002e4 506000f7         ldiu      247,r0                ; |544| 
-     3066 000002e5 21a0c000         and3      r0,*ar0,r0            ; |544| 
-     3067 000002e6 1540c000         sti       r0,*ar0               ; |544| 
+     3062 000002e1 50600004         ldiu      4,r0                  ; |543| 
+     3063 000002e2 25a0c000         or3       r0,*ar0,r0            ; |543| 
+     3064 000002e3 1540c000         sti       r0,*ar0               ; |543| 
+     3065 000002e4 506000f7         ldiu      247,r0                ; |543| 
+     3066 000002e5 21a0c000         and3      r0,*ar0,r0            ; |543| 
+     3067 000002e6 1540c000         sti       r0,*ar0               ; |543| 
      3068 000002e7 0f290000                 PUSH    AR1                     
      3069 000002e8 08690032                 LDI             50,AR1          
      3070 000002e9 6e46ffff                 .word   6E46FFFFh       
      3071 000002ea 0e290000                 POP             AR1                     
-     3072 000002eb 50600001         ldiu      1,r0                  ; |544| 
-     3073 000002ec 25a0c000         or3       r0,*ar0,r0            ; |544| 
-     3074 000002ed 1540c000         sti       r0,*ar0               ; |544| 
-     3075 000002ee 506000fd         ldiu      253,r0                ; |544| 
-     3076 000002ef 21a0c000         and3      r0,*ar0,r0            ; |544| 
-     3077 000002f0 1540c000         sti       r0,*ar0               ; |544| 
+     3072 000002eb 50600001         ldiu      1,r0                  ; |543| 
+     3073 000002ec 25a0c000         or3       r0,*ar0,r0            ; |543| 
+     3074 000002ed 1540c000         sti       r0,*ar0               ; |543| 
+     3075 000002ee 506000fd         ldiu      253,r0                ; |543| 
+     3076 000002ef 21a0c000         and3      r0,*ar0,r0            ; |543| 
+     3077 000002f0 1540c000         sti       r0,*ar0               ; |543| 
      3078 000002f1 0f290000                 PUSH    AR1                     
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   58
 
@@ -3370,284 +3370,284 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   58
      3080 000002f3 6e46ffff                 .word   6E46FFFFh       
      3081 000002f4 0e290000                 POP             AR1                     
      3082                           .line   30
-     3083 000002f5 6a00ffae         bu        L106                  ; |545| 
-     3084                   ;*      Branch Occurs to L106           ; |545| 
+     3083 000002f5 6a00ffae         bu        L106                  ; |544| 
+     3084                   ;*      Branch Occurs to L106           ; |544| 
      3085 000002f6          L112:        
      3086                           .line   32
      3087                   ;----------------------------------------------------------------------
-     3088                   ; 547 | if (r==FALSE)                                           /* address fail
+     3088                   ; 546 | if (r==FALSE)                                           /* address fail
      3089                   ;     | ure, return */                                                         
      3090                   ;----------------------------------------------------------------------
-     3091 000002f6 50400306         ldiu      *+fp(6),r0            ; |547| 
-     3092 000002f7 04e00000         cmpi      0,r0                  ; |547| 
-     3093 000002f8 6a050074         beq       L120                  ; |547| 
-     3094                   ;*      Branch Occurs to L120           ; |547| 
+     3091 000002f6 50400306         ldiu      *+fp(6),r0            ; |546| 
+     3092 000002f7 04e00000         cmpi      0,r0                  ; |546| 
+     3093 000002f8 6a050074         beq       L120                  ; |546| 
+     3094                   ;*      Branch Occurs to L120           ; |546| 
      3095                           .line   33
      3096                   ;----------------------------------------------------------------------
-     3097                   ; 548 | break;                                                                 
+     3097                   ; 547 | break;                                                                 
      3098                   ;----------------------------------------------------------------------
      3099                           .line   35
      3100                   ;----------------------------------------------------------------------
-     3101                   ; 550 | ack = I2C_TX_BYTE(j*16);                        /* set the pointer */  
+     3101                   ; 549 | ack = I2C_TX_BYTE(j*16);                        /* set the pointer */  
      3102                   ;----------------------------------------------------------------------
-     3103 000002f9 504a0304         ldiu      *+fp(4),ar2           ; |550| 
+     3103 000002f9 504a0304         ldiu      *+fp(4),ar2           ; |549| 
      3104 000002fa 08700000-        ldp       @CL2,DP
-     3105 000002fb 03ea0004         ash       4,ar2                 ; |550| 
-     3106 000002fc 502001cd-        ldiu      @CL2,r0               ; |550| 
-     3107 000002fd 70000000         callu     r0                    ; far call to _I2C_TX_BYTE      ; |550| 
-     3108                                                           ; |550| Far Call Occurs
-     3109 000002fe 15400307         sti       r0,*+fp(7)            ; |550| 
+     3105 000002fb 03ea0004         ash       4,ar2                 ; |549| 
+     3106 000002fc 502001cd-        ldiu      @CL2,r0               ; |549| 
+     3107 000002fd 70000000         callu     r0                    ; far call to _I2C_TX_BYTE      ; |549| 
+     3108                                                           ; |549| Far Call Occurs
+     3109 000002fe 15400307         sti       r0,*+fp(7)            ; |549| 
      3110                           .line   37
      3111                   ;----------------------------------------------------------------------
-     3112                   ; 552 | if (!ack)                                                              
+     3112                   ; 551 | if (!ack)                                                              
      3113                   ;----------------------------------------------------------------------
-     3114 000002ff 04e00000         cmpi      0,r0                  ; |552| 
-     3115 00000300 6a060003         bne       L115                  ; |552| 
-     3116                   ;*      Branch Occurs to L115           ; |552| 
+     3114 000002ff 04e00000         cmpi      0,r0                  ; |551| 
+     3115 00000300 6a060003         bne       L115                  ; |551| 
+     3116                   ;*      Branch Occurs to L115           ; |551| 
      3117                           .line   39
      3118                   ;----------------------------------------------------------------------
-     3119                   ; 554 | r = FALSE;                                                             
+     3119                   ; 553 | r = FALSE;                                                             
      3120                   ;----------------------------------------------------------------------
-     3121 00000301 50600000         ldiu      0,r0                  ; |554| 
-     3122 00000302 15400306         sti       r0,*+fp(6)            ; |554| 
+     3121 00000301 50600000         ldiu      0,r0                  ; |553| 
+     3122 00000302 15400306         sti       r0,*+fp(6)            ; |553| 
      3123                           .line   40
      3124                   ;----------------------------------------------------------------------
-     3125                   ; 555 | break;                                                                 
+     3125                   ; 554 | break;                                                                 
      3126                   ;----------------------------------------------------------------------
-     3127 00000303 6a000069         bu        L120                  ; |555| 
-     3128                   ;*      Branch Occurs to L120           ; |555| 
+     3127 00000303 6a000069         bu        L120                  ; |554| 
+     3128                   ;*      Branch Occurs to L120           ; |554| 
      3129 00000304          L115:        
      3130                           .line   43
      3131                   ;----------------------------------------------------------------------
-     3132                   ; 558 | I2C_START;                                                             
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+     3132                   ; 557 | I2C_START;                                                             
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   59
 
      3133                   ;----------------------------------------------------------------------
      3134 00000304 08700000-        ldp       @CL1,DP
-     3135 00000305 502801cc-        ldiu      @CL1,ar0              ; |558| 
-     3136 00000306 50600004         ldiu      4,r0                  ; |558| 
-     3137 00000307 25a0c000         or3       r0,*ar0,r0            ; |558| 
-     3138 00000308 1540c000         sti       r0,*ar0               ; |558| 
-     3139 00000309 50600001         ldiu      1,r0                  ; |558| 
-     3140 0000030a 25a0c000         or3       r0,*ar0,r0            ; |558| 
-     3141 0000030b 1540c000         sti       r0,*ar0               ; |558| 
-     3142 0000030c 50600008         ldiu      8,r0                  ; |558| 
-     3143 0000030d 25a0c000         or3       r0,*ar0,r0            ; |558| 
-     3144 0000030e 1540c000         sti       r0,*ar0               ; |558| 
-     3145 0000030f 50600002         ldiu      2,r0                  ; |558| 
-     3146 00000310 25a0c000         or3       r0,*ar0,r0            ; |558| 
-     3147 00000311 1540c000         sti       r0,*ar0               ; |558| 
+     3135 00000305 502801cc-        ldiu      @CL1,ar0              ; |557| 
+     3136 00000306 50600004         ldiu      4,r0                  ; |557| 
+     3137 00000307 25a0c000         or3       r0,*ar0,r0            ; |557| 
+     3138 00000308 1540c000         sti       r0,*ar0               ; |557| 
+     3139 00000309 50600001         ldiu      1,r0                  ; |557| 
+     3140 0000030a 25a0c000         or3       r0,*ar0,r0            ; |557| 
+     3141 0000030b 1540c000         sti       r0,*ar0               ; |557| 
+     3142 0000030c 50600008         ldiu      8,r0                  ; |557| 
+     3143 0000030d 25a0c000         or3       r0,*ar0,r0            ; |557| 
+     3144 0000030e 1540c000         sti       r0,*ar0               ; |557| 
+     3145 0000030f 50600002         ldiu      2,r0                  ; |557| 
+     3146 00000310 25a0c000         or3       r0,*ar0,r0            ; |557| 
+     3147 00000311 1540c000         sti       r0,*ar0               ; |557| 
      3148 00000312 0f290000                 PUSH    AR1                     
      3149 00000313 08690032                 LDI             50,AR1          
      3150 00000314 6e46ffff                 .word   6E46FFFFh       
      3151 00000315 0e290000                 POP             AR1                     
-     3152 00000316 506000fe         ldiu      254,r0                ; |558| 
-     3153 00000317 21a0c000         and3      r0,*ar0,r0            ; |558| 
-     3154 00000318 1540c000         sti       r0,*ar0               ; |558| 
+     3152 00000316 506000fe         ldiu      254,r0                ; |557| 
+     3153 00000317 21a0c000         and3      r0,*ar0,r0            ; |557| 
+     3154 00000318 1540c000         sti       r0,*ar0               ; |557| 
      3155 00000319 0f290000                 PUSH    AR1                     
      3156 0000031a 08690032                 LDI             50,AR1          
      3157 0000031b 6e46ffff                 .word   6E46FFFFh       
      3158 0000031c 0e290000                 POP             AR1                     
-     3159 0000031d 506000fb         ldiu      251,r0                ; |558| 
-     3160 0000031e 21a0c000         and3      r0,*ar0,r0            ; |558| 
-     3161 0000031f 1540c000         sti       r0,*ar0               ; |558| 
+     3159 0000031d 506000fb         ldiu      251,r0                ; |557| 
+     3160 0000031e 21a0c000         and3      r0,*ar0,r0            ; |557| 
+     3161 0000031f 1540c000         sti       r0,*ar0               ; |557| 
      3162 00000320 0f290000                 PUSH    AR1                     
      3163 00000321 08690032                 LDI             50,AR1          
      3164 00000322 6e46ffff                 .word   6E46FFFFh       
      3165 00000323 0e290000                 POP             AR1                     
      3166                           .line   44
      3167                   ;----------------------------------------------------------------------
-     3168                   ; 559 | ack = I2C_TX_BYTE(addr|0x01);           /* address with read bit set */
+     3168                   ; 558 | ack = I2C_TX_BYTE(addr|0x01);           /* address with read bit set */
      3169                   ;----------------------------------------------------------------------
      3170 00000324 08700000-        ldp       @CL2,DP
-     3171 00000325 506a0001         ldiu      1,ar2                 ; |559| 
-     3172 00000326 502001cd-        ldiu      @CL2,r0               ; |559| 
-     3173 00000327 104a0301         or        *+fp(1),ar2           ; |559| 
-     3174 00000328 70000000         callu     r0                    ; far call to _I2C_TX_BYTE      ; |559| 
-     3175                                                           ; |559| Far Call Occurs
-     3176 00000329 15400307         sti       r0,*+fp(7)            ; |559| 
+     3171 00000325 506a0001         ldiu      1,ar2                 ; |558| 
+     3172 00000326 502001cd-        ldiu      @CL2,r0               ; |558| 
+     3173 00000327 104a0301         or        *+fp(1),ar2           ; |558| 
+     3174 00000328 70000000         callu     r0                    ; far call to _I2C_TX_BYTE      ; |558| 
+     3175                                                           ; |558| Far Call Occurs
+     3176 00000329 15400307         sti       r0,*+fp(7)            ; |558| 
      3177                           .line   46
      3178                   ;----------------------------------------------------------------------
-     3179                   ; 561 | if (!ack)                                                              
+     3179                   ; 560 | if (!ack)                                                              
      3180                   ;----------------------------------------------------------------------
-     3181 0000032a 04e00000         cmpi      0,r0                  ; |561| 
-     3182 0000032b 6a060003         bne       L117                  ; |561| 
-     3183                   ;*      Branch Occurs to L117           ; |561| 
+     3181 0000032a 04e00000         cmpi      0,r0                  ; |560| 
+     3182 0000032b 6a060003         bne       L117                  ; |560| 
+     3183                   ;*      Branch Occurs to L117           ; |560| 
      3184                           .line   48
      3185                   ;----------------------------------------------------------------------
-     3186                   ; 563 | r = FALSE;                                                             
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+     3186                   ; 562 | r = FALSE;                                                             
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   60
 
      3187                   ;----------------------------------------------------------------------
-     3188 0000032c 50600000         ldiu      0,r0                  ; |563| 
-     3189 0000032d 15400306         sti       r0,*+fp(6)            ; |563| 
+     3188 0000032c 50600000         ldiu      0,r0                  ; |562| 
+     3189 0000032d 15400306         sti       r0,*+fp(6)            ; |562| 
      3190                           .line   49
      3191                   ;----------------------------------------------------------------------
-     3192                   ; 564 | break;                                                                 
+     3192                   ; 563 | break;                                                                 
      3193                   ;----------------------------------------------------------------------
-     3194 0000032e 6a00003e         bu        L120                  ; |564| 
-     3195                   ;*      Branch Occurs to L120           ; |564| 
+     3194 0000032e 6a00003e         bu        L120                  ; |563| 
+     3195                   ;*      Branch Occurs to L120           ; |563| 
      3196 0000032f          L117:        
      3197                           .line   52
      3198                   ;----------------------------------------------------------------------
-     3199                   ; 567 | for (i=0;i<15;i++)                                                     
+     3199                   ; 566 | for (i=0;i<15;i++)                                                     
      3200                   ;----------------------------------------------------------------------
-     3201 0000032f 50600000         ldiu      0,r0                  ; |567| 
-     3202 00000330 15400303         sti       r0,*+fp(3)            ; |567| 
-     3203 00000331 04e0000f         cmpi      15,r0                 ; |567| 
-     3204 00000332 6a0a000d         bge       L119                  ; |567| 
-     3205                   ;*      Branch Occurs to L119           ; |567| 
+     3201 0000032f 50600000         ldiu      0,r0                  ; |566| 
+     3202 00000330 15400303         sti       r0,*+fp(3)            ; |566| 
+     3203 00000331 04e0000f         cmpi      15,r0                 ; |566| 
+     3204 00000332 6a0a000d         bge       L119                  ; |566| 
+     3205                   ;*      Branch Occurs to L119           ; |566| 
      3206 00000333          L118:        
      3207                           .line   53
      3208                   ;----------------------------------------------------------------------
-     3209                   ; 568 | I2C_RX_BYTE(&p[j*16+i],1);              /* read the bytes , WITH ACK*/ 
+     3209                   ; 567 | I2C_RX_BYTE(&p[j*16+i],1);              /* read the bytes , WITH ACK*/ 
      3210                   ;----------------------------------------------------------------------
-     3211 00000333 504a0304         ldiu      *+fp(4),ar2           ; |568| 
+     3211 00000333 504a0304         ldiu      *+fp(4),ar2           ; |567| 
      3212 00000334 08700000-        ldp       @CL3,DP
-     3213 00000335 03ea0004         ash       4,ar2                 ; |568| 
-     3214 00000336 024a0302         addi      *+fp(2),ar2           ; |568| Unsigned
-     3215 00000337 502001ce-        ldiu      @CL3,r0               ; |568| 
-     3216 00000338 024a0303         addi      *+fp(3),ar2           ; |568| Unsigned
-     3217 00000339 50620001         ldiu      1,r2                  ; |568| 
-     3218 0000033a 70000000         callu     r0                    ; far call to _I2C_RX_BYTE      ; |568| 
-     3219                                                           ; |568| Far Call Occurs
+     3213 00000335 03ea0004         ash       4,ar2                 ; |567| 
+     3214 00000336 024a0302         addi      *+fp(2),ar2           ; |567| Unsigned
+     3215 00000337 502001ce-        ldiu      @CL3,r0               ; |567| 
+     3216 00000338 024a0303         addi      *+fp(3),ar2           ; |567| Unsigned
+     3217 00000339 50620001         ldiu      1,r2                  ; |567| 
+     3218 0000033a 70000000         callu     r0                    ; far call to _I2C_RX_BYTE      ; |567| 
+     3219                                                           ; |567| Far Call Occurs
      3220                           .line   52
-     3221 0000033b 50600001         ldiu      1,r0                  ; |567| 
-     3222 0000033c 02400303         addi      *+fp(3),r0            ; |567| 
-     3223 0000033d 15400303         sti       r0,*+fp(3)            ; |567| 
-     3224 0000033e 04e0000f         cmpi      15,r0                 ; |567| 
-     3225 0000033f 6a07fff3         blt       L118                  ; |567| 
-     3226                   ;*      Branch Occurs to L118           ; |567| 
+     3221 0000033b 50600001         ldiu      1,r0                  ; |566| 
+     3222 0000033c 02400303         addi      *+fp(3),r0            ; |566| 
+     3223 0000033d 15400303         sti       r0,*+fp(3)            ; |566| 
+     3224 0000033e 04e0000f         cmpi      15,r0                 ; |566| 
+     3225 0000033f 6a07fff3         blt       L118                  ; |566| 
+     3226                   ;*      Branch Occurs to L118           ; |566| 
      3227 00000340          L119:        
      3228                           .line   55
      3229                   ;----------------------------------------------------------------------
-     3230                   ; 570 | I2C_RX_BYTE(&p[j*16+i],0);                      /* the final byte to re
+     3230                   ; 569 | I2C_RX_BYTE(&p[j*16+i],0);                      /* the final byte to re
      3231                   ;     | ad, WITH NO ACK */                                                     
      3232                   ;----------------------------------------------------------------------
-     3233 00000340 504a0304         ldiu      *+fp(4),ar2           ; |570| 
+     3233 00000340 504a0304         ldiu      *+fp(4),ar2           ; |569| 
      3234 00000341 08700000-        ldp       @CL3,DP
-     3235 00000342 03ea0004         ash       4,ar2                 ; |570| 
-     3236 00000343 024a0302         addi      *+fp(2),ar2           ; |570| Unsigned
-     3237 00000344 502001ce-        ldiu      @CL3,r0               ; |570| 
-     3238 00000345 024a0303         addi      *+fp(3),ar2           ; |570| Unsigned
-     3239 00000346 50620000         ldiu      0,r2                  ; |570| 
-     3240 00000347 70000000         callu     r0                    ; far call to _I2C_RX_BYTE      ; |570| 
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+     3235 00000342 03ea0004         ash       4,ar2                 ; |569| 
+     3236 00000343 024a0302         addi      *+fp(2),ar2           ; |569| Unsigned
+     3237 00000344 502001ce-        ldiu      @CL3,r0               ; |569| 
+     3238 00000345 024a0303         addi      *+fp(3),ar2           ; |569| Unsigned
+     3239 00000346 50620000         ldiu      0,r2                  ; |569| 
+     3240 00000347 70000000         callu     r0                    ; far call to _I2C_RX_BYTE      ; |569| 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   61
 
-     3241                                                           ; |570| Far Call Occurs
+     3241                                                           ; |569| Far Call Occurs
      3242                           .line   57
      3243                   ;----------------------------------------------------------------------
-     3244                   ; 572 | I2C_STOP;                                                              
+     3244                   ; 571 | I2C_STOP;                                                              
      3245                   ;----------------------------------------------------------------------
      3246 00000348 08700000-        ldp       @CL1,DP
-     3247 00000349 502801cc-        ldiu      @CL1,ar0              ; |572| 
-     3248 0000034a 50600002         ldiu      2,r0                  ; |572| 
-     3249 0000034b 25a0c000         or3       r0,*ar0,r0            ; |572| 
-     3250 0000034c 1540c000         sti       r0,*ar0               ; |572| 
-     3251 0000034d 506000fe         ldiu      254,r0                ; |572| 
-     3252 0000034e 21a0c000         and3      r0,*ar0,r0            ; |572| 
-     3253 0000034f 1540c000         sti       r0,*ar0               ; |572| 
+     3247 00000349 502801cc-        ldiu      @CL1,ar0              ; |571| 
+     3248 0000034a 50600002         ldiu      2,r0                  ; |571| 
+     3249 0000034b 25a0c000         or3       r0,*ar0,r0            ; |571| 
+     3250 0000034c 1540c000         sti       r0,*ar0               ; |571| 
+     3251 0000034d 506000fe         ldiu      254,r0                ; |571| 
+     3252 0000034e 21a0c000         and3      r0,*ar0,r0            ; |571| 
+     3253 0000034f 1540c000         sti       r0,*ar0               ; |571| 
      3254 00000350 0f290000                 PUSH    AR1                     
      3255 00000351 08690032                 LDI             50,AR1          
      3256 00000352 6e46ffff                 .word   6E46FFFFh       
      3257 00000353 0e290000                 POP             AR1                     
-     3258 00000354 50600004         ldiu      4,r0                  ; |572| 
-     3259 00000355 25a0c000         or3       r0,*ar0,r0            ; |572| 
-     3260 00000356 1540c000         sti       r0,*ar0               ; |572| 
-     3261 00000357 506000f7         ldiu      247,r0                ; |572| 
-     3262 00000358 21a0c000         and3      r0,*ar0,r0            ; |572| 
-     3263 00000359 1540c000         sti       r0,*ar0               ; |572| 
+     3258 00000354 50600004         ldiu      4,r0                  ; |571| 
+     3259 00000355 25a0c000         or3       r0,*ar0,r0            ; |571| 
+     3260 00000356 1540c000         sti       r0,*ar0               ; |571| 
+     3261 00000357 506000f7         ldiu      247,r0                ; |571| 
+     3262 00000358 21a0c000         and3      r0,*ar0,r0            ; |571| 
+     3263 00000359 1540c000         sti       r0,*ar0               ; |571| 
      3264 0000035a 0f290000                 PUSH    AR1                     
      3265 0000035b 08690032                 LDI             50,AR1          
      3266 0000035c 6e46ffff                 .word   6E46FFFFh       
      3267 0000035d 0e290000                 POP             AR1                     
-     3268 0000035e 50600001         ldiu      1,r0                  ; |572| 
-     3269 0000035f 25a0c000         or3       r0,*ar0,r0            ; |572| 
-     3270 00000360 1540c000         sti       r0,*ar0               ; |572| 
-     3271 00000361 506000fd         ldiu      253,r0                ; |572| 
-     3272 00000362 21a0c000         and3      r0,*ar0,r0            ; |572| 
-     3273 00000363 1540c000         sti       r0,*ar0               ; |572| 
+     3268 0000035e 50600001         ldiu      1,r0                  ; |571| 
+     3269 0000035f 25a0c000         or3       r0,*ar0,r0            ; |571| 
+     3270 00000360 1540c000         sti       r0,*ar0               ; |571| 
+     3271 00000361 506000fd         ldiu      253,r0                ; |571| 
+     3272 00000362 21a0c000         and3      r0,*ar0,r0            ; |571| 
+     3273 00000363 1540c000         sti       r0,*ar0               ; |571| 
      3274 00000364 0f290000                 PUSH    AR1                     
      3275 00000365 08690032                 LDI             50,AR1          
      3276 00000366 6e46ffff                 .word   6E46FFFFh       
      3277 00000367 0e290000                 POP             AR1                     
      3278                           .line   9
-     3279 00000368 50600001         ldiu      1,r0                  ; |524| 
-     3280 00000369 02400304         addi      *+fp(4),r0            ; |524| 
-     3281 0000036a 15400304         sti       r0,*+fp(4)            ; |524| 
-     3282 0000036b 04e00010         cmpi      16,r0                 ; |524| 
-     3283 0000036c 6a07ff35         blt       L105                  ; |524| 
-     3284                   ;*      Branch Occurs to L105           ; |524| 
+     3279 00000368 50600001         ldiu      1,r0                  ; |523| 
+     3280 00000369 02400304         addi      *+fp(4),r0            ; |523| 
+     3281 0000036a 15400304         sti       r0,*+fp(4)            ; |523| 
+     3282 0000036b 04e00010         cmpi      16,r0                 ; |523| 
+     3283 0000036c 6a07ff35         blt       L105                  ; |523| 
+     3284                   ;*      Branch Occurs to L105           ; |523| 
      3285 0000036d          L120:        
      3286                           .line   60
      3287                   ;----------------------------------------------------------------------
-     3288                   ; 575 | I2C_STOP;                                                              
+     3288                   ; 574 | I2C_STOP;                                                              
      3289                   ;----------------------------------------------------------------------
      3290 0000036d 08700000-        ldp       @CL1,DP
-     3291 0000036e 502801cc-        ldiu      @CL1,ar0              ; |575| 
-     3292 0000036f 50600002         ldiu      2,r0                  ; |575| 
-     3293 00000370 25a0c000         or3       r0,*ar0,r0            ; |575| 
-     3294 00000371 1540c000         sti       r0,*ar0               ; |575| 
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+     3291 0000036e 502801cc-        ldiu      @CL1,ar0              ; |574| 
+     3292 0000036f 50600002         ldiu      2,r0                  ; |574| 
+     3293 00000370 25a0c000         or3       r0,*ar0,r0            ; |574| 
+     3294 00000371 1540c000         sti       r0,*ar0               ; |574| 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   62
 
-     3295 00000372 506000fe         ldiu      254,r0                ; |575| 
-     3296 00000373 21a0c000         and3      r0,*ar0,r0            ; |575| 
-     3297 00000374 1540c000         sti       r0,*ar0               ; |575| 
+     3295 00000372 506000fe         ldiu      254,r0                ; |574| 
+     3296 00000373 21a0c000         and3      r0,*ar0,r0            ; |574| 
+     3297 00000374 1540c000         sti       r0,*ar0               ; |574| 
      3298 00000375 0f290000                 PUSH    AR1                     
      3299 00000376 08690032                 LDI             50,AR1          
      3300 00000377 6e46ffff                 .word   6E46FFFFh       
      3301 00000378 0e290000                 POP             AR1                     
-     3302 00000379 50600004         ldiu      4,r0                  ; |575| 
-     3303 0000037a 25a0c000         or3       r0,*ar0,r0            ; |575| 
-     3304 0000037b 1540c000         sti       r0,*ar0               ; |575| 
-     3305 0000037c 506000f7         ldiu      247,r0                ; |575| 
-     3306 0000037d 21a0c000         and3      r0,*ar0,r0            ; |575| 
-     3307 0000037e 1540c000         sti       r0,*ar0               ; |575| 
+     3302 00000379 50600004         ldiu      4,r0                  ; |574| 
+     3303 0000037a 25a0c000         or3       r0,*ar0,r0            ; |574| 
+     3304 0000037b 1540c000         sti       r0,*ar0               ; |574| 
+     3305 0000037c 506000f7         ldiu      247,r0                ; |574| 
+     3306 0000037d 21a0c000         and3      r0,*ar0,r0            ; |574| 
+     3307 0000037e 1540c000         sti       r0,*ar0               ; |574| 
      3308 0000037f 0f290000                 PUSH    AR1                     
      3309 00000380 08690032                 LDI             50,AR1          
      3310 00000381 6e46ffff                 .word   6E46FFFFh       
      3311 00000382 0e290000                 POP             AR1                     
-     3312 00000383 50600001         ldiu      1,r0                  ; |575| 
-     3313 00000384 25a0c000         or3       r0,*ar0,r0            ; |575| 
-     3314 00000385 1540c000         sti       r0,*ar0               ; |575| 
-     3315 00000386 506000fd         ldiu      253,r0                ; |575| 
-     3316 00000387 21a0c000         and3      r0,*ar0,r0            ; |575| 
-     3317 00000388 1540c000         sti       r0,*ar0               ; |575| 
+     3312 00000383 50600001         ldiu      1,r0                  ; |574| 
+     3313 00000384 25a0c000         or3       r0,*ar0,r0            ; |574| 
+     3314 00000385 1540c000         sti       r0,*ar0               ; |574| 
+     3315 00000386 506000fd         ldiu      253,r0                ; |574| 
+     3316 00000387 21a0c000         and3      r0,*ar0,r0            ; |574| 
+     3317 00000388 1540c000         sti       r0,*ar0               ; |574| 
      3318 00000389 0f290000                 PUSH    AR1                     
      3319 0000038a 08690032                 LDI             50,AR1          
      3320 0000038b 6e46ffff                 .word   6E46FFFFh       
      3321 0000038c 0e290000                 POP             AR1                     
      3322                           .line   61
      3323                   ;----------------------------------------------------------------------
-     3324                   ; 576 | GIEP;                                                                  
+     3324                   ; 575 | GIEP;                                                                  
      3325                   ;----------------------------------------------------------------------
      3326 0000038d 0e350000         pop             ST                      
      3327                           .line   63
      3328                   ;----------------------------------------------------------------------
-     3329                   ; 578 | return r;                                                              
+     3329                   ; 577 | return r;                                                              
      3330                   ;----------------------------------------------------------------------
-     3331 0000038e 50400306         ldiu      *+fp(6),r0            ; |578| 
+     3331 0000038e 50400306         ldiu      *+fp(6),r0            ; |577| 
      3332                           .line   64
      3333                                                           ; Begin Epilog Code
-     3334 0000038f 50410b01         ldiu      *-fp(1),r1            ; |579| 
-     3335 00000390 504bc300         ldiu      *fp,fp                ; |579| 
+     3334 0000038f 50410b01         ldiu      *-fp(1),r1            ; |578| 
+     3335 00000390 504bc300         ldiu      *fp,fp                ; |578| 
      3336                                                           ; Unallocate the Frame
-     3337 00000391 18740009         subi      9,sp                  ; |579| 
+     3337 00000391 18740009         subi      9,sp                  ; |578| 
      3338 00000392 68000001         bu        r1
      3339                   ;*      Branch Occurs to r1 
-     3340                           .endfunc        579,000000000h,7
+     3340                           .endfunc        578,000000000h,7
      3341                   
      3342                   
      3343                   
@@ -3656,8 +3656,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   62
      3346                           .sym    _LCD_CNT,_LCD_CNT,14,2,32
      3347                   
      3348                           .global _RTC
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   63
 
@@ -3715,8 +3715,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   63
      3400 00000008 0000000d-        .field          _RTC_PRESENT,32
      3401 00000009 00000002-        .field          _RTC+1,32
      3402 0000000a 00000000!        .field          _DIAGNOSTICS,32
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   64
 
@@ -3731,8 +3731,8 @@ G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   64
      3411                           .global _DIAGNOSTICS
 
  No Errors,  No Warnings
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   65
 
@@ -3789,8 +3789,8 @@ CL2                              000001cd-   3380   1254   1256   1285   1287
                                                     2690   2692   2731   2735 
                                                     2996   2997   3104   3106 
                                                     3170   3172 
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   66
 
@@ -3847,8 +3847,8 @@ L56                              00000056'   1904   1815   1845   1855   1887
 L6                               00000030+    836    768 
 L61                              00000091'   2047   2031 
 L63                              000000bd'   2121   2107 
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   67
 
@@ -3895,8 +3895,8 @@ _Read_MC24C02_Record             00000295+   2897   2884   2885   2885
 _Write_DS1340                    00000000'   1701   1688   1689   1689   3397 
 _Write_I2C                       000000b9+   1169   1156   1157   1157 
 _Write_MC24C02_Record            000001b3+   2455   2442   2443   2443 
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Oct 30 07:48:44 2019
-Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_74G.AAB 
+TMS320C3x/4x COFF AssemblerVersion 5.12     Tue May 05 09:11:57 2020
+Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30.exe -@_GQ8.AAB 
 
 G:\workspace\EEA\V615\APP\SOURCE\ASM\i2c.asm                         PAGE   68
 

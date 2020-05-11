@@ -622,9 +622,10 @@ void Initialize_Hardware(void)
 		MEM = FALSE;
 	else
 		MEM = TRUE;
-	
+
 	RELAY1_OFF;
 	RELAY2_OFF;
+
 	CLOCK = CLOCK_DEFAULT;
 
 	LCD_INIT();

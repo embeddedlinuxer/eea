@@ -40,16 +40,24 @@
 #define _GLBLS
 
 /////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////
+///
 /// V6.15.00 | May-14-2019 | applied dual curves all the time.
 ///                          changed VT_SELECT[i] oscillator access sequence from 0,1,2,3 to 0,2,1,3.
 /// V6.15.01 | May-16-2019 | Fixed incorrect HART enabling sequence in STR_Anlyzer_Info[] array 
 /// V6.15.02 | Jul-11-2019 | Fixed. Incorrect max_addr was set on ports other than port 0 in HART_5.
 /// V6.15.03 | Sep-19-2019 | Fixed. Bug 64 - Maximum number limit on FC Accumulator
 /// V6.15.04 | Oct-28-2019 | Fixed. Bug 71 - Liquid valve not fully open when over pressure
+/// V6.15.05 | Jan-08-2020 | Fixed. Bug 69 - Analog Output doesn't output density signal
+/// V6.15.06 | May-05-2020 | Fixed. Bug 86 - Add COILs for RELAY1_REVERT AND RELAY2_REVERT
+///
+/////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////
 
 #define FIRMWARE_VERSION	 			615
-#define FIRMWARE_SUBVERSION				04
+#define FIRMWARE_SUBVERSION				06
 
 /*
 	SUBVERSION CHANGES: ('->' arrow denotes partially non-cumulative release, i.e. a separate branch)
@@ -1143,6 +1151,12 @@ _EXTERN COIL WATER_PHASE_ONLY;
 /*Add are you sure screens for LCD RS*/
 _EXTERN BOOL TRIM_RTD_LO;
 _EXTERN BOOL TRIM_RTD_HI;   
+
+/*Add option to revert relay enable/disable - Bug#86 BY DKOH, MAY 5 2020*/
+#pragma DATA_SECTION(RELAY1_REVERT,"CFG")
+_EXTERN COIL RELAY1_REVERT;
+#pragma DATA_SECTION(RELAY2_REVERT,"CFG")
+_EXTERN COIL RELAY2_REVERT;
 
 /*new salt cal routine manual stop RS*/   
 #pragma DATA_SECTION(CAP_WATER_STOP,"CFG")

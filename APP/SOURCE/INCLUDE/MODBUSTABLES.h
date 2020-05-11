@@ -2421,6 +2421,8 @@ const int mb_coil[][2]=		{
 			 
 			 748 | CFGU  | PROT_U											, (int)&BEGIN_ALFAT_LOGGING,
 			 750 | CFGU  | coil_direct_bit_00 | PROT_U						, (int)&RUSS,
+             751 | CFGU  | PROT_U                                           , (int)&RELAY1_REVERT,                  // Bug#86 by DKOH, May 5 2020
+             752 | CFGU  | PROT_U                                           , (int)&RELAY2_REVERT,                  // Bug#86 by DKOH, May 5 2020
              //747 - 998
                                                  
 			 999 		 | coil_direct_bit_00								, (int)&SA,

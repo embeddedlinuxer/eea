@@ -1,6 +1,6 @@
 ;******************************************************************************
 ;* TMS320C3x/4x ANSI C Code Generator                            Version 5.11 *
-;* Date/Time created: Wed Oct 30 07:48:38 2019                                *
+;* Date/Time created: Tue May  5 09:11:52 2020                                *
 ;******************************************************************************
 	.regalias	; enable floating point register aliases
 fp	.set	ar3
@@ -17,7 +17,7 @@ FP	.set	ar3
 ;*   Calls              : Normal Library ASM calls                            *
 ;*   Debug Info         : Standard TI Debug Information                       *
 ;******************************************************************************
-;	C:\tic3x4x\c3x4x\cgtools\bin\ac30.exe -@_DK8.AAA 
+;	C:\tic3x4x\c3x4x\cgtools\bin\ac30.exe -@_BFC.AAA 
 	.file	"modbusrtu.c"
 	.file	"G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\GLBLS.H"
 	.file	"G:\workspace\EEA\V615\INCLUDE\stdarg.h"
@@ -908,7 +908,7 @@ _mb_int:
 	.field  	65644,32		; _mb_int[186] @ 5952
 	.field  	_i_CCM_Flow_Gas,32		; _mb_int[187] @ 5984
 	.field  	786542,32		; _mb_int[188] @ 6016
-	.field  	4,32		; _mb_int[189] @ 6048
+	.field  	6,32		; _mb_int[189] @ 6048
 	.field  	268501115,32		; _mb_int[190] @ 6080
 	.field  	_bubble+32,32		; _mb_int[191] @ 6112
 	.field  	268501116,32		; _mb_int[192] @ 6144
@@ -4751,15 +4751,19 @@ _mb_coil:
 	.field  	_BEGIN_ALFAT_LOGGING,32		; _mb_coil[535] @ 17120
 	.field  	335610606,32		; _mb_coil[536] @ 17152
 	.field  	_RUSS,32		; _mb_coil[537] @ 17184
-	.field  	66535,32		; _mb_coil[538] @ 17216
-	.field  	_SA,32		; _mb_coil[539] @ 17248
-	.field  	0,32		; _mb_coil[540] @ 17280
-	.field  	0,32		; _mb_coil[541] @ 17312
+	.field  	335545071,32		; _mb_coil[538] @ 17216
+	.field  	_RELAY1_REVERT,32		; _mb_coil[539] @ 17248
+	.field  	335545072,32		; _mb_coil[540] @ 17280
+	.field  	_RELAY2_REVERT,32		; _mb_coil[541] @ 17312
+	.field  	66535,32		; _mb_coil[542] @ 17344
+	.field  	_SA,32		; _mb_coil[543] @ 17376
+	.field  	0,32		; _mb_coil[544] @ 17408
+	.field  	0,32		; _mb_coil[545] @ 17440
 
 	.sect	".text"
 
 	.global	_mb_coil
-	.sym	_mb_coil,_mb_coil,244,2,17344,,271,2
+	.sym	_mb_coil,_mb_coil,244,2,17472,,273,2
 
 	.sect	"TABLES"
 _mb_ext:
@@ -43212,6 +43216,10 @@ SL5:	.byte	"SCF",0
 	.global	_OIL_PHASE_ONLY
 
 	.global	_WATER_PHASE_ONLY
+
+	.global	_RELAY1_REVERT
+
+	.global	_RELAY2_REVERT
 
 	.global	_CAP_WATER_STOP
 

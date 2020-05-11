@@ -1,7 +1,7 @@
-VER = 6.15.04
-VER2 = 6_15_04
+VER = 6.15.06
+VER2 = 6_15_06
 
-BUGS = "Bug 71 - Liquid valve not fully open when over pressured (http://bug.phasedynamics.com/bugzilla/show_bug.cgi?id=71)"
+BUGS = "Bug86: Add COILs for RELAY1_REVERT AND RELAY2_REVERT"
 
 ##############################################
 ##############################################

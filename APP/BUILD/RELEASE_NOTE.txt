@@ -2,8 +2,8 @@
 RELEASE SUMMARY
 -----------------------------------------------------
 PRODUCT      : EEA
-VERSION      : 6.15.04
-RELEASE DATE : 2019-10-30T07:48:50-05:00
+VERSION      : 6.15.06
+RELEASE DATE : 2020-05-05T09:25:55-05:00
 -----------------------------------------------------
 
 
@@ -11,15 +11,15 @@ RELEASE DATE : 2019-10-30T07:48:50-05:00
 -----------------------------------------------------
 BUG FIX & CHANGES
 -----------------------------------------------------
-Bug 71 - Liquid valve not fully open when over pressured (http://bug.phasedynamics.com/bugzilla/show_bug.cgi?id=71)
+Bug86: Add COILs for RELAY1_REVERT AND RELAY2_REVERT
 
 
 
 -----------------------------------------------------
 MD5 HASHES
 -----------------------------------------------------
-a21eca8f2e05fb3ac5e6866f69917751  pdi.out
-60eb49a81e6b7bc66ba05bb2c9fd9a5a  pdi.map
-e7713e4569459635666e2cdb4c0513f0  pdi.i0
+6e3ab2245553188839f6962ae81050af  pdi.out
+ac5f6e660569011603fe3f910fef84ca  pdi.map
+b07872f33064d86aaf0047aca15c6379  pdi.i0
 c9af1350551b69512e31f3da01cda861  PDI_BOOT.OUT
 2f74774c6718bb39378737968346f406  PDI_BOOT.I0

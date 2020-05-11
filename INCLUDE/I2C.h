@@ -60,32 +60,6 @@
 #define ENABLE_SCL_TX_5		{*XREG3 |= 0x08;}
 #define DISABLE_SCL_TX_5	{*XREG3 &= (0xFF ^ 0x08);}
 
-/*
-#define I2C_WAIT		{asm("		RPTS	100			");\
-						 asm("		NOP					");}
-
-#define I2C_WAITF		{asm("		RPTS	20			");\
-						 asm("		NOP					");}
-
-#define I2C_WAITFL		{asm("		RPTS	55			");\
-						 asm("		NOP					");}
-
-//1300ns
-#define I2C_WAIT_LO		{asm("		RPTS	55			");\
-						 asm("		NOP					");}
-//4*18.08		; RPTS
-//18.08 * n		; NOP
-//3*18.08		; bit shift-out loop
-//10*18.08		; the bit operation on Xilinx
-
-//600ns
-#define I2C_WAIT_HI		{asm("		RPTS	20			");\
-						 asm("		NOP					");}
-//4*18.08		; RPTS
-//18.08 * n		; NOP
-//10*18.08		; the bit operation on Xilinx
-*/
-
 /****************************************************************************************/
 #define I2C_WAITF		{asm("		PUSH    AR1			");\
 						 asm("		LDI		25,AR1		");\

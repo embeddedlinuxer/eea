@@ -51,13 +51,14 @@
 /// V6.15.04 | Oct-28-2019 | Fixed. Bug 71 - Liquid valve not fully open when over pressure
 /// V6.15.05 | Jan-08-2020 | Fixed. Bug 69 - Analog Output doesn't output density signal
 /// V6.15.06 | May-05-2020 | Fixed. Bug 86 - Add COILs for RELAY1_REVERT AND RELAY2_REVERT
+/// V6.15.07 | OCT-09-2020 | Fixed. Bug xx - Logging problems fixed 
 ///
 /////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////
 
 #define FIRMWARE_VERSION	 			615
-#define FIRMWARE_SUBVERSION				06
+#define FIRMWARE_SUBVERSION				07
 
 /*
 	SUBVERSION CHANGES: ('->' arrow denotes partially non-cumulative release, i.e. a separate branch)

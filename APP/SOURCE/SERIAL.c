@@ -1117,8 +1117,8 @@ void Port_Defaults(BOOL FORCE)
 					VAR_Update(&PORTCFG[port].NETWDOG, 	  DEFAULT_H_NETWDOG, 0, 0);
 					VAR_Update(&PORTCFG[port].Retry_Time, 0.500, 			 0, 0);
 				}
-				else if (!SA && (port==5))	/* IrDA */
-				{/* EEA AND port 5*/
+		/*		else if (!SA && (port==5))	// IrDA 
+				{// EEA AND port 5
 					VAR_Update(&PORTCFG[port].Slave_ID, 1.0, 0, 0);
 					
 					PORT[port].Slave = 0;
@@ -1132,7 +1132,7 @@ void Port_Defaults(BOOL FORCE)
 					VAR_Update(&PORTCFG[port].SUFFIX, 0., 0, 0);
 					VAR_Update(&PORTCFG[port].NETWDOG, 10.0, 0, 0);
 					VAR_Update(&PORTCFG[port].Retry_Time, 2.0, 0, 0);
-				}
+				} */  // DKOH OCT 7, 2020 to fix data logging problem
 				else
 				{/* all other ports */
 					VAR_Update(&PORTCFG[port].Slave_ID, 1.0, 0, 0);

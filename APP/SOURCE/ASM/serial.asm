@@ -1,6 +1,6 @@
 ;******************************************************************************
 ;* TMS320C3x/4x ANSI C Code Generator                            Version 5.11 *
-;* Date/Time created: Tue May  5 09:11:51 2020                                *
+;* Date/Time created: Fri Oct  9 12:07:46 2020                                *
 ;******************************************************************************
 	.regalias	; enable floating point register aliases
 fp	.set	ar3
@@ -17,7 +17,7 @@ FP	.set	ar3
 ;*   Calls              : Normal Library ASM calls                            *
 ;*   Debug Info         : Standard TI Debug Information                       *
 ;******************************************************************************
-;	C:\tic3x4x\c3x4x\cgtools\bin\ac30.exe -@_BSO.AAA 
+;	C:\tic3x4x\c3x4x\cgtools\bin\ac30.exe -@_6AG.AAA 
 	.file	"serial.c"
 	.file	"G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\GLBLS.H"
 	.file	"G:\workspace\EEA\V615\INCLUDE\stdarg.h"
@@ -7018,8 +7018,8 @@ _Port_Defaults:
 ;----------------------------------------------------------------------
         ldiu      *+fp(1),r0            ; |1097| 
         cmpi      0,r0                  ; |1097| 
-        bne       L245                  ; |1097| 
-;*      Branch Occurs to L245           ; |1097| 
+        bne       L242                  ; |1097| 
+;*      Branch Occurs to L242           ; |1097| 
 	.line	10
 ;----------------------------------------------------------------------
 ; 1099 | for (port=0;port<UART_MAX;port++)                                      
@@ -7027,8 +7027,8 @@ _Port_Defaults:
         ldiu      0,r0                  ; |1099| 
         sti       r0,*+fp(2)            ; |1099| 
         cmpi      8,r0                  ; |1099| 
-        bge       L276                  ; |1099| 
-;*      Branch Occurs to L276           ; |1099| 
+        bge       L273                  ; |1099| 
+;*      Branch Occurs to L273           ; |1099| 
 L227:        
 	.line	12
 ;----------------------------------------------------------------------
@@ -7038,8 +7038,8 @@ L227:
         ldiu      @CL130,ar0            ; |1101| 
         ldiu      *ar0,r0               ; |1101| 
         cmpi      0,r0                  ; |1101| 
-        beq       L243                  ; |1101| 
-;*      Branch Occurs to L243           ; |1101| 
+        beq       L240                  ; |1101| 
+;*      Branch Occurs to L240           ; |1101| 
 	.line	14
 ;----------------------------------------------------------------------
 ; 1103 | if ( (SA && B202_PORT && (port==0)) || (!SA && (port==4)) ) /* BELL202
@@ -7222,6 +7222,8 @@ L233:
 	.line	29
 ;----------------------------------------------------------------------
 ; 1118 | VAR_Update(&PORTCFG[port].Retry_Time, 0.500,                     0, 0);
+; 1135 | } */  // DKOH OCT 7, 2020 to fix data logging problem                  
+; 1136 | else                                                                   
 ;----------------------------------------------------------------------
         ldp       @CL70,DP
         ldiu      @CL70,r0              ; |1118| 
@@ -7237,173 +7239,9 @@ L233:
         ldiu      0,r3                  ; |1118| 
         callu     r0                    ; far call to _VAR_Update	; |1118| 
                                         ; |1118| Far Call Occurs
-        bu        L243                  ; |1089| 
-;*      Branch Occurs to L243           ; |1089| 
+        bu        L240                  ; |1089| 
+;*      Branch Occurs to L240           ; |1089| 
 L234:        
-	.line	31
-;----------------------------------------------------------------------
-; 1120 | else if (!SA && (port==5))      /* IrDA */                             
-;----------------------------------------------------------------------
-        ldp       @CL26,DP
-        ldiu      @CL26,ar0             ; |1120| 
-        ldiu      *ar0,r0               ; |1120| 
-        cmpi      0,r0                  ; |1120| 
-        bne       L237                  ; |1120| 
-;*      Branch Occurs to L237           ; |1120| 
-        ldiu      *+fp(2),r0            ; |1120| 
-        cmpi      5,r0                  ; |1120| 
-        bne       L237                  ; |1120| 
-;*      Branch Occurs to L237           ; |1120| 
-	.line	33
-;----------------------------------------------------------------------
-; 1122 | VAR_Update(&PORTCFG[port].Slave_ID, 1.0, 0, 0);                        
-;----------------------------------------------------------------------
-        ldp       @CL70,DP
-        ldiu      r0,ar2
-        ldiu      @CL70,r0              ; |1122| 
-        ldp       @CL133,DP
-        mpyi      359,ar2               ; |1122| 
-        addi      @CL133,ar2            ; |1122| Unsigned
-        ldp       @CL136+0,DP
-        ldfu      @CL136+0,f2           ; |1122| 40b float hi half
-        ldp       @CL136+1,DP
-        ldiu      0,rc                  ; |1122| 
-        ldiu      @CL136+1,r2           ; |1122| 40b float lo half
-        ldiu      0,r3                  ; |1122| 
-        callu     r0                    ; far call to _VAR_Update	; |1122| 
-                                        ; |1122| Far Call Occurs
-	.line	35
-;----------------------------------------------------------------------
-; 1124 | PORT[port].Slave = 0;                                                  
-;----------------------------------------------------------------------
-        ldp       @CL102,DP
-        ldiu      *+fp(2),ir0           ; |1124| 
-        ldiu      @CL102,ar0            ; |1124| 
-        mpyi      71,ir0                ; |1124| 
-        ldiu      0,r0                  ; |1124| 
-        sti       r0,*+ar0(ir0)         ; |1124| 
-	.line	37
-;----------------------------------------------------------------------
-; 1126 | VAR_Update(&PORTCFG[port].Baud_Rate, 115200.0, 0, 0);                  
-;----------------------------------------------------------------------
-        ldp       @CL70,DP
-        ldiu      @CL70,r0              ; |1126| 
-        ldp       @CL134,DP
-        ldiu      *+fp(2),ar2           ; |1126| 
-        mpyi      359,ar2               ; |1126| 
-        addi      @CL134,ar2            ; |1126| Unsigned
-        ldp       @CL137+0,DP
-        ldfu      @CL137+0,f2           ; |1126| 40b float hi half
-        ldp       @CL137+1,DP
-        ldiu      0,rc                  ; |1126| 
-        ldiu      @CL137+1,r2           ; |1126| 40b float lo half
-        ldiu      0,r3                  ; |1126| 
-        callu     r0                    ; far call to _VAR_Update	; |1126| 
-                                        ; |1126| Far Call Occurs
-	.line	39
-;----------------------------------------------------------------------
-; 1128 | PORTCFG[port].Parity = 'N'<<8;                                         
-;----------------------------------------------------------------------
-        ldp       @CL50,DP
-        ldiu      @CL50,ar0             ; |1128| 
-        ldiu      *+fp(2),ir0           ; |1128| 
-        mpyi      359,ir0               ; |1128| 
-        ldiu      19968,r0              ; |1128| 
-        sti       r0,*+ar0(ir0)         ; |1128| 
-	.line	41
-;----------------------------------------------------------------------
-; 1130 | VAR_Update(&PORTCFG[port].EOT_Delay, 0.0, 0, 0);                       
-;----------------------------------------------------------------------
-        ldp       @CL70,DP
-        ldiu      @CL70,r0              ; |1130| 
-        ldp       @CL78,DP
-        ldiu      *+fp(2),ar2           ; |1130| 
-        mpyi      359,ar2               ; |1130| 
-        addi      @CL78,ar2             ; |1130| Unsigned
-        ldp       @CL72+0,DP
-        ldfu      @CL72+0,f2            ; |1130| 40b float hi half
-        ldp       @CL72+1,DP
-        ldiu      0,rc                  ; |1130| 
-        ldiu      @CL72+1,r2            ; |1130| 40b float lo half
-        ldiu      0,r3                  ; |1130| 
-        callu     r0                    ; far call to _VAR_Update	; |1130| 
-                                        ; |1130| Far Call Occurs
-	.line	42
-;----------------------------------------------------------------------
-; 1131 | VAR_Update(&PORTCFG[port].PREFIX, 0.0, 0, 0);                          
-;----------------------------------------------------------------------
-        ldp       @CL70,DP
-        ldiu      @CL70,r0              ; |1131| 
-        ldiu      *+fp(2),ar2           ; |1131| 
-        ldp       @CL73,DP
-        mpyi      359,ar2               ; |1131| 
-        addi      @CL73,ar2             ; |1131| Unsigned
-        ldp       @CL72+0,DP
-        ldfu      @CL72+0,f2            ; |1131| 40b float hi half
-        ldp       @CL72+1,DP
-        ldiu      @CL72+1,r2            ; |1131| 40b float lo half
-        ldiu      0,rc                  ; |1131| 
-        ldiu      0,r3                  ; |1131| 
-        callu     r0                    ; far call to _VAR_Update	; |1131| 
-                                        ; |1131| Far Call Occurs
-	.line	43
-;----------------------------------------------------------------------
-; 1132 | VAR_Update(&PORTCFG[port].SUFFIX, 0., 0, 0);                           
-;----------------------------------------------------------------------
-        ldp       @CL70,DP
-        ldiu      @CL70,r0              ; |1132| 
-        ldp       @CL76,DP
-        ldiu      *+fp(2),ar2           ; |1132| 
-        mpyi      359,ar2               ; |1132| 
-        addi      @CL76,ar2             ; |1132| Unsigned
-        ldp       @CL72+0,DP
-        ldfu      @CL72+0,f2            ; |1132| 40b float hi half
-        ldp       @CL72+1,DP
-        ldiu      @CL72+1,r2            ; |1132| 40b float lo half
-        ldiu      0,rc                  ; |1132| 
-        ldiu      0,r3                  ; |1132| 
-        callu     r0                    ; far call to _VAR_Update	; |1132| 
-                                        ; |1132| Far Call Occurs
-	.line	44
-;----------------------------------------------------------------------
-; 1133 | VAR_Update(&PORTCFG[port].NETWDOG, 10.0, 0, 0);                        
-;----------------------------------------------------------------------
-        ldp       @CL70,DP
-        ldiu      @CL70,r0              ; |1133| 
-        ldp       @CL68,DP
-        ldiu      *+fp(2),ar2           ; |1133| 
-        mpyi      359,ar2               ; |1133| 
-        addi      @CL68,ar2             ; |1133| Unsigned
-        ldp       @CL79+0,DP
-        ldfu      @CL79+0,f2            ; |1133| 40b float hi half
-        ldp       @CL79+1,DP
-        ldiu      @CL79+1,r2            ; |1133| 40b float lo half
-        ldiu      0,rc                  ; |1133| 
-        ldiu      0,r3                  ; |1133| 
-        callu     r0                    ; far call to _VAR_Update	; |1133| 
-                                        ; |1133| Far Call Occurs
-	.line	45
-;----------------------------------------------------------------------
-; 1134 | VAR_Update(&PORTCFG[port].Retry_Time, 2.0, 0, 0);                      
-; 1136 | else                                                                   
-;----------------------------------------------------------------------
-        ldp       @CL70,DP
-        ldiu      @CL70,r0              ; |1134| 
-        ldiu      *+fp(2),ar2           ; |1134| 
-        ldp       @CL81,DP
-        mpyi      359,ar2               ; |1134| 
-        addi      @CL81,ar2             ; |1134| Unsigned
-        ldp       @CL138+0,DP
-        ldfu      @CL138+0,f2           ; |1134| 40b float hi half
-        ldp       @CL138+1,DP
-        ldiu      @CL138+1,r2           ; |1134| 40b float lo half
-        ldiu      0,rc                  ; |1134| 
-        ldiu      0,r3                  ; |1134| 
-        callu     r0                    ; far call to _VAR_Update	; |1134| 
-                                        ; |1134| Far Call Occurs
-        bu        L243                  ; |1089| 
-;*      Branch Occurs to L243           ; |1089| 
-L237:        
 	.line	49
 ;----------------------------------------------------------------------
 ; 1138 | VAR_Update(&PORTCFG[port].Slave_ID, 1.0, 0, 0);                        
@@ -7438,20 +7276,20 @@ L237:
 ;----------------------------------------------------------------------
         ldiu      *+fp(2),r0            ; |1142| 
         cmpi      1,r0                  ; |1142| 
-        bne       L241                  ; |1142| 
-;*      Branch Occurs to L241           ; |1142| 
+        bne       L238                  ; |1142| 
+;*      Branch Occurs to L238           ; |1142| 
         ldp       @CL26,DP
         ldiu      @CL26,ar0             ; |1142| 
         ldiu      *ar0,r0               ; |1142| 
         cmpi      0,r0                  ; |1142| 
-        bne       L241                  ; |1142| 
-;*      Branch Occurs to L241           ; |1142| 
-        ldp       @CL139,DP
-        ldiu      @CL139,ar0            ; |1142| 
+        bne       L238                  ; |1142| 
+;*      Branch Occurs to L238           ; |1142| 
+        ldp       @CL137,DP
+        ldiu      @CL137,ar0            ; |1142| 
         ldiu      *ar0,r0               ; |1142| 
         cmpi      0,r0                  ; |1142| 
-        bne       L241                  ; |1142| 
-;*      Branch Occurs to L241           ; |1142| 
+        bne       L238                  ; |1142| 
+;*      Branch Occurs to L238           ; |1142| 
 	.line	54
 ;----------------------------------------------------------------------
 ; 1143 | VAR_Update(&PORTCFG[port].Baud_Rate, 115200.0, 0, 0);                  
@@ -7463,17 +7301,17 @@ L237:
         ldp       @CL134,DP
         mpyi      359,ar2               ; |1143| 
         addi      @CL134,ar2            ; |1143| Unsigned
-        ldp       @CL137+0,DP
-        ldfu      @CL137+0,f2           ; |1143| 40b float hi half
-        ldp       @CL137+1,DP
+        ldp       @CL138+0,DP
+        ldfu      @CL138+0,f2           ; |1143| 40b float hi half
+        ldp       @CL138+1,DP
         ldiu      0,rc                  ; |1143| 
-        ldiu      @CL137+1,r2           ; |1143| 40b float lo half
+        ldiu      @CL138+1,r2           ; |1143| 40b float lo half
         ldiu      0,r3                  ; |1143| 
         callu     r0                    ; far call to _VAR_Update	; |1143| 
                                         ; |1143| Far Call Occurs
-        bu        L242                  ; |1089| 
-;*      Branch Occurs to L242           ; |1089| 
-L241:        
+        bu        L239                  ; |1089| 
+;*      Branch Occurs to L239           ; |1089| 
+L238:        
 	.line	56
 ;----------------------------------------------------------------------
 ; 1145 | VAR_Update(&PORTCFG[port].Baud_Rate, 9600.0, 0, 0);                    
@@ -7484,15 +7322,15 @@ L241:
         ldp       @CL134,DP
         mpyi      359,ar2               ; |1145| 
         addi      @CL134,ar2            ; |1145| Unsigned
-        ldp       @CL140+0,DP
-        ldfu      @CL140+0,f2           ; |1145| 40b float hi half
-        ldp       @CL140+1,DP
+        ldp       @CL139+0,DP
+        ldfu      @CL139+0,f2           ; |1145| 40b float hi half
+        ldp       @CL139+1,DP
         ldiu      0,rc                  ; |1145| 
-        ldiu      @CL140+1,r2           ; |1145| 40b float lo half
+        ldiu      @CL139+1,r2           ; |1145| 40b float lo half
         ldiu      0,r3                  ; |1145| 
         callu     r0                    ; far call to _VAR_Update	; |1145| 
                                         ; |1145| Far Call Occurs
-L242:        
+L239:        
 	.line	58
 ;----------------------------------------------------------------------
 ; 1147 | PORTCFG[port].Parity = 'N'<<8;                                         
@@ -7594,7 +7432,7 @@ L242:
         ldiu      0,r3                  ; |1153| 
         callu     r0                    ; far call to _VAR_Update	; |1153| 
                                         ; |1153| Far Call Occurs
-L243:        
+L240:        
 	.line	10
         ldiu      1,r0                  ; |1099| 
         addi      *+fp(2),r0            ; |1099| 
@@ -7602,9 +7440,9 @@ L243:
         cmpi      8,r0                  ; |1099| 
         blt       L227                  ; |1099| 
 ;*      Branch Occurs to L227           ; |1099| 
-        bu        L276                  ; |1089| 
-;*      Branch Occurs to L276           ; |1089| 
-L245:        
+        bu        L273                  ; |1089| 
+;*      Branch Occurs to L273           ; |1089| 
+L242:        
 	.line	71
 ;----------------------------------------------------------------------
 ; 1160 | for (port=0;port<UART_MAX;port++)                                      
@@ -7612,9 +7450,9 @@ L245:
         ldiu      0,r0                  ; |1160| 
         sti       r0,*+fp(2)            ; |1160| 
         cmpi      8,r0                  ; |1160| 
-        bge       L276                  ; |1160| 
-;*      Branch Occurs to L276           ; |1160| 
-L246:        
+        bge       L273                  ; |1160| 
+;*      Branch Occurs to L273           ; |1160| 
+L243:        
 	.line	73
 ;----------------------------------------------------------------------
 ; 1162 | PORT[port].BUSY = FALSE;                                               
@@ -7633,30 +7471,30 @@ L246:
         ldiu      @CL26,ar0             ; |1164| 
         ldiu      *ar0,r0               ; |1164| 
         cmpi      0,r0                  ; |1164| 
-        beq       L249                  ; |1164| 
-;*      Branch Occurs to L249           ; |1164| 
+        beq       L246                  ; |1164| 
+;*      Branch Occurs to L246           ; |1164| 
         ldp       @CL125,DP
         ldiu      @CL125,ar0            ; |1164| 
         ldiu      32,r0                 ; |1164| 
         tstb3     *ar0,r0               ; |1164| 
-        bne       L249                  ; |1164| 
-;*      Branch Occurs to L249           ; |1164| 
+        bne       L246                  ; |1164| 
+;*      Branch Occurs to L246           ; |1164| 
         ldiu      *+fp(2),r0            ; |1164| 
         cmpi      0,r0                  ; |1164| 
-        beq       L251                  ; |1164| 
-;*      Branch Occurs to L251           ; |1164| 
-L249:        
+        beq       L248                  ; |1164| 
+;*      Branch Occurs to L248           ; |1164| 
+L246:        
         ldp       @CL26,DP
         ldiu      @CL26,ar0             ; |1164| 
         ldiu      *ar0,r0               ; |1164| 
         cmpi      0,r0                  ; |1164| 
-        bne       L252                  ; |1164| 
-;*      Branch Occurs to L252           ; |1164| 
+        bne       L249                  ; |1164| 
+;*      Branch Occurs to L249           ; |1164| 
         ldiu      *+fp(2),r0            ; |1164| 
         cmpi      4,r0                  ; |1164| 
-        bne       L252                  ; |1164| 
-;*      Branch Occurs to L252           ; |1164| 
-L251:        
+        bne       L249                  ; |1164| 
+;*      Branch Occurs to L249           ; |1164| 
+L248:        
 	.line	77
 ;----------------------------------------------------------------------
 ; 1166 | VAR_Initialize(&PORTCFG[port].Slave_ID, c_not_classified, u_mfgr_specif
@@ -7668,9 +7506,9 @@ L251:
         ldiu      240,rs                ; |1166| 
         ldiu      260,re                ; |1166| 
         addi      @CL133,ar2            ; |1166| Unsigned
-        ldp       @CL141,DP
+        ldp       @CL140,DP
         ldiu      0,rc                  ; |1166| 
-        ldiu      @CL141,r0             ; |1166| 
+        ldiu      @CL140,r0             ; |1166| 
         ldfu      1.0000000000e+00,f3   ; |1166| 
         ldfu      1.0000000000e+00,f2   ; |1166| 
         callu     r0                    ; far call to _VAR_Initialize	; |1166| 
@@ -7701,14 +7539,14 @@ L251:
         ldp       @CL134,DP
         mpyi      359,ar2               ; |1171| 
         addi      @CL134,ar2            ; |1171| Unsigned
+        ldp       @CL140,DP
+        ldiu      @CL140,r0             ; |1171| 
         ldp       @CL141,DP
-        ldiu      @CL141,r0             ; |1171| 
-        ldp       @CL142,DP
         ldiu      242,rs                ; |1171| 
         ldiu      4,re                  ; |1171| 
         ldiu      0,rc                  ; |1171| 
-        ldfu      @CL142,f2             ; |1171| 
-        ldfu      @CL142,f3             ; |1171| 
+        ldfu      @CL141,f2             ; |1171| 
+        ldfu      @CL141,f3             ; |1171| 
         callu     r0                    ; far call to _VAR_Initialize	; |1171| 
                                         ; |1171| Far Call Occurs
 	.line	84
@@ -7716,22 +7554,22 @@ L251:
 ; 1173 | VAR_Setup_Unit(&PORTCFG[port].Baud_Rate, u_mfgr_specific_bps, 115200, 3
 ;     | 00, 115200, 300); //fix 05-08-2014                                     
 ;----------------------------------------------------------------------
+        ldp       @CL142,DP
+        ldfu      @CL142,f1             ; |1173| 
         ldp       @CL143,DP
-        ldfu      @CL143,f1             ; |1173| 
-        ldp       @CL144,DP
-        ldfu      @CL144,f0             ; |1173| 
+        ldfu      @CL143,f0             ; |1173| 
         pushf     f1                    ; |1173| 
-        ldp       @CL145,DP
+        ldp       @CL144,DP
         pushf     f0                    ; |1173| 
-        ldiu      @CL145,r0             ; |1173| 
+        ldiu      @CL144,r0             ; |1173| 
         ldiu      *+fp(2),ar2           ; |1173| 
         ldp       @CL134,DP
         mpyi      359,ar2               ; |1173| 
         addi      @CL134,ar2            ; |1173| Unsigned
+        ldp       @CL142,DP
+        ldfu      @CL142,f3             ; |1173| 
         ldp       @CL143,DP
-        ldfu      @CL143,f3             ; |1173| 
-        ldp       @CL144,DP
-        ldfu      @CL144,f2             ; |1173| 
+        ldfu      @CL143,f2             ; |1173| 
         ldiu      242,rc                ; |1173| 
         callu     r0                    ; far call to _VAR_Setup_Unit	; |1173| 
                                         ; |1173| Far Call Occurs
@@ -7754,9 +7592,9 @@ L251:
         ldiu      0,r3                  ; |1175| 
         callu     r0                    ; far call to _VAR_Update	; |1175| 
                                         ; |1175| Far Call Occurs
-        bu        L260                  ; |1089| 
-;*      Branch Occurs to L260           ; |1089| 
-L252:        
+        bu        L257                  ; |1089| 
+;*      Branch Occurs to L257           ; |1089| 
+L249:        
 	.line	88
 ;----------------------------------------------------------------------
 ; 1177 | else if (!SA && (port==5))                                             
@@ -7765,12 +7603,12 @@ L252:
         ldiu      @CL26,ar0             ; |1177| 
         ldiu      *ar0,r0               ; |1177| 
         cmpi      0,r0                  ; |1177| 
-        bne       L255                  ; |1177| 
-;*      Branch Occurs to L255           ; |1177| 
+        bne       L252                  ; |1177| 
+;*      Branch Occurs to L252           ; |1177| 
         ldiu      *+fp(2),r0            ; |1177| 
         cmpi      5,r0                  ; |1177| 
-        bne       L255                  ; |1177| 
-;*      Branch Occurs to L255           ; |1177| 
+        bne       L252                  ; |1177| 
+;*      Branch Occurs to L252           ; |1177| 
 	.line	90
 ;----------------------------------------------------------------------
 ; 1179 | VAR_Initialize(&PORTCFG[port].Slave_ID, c_not_classified, u_mfgr_specif
@@ -7782,9 +7620,9 @@ L252:
         ldiu      240,rs                ; |1179| 
         ldiu      260,re                ; |1179| 
         addi      @CL133,ar2            ; |1179| Unsigned
-        ldp       @CL141,DP
+        ldp       @CL140,DP
         ldiu      0,rc                  ; |1179| 
-        ldiu      @CL141,r0             ; |1179| 
+        ldiu      @CL140,r0             ; |1179| 
         ldfu      1.0000000000e+00,f3   ; |1179| 
         ldfu      1.0000000000e+00,f2   ; |1179| 
         callu     r0                    ; far call to _VAR_Initialize	; |1179| 
@@ -7794,13 +7632,13 @@ L252:
 ; 1180 | VAR_Setup_Unit(&PORTCFG[port].Slave_ID, u_mfgr_specific_none, 0, 0, 0,
 ;     | 0);                                                                    
 ;----------------------------------------------------------------------
-        ldp       @CL145,DP
+        ldp       @CL144,DP
         ldfu      0.0000000000e+00,f1   ; |1180| 
         ldfu      0.0000000000e+00,f0   ; |1180| 
         pushf     f1                    ; |1180| 
         pushf     f0                    ; |1180| 
         ldiu      *+fp(2),ar2           ; |1180| 
-        ldiu      @CL145,r0             ; |1180| 
+        ldiu      @CL144,r0             ; |1180| 
         mpyi      359,ar2               ; |1180| 
         ldp       @CL133,DP
         ldiu      240,rc                ; |1180| 
@@ -7819,13 +7657,13 @@ L252:
         ldp       @CL134,DP
         mpyi      359,ar2               ; |1181| 
         addi      @CL134,ar2            ; |1181| Unsigned
-        ldp       @CL141,DP
+        ldp       @CL140,DP
         ldiu      242,rs                ; |1181| 
-        ldiu      @CL141,r0             ; |1181| 
-        ldp       @CL142,DP
+        ldiu      @CL140,r0             ; |1181| 
+        ldp       @CL141,DP
         ldiu      4,re                  ; |1181| 
-        ldfu      @CL142,f2             ; |1181| 
-        ldfu      @CL142,f3             ; |1181| 
+        ldfu      @CL141,f2             ; |1181| 
+        ldfu      @CL141,f3             ; |1181| 
         ldiu      0,rc                  ; |1181| 
         callu     r0                    ; far call to _VAR_Initialize	; |1181| 
                                         ; |1181| Far Call Occurs
@@ -7834,21 +7672,21 @@ L252:
 ; 1182 | VAR_Setup_Unit(&PORTCFG[port].Baud_Rate, u_mfgr_specific_bps, 115200, 1
 ;     | 15200, 115200, 115200);                                                
 ;----------------------------------------------------------------------
-        ldp       @CL144,DP
-        ldfu      @CL144,f1             ; |1182| 
+        ldp       @CL143,DP
+        ldfu      @CL143,f1             ; |1182| 
         pushf     f1                    ; |1182| 
-        ldfu      @CL144,f0             ; |1182| 
-        ldp       @CL145,DP
+        ldfu      @CL143,f0             ; |1182| 
+        ldp       @CL144,DP
         pushf     f0                    ; |1182| 
-        ldiu      @CL145,r0             ; |1182| 
+        ldiu      @CL144,r0             ; |1182| 
         ldp       @CL134,DP
         ldiu      *+fp(2),ar2           ; |1182| 
         mpyi      359,ar2               ; |1182| 
         addi      @CL134,ar2            ; |1182| Unsigned
-        ldp       @CL144,DP
+        ldp       @CL143,DP
         ldiu      242,rc                ; |1182| 
-        ldfu      @CL144,f2             ; |1182| 
-        ldfu      @CL144,f3             ; |1182| 
+        ldfu      @CL143,f2             ; |1182| 
+        ldfu      @CL143,f3             ; |1182| 
         callu     r0                    ; far call to _VAR_Setup_Unit	; |1182| 
                                         ; |1182| Far Call Occurs
         subi      2,sp                  ; |1182| 
@@ -7863,17 +7701,17 @@ L252:
         ldp       @CL134,DP
         mpyi      359,ar2               ; |1183| 
         addi      @CL134,ar2            ; |1183| Unsigned
-        ldp       @CL137+0,DP
-        ldfu      @CL137+0,f2           ; |1183| 40b float hi half
-        ldp       @CL137+1,DP
+        ldp       @CL138+0,DP
+        ldfu      @CL138+0,f2           ; |1183| 40b float hi half
+        ldp       @CL138+1,DP
         ldiu      0,rc                  ; |1183| 
-        ldiu      @CL137+1,r2           ; |1183| 40b float lo half
+        ldiu      @CL138+1,r2           ; |1183| 40b float lo half
         ldiu      0,r3                  ; |1183| 
         callu     r0                    ; far call to _VAR_Update	; |1183| 
                                         ; |1183| Far Call Occurs
-        bu        L260                  ; |1089| 
-;*      Branch Occurs to L260           ; |1089| 
-L255:        
+        bu        L257                  ; |1089| 
+;*      Branch Occurs to L257           ; |1089| 
+L252:        
 	.line	98
 ;----------------------------------------------------------------------
 ; 1187 | VAR_Initialize(&PORTCFG[port].Slave_ID, c_not_classified, u_mfgr_specif
@@ -7885,9 +7723,9 @@ L255:
         ldiu      240,rs                ; |1187| 
         ldiu      260,re                ; |1187| 
         addi      @CL133,ar2            ; |1187| Unsigned
-        ldp       @CL141,DP
+        ldp       @CL140,DP
         ldiu      0,rc                  ; |1187| 
-        ldiu      @CL141,r0             ; |1187| 
+        ldiu      @CL140,r0             ; |1187| 
         ldfu      1.0000000000e+00,f3   ; |1187| 
         ldfu      1.0000000000e+00,f2   ; |1187| 
         callu     r0                    ; far call to _VAR_Initialize	; |1187| 
@@ -7897,13 +7735,13 @@ L255:
 ; 1188 | VAR_Setup_Unit(&PORTCFG[port].Slave_ID, u_mfgr_specific_none, 247, 1, 2
 ;     | 47, 1);                                                                
 ;----------------------------------------------------------------------
-        ldp       @CL145,DP
+        ldp       @CL144,DP
         ldfu      1.0000000000e+00,f1   ; |1188| 
         ldfu      2.4700000000e+02,f0   ; |1188| 
         pushf     f1                    ; |1188| 
         pushf     f0                    ; |1188| 
         ldiu      *+fp(2),ar2           ; |1188| 
-        ldiu      @CL145,r0             ; |1188| 
+        ldiu      @CL144,r0             ; |1188| 
         mpyi      359,ar2               ; |1188| 
         ldp       @CL133,DP
         ldiu      240,rc                ; |1188| 
@@ -7922,11 +7760,11 @@ L255:
         ldp       @CL134,DP
         mpyi      359,ar2               ; |1189| 
         addi      @CL134,ar2            ; |1189| Unsigned
+        ldp       @CL140,DP
+        ldiu      @CL140,r0             ; |1189| 
         ldp       @CL141,DP
-        ldiu      @CL141,r0             ; |1189| 
-        ldp       @CL142,DP
-        ldfu      @CL142,f2             ; |1189| 
-        ldfu      @CL142,f3             ; |1189| 
+        ldfu      @CL141,f2             ; |1189| 
+        ldfu      @CL141,f3             ; |1189| 
         ldiu      242,rs                ; |1189| 
         ldiu      4,re                  ; |1189| 
         ldiu      0,rc                  ; |1189| 
@@ -7937,23 +7775,23 @@ L255:
 ; 1190 | VAR_Setup_Unit(&PORTCFG[port].Baud_Rate, u_mfgr_specific_bps, 115200, 3
 ;     | 00, 115200, 300);                                                      
 ;----------------------------------------------------------------------
+        ldp       @CL142,DP
+        ldfu      @CL142,f1             ; |1190| 
         ldp       @CL143,DP
-        ldfu      @CL143,f1             ; |1190| 
-        ldp       @CL144,DP
-        ldfu      @CL144,f0             ; |1190| 
+        ldfu      @CL143,f0             ; |1190| 
         pushf     f1                    ; |1190| 
-        ldp       @CL145,DP
+        ldp       @CL144,DP
         pushf     f0                    ; |1190| 
-        ldiu      @CL145,r0             ; |1190| 
+        ldiu      @CL144,r0             ; |1190| 
         ldp       @CL134,DP
         ldiu      *+fp(2),ar2           ; |1190| 
         mpyi      359,ar2               ; |1190| 
         addi      @CL134,ar2            ; |1190| Unsigned
+        ldp       @CL142,DP
+        ldfu      @CL142,f3             ; |1190| 
         ldp       @CL143,DP
-        ldfu      @CL143,f3             ; |1190| 
-        ldp       @CL144,DP
         ldiu      242,rc                ; |1190| 
-        ldfu      @CL144,f2             ; |1190| 
+        ldfu      @CL143,f2             ; |1190| 
         callu     r0                    ; far call to _VAR_Setup_Unit	; |1190| 
                                         ; |1190| Far Call Occurs
         subi      2,sp                  ; |1190| 
@@ -7964,20 +7802,20 @@ L255:
 ;----------------------------------------------------------------------
         ldiu      *+fp(2),r0            ; |1192| 
         cmpi      1,r0                  ; |1192| 
-        bne       L259                  ; |1192| 
-;*      Branch Occurs to L259           ; |1192| 
+        bne       L256                  ; |1192| 
+;*      Branch Occurs to L256           ; |1192| 
         ldp       @CL26,DP
         ldiu      @CL26,ar0             ; |1192| 
         ldiu      *ar0,r0               ; |1192| 
         cmpi      0,r0                  ; |1192| 
-        bne       L259                  ; |1192| 
-;*      Branch Occurs to L259           ; |1192| 
-        ldp       @CL139,DP
-        ldiu      @CL139,ar0            ; |1192| 
+        bne       L256                  ; |1192| 
+;*      Branch Occurs to L256           ; |1192| 
+        ldp       @CL137,DP
+        ldiu      @CL137,ar0            ; |1192| 
         ldiu      *ar0,r0               ; |1192| 
         cmpi      0,r0                  ; |1192| 
-        bne       L259                  ; |1192| 
-;*      Branch Occurs to L259           ; |1192| 
+        bne       L256                  ; |1192| 
+;*      Branch Occurs to L256           ; |1192| 
 	.line	104
 ;----------------------------------------------------------------------
 ; 1193 | VAR_Update(&PORTCFG[port].Baud_Rate, 115200.0, 0, 0);                  
@@ -7989,17 +7827,17 @@ L255:
         ldp       @CL134,DP
         mpyi      359,ar2               ; |1193| 
         addi      @CL134,ar2            ; |1193| Unsigned
-        ldp       @CL137+0,DP
-        ldfu      @CL137+0,f2           ; |1193| 40b float hi half
-        ldp       @CL137+1,DP
+        ldp       @CL138+0,DP
+        ldfu      @CL138+0,f2           ; |1193| 40b float hi half
+        ldp       @CL138+1,DP
         ldiu      0,rc                  ; |1193| 
-        ldiu      @CL137+1,r2           ; |1193| 40b float lo half
+        ldiu      @CL138+1,r2           ; |1193| 40b float lo half
         ldiu      0,r3                  ; |1193| 
         callu     r0                    ; far call to _VAR_Update	; |1193| 
                                         ; |1193| Far Call Occurs
-        bu        L260                  ; |1089| 
-;*      Branch Occurs to L260           ; |1089| 
-L259:        
+        bu        L257                  ; |1089| 
+;*      Branch Occurs to L257           ; |1089| 
+L256:        
 	.line	106
 ;----------------------------------------------------------------------
 ; 1195 | VAR_Update(&PORTCFG[port].Baud_Rate, 9600.0, 0, 0);     /* All other po
@@ -8011,15 +7849,15 @@ L259:
         ldp       @CL134,DP
         mpyi      359,ar2               ; |1195| 
         addi      @CL134,ar2            ; |1195| Unsigned
-        ldp       @CL140+0,DP
-        ldfu      @CL140+0,f2           ; |1195| 40b float hi half
-        ldp       @CL140+1,DP
+        ldp       @CL139+0,DP
+        ldfu      @CL139+0,f2           ; |1195| 40b float hi half
+        ldp       @CL139+1,DP
         ldiu      0,rc                  ; |1195| 
-        ldiu      @CL140+1,r2           ; |1195| 40b float lo half
+        ldiu      @CL139+1,r2           ; |1195| 40b float lo half
         ldiu      0,r3                  ; |1195| 
         callu     r0                    ; far call to _VAR_Update	; |1195| 
                                         ; |1195| Far Call Occurs
-L260:        
+L257:        
 	.line	109
 ;----------------------------------------------------------------------
 ; 1198 | PORTCFG[port].STP       = 1;                                           
@@ -8046,14 +7884,14 @@ L260:
 ;----------------------------------------------------------------------
         ldiu      *+fp(2),r0            ; |1201| 
         cmpi      1,r0                  ; |1201| 
-        bne       L263                  ; |1201| 
-;*      Branch Occurs to L263           ; |1201| 
-        ldp       @CL139,DP
-        ldiu      @CL139,ar0            ; |1201| 
+        bne       L260                  ; |1201| 
+;*      Branch Occurs to L260           ; |1201| 
+        ldp       @CL137,DP
+        ldiu      @CL137,ar0            ; |1201| 
         ldiu      *ar0,r0               ; |1201| 
         cmpi      0,r0                  ; |1201| 
-        beq       L263                  ; |1201| 
-;*      Branch Occurs to L263           ; |1201| 
+        beq       L260                  ; |1201| 
+;*      Branch Occurs to L260           ; |1201| 
 	.line	113
 ;----------------------------------------------------------------------
 ; 1202 | PORTCFG[port].N_retry = 0;                                             
@@ -8065,9 +7903,9 @@ L260:
         ldiu      @CL84,ar0             ; |1202| 
         ldiu      0,r0                  ; |1202| 
         sti       r0,*+ar0(ir0)         ; |1202| 
-        bu        L264                  ; |1089| 
-;*      Branch Occurs to L264           ; |1089| 
-L263:        
+        bu        L261                  ; |1089| 
+;*      Branch Occurs to L261           ; |1089| 
+L260:        
 	.line	115
 ;----------------------------------------------------------------------
 ; 1204 | PORTCFG[port].N_retry = 3;                                             
@@ -8078,7 +7916,7 @@ L263:
         ldiu      @CL84,ar0             ; |1204| 
         ldiu      3,r0                  ; |1204| 
         sti       r0,*+ar0(ir0)         ; |1204| 
-L264:        
+L261:        
 	.line	117
 ;----------------------------------------------------------------------
 ; 1206 | PORTCFG[port].poll_time = 100;                                         
@@ -8093,9 +7931,9 @@ L264:
 ;----------------------------------------------------------------------
 ; 1207 | PORTCFG[port].timeout = 1;                                             
 ;----------------------------------------------------------------------
-        ldp       @CL146,DP
+        ldp       @CL145,DP
         ldiu      *+fp(2),ir0           ; |1207| 
-        ldiu      @CL146,ar0            ; |1207| 
+        ldiu      @CL145,ar0            ; |1207| 
         mpyi      359,ir0               ; |1207| 
         ldiu      1,r0                  ; |1207| 
         sti       r0,*+ar0(ir0)         ; |1207| 
@@ -8110,9 +7948,9 @@ L264:
         ldiu      *+fp(2),ar2           ; |1209| 
         mpyi      359,ar2               ; |1209| 
         addi      @CL78,ar2             ; |1209| Unsigned
-        ldp       @CL141,DP
+        ldp       @CL140,DP
         ldiu      250,rc                ; |1209| 
-        ldiu      @CL141,r0             ; |1209| 
+        ldiu      @CL140,r0             ; |1209| 
         ldfu      1.0000000000e+02,f3   ; |1209| 
         ldfu      1.0000000000e+02,f2   ; |1209| 
         callu     r0                    ; far call to _VAR_Initialize	; |1209| 
@@ -8126,8 +7964,8 @@ L264:
         ldiu      *+fp(2),ar2           ; |1210| 
         mpyi      359,ar2               ; |1210| 
         addi      @CL73,ar2             ; |1210| Unsigned
-        ldp       @CL141,DP
-        ldiu      @CL141,r0             ; |1210| 
+        ldp       @CL140,DP
+        ldiu      @CL140,r0             ; |1210| 
         ldiu      243,rs                ; |1210| 
         ldiu      4,re                  ; |1210| 
         ldiu      70,rc                 ; |1210| 
@@ -8144,8 +7982,8 @@ L264:
         ldp       @CL76,DP
         mpyi      359,ar2               ; |1211| 
         addi      @CL76,ar2             ; |1211| Unsigned
-        ldp       @CL141,DP
-        ldiu      @CL141,r0             ; |1211| 
+        ldp       @CL140,DP
+        ldiu      @CL140,r0             ; |1211| 
         ldiu      243,rs                ; |1211| 
         ldiu      4,re                  ; |1211| 
         ldiu      70,rc                 ; |1211| 
@@ -8164,9 +8002,9 @@ L264:
         addi      @CL68,ar2             ; |1216| Unsigned
         ldiu      243,rs                ; |1216| 
         ldiu      4,re                  ; |1216| 
-        ldp       @CL141,DP
+        ldp       @CL140,DP
         ldiu      70,rc                 ; |1216| 
-        ldiu      @CL141,r0             ; |1216| 
+        ldiu      @CL140,r0             ; |1216| 
         ldfu      1.0000000000e+02,f3   ; |1216| 
         ldfu      1.0000000000e+02,f2   ; |1216| 
         callu     r0                    ; far call to _VAR_Initialize	; |1216| 
@@ -8180,11 +8018,11 @@ L264:
         ldiu      *+fp(2),ar2           ; |1217| 
         mpyi      359,ar2               ; |1217| 
         addi      @CL81,ar2             ; |1217| Unsigned
-        ldp       @CL141,DP
+        ldp       @CL140,DP
         ldiu      51,rs                 ; |1217| 
         ldiu      4,re                  ; |1217| 
         ldiu      70,rc                 ; |1217| 
-        ldiu      @CL141,r0             ; |1217| 
+        ldiu      @CL140,r0             ; |1217| 
         ldfu      1.0000000000e+02,f3   ; |1217| 
         ldfu      1.0000000000e+02,f2   ; |1217| 
         callu     r0                    ; far call to _VAR_Initialize	; |1217| 
@@ -8195,11 +8033,11 @@ L264:
 ;     | ecific_none, 1.0,   1.0,   var_no_alarm|var_round);                    
 ;----------------------------------------------------------------------
         ldiu      *+fp(2),ar2           ; |1218| 
-        ldp       @CL147,DP
+        ldp       @CL146,DP
         mpyi      359,ar2               ; |1218| 
-        addi      @CL147,ar2            ; |1218| Unsigned
-        ldp       @CL141,DP
-        ldiu      @CL141,r0             ; |1218| 
+        addi      @CL146,ar2            ; |1218| Unsigned
+        ldp       @CL140,DP
+        ldiu      @CL140,r0             ; |1218| 
         ldiu      240,rs                ; |1218| 
         ldiu      260,re                ; |1218| 
         ldiu      0,rc                  ; |1218| 
@@ -8214,14 +8052,14 @@ L264:
         ldp       @CL70,DP
         ldiu      *+fp(2),ar2           ; |1219| 
         ldiu      @CL70,r0              ; |1219| 
-        ldp       @CL147,DP
+        ldp       @CL146,DP
         mpyi      359,ar2               ; |1219| 
-        addi      @CL147,ar2            ; |1219| Unsigned
-        ldp       @CL148+0,DP
-        ldfu      @CL148+0,f2           ; |1219| 40b float hi half
-        ldp       @CL148+1,DP
+        addi      @CL146,ar2            ; |1219| Unsigned
+        ldp       @CL147+0,DP
+        ldfu      @CL147+0,f2           ; |1219| 40b float hi half
+        ldp       @CL147+1,DP
         ldiu      0,rc                  ; |1219| 
-        ldiu      @CL148+1,r2           ; |1219| 40b float lo half
+        ldiu      @CL147+1,r2           ; |1219| 40b float lo half
         ldiu      0,r3                  ; |1219| 
         callu     r0                    ; far call to _VAR_Update	; |1219| 
                                         ; |1219| Far Call Occurs
@@ -8232,16 +8070,16 @@ L264:
 ;----------------------------------------------------------------------
         ldiu      1,r0                  ; |1220| 
         addi      *+fp(2),r0            ; |1220| 
-        ldp       @CL150,DP
+        ldp       @CL149,DP
         push      r0                    ; |1220| 
-        ldiu      @CL150,r1             ; |1220| 
+        ldiu      @CL149,r1             ; |1220| 
         push      r1                    ; |1220| 
         ldiu      *+fp(2),ar2           ; |1220| 
-        ldp       @CL149,DP
+        ldp       @CL148,DP
         mpyi      359,ar2               ; |1220| 
-        addi      @CL149,ar2            ; |1220| Unsigned
-        ldp       @CL151,DP
-        ldiu      @CL151,r0             ; |1220| 
+        addi      @CL148,ar2            ; |1220| Unsigned
+        ldp       @CL150,DP
+        ldiu      @CL150,r0             ; |1220| 
         callu     r0                    ; far call to _sprintf	; |1220| 
                                         ; |1220| Far Call Occurs
         subi      2,sp                  ; |1220| 
@@ -8249,8 +8087,8 @@ L264:
 ;----------------------------------------------------------------------
 ; 1221 | PORTCFG[port].Slave_ID.name_r = 337;                                   
 ;----------------------------------------------------------------------
-        ldp       @CL152,DP
-        ldiu      @CL152,ar0            ; |1221| 
+        ldp       @CL151,DP
+        ldiu      @CL151,ar0            ; |1221| 
         ldiu      *+fp(2),ir0           ; |1221| 
         mpyi      359,ir0               ; |1221| 
         ldiu      337,r0                ; |1221| 
@@ -8260,18 +8098,18 @@ L264:
 ; 1223 | sprintf(PORTCFG[port].Baud_Rate.name,   "C%d Baud Rate",        port+1)
 ;     | ;        //R334                                                        
 ;----------------------------------------------------------------------
-        ldp       @CL154,DP
+        ldp       @CL153,DP
         ldiu      1,r0                  ; |1223| 
-        ldiu      @CL154,r1             ; |1223| 
+        ldiu      @CL153,r1             ; |1223| 
         addi      *+fp(2),r0            ; |1223| 
         push      r0                    ; |1223| 
         push      r1                    ; |1223| 
         ldiu      *+fp(2),ar2           ; |1223| 
-        ldp       @CL153,DP
+        ldp       @CL152,DP
         mpyi      359,ar2               ; |1223| 
-        addi      @CL153,ar2            ; |1223| Unsigned
-        ldp       @CL151,DP
-        ldiu      @CL151,r0             ; |1223| 
+        addi      @CL152,ar2            ; |1223| Unsigned
+        ldp       @CL150,DP
+        ldiu      @CL150,r0             ; |1223| 
         callu     r0                    ; far call to _sprintf	; |1223| 
                                         ; |1223| Far Call Occurs
         subi      2,sp                  ; |1223| 
@@ -8280,9 +8118,9 @@ L264:
 ; 1224 | PORTCFG[port].Baud_Rate.name_r = 334;                                  
 ;----------------------------------------------------------------------
         ldiu      *+fp(2),ir0           ; |1224| 
-        ldp       @CL155,DP
+        ldp       @CL154,DP
         mpyi      359,ir0               ; |1224| 
-        ldiu      @CL155,ar0            ; |1224| 
+        ldiu      @CL154,ar0            ; |1224| 
         ldiu      334,r0                ; |1224| 
         sti       r0,*+ar0(ir0)         ; |1224| 
 	.line	137
@@ -8291,17 +8129,17 @@ L264:
 ;     | ;        //R94                                                         
 ;----------------------------------------------------------------------
         ldiu      1,r0                  ; |1226| 
-        ldp       @CL157,DP
+        ldp       @CL156,DP
         addi      *+fp(2),r0            ; |1226| 
-        ldiu      @CL157,r1             ; |1226| 
+        ldiu      @CL156,r1             ; |1226| 
         push      r0                    ; |1226| 
         push      r1                    ; |1226| 
         ldiu      *+fp(2),ar2           ; |1226| 
-        ldp       @CL156,DP
+        ldp       @CL155,DP
         mpyi      359,ar2               ; |1226| 
-        addi      @CL156,ar2            ; |1226| Unsigned
-        ldp       @CL151,DP
-        ldiu      @CL151,r0             ; |1226| 
+        addi      @CL155,ar2            ; |1226| Unsigned
+        ldp       @CL150,DP
+        ldiu      @CL150,r0             ; |1226| 
         callu     r0                    ; far call to _sprintf	; |1226| 
                                         ; |1226| Far Call Occurs
         subi      2,sp                  ; |1226| 
@@ -8309,9 +8147,9 @@ L264:
 ;----------------------------------------------------------------------
 ; 1227 | PORTCFG[port].EOT_Delay.name_r = 94;                                   
 ;----------------------------------------------------------------------
-        ldp       @CL158,DP
+        ldp       @CL157,DP
         ldiu      *+fp(2),ir0           ; |1227| 
-        ldiu      @CL158,ar0            ; |1227| 
+        ldiu      @CL157,ar0            ; |1227| 
         mpyi      359,ir0               ; |1227| 
         ldiu      94,r0                 ; |1227| 
         sti       r0,*+ar0(ir0)         ; |1227| 
@@ -8321,17 +8159,17 @@ L264:
 ;     |  port+1);        //R335                                                
 ;----------------------------------------------------------------------
         ldiu      1,r0                  ; |1229| 
-        ldp       @CL160,DP
+        ldp       @CL159,DP
         addi      *+fp(2),r0            ; |1229| 
-        ldiu      @CL160,r1             ; |1229| 
+        ldiu      @CL159,r1             ; |1229| 
         push      r0                    ; |1229| 
         push      r1                    ; |1229| 
         ldiu      *+fp(2),ar2           ; |1229| 
-        ldp       @CL159,DP
+        ldp       @CL158,DP
         mpyi      359,ar2               ; |1229| 
-        addi      @CL159,ar2            ; |1229| Unsigned
-        ldp       @CL151,DP
-        ldiu      @CL151,r0             ; |1229| 
+        addi      @CL158,ar2            ; |1229| Unsigned
+        ldp       @CL150,DP
+        ldiu      @CL150,r0             ; |1229| 
         callu     r0                    ; far call to _sprintf	; |1229| 
                                         ; |1229| Far Call Occurs
         subi      2,sp                  ; |1229| 
@@ -8339,9 +8177,9 @@ L264:
 ;----------------------------------------------------------------------
 ; 1230 | PORTCFG[port].PREFIX.name_r = 335;                                     
 ;----------------------------------------------------------------------
-        ldp       @CL161,DP
+        ldp       @CL160,DP
         ldiu      *+fp(2),ir0           ; |1230| 
-        ldiu      @CL161,ar0            ; |1230| 
+        ldiu      @CL160,ar0            ; |1230| 
         mpyi      359,ir0               ; |1230| 
         ldiu      335,r0                ; |1230| 
         sti       r0,*+ar0(ir0)         ; |1230| 
@@ -8350,18 +8188,18 @@ L264:
 ; 1232 | sprintf(PORTCFG[port].SUFFIX.name,              "C%d Suffix",
 ;     |  port+1);        //R338                                                
 ;----------------------------------------------------------------------
-        ldp       @CL163,DP
-        ldiu      @CL163,r1             ; |1232| 
-        ldiu      1,r0                  ; |1232| 
         ldp       @CL162,DP
+        ldiu      @CL162,r1             ; |1232| 
+        ldiu      1,r0                  ; |1232| 
+        ldp       @CL161,DP
         addi      *+fp(2),r0            ; |1232| 
         push      r0                    ; |1232| 
         push      r1                    ; |1232| 
         ldiu      *+fp(2),ar2           ; |1232| 
         mpyi      359,ar2               ; |1232| 
-        addi      @CL162,ar2            ; |1232| Unsigned
-        ldp       @CL151,DP
-        ldiu      @CL151,r0             ; |1232| 
+        addi      @CL161,ar2            ; |1232| Unsigned
+        ldp       @CL150,DP
+        ldiu      @CL150,r0             ; |1232| 
         callu     r0                    ; far call to _sprintf	; |1232| 
                                         ; |1232| Far Call Occurs
         subi      2,sp                  ; |1232| 
@@ -8370,9 +8208,9 @@ L264:
 ; 1233 | PORTCFG[port].SUFFIX.name_r = 338;                                     
 ;----------------------------------------------------------------------
         ldiu      *+fp(2),ir0           ; |1233| 
-        ldp       @CL164,DP
+        ldp       @CL163,DP
         mpyi      359,ir0               ; |1233| 
-        ldiu      @CL164,ar0            ; |1233| 
+        ldiu      @CL163,ar0            ; |1233| 
         ldiu      338,r0                ; |1233| 
         sti       r0,*+ar0(ir0)         ; |1233| 
 	.line	146
@@ -8382,16 +8220,16 @@ L264:
 ;----------------------------------------------------------------------
         ldiu      1,r0                  ; |1235| 
         addi      *+fp(2),r0            ; |1235| 
-        ldp       @CL166,DP
+        ldp       @CL165,DP
         push      r0                    ; |1235| 
-        ldiu      @CL166,r1             ; |1235| 
+        ldiu      @CL165,r1             ; |1235| 
         push      r1                    ; |1235| 
         ldiu      *+fp(2),ar2           ; |1235| 
-        ldp       @CL165,DP
+        ldp       @CL164,DP
         mpyi      359,ar2               ; |1235| 
-        addi      @CL165,ar2            ; |1235| Unsigned
-        ldp       @CL151,DP
-        ldiu      @CL151,r0             ; |1235| 
+        addi      @CL164,ar2            ; |1235| Unsigned
+        ldp       @CL150,DP
+        ldiu      @CL150,r0             ; |1235| 
         callu     r0                    ; far call to _sprintf	; |1235| 
                                         ; |1235| Far Call Occurs
         subi      2,sp                  ; |1235| 
@@ -8400,9 +8238,9 @@ L264:
 ; 1236 | PORTCFG[port].NETWDOG.name_r = 339;                                    
 ;----------------------------------------------------------------------
         ldiu      *+fp(2),ir0           ; |1236| 
-        ldp       @CL167,DP
+        ldp       @CL166,DP
         mpyi      359,ir0               ; |1236| 
-        ldiu      @CL167,ar0            ; |1236| 
+        ldiu      @CL166,ar0            ; |1236| 
         ldiu      339,r0                ; |1236| 
         sti       r0,*+ar0(ir0)         ; |1236| 
 	.line	149
@@ -8411,17 +8249,17 @@ L264:
 ;     | ;        //R336                                                        
 ;----------------------------------------------------------------------
         ldiu      1,r0                  ; |1238| 
-        ldp       @CL169,DP
+        ldp       @CL168,DP
         addi      *+fp(2),r0            ; |1238| 
-        ldiu      @CL169,r1             ; |1238| 
+        ldiu      @CL168,r1             ; |1238| 
         push      r0                    ; |1238| 
         push      r1                    ; |1238| 
         ldiu      *+fp(2),ar2           ; |1238| 
-        ldp       @CL168,DP
+        ldp       @CL167,DP
         mpyi      359,ar2               ; |1238| 
-        addi      @CL168,ar2            ; |1238| Unsigned
-        ldp       @CL151,DP
-        ldiu      @CL151,r0             ; |1238| 
+        addi      @CL167,ar2            ; |1238| Unsigned
+        ldp       @CL150,DP
+        ldiu      @CL150,r0             ; |1238| 
         callu     r0                    ; far call to _sprintf	; |1238| 
                                         ; |1238| Far Call Occurs
         subi      2,sp                  ; |1238| 
@@ -8430,9 +8268,9 @@ L264:
 ; 1239 | PORTCFG[port].Retry_Time.name_r = 336;                                 
 ;----------------------------------------------------------------------
         ldiu      *+fp(2),ir0           ; |1239| 
-        ldp       @CL170,DP
+        ldp       @CL169,DP
         mpyi      359,ir0               ; |1239| 
-        ldiu      @CL170,ar0            ; |1239| 
+        ldiu      @CL169,ar0            ; |1239| 
         ldiu      336,r0                ; |1239| 
         sti       r0,*+ar0(ir0)         ; |1239| 
 	.line	152
@@ -8442,16 +8280,16 @@ L264:
 ;----------------------------------------------------------------------
         ldiu      1,r0                  ; |1241| 
         addi      *+fp(2),r0            ; |1241| 
-        ldp       @CL172,DP
+        ldp       @CL171,DP
         push      r0                    ; |1241| 
-        ldiu      @CL172,r1             ; |1241| 
+        ldiu      @CL171,r1             ; |1241| 
         push      r1                    ; |1241| 
         ldiu      *+fp(2),ar2           ; |1241| 
-        ldp       @CL171,DP
+        ldp       @CL170,DP
         mpyi      359,ar2               ; |1241| 
-        addi      @CL171,ar2            ; |1241| Unsigned
-        ldp       @CL151,DP
-        ldiu      @CL151,r0             ; |1241| 
+        addi      @CL170,ar2            ; |1241| Unsigned
+        ldp       @CL150,DP
+        ldiu      @CL150,r0             ; |1241| 
         callu     r0                    ; far call to _sprintf	; |1241| 
                                         ; |1241| Far Call Occurs
         subi      2,sp                  ; |1241| 
@@ -8459,9 +8297,9 @@ L264:
 ;----------------------------------------------------------------------
 ; 1242 | PORTCFG[port].Num_Retry.name_r = 101;                                  
 ;----------------------------------------------------------------------
-        ldp       @CL173,DP
+        ldp       @CL172,DP
         ldiu      *+fp(2),ir0           ; |1242| 
-        ldiu      @CL173,ar0            ; |1242| 
+        ldiu      @CL172,ar0            ; |1242| 
         mpyi      359,ir0               ; |1242| 
         ldiu      101,r0                ; |1242| 
         sti       r0,*+ar0(ir0)         ; |1242| 
@@ -8470,17 +8308,17 @@ L264:
 ; 1245 | PORTCFG[port].EOT_Delay.bound_hi_set    = 255.0;                       
 ;----------------------------------------------------------------------
         ldiu      *+fp(2),ir0           ; |1245| 
-        ldp       @CL174,DP
+        ldp       @CL173,DP
         mpyi      359,ir0               ; |1245| 
-        ldiu      @CL174,ar0            ; |1245| 
+        ldiu      @CL173,ar0            ; |1245| 
         ldfu      2.5500000000e+02,f0   ; |1245| 
         stf       f0,*+ar0(ir0)         ; |1245| 
 	.line	157
 ;----------------------------------------------------------------------
 ; 1246 | PORTCFG[port].PREFIX.bound_hi_set               = 255.0;               
 ;----------------------------------------------------------------------
-        ldp       @CL175,DP
-        ldiu      @CL175,ar0            ; |1246| 
+        ldp       @CL174,DP
+        ldiu      @CL174,ar0            ; |1246| 
         ldiu      *+fp(2),ir0           ; |1246| 
         mpyi      359,ir0               ; |1246| 
         ldfu      2.5500000000e+02,f0   ; |1246| 
@@ -8490,19 +8328,19 @@ L264:
 ; 1247 | PORTCFG[port].SUFFIX.bound_hi_set               = 255.0;               
 ;----------------------------------------------------------------------
         ldiu      *+fp(2),ir0           ; |1247| 
-        ldp       @CL176,DP
+        ldp       @CL175,DP
         mpyi      359,ir0               ; |1247| 
-        ldiu      @CL176,ar0            ; |1247| 
+        ldiu      @CL175,ar0            ; |1247| 
         ldfu      2.5500000000e+02,f0   ; |1247| 
         stf       f0,*+ar0(ir0)         ; |1247| 
 	.line	159
 ;----------------------------------------------------------------------
 ; 1248 | PORTCFG[port].NETWDOG.bound_hi_set              = 255.0;               
 ;----------------------------------------------------------------------
-        ldp       @CL177,DP
+        ldp       @CL176,DP
         ldiu      *+fp(2),ir0           ; |1248| 
         mpyi      359,ir0               ; |1248| 
-        ldiu      @CL177,ar0            ; |1248| 
+        ldiu      @CL176,ar0            ; |1248| 
         ldfu      2.5500000000e+02,f0   ; |1248| 
         stf       f0,*+ar0(ir0)         ; |1248| 
 	.line	160
@@ -8510,18 +8348,18 @@ L264:
 ; 1249 | PORTCFG[port].Retry_Time.bound_hi_set   = 10.0;                        
 ;----------------------------------------------------------------------
         ldiu      *+fp(2),ir0           ; |1249| 
-        ldp       @CL178,DP
+        ldp       @CL177,DP
         mpyi      359,ir0               ; |1249| 
-        ldiu      @CL178,ar0            ; |1249| 
+        ldiu      @CL177,ar0            ; |1249| 
         ldfu      1.0000000000e+01,f0   ; |1249| 
         stf       f0,*+ar0(ir0)         ; |1249| 
 	.line	161
 ;----------------------------------------------------------------------
 ; 1250 | PORTCFG[port].EOT_Delay.bound_lo_set        = 0.0;                     
 ;----------------------------------------------------------------------
-        ldp       @CL179,DP
+        ldp       @CL178,DP
         ldiu      *+fp(2),ir0           ; |1250| 
-        ldiu      @CL179,ar0            ; |1250| 
+        ldiu      @CL178,ar0            ; |1250| 
         mpyi      359,ir0               ; |1250| 
         ldfu      0.0000000000e+00,f0   ; |1250| 
         stf       f0,*+ar0(ir0)         ; |1250| 
@@ -8529,8 +8367,8 @@ L264:
 ;----------------------------------------------------------------------
 ; 1251 | PORTCFG[port].PREFIX.bound_lo_set               = 0.0;                 
 ;----------------------------------------------------------------------
-        ldp       @CL180,DP
-        ldiu      @CL180,ar0            ; |1251| 
+        ldp       @CL179,DP
+        ldiu      @CL179,ar0            ; |1251| 
         ldiu      *+fp(2),ir0           ; |1251| 
         mpyi      359,ir0               ; |1251| 
         ldfu      0.0000000000e+00,f0   ; |1251| 
@@ -8540,9 +8378,9 @@ L264:
 ; 1252 | PORTCFG[port].SUFFIX.bound_lo_set               = 0.0;                 
 ;----------------------------------------------------------------------
         ldiu      *+fp(2),ir0           ; |1252| 
-        ldp       @CL181,DP
+        ldp       @CL180,DP
         mpyi      359,ir0               ; |1252| 
-        ldiu      @CL181,ar0            ; |1252| 
+        ldiu      @CL180,ar0            ; |1252| 
         ldfu      0.0000000000e+00,f0   ; |1252| 
         stf       f0,*+ar0(ir0)         ; |1252| 
 	.line	164
@@ -8550,21 +8388,21 @@ L264:
 ; 1253 | PORTCFG[port].NETWDOG.bound_lo_set              = 1.5;                 
 ;----------------------------------------------------------------------
         ldiu      *+fp(2),ir0           ; |1253| 
-        ldp       @CL182,DP
+        ldp       @CL181,DP
         mpyi      359,ir0               ; |1253| 
-        ldiu      @CL182,ar0            ; |1253| 
+        ldiu      @CL181,ar0            ; |1253| 
         ldfu      1.5000000000e+00,f0   ; |1253| 
         stf       f0,*+ar0(ir0)         ; |1253| 
 	.line	165
 ;----------------------------------------------------------------------
 ; 1254 | PORTCFG[port].Retry_Time.bound_lo_set   = 0.1;                         
 ;----------------------------------------------------------------------
-        ldp       @CL183,DP
-        ldiu      @CL183,ar0            ; |1254| 
+        ldp       @CL182,DP
+        ldiu      @CL182,ar0            ; |1254| 
         ldiu      *+fp(2),ir0           ; |1254| 
-        ldp       @CL184,DP
+        ldp       @CL183,DP
         mpyi      359,ir0               ; |1254| 
-        ldfu      @CL184,f0             ; |1254| 
+        ldfu      @CL183,f0             ; |1254| 
         stf       f0,*+ar0(ir0)         ; |1254| 
 	.line	167
 ;----------------------------------------------------------------------
@@ -8574,44 +8412,44 @@ L264:
         ldiu      @CL26,ar0             ; |1256| 
         ldiu      *ar0,r0               ; |1256| 
         cmpi      0,r0                  ; |1256| 
-        beq       L268                  ; |1256| 
-;*      Branch Occurs to L268           ; |1256| 
+        beq       L265                  ; |1256| 
+;*      Branch Occurs to L265           ; |1256| 
         ldp       @CL125,DP
         ldiu      @CL125,ar0            ; |1256| 
         ldiu      32,r0                 ; |1256| 
         tstb3     *ar0,r0               ; |1256| 
-        bne       L268                  ; |1256| 
-;*      Branch Occurs to L268           ; |1256| 
+        bne       L265                  ; |1256| 
+;*      Branch Occurs to L265           ; |1256| 
         ldiu      *+fp(2),r0            ; |1256| 
         cmpi      0,r0                  ; |1256| 
-        beq       L270                  ; |1256| 
-;*      Branch Occurs to L270           ; |1256| 
-L268:        
+        beq       L267                  ; |1256| 
+;*      Branch Occurs to L267           ; |1256| 
+L265:        
         ldp       @CL26,DP
         ldiu      @CL26,ar0             ; |1256| 
         ldiu      *ar0,r0               ; |1256| 
         cmpi      0,r0                  ; |1256| 
-        bne       L271                  ; |1256| 
-;*      Branch Occurs to L271           ; |1256| 
+        bne       L268                  ; |1256| 
+;*      Branch Occurs to L268           ; |1256| 
         ldiu      *+fp(2),r0            ; |1256| 
         cmpi      4,r0                  ; |1256| 
-        bne       L271                  ; |1256| 
-;*      Branch Occurs to L271           ; |1256| 
-L270:        
+        bne       L268                  ; |1256| 
+;*      Branch Occurs to L268           ; |1256| 
+L267:        
 	.line	169
 ;----------------------------------------------------------------------
 ; 1258 | LOOP_ENABLED.val        = TRUE;                                        
 ;----------------------------------------------------------------------
-        ldp       @CL185,DP
-        ldiu      @CL185,ar0            ; |1258| 
+        ldp       @CL184,DP
+        ldiu      @CL184,ar0            ; |1258| 
         ldiu      1,r0                  ; |1258| 
         sti       r0,*ar0               ; |1258| 
 	.line	170
 ;----------------------------------------------------------------------
 ; 1259 | AO[0].MANUAL            = FALSE;                                       
 ;----------------------------------------------------------------------
-        ldp       @CL186,DP
-        ldiu      @CL186,ar0            ; |1259| 
+        ldp       @CL185,DP
+        ldiu      @CL185,ar0            ; |1259| 
         ldiu      0,r0                  ; |1259| 
         sti       r0,*ar0               ; |1259| 
 	.line	172
@@ -8746,43 +8584,43 @@ L270:
 ;----------------------------------------------------------------------
 ; 1272 | HCHANGE[0]              = TRUE;                                        
 ;----------------------------------------------------------------------
-        ldp       @CL187,DP
-        ldiu      @CL187,ar0            ; |1272| 
+        ldp       @CL186,DP
+        ldiu      @CL186,ar0            ; |1272| 
         ldiu      1,r0                  ; |1272| 
         sti       r0,*ar0               ; |1272| 
 	.line	184
 ;----------------------------------------------------------------------
 ; 1273 | HCHANGE[1]              = TRUE;                                        
 ;----------------------------------------------------------------------
-        ldp       @CL188,DP
-        ldiu      @CL188,ar0            ; |1273| 
+        ldp       @CL187,DP
+        ldiu      @CL187,ar0            ; |1273| 
         sti       r0,*ar0               ; |1273| 
 	.line	185
 ;----------------------------------------------------------------------
 ; 1274 | NUM_PREAMBLE_MS = 5;                                                   
 ;----------------------------------------------------------------------
-        ldp       @CL189,DP
-        ldiu      @CL189,ar0            ; |1274| 
+        ldp       @CL188,DP
+        ldiu      @CL188,ar0            ; |1274| 
         ldiu      5,r0                  ; |1274| 
         sti       r0,*ar0               ; |1274| 
 	.line	186
 ;----------------------------------------------------------------------
 ; 1275 | NUM_PREAMBLE_SM = 5;                                                   
 ;----------------------------------------------------------------------
-        ldp       @CL190,DP
-        ldiu      @CL190,ar0            ; |1275| 
+        ldp       @CL189,DP
+        ldiu      @CL189,ar0            ; |1275| 
         sti       r0,*ar0               ; |1275| 
 	.line	187
 ;----------------------------------------------------------------------
 ; 1276 | HCHANGE_COUNTER = 0;                                                   
 ;----------------------------------------------------------------------
-        ldp       @CL191,DP
-        ldiu      @CL191,ar0            ; |1276| 
+        ldp       @CL190,DP
+        ldiu      @CL190,ar0            ; |1276| 
         ldiu      0,r0                  ; |1276| 
         sti       r0,*ar0               ; |1276| 
-        bu        L275                  ; |1089| 
-;*      Branch Occurs to L275           ; |1089| 
-L271:        
+        bu        L272                  ; |1089| 
+;*      Branch Occurs to L272           ; |1089| 
+L268:        
 	.line	189
 ;----------------------------------------------------------------------
 ; 1278 | else if (!SA && (port==5))                                             
@@ -8791,12 +8629,12 @@ L271:
         ldiu      @CL26,ar0             ; |1278| 
         ldiu      *ar0,r0               ; |1278| 
         cmpi      0,r0                  ; |1278| 
-        bne       L274                  ; |1278| 
-;*      Branch Occurs to L274           ; |1278| 
+        bne       L271                  ; |1278| 
+;*      Branch Occurs to L271           ; |1278| 
         ldiu      *+fp(2),r0            ; |1278| 
         cmpi      5,r0                  ; |1278| 
-        bne       L274                  ; |1278| 
-;*      Branch Occurs to L274           ; |1278| 
+        bne       L271                  ; |1278| 
+;*      Branch Occurs to L271           ; |1278| 
 	.line	191
 ;----------------------------------------------------------------------
 ; 1280 | VAR_Update(&PORTCFG[port].Slave_ID, 0.0, 0, 0);                        
@@ -8918,17 +8756,17 @@ L271:
         ldiu      *+fp(2),ar2           ; |1289| 
         mpyi      359,ar2               ; |1289| 
         addi      @CL81,ar2             ; |1289| Unsigned
-        ldp       @CL138+0,DP
-        ldfu      @CL138+0,f2           ; |1289| 40b float hi half
-        ldp       @CL138+1,DP
-        ldiu      @CL138+1,r2           ; |1289| 40b float lo half
+        ldp       @CL191+0,DP
+        ldfu      @CL191+0,f2           ; |1289| 40b float hi half
+        ldp       @CL191+1,DP
+        ldiu      @CL191+1,r2           ; |1289| 40b float lo half
         ldiu      0,rc                  ; |1289| 
         ldiu      0,r3                  ; |1289| 
         callu     r0                    ; far call to _VAR_Update	; |1289| 
                                         ; |1289| Far Call Occurs
-        bu        L275                  ; |1089| 
-;*      Branch Occurs to L275           ; |1089| 
-L274:        
+        bu        L272                  ; |1089| 
+;*      Branch Occurs to L272           ; |1089| 
+L271:        
 	.line	204
 ;----------------------------------------------------------------------
 ; 1293 | VAR_Update(&PORTCFG[port].EOT_Delay, DEFAULT_EOT,        0, 0);        
@@ -9059,15 +8897,15 @@ L274:
         ldiu      0,r3                  ; |1302| 
         callu     r0                    ; far call to _VAR_Update	; |1302| 
                                         ; |1302| Far Call Occurs
-L275:        
+L272:        
 	.line	71
         ldiu      1,r0                  ; |1160| 
         addi      *+fp(2),r0            ; |1160| 
         sti       r0,*+fp(2)            ; |1160| 
         cmpi      8,r0                  ; |1160| 
-        blt       L246                  ; |1160| 
-;*      Branch Occurs to L246           ; |1160| 
-L276:        
+        blt       L243                  ; |1160| 
+;*      Branch Occurs to L243           ; |1160| 
+L273:        
 	.line	218
 ;----------------------------------------------------------------------
 ; 1307 | for (port=0;port<UART_MAX;port++)                                      
@@ -9080,9 +8918,9 @@ L276:
         ldiu      0,re                  ; |1310| 
         cmpi      8,r0                  ; |1307| 
         ldiu      0,rs                  ; |1314| 
-        bge       L278                  ; |1307| 
-;*      Branch Occurs to L278           ; |1307| 
-L277:        
+        bge       L275                  ; |1307| 
+;*      Branch Occurs to L275           ; |1307| 
+L274:        
 	.line	220
 ;----------------------------------------------------------------------
 ; 1309 | PORT[port].SNUM                 = SN_PIPE;                             
@@ -9145,9 +8983,9 @@ L277:
         addi      *+fp(2),r0            ; |1307| 
         sti       r0,*+fp(2)            ; |1307| 
         cmpi      8,r0                  ; |1307| 
-        blt       L277                  ; |1307| 
-;*      Branch Occurs to L277           ; |1307| 
-L278:        
+        blt       L274                  ; |1307| 
+;*      Branch Occurs to L274           ; |1307| 
+L275:        
 	.line	228
 ;----------------------------------------------------------------------
 ; 1317 | List_Init(&LIST_MASTER_EMPTY);                                         
@@ -9173,9 +9011,9 @@ L278:
         ldfu      0.0000000000e+00,f6   ; |1332| 
         ldfu      0.0000000000e+00,f7   ; |1331| 
         cmpi      75,r0                 ; |1319| 
-        bge       L280                  ; |1319| 
-;*      Branch Occurs to L280           ; |1319| 
-L279:        
+        bge       L277                  ; |1319| 
+;*      Branch Occurs to L277           ; |1319| 
+L276:        
 	.line	232
 ;----------------------------------------------------------------------
 ; 1321 | QUEUE_MASTER[i].prev    = 0;                                           
@@ -9344,9 +9182,9 @@ L279:
         addi      *+fp(3),r0            ; |1319| 
         sti       r0,*+fp(3)            ; |1319| 
         cmpi      75,r0                 ; |1319| 
-        blt       L279                  ; |1319| 
-;*      Branch Occurs to L279           ; |1319| 
-L280:        
+        blt       L276                  ; |1319| 
+;*      Branch Occurs to L276           ; |1319| 
+L277:        
 	.line	252
 ;----------------------------------------------------------------------
 ; 1341 | for (port=0;port<UART_MAX;port++)                                      
@@ -9354,9 +9192,9 @@ L280:
         ldiu      0,r0                  ; |1341| 
         sti       r0,*+fp(2)            ; |1341| 
         cmpi      8,r0                  ; |1341| 
-        bge       L282                  ; |1341| 
-;*      Branch Occurs to L282           ; |1341| 
-L281:        
+        bge       L279                  ; |1341| 
+;*      Branch Occurs to L279           ; |1341| 
+L278:        
 	.line	253
 ;----------------------------------------------------------------------
 ; 1342 | List_Init(&PORT[port].MASTER);                                         
@@ -9374,9 +9212,9 @@ L281:
         addi      *+fp(2),r0            ; |1341| 
         sti       r0,*+fp(2)            ; |1341| 
         cmpi      8,r0                  ; |1341| 
-        blt       L281                  ; |1341| 
-;*      Branch Occurs to L281           ; |1341| 
-L282:        
+        blt       L278                  ; |1341| 
+;*      Branch Occurs to L278           ; |1341| 
+L279:        
 	.line	255
 ;----------------------------------------------------------------------
 ; 1344 | if ((!SA && (DIO_HART_5.val && (PORT[4].Slave==0))) || (SA && (DIO_HART
@@ -9386,51 +9224,51 @@ L282:
         ldiu      @CL26,ar0             ; |1344| 
         ldiu      *ar0,r0               ; |1344| 
         cmpi      0,r0                  ; |1344| 
-        bne       L285                  ; |1344| 
-;*      Branch Occurs to L285           ; |1344| 
+        bne       L282                  ; |1344| 
+;*      Branch Occurs to L282           ; |1344| 
         ldp       @CL131,DP
         ldiu      @CL131,ar0            ; |1344| 
         ldiu      *ar0,r0               ; |1344| 
         cmpi      0,r0                  ; |1344| 
-        beq       L285                  ; |1344| 
-;*      Branch Occurs to L285           ; |1344| 
+        beq       L282                  ; |1344| 
+;*      Branch Occurs to L282           ; |1344| 
         ldp       @CL215,DP
         ldiu      @CL215,ar0            ; |1344| 
         ldiu      *ar0,r0               ; |1344| 
         cmpi      0,r0                  ; |1344| 
-        beq       L288                  ; |1344| 
-;*      Branch Occurs to L288           ; |1344| 
-L285:        
+        beq       L285                  ; |1344| 
+;*      Branch Occurs to L285           ; |1344| 
+L282:        
         ldp       @CL26,DP
         ldiu      @CL26,ar0             ; |1344| 
         ldiu      *ar0,r0               ; |1344| 
         cmpi      0,r0                  ; |1344| 
-        beq       L289                  ; |1344| 
-;*      Branch Occurs to L289           ; |1344| 
+        beq       L286                  ; |1344| 
+;*      Branch Occurs to L286           ; |1344| 
         ldp       @CL131,DP
         ldiu      @CL131,ar0            ; |1344| 
         ldiu      *ar0,r0               ; |1344| 
         cmpi      0,r0                  ; |1344| 
-        beq       L289                  ; |1344| 
-;*      Branch Occurs to L289           ; |1344| 
+        beq       L286                  ; |1344| 
+;*      Branch Occurs to L286           ; |1344| 
         ldp       @CL102,DP
         ldiu      @CL102,ar0            ; |1344| 
         ldiu      *ar0,r0               ; |1344| 
         cmpi      0,r0                  ; |1344| 
-        bne       L289                  ; |1344| 
-;*      Branch Occurs to L289           ; |1344| 
-L288:        
+        bne       L286                  ; |1344| 
+;*      Branch Occurs to L286           ; |1344| 
+L285:        
 	.line	256
 ;----------------------------------------------------------------------
 ; 1345 | AO[0].MANUAL = FALSE;                                                  
 ;----------------------------------------------------------------------
-        ldp       @CL186,DP
-        ldiu      @CL186,ar0            ; |1345| 
+        ldp       @CL185,DP
+        ldiu      @CL185,ar0            ; |1345| 
         ldiu      0,r0                  ; |1345| 
         sti       r0,*ar0               ; |1345| 
-        bu        L299                  ; |1089| 
-;*      Branch Occurs to L299           ; |1089| 
-L289:        
+        bu        L296                  ; |1089| 
+;*      Branch Occurs to L296           ; |1089| 
+L286:        
 	.line	257
 ;----------------------------------------------------------------------
 ; 1346 | else if ((!SA && (DIO_HART_5.val && (PORT[4].Slave!=0))) || (SA && (DIO
@@ -9440,83 +9278,83 @@ L289:
         ldiu      @CL26,ar0             ; |1346| 
         ldiu      *ar0,r0               ; |1346| 
         cmpi      0,r0                  ; |1346| 
-        bne       L292                  ; |1346| 
-;*      Branch Occurs to L292           ; |1346| 
+        bne       L289                  ; |1346| 
+;*      Branch Occurs to L289           ; |1346| 
         ldp       @CL131,DP
         ldiu      @CL131,ar0            ; |1346| 
         ldiu      *ar0,r0               ; |1346| 
         cmpi      0,r0                  ; |1346| 
-        beq       L292                  ; |1346| 
-;*      Branch Occurs to L292           ; |1346| 
+        beq       L289                  ; |1346| 
+;*      Branch Occurs to L289           ; |1346| 
         ldp       @CL215,DP
         ldiu      @CL215,ar0            ; |1346| 
         ldiu      *ar0,r0               ; |1346| 
         cmpi      0,r0                  ; |1346| 
-        bne       L295                  ; |1346| 
-;*      Branch Occurs to L295           ; |1346| 
-L292:        
+        bne       L292                  ; |1346| 
+;*      Branch Occurs to L292           ; |1346| 
+L289:        
         ldp       @CL26,DP
         ldiu      @CL26,ar0             ; |1346| 
         ldiu      *ar0,r0               ; |1346| 
         cmpi      0,r0                  ; |1346| 
-        beq       L296                  ; |1346| 
-;*      Branch Occurs to L296           ; |1346| 
+        beq       L293                  ; |1346| 
+;*      Branch Occurs to L293           ; |1346| 
         ldp       @CL131,DP
         ldiu      @CL131,ar0            ; |1346| 
         ldiu      *ar0,r0               ; |1346| 
         cmpi      0,r0                  ; |1346| 
-        beq       L296                  ; |1346| 
-;*      Branch Occurs to L296           ; |1346| 
+        beq       L293                  ; |1346| 
+;*      Branch Occurs to L293           ; |1346| 
         ldp       @CL102,DP
         ldiu      @CL102,ar0            ; |1346| 
         ldiu      *ar0,r0               ; |1346| 
         cmpi      0,r0                  ; |1346| 
-        beq       L296                  ; |1346| 
-;*      Branch Occurs to L296           ; |1346| 
-L295:        
+        beq       L293                  ; |1346| 
+;*      Branch Occurs to L293           ; |1346| 
+L292:        
 	.line	258
 ;----------------------------------------------------------------------
 ; 1347 | AO[0].MANUAL = TRUE;                                                   
 ; 1348 | else                                                                   
 ;----------------------------------------------------------------------
-        ldp       @CL186,DP
-        ldiu      @CL186,ar0            ; |1347| 
+        ldp       @CL185,DP
+        ldiu      @CL185,ar0            ; |1347| 
         ldiu      1,r0                  ; |1347| 
         sti       r0,*ar0               ; |1347| 
-        bu        L299                  ; |1089| 
-;*      Branch Occurs to L299           ; |1089| 
-L296:        
+        bu        L296                  ; |1089| 
+;*      Branch Occurs to L296           ; |1089| 
+L293:        
 	.line	261
 ;----------------------------------------------------------------------
 ; 1350 | if (LOOP_ENABLED.val)                                                  
 ;----------------------------------------------------------------------
-        ldp       @CL185,DP
-        ldiu      @CL185,ar0            ; |1350| 
+        ldp       @CL184,DP
+        ldiu      @CL184,ar0            ; |1350| 
         ldiu      *ar0,r0               ; |1350| 
         cmpi      0,r0                  ; |1350| 
-        beq       L298                  ; |1350| 
-;*      Branch Occurs to L298           ; |1350| 
+        beq       L295                  ; |1350| 
+;*      Branch Occurs to L295           ; |1350| 
 	.line	262
 ;----------------------------------------------------------------------
 ; 1351 | AO[0].MANUAL = FALSE;                                                  
 ; 1352 | else                                                                   
 ;----------------------------------------------------------------------
-        ldp       @CL186,DP
-        ldiu      @CL186,ar0            ; |1351| 
+        ldp       @CL185,DP
+        ldiu      @CL185,ar0            ; |1351| 
         ldiu      0,r0                  ; |1351| 
         sti       r0,*ar0               ; |1351| 
-        bu        L299                  ; |1089| 
-;*      Branch Occurs to L299           ; |1089| 
-L298:        
+        bu        L296                  ; |1089| 
+;*      Branch Occurs to L296           ; |1089| 
+L295:        
 	.line	264
 ;----------------------------------------------------------------------
 ; 1353 | AO[0].MANUAL = TRUE;                                                   
 ;----------------------------------------------------------------------
-        ldp       @CL186,DP
-        ldiu      @CL186,ar0            ; |1353| 
+        ldp       @CL185,DP
+        ldiu      @CL185,ar0            ; |1353| 
         ldiu      1,r0                  ; |1353| 
         sti       r0,*ar0               ; |1353| 
-L299:        
+L296:        
 	.line	268
 ;----------------------------------------------------------------------
 ; 1357 | URESET;                                                                
@@ -9554,8 +9392,8 @@ L299:
         ldiu      @CL26,ar0             ; |1362| 
         ldiu      *ar0,r0               ; |1362| 
         cmpi      0,r0                  ; |1362| 
-        bne       L306                  ; |1362| 
-;*      Branch Occurs to L306           ; |1362| 
+        bne       L303                  ; |1362| 
+;*      Branch Occurs to L303           ; |1362| 
 	.line	275
 ;----------------------------------------------------------------------
 ; 1364 | HART_Initialize(4);                                                    
@@ -9572,9 +9410,9 @@ L299:
         ldiu      0,r0                  ; |1366| 
         sti       r0,*+fp(3)            ; |1366| 
         cmpi      4,r0                  ; |1366| 
-        bge       L302                  ; |1366| 
-;*      Branch Occurs to L302           ; |1366| 
-L301:        
+        bge       L299                  ; |1366| 
+;*      Branch Occurs to L299           ; |1366| 
+L298:        
 	.line	278
 ;----------------------------------------------------------------------
 ; 1367 | Modbus_Initialize(i);                                                  
@@ -9589,9 +9427,9 @@ L301:
         addi      *+fp(3),r0            ; |1366| 
         sti       r0,*+fp(3)            ; |1366| 
         cmpi      4,r0                  ; |1366| 
-        blt       L301                  ; |1366| 
-;*      Branch Occurs to L301           ; |1366| 
-L302:        
+        blt       L298                  ; |1366| 
+;*      Branch Occurs to L298           ; |1366| 
+L299:        
 	.line	281
 ;----------------------------------------------------------------------
 ; 1370 | Setup_UART(5, 115200, 8, 'N', 1);                                      
@@ -9632,8 +9470,8 @@ L302:
         ldiu      @CL221,ar0            ; |1375| 
         ldiu      *ar0,r0               ; |1375| 
         cmpi      0,r0                  ; |1375| 
-        beq       L304                  ; |1375| 
-;*      Branch Occurs to L304           ; |1375| 
+        beq       L301                  ; |1375| 
+;*      Branch Occurs to L301           ; |1375| 
 	.line	287
 ;----------------------------------------------------------------------
 ; 1376 | PDI_id = 7;                                                            
@@ -9642,9 +9480,9 @@ L302:
         ldiu      @CL222,ar0            ; |1376| 
         ldiu      7,r0                  ; |1376| 
         sti       r0,*ar0               ; |1376| 
-        bu        L309                  ; |1089| 
-;*      Branch Occurs to L309           ; |1089| 
-L304:        
+        bu        L306                  ; |1089| 
+;*      Branch Occurs to L306           ; |1089| 
+L301:        
 	.line	288
 ;----------------------------------------------------------------------
 ; 1377 | else if (PORT[0].PRESENT)                                              
@@ -9653,8 +9491,8 @@ L304:
         ldiu      @CL41,ar0             ; |1377| 
         ldiu      *ar0,r0               ; |1377| 
         cmpi      0,r0                  ; |1377| 
-        beq       L309                  ; |1377| 
-;*      Branch Occurs to L309           ; |1377| 
+        beq       L306                  ; |1377| 
+;*      Branch Occurs to L306           ; |1377| 
 	.line	289
 ;----------------------------------------------------------------------
 ; 1378 | PDI_id = 0;                                                            
@@ -9664,9 +9502,9 @@ L304:
         ldiu      @CL222,ar0            ; |1378| 
         ldiu      0,r0                  ; |1378| 
         sti       r0,*ar0               ; |1378| 
-        bu        L309                  ; |1089| 
-;*      Branch Occurs to L309           ; |1089| 
-L306:        
+        bu        L306                  ; |1089| 
+;*      Branch Occurs to L306           ; |1089| 
+L303:        
 	.line	293
 ;----------------------------------------------------------------------
 ; 1382 | PDI_id = 1;                                                            
@@ -9692,8 +9530,8 @@ L306:
         ldiu      @CL125,ar0            ; |1386| 
         ldiu      32,r0                 ; |1386| 
         tstb3     *ar0,r0               ; |1386| 
-        bne       L308                  ; |1386| 
-;*      Branch Occurs to L308           ; |1386| 
+        bne       L305                  ; |1386| 
+;*      Branch Occurs to L305           ; |1386| 
 	.line	298
 ;----------------------------------------------------------------------
 ; 1387 | HART_Initialize(0);                                                    
@@ -9704,9 +9542,9 @@ L306:
         ldiu      @CL217,r0             ; |1387| 
         callu     r0                    ; far call to _HART_Initialize	; |1387| 
                                         ; |1387| Far Call Occurs
-        bu        L309                  ; |1089| 
-;*      Branch Occurs to L309           ; |1089| 
-L308:        
+        bu        L306                  ; |1089| 
+;*      Branch Occurs to L306           ; |1089| 
+L305:        
 	.line	300
 ;----------------------------------------------------------------------
 ; 1389 | Modbus_Initialize(0);                                                  
@@ -9716,7 +9554,7 @@ L308:
         ldiu      @CL218,r0             ; |1389| 
         callu     r0                    ; far call to _Modbus_Initialize	; |1389| 
                                         ; |1389| Far Call Occurs
-L309:        
+L306:        
 	.line	303
 ;----------------------------------------------------------------------
 ; 1392 | ENABLE_WDOG; GIEP;                                                     
@@ -9973,18 +9811,18 @@ SL8:	.byte	"C%d #Retries",0
 	.bss	CL134,1
 	.bss	CL135,2
 	.bss	CL136,2
-	.bss	CL137,2
+	.bss	CL137,1
 	.bss	CL138,2
-	.bss	CL139,1
-	.bss	CL140,2
+	.bss	CL139,2
+	.bss	CL140,1
 	.bss	CL141,1
 	.bss	CL142,1
 	.bss	CL143,1
 	.bss	CL144,1
 	.bss	CL145,1
 	.bss	CL146,1
-	.bss	CL147,1
-	.bss	CL148,2
+	.bss	CL147,2
+	.bss	CL148,1
 	.bss	CL149,1
 	.bss	CL150,1
 	.bss	CL151,1
@@ -10027,7 +9865,7 @@ SL8:	.byte	"C%d #Retries",0
 	.bss	CL188,1
 	.bss	CL189,1
 	.bss	CL190,1
-	.bss	CL191,1
+	.bss	CL191,2
 	.bss	CL192,2
 	.bss	CL193,1
 	.bss	CL194,1
@@ -10207,11 +10045,9 @@ SL8:	.byte	"C%d #Retries",0
 	.word   	016000000H ; ldouble
 	.word   	000000000H ; ldouble 1.000000000000000e+00
 	.word   	000000000H ; ldouble
+	.field  	_ALYESKA+23,32
 	.word   	010610000H ; ldouble 1.152000000000000e+05
 	.word   	061000000H ; ldouble
-	.word   	001000000H ; ldouble 2.000000000000000e+00
-	.word   	000000000H ; ldouble
-	.field  	_ALYESKA+23,32
 	.word   	00D160000H ; ldouble 9.600000000000000e+03
 	.word   	016000000H ; ldouble
 	.field  	_VAR_Initialize,32
@@ -10266,6 +10102,8 @@ SL8:	.byte	"C%d #Retries",0
 	.field  	_NUM_PREAMBLE_MS,32
 	.field  	_NUM_PREAMBLE_SM,32
 	.field  	_HCHANGE_COUNTER,32
+	.word   	001000000H ; ldouble 2.000000000000000e+00
+	.word   	000000000H ; ldouble
 	.word   	0FE4CCCCCH ; ldouble 4.000000000000000e-01
 	.word   	04CCCCCCDH ; ldouble
 	.field  	_PORT+1,32

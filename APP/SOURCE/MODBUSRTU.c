@@ -552,11 +552,11 @@ void MODBUS_RX_CRC(int id)
 					}
 					case mb_cmd_pdi_unlock:
 					{
-						if ((DIPSWITCH[0] == 0)) // v.6.13.34
-						{
-							MB_exception(id, mb_excp_illegal_func); 
-							break;
-						}
+						//if ((DIPSWITCH[0] == 0)) // v.6.13.34
+						//{
+							//MB_exception(id, mb_excp_illegal_func); 
+							//break;
+						//} DKOH OCT 7, 2020 - NO NEED TO BLOCK UNLOCKING PROCESS HERE
 						
 						LOCKOUT = FALSE;
 						d 		= (unsigned int) (RXbuf[id].buff[2+L_offset] & 0xFF);
@@ -621,10 +621,26 @@ void MODBUS_RX_CRC(int id)
 					
 						break;
 					}
-					case mb_cmd_pdi_analyzer_setup:
-					case mb_cmd_pdi_analyzer_sample:
+					case mb_cmd_pdi_analyzer_setup: // 0x41 DKOH OCT 9 2020
 					{
-						if ( (id!=PDI_id) || (DIPSWITCH[0] == 0) ) // v.6.13.34
+						if ((id!=PDI_id) || (DIPSWITCH[0] == 0)) // v.6.13.34 
+							MB_exception(id, mb_excp_illegal_func);
+						else
+						{
+							RESEARCH();
+							
+							PORT[id].SUCCESS++;
+							GIEP;
+						
+							return;
+						}
+						
+						break;
+					}
+					case mb_cmd_pdi_analyzer_sample: // 0x42 DKOH OCT 9, 2020
+					{
+						//if ((id!=PDI_id) || (DIPSWITCH[0] == 0)) // v.6.13.34 
+						if (id!=PDI_id) // DKOH OCT 9, 2020
 							MB_exception(id, mb_excp_illegal_func);
 						else
 						{

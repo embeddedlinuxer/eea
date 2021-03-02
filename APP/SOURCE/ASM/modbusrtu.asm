@@ -1,6 +1,6 @@
 ;******************************************************************************
 ;* TMS320C3x/4x ANSI C Code Generator                            Version 5.11 *
-;* Date/Time created: Fri Oct  9 12:07:49 2020                                *
+;* Date/Time created: Tue Mar  2 13:04:02 2021                                *
 ;******************************************************************************
 	.regalias	; enable floating point register aliases
 fp	.set	ar3
@@ -17,7 +17,7 @@ FP	.set	ar3
 ;*   Calls              : Normal Library ASM calls                            *
 ;*   Debug Info         : Standard TI Debug Information                       *
 ;******************************************************************************
-;	C:\tic3x4x\c3x4x\cgtools\bin\ac30.exe -@_6QK.AAA 
+;	C:\tic3x4x\c3x4x\cgtools\bin\ac30.exe -@_66S.AAA 
 	.file	"modbusrtu.c"
 	.file	"G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\GLBLS.H"
 	.file	"G:\workspace\EEA\V615\INCLUDE\stdarg.h"
@@ -908,7 +908,7 @@ _mb_int:
 	.field  	65644,32		; _mb_int[186] @ 5952
 	.field  	_i_CCM_Flow_Gas,32		; _mb_int[187] @ 5984
 	.field  	786542,32		; _mb_int[188] @ 6016
-	.field  	7,32		; _mb_int[189] @ 6048
+	.field  	8,32		; _mb_int[189] @ 6048
 	.field  	268501115,32		; _mb_int[190] @ 6080
 	.field  	_bubble+32,32		; _mb_int[191] @ 6112
 	.field  	268501116,32		; _mb_int[192] @ 6144

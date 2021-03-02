@@ -41,7 +41,6 @@
 
 /////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////////////////
 ///
 /// V6.15.00 | May-14-2019 | applied dual curves all the time.
 ///                          changed VT_SELECT[i] oscillator access sequence from 0,1,2,3 to 0,2,1,3.
@@ -52,13 +51,15 @@
 /// V6.15.05 | Jan-08-2020 | Fixed. Bug 69 - Analog Output doesn't output density signal
 /// V6.15.06 | May-05-2020 | Fixed. Bug 86 - Add COILs for RELAY1_REVERT AND RELAY2_REVERT
 /// V6.15.07 | OCT-09-2020 | Fixed. Bug xx - Logging problems fixed 
+/// V6.15.08 | FEB-22-2021 | Fixed. Bug 103 - MSVE command broken for the Force Phase screen
+///                          Fixed. Bug 104 - Incorrect Data Capturing in USB Data Logging
+///                          Fixed. Bug 105 - Incorrect data logging array index
 ///
-/////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////
 
 #define FIRMWARE_VERSION	 			615
-#define FIRMWARE_SUBVERSION				07
+#define FIRMWARE_SUBVERSION				8
 
 /*
 	SUBVERSION CHANGES: ('->' arrow denotes partially non-cumulative release, i.e. a separate branch)

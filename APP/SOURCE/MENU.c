@@ -1865,6 +1865,9 @@ void MENU_FORCE_PHASE(void)
 			i = (int)round(REG_STREAM_SELECT.val,0) - 1.0; //get stream number
 			OIL_PHASE_ONLY_ENABLE[i]  = OIL_PHASE_ONLY.val;
 			WATER_PHASE_ONLY_ENABLE[i]= WATER_PHASE_ONLY.val;  
+	
+            /// BY DKOH FEB 22, 2021	
+            Update_Flags_Goto_Next_Menu(1,0);
 		}
 	}
 }

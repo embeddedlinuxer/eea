@@ -1,4 +1,4 @@
-#line 120 "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\GLBLS.H"
+#line 122 "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\GLBLS.H"
 extern const char* copyright;
 extern const char* credit;
 #line 8 "G:\workspace\EEA\V615\INCLUDE\stdarg.h"
@@ -1000,13 +1000,13 @@ extern int* vect_m;
 extern unsigned int TOIEEE(float v);
 extern float FMIEEE(unsigned int v);
 
-#line 167 "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\GLBLS.H"
+#line 169 "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\GLBLS.H"
 extern unsigned int CLOCK;
 extern BOOL LED_GREEN;
 extern BOOL OSWITCH;
 extern void c_int00(void);
 
-#line 211
+#line 213
 extern unsigned int ESN_USER[5];
 extern unsigned int ESN_MFGR[5];
 
@@ -1416,7 +1416,7 @@ extern float stream_delta_temp[60];
 
 
  
-#line 641
+#line 643
 #pragma DATA_SECTION(OIL_PHASE_ONLY_ENABLE,"CFG")
 extern float OIL_PHASE_ONLY_ENABLE[60];
 #pragma DATA_SECTION(WATER_PHASE_ONLY_ENABLE,"CFG")
@@ -1599,7 +1599,7 @@ extern BOOL BOXCAR_RESET;
 
 
  
-#line 830
+#line 832
 #pragma DATA_SECTION(REG_CCM_TEST_STAT,"CFG")         
 extern VAR REG_CCM_TEST_STAT;                         
 
@@ -1773,11 +1773,11 @@ extern VAR EXTENDED_FW_VERSION_ENABLE;
 #pragma DATA_SECTION(GAS_ENTRAINED,"CFG")
 extern COIL GAS_ENTRAINED;  
  
-#line 1014
+#line 1016
 #pragma DATA_SECTION(GAS_ENTRAINED_DENS_DETECT,"CFG")
 extern COIL GAS_ENTRAINED_DENS_DETECT;   
  
-#line 1030
+#line 1032
 enum Pulse_Input_Type
 {
 	PULSE_GAS_TEMP 		= 1,
@@ -1800,7 +1800,7 @@ enum Pulse_Input_Type
 
 
 
-#line 1065
+#line 1067
 #pragma DATA_SECTION(boxcar_expire_val,"CFG")
 extern VAR boxcar_expire_val;
 
@@ -2103,7 +2103,7 @@ typedef struct 	{
 	    		} CORIOLIS;
 extern CORIOLIS COR[5];
 
-#line 1399
+#line 1401
 typedef struct 	{
 					float	p_delta;
 					float	p_static;
@@ -2269,7 +2269,7 @@ extern float compatibility_dummy;
 
 
 		 
-#line 1595
+#line 1597
 #pragma DATA_SECTION(ALFAT_RX,"internal_RAM")
 extern	char	ALFAT_RX[128]; 
 
@@ -2368,7 +2368,7 @@ extern VAR Hsalt_Min_WC;
 #pragma DATA_SECTION(AVG_RESET,"CFG")
 extern COIL AVG_RESET;
 
-#line 1697
+#line 1699
 extern void Setup_Basics(void);
 
 #line 44 "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\HART.H"
@@ -10232,22 +10232,17 @@ void Alfat_Log_Vars(void)
 		strcat(ALFAT_TX,"Vref. Oil,Water Freq,Vref.Water,FC1 Gross Oil,FC1 Gross Water,\n");
 		Alfat_Write((1),(-1),(0));
 		
-		
-		
 		Alfat_Wait_For_Write();
 
 		sprintf(ALFAT_TX,"FC1 Oil Flow,FC1 Water Flow,Analog Output 2%%,Analog Output 3%%,FC1 Pressure,");
 		strcat(ALFAT_TX,"FC1 Density,Gas Flow,Gas Total,Gas Density,Stream Select,Salinity,\n");
 		Alfat_Write((1),(-1),(0));
 		
-		
 		Alfat_Wait_For_Write();
-		
 		
 		sprintf(ALFAT_TX,"CCM Vessel 1 Level,CCM Vessel 1 Level Set Point,CCM Vessel 1 Pressure,");
 		strcat(ALFAT_TX,"CCM Vessel 1 Pressure Set Point,Purge status,Test status,Drive gain liquid MM,\n");
 		Alfat_Write((1),(-1),(0));
-		
 		
 		Alfat_Wait_For_Write();
 		
@@ -10255,18 +10250,16 @@ void Alfat_Log_Vars(void)
 		strcat(ALFAT_TX,"Liquid I,Liquid D,Heuristic Delta T,Heuristic Box Car,\n");
 		Alfat_Write((1),(-1),(0));
 		
-		
 		Alfat_Wait_For_Write();
 		
 		sprintf(ALFAT_TX,"Bubble,Pattern,FC1 Water Density @ST,FC1 Water Density @Process,");
 		strcat(ALFAT_TX,"FC1 Oil Density @ST,FC1 Oil Density @Process\n");
 		Alfat_Write((1),(-1),(1));
 		
-		
 		Alfat_Wait_For_Write();
 		
 		 
-#line 7565
+#line 7558
 		Alfat_Flush(1);
 		ALFAT_WRITE_HEADER = 0;
 		
@@ -10298,23 +10291,26 @@ void Alfat_Log_Vars(void)
 		
 		{asm("	push	ST			"); 	 						 asm("	andn	2000h, ST	");};
 		{asm("	NOP			");						 asm("	NOP			");						 asm("	NOP			");};
-		log_var[0] = HART_Lookup(0,resp,(int*)&HART_DV_Table);
-		sprintf(ALFAT_TX,"%g,",log_var[0]->val);
+
+        
 		
+		i_mapped = Alfat_Map_Var(0);                               
+		log_var[0] = HART_Lookup(i_mapped,resp,(int*)&HART_DV_Table); 
+		sprintf(ALFAT_TX,"%g,",log_var[0]->val); 
 
 		for (j=1; j < 22; j++) 
 		{
 			i_mapped = Alfat_Map_Var(j);
 
+			if (i_mapped < 0) break;
 			
 			
-			if (i_mapped < 0)
-					break;
 			
-			log_var[i_mapped] = HART_Lookup(i_mapped,resp,(int*)&HART_DV_Table);
-			sprintf(entry,"%g,",log_var[i_mapped]->val);
+			log_var[j] = HART_Lookup(i_mapped,resp,(int*)&HART_DV_Table); 
+			sprintf(entry,"%g,",log_var[j]->val); 
 			strcat(ALFAT_TX,entry);
 		}
+
 		{asm("	pop		ST			");};
 	
 		strcat(ALFAT_TX,"\n");
@@ -10324,24 +10320,28 @@ void Alfat_Log_Vars(void)
 		
 		Alfat_Wait_For_Write();
 		
-		
 		{asm("	push	ST			"); 	 						 asm("	andn	2000h, ST	");};
 		{asm("	NOP			");						 asm("	NOP			");						 asm("	NOP			");};
-		log_var[22] = HART_Lookup(22,resp,(int*)&HART_DV_Table);
-		sprintf(ALFAT_TX,"%g,",log_var[22]->val);
+
+
+		
+		i_mapped = Alfat_Map_Var(22);                               
+		log_var[22] = HART_Lookup(i_mapped,resp,(int*)&HART_DV_Table); 
+		sprintf(ALFAT_TX,"%g,",log_var[22]->val); 
+
 		for (j=23; j < 44; j++) 
 		{
 			i_mapped = Alfat_Map_Var(j);
-
+			
+			if (i_mapped < 0) break;
 			
 			
-			if (i_mapped < 0)
-					break;
 			
-			log_var[i_mapped] = HART_Lookup(i_mapped,resp,(int*)&HART_DV_Table);
-			sprintf(entry,"%g,",log_var[i_mapped]->val);
+			log_var[j] = HART_Lookup(i_mapped,resp,(int*)&HART_DV_Table); 
+			sprintf(entry,"%g,",log_var[j]->val); 
 			strcat(ALFAT_TX,entry);
 		}
+
 		{asm("	pop		ST			");};
 	
 		strcat(ALFAT_TX,"\n");
@@ -10964,8 +10964,10 @@ int Alfat_Map_Var(int index){
 		12,		
 		14,		
 		15,		
-		21,		
-		23,		
+		
+		
+		29,		
+		31,		
 		49,		
 		51,		
 		106,	

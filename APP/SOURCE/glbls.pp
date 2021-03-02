@@ -1,4 +1,4 @@
-#line 115 "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\GLBLS.H"
+#line 117 "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\GLBLS.H"
 const char copyright[]={"©2018 Phase Dynamics, Inc.              "}; 
 const char    credit[]={"Firmware by PDI"};	
 #line 8 "G:\workspace\EEA\V615\INCLUDE\stdarg.h"
@@ -1000,13 +1000,13 @@ extern int* vect_m;
 extern unsigned int TOIEEE(float v);
 extern float FMIEEE(unsigned int v);
 
-#line 167 "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\GLBLS.H"
+#line 169 "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\GLBLS.H"
  unsigned int CLOCK;
  BOOL LED_GREEN;
  BOOL OSWITCH;
  void c_int00(void);
 
-#line 211
+#line 213
  unsigned int ESN_USER[5];
  unsigned int ESN_MFGR[5];
 
@@ -1416,7 +1416,7 @@ typedef struct 	{
 
 
  
-#line 641
+#line 643
 #pragma DATA_SECTION(OIL_PHASE_ONLY_ENABLE,"CFG")
  float OIL_PHASE_ONLY_ENABLE[60];
 #pragma DATA_SECTION(WATER_PHASE_ONLY_ENABLE,"CFG")
@@ -1599,7 +1599,7 @@ typedef struct 	{
 
 
  
-#line 830
+#line 832
 #pragma DATA_SECTION(REG_CCM_TEST_STAT,"CFG")         
  VAR REG_CCM_TEST_STAT;                         
 
@@ -1773,11 +1773,11 @@ typedef struct 	{
 #pragma DATA_SECTION(GAS_ENTRAINED,"CFG")
  COIL GAS_ENTRAINED;  
  
-#line 1014
+#line 1016
 #pragma DATA_SECTION(GAS_ENTRAINED_DENS_DETECT,"CFG")
  COIL GAS_ENTRAINED_DENS_DETECT;   
  
-#line 1030
+#line 1032
 enum Pulse_Input_Type
 {
 	PULSE_GAS_TEMP 		= 1,
@@ -1800,7 +1800,7 @@ enum Pulse_Input_Type
 
 
 
-#line 1065
+#line 1067
 #pragma DATA_SECTION(boxcar_expire_val,"CFG")
  VAR boxcar_expire_val;
 
@@ -2103,7 +2103,7 @@ typedef struct 	{
 	    		} CORIOLIS;
  CORIOLIS COR[5];
 
-#line 1399
+#line 1401
 typedef struct 	{
 					float	p_delta;
 					float	p_static;
@@ -2269,7 +2269,7 @@ typedef struct 	{
 
 
 		 
-#line 1595
+#line 1597
 #pragma DATA_SECTION(ALFAT_RX,"internal_RAM")
 	char	ALFAT_RX[128]; 
 

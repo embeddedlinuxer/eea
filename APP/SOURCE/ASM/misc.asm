@@ -1,6 +1,6 @@
 ;******************************************************************************
 ;* TMS320C3x/4x ANSI C Code Generator                            Version 5.11 *
-;* Date/Time created: Fri Oct  9 12:07:43 2020                                *
+;* Date/Time created: Tue Mar  2 13:03:55 2021                                *
 ;******************************************************************************
 	.regalias	; enable floating point register aliases
 fp	.set	ar3
@@ -17,7 +17,7 @@ FP	.set	ar3
 ;*   Calls              : Normal Library ASM calls                            *
 ;*   Debug Info         : Standard TI Debug Information                       *
 ;******************************************************************************
-;	C:\tic3x4x\c3x4x\cgtools\bin\ac30.exe -@_7U4.AAA 
+;	C:\tic3x4x\c3x4x\cgtools\bin\ac30.exe -@_648.AAA 
 	.file	"misc.c"
 	.file	"G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\GLBLS.H"
 	.file	"G:\workspace\EEA\V615\INCLUDE\stdarg.h"
@@ -57811,7 +57811,6 @@ L2127:
 	.line	76
 ;----------------------------------------------------------------------
 ; 7522 | Alfat_Write(ALFAT_HANDLE_1,ALFAT_AUTO_LENGTH,ALFAT_NO_LF);             
-; 7525 | //Alfat_Wait_For_Write                                                 
 ;----------------------------------------------------------------------
         ldiu      0,r3                  ; |7522| 
         ldp       @CL1146,DP
@@ -57820,150 +57819,193 @@ L2127:
         ldiu      1,ar2                 ; |7522| 
         callu     r0                    ; far call to _Alfat_Write	; |7522| 
                                         ; |7522| Far Call Occurs
-	.line	80
+	.line	78
 ;----------------------------------------------------------------------
-; 7526 | Alfat_Wait_For_Write();                                                
+; 7524 | Alfat_Wait_For_Write();                                                
 ;----------------------------------------------------------------------
         ldp       @CL1147,DP
-        ldiu      @CL1147,r0            ; |7526| 
-        callu     r0                    ; far call to _Alfat_Wait_For_Write	; |7526| 
-                                        ; |7526| Far Call Occurs
-	.line	82
+        ldiu      @CL1147,r0            ; |7524| 
+        callu     r0                    ; far call to _Alfat_Wait_For_Write	; |7524| 
+                                        ; |7524| Far Call Occurs
+	.line	80
 ;----------------------------------------------------------------------
-; 7528 | sprintf(ALFAT_TX,"FC1 Oil Flow,FC1 Water Flow,Analog Output 2%%,Analog
+; 7526 | sprintf(ALFAT_TX,"FC1 Oil Flow,FC1 Water Flow,Analog Output 2%%,Analog
 ;     | Output 3%%,FC1 Pressure,");                                            
 ;----------------------------------------------------------------------
         ldp       @CL1151,DP
-        ldiu      @CL1151,r1            ; |7528| 
+        ldiu      @CL1151,r1            ; |7526| 
         ldp       @CL1145,DP
-        ldiu      @CL1145,r0            ; |7528| 
+        ldiu      @CL1145,r0            ; |7526| 
         ldp       @CL1144,DP
-        push      r1                    ; |7528| 
-        ldiu      @CL1144,ar2           ; |7528| 
-        callu     r0                    ; far call to _sprintf	; |7528| 
-                                        ; |7528| Far Call Occurs
-        subi      1,sp                  ; |7528| 
-	.line	83
+        push      r1                    ; |7526| 
+        ldiu      @CL1144,ar2           ; |7526| 
+        callu     r0                    ; far call to _sprintf	; |7526| 
+                                        ; |7526| Far Call Occurs
+        subi      1,sp                  ; |7526| 
+	.line	81
 ;----------------------------------------------------------------------
-; 7529 | strcat(ALFAT_TX,"FC1 Density,Gas Flow,Gas Total,Gas Density,Stream Sele
+; 7527 | strcat(ALFAT_TX,"FC1 Density,Gas Flow,Gas Total,Gas Density,Stream Sele
 ;     | ct,Salinity,\n");                                                      
 ;----------------------------------------------------------------------
         ldp       @CL1152,DP
-        ldiu      @CL1152,r2            ; |7529| 
+        ldiu      @CL1152,r2            ; |7527| 
         ldp       @CL1150,DP
-        ldiu      @CL1150,r0            ; |7529| 
+        ldiu      @CL1150,r0            ; |7527| 
         ldp       @CL1144,DP
-        ldiu      @CL1144,ar2           ; |7529| 
-        callu     r0                    ; far call to _strcat	; |7529| 
-                                        ; |7529| Far Call Occurs
-	.line	84
+        ldiu      @CL1144,ar2           ; |7527| 
+        callu     r0                    ; far call to _strcat	; |7527| 
+                                        ; |7527| Far Call Occurs
+	.line	82
 ;----------------------------------------------------------------------
-; 7530 | Alfat_Write(ALFAT_HANDLE_1,ALFAT_AUTO_LENGTH,ALFAT_NO_LF);             
-; 7532 | //Alfat_Wait_For_Write                                                 
+; 7528 | Alfat_Write(ALFAT_HANDLE_1,ALFAT_AUTO_LENGTH,ALFAT_NO_LF);             
 ;----------------------------------------------------------------------
         ldp       @CL1146,DP
-        ldiu      1,ar2                 ; |7530| 
-        ldiu      @CL1146,r0            ; |7530| 
-        ldiu      -1,r2                 ; |7530| 
-        ldiu      0,r3                  ; |7530| 
-        callu     r0                    ; far call to _Alfat_Write	; |7530| 
-                                        ; |7530| Far Call Occurs
-	.line	87
+        ldiu      1,ar2                 ; |7528| 
+        ldiu      @CL1146,r0            ; |7528| 
+        ldiu      -1,r2                 ; |7528| 
+        ldiu      0,r3                  ; |7528| 
+        callu     r0                    ; far call to _Alfat_Write	; |7528| 
+                                        ; |7528| Far Call Occurs
+	.line	84
 ;----------------------------------------------------------------------
-; 7533 | Alfat_Wait_For_Write();                                                
+; 7530 | Alfat_Wait_For_Write();                                                
 ;----------------------------------------------------------------------
         ldp       @CL1147,DP
-        ldiu      @CL1147,r0            ; |7533| 
-        callu     r0                    ; far call to _Alfat_Wait_For_Write	; |7533| 
-                                        ; |7533| Far Call Occurs
-	.line	90
+        ldiu      @CL1147,r0            ; |7530| 
+        callu     r0                    ; far call to _Alfat_Wait_For_Write	; |7530| 
+                                        ; |7530| Far Call Occurs
+	.line	86
 ;----------------------------------------------------------------------
-; 7536 | sprintf(ALFAT_TX,"CCM Vessel 1 Level,CCM Vessel 1 Level Set Point,CCM V
+; 7532 | sprintf(ALFAT_TX,"CCM Vessel 1 Level,CCM Vessel 1 Level Set Point,CCM V
 ;     | essel 1 Pressure,");                                                   
 ;----------------------------------------------------------------------
         ldp       @CL1153,DP
-        ldiu      @CL1153,r1            ; |7536| 
+        ldiu      @CL1153,r1            ; |7532| 
         ldp       @CL1145,DP
-        ldiu      @CL1145,r0            ; |7536| 
+        ldiu      @CL1145,r0            ; |7532| 
         ldp       @CL1144,DP
-        push      r1                    ; |7536| 
-        ldiu      @CL1144,ar2           ; |7536| 
-        callu     r0                    ; far call to _sprintf	; |7536| 
-                                        ; |7536| Far Call Occurs
-        subi      1,sp                  ; |7536| 
-	.line	91
+        push      r1                    ; |7532| 
+        ldiu      @CL1144,ar2           ; |7532| 
+        callu     r0                    ; far call to _sprintf	; |7532| 
+                                        ; |7532| Far Call Occurs
+        subi      1,sp                  ; |7532| 
+	.line	87
 ;----------------------------------------------------------------------
-; 7537 | strcat(ALFAT_TX,"CCM Vessel 1 Pressure Set Point,Purge status,Test stat
+; 7533 | strcat(ALFAT_TX,"CCM Vessel 1 Pressure Set Point,Purge status,Test stat
 ;     | us,Drive gain liquid MM,\n");                                          
 ;----------------------------------------------------------------------
         ldp       @CL1154,DP
-        ldiu      @CL1154,r2            ; |7537| 
+        ldiu      @CL1154,r2            ; |7533| 
         ldp       @CL1150,DP
-        ldiu      @CL1150,r0            ; |7537| 
+        ldiu      @CL1150,r0            ; |7533| 
         ldp       @CL1144,DP
-        ldiu      @CL1144,ar2           ; |7537| 
-        callu     r0                    ; far call to _strcat	; |7537| 
-                                        ; |7537| Far Call Occurs
-	.line	92
+        ldiu      @CL1144,ar2           ; |7533| 
+        callu     r0                    ; far call to _strcat	; |7533| 
+                                        ; |7533| Far Call Occurs
+	.line	88
 ;----------------------------------------------------------------------
-; 7538 | Alfat_Write(ALFAT_HANDLE_1,ALFAT_AUTO_LENGTH,ALFAT_NO_LF);             
-; 7540 | //Alfat_Wait_For_Write                                                 
+; 7534 | Alfat_Write(ALFAT_HANDLE_1,ALFAT_AUTO_LENGTH,ALFAT_NO_LF);             
 ;----------------------------------------------------------------------
         ldp       @CL1146,DP
-        ldiu      @CL1146,r0            ; |7538| 
-        ldiu      -1,r2                 ; |7538| 
-        ldiu      1,ar2                 ; |7538| 
-        ldiu      0,r3                  ; |7538| 
-        callu     r0                    ; far call to _Alfat_Write	; |7538| 
-                                        ; |7538| Far Call Occurs
-	.line	95
+        ldiu      @CL1146,r0            ; |7534| 
+        ldiu      -1,r2                 ; |7534| 
+        ldiu      1,ar2                 ; |7534| 
+        ldiu      0,r3                  ; |7534| 
+        callu     r0                    ; far call to _Alfat_Write	; |7534| 
+                                        ; |7534| Far Call Occurs
+	.line	90
 ;----------------------------------------------------------------------
-; 7541 | Alfat_Wait_For_Write();                                                
+; 7536 | Alfat_Wait_For_Write();                                                
 ;----------------------------------------------------------------------
         ldp       @CL1147,DP
-        ldiu      @CL1147,r0            ; |7541| 
-        callu     r0                    ; far call to _Alfat_Wait_For_Write	; |7541| 
-                                        ; |7541| Far Call Occurs
-	.line	97
+        ldiu      @CL1147,r0            ; |7536| 
+        callu     r0                    ; far call to _Alfat_Wait_For_Write	; |7536| 
+                                        ; |7536| Far Call Occurs
+	.line	92
 ;----------------------------------------------------------------------
-; 7543 | sprintf(ALFAT_TX,"Drive gain gas MM,Water Cut by density,Gas P,Gas I,Ga
+; 7538 | sprintf(ALFAT_TX,"Drive gain gas MM,Water Cut by density,Gas P,Gas I,Ga
 ;     | s D,Liquid P,");                                                       
 ;----------------------------------------------------------------------
         ldp       @CL1155,DP
-        ldiu      @CL1155,r1            ; |7543| 
+        ldiu      @CL1155,r1            ; |7538| 
         ldp       @CL1145,DP
-        ldiu      @CL1145,r0            ; |7543| 
+        ldiu      @CL1145,r0            ; |7538| 
         ldp       @CL1144,DP
-        ldiu      @CL1144,ar2           ; |7543| 
-        push      r1                    ; |7543| 
-        callu     r0                    ; far call to _sprintf	; |7543| 
-                                        ; |7543| Far Call Occurs
-        subi      1,sp                  ; |7543| 
-	.line	98
+        ldiu      @CL1144,ar2           ; |7538| 
+        push      r1                    ; |7538| 
+        callu     r0                    ; far call to _sprintf	; |7538| 
+                                        ; |7538| Far Call Occurs
+        subi      1,sp                  ; |7538| 
+	.line	93
 ;----------------------------------------------------------------------
-; 7544 | strcat(ALFAT_TX,"Liquid I,Liquid D,Heuristic Delta T,Heuristic Box Car,
+; 7539 | strcat(ALFAT_TX,"Liquid I,Liquid D,Heuristic Delta T,Heuristic Box Car,
 ;     | \n");                                                                  
 ;----------------------------------------------------------------------
         ldp       @CL1156,DP
-        ldiu      @CL1156,r2            ; |7544| 
+        ldiu      @CL1156,r2            ; |7539| 
         ldp       @CL1150,DP
-        ldiu      @CL1150,r0            ; |7544| 
+        ldiu      @CL1150,r0            ; |7539| 
         ldp       @CL1144,DP
-        ldiu      @CL1144,ar2           ; |7544| 
-        callu     r0                    ; far call to _strcat	; |7544| 
-                                        ; |7544| Far Call Occurs
-	.line	99
+        ldiu      @CL1144,ar2           ; |7539| 
+        callu     r0                    ; far call to _strcat	; |7539| 
+                                        ; |7539| Far Call Occurs
+	.line	94
 ;----------------------------------------------------------------------
-; 7545 | Alfat_Write(ALFAT_HANDLE_1,ALFAT_AUTO_LENGTH,ALFAT_NO_LF);             
-; 7547 | //Alfat_Wait_For_Write                                                 
+; 7540 | Alfat_Write(ALFAT_HANDLE_1,ALFAT_AUTO_LENGTH,ALFAT_NO_LF);             
 ;----------------------------------------------------------------------
         ldp       @CL1146,DP
-        ldiu      0,r3                  ; |7545| 
-        ldiu      @CL1146,r0            ; |7545| 
-        ldiu      -1,r2                 ; |7545| 
-        ldiu      1,ar2                 ; |7545| 
-        callu     r0                    ; far call to _Alfat_Write	; |7545| 
+        ldiu      0,r3                  ; |7540| 
+        ldiu      @CL1146,r0            ; |7540| 
+        ldiu      -1,r2                 ; |7540| 
+        ldiu      1,ar2                 ; |7540| 
+        callu     r0                    ; far call to _Alfat_Write	; |7540| 
+                                        ; |7540| Far Call Occurs
+	.line	96
+;----------------------------------------------------------------------
+; 7542 | Alfat_Wait_For_Write();                                                
+;----------------------------------------------------------------------
+        ldp       @CL1147,DP
+        ldiu      @CL1147,r0            ; |7542| 
+        callu     r0                    ; far call to _Alfat_Wait_For_Write	; |7542| 
+                                        ; |7542| Far Call Occurs
+	.line	98
+;----------------------------------------------------------------------
+; 7544 | sprintf(ALFAT_TX,"Bubble,Pattern,FC1 Water Density @ST,FC1 Water Densit
+;     | y @Process,");                                                         
+;----------------------------------------------------------------------
+        ldp       @CL1157,DP
+        ldiu      @CL1157,r1            ; |7544| 
+        ldp       @CL1145,DP
+        ldiu      @CL1145,r0            ; |7544| 
+        ldp       @CL1144,DP
+        push      r1                    ; |7544| 
+        ldiu      @CL1144,ar2           ; |7544| 
+        callu     r0                    ; far call to _sprintf	; |7544| 
+                                        ; |7544| Far Call Occurs
+        subi      1,sp                  ; |7544| 
+	.line	99
+;----------------------------------------------------------------------
+; 7545 | strcat(ALFAT_TX,"FC1 Oil Density @ST,FC1 Oil Density @Process\n");     
+;----------------------------------------------------------------------
+        ldp       @CL1158,DP
+        ldiu      @CL1158,r2            ; |7545| 
+        ldp       @CL1150,DP
+        ldiu      @CL1150,r0            ; |7545| 
+        ldp       @CL1144,DP
+        ldiu      @CL1144,ar2           ; |7545| 
+        callu     r0                    ; far call to _strcat	; |7545| 
                                         ; |7545| Far Call Occurs
+	.line	100
+;----------------------------------------------------------------------
+; 7546 | Alfat_Write(ALFAT_HANDLE_1,ALFAT_AUTO_LENGTH,ALFAT_LINEFEED);          
+;----------------------------------------------------------------------
+        ldp       @CL1146,DP
+        ldiu      @CL1146,r0            ; |7546| 
+        ldiu      1,ar2                 ; |7546| 
+        ldiu      -1,r2                 ; |7546| 
+        ldiu      1,r3                  ; |7546| 
+        callu     r0                    ; far call to _Alfat_Write	; |7546| 
+                                        ; |7546| Far Call Occurs
 	.line	102
 ;----------------------------------------------------------------------
 ; 7548 | Alfat_Wait_For_Write();                                                
@@ -57972,451 +58014,431 @@ L2127:
         ldiu      @CL1147,r0            ; |7548| 
         callu     r0                    ; far call to _Alfat_Wait_For_Write	; |7548| 
                                         ; |7548| Far Call Occurs
-	.line	104
+	.line	112
 ;----------------------------------------------------------------------
-; 7550 | sprintf(ALFAT_TX,"Bubble,Pattern,FC1 Water Density @ST,FC1 Water Densit
-;     | y @Process,");                                                         
-;----------------------------------------------------------------------
-        ldp       @CL1157,DP
-        ldiu      @CL1157,r1            ; |7550| 
-        ldp       @CL1145,DP
-        ldiu      @CL1145,r0            ; |7550| 
-        ldp       @CL1144,DP
-        push      r1                    ; |7550| 
-        ldiu      @CL1144,ar2           ; |7550| 
-        callu     r0                    ; far call to _sprintf	; |7550| 
-                                        ; |7550| Far Call Occurs
-        subi      1,sp                  ; |7550| 
-	.line	105
-;----------------------------------------------------------------------
-; 7551 | strcat(ALFAT_TX,"FC1 Oil Density @ST,FC1 Oil Density @Process\n");     
-;----------------------------------------------------------------------
-        ldp       @CL1158,DP
-        ldiu      @CL1158,r2            ; |7551| 
-        ldp       @CL1150,DP
-        ldiu      @CL1150,r0            ; |7551| 
-        ldp       @CL1144,DP
-        ldiu      @CL1144,ar2           ; |7551| 
-        callu     r0                    ; far call to _strcat	; |7551| 
-                                        ; |7551| Far Call Occurs
-	.line	106
-;----------------------------------------------------------------------
-; 7552 | Alfat_Write(ALFAT_HANDLE_1,ALFAT_AUTO_LENGTH,ALFAT_LINEFEED);          
-; 7554 | //Alfat_Wait_For_Write                                                 
-;----------------------------------------------------------------------
-        ldp       @CL1146,DP
-        ldiu      @CL1146,r0            ; |7552| 
-        ldiu      1,ar2                 ; |7552| 
-        ldiu      -1,r2                 ; |7552| 
-        ldiu      1,r3                  ; |7552| 
-        callu     r0                    ; far call to _Alfat_Write	; |7552| 
-                                        ; |7552| Far Call Occurs
-	.line	109
-;----------------------------------------------------------------------
-; 7555 | Alfat_Wait_For_Write();                                                
-;----------------------------------------------------------------------
-        ldp       @CL1147,DP
-        ldiu      @CL1147,r0            ; |7555| 
-        callu     r0                    ; far call to _Alfat_Wait_For_Write	; |7555| 
-                                        ; |7555| Far Call Occurs
-	.line	119
-;----------------------------------------------------------------------
-; 7565 | Alfat_Flush(1);                                                        
+; 7558 | Alfat_Flush(1);                                                        
 ;----------------------------------------------------------------------
         ldp       @CL1159,DP
-        ldiu      1,ar2                 ; |7565| 
-        ldiu      @CL1159,r0            ; |7565| 
-        callu     r0                    ; far call to _Alfat_Flush	; |7565| 
-                                        ; |7565| Far Call Occurs
-	.line	120
+        ldiu      1,ar2                 ; |7558| 
+        ldiu      @CL1159,r0            ; |7558| 
+        callu     r0                    ; far call to _Alfat_Flush	; |7558| 
+                                        ; |7558| Far Call Occurs
+	.line	113
 ;----------------------------------------------------------------------
-; 7566 | ALFAT_WRITE_HEADER = FALSE;                                            
+; 7559 | ALFAT_WRITE_HEADER = FALSE;                                            
 ;----------------------------------------------------------------------
         ldp       @CL1141,DP
-        ldiu      @CL1141,ar0           ; |7566| 
-        ldiu      0,r0                  ; |7566| 
-        sti       r0,*ar0               ; |7566| 
+        ldiu      @CL1141,ar0           ; |7559| 
+        ldiu      0,r0                  ; |7559| 
+        sti       r0,*ar0               ; |7559| 
         bu        L2144                 ; |7446| 
 ;*      Branch Occurs to L2144          ; |7446| 
 L2131:        
-	.line	123
+	.line	116
 ;----------------------------------------------------------------------
-; 7569 | else if ( (ALFAT_WRITE_HEADER == FALSE) && (ALFAT_INITIALIZED == TRUE)
+; 7562 | else if ( (ALFAT_WRITE_HEADER == FALSE) && (ALFAT_INITIALIZED == TRUE)
 ;     | )                                                                      
 ;----------------------------------------------------------------------
         ldp       @CL1141,DP
-        ldiu      @CL1141,ar0           ; |7569| 
-        ldiu      *ar0,r0               ; |7569| 
-        cmpi      0,r0                  ; |7569| 
-        bne       L2144                 ; |7569| 
-;*      Branch Occurs to L2144          ; |7569| 
+        ldiu      @CL1141,ar0           ; |7562| 
+        ldiu      *ar0,r0               ; |7562| 
+        cmpi      0,r0                  ; |7562| 
+        bne       L2144                 ; |7562| 
+;*      Branch Occurs to L2144          ; |7562| 
         ldp       @CL1137,DP
-        ldiu      @CL1137,ar0           ; |7569| 
-        ldiu      *ar0,r0               ; |7569| 
-        cmpi      1,r0                  ; |7569| 
-        bne       L2144                 ; |7569| 
-;*      Branch Occurs to L2144          ; |7569| 
-	.line	125
+        ldiu      @CL1137,ar0           ; |7562| 
+        ldiu      *ar0,r0               ; |7562| 
+        cmpi      1,r0                  ; |7562| 
+        bne       L2144                 ; |7562| 
+;*      Branch Occurs to L2144          ; |7562| 
+	.line	118
 ;----------------------------------------------------------------------
-; 7571 | _GIEP;                                                                 
+; 7564 | _GIEP;                                                                 
 ;----------------------------------------------------------------------
 	push	ST			
 	andn	2000h, ST	
-	.line	126
+	.line	119
 ;----------------------------------------------------------------------
-; 7572 | day                     = RTC[6] & 0x3F;                               
+; 7565 | day                     = RTC[6] & 0x3F;                               
 ;----------------------------------------------------------------------
         ldp       @CL291,DP
-        ldiu      @CL291,ar0            ; |7572| 
-        ldiu      63,r0                 ; |7572| 
-        and3      r0,*ar0,r0            ; |7572| 
-        sti       r0,*+fp(2)            ; |7572| 
-	.line	127
+        ldiu      @CL291,ar0            ; |7565| 
+        ldiu      63,r0                 ; |7565| 
+        and3      r0,*ar0,r0            ; |7565| 
+        sti       r0,*+fp(2)            ; |7565| 
+	.line	120
 ;----------------------------------------------------------------------
-; 7573 | iday            = BCD_to_Int(day); //Convert from BCD to integer       
+; 7566 | iday            = BCD_to_Int(day); //Convert from BCD to integer       
 ;----------------------------------------------------------------------
         ldp       @CL1160,DP
         ldiu      r0,ar2
-        ldiu      @CL1160,r0            ; |7573| 
-        callu     r0                    ; far call to _BCD_to_Int	; |7573| 
-                                        ; |7573| Far Call Occurs
-        sti       r0,*+fp(3)            ; |7573| 
-	.line	128
+        ldiu      @CL1160,r0            ; |7566| 
+        callu     r0                    ; far call to _BCD_to_Int	; |7566| 
+                                        ; |7566| Far Call Occurs
+        sti       r0,*+fp(3)            ; |7566| 
+	.line	121
 ;----------------------------------------------------------------------
-; 7574 | GIEP;                                                                  
+; 7567 | GIEP;                                                                  
 ;----------------------------------------------------------------------
 	pop		ST			
-	.line	130
+	.line	123
 ;----------------------------------------------------------------------
-; 7576 | if ( (iday < 32) && (iday > 0) ) //must be in bounds                   
+; 7569 | if ( (iday < 32) && (iday > 0) ) //must be in bounds                   
 ;----------------------------------------------------------------------
-        cmpi      32,r0                 ; |7576| 
-        bhs       L2137                 ; |7576| 
-;*      Branch Occurs to L2137          ; |7576| 
-        cmpi      0,r0                  ; |7576| 
-        beq       L2137                 ; |7576| 
-;*      Branch Occurs to L2137          ; |7576| 
-	.line	132
+        cmpi      32,r0                 ; |7569| 
+        bhs       L2137                 ; |7569| 
+;*      Branch Occurs to L2137          ; |7569| 
+        cmpi      0,r0                  ; |7569| 
+        beq       L2137                 ; |7569| 
+;*      Branch Occurs to L2137          ; |7569| 
+	.line	125
 ;----------------------------------------------------------------------
-; 7578 | if (ALFAT_LOG_DAY != iday)                                             
-; 7579 | {       //reinitialize with new file every day                         
+; 7571 | if (ALFAT_LOG_DAY != iday)                                             
+; 7572 | {       //reinitialize with new file every day                         
 ;----------------------------------------------------------------------
         ldp       @CL1161,DP
-        ldiu      @CL1161,ar0           ; |7578| 
-        ldiu      *ar0,r0               ; |7578| 
-        cmpi      *+fp(3),r0            ; |7578| 
-        beq       L2137                 ; |7578| 
-;*      Branch Occurs to L2137          ; |7578| 
-	.line	134
+        ldiu      @CL1161,ar0           ; |7571| 
+        ldiu      *ar0,r0               ; |7571| 
+        cmpi      *+fp(3),r0            ; |7571| 
+        beq       L2137                 ; |7571| 
+;*      Branch Occurs to L2137          ; |7571| 
+	.line	127
 ;----------------------------------------------------------------------
-; 7580 | ALFAT_WRITE_HEADER = FALSE;                                            
+; 7573 | ALFAT_WRITE_HEADER = FALSE;                                            
 ;----------------------------------------------------------------------
         ldp       @CL1141,DP
-        ldiu      @CL1141,ar0           ; |7580| 
-        ldiu      0,r0                  ; |7580| 
-        sti       r0,*ar0               ; |7580| 
-	.line	135
+        ldiu      @CL1141,ar0           ; |7573| 
+        ldiu      0,r0                  ; |7573| 
+        sti       r0,*ar0               ; |7573| 
+	.line	128
 ;----------------------------------------------------------------------
-; 7581 | ALFAT_INITIALIZED  = FALSE;                                            
+; 7574 | ALFAT_INITIALIZED  = FALSE;                                            
 ;----------------------------------------------------------------------
         ldp       @CL1137,DP
-        ldiu      @CL1137,ar0           ; |7581| 
-        sti       r0,*ar0               ; |7581| 
+        ldiu      @CL1137,ar0           ; |7574| 
+        sti       r0,*ar0               ; |7574| 
 L2137:        
-	.line	139
+	.line	132
 ;----------------------------------------------------------------------
-; 7585 | sprintf(ALFAT_TX,"\n");                                                
+; 7578 | sprintf(ALFAT_TX,"\n");                                                
 ;----------------------------------------------------------------------
         ldp       @CL1143,DP
-        ldiu      @CL1143,r1            ; |7585| 
+        ldiu      @CL1143,r1            ; |7578| 
         ldp       @CL1145,DP
-        ldiu      @CL1145,r0            ; |7585| 
+        ldiu      @CL1145,r0            ; |7578| 
         ldp       @CL1144,DP
-        push      r1                    ; |7585| 
-        ldiu      @CL1144,ar2           ; |7585| 
-        callu     r0                    ; far call to _sprintf	; |7585| 
-                                        ; |7585| Far Call Occurs
-        subi      1,sp                  ; |7585| 
-	.line	140
+        push      r1                    ; |7578| 
+        ldiu      @CL1144,ar2           ; |7578| 
+        callu     r0                    ; far call to _sprintf	; |7578| 
+                                        ; |7578| Far Call Occurs
+        subi      1,sp                  ; |7578| 
+	.line	133
 ;----------------------------------------------------------------------
-; 7586 | Alfat_Write(ALFAT_HANDLE_1,ALFAT_AUTO_LENGTH,ALFAT_LINEFEED);          
+; 7579 | Alfat_Write(ALFAT_HANDLE_1,ALFAT_AUTO_LENGTH,ALFAT_LINEFEED);          
 ;----------------------------------------------------------------------
         ldp       @CL1146,DP
-        ldiu      1,ar2                 ; |7586| 
-        ldiu      @CL1146,r0            ; |7586| 
-        ldiu      1,r3                  ; |7586| 
-        ldiu      -1,r2                 ; |7586| 
-        callu     r0                    ; far call to _Alfat_Write	; |7586| 
-                                        ; |7586| Far Call Occurs
-	.line	141
+        ldiu      1,ar2                 ; |7579| 
+        ldiu      @CL1146,r0            ; |7579| 
+        ldiu      1,r3                  ; |7579| 
+        ldiu      -1,r2                 ; |7579| 
+        callu     r0                    ; far call to _Alfat_Write	; |7579| 
+                                        ; |7579| Far Call Occurs
+	.line	134
 ;----------------------------------------------------------------------
-; 7587 | NOPS;                                                                  
+; 7580 | NOPS;                                                                  
 ;----------------------------------------------------------------------
 	NOP			
 	NOP			
 	NOP			
-	.line	142
+	.line	135
 ;----------------------------------------------------------------------
-; 7588 | Alfat_Wait_For_Write();                                                
+; 7581 | Alfat_Wait_For_Write();                                                
 ;----------------------------------------------------------------------
         ldp       @CL1147,DP
-        ldiu      @CL1147,r0            ; |7588| 
-        callu     r0                    ; far call to _Alfat_Wait_For_Write	; |7588| 
-                                        ; |7588| Far Call Occurs
-	.line	144
+        ldiu      @CL1147,r0            ; |7581| 
+        callu     r0                    ; far call to _Alfat_Wait_For_Write	; |7581| 
+                                        ; |7581| Far Call Occurs
+	.line	137
 ;----------------------------------------------------------------------
-; 7590 | Alfat_Print_Time_Date(1);                                              
+; 7583 | Alfat_Print_Time_Date(1);                                              
 ;----------------------------------------------------------------------
         ldp       @CL1162,DP
-        ldiu      @CL1162,r0            ; |7590| 
-        ldiu      1,ar2                 ; |7590| 
-        callu     r0                    ; far call to _Alfat_Print_Time_Date	; |7590| 
-                                        ; |7590| Far Call Occurs
-	.line	145
+        ldiu      @CL1162,r0            ; |7583| 
+        ldiu      1,ar2                 ; |7583| 
+        callu     r0                    ; far call to _Alfat_Print_Time_Date	; |7583| 
+                                        ; |7583| Far Call Occurs
+	.line	138
 ;----------------------------------------------------------------------
-; 7591 | NOPS;                                                                  
+; 7584 | NOPS;                                                                  
+;----------------------------------------------------------------------
+	NOP			
+	NOP			
+	NOP			
+	.line	139
+;----------------------------------------------------------------------
+; 7585 | Alfat_Wait_For_Write();                                                
+;----------------------------------------------------------------------
+        ldp       @CL1147,DP
+        ldiu      @CL1147,r0            ; |7585| 
+        callu     r0                    ; far call to _Alfat_Wait_For_Write	; |7585| 
+                                        ; |7585| Far Call Occurs
+	.line	141
+;----------------------------------------------------------------------
+; 7587 | _GIEP;                                                                 
+;----------------------------------------------------------------------
+	push	ST			
+	andn	2000h, ST	
+	.line	142
+;----------------------------------------------------------------------
+; 7588 | NOPS;                                                                  
+; 7590 | /// capture the initial object                                         
+; 7591 | //log_var[0] = HART_Lookup(0,resp,(int*)&HART_DV_Table);               
 ;----------------------------------------------------------------------
 	NOP			
 	NOP			
 	NOP			
 	.line	146
 ;----------------------------------------------------------------------
-; 7592 | Alfat_Wait_For_Write();                                                
+; 7592 | i_mapped = Alfat_Map_Var(0);                               // BY DKOH M
+;     | AR 2, 2021 - BUGFIX#104                                                
 ;----------------------------------------------------------------------
-        ldp       @CL1147,DP
-        ldiu      @CL1147,r0            ; |7592| 
-        callu     r0                    ; far call to _Alfat_Wait_For_Write	; |7592| 
+        ldp       @CL1163,DP
+        ldiu      @CL1163,r0            ; |7592| 
+        ldiu      0,ar2                 ; |7592| 
+        callu     r0                    ; far call to _Alfat_Map_Var	; |7592| 
                                         ; |7592| Far Call Occurs
+        sti       r0,*+fp(4)            ; |7592| 
+	.line	147
+;----------------------------------------------------------------------
+; 7593 | log_var[0] = HART_Lookup(i_mapped,resp,(int*)&HART_DV_Table); // BY DKO
+;     | H MAR 2, 2021 - BUGFIX#104                                             
+;----------------------------------------------------------------------
+        ldp       @CL656,DP
+        ldiu      *+fp(4),ar2           ; |7593| 
+        ldiu      @CL656,r0             ; |7593| 
+        ldiu      fp,r2                 ; |7593| 
+        ldp       @CL655,DP
+        ldiu      @CL655,r3             ; |7593| 
+        addi      11,r2                 ; |7593| 
+        callu     r0                    ; far call to _HART_Lookup	; |7593| 
+                                        ; |7593| Far Call Occurs
+        ldiu      fp,ar0                ; |7593| 
+        addi      6,ar0                 ; |7593| 
+        sti       r0,*ar0               ; |7593| 
 	.line	148
 ;----------------------------------------------------------------------
-; 7594 | _GIEP;                                                                 
+; 7594 | sprintf(ALFAT_TX,"%g,",log_var[0]->val);                               
 ;----------------------------------------------------------------------
-	push	ST			
-	andn	2000h, ST	
-	.line	149
-;----------------------------------------------------------------------
-; 7595 | NOPS;                                                                  
-;----------------------------------------------------------------------
-	NOP			
-	NOP			
-	NOP			
+        ldiu      fp,ar0                ; |7594| 
+        ldp       @CL1164,DP
+        addi      6,ar0                 ; |7594| 
+        ldiu      @CL1164,r2            ; |7594| 
+        ldiu      *ar0,ar0              ; |7594| 
+        ldp       @CL1145,DP
+        ldfu      *ar0,f1               ; |7594| 
+        ldiu      @CL1145,r0            ; |7594| 
+        pushf     f1                    ; |7594| 
+        ldp       @CL1144,DP
+        push      r2                    ; |7594| 
+        ldiu      @CL1144,ar2           ; |7594| 
+        callu     r0                    ; far call to _sprintf	; |7594| 
+                                        ; |7594| Far Call Occurs
+        subi      2,sp                  ; |7594| 
 	.line	150
 ;----------------------------------------------------------------------
-; 7596 | log_var[0] = HART_Lookup(0,resp,(int*)&HART_DV_Table);                 
+; 7596 | for (j=1; j < 22; j++) // write first half                             
 ;----------------------------------------------------------------------
-        ldp       @CL656,DP
-        ldiu      @CL656,r0             ; |7596| 
-        ldiu      fp,r2                 ; |7596| 
-        ldp       @CL655,DP
-        addi      11,r2                 ; |7596| 
-        ldiu      @CL655,r3             ; |7596| 
-        ldiu      0,ar2                 ; |7596| 
-        callu     r0                    ; far call to _HART_Lookup	; |7596| 
-                                        ; |7596| Far Call Occurs
-        ldiu      fp,ar0                ; |7596| 
-        addi      6,ar0                 ; |7596| 
-        sti       r0,*ar0               ; |7596| 
-	.line	151
+        ldiu      1,r0                  ; |7596| 
+        sti       r0,*+fp(5)            ; |7596| 
+        cmpi      22,r0                 ; |7596| 
+        bge       L2140                 ; |7596| 
+;*      Branch Occurs to L2140          ; |7596| 
+L2138:        
+	.line	152
 ;----------------------------------------------------------------------
-; 7597 | sprintf(ALFAT_TX,"%g,",log_var[0]->val);                               
+; 7598 | i_mapped = Alfat_Map_Var(j);                                           
 ;----------------------------------------------------------------------
         ldp       @CL1163,DP
-        ldiu      @CL1163,r2            ; |7597| 
-        ldiu      fp,ar0                ; |7597| 
-        ldp       @CL1145,DP
-        addi      6,ar0                 ; |7597| 
-        ldiu      @CL1145,r1            ; |7597| 
-        ldiu      *ar0,ar0              ; |7597| 
-        ldp       @CL1144,DP
-        ldfu      *ar0,f0               ; |7597| 
-        pushf     f0                    ; |7597| 
-        push      r2                    ; |7597| 
-        ldiu      @CL1144,ar2           ; |7597| 
-        callu     r1                    ; far call to _sprintf	; |7597| 
-                                        ; |7597| Far Call Occurs
-        subi      2,sp                  ; |7597| 
+        ldiu      *+fp(5),ar2           ; |7598| 
+        ldiu      @CL1163,r0            ; |7598| 
+        callu     r0                    ; far call to _Alfat_Map_Var	; |7598| 
+                                        ; |7598| Far Call Occurs
+        sti       r0,*+fp(4)            ; |7598| 
 	.line	154
 ;----------------------------------------------------------------------
-; 7600 | for (j=1; j < 22; j++) //write first half                              
+; 7600 | if (i_mapped < 0) break;                                               
+; 7602 | //log_var[i_mapped] = HART_Lookup(i_mapped,resp,(int*)&HART_DV_Table); 
+; 7603 | //sprintf(entry,"%g,",log_var[i_mapped]->val);                         
 ;----------------------------------------------------------------------
-        ldiu      1,r0                  ; |7600| 
-        sti       r0,*+fp(5)            ; |7600| 
-        cmpi      22,r0                 ; |7600| 
-        bge       L2140                 ; |7600| 
+        cmpi      0,r0                  ; |7600| 
+        blt       L2140                 ; |7600| 
 ;*      Branch Occurs to L2140          ; |7600| 
-L2138:        
-	.line	156
+	.line	158
 ;----------------------------------------------------------------------
-; 7602 | i_mapped = Alfat_Map_Var(j);                                           
-; 7604 | //i_mapped =0;                                                         
-;----------------------------------------------------------------------
-        ldp       @CL1164,DP
-        ldiu      *+fp(5),ar2           ; |7602| 
-        ldiu      @CL1164,r0            ; |7602| 
-        callu     r0                    ; far call to _Alfat_Map_Var	; |7602| 
-                                        ; |7602| Far Call Occurs
-        sti       r0,*+fp(4)            ; |7602| 
-	.line	160
-;----------------------------------------------------------------------
-; 7606 | if (i_mapped < 0)                                                      
-;----------------------------------------------------------------------
-        cmpi      0,r0                  ; |7606| 
-        blt       L2140                 ; |7606| 
-;*      Branch Occurs to L2140          ; |7606| 
-	.line	161
-;----------------------------------------------------------------------
-; 7607 | break;                                                                 
-;----------------------------------------------------------------------
-	.line	163
-;----------------------------------------------------------------------
-; 7609 | log_var[i_mapped] = HART_Lookup(i_mapped,resp,(int*)&HART_DV_Table);   
+; 7604 | log_var[j] = HART_Lookup(i_mapped,resp,(int*)&HART_DV_Table); // BY DKO
+;     | H MAR 2, 2021 - BUGFIX#105                                             
 ;----------------------------------------------------------------------
         ldp       @CL656,DP
-        ldiu      fp,r2                 ; |7609| 
-        ldiu      *+fp(4),ar2           ; |7609| 
-        ldiu      @CL656,r0             ; |7609| 
+        ldiu      fp,r2                 ; |7604| 
+        ldiu      *+fp(4),ar2           ; |7604| 
+        ldiu      @CL656,r0             ; |7604| 
         ldp       @CL655,DP
-        addi      11,r2                 ; |7609| 
-        ldiu      @CL655,r3             ; |7609| 
-        callu     r0                    ; far call to _HART_Lookup	; |7609| 
-                                        ; |7609| Far Call Occurs
-        ldiu      fp,ar0                ; |7609| 
-        addi      6,ar0                 ; |7609| 
-        ldiu      *+fp(4),ir0           ; |7609| 
-        sti       r0,*+ar0(ir0)         ; |7609| 
-	.line	164
+        addi      11,r2                 ; |7604| 
+        ldiu      @CL655,r3             ; |7604| 
+        callu     r0                    ; far call to _HART_Lookup	; |7604| 
+                                        ; |7604| Far Call Occurs
+        ldiu      fp,ar0                ; |7604| 
+        addi      6,ar0                 ; |7604| 
+        ldiu      *+fp(5),ir0           ; |7604| 
+        sti       r0,*+ar0(ir0)         ; |7604| 
+	.line	159
 ;----------------------------------------------------------------------
-; 7610 | sprintf(entry,"%g,",log_var[i_mapped]->val);                           
+; 7605 | sprintf(entry,"%g,",log_var[j]->val); // BY DKOH MAR 2, 2021 - BUGFIX#1
+;     | 05                                                                     
 ;----------------------------------------------------------------------
-        ldp       @CL1163,DP
-        ldiu      fp,ar2                ; |7610| 
-        ldiu      fp,ar0                ; |7610| 
-        addi      6,ar0                 ; |7610| 
-        ldiu      @CL1163,r0            ; |7610| 
-        ldiu      *+fp(4),ir0           ; |7610| 
+        ldp       @CL1164,DP
+        ldiu      @CL1164,r1            ; |7605| 
         ldp       @CL1145,DP
-        ldiu      *+ar0(ir0),ar0        ; |7610| 
-        addi      13,ar2                ; |7610| 
-        ldfu      *ar0,f2               ; |7610| 
-        ldiu      @CL1145,r1            ; |7610| 
-        pushf     f2                    ; |7610| 
-        push      r0                    ; |7610| 
-        callu     r1                    ; far call to _sprintf	; |7610| 
-                                        ; |7610| Far Call Occurs
-        subi      2,sp                  ; |7610| 
+        ldiu      fp,ar2                ; |7605| 
+        ldiu      fp,ar0                ; |7605| 
+        addi      6,ar0                 ; |7605| 
+        ldiu      *+fp(5),ir0           ; |7605| 
+        ldiu      @CL1145,r2            ; |7605| 
+        ldiu      *+ar0(ir0),ar0        ; |7605| 
+        addi      13,ar2                ; |7605| 
+        ldfu      *ar0,f0               ; |7605| 
+        pushf     f0                    ; |7605| 
+        push      r1                    ; |7605| 
+        callu     r2                    ; far call to _sprintf	; |7605| 
+                                        ; |7605| Far Call Occurs
+        subi      2,sp                  ; |7605| 
+	.line	160
+;----------------------------------------------------------------------
+; 7606 | strcat(ALFAT_TX,entry);                                                
+;----------------------------------------------------------------------
+        ldp       @CL1150,DP
+        ldiu      @CL1150,r0            ; |7606| 
+        ldiu      fp,r2                 ; |7606| 
+        ldp       @CL1144,DP
+        addi      13,r2                 ; |7606| 
+        ldiu      @CL1144,ar2           ; |7606| 
+        callu     r0                    ; far call to _strcat	; |7606| 
+                                        ; |7606| Far Call Occurs
+	.line	150
+        ldiu      1,r0                  ; |7596| 
+        addi      *+fp(5),r0            ; |7596| 
+        sti       r0,*+fp(5)            ; |7596| 
+        cmpi      22,r0                 ; |7596| 
+        blt       L2138                 ; |7596| 
+;*      Branch Occurs to L2138          ; |7596| 
+L2140:        
+	.line	163
+;----------------------------------------------------------------------
+; 7609 | GIEP;                                                                  
+;----------------------------------------------------------------------
+	pop		ST			
 	.line	165
 ;----------------------------------------------------------------------
-; 7611 | strcat(ALFAT_TX,entry);                                                
+; 7611 | strcat(ALFAT_TX,"\n");                                                 
+; 7612 | //GIEP;                                                                
 ;----------------------------------------------------------------------
+        ldp       @CL1143,DP
+        ldiu      @CL1143,r2            ; |7611| 
         ldp       @CL1150,DP
         ldiu      @CL1150,r0            ; |7611| 
         ldp       @CL1144,DP
         ldiu      @CL1144,ar2           ; |7611| 
-        ldiu      fp,r2                 ; |7611| 
-        addi      13,r2                 ; |7611| 
         callu     r0                    ; far call to _strcat	; |7611| 
                                         ; |7611| Far Call Occurs
-	.line	154
-        ldiu      1,r0                  ; |7600| 
-        addi      *+fp(5),r0            ; |7600| 
-        sti       r0,*+fp(5)            ; |7600| 
-        cmpi      22,r0                 ; |7600| 
-        blt       L2138                 ; |7600| 
-;*      Branch Occurs to L2138          ; |7600| 
-L2140:        
 	.line	167
 ;----------------------------------------------------------------------
-; 7613 | GIEP;                                                                  
-;----------------------------------------------------------------------
-	pop		ST			
-	.line	169
-;----------------------------------------------------------------------
-; 7615 | strcat(ALFAT_TX,"\n");                                                 
-; 7616 | //GIEP;                                                                
-;----------------------------------------------------------------------
-        ldp       @CL1143,DP
-        ldiu      @CL1143,r2            ; |7615| 
-        ldp       @CL1150,DP
-        ldiu      @CL1150,r0            ; |7615| 
-        ldp       @CL1144,DP
-        ldiu      @CL1144,ar2           ; |7615| 
-        callu     r0                    ; far call to _strcat	; |7615| 
-                                        ; |7615| Far Call Occurs
-	.line	171
-;----------------------------------------------------------------------
-; 7617 | Alfat_Write(ALFAT_HANDLE_1,ALFAT_AUTO_LENGTH,ALFAT_NO_LF);             
+; 7613 | Alfat_Write(ALFAT_HANDLE_1,ALFAT_AUTO_LENGTH,ALFAT_NO_LF);             
 ;----------------------------------------------------------------------
         ldp       @CL1146,DP
-        ldiu      1,ar2                 ; |7617| 
-        ldiu      @CL1146,r0            ; |7617| 
-        ldiu      0,r3                  ; |7617| 
-        ldiu      -1,r2                 ; |7617| 
-        callu     r0                    ; far call to _Alfat_Write	; |7617| 
-                                        ; |7617| Far Call Occurs
-	.line	172
+        ldiu      1,ar2                 ; |7613| 
+        ldiu      @CL1146,r0            ; |7613| 
+        ldiu      0,r3                  ; |7613| 
+        ldiu      -1,r2                 ; |7613| 
+        callu     r0                    ; far call to _Alfat_Write	; |7613| 
+                                        ; |7613| Far Call Occurs
+	.line	168
 ;----------------------------------------------------------------------
-; 7618 | NOPS;                                                                  
-; 7619 | //Alfat_Wait_For_Write                                                 
+; 7614 | NOPS;                                                                  
+; 7615 | //Alfat_Wait_For_Write                                                 
 ;----------------------------------------------------------------------
 	NOP			
 	NOP			
 	NOP			
-	.line	174
+	.line	170
 ;----------------------------------------------------------------------
-; 7620 | Alfat_Wait_For_Write();                                                
+; 7616 | Alfat_Wait_For_Write();                                                
 ;----------------------------------------------------------------------
         ldp       @CL1147,DP
-        ldiu      @CL1147,r0            ; |7620| 
-        callu     r0                    ; far call to _Alfat_Wait_For_Write	; |7620| 
-                                        ; |7620| Far Call Occurs
-	.line	177
+        ldiu      @CL1147,r0            ; |7616| 
+        callu     r0                    ; far call to _Alfat_Wait_For_Write	; |7616| 
+                                        ; |7616| Far Call Occurs
+	.line	172
 ;----------------------------------------------------------------------
-; 7623 | _GIEP;                                                                 
+; 7618 | _GIEP;                                                                 
 ;----------------------------------------------------------------------
 	push	ST			
 	andn	2000h, ST	
+	.line	173
+;----------------------------------------------------------------------
+; 7619 | NOPS;                                                                  
+; 7622 | //log_var[22] = HART_Lookup(22,resp,(int*)&HART_DV_Table);  // BY DKOH
+;     | MAR 2, 2021 - BUGFIX#104                                               
+;----------------------------------------------------------------------
+	NOP			
+	NOP			
+	NOP			
+	.line	177
+;----------------------------------------------------------------------
+; 7623 | i_mapped = Alfat_Map_Var(22);                               // BY DKOH
+;     | MAR 2, 2021 - BUGFIX#104                                               
+;----------------------------------------------------------------------
+        ldp       @CL1163,DP
+        ldiu      @CL1163,r0            ; |7623| 
+        ldiu      22,ar2                ; |7623| 
+        callu     r0                    ; far call to _Alfat_Map_Var	; |7623| 
+                                        ; |7623| Far Call Occurs
+        sti       r0,*+fp(4)            ; |7623| 
 	.line	178
 ;----------------------------------------------------------------------
-; 7624 | NOPS;                                                                  
-;----------------------------------------------------------------------
-	NOP			
-	NOP			
-	NOP			
-	.line	179
-;----------------------------------------------------------------------
-; 7625 | log_var[22] = HART_Lookup(22,resp,(int*)&HART_DV_Table);               
+; 7624 | log_var[22] = HART_Lookup(i_mapped,resp,(int*)&HART_DV_Table); // BY DK
+;     | OH MAR 2, 2021 - BUGFIX#104                                            
 ;----------------------------------------------------------------------
         ldp       @CL656,DP
-        ldiu      @CL656,r0             ; |7625| 
+        ldiu      fp,r2                 ; |7624| 
+        ldiu      @CL656,r0             ; |7624| 
+        ldiu      *+fp(4),ar2           ; |7624| 
         ldp       @CL655,DP
-        ldiu      fp,r2                 ; |7625| 
-        ldiu      22,ar2                ; |7625| 
-        ldiu      @CL655,r3             ; |7625| 
-        addi      11,r2                 ; |7625| 
-        callu     r0                    ; far call to _HART_Lookup	; |7625| 
-                                        ; |7625| Far Call Occurs
+        addi      11,r2                 ; |7624| 
+        ldiu      @CL655,r3             ; |7624| 
+        callu     r0                    ; far call to _HART_Lookup	; |7624| 
+                                        ; |7624| Far Call Occurs
+        ldiu      fp,ar0                ; |7624| 
+        addi      28,ar0                ; |7624| 
+        sti       r0,*ar0               ; |7624| 
+	.line	179
+;----------------------------------------------------------------------
+; 7625 | sprintf(ALFAT_TX,"%g,",log_var[22]->val);                              
+;----------------------------------------------------------------------
+        ldp       @CL1164,DP
         ldiu      fp,ar0                ; |7625| 
+        ldiu      @CL1164,r2            ; |7625| 
         addi      28,ar0                ; |7625| 
-        sti       r0,*ar0               ; |7625| 
-	.line	180
-;----------------------------------------------------------------------
-; 7626 | sprintf(ALFAT_TX,"%g,",log_var[22]->val);                              
-;----------------------------------------------------------------------
-        ldiu      fp,ar0                ; |7626| 
-        ldp       @CL1163,DP
-        addi      28,ar0                ; |7626| 
-        ldiu      @CL1163,r2            ; |7626| 
-        ldiu      *ar0,ar0              ; |7626| 
         ldp       @CL1145,DP
-        ldfu      *ar0,f1               ; |7626| 
-        ldiu      @CL1145,r0            ; |7626| 
-        pushf     f1                    ; |7626| 
+        ldiu      *ar0,ar0              ; |7625| 
+        ldiu      @CL1145,r0            ; |7625| 
+        ldfu      *ar0,f1               ; |7625| 
         ldp       @CL1144,DP
-        push      r2                    ; |7626| 
-        ldiu      @CL1144,ar2           ; |7626| 
-        callu     r0                    ; far call to _sprintf	; |7626| 
-                                        ; |7626| Far Call Occurs
-        subi      2,sp                  ; |7626| 
+        pushf     f1                    ; |7625| 
+        ldiu      @CL1144,ar2           ; |7625| 
+        push      r2                    ; |7625| 
+        callu     r0                    ; far call to _sprintf	; |7625| 
+                                        ; |7625| Far Call Occurs
+        subi      2,sp                  ; |7625| 
 	.line	181
 ;----------------------------------------------------------------------
 ; 7627 | for (j=23; j < 44; j++) //write second half                            
@@ -58430,74 +58452,73 @@ L2141:
 	.line	183
 ;----------------------------------------------------------------------
 ; 7629 | i_mapped = Alfat_Map_Var(j);                                           
-; 7631 | //i_mapped =0;                                                         
 ;----------------------------------------------------------------------
-        ldp       @CL1164,DP
+        ldp       @CL1163,DP
         ldiu      *+fp(5),ar2           ; |7629| 
-        ldiu      @CL1164,r0            ; |7629| 
+        ldiu      @CL1163,r0            ; |7629| 
         callu     r0                    ; far call to _Alfat_Map_Var	; |7629| 
                                         ; |7629| Far Call Occurs
         sti       r0,*+fp(4)            ; |7629| 
-	.line	187
+	.line	185
 ;----------------------------------------------------------------------
-; 7633 | if (i_mapped < 0)                                                      
+; 7631 | if (i_mapped < 0) break;                                               
+; 7633 | //log_var[i_mapped] = HART_Lookup(i_mapped,resp,(int*)&HART_DV_Table); 
+; 7634 | //sprintf(entry,"%g,",log_var[i_mapped]->val);                         
 ;----------------------------------------------------------------------
-        cmpi      0,r0                  ; |7633| 
-        blt       L2143                 ; |7633| 
-;*      Branch Occurs to L2143          ; |7633| 
-	.line	188
+        cmpi      0,r0                  ; |7631| 
+        blt       L2143                 ; |7631| 
+;*      Branch Occurs to L2143          ; |7631| 
+	.line	189
 ;----------------------------------------------------------------------
-; 7634 | break;                                                                 
-;----------------------------------------------------------------------
-	.line	190
-;----------------------------------------------------------------------
-; 7636 | log_var[i_mapped] = HART_Lookup(i_mapped,resp,(int*)&HART_DV_Table);   
+; 7635 | log_var[j] = HART_Lookup(i_mapped,resp,(int*)&HART_DV_Table); // BY DKO
+;     | H MAR 2, 2021 - BUGFIX#105                                             
 ;----------------------------------------------------------------------
         ldp       @CL656,DP
-        ldiu      fp,r2                 ; |7636| 
-        ldiu      *+fp(4),ar2           ; |7636| 
-        ldiu      @CL656,r0             ; |7636| 
+        ldiu      fp,r2                 ; |7635| 
+        ldiu      *+fp(4),ar2           ; |7635| 
+        ldiu      @CL656,r0             ; |7635| 
         ldp       @CL655,DP
-        addi      11,r2                 ; |7636| 
-        ldiu      @CL655,r3             ; |7636| 
-        callu     r0                    ; far call to _HART_Lookup	; |7636| 
-                                        ; |7636| Far Call Occurs
+        addi      11,r2                 ; |7635| 
+        ldiu      @CL655,r3             ; |7635| 
+        callu     r0                    ; far call to _HART_Lookup	; |7635| 
+                                        ; |7635| Far Call Occurs
+        ldiu      fp,ar0                ; |7635| 
+        addi      6,ar0                 ; |7635| 
+        ldiu      *+fp(5),ir0           ; |7635| 
+        sti       r0,*+ar0(ir0)         ; |7635| 
+	.line	190
+;----------------------------------------------------------------------
+; 7636 | sprintf(entry,"%g,",log_var[j]->val); // BY DKOH MAR 2, 2021 - BUGFIX#1
+;     | 05                                                                     
+;----------------------------------------------------------------------
+        ldp       @CL1164,DP
+        ldiu      @CL1164,r1            ; |7636| 
+        ldiu      fp,ar2                ; |7636| 
         ldiu      fp,ar0                ; |7636| 
         addi      6,ar0                 ; |7636| 
-        ldiu      *+fp(4),ir0           ; |7636| 
-        sti       r0,*+ar0(ir0)         ; |7636| 
+        ldiu      *+fp(5),ir0           ; |7636| 
+        ldp       @CL1145,DP
+        ldiu      *+ar0(ir0),ar0        ; |7636| 
+        addi      13,ar2                ; |7636| 
+        ldfu      *ar0,f2               ; |7636| 
+        pushf     f2                    ; |7636| 
+        push      r1                    ; |7636| 
+        ldiu      @CL1145,r0            ; |7636| 
+        callu     r0                    ; far call to _sprintf	; |7636| 
+                                        ; |7636| Far Call Occurs
+        subi      2,sp                  ; |7636| 
 	.line	191
 ;----------------------------------------------------------------------
-; 7637 | sprintf(entry,"%g,",log_var[i_mapped]->val);                           
-;----------------------------------------------------------------------
-        ldp       @CL1163,DP
-        ldiu      @CL1163,r1            ; |7637| 
-        ldiu      fp,ar2                ; |7637| 
-        ldiu      fp,ar0                ; |7637| 
-        addi      6,ar0                 ; |7637| 
-        ldiu      *+fp(4),ir0           ; |7637| 
-        ldp       @CL1145,DP
-        ldiu      *+ar0(ir0),ar0        ; |7637| 
-        addi      13,ar2                ; |7637| 
-        ldfu      *ar0,f2               ; |7637| 
-        pushf     f2                    ; |7637| 
-        push      r1                    ; |7637| 
-        ldiu      @CL1145,r0            ; |7637| 
-        callu     r0                    ; far call to _sprintf	; |7637| 
-                                        ; |7637| Far Call Occurs
-        subi      2,sp                  ; |7637| 
-	.line	192
-;----------------------------------------------------------------------
-; 7638 | strcat(ALFAT_TX,entry);                                                
+; 7637 | strcat(ALFAT_TX,entry);                                                
 ;----------------------------------------------------------------------
         ldp       @CL1150,DP
-        ldiu      @CL1150,r0            ; |7638| 
-        ldiu      fp,r2                 ; |7638| 
+        ldiu      @CL1150,r0            ; |7637| 
+        ldiu      fp,r2                 ; |7637| 
         ldp       @CL1144,DP
-        addi      13,r2                 ; |7638| 
-        ldiu      @CL1144,ar2           ; |7638| 
-        callu     r0                    ; far call to _strcat	; |7638| 
-                                        ; |7638| Far Call Occurs
+        addi      13,r2                 ; |7637| 
+        ldiu      @CL1144,ar2           ; |7637| 
+        callu     r0                    ; far call to _strcat	; |7637| 
+                                        ; |7637| Far Call Occurs
 	.line	181
         ldiu      1,r0                  ; |7627| 
         addi      *+fp(5),r0            ; |7627| 
@@ -62365,8 +62386,8 @@ L2301:
 	.field  	12,32		; .init0$1[9] @ 288
 	.field  	14,32		; .init0$1[10] @ 320
 	.field  	15,32		; .init0$1[11] @ 352
-	.field  	21,32		; .init0$1[12] @ 384
-	.field  	23,32		; .init0$1[13] @ 416
+	.field  	29,32		; .init0$1[12] @ 384
+	.field  	31,32		; .init0$1[13] @ 416
 	.field  	49,32		; .init0$1[14] @ 448
 	.field  	51,32		; .init0$1[15] @ 480
 	.field  	106,32		; .init0$1[16] @ 512
@@ -62438,107 +62459,109 @@ _Alfat_Map_Var:
 ; 8269 |         14,             //FC1 Oil Flow
 ;     |  //10                                                                  
 ; 8270 |         15,             //FC1 Wate Flow                                
-; 8271 |         21,             //Analog input 2 %                             
-; 8272 |         23,             //Analog input 3%                              
-; 8273 |         49,             //FC1 Pressure                                 
-; 8274 |         51,             //FC1 Density                                  
-; 8275 |         106,    //Gas Flow                                             
-; 8276 |         107,    //Gas Total                                            
-; 8277 |         108,    //Gas Density                                          
-; 8278 |         109,    //Stream Select                                        
-; 8279 |         110,    //Salinity
+; 8271 |         //21,           //Analog input 2% // DKOH BUG#104 FEB 24, 2021 
+; 8272 |         //23,           //Analog input 3% // DKOH BUG#104 FEB 24, 2021 
+; 8273 |         29,             //Analog output 2% // DKOH BUG#104 FEB 24, 2021
+; 8274 |         31,             //Analog output 3% // DKOH BUG#104 FEB 24, 2021
+; 8275 |         49,             //FC1 Pressure                                 
+; 8276 |         51,             //FC1 Density                                  
+; 8277 |         106,    //Gas Flow                                             
+; 8278 |         107,    //Gas Total                                            
+; 8279 |         108,    //Gas Density                                          
+; 8280 |         109,    //Stream Select                                        
+; 8281 |         110,    //Salinity
 ;     |  //20                                                                  
-; 8280 |         111,    //CCM Vessel 1 Level                                   
-; 8281 |         113,    //CCM Vessel 1 Level Set Point                         
-; 8282 |         115,    //CCM Vessel 1 Pressure                                
-; 8283 |         117,    //CCM Vessel 1 Pressure Set Point                      
-; 8284 |         129,    //Purge status                                  //25   
-; 8285 |         130,    //Test status                                          
-; 8286 |         131,    //Drive gain liquid MM                                 
-; 8287 |         132,    //Drive gain gas MM                                    
-; 8288 |         133,    //Water Cut by density                                 
-; 8289 |         134,    //Gas P
+; 8282 |         111,    //CCM Vessel 1 Level                                   
+; 8283 |         113,    //CCM Vessel 1 Level Set Point                         
+; 8284 |         115,    //CCM Vessel 1 Pressure                                
+; 8285 |         117,    //CCM Vessel 1 Pressure Set Point                      
+; 8286 |         129,    //Purge status                                  //25   
+; 8287 |         130,    //Test status                                          
+; 8288 |         131,    //Drive gain liquid MM                                 
+; 8289 |         132,    //Drive gain gas MM                                    
+; 8290 |         133,    //Water Cut by density                                 
+; 8291 |         134,    //Gas P
 ;     |  //30                                                                  
-; 8290 |         135,    //Gas I                                                
-; 8291 |         136,    //Gas D                                                
-; 8292 |         137,    //Liquid P                                             
-; 8293 |         138,    //Liquid I
+; 8292 |         135,    //Gas I                                                
+; 8293 |         136,    //Gas D                                                
+; 8294 |         137,    //Liquid P                                             
+; 8295 |         138,    //Liquid I
 ;     |  //34                                                                  
-; 8294 |         139,    //Liquid D
+; 8296 |         139,    //Liquid D
 ;     |  //35                                                                  
-; 8295 |         140,    //HSALT Delta T                                 //36   
-; 8296 |         141,    //HSALT Boxcar                                         
-; 8297 |         142,    //Gas Entr. Bubble                                     
-; 8298 |         143,    //Gas Entr. Pattern                                    
-; 8299 |         144,    //FC1 Water Density @ST                 //40           
-; 8300 |         145,    //FC1 Water Density @Process    //41                   
-; 8301 |         146,    //FC1 Oil Density at @ST                               
-; 8302 |         147,    //FC1 Oil Density @Process                             
-; 8303 |         -1              // END OF TABLE
+; 8297 |         140,    //HSALT Delta T                                 //36   
+; 8298 |         141,    //HSALT Boxcar                                         
+; 8299 |         142,    //Gas Entr. Bubble                                     
+; 8300 |         143,    //Gas Entr. Pattern                                    
+; 8301 |         144,    //FC1 Water Density @ST                 //40           
+; 8302 |         145,    //FC1 Water Density @Process    //41                   
+; 8303 |         146,    //FC1 Oil Density at @ST                               
+; 8304 |         147,    //FC1 Oil Density @Process                             
+; 8305 |         -1              // END OF TABLE
 ;     |  //44                                                                  
 ;----------------------------------------------------------------------
         push      fp
         ldiu      sp,fp
         addi      46,sp
         sti       ar2,*+fp(1)           ; |8257| 
-	.line	48
-;----------------------------------------------------------------------
-; 8304 | };                                                                     
-;----------------------------------------------------------------------
-        ldp       @CL1193,DP
-        ldiu      @CL1193,ar1           ; |8304| 
-        ldiu      fp,ar0                ; |8304| 
-        addi      2,ar0                 ; |8304| 
-        ldiu      *ar1++(1),r0          ; |8304| 
-        rpts      43                    ; Fast MEMCPY(#3)
-        sti       r0,*ar0++(1)
-||      ldi       *ar1++(1),r0          ; |8304| 
-        sti       r0,*ar0++(1)          ; |8304| 
 	.line	50
 ;----------------------------------------------------------------------
-; 8306 | if ( (index > -1) && (index < 44) )                                    
+; 8306 | };                                                                     
 ;----------------------------------------------------------------------
-        ldiu      *+fp(1),r0            ; |8306| 
-        cmpi      0,r0                  ; |8306| 
-        blt       L2307                 ; |8306| 
-;*      Branch Occurs to L2307          ; |8306| 
-        cmpi      44,r0                 ; |8306| 
-        bge       L2307                 ; |8306| 
-;*      Branch Occurs to L2307          ; |8306| 
-	.line	51
+        ldp       @CL1193,DP
+        ldiu      @CL1193,ar1           ; |8306| 
+        ldiu      fp,ar0                ; |8306| 
+        addi      2,ar0                 ; |8306| 
+        ldiu      *ar1++(1),r0          ; |8306| 
+        rpts      43                    ; Fast MEMCPY(#3)
+        sti       r0,*ar0++(1)
+||      ldi       *ar1++(1),r0          ; |8306| 
+        sti       r0,*ar0++(1)          ; |8306| 
+	.line	52
 ;----------------------------------------------------------------------
-; 8307 | return ALFAT_LOG_MAP[index];                                           
-; 8308 | else                                                                   
+; 8308 | if ( (index > -1) && (index < 44) )                                    
 ;----------------------------------------------------------------------
-        ldiu      fp,ar0                ; |8307| 
-        bud       L2308                 ; |8307| 
-        ldiu      r0,ir0                ; |8307| 
-        addi      2,ar0                 ; |8307| 
-        ldiu      *+ar0(ir0),r0         ; |8307| 
-;*      Branch Occurs to L2308          ; |8307| 
-L2307:        
+        ldiu      *+fp(1),r0            ; |8308| 
+        cmpi      0,r0                  ; |8308| 
+        blt       L2307                 ; |8308| 
+;*      Branch Occurs to L2307          ; |8308| 
+        cmpi      44,r0                 ; |8308| 
+        bge       L2307                 ; |8308| 
+;*      Branch Occurs to L2307          ; |8308| 
 	.line	53
 ;----------------------------------------------------------------------
-; 8309 | return -1;                                                             
+; 8309 | return ALFAT_LOG_MAP[index];                                           
+; 8310 | else                                                                   
 ;----------------------------------------------------------------------
-        ldiu      -1,r0                 ; |8309| 
-L2308:        
+        ldiu      fp,ar0                ; |8309| 
+        bud       L2308                 ; |8309| 
+        ldiu      r0,ir0                ; |8309| 
+        addi      2,ar0                 ; |8309| 
+        ldiu      *+ar0(ir0),r0         ; |8309| 
+;*      Branch Occurs to L2308          ; |8309| 
+L2307:        
 	.line	55
+;----------------------------------------------------------------------
+; 8311 | return -1;                                                             
+;----------------------------------------------------------------------
+        ldiu      -1,r0                 ; |8311| 
+L2308:        
+	.line	57
                                         ; Begin Epilog Code
-        ldiu      *-fp(1),r1            ; |8311| 
-        ldiu      *fp,fp                ; |8311| 
+        ldiu      *-fp(1),r1            ; |8313| 
+        ldiu      *fp,fp                ; |8313| 
                                         ; Unallocate the Frame
-        subi      48,sp                 ; |8311| 
+        subi      48,sp                 ; |8313| 
         bu        r1
 ;*      Branch Occurs to r1 
-	.endfunc	8311,000000000h,46
+	.endfunc	8313,000000000h,46
 
 
 	.sect	 ".text"
 
 	.global	_Begin_Alfat_Logging
 	.sym	_Begin_Alfat_Logging,_Begin_Alfat_Logging,32,2,0
-	.func	8313
+	.func	8315
 ;******************************************************************************
 ;* FUNCTION NAME: _Begin_Alfat_Logging                                        *
 ;*                                                                            *
@@ -62555,115 +62578,115 @@ _Begin_Alfat_Logging:
 	.sym	_c,1,24,1,32,.fake7
 	.line	1
 ;----------------------------------------------------------------------
-; 8313 | void Begin_Alfat_Logging(COIL* c) //coil 748                           
+; 8315 | void Begin_Alfat_Logging(COIL* c) //coil 748                           
 ;----------------------------------------------------------------------
         push      fp
         ldiu      sp,fp
         addi      1,sp
 	.line	2
-        sti       ar2,*+fp(1)           ; |8314| 
+        sti       ar2,*+fp(1)           ; |8316| 
 	.line	3
 ;----------------------------------------------------------------------
-; 8315 | if ( BEGIN_ALFAT_LOGGING.val == TRUE)                                  
+; 8317 | if ( BEGIN_ALFAT_LOGGING.val == TRUE)                                  
 ;----------------------------------------------------------------------
         ldp       @CL1194,DP
-        ldiu      @CL1194,ar0           ; |8315| 
-        ldiu      *ar0,r0               ; |8315| 
-        cmpi      1,r0                  ; |8315| 
-        bne       L2312                 ; |8315| 
-;*      Branch Occurs to L2312          ; |8315| 
+        ldiu      @CL1194,ar0           ; |8317| 
+        ldiu      *ar0,r0               ; |8317| 
+        cmpi      1,r0                  ; |8317| 
+        bne       L2312                 ; |8317| 
+;*      Branch Occurs to L2312          ; |8317| 
 	.line	5
 ;----------------------------------------------------------------------
-; 8317 | ALFAT_INIT_ALL = FALSE;                                                
+; 8319 | ALFAT_INIT_ALL = FALSE;                                                
 ;----------------------------------------------------------------------
         ldp       @CL1165,DP
-        ldiu      @CL1165,ar0           ; |8317| 
-        ldiu      0,r0                  ; |8317| 
-        sti       r0,*ar0               ; |8317| 
-	.line	6
-;----------------------------------------------------------------------
-; 8318 | Alfat_Init_RTC(); //clear any 'junk'                                   
-;----------------------------------------------------------------------
-        ldp       @CL1166,DP
-        ldiu      @CL1166,r0            ; |8318| 
-        callu     r0                    ; far call to _Alfat_Init_RTC	; |8318| 
-                                        ; |8318| Far Call Occurs
-	.line	7
-;----------------------------------------------------------------------
-; 8319 | ALFAT_USB_MOUNTED.val = FALSE;                                         
-;----------------------------------------------------------------------
-        ldp       @CL1138,DP
-        ldiu      @CL1138,ar0           ; |8319| 
+        ldiu      @CL1165,ar0           ; |8319| 
         ldiu      0,r0                  ; |8319| 
         sti       r0,*ar0               ; |8319| 
+	.line	6
+;----------------------------------------------------------------------
+; 8320 | Alfat_Init_RTC(); //clear any 'junk'                                   
+;----------------------------------------------------------------------
+        ldp       @CL1166,DP
+        ldiu      @CL1166,r0            ; |8320| 
+        callu     r0                    ; far call to _Alfat_Init_RTC	; |8320| 
+                                        ; |8320| Far Call Occurs
+	.line	7
+;----------------------------------------------------------------------
+; 8321 | ALFAT_USB_MOUNTED.val = FALSE;                                         
+;----------------------------------------------------------------------
+        ldp       @CL1138,DP
+        ldiu      @CL1138,ar0           ; |8321| 
+        ldiu      0,r0                  ; |8321| 
+        sti       r0,*ar0               ; |8321| 
 	.line	8
 ;----------------------------------------------------------------------
-; 8320 | ALFAT_USB_DETECTED.val = FALSE;                                        
+; 8322 | ALFAT_USB_DETECTED.val = FALSE;                                        
 ;----------------------------------------------------------------------
         ldp       @CL1139,DP
-        ldiu      @CL1139,ar0           ; |8320| 
-        sti       r0,*ar0               ; |8320| 
+        ldiu      @CL1139,ar0           ; |8322| 
+        sti       r0,*ar0               ; |8322| 
 	.line	9
 ;----------------------------------------------------------------------
-; 8321 | Timer_Insert(&TMR_ALFAT_LOG,0,TMR_action_add_if_not_exist);            
+; 8323 | Timer_Insert(&TMR_ALFAT_LOG,0,TMR_action_add_if_not_exist);            
 ;----------------------------------------------------------------------
         ldp       @CL15,DP
-        ldiu      2,r3                  ; |8321| 
-        ldiu      @CL15,r0              ; |8321| 
+        ldiu      2,r3                  ; |8323| 
+        ldiu      @CL15,r0              ; |8323| 
         ldp       @CL591,DP
-        ldiu      0,r2                  ; |8321| 
-        ldiu      @CL591,ar2            ; |8321| 
-        callu     r0                    ; far call to _Timer_Insert	; |8321| 
-                                        ; |8321| Far Call Occurs
+        ldiu      0,r2                  ; |8323| 
+        ldiu      @CL591,ar2            ; |8323| 
+        callu     r0                    ; far call to _Timer_Insert	; |8323| 
+                                        ; |8323| Far Call Occurs
 	.line	10
 ;----------------------------------------------------------------------
-; 8322 | LOG_STATUS = ALFAT_CONTINUE_LOG;                                       
-; 8324 | else                                                                   
-; 8326 | //don't insert timer                                                   
+; 8324 | LOG_STATUS = ALFAT_CONTINUE_LOG;                                       
+; 8326 | else                                                                   
+; 8328 | //don't insert timer                                                   
 ;----------------------------------------------------------------------
         ldp       @CL1140,DP
-        ldiu      @CL1140,ar0           ; |8322| 
-        ldiu      82,r0                 ; |8322| 
-        sti       r0,*ar0               ; |8322| 
-        bu        L2313                 ; |8312| 
-;*      Branch Occurs to L2313          ; |8312| 
+        ldiu      @CL1140,ar0           ; |8324| 
+        ldiu      82,r0                 ; |8324| 
+        sti       r0,*ar0               ; |8324| 
+        bu        L2313                 ; |8314| 
+;*      Branch Occurs to L2313          ; |8314| 
 L2312:        
 	.line	15
 ;----------------------------------------------------------------------
-; 8327 | LOG_STATUS = ALFAT_NO_LOG;      //DO NOT start logging on next boot    
+; 8329 | LOG_STATUS = ALFAT_NO_LOG;      //DO NOT start logging on next boot    
 ;----------------------------------------------------------------------
         ldp       @CL1140,DP
-        ldiu      @CL1140,ar0           ; |8327| 
-        ldiu      81,r0                 ; |8327| 
-        sti       r0,*ar0               ; |8327| 
+        ldiu      @CL1140,ar0           ; |8329| 
+        ldiu      81,r0                 ; |8329| 
+        sti       r0,*ar0               ; |8329| 
 	.line	16
 ;----------------------------------------------------------------------
-; 8328 | ALFAT_USB_MOUNTED.val = FALSE;                                         
+; 8330 | ALFAT_USB_MOUNTED.val = FALSE;                                         
 ;----------------------------------------------------------------------
         ldp       @CL1138,DP
-        ldiu      @CL1138,ar0           ; |8328| 
-        ldiu      0,r0                  ; |8328| 
-        sti       r0,*ar0               ; |8328| 
+        ldiu      @CL1138,ar0           ; |8330| 
+        ldiu      0,r0                  ; |8330| 
+        sti       r0,*ar0               ; |8330| 
 	.line	17
 ;----------------------------------------------------------------------
-; 8329 | ALFAT_USB_DETECTED.val = FALSE;                                        
+; 8331 | ALFAT_USB_DETECTED.val = FALSE;                                        
 ;----------------------------------------------------------------------
         ldp       @CL1139,DP
-        ldiu      @CL1139,ar0           ; |8329| 
-        sti       r0,*ar0               ; |8329| 
+        ldiu      @CL1139,ar0           ; |8331| 
+        sti       r0,*ar0               ; |8331| 
 	.line	18
 ;----------------------------------------------------------------------
-; 8330 | Timer_Insert(&TMR_ALFAT_LOG,0,TMR_action_delete);                      
-; 8331 | //Timer_Remove(&TMR_ALFAT_LOG);                                        
+; 8332 | Timer_Insert(&TMR_ALFAT_LOG,0,TMR_action_delete);                      
+; 8333 | //Timer_Remove(&TMR_ALFAT_LOG);                                        
 ;----------------------------------------------------------------------
         ldp       @CL15,DP
-        ldiu      3,r3                  ; |8330| 
-        ldiu      @CL15,r0              ; |8330| 
+        ldiu      3,r3                  ; |8332| 
+        ldiu      @CL15,r0              ; |8332| 
         ldp       @CL591,DP
-        ldiu      0,r2                  ; |8330| 
-        ldiu      @CL591,ar2            ; |8330| 
-        callu     r0                    ; far call to _Timer_Insert	; |8330| 
-                                        ; |8330| Far Call Occurs
+        ldiu      0,r2                  ; |8332| 
+        ldiu      @CL591,ar2            ; |8332| 
+        callu     r0                    ; far call to _Timer_Insert	; |8332| 
+                                        ; |8332| Far Call Occurs
 L2313:        
 	.line	21
                                         ; Begin Epilog Code
@@ -62673,14 +62696,14 @@ L2313:
         subi      3,sp
         bu        r1
 ;*      Branch Occurs to r1 
-	.endfunc	8333,000000000h,1
+	.endfunc	8335,000000000h,1
 
 
 	.sect	 ".text"
 
 	.global	_Alfat_Change_Log_Period
 	.sym	_Alfat_Change_Log_Period,_Alfat_Change_Log_Period,32,2,0
-	.func	8337
+	.func	8339
 ;******************************************************************************
 ;* FUNCTION NAME: _Alfat_Change_Log_Period                                    *
 ;*                                                                            *
@@ -62698,251 +62721,251 @@ _Alfat_Change_Log_Period:
 	.sym	_preset,2,4,1,32
 	.line	1
 ;----------------------------------------------------------------------
-; 8337 | void Alfat_Change_Log_Period(COIL* c)                                  
+; 8339 | void Alfat_Change_Log_Period(COIL* c)                                  
 ;----------------------------------------------------------------------
         push      fp
         ldiu      sp,fp
         addi      2,sp
 	.line	2
 ;----------------------------------------------------------------------
-; 8339 | int preset;                                                            
-; 8342 | // check bounds                                                        
+; 8341 | int preset;                                                            
+; 8344 | // check bounds                                                        
 ;----------------------------------------------------------------------
-        sti       ar2,*+fp(1)           ; |8338| 
+        sti       ar2,*+fp(1)           ; |8340| 
 	.line	7
 ;----------------------------------------------------------------------
-; 8343 | if      ( REG_ALFAT_LOG_PERIOD.val > REG_ALFAT_LOG_PERIOD.bound_hi_set)
+; 8345 | if      ( REG_ALFAT_LOG_PERIOD.val > REG_ALFAT_LOG_PERIOD.bound_hi_set)
 ;     |          //  maximum bound                                             
 ;----------------------------------------------------------------------
         ldp       @CL1196,DP
-        ldiu      @CL1196,ar0           ; |8343| 
+        ldiu      @CL1196,ar0           ; |8345| 
         ldp       @CL1195,DP
-        ldiu      @CL1195,ar1           ; |8343| 
-        cmpf3     *ar0,*ar1             ; |8343| 
-        ble       L2317                 ; |8343| 
-;*      Branch Occurs to L2317          ; |8343| 
+        ldiu      @CL1195,ar1           ; |8345| 
+        cmpf3     *ar0,*ar1             ; |8345| 
+        ble       L2317                 ; |8345| 
+;*      Branch Occurs to L2317          ; |8345| 
 	.line	8
 ;----------------------------------------------------------------------
-; 8344 | REG_ALFAT_LOG_PERIOD.val = REG_ALFAT_LOG_PERIOD.bound_hi_set;          
+; 8346 | REG_ALFAT_LOG_PERIOD.val = REG_ALFAT_LOG_PERIOD.bound_hi_set;          
 ;----------------------------------------------------------------------
         ldp       @CL1196,DP
-        ldiu      @CL1196,ar1           ; |8344| 
-        ldp       @CL1195,DP
-        ldiu      @CL1195,ar0           ; |8344| 
-        ldfu      *ar1,f0               ; |8344| 
-        stf       f0,*ar0               ; |8344| 
-        bu        L2319                 ; |8336| 
-;*      Branch Occurs to L2319          ; |8336| 
-L2317:        
-	.line	9
-;----------------------------------------------------------------------
-; 8345 | else if ( REG_ALFAT_LOG_PERIOD.val < REG_ALFAT_LOG_PERIOD.bound_lo_set)
-;     |  //  minimum bound                                                     
-;----------------------------------------------------------------------
-        ldp       @CL1197,DP
-        ldiu      @CL1197,ar1           ; |8345| 
-        ldp       @CL1195,DP
-        ldiu      @CL1195,ar0           ; |8345| 
-        cmpf3     *ar1,*ar0             ; |8345| 
-        bge       L2319                 ; |8345| 
-;*      Branch Occurs to L2319          ; |8345| 
-	.line	10
-;----------------------------------------------------------------------
-; 8346 | REG_ALFAT_LOG_PERIOD.val = REG_ALFAT_LOG_PERIOD.bound_lo_set;          
-;----------------------------------------------------------------------
-        ldp       @CL1197,DP
-        ldiu      @CL1197,ar1           ; |8346| 
+        ldiu      @CL1196,ar1           ; |8346| 
         ldp       @CL1195,DP
         ldiu      @CL1195,ar0           ; |8346| 
         ldfu      *ar1,f0               ; |8346| 
         stf       f0,*ar0               ; |8346| 
+        bu        L2319                 ; |8338| 
+;*      Branch Occurs to L2319          ; |8338| 
+L2317:        
+	.line	9
+;----------------------------------------------------------------------
+; 8347 | else if ( REG_ALFAT_LOG_PERIOD.val < REG_ALFAT_LOG_PERIOD.bound_lo_set)
+;     |  //  minimum bound                                                     
+;----------------------------------------------------------------------
+        ldp       @CL1197,DP
+        ldiu      @CL1197,ar1           ; |8347| 
+        ldp       @CL1195,DP
+        ldiu      @CL1195,ar0           ; |8347| 
+        cmpf3     *ar1,*ar0             ; |8347| 
+        bge       L2319                 ; |8347| 
+;*      Branch Occurs to L2319          ; |8347| 
+	.line	10
+;----------------------------------------------------------------------
+; 8348 | REG_ALFAT_LOG_PERIOD.val = REG_ALFAT_LOG_PERIOD.bound_lo_set;          
+;----------------------------------------------------------------------
+        ldp       @CL1197,DP
+        ldiu      @CL1197,ar1           ; |8348| 
+        ldp       @CL1195,DP
+        ldiu      @CL1195,ar0           ; |8348| 
+        ldfu      *ar1,f0               ; |8348| 
+        stf       f0,*ar0               ; |8348| 
 L2319:        
 	.line	11
 ;----------------------------------------------------------------------
-; 8347 | if (REG_ALFAT_LOG_PERIOD.val < 2) // mandatory minimum 2 seconds       
+; 8349 | if (REG_ALFAT_LOG_PERIOD.val < 2) // mandatory minimum 2 seconds       
 ;----------------------------------------------------------------------
         ldp       @CL1195,DP
-        ldiu      @CL1195,ar0           ; |8347| 
-        ldfu      2.0000000000e+00,f0   ; |8347| 
-        cmpf3     f0,*ar0               ; |8347| 
-        bge       L2321                 ; |8347| 
-;*      Branch Occurs to L2321          ; |8347| 
+        ldiu      @CL1195,ar0           ; |8349| 
+        ldfu      2.0000000000e+00,f0   ; |8349| 
+        cmpf3     f0,*ar0               ; |8349| 
+        bge       L2321                 ; |8349| 
+;*      Branch Occurs to L2321          ; |8349| 
 	.line	12
 ;----------------------------------------------------------------------
-; 8348 | REG_ALFAT_LOG_PERIOD.val = 2;                                          
+; 8350 | REG_ALFAT_LOG_PERIOD.val = 2;                                          
 ;----------------------------------------------------------------------
         ldp       @CL1195,DP
-        ldiu      @CL1195,ar0           ; |8348| 
-        ldfu      2.0000000000e+00,f0   ; |8348| 
-        stf       f0,*ar0               ; |8348| 
+        ldiu      @CL1195,ar0           ; |8350| 
+        ldfu      2.0000000000e+00,f0   ; |8350| 
+        stf       f0,*ar0               ; |8350| 
 L2321:        
 	.line	16
 ;----------------------------------------------------------------------
-; 8352 | LOG_STATUS = ALFAT_NO_LOG;      //DO NOT start logging on next boot    
+; 8354 | LOG_STATUS = ALFAT_NO_LOG;      //DO NOT start logging on next boot    
 ;----------------------------------------------------------------------
         ldp       @CL1140,DP
-        ldiu      @CL1140,ar0           ; |8352| 
-        ldiu      81,r0                 ; |8352| 
-        sti       r0,*ar0               ; |8352| 
+        ldiu      @CL1140,ar0           ; |8354| 
+        ldiu      81,r0                 ; |8354| 
+        sti       r0,*ar0               ; |8354| 
 	.line	17
 ;----------------------------------------------------------------------
-; 8353 | ALFAT_USB_MOUNTED.val = FALSE;                                         
+; 8355 | ALFAT_USB_MOUNTED.val = FALSE;                                         
 ;----------------------------------------------------------------------
         ldp       @CL1138,DP
-        ldiu      @CL1138,ar0           ; |8353| 
-        ldiu      0,r0                  ; |8353| 
-        sti       r0,*ar0               ; |8353| 
+        ldiu      @CL1138,ar0           ; |8355| 
+        ldiu      0,r0                  ; |8355| 
+        sti       r0,*ar0               ; |8355| 
 	.line	18
 ;----------------------------------------------------------------------
-; 8354 | ALFAT_USB_DETECTED.val = FALSE;                                        
+; 8356 | ALFAT_USB_DETECTED.val = FALSE;                                        
 ;----------------------------------------------------------------------
         ldp       @CL1139,DP
-        ldiu      @CL1139,ar0           ; |8354| 
-        sti       r0,*ar0               ; |8354| 
+        ldiu      @CL1139,ar0           ; |8356| 
+        sti       r0,*ar0               ; |8356| 
 	.line	19
 ;----------------------------------------------------------------------
-; 8355 | Timer_Insert(&TMR_ALFAT_LOG,0,TMR_action_delete); //remove current time
+; 8357 | Timer_Insert(&TMR_ALFAT_LOG,0,TMR_action_delete); //remove current time
 ;     | r pkt, if it exists                                                    
 ;----------------------------------------------------------------------
         ldp       @CL15,DP
-        ldiu      3,r3                  ; |8355| 
-        ldiu      @CL15,r0              ; |8355| 
+        ldiu      3,r3                  ; |8357| 
+        ldiu      @CL15,r0              ; |8357| 
         ldp       @CL591,DP
-        ldiu      0,r2                  ; |8355| 
-        ldiu      @CL591,ar2            ; |8355| 
-        callu     r0                    ; far call to _Timer_Insert	; |8355| 
-                                        ; |8355| Far Call Occurs
+        ldiu      0,r2                  ; |8357| 
+        ldiu      @CL591,ar2            ; |8357| 
+        callu     r0                    ; far call to _Timer_Insert	; |8357| 
+                                        ; |8357| Far Call Occurs
 	.line	21
 ;----------------------------------------------------------------------
-; 8357 | if ( BEGIN_ALFAT_LOGGING.val == TRUE)                                  
-; 8359 |         //adjust for timer period                                      
+; 8359 | if ( BEGIN_ALFAT_LOGGING.val == TRUE)                                  
+; 8361 |         //adjust for timer period                                      
 ;----------------------------------------------------------------------
         ldp       @CL1194,DP
-        ldiu      @CL1194,ar0           ; |8357| 
-        ldiu      *ar0,r0               ; |8357| 
-        cmpi      1,r0                  ; |8357| 
-        bne       L2325                 ; |8357| 
-;*      Branch Occurs to L2325          ; |8357| 
+        ldiu      @CL1194,ar0           ; |8359| 
+        ldiu      *ar0,r0               ; |8359| 
+        cmpi      1,r0                  ; |8359| 
+        bne       L2325                 ; |8359| 
+;*      Branch Occurs to L2325          ; |8359| 
 	.line	24
 ;----------------------------------------------------------------------
-; 8360 | preset = ceil(REG_ALFAT_LOG_PERIOD.val/TIME0);                         
+; 8362 | preset = ceil(REG_ALFAT_LOG_PERIOD.val/TIME0);                         
 ;----------------------------------------------------------------------
         ldp       @CL1195,DP
-        ldiu      @CL1195,ar1           ; |8360| 
+        ldiu      @CL1195,ar1           ; |8362| 
         ldp       @CL1198,DP
-        ldiu      @CL1198,ar0           ; |8360| 
+        ldiu      @CL1198,ar0           ; |8362| 
 
-        ldfu      *ar0,f1               ; |8360| 
-||      ldfu      *ar1,f0               ; |8360| 
+        ldfu      *ar0,f1               ; |8362| 
+||      ldfu      *ar1,f0               ; |8362| 
 
-        call      DIV_F30               ; |8360| 
-                                        ; |8360| Call Occurs
+        call      DIV_F30               ; |8362| 
+                                        ; |8362| Call Occurs
         ldp       @CL1199,DP
-        ldiu      @CL1199,r1            ; |8360| 
-        ldfu      f0,f2                 ; |8360| 
-        callu     r1                    ; far call to _ceil	; |8360| 
-                                        ; |8360| Far Call Occurs
-        negf      f0,f2                 ; |8360| 
-        fix       f0,r1                 ; |8360| 
-        fix       f2,r0                 ; |8360| 
-        negi      r0,r0                 ; |8360| 
-        ldile     r0,r1                 ; |8360| 
-        sti       r1,*+fp(2)            ; |8360| 
+        ldiu      @CL1199,r1            ; |8362| 
+        ldfu      f0,f2                 ; |8362| 
+        callu     r1                    ; far call to _ceil	; |8362| 
+                                        ; |8362| Far Call Occurs
+        negf      f0,f2                 ; |8362| 
+        fix       f0,r1                 ; |8362| 
+        fix       f2,r0                 ; |8362| 
+        negi      r0,r0                 ; |8362| 
+        ldile     r0,r1                 ; |8362| 
+        sti       r1,*+fp(2)            ; |8362| 
 	.line	26
 ;----------------------------------------------------------------------
-; 8362 | if (preset<=0)                                                         
+; 8364 | if (preset<=0)                                                         
 ;----------------------------------------------------------------------
         ldiu      r1,r0
-        cmpi      0,r0                  ; |8362| 
-        bgt       L2324                 ; |8362| 
-;*      Branch Occurs to L2324          ; |8362| 
+        cmpi      0,r0                  ; |8364| 
+        bgt       L2324                 ; |8364| 
+;*      Branch Occurs to L2324          ; |8364| 
 	.line	27
 ;----------------------------------------------------------------------
-; 8363 | preset = 1;                                                            
-; 8364 | //change the timer period                                              
+; 8365 | preset = 1;                                                            
+; 8366 | //change the timer period                                              
 ;----------------------------------------------------------------------
-        ldiu      1,r0                  ; |8363| 
-        sti       r0,*+fp(2)            ; |8363| 
+        ldiu      1,r0                  ; |8365| 
+        sti       r0,*+fp(2)            ; |8365| 
 L2324:        
 	.line	29
 ;----------------------------------------------------------------------
-; 8365 | TMR_ALFAT_LOG.t                         = preset*TIME0;                
+; 8367 | TMR_ALFAT_LOG.t                         = preset*TIME0;                
 ;----------------------------------------------------------------------
         ldp       @CL1198,DP
-        ldiu      @CL1198,ar0           ; |8365| 
+        ldiu      @CL1198,ar0           ; |8367| 
         ldp       @CL1200,DP
-        float     *+fp(2),f0            ; |8365| 
-        ldiu      @CL1200,ar1           ; |8365| 
-        mpyf3     *ar0,f0,f0            ; |8365| 
-        stf       f0,*ar1               ; |8365| 
+        float     *+fp(2),f0            ; |8367| 
+        ldiu      @CL1200,ar1           ; |8367| 
+        mpyf3     *ar0,f0,f0            ; |8367| 
+        stf       f0,*ar1               ; |8367| 
 	.line	30
 ;----------------------------------------------------------------------
-; 8366 | TMR_ALFAT_LOG.countdown         = preset;                              
+; 8368 | TMR_ALFAT_LOG.countdown         = preset;                              
 ;----------------------------------------------------------------------
         ldp       @CL1201,DP
-        ldiu      @CL1201,ar0           ; |8366| 
-        ldiu      *+fp(2),r0            ; |8366| 
-        sti       r0,*ar0               ; |8366| 
+        ldiu      @CL1201,ar0           ; |8368| 
+        ldiu      *+fp(2),r0            ; |8368| 
+        sti       r0,*ar0               ; |8368| 
 	.line	31
 ;----------------------------------------------------------------------
-; 8367 | TMR_ALFAT_LOG.preset_time       = preset;                              
+; 8369 | TMR_ALFAT_LOG.preset_time       = preset;                              
 ;----------------------------------------------------------------------
         ldp       @CL1202,DP
-        ldiu      @CL1202,ar0           ; |8367| 
-        ldiu      *+fp(2),r0            ; |8367| 
-        sti       r0,*ar0               ; |8367| 
+        ldiu      @CL1202,ar0           ; |8369| 
+        ldiu      *+fp(2),r0            ; |8369| 
+        sti       r0,*ar0               ; |8369| 
 	.line	33
 ;----------------------------------------------------------------------
-; 8369 | ALFAT_INIT_ALL = FALSE;                                                
+; 8371 | ALFAT_INIT_ALL = FALSE;                                                
 ;----------------------------------------------------------------------
         ldp       @CL1165,DP
-        ldiu      @CL1165,ar0           ; |8369| 
-        ldiu      0,r0                  ; |8369| 
-        sti       r0,*ar0               ; |8369| 
-	.line	34
-;----------------------------------------------------------------------
-; 8370 | Alfat_Init_RTC(); //clear any 'junk'                                   
-;----------------------------------------------------------------------
-        ldp       @CL1166,DP
-        ldiu      @CL1166,r0            ; |8370| 
-        callu     r0                    ; far call to _Alfat_Init_RTC	; |8370| 
-                                        ; |8370| Far Call Occurs
-	.line	35
-;----------------------------------------------------------------------
-; 8371 | ALFAT_USB_MOUNTED.val = FALSE;                                         
-;----------------------------------------------------------------------
-        ldp       @CL1138,DP
-        ldiu      @CL1138,ar0           ; |8371| 
+        ldiu      @CL1165,ar0           ; |8371| 
         ldiu      0,r0                  ; |8371| 
         sti       r0,*ar0               ; |8371| 
+	.line	34
+;----------------------------------------------------------------------
+; 8372 | Alfat_Init_RTC(); //clear any 'junk'                                   
+;----------------------------------------------------------------------
+        ldp       @CL1166,DP
+        ldiu      @CL1166,r0            ; |8372| 
+        callu     r0                    ; far call to _Alfat_Init_RTC	; |8372| 
+                                        ; |8372| Far Call Occurs
+	.line	35
+;----------------------------------------------------------------------
+; 8373 | ALFAT_USB_MOUNTED.val = FALSE;                                         
+;----------------------------------------------------------------------
+        ldp       @CL1138,DP
+        ldiu      @CL1138,ar0           ; |8373| 
+        ldiu      0,r0                  ; |8373| 
+        sti       r0,*ar0               ; |8373| 
 	.line	36
 ;----------------------------------------------------------------------
-; 8372 | ALFAT_USB_DETECTED.val = FALSE;                                        
+; 8374 | ALFAT_USB_DETECTED.val = FALSE;                                        
 ;----------------------------------------------------------------------
         ldp       @CL1139,DP
-        ldiu      @CL1139,ar0           ; |8372| 
-        sti       r0,*ar0               ; |8372| 
+        ldiu      @CL1139,ar0           ; |8374| 
+        sti       r0,*ar0               ; |8374| 
 	.line	37
 ;----------------------------------------------------------------------
-; 8373 | Timer_Insert(&TMR_ALFAT_LOG,0,TMR_action_add_if_not_exist); //insert ti
+; 8375 | Timer_Insert(&TMR_ALFAT_LOG,0,TMR_action_add_if_not_exist); //insert ti
 ;     | mer pkt into queue                                                     
 ;----------------------------------------------------------------------
         ldp       @CL15,DP
-        ldiu      @CL15,r0              ; |8373| 
+        ldiu      @CL15,r0              ; |8375| 
         ldp       @CL591,DP
-        ldiu      2,r3                  ; |8373| 
-        ldiu      0,r2                  ; |8373| 
-        ldiu      @CL591,ar2            ; |8373| 
-        callu     r0                    ; far call to _Timer_Insert	; |8373| 
-                                        ; |8373| Far Call Occurs
+        ldiu      2,r3                  ; |8375| 
+        ldiu      0,r2                  ; |8375| 
+        ldiu      @CL591,ar2            ; |8375| 
+        callu     r0                    ; far call to _Timer_Insert	; |8375| 
+                                        ; |8375| Far Call Occurs
 	.line	38
 ;----------------------------------------------------------------------
-; 8374 | LOG_STATUS = ALFAT_CONTINUE_LOG;                                       
+; 8376 | LOG_STATUS = ALFAT_CONTINUE_LOG;                                       
 ;----------------------------------------------------------------------
         ldp       @CL1140,DP
-        ldiu      @CL1140,ar0           ; |8374| 
-        ldiu      82,r0                 ; |8374| 
-        sti       r0,*ar0               ; |8374| 
+        ldiu      @CL1140,ar0           ; |8376| 
+        ldiu      82,r0                 ; |8376| 
+        sti       r0,*ar0               ; |8376| 
 L2325:        
 	.line	40
                                         ; Begin Epilog Code
@@ -62952,7 +62975,7 @@ L2325:
         subi      4,sp
         bu        r1
 ;*      Branch Occurs to r1 
-	.endfunc	8376,000000000h,2
+	.endfunc	8378,000000000h,2
 
 
 
@@ -65614,8 +65637,8 @@ SL15:	.byte	"U0:",92,"PDI",92,"Log_%i-%i-20%i.csv",10,0
 	.field  	_BCD_to_Int,32
 	.field  	_ALFAT_LOG_DAY,32
 	.field  	_Alfat_Print_Time_Date,32
-	.field  	SL12,32
 	.field  	_Alfat_Map_Var,32
+	.field  	SL12,32
 	.field  	_ALFAT_INIT_ALL,32
 	.field  	_Alfat_Init_RTC,32
 	.field  	_Alfat_Set_Time_Date,32

@@ -316,13 +316,13 @@ const int HART_DV_Table[]={
 							(int)&REG_STREAM_SELECT,
 							(int)&REG_SALINITY,								//110
 					
-							(int)&CCM_VESSEL_LEVEL[0],
+							(int)&CCM_VESSEL_LEVEL[0],      // 111
 							(int)&CCM_VESSEL_LEVEL[1],
-							(int)&CCM_SETPOINT_LEVEL[0],
+							(int)&CCM_SETPOINT_LEVEL[0],    // 113
 							(int)&CCM_SETPOINT_LEVEL[1],
-							(int)&CCM_VESSEL_PRESSURE[0],
-							(int)&CCM_VESSEL_PRESSURE[1],
-							(int)&CCM_SETPOINT_PRESSURE[0],
+							(int)&CCM_VESSEL_PRESSURE[0],   // 115
+							(int)&CCM_VESSEL_PRESSURE[1],   
+							(int)&CCM_SETPOINT_PRESSURE[0], // 117
 							(int)&CCM_SETPOINT_PRESSURE[1],
 					
 							(int)&VARUSER[0],

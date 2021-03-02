@@ -7521,37 +7521,30 @@ void Alfat_Log_Vars(void)
 		strcat(ALFAT_TX,"Vref. Oil,Water Freq,Vref.Water,FC1 Gross Oil,FC1 Gross Water,\n");
 		Alfat_Write(ALFAT_HANDLE_1,ALFAT_AUTO_LENGTH,ALFAT_NO_LF);
 		
-		
-		//Alfat_Wait_For_Write
 		Alfat_Wait_For_Write();
 
 		sprintf(ALFAT_TX,"FC1 Oil Flow,FC1 Water Flow,Analog Output 2%%,Analog Output 3%%,FC1 Pressure,");
 		strcat(ALFAT_TX,"FC1 Density,Gas Flow,Gas Total,Gas Density,Stream Select,Salinity,\n");
 		Alfat_Write(ALFAT_HANDLE_1,ALFAT_AUTO_LENGTH,ALFAT_NO_LF);
 		
-		//Alfat_Wait_For_Write
 		Alfat_Wait_For_Write();
-		
 		
 		sprintf(ALFAT_TX,"CCM Vessel 1 Level,CCM Vessel 1 Level Set Point,CCM Vessel 1 Pressure,");
 		strcat(ALFAT_TX,"CCM Vessel 1 Pressure Set Point,Purge status,Test status,Drive gain liquid MM,\n");
 		Alfat_Write(ALFAT_HANDLE_1,ALFAT_AUTO_LENGTH,ALFAT_NO_LF);
 		
-		//Alfat_Wait_For_Write
 		Alfat_Wait_For_Write();
 		
 		sprintf(ALFAT_TX,"Drive gain gas MM,Water Cut by density,Gas P,Gas I,Gas D,Liquid P,");
 		strcat(ALFAT_TX,"Liquid I,Liquid D,Heuristic Delta T,Heuristic Box Car,\n");
 		Alfat_Write(ALFAT_HANDLE_1,ALFAT_AUTO_LENGTH,ALFAT_NO_LF);
 		
-		//Alfat_Wait_For_Write
 		Alfat_Wait_For_Write();
 		
 		sprintf(ALFAT_TX,"Bubble,Pattern,FC1 Water Density @ST,FC1 Water Density @Process,");
 		strcat(ALFAT_TX,"FC1 Oil Density @ST,FC1 Oil Density @Process\n");
 		Alfat_Write(ALFAT_HANDLE_1,ALFAT_AUTO_LENGTH,ALFAT_LINEFEED);
 		
-		//Alfat_Wait_For_Write
 		Alfat_Wait_For_Write();
 		
 		/* Add: COILS
@@ -7593,23 +7586,26 @@ void Alfat_Log_Vars(void)
 		
 		_GIEP;
 		NOPS;
-		log_var[0] = HART_Lookup(0,resp,(int*)&HART_DV_Table);
-		sprintf(ALFAT_TX,"%g,",log_var[0]->val);
-		
 
-		for (j=1; j < 22; j++) //write first half
+        /// capture the initial object
+		//log_var[0] = HART_Lookup(0,resp,(int*)&HART_DV_Table);
+		i_mapped = Alfat_Map_Var(0);                               // BY DKOH MAR 2, 2021 - BUGFIX#104
+		log_var[0] = HART_Lookup(i_mapped,resp,(int*)&HART_DV_Table); // BY DKOH MAR 2, 2021 - BUGFIX#104
+		sprintf(ALFAT_TX,"%g,",log_var[0]->val); 
+
+		for (j=1; j < 22; j++) // write first half
 		{
 			i_mapped = Alfat_Map_Var(j);
 
-			//i_mapped =0;
+			if (i_mapped < 0) break;
 			
-			if (i_mapped < 0)
-					break;
-			
-			log_var[i_mapped] = HART_Lookup(i_mapped,resp,(int*)&HART_DV_Table);
-			sprintf(entry,"%g,",log_var[i_mapped]->val);
+			//log_var[i_mapped] = HART_Lookup(i_mapped,resp,(int*)&HART_DV_Table);
+			//sprintf(entry,"%g,",log_var[i_mapped]->val);
+			log_var[j] = HART_Lookup(i_mapped,resp,(int*)&HART_DV_Table); // BY DKOH MAR 2, 2021 - BUGFIX#105
+			sprintf(entry,"%g,",log_var[j]->val); // BY DKOH MAR 2, 2021 - BUGFIX#105
 			strcat(ALFAT_TX,entry);
 		}
+
 		GIEP;
 	
 		strcat(ALFAT_TX,"\n");
@@ -7619,24 +7615,28 @@ void Alfat_Log_Vars(void)
 		//Alfat_Wait_For_Write 
 		Alfat_Wait_For_Write();
 		
-		
 		_GIEP;
 		NOPS;
-		log_var[22] = HART_Lookup(22,resp,(int*)&HART_DV_Table);
-		sprintf(ALFAT_TX,"%g,",log_var[22]->val);
+
+
+		//log_var[22] = HART_Lookup(22,resp,(int*)&HART_DV_Table);  // BY DKOH MAR 2, 2021 - BUGFIX#104
+		i_mapped = Alfat_Map_Var(22);                               // BY DKOH MAR 2, 2021 - BUGFIX#104
+		log_var[22] = HART_Lookup(i_mapped,resp,(int*)&HART_DV_Table); // BY DKOH MAR 2, 2021 - BUGFIX#104
+		sprintf(ALFAT_TX,"%g,",log_var[22]->val); 
+
 		for (j=23; j < 44; j++) //write second half
 		{
 			i_mapped = Alfat_Map_Var(j);
-
-			//i_mapped =0;
 			
-			if (i_mapped < 0)
-					break;
+			if (i_mapped < 0) break;
 			
-			log_var[i_mapped] = HART_Lookup(i_mapped,resp,(int*)&HART_DV_Table);
-			sprintf(entry,"%g,",log_var[i_mapped]->val);
+			//log_var[i_mapped] = HART_Lookup(i_mapped,resp,(int*)&HART_DV_Table);
+			//sprintf(entry,"%g,",log_var[i_mapped]->val);
+			log_var[j] = HART_Lookup(i_mapped,resp,(int*)&HART_DV_Table); // BY DKOH MAR 2, 2021 - BUGFIX#105
+			sprintf(entry,"%g,",log_var[j]->val); // BY DKOH MAR 2, 2021 - BUGFIX#105
 			strcat(ALFAT_TX,entry);
 		}
+
 		GIEP;
 	
 		strcat(ALFAT_TX,"\n");
@@ -8268,8 +8268,10 @@ int Alfat_Map_Var(int index){
 		12,		//FC1 Gross Water
 		14,		//FC1 Oil Flow					//10
 		15,		//FC1 Wate Flow
-		21,		//Analog input 2 %
-		23,		//Analog input 3%
+		//21,		//Analog input 2% // DKOH BUG#104 FEB 24, 2021
+		//23,		//Analog input 3% // DKOH BUG#104 FEB 24, 2021
+		29,		//Analog output 2% // DKOH BUG#104 FEB 24, 2021
+		31,		//Analog output 3% // DKOH BUG#104 FEB 24, 2021
 		49,		//FC1 Pressure
 		51,		//FC1 Density
 		106,	//Gas Flow

@@ -2,8 +2,8 @@
 RELEASE SUMMARY
 -----------------------------------------------------
 PRODUCT      : EEA
-VERSION      : 6.15.06
-RELEASE DATE : 2020-10-09T12:08:54-05:00
+VERSION      : 6.15.08
+RELEASE DATE : 2021-03-02T13:04:18-06:00
 -----------------------------------------------------
 
 
@@ -11,15 +11,17 @@ RELEASE DATE : 2020-10-09T12:08:54-05:00
 -----------------------------------------------------
 BUG FIX & CHANGES
 -----------------------------------------------------
-Bug86: Add COILs for RELAY1_REVERT AND RELAY2_REVERT
+BUG[103]: MSVE command broken for the Force Phase screen (http://10.10.1.51/bugzilla/show_bug.cgi?id=103)
+BUG[104]: Incorrect data capturing in USB data logging (http://10.10.1.51/bugzilla/show_bug.cgi?id=104)
+BUG[105]: Incorrect data logging array index (http://10.10.1.51/bugzilla/show_bug.cgi?id=105) 
 
 
 
 -----------------------------------------------------
 MD5 HASHES
 -----------------------------------------------------
-7180748e62e1704150db400b23108032  pdi.out
-826577f28e6a080d7b2b4199a6d9c7d2  pdi.map
-e3731347f7ccd2e0bfe6f0d124e4c540  pdi.i0
+5e19b0a09c81b5d061ac3bb35a526d63  pdi.out
+171161b5f35bace747215c25d68608b3  pdi.map
+c75a0c3c12ae3d5d1891a38a47c19c8a  pdi.i0
 c9af1350551b69512e31f3da01cda861  PDI_BOOT.OUT
 2f74774c6718bb39378737968346f406  PDI_BOOT.I0

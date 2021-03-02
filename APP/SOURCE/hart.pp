@@ -1,4 +1,4 @@
-#line 120 "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\GLBLS.H"
+#line 122 "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\GLBLS.H"
 extern const char* copyright;
 extern const char* credit;
 #line 8 "G:\workspace\EEA\V615\INCLUDE\stdarg.h"
@@ -1000,13 +1000,13 @@ extern int* vect_m;
 extern unsigned int TOIEEE(float v);
 extern float FMIEEE(unsigned int v);
 
-#line 167 "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\GLBLS.H"
+#line 169 "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\GLBLS.H"
 extern unsigned int CLOCK;
 extern BOOL LED_GREEN;
 extern BOOL OSWITCH;
 extern void c_int00(void);
 
-#line 211
+#line 213
 extern unsigned int ESN_USER[5];
 extern unsigned int ESN_MFGR[5];
 
@@ -1416,7 +1416,7 @@ extern float stream_delta_temp[60];
 
 
  
-#line 641
+#line 643
 #pragma DATA_SECTION(OIL_PHASE_ONLY_ENABLE,"CFG")
 extern float OIL_PHASE_ONLY_ENABLE[60];
 #pragma DATA_SECTION(WATER_PHASE_ONLY_ENABLE,"CFG")
@@ -1599,7 +1599,7 @@ extern BOOL BOXCAR_RESET;
 
 
  
-#line 830
+#line 832
 #pragma DATA_SECTION(REG_CCM_TEST_STAT,"CFG")         
 extern VAR REG_CCM_TEST_STAT;                         
 
@@ -1773,11 +1773,11 @@ extern VAR EXTENDED_FW_VERSION_ENABLE;
 #pragma DATA_SECTION(GAS_ENTRAINED,"CFG")
 extern COIL GAS_ENTRAINED;  
  
-#line 1014
+#line 1016
 #pragma DATA_SECTION(GAS_ENTRAINED_DENS_DETECT,"CFG")
 extern COIL GAS_ENTRAINED_DENS_DETECT;   
  
-#line 1030
+#line 1032
 enum Pulse_Input_Type
 {
 	PULSE_GAS_TEMP 		= 1,
@@ -1800,7 +1800,7 @@ enum Pulse_Input_Type
 
 
 
-#line 1065
+#line 1067
 #pragma DATA_SECTION(boxcar_expire_val,"CFG")
 extern VAR boxcar_expire_val;
 
@@ -2103,7 +2103,7 @@ typedef struct 	{
 	    		} CORIOLIS;
 extern CORIOLIS COR[5];
 
-#line 1399
+#line 1401
 typedef struct 	{
 					float	p_delta;
 					float	p_static;
@@ -2269,7 +2269,7 @@ extern float compatibility_dummy;
 
 
 		 
-#line 1595
+#line 1597
 #pragma DATA_SECTION(ALFAT_RX,"internal_RAM")
 extern	char	ALFAT_RX[128]; 
 
@@ -2368,7 +2368,7 @@ extern VAR Hsalt_Min_WC;
 #pragma DATA_SECTION(AVG_RESET,"CFG")
 extern COIL AVG_RESET;
 
-#line 1697
+#line 1699
 extern void Setup_Basics(void);
 
 #line 44 "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\HART.H"
@@ -2638,13 +2638,13 @@ const int HART_DV_Table[]={
 							(int)&REG_STREAM_SELECT,
 							(int)&REG_SALINITY,								
 					
-							(int)&CCM_VESSEL_LEVEL[0],
+							(int)&CCM_VESSEL_LEVEL[0],      
 							(int)&CCM_VESSEL_LEVEL[1],
-							(int)&CCM_SETPOINT_LEVEL[0],
+							(int)&CCM_SETPOINT_LEVEL[0],    
 							(int)&CCM_SETPOINT_LEVEL[1],
-							(int)&CCM_VESSEL_PRESSURE[0],
-							(int)&CCM_VESSEL_PRESSURE[1],
-							(int)&CCM_SETPOINT_PRESSURE[0],
+							(int)&CCM_VESSEL_PRESSURE[0],   
+							(int)&CCM_VESSEL_PRESSURE[1],   
+							(int)&CCM_SETPOINT_PRESSURE[0], 
 							(int)&CCM_SETPOINT_PRESSURE[1],
 					
 							(int)&VARUSER[0],

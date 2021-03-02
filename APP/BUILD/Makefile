@@ -1,7 +1,17 @@
-VER = 6.15.06
-VER2 = 6_15_06
+VER = 6.15.08
+VER2 = 6_15_08
 
-BUGS = "Bug86: Add COILs for RELAY1_REVERT AND RELAY2_REVERT"
+BUG_0 = "BUG[103]: MSVE command broken for the Force Phase screen (http://10.10.1.51/bugzilla/show_bug.cgi?id=103)\n"
+BUG_1 = "BUG[104]: Incorrect data capturing in USB data logging (http://10.10.1.51/bugzilla/show_bug.cgi?id=104)\n"
+BUG_2 = "BUG[105]: Incorrect data logging array index (http://10.10.1.51/bugzilla/show_bug.cgi?id=105)" 
+BUG_3 = ""
+BUG_4 = ""
+BUG_5 = ""
+BUG_6 = ""
+BUG_7 = ""
+BUG_8 = ""
+BUG_9 = ""
+BUGS = $(BUG_0)$(BUG_1)$(BUG_2)$(BUG_3)$(BUG_4)$(BUG_5)$(BUG_6)$(BUG_7)$(BUG_8)$(BUG_9)
 
 ##############################################
 ##############################################

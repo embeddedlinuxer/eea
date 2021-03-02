@@ -1,4 +1,4 @@
-#line 120 "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\GLBLS.H"
+#line 122 "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\GLBLS.H"
 extern const char* copyright;
 extern const char* credit;
 #line 8 "G:\workspace\EEA\V615\INCLUDE\stdarg.h"
@@ -1000,13 +1000,13 @@ typedef struct 	{
 extern unsigned int TOIEEE(float v);
 extern float FMIEEE(unsigned int v);
 
-#line 167 "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\GLBLS.H"
+#line 169 "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\GLBLS.H"
 extern unsigned int CLOCK;
 extern BOOL LED_GREEN;
 extern BOOL OSWITCH;
 extern void c_int00(void);
 
-#line 211
+#line 213
 extern unsigned int ESN_USER[5];
 extern unsigned int ESN_MFGR[5];
 
@@ -1416,7 +1416,7 @@ extern float stream_delta_temp[60];
 
 
  
-#line 641
+#line 643
 #pragma DATA_SECTION(OIL_PHASE_ONLY_ENABLE,"CFG")
 extern float OIL_PHASE_ONLY_ENABLE[60];
 #pragma DATA_SECTION(WATER_PHASE_ONLY_ENABLE,"CFG")
@@ -1599,7 +1599,7 @@ extern BOOL BOXCAR_RESET;
 
 
  
-#line 830
+#line 832
 #pragma DATA_SECTION(REG_CCM_TEST_STAT,"CFG")         
 extern VAR REG_CCM_TEST_STAT;                         
 
@@ -1773,11 +1773,11 @@ extern VAR EXTENDED_FW_VERSION_ENABLE;
 #pragma DATA_SECTION(GAS_ENTRAINED,"CFG")
 extern COIL GAS_ENTRAINED;  
  
-#line 1014
+#line 1016
 #pragma DATA_SECTION(GAS_ENTRAINED_DENS_DETECT,"CFG")
 extern COIL GAS_ENTRAINED_DENS_DETECT;   
  
-#line 1030
+#line 1032
 enum Pulse_Input_Type
 {
 	PULSE_GAS_TEMP 		= 1,
@@ -1800,7 +1800,7 @@ enum Pulse_Input_Type
 
 
 
-#line 1065
+#line 1067
 #pragma DATA_SECTION(boxcar_expire_val,"CFG")
 extern VAR boxcar_expire_val;
 
@@ -2103,7 +2103,7 @@ typedef struct 	{
 	    		} CORIOLIS;
 extern CORIOLIS COR[5];
 
-#line 1399
+#line 1401
 typedef struct 	{
 					float	p_delta;
 					float	p_static;
@@ -2269,7 +2269,7 @@ extern float compatibility_dummy;
 
 
 		 
-#line 1595
+#line 1597
 #pragma DATA_SECTION(ALFAT_RX,"internal_RAM")
 extern	char	ALFAT_RX[128]; 
 
@@ -2368,7 +2368,7 @@ extern VAR Hsalt_Min_WC;
 #pragma DATA_SECTION(AVG_RESET,"CFG")
 extern COIL AVG_RESET;
 
-#line 1697
+#line 1699
 extern void Setup_Basics(void);
 
 #line 44 "G:\workspace\EEA\V615\APP\SOURCE\INCLUDE\HART.H"
@@ -5111,6 +5111,9 @@ void MENU_FORCE_PHASE(void)
 			i = (int)round(REG_STREAM_SELECT.val,0) - 1.0; 
 			OIL_PHASE_ONLY_ENABLE[i]  = OIL_PHASE_ONLY.val;
 			WATER_PHASE_ONLY_ENABLE[i]= WATER_PHASE_ONLY.val;  
+	
+            
+            Update_Flags_Goto_Next_Menu(1,0);
 		}
 	}
 }
@@ -7443,7 +7446,7 @@ void MENU_PAGE_PORT_CFG(void)
 			MSVE.tmpi[1] = 0;
 			
 			 
-#line 4235
+#line 4238
 		}
 
 		case 31:
@@ -7452,7 +7455,7 @@ void MENU_PAGE_PORT_CFG(void)
 			MSVE.tmpi[2] = 1;
 			MSVE.tmpi[1] = 0;
 			 
-#line 4285
+#line 4288
 		}
 
 		case 32:
@@ -7461,7 +7464,7 @@ void MENU_PAGE_PORT_CFG(void)
 			MSVE.tmpi[2] = 1;
 			MSVE.tmpi[1] = 0;		
 			 
-#line 4328
+#line 4331
 		}
 
 		case 33:
@@ -7470,7 +7473,7 @@ void MENU_PAGE_PORT_CFG(void)
 			MSVE.tmpi[2] = 1;
 			MSVE.tmpi[1] = 0;		
 			 
-#line 4366
+#line 4369
 		}
 
 		case 1:
@@ -12726,7 +12729,7 @@ void MENU_FLOW_COMPUTER(void)
 
 
 
-#line 9632
+#line 9635
 int Get_Russ_Line(int str_num, char out_str[], int return_mode)
 {	
 	int i;
@@ -12774,7 +12777,7 @@ int Get_Russ_Line(int str_num, char out_str[], int return_mode)
 }
 
 
-#line 9688
+#line 9691
 int Print_To_LCD( int lcd_line, int str_num, char text_line[], int whitespace)
 {
 	int i, len_out_str;
@@ -12788,7 +12791,7 @@ int Print_To_LCD( int lcd_line, int str_num, char text_line[], int whitespace)
 	
 
 	strcpy(LCD_DISPLAY[lcd_line],text_line);
-#line 9742
+#line 9745
 	return 0;
 }
 

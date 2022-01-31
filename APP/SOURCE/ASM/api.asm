@@ -1,6 +1,6 @@
 ;******************************************************************************
 ;* TMS320C3x/4x ANSI C Code Generator                            Version 5.11 *
-;* Date/Time created: Thu Sep  2 10:22:41 2021                                *
+;* Date/Time created: Mon Jan 31 15:51:39 2022                                *
 ;******************************************************************************
 	.regalias	; enable floating point register aliases
 fp	.set	ar3
@@ -17,12 +17,12 @@ FP	.set	ar3
 ;*   Calls              : Normal Library ASM calls                            *
 ;*   Debug Info         : Standard TI Debug Information                       *
 ;******************************************************************************
-;	C:\tic3x4x\c3x4x\cgtools\bin\ac30.exe -@_1FG.AAA 
+;	C:\tic3x4x\c3x4x\cgtools\bin\ac30.exe -@_BOG.AAA 
 	.file	"api.c"
-	.file	"Y:\workspace\EEA\V615\APP\SOURCE\INCLUDE\GLBLS.H"
-	.file	"Y:\workspace\EEA\V615\INCLUDE\stdarg.h"
+	.file	"Y:\workspace_eea\V615\APP\SOURCE\INCLUDE\GLBLS.H"
+	.file	"Y:\workspace_eea\V615\INCLUDE\stdarg.h"
 	.sym	_va_list,0,18,13,32
-	.file	"Y:\workspace\EEA\V615\INCLUDE\format.h"
+	.file	"Y:\workspace_eea\V615\INCLUDE\format.h"
 	.stag	.fake0,128
 	.member	_flags,0,14,8,32
 	.member	_fwidth,32,4,8,32
@@ -38,9 +38,9 @@ FP	.set	ar3
 	.member	_conv,3168,2,8,32
 	.eos
 	.sym	__SFIELD,0,8,13,3200,.fake1
-	.file	"Y:\workspace\EEA\V615\INCLUDE\string.h"
+	.file	"Y:\workspace_eea\V615\INCLUDE\string.h"
 	.sym	_size_t,0,14,13,32
-	.file	"Y:\workspace\EEA\V615\INCLUDE\stdio.h"
+	.file	"Y:\workspace_eea\V615\INCLUDE\stdio.h"
 	.stag	.fake2,224
 	.member	_fd,0,4,8,32
 	.member	_buf,32,28,8,32
@@ -64,7 +64,7 @@ FP	.set	ar3
 	.member	_RENAME,512,148,8,32
 	.eos
 	.sym	__DEVICE,0,8,13,544,.fake3
-	.file	"Y:\workspace\EEA\V615\INCLUDE\stdlib.h"
+	.file	"Y:\workspace_eea\V615\INCLUDE\stdlib.h"
 	.sym	_wchar_t,0,2,13,32
 	.stag	__div_t,64
 	.member	_quot,0,4,8,32
@@ -72,8 +72,8 @@ FP	.set	ar3
 	.eos
 	.sym	_div_t,0,8,13,64,__div_t
 	.sym	_ldiv_t,0,8,13,64,__div_t
-	.file	"Y:\workspace\EEA\V615\INCLUDE\math.h"
-	.file	"Y:\workspace\EEA\V615\INCLUDE\time.h"
+	.file	"Y:\workspace_eea\V615\INCLUDE\math.h"
+	.file	"Y:\workspace_eea\V615\INCLUDE\time.h"
 	.sym	_clock_t,0,15,13,32
 	.sym	_time_t,0,15,13,32
 	.stag	_tm,288
@@ -93,9 +93,9 @@ FP	.set	ar3
 	.member	_tzname,64,50,8,128,,4
 	.member	_dstname,192,50,8,128,,4
 	.eos
-	.file	"Y:\workspace\EEA\V615\INCLUDE\ETC.H"
+	.file	"Y:\workspace_eea\V615\INCLUDE\ETC.H"
 	.sym	_BOOL,0,14,13,32
-	.file	"Y:\workspace\EEA\V615\INCLUDE\LIST.H"
+	.file	"Y:\workspace_eea\V615\INCLUDE\LIST.H"
 	.stag	.fake4,96
 	.member	_head,0,20,8,32
 	.member	_tail,32,20,8,32
@@ -107,7 +107,7 @@ FP	.set	ar3
 	.member	_next,32,20,8,32
 	.eos
 	.sym	_GENERIC,0,8,13,64,.fake5
-	.file	"Y:\workspace\EEA\V615\APP\SOURCE\INCLUDE\VARIABLE.H"
+	.file	"Y:\workspace_eea\V615\APP\SOURCE\INCLUDE\VARIABLE.H"
 	.stag	.fake6,1408
 	.member	_val,0,6,8,32
 	.member	_vect1,32,20,8,32
@@ -150,7 +150,7 @@ FP	.set	ar3
 	.member	_v,64,24,8,32,.fake6
 	.eos
 	.sym	_DPKT,0,8,13,96,.fake9
-	.file	"Y:\workspace\EEA\V615\APP\SOURCE\INCLUDE\BUFFER.H"
+	.file	"Y:\workspace_eea\V615\APP\SOURCE\INCLUDE\BUFFER.H"
 	.stag	.fake10,9824
 	.member	_head,0,4,8,32
 	.member	_tail,32,4,8,32
@@ -162,8 +162,8 @@ FP	.set	ar3
 	.member	_locked,9792,14,8,32
 	.eos
 	.sym	_BFR,0,8,13,9824,.fake10
-	.file	"Y:\workspace\EEA\V615\INCLUDE\UNITS.H"
-	.file	"Y:\workspace\EEA\V615\APP\SOURCE\INCLUDE\TIMER.H"
+	.file	"Y:\workspace_eea\V615\INCLUDE\UNITS.H"
+	.file	"Y:\workspace_eea\V615\APP\SOURCE\INCLUDE\TIMER.H"
 	.stag	.fake11,320
 	.member	_prev,0,20,8,32
 	.member	_next,32,20,8,32
@@ -177,9 +177,9 @@ FP	.set	ar3
 	.member	_t,288,6,8,32
 	.eos
 	.sym	_TPKT,0,8,13,320,.fake11
-	.file	"Y:\workspace\EEA\V615\INCLUDE\I2C.H"
-	.file	"Y:\workspace\EEA\V615\APP\SOURCE\INCLUDE\ERRORS.H"
-	.file	"Y:\workspace\EEA\V615\APP\SOURCE\INCLUDE\SERIAL.H"
+	.file	"Y:\workspace_eea\V615\INCLUDE\I2C.H"
+	.file	"Y:\workspace_eea\V615\APP\SOURCE\INCLUDE\ERRORS.H"
+	.file	"Y:\workspace_eea\V615\APP\SOURCE\INCLUDE\SERIAL.H"
 	.stag	.fake12,2272
 	.member	_Slave,0,4,8,32
 	.member	_SNUM,32,4,8,32
@@ -267,7 +267,7 @@ FP	.set	ar3
 	.member	_int_ptr,640,20,8,32
 	.eos
 	.sym	_MPKT,0,8,13,672,.fake14
-	.file	"Y:\workspace\EEA\V615\APP\SOURCE\INCLUDE\ADC.H"
+	.file	"Y:\workspace_eea\V615\APP\SOURCE\INCLUDE\ADC.H"
 	.stag	.fake15,10176
 	.member	_CURRENT,0,8,8,1408,.fake6
 	.member	_CURRENT_PERCENT_OF_RANGE,1408,8,8,1408,.fake6
@@ -285,7 +285,7 @@ FP	.set	ar3
 	.member	_val,10144,6,8,32
 	.eos
 	.sym	_LOOPDATA_I,0,8,13,10176,.fake15
-	.file	"Y:\workspace\EEA\V615\APP\SOURCE\INCLUDE\DAC.H"
+	.file	"Y:\workspace_eea\V615\APP\SOURCE\INCLUDE\DAC.H"
 	.stag	.fake16,13408
 	.member	_CURRENT,0,8,8,1408,.fake6
 	.member	_CURRENT_PERCENT_OF_RANGE,1408,8,8,1408,.fake6
@@ -318,7 +318,7 @@ FP	.set	ar3
 	.member	_PID_enable_failsafe,13376,14,8,32
 	.eos
 	.sym	_LOOPDATA_O,0,8,13,13408,.fake16
-	.file	"Y:\workspace\EEA\V615\APP\SOURCE\INCLUDE\EXECUTE.H"
+	.file	"Y:\workspace_eea\V615\APP\SOURCE\INCLUDE\EXECUTE.H"
 	.stag	.fake17,128
 	.member	_prev,0,20,8,32
 	.member	_next,32,20,8,32
@@ -326,8 +326,8 @@ FP	.set	ar3
 	.member	_priority,96,4,8,32
 	.eos
 	.sym	_EPKT,0,8,13,128,.fake17
-	.file	"Y:\workspace\EEA\V615\INCLUDE\FLASH.H"
-	.file	"Y:\workspace\EEA\V615\APP\SOURCE\INCLUDE\LOG.H"
+	.file	"Y:\workspace_eea\V615\INCLUDE\FLASH.H"
+	.file	"Y:\workspace_eea\V615\APP\SOURCE\INCLUDE\LOG.H"
 	.stag	.fake18,384
 	.member	_log_len,0,14,8,32
 	.member	_log_n_sectors,32,14,8,32
@@ -343,9 +343,9 @@ FP	.set	ar3
 	.member	_erased_sector,352,14,8,32
 	.eos
 	.sym	_LOG,0,8,13,384,.fake18
-	.file	"Y:\workspace\EEA\V615\APP\SOURCE\INCLUDE\DEMO.H"
-	.file	"Y:\workspace\EEA\V615\APP\SOURCE\INCLUDE\SELFTEST.H"
-	.file	"Y:\workspace\EEA\V615\APP\SOURCE\INCLUDE\MENU.H"
+	.file	"Y:\workspace_eea\V615\APP\SOURCE\INCLUDE\DEMO.H"
+	.file	"Y:\workspace_eea\V615\APP\SOURCE\INCLUDE\SELFTEST.H"
+	.file	"Y:\workspace_eea\V615\APP\SOURCE\INCLUDE\MENU.H"
 	.stag	.fake19,16288
 	.member	_INIT,0,14,8,32
 	.member	_FRESH,32,14,8,32
@@ -391,8 +391,8 @@ FP	.set	ar3
 	.member	_tbl,16256,20,8,32
 	.eos
 	.sym	_MENU_STRUCT,0,8,13,16288,.fake19
-	.file	"Y:\workspace\EEA\V615\APP\SOURCE\INCLUDE\FLOAT1.H"
-	.file	"Y:\workspace\EEA\V615\APP\SOURCE\INCLUDE\GLBLS.H"
+	.file	"Y:\workspace_eea\V615\APP\SOURCE\INCLUDE\FLOAT1.H"
+	.file	"Y:\workspace_eea\V615\APP\SOURCE\INCLUDE\GLBLS.H"
 	.stag	.fake20,480
 	.member	_i,0,4,8,32
 	.member	_Watercut,32,6,8,32
@@ -711,10 +711,10 @@ FP	.set	ar3
 	.member	_FBLO0,2432,6,8,32
 	.eos
 	.sym	_HS_STRUCT,0,8,13,2464,.fake33
-	.file	"Y:\workspace\EEA\V615\APP\SOURCE\INCLUDE\HART.H"
-	.file	"Y:\workspace\EEA\V615\APP\SOURCE\INCLUDE\MODBUSRTU.H"
-	.file	"Y:\workspace\EEA\V615\APP\SOURCE\INCLUDE\MISC.H"
-	.file	"Y:\workspace\EEA\V615\APP\SOURCE\INCLUDE\API.H"
+	.file	"Y:\workspace_eea\V615\APP\SOURCE\INCLUDE\HART.H"
+	.file	"Y:\workspace_eea\V615\APP\SOURCE\INCLUDE\MODBUSRTU.H"
+	.file	"Y:\workspace_eea\V615\APP\SOURCE\INCLUDE\MISC.H"
+	.file	"Y:\workspace_eea\V615\APP\SOURCE\INCLUDE\API.H"
 	.file	"api.c"
 	.sect	 ".text"
 
@@ -1656,8 +1656,8 @@ _API_60F_PT:
         ldiu      *+fp(1),ar2           ; |240| 
         callu     r0                    ; far call to _API_STATUS	; |240| 
                                         ; |240| Far Call Occurs
-        bu        L159                  ; |215| 
-;*      Branch Occurs to L159           ; |215| 
+        bu        L165                  ; |215| 
+;*      Branch Occurs to L165           ; |215| 
 L56:        
 	.line	32
 ;----------------------------------------------------------------------
@@ -1694,11 +1694,11 @@ L59:
 ;----------------------------------------------------------------------
 ; 252 | return API_error_num;                                                  
 ;----------------------------------------------------------------------
-        bud       L167                  ; |252| 
+        bud       L173                  ; |252| 
 	nop
         ldp       @CL23,DP
         ldfu      @CL23,f0              ; |252| 
-;*      Branch Occurs to L167           ; |252| 
+;*      Branch Occurs to L173           ; |252| 
 L61:        
 	.line	39
 ;----------------------------------------------------------------------
@@ -1736,11 +1736,11 @@ L61:
 ;----------------------------------------------------------------------
 ; 261 | return API_error_num;                                                  
 ;----------------------------------------------------------------------
-        bud       L167                  ; |261| 
+        bud       L173                  ; |261| 
 	nop
         ldp       @CL23,DP
         ldfu      @CL23,f0              ; |261| 
-;*      Branch Occurs to L167           ; |261| 
+;*      Branch Occurs to L173           ; |261| 
 L65:        
 	.line	48
 ;----------------------------------------------------------------------
@@ -1748,8 +1748,8 @@ L65:
 ;----------------------------------------------------------------------
         ldfu      *+fp(4),f0            ; |263| 
         cmpf      2.5000000000e+02,f0   ; |263| 
-        ble       L84                   ; |263| 
-;*      Branch Occurs to L84            ; |263| 
+        ble       L90                   ; |263| 
+;*      Branch Occurs to L90            ; |263| 
 	.line	49
 ;----------------------------------------------------------------------
 ; 264 | API_STATUS(fcidx, API_extrapolate);                                    
@@ -1760,932 +1760,932 @@ L65:
         ldiu      @CL22,r0              ; |264| 
         callu     r0                    ; far call to _API_STATUS	; |264| 
                                         ; |264| Far Call Occurs
-        bu        L84                   ; |215| 
-;*      Branch Occurs to L84            ; |215| 
+        bu        L90                   ; |215| 
+;*      Branch Occurs to L90            ; |215| 
 L67:        
 	.line	51
 ;----------------------------------------------------------------------
 ; 266 | else if(p<50.0)                                                        
+; 268 |         //if(t>250.0) // JAN 12, 2022 : DKOH : bug#112                 
 ;----------------------------------------------------------------------
         ldfu      *+fp(5),f0            ; |266| 
         cmpf      5.0000000000e+01,f0   ; |266| 
         bge       L73                   ; |266| 
 ;*      Branch Occurs to L73            ; |266| 
-	.line	53
+	.line	54
 ;----------------------------------------------------------------------
-; 268 | if(t>250.0)                                                            
-;----------------------------------------------------------------------
-        ldfu      *+fp(4),f0            ; |268| 
-        cmpf      2.5000000000e+02,f0   ; |268| 
-        ble       L71                   ; |268| 
-;*      Branch Occurs to L71            ; |268| 
-	.line	55
-;----------------------------------------------------------------------
-; 270 | API_STATUS(fcidx, API_fail);                                           
-;----------------------------------------------------------------------
-        ldp       @CL22,DP
-        ldiu      *+fp(1),ar2           ; |270| 
-        ldiu      2,r2                  ; |270| 
-        ldiu      @CL22,r0              ; |270| 
-        callu     r0                    ; far call to _API_STATUS	; |270| 
-                                        ; |270| Far Call Occurs
-	.line	56
-;----------------------------------------------------------------------
-; 271 | GIEP;                                                                  
-;----------------------------------------------------------------------
-	pop		ST			
-	.line	58
-;----------------------------------------------------------------------
-; 273 | return API_error_num;                                                  
-;----------------------------------------------------------------------
-        bud       L167                  ; |273| 
-	nop
-        ldp       @CL23,DP
-        ldfu      @CL23,f0              ; |273| 
-;*      Branch Occurs to L167           ; |273| 
-L71:        
-	.line	60
-;----------------------------------------------------------------------
-; 275 | else if(t>200.0)                                                       
-;----------------------------------------------------------------------
-        ldfu      *+fp(4),f0            ; |275| 
-        cmpf      2.0000000000e+02,f0   ; |275| 
-        ble       L84                   ; |275| 
-;*      Branch Occurs to L84            ; |275| 
-	.line	61
-;----------------------------------------------------------------------
-; 276 | API_STATUS(fcidx, API_extrapolate);                                    
-;----------------------------------------------------------------------
-        ldp       @CL22,DP
-        ldiu      *+fp(1),ar2           ; |276| 
-        ldiu      1,r2                  ; |276| 
-        ldiu      @CL22,r0              ; |276| 
-        callu     r0                    ; far call to _API_STATUS	; |276| 
-                                        ; |276| Far Call Occurs
-        bu        L84                   ; |215| 
-;*      Branch Occurs to L84            ; |215| 
-L73:        
-	.line	63
-;----------------------------------------------------------------------
-; 278 | else if(p<55.0)                                                        
-;----------------------------------------------------------------------
-        ldfu      *+fp(5),f0            ; |278| 
-        cmpf      5.5000000000e+01,f0   ; |278| 
-        bge       L79                   ; |278| 
-;*      Branch Occurs to L79            ; |278| 
-	.line	65
-;----------------------------------------------------------------------
-; 280 | if(t>200.0)                                                            
-;----------------------------------------------------------------------
-        ldfu      *+fp(4),f0            ; |280| 
-        cmpf      2.0000000000e+02,f0   ; |280| 
-        ble       L77                   ; |280| 
-;*      Branch Occurs to L77            ; |280| 
-	.line	67
-;----------------------------------------------------------------------
-; 282 | API_STATUS(fcidx, API_fail);                                           
-;----------------------------------------------------------------------
-        ldp       @CL22,DP
-        ldiu      *+fp(1),ar2           ; |282| 
-        ldiu      2,r2                  ; |282| 
-        ldiu      @CL22,r0              ; |282| 
-        callu     r0                    ; far call to _API_STATUS	; |282| 
-                                        ; |282| Far Call Occurs
-	.line	68
-;----------------------------------------------------------------------
-; 283 | GIEP;                                                                  
-;----------------------------------------------------------------------
-	pop		ST			
-	.line	70
-;----------------------------------------------------------------------
-; 285 | return API_error_num;                                                  
-;----------------------------------------------------------------------
-        bud       L167                  ; |285| 
-	nop
-        ldp       @CL23,DP
-        ldfu      @CL23,f0              ; |285| 
-;*      Branch Occurs to L167           ; |285| 
-L77:        
-	.line	72
-;----------------------------------------------------------------------
-; 287 | else if(t>150.0)                                                       
-;----------------------------------------------------------------------
-        ldfu      *+fp(4),f0            ; |287| 
-        cmpf      1.5000000000e+02,f0   ; |287| 
-        ble       L84                   ; |287| 
-;*      Branch Occurs to L84            ; |287| 
-	.line	73
-;----------------------------------------------------------------------
-; 288 | API_STATUS(fcidx, API_extrapolate);                                    
-;----------------------------------------------------------------------
-        ldp       @CL22,DP
-        ldiu      *+fp(1),ar2           ; |288| 
-        ldiu      1,r2                  ; |288| 
-        ldiu      @CL22,r0              ; |288| 
-        callu     r0                    ; far call to _API_STATUS	; |288| 
-                                        ; |288| Far Call Occurs
-        bu        L84                   ; |215| 
-;*      Branch Occurs to L84            ; |215| 
-L79:        
-	.line	75
-;----------------------------------------------------------------------
-; 290 | else if(p<=100.0)                                                      
-;----------------------------------------------------------------------
-        ldfu      *+fp(5),f0            ; |290| 
-        cmpf      1.0000000000e+02,f0   ; |290| 
-        bgt       L84                   ; |290| 
-;*      Branch Occurs to L84            ; |290| 
-	.line	77
-;----------------------------------------------------------------------
-; 292 | if(t>200.0)                                                            
-;----------------------------------------------------------------------
-        ldfu      *+fp(4),f0            ; |292| 
-        cmpf      2.0000000000e+02,f0   ; |292| 
-        ble       L83                   ; |292| 
-;*      Branch Occurs to L83            ; |292| 
-	.line	79
-;----------------------------------------------------------------------
-; 294 | API_STATUS(fcidx, API_fail);                                           
-;----------------------------------------------------------------------
-        ldp       @CL22,DP
-        ldiu      *+fp(1),ar2           ; |294| 
-        ldiu      2,r2                  ; |294| 
-        ldiu      @CL22,r0              ; |294| 
-        callu     r0                    ; far call to _API_STATUS	; |294| 
-                                        ; |294| Far Call Occurs
-	.line	80
-;----------------------------------------------------------------------
-; 295 | GIEP;                                                                  
-;----------------------------------------------------------------------
-	pop		ST			
-	.line	82
-;----------------------------------------------------------------------
-; 297 | return API_error_num;                                                  
-; 299 | else                                                                   
-;----------------------------------------------------------------------
-        bud       L167                  ; |297| 
-	nop
-        ldp       @CL23,DP
-        ldfu      @CL23,f0              ; |297| 
-;*      Branch Occurs to L167           ; |297| 
-L83:        
-	.line	85
-;----------------------------------------------------------------------
-; 300 | API_STATUS(fcidx, API_extrapolate);                                    
-;----------------------------------------------------------------------
-        ldp       @CL22,DP
-        ldiu      *+fp(1),ar2           ; |300| 
-        ldiu      1,r2                  ; |300| 
-        ldiu      @CL22,r0              ; |300| 
-        callu     r0                    ; far call to _API_STATUS	; |300| 
-                                        ; |300| Far Call Occurs
-L84:        
-	.line	88
-;----------------------------------------------------------------------
-; 303 | k_set[0] = 0;                                                          
-;----------------------------------------------------------------------
-        ldiu      *+fp(3),ar0           ; |303| 
-        ldiu      0,r0                  ; |303| 
-        sti       r0,*ar0               ; |303| 
-	.line	89
-;----------------------------------------------------------------------
-; 304 | k0               = 341.0957;                                           
-;----------------------------------------------------------------------
-        ldp       @CL25,DP
-        ldfu      @CL25,f0              ; |304| 
-        stf       f0,*+fp(7)            ; |304| 
-	.line	90
-;----------------------------------------------------------------------
-; 305 | k1               = 0.0;                                                
-;----------------------------------------------------------------------
-        ldfu      0.0000000000e+00,f0   ; |305| 
-        stf       f0,*+fp(8)            ; |305| 
-	.line	91
-;----------------------------------------------------------------------
-; 306 | k2               = 0.0;                                                
-;----------------------------------------------------------------------
-        ldfu      0.0000000000e+00,f0   ; |306| 
-        stf       f0,*+fp(9)            ; |306| 
-	.line	93
-;----------------------------------------------------------------------
-; 308 | break;                                                                 
-; 310 | case 'B':                                                              
-;----------------------------------------------------------------------
-        bu        L164                  ; |308| 
-;*      Branch Occurs to L164           ; |308| 
-L85:        
-	.line	97
-;----------------------------------------------------------------------
-; 312 | if ((t<0.0) || (p<0.0) || (p>85.0))                                    
-;----------------------------------------------------------------------
-        ldfu      *+fp(4),f0            ; |312| 
-        cmpf      0.0000000000e+00,f0   ; |312| 
-        blt       L88                   ; |312| 
-;*      Branch Occurs to L88            ; |312| 
-        ldfu      *+fp(5),f0            ; |312| 
-        cmpf      0.0000000000e+00,f0   ; |312| 
-        blt       L88                   ; |312| 
-;*      Branch Occurs to L88            ; |312| 
-        cmpf      8.5000000000e+01,f0   ; |312| 
-        ble       L90                   ; |312| 
-;*      Branch Occurs to L90            ; |312| 
-L88:        
-	.line	99
-;----------------------------------------------------------------------
-; 314 | API_STATUS(fcidx, API_fail);                                           
-;----------------------------------------------------------------------
-        ldp       @CL22,DP
-        ldiu      *+fp(1),ar2           ; |314| 
-        ldiu      2,r2                  ; |314| 
-        ldiu      @CL22,r0              ; |314| 
-        callu     r0                    ; far call to _API_STATUS	; |314| 
-                                        ; |314| Far Call Occurs
-	.line	100
-;----------------------------------------------------------------------
-; 315 | GIEP;                                                                  
-;----------------------------------------------------------------------
-	pop		ST			
-	.line	102
-;----------------------------------------------------------------------
-; 317 | return API_error_num;                                                  
-;----------------------------------------------------------------------
-        bud       L167                  ; |317| 
-	nop
-        ldp       @CL23,DP
-        ldfu      @CL23,f0              ; |317| 
-;*      Branch Occurs to L167           ; |317| 
-L90:        
-	.line	104
-;----------------------------------------------------------------------
-; 319 | else if (p<40.0)                                                       
-;----------------------------------------------------------------------
-        ldfu      *+fp(5),f0            ; |319| 
-        cmpf      4.0000000000e+01,f0   ; |319| 
-        bge       L96                   ; |319| 
-;*      Branch Occurs to L96            ; |319| 
-	.line	106
-;----------------------------------------------------------------------
-; 321 | if (t>300.0)                                                           
+; 269 | if(t>300.0)                                                            
 ;----------------------------------------------------------------------
         ldp       @CL24,DP
-        ldfu      *+fp(4),f0            ; |321| 
-        cmpf      @CL24,f0              ; |321| 
-        ble       L94                   ; |321| 
-;*      Branch Occurs to L94            ; |321| 
+        ldfu      *+fp(4),f0            ; |269| 
+        cmpf      @CL24,f0              ; |269| 
+        ble       L71                   ; |269| 
+;*      Branch Occurs to L71            ; |269| 
+	.line	56
+;----------------------------------------------------------------------
+; 271 | API_STATUS(fcidx, API_fail);                                           
+;----------------------------------------------------------------------
+        ldp       @CL22,DP
+        ldiu      *+fp(1),ar2           ; |271| 
+        ldiu      2,r2                  ; |271| 
+        ldiu      @CL22,r0              ; |271| 
+        callu     r0                    ; far call to _API_STATUS	; |271| 
+                                        ; |271| Far Call Occurs
+	.line	57
+;----------------------------------------------------------------------
+; 272 | GIEP;                                                                  
+;----------------------------------------------------------------------
+	pop		ST			
+	.line	59
+;----------------------------------------------------------------------
+; 274 | return API_error_num;                                                  
+;----------------------------------------------------------------------
+        bud       L173                  ; |274| 
+	nop
+        ldp       @CL23,DP
+        ldfu      @CL23,f0              ; |274| 
+;*      Branch Occurs to L173           ; |274| 
+L71:        
+	.line	61
+;----------------------------------------------------------------------
+; 276 | else if(t>200.0)                                                       
+;----------------------------------------------------------------------
+        ldfu      *+fp(4),f0            ; |276| 
+        cmpf      2.0000000000e+02,f0   ; |276| 
+        ble       L90                   ; |276| 
+;*      Branch Occurs to L90            ; |276| 
+	.line	62
+;----------------------------------------------------------------------
+; 277 | API_STATUS(fcidx, API_extrapolate);                                    
+;----------------------------------------------------------------------
+        ldp       @CL22,DP
+        ldiu      *+fp(1),ar2           ; |277| 
+        ldiu      1,r2                  ; |277| 
+        ldiu      @CL22,r0              ; |277| 
+        callu     r0                    ; far call to _API_STATUS	; |277| 
+                                        ; |277| Far Call Occurs
+        bu        L90                   ; |215| 
+;*      Branch Occurs to L90            ; |215| 
+L73:        
+	.line	64
+;----------------------------------------------------------------------
+; 279 | else if(p<55.0)                                                        
+; 281 |         //if(t>200.0) // JAN 12, 2022 : DKOH : bug#112                 
+;----------------------------------------------------------------------
+        ldfu      *+fp(5),f0            ; |279| 
+        cmpf      5.5000000000e+01,f0   ; |279| 
+        bge       L79                   ; |279| 
+;*      Branch Occurs to L79            ; |279| 
+	.line	67
+;----------------------------------------------------------------------
+; 282 | if(t>300.0)                                                            
+;----------------------------------------------------------------------
+        ldp       @CL24,DP
+        ldfu      *+fp(4),f0            ; |282| 
+        cmpf      @CL24,f0              ; |282| 
+        ble       L77                   ; |282| 
+;*      Branch Occurs to L77            ; |282| 
+	.line	69
+;----------------------------------------------------------------------
+; 284 | API_STATUS(fcidx, API_fail);                                           
+;----------------------------------------------------------------------
+        ldp       @CL22,DP
+        ldiu      *+fp(1),ar2           ; |284| 
+        ldiu      2,r2                  ; |284| 
+        ldiu      @CL22,r0              ; |284| 
+        callu     r0                    ; far call to _API_STATUS	; |284| 
+                                        ; |284| Far Call Occurs
+	.line	70
+;----------------------------------------------------------------------
+; 285 | GIEP;                                                                  
+;----------------------------------------------------------------------
+	pop		ST			
+	.line	72
+;----------------------------------------------------------------------
+; 287 | return API_error_num;                                                  
+;----------------------------------------------------------------------
+        bud       L173                  ; |287| 
+	nop
+        ldp       @CL23,DP
+        ldfu      @CL23,f0              ; |287| 
+;*      Branch Occurs to L173           ; |287| 
+L77:        
+	.line	74
+;----------------------------------------------------------------------
+; 289 | else if(t>150.0)                                                       
+;----------------------------------------------------------------------
+        ldfu      *+fp(4),f0            ; |289| 
+        cmpf      1.5000000000e+02,f0   ; |289| 
+        ble       L90                   ; |289| 
+;*      Branch Occurs to L90            ; |289| 
+	.line	75
+;----------------------------------------------------------------------
+; 290 | API_STATUS(fcidx, API_extrapolate);                                    
+;----------------------------------------------------------------------
+        ldp       @CL22,DP
+        ldiu      *+fp(1),ar2           ; |290| 
+        ldiu      1,r2                  ; |290| 
+        ldiu      @CL22,r0              ; |290| 
+        callu     r0                    ; far call to _API_STATUS	; |290| 
+                                        ; |290| Far Call Occurs
+        bu        L90                   ; |215| 
+;*      Branch Occurs to L90            ; |215| 
+L79:        
+	.line	77
+;----------------------------------------------------------------------
+; 292 | else if(p<=100.0)                                                      
+; 294 |         //if(t>200.0) // JAN 12, 2022 : DKOH : bug#112                 
+;----------------------------------------------------------------------
+        ldfu      *+fp(5),f0            ; |292| 
+        cmpf      1.0000000000e+02,f0   ; |292| 
+        bgt       L84                   ; |292| 
+;*      Branch Occurs to L84            ; |292| 
+	.line	80
+;----------------------------------------------------------------------
+; 295 | if(t>300.0)                                                            
+;----------------------------------------------------------------------
+        ldp       @CL24,DP
+        ldfu      *+fp(4),f0            ; |295| 
+        cmpf      @CL24,f0              ; |295| 
+        ble       L83                   ; |295| 
+;*      Branch Occurs to L83            ; |295| 
+	.line	82
+;----------------------------------------------------------------------
+; 297 | API_STATUS(fcidx, API_fail);                                           
+;----------------------------------------------------------------------
+        ldp       @CL22,DP
+        ldiu      *+fp(1),ar2           ; |297| 
+        ldiu      2,r2                  ; |297| 
+        ldiu      @CL22,r0              ; |297| 
+        callu     r0                    ; far call to _API_STATUS	; |297| 
+                                        ; |297| Far Call Occurs
+	.line	83
+;----------------------------------------------------------------------
+; 298 | GIEP;                                                                  
+;----------------------------------------------------------------------
+	pop		ST			
+	.line	85
+;----------------------------------------------------------------------
+; 300 | return API_error_num;                                                  
+; 302 | else                                                                   
+;----------------------------------------------------------------------
+        bud       L173                  ; |300| 
+	nop
+        ldp       @CL23,DP
+        ldfu      @CL23,f0              ; |300| 
+;*      Branch Occurs to L173           ; |300| 
+L83:        
+	.line	88
+;----------------------------------------------------------------------
+; 303 | API_STATUS(fcidx, API_extrapolate);                                    
+; 305 | ////////// ADDED BY DKOH JAN 12, 2022 BUG#112 /////////////            
+;----------------------------------------------------------------------
+        ldp       @CL22,DP
+        ldiu      *+fp(1),ar2           ; |303| 
+        ldiu      1,r2                  ; |303| 
+        ldiu      @CL22,r0              ; |303| 
+        callu     r0                    ; far call to _API_STATUS	; |303| 
+                                        ; |303| Far Call Occurs
+        bu        L90                   ; |215| 
+;*      Branch Occurs to L90            ; |215| 
+L84:        
+	.line	91
+;----------------------------------------------------------------------
+; 306 | else if(p<=183.0)                                                      
+;----------------------------------------------------------------------
+        ldfu      *+fp(5),f0            ; |306| 
+        cmpf      1.8300000000e+02,f0   ; |306| 
+        bgt       L90                   ; |306| 
+;*      Branch Occurs to L90            ; |306| 
+	.line	93
+;----------------------------------------------------------------------
+; 308 | if(t>300.0)                                                            
+;----------------------------------------------------------------------
+        ldp       @CL24,DP
+        ldfu      *+fp(4),f0            ; |308| 
+        cmpf      @CL24,f0              ; |308| 
+        ble       L88                   ; |308| 
+;*      Branch Occurs to L88            ; |308| 
+	.line	95
+;----------------------------------------------------------------------
+; 310 | API_STATUS(fcidx, API_fail);                                           
+;----------------------------------------------------------------------
+        ldp       @CL22,DP
+        ldiu      *+fp(1),ar2           ; |310| 
+        ldiu      2,r2                  ; |310| 
+        ldiu      @CL22,r0              ; |310| 
+        callu     r0                    ; far call to _API_STATUS	; |310| 
+                                        ; |310| Far Call Occurs
+	.line	96
+;----------------------------------------------------------------------
+; 311 | GIEP;                                                                  
+;----------------------------------------------------------------------
+	pop		ST			
+	.line	98
+;----------------------------------------------------------------------
+; 313 | return API_error_num;                                                  
+;----------------------------------------------------------------------
+        bud       L173                  ; |313| 
+	nop
+        ldp       @CL23,DP
+        ldfu      @CL23,f0              ; |313| 
+;*      Branch Occurs to L173           ; |313| 
+L88:        
+	.line	100
+;----------------------------------------------------------------------
+; 315 | else if(t>200.0)                                                       
+;----------------------------------------------------------------------
+        ldfu      *+fp(4),f0            ; |315| 
+        cmpf      2.0000000000e+02,f0   ; |315| 
+        ble       L90                   ; |315| 
+;*      Branch Occurs to L90            ; |315| 
+	.line	101
+;----------------------------------------------------------------------
+; 316 | API_STATUS(fcidx, API_extrapolate);                                    
+; 318 | ////////// ADDED BY DKOH JAN 12, 2022 BUG#112 /////////////            
+;----------------------------------------------------------------------
+        ldp       @CL22,DP
+        ldiu      *+fp(1),ar2           ; |316| 
+        ldiu      1,r2                  ; |316| 
+        ldiu      @CL22,r0              ; |316| 
+        callu     r0                    ; far call to _API_STATUS	; |316| 
+                                        ; |316| Far Call Occurs
+L90:        
+	.line	105
+;----------------------------------------------------------------------
+; 320 | k_set[0] = 0;                                                          
+;----------------------------------------------------------------------
+        ldiu      *+fp(3),ar0           ; |320| 
+        ldiu      0,r0                  ; |320| 
+        sti       r0,*ar0               ; |320| 
+	.line	106
+;----------------------------------------------------------------------
+; 321 | k0               = 341.0957;                                           
+;----------------------------------------------------------------------
+        ldp       @CL25,DP
+        ldfu      @CL25,f0              ; |321| 
+        stf       f0,*+fp(7)            ; |321| 
+	.line	107
+;----------------------------------------------------------------------
+; 322 | k1               = 0.0;                                                
+;----------------------------------------------------------------------
+        ldfu      0.0000000000e+00,f0   ; |322| 
+        stf       f0,*+fp(8)            ; |322| 
 	.line	108
 ;----------------------------------------------------------------------
-; 323 | API_STATUS(fcidx, API_fail);                                           
+; 323 | k2               = 0.0;                                                
 ;----------------------------------------------------------------------
-        ldp       @CL22,DP
-        ldiu      *+fp(1),ar2           ; |323| 
-        ldiu      2,r2                  ; |323| 
-        ldiu      @CL22,r0              ; |323| 
-        callu     r0                    ; far call to _API_STATUS	; |323| 
-                                        ; |323| Far Call Occurs
-	.line	109
+        ldfu      0.0000000000e+00,f0   ; |323| 
+        stf       f0,*+fp(9)            ; |323| 
+	.line	110
 ;----------------------------------------------------------------------
-; 324 | GIEP;                                                                  
+; 325 | break;                                                                 
+; 327 | case 'B':                                                              
 ;----------------------------------------------------------------------
-	pop		ST			
-	.line	111
-;----------------------------------------------------------------------
-; 326 | return API_error_num;                                                  
-;----------------------------------------------------------------------
-        bud       L167                  ; |326| 
-	nop
-        ldp       @CL23,DP
-        ldfu      @CL23,f0              ; |326| 
-;*      Branch Occurs to L167           ; |326| 
-L94:        
-	.line	113
-;----------------------------------------------------------------------
-; 328 | else if (t>250.0)                                                      
-;----------------------------------------------------------------------
-        ldfu      *+fp(4),f0            ; |328| 
-        cmpf      2.5000000000e+02,f0   ; |328| 
-        ble       L108                  ; |328| 
-;*      Branch Occurs to L108           ; |328| 
+        bu        L170                  ; |325| 
+;*      Branch Occurs to L170           ; |325| 
+L91:        
 	.line	114
 ;----------------------------------------------------------------------
-; 329 | API_STATUS(fcidx, API_extrapolate);                                    
+; 329 | if ((t<0.0) || (p<0.0) || (p>85.0))                                    
 ;----------------------------------------------------------------------
-        ldp       @CL22,DP
-        ldiu      *+fp(1),ar2           ; |329| 
-        ldiu      1,r2                  ; |329| 
-        ldiu      @CL22,r0              ; |329| 
-        callu     r0                    ; far call to _API_STATUS	; |329| 
-                                        ; |329| Far Call Occurs
-        bu        L108                  ; |215| 
-;*      Branch Occurs to L108           ; |215| 
-L96:        
+        ldfu      *+fp(4),f0            ; |329| 
+        cmpf      0.0000000000e+00,f0   ; |329| 
+        blt       L94                   ; |329| 
+;*      Branch Occurs to L94            ; |329| 
+        ldfu      *+fp(5),f0            ; |329| 
+        cmpf      0.0000000000e+00,f0   ; |329| 
+        blt       L94                   ; |329| 
+;*      Branch Occurs to L94            ; |329| 
+        cmpf      8.5000000000e+01,f0   ; |329| 
+        ble       L96                   ; |329| 
+;*      Branch Occurs to L96            ; |329| 
+L94:        
 	.line	116
 ;----------------------------------------------------------------------
-; 331 | else if (p<50.0)                                                       
-;----------------------------------------------------------------------
-        ldfu      *+fp(5),f0            ; |331| 
-        cmpf      5.0000000000e+01,f0   ; |331| 
-        bge       L102                  ; |331| 
-;*      Branch Occurs to L102           ; |331| 
-	.line	118
-;----------------------------------------------------------------------
-; 333 | if (t>250.0)                                                           
-;----------------------------------------------------------------------
-        ldfu      *+fp(4),f0            ; |333| 
-        cmpf      2.5000000000e+02,f0   ; |333| 
-        ble       L100                  ; |333| 
-;*      Branch Occurs to L100           ; |333| 
-	.line	120
-;----------------------------------------------------------------------
-; 335 | API_STATUS(fcidx, API_fail);                                           
+; 331 | API_STATUS(fcidx, API_fail);                                           
 ;----------------------------------------------------------------------
         ldp       @CL22,DP
-        ldiu      *+fp(1),ar2           ; |335| 
-        ldiu      2,r2                  ; |335| 
-        ldiu      @CL22,r0              ; |335| 
-        callu     r0                    ; far call to _API_STATUS	; |335| 
-                                        ; |335| Far Call Occurs
-	.line	121
+        ldiu      *+fp(1),ar2           ; |331| 
+        ldiu      2,r2                  ; |331| 
+        ldiu      @CL22,r0              ; |331| 
+        callu     r0                    ; far call to _API_STATUS	; |331| 
+                                        ; |331| Far Call Occurs
+	.line	117
 ;----------------------------------------------------------------------
-; 336 | GIEP;                                                                  
+; 332 | GIEP;                                                                  
 ;----------------------------------------------------------------------
 	pop		ST			
-	.line	122
+	.line	119
 ;----------------------------------------------------------------------
-; 337 | return API_error_num;                                                  
+; 334 | return API_error_num;                                                  
 ;----------------------------------------------------------------------
-        bud       L167                  ; |337| 
+        bud       L173                  ; |334| 
 	nop
         ldp       @CL23,DP
-        ldfu      @CL23,f0              ; |337| 
-;*      Branch Occurs to L167           ; |337| 
-L100:        
-	.line	124
+        ldfu      @CL23,f0              ; |334| 
+;*      Branch Occurs to L173           ; |334| 
+L96:        
+	.line	121
 ;----------------------------------------------------------------------
-; 339 | else if (t>200.0)                                                      
+; 336 | else if (p<40.0)                                                       
 ;----------------------------------------------------------------------
-        ldfu      *+fp(4),f0            ; |339| 
-        cmpf      2.0000000000e+02,f0   ; |339| 
-        ble       L108                  ; |339| 
-;*      Branch Occurs to L108           ; |339| 
+        ldfu      *+fp(5),f0            ; |336| 
+        cmpf      4.0000000000e+01,f0   ; |336| 
+        bge       L102                  ; |336| 
+;*      Branch Occurs to L102           ; |336| 
+	.line	123
+;----------------------------------------------------------------------
+; 338 | if (t>300.0)                                                           
+;----------------------------------------------------------------------
+        ldp       @CL24,DP
+        ldfu      *+fp(4),f0            ; |338| 
+        cmpf      @CL24,f0              ; |338| 
+        ble       L100                  ; |338| 
+;*      Branch Occurs to L100           ; |338| 
 	.line	125
 ;----------------------------------------------------------------------
-; 340 | API_STATUS(fcidx, API_extrapolate);                                    
+; 340 | API_STATUS(fcidx, API_fail);                                           
 ;----------------------------------------------------------------------
         ldp       @CL22,DP
         ldiu      *+fp(1),ar2           ; |340| 
-        ldiu      1,r2                  ; |340| 
+        ldiu      2,r2                  ; |340| 
         ldiu      @CL22,r0              ; |340| 
         callu     r0                    ; far call to _API_STATUS	; |340| 
                                         ; |340| Far Call Occurs
-        bu        L108                  ; |215| 
-;*      Branch Occurs to L108           ; |215| 
-L102:        
-	.line	127
+	.line	126
 ;----------------------------------------------------------------------
-; 342 | else if (p<=85.0)                                                      
+; 341 | GIEP;                                                                  
 ;----------------------------------------------------------------------
-        ldfu      *+fp(5),f0            ; |342| 
-        cmpf      8.5000000000e+01,f0   ; |342| 
-        bgt       L108                  ; |342| 
-;*      Branch Occurs to L108           ; |342| 
-	.line	129
+	pop		ST			
+	.line	128
 ;----------------------------------------------------------------------
-; 344 | if (t>200.0)                                                           
+; 343 | return API_error_num;                                                  
 ;----------------------------------------------------------------------
-        ldfu      *+fp(4),f0            ; |344| 
-        cmpf      2.0000000000e+02,f0   ; |344| 
-        ble       L106                  ; |344| 
-;*      Branch Occurs to L106           ; |344| 
+        bud       L173                  ; |343| 
+	nop
+        ldp       @CL23,DP
+        ldfu      @CL23,f0              ; |343| 
+;*      Branch Occurs to L173           ; |343| 
+L100:        
+	.line	130
+;----------------------------------------------------------------------
+; 345 | else if (t>250.0)                                                      
+;----------------------------------------------------------------------
+        ldfu      *+fp(4),f0            ; |345| 
+        cmpf      2.5000000000e+02,f0   ; |345| 
+        ble       L114                  ; |345| 
+;*      Branch Occurs to L114           ; |345| 
 	.line	131
 ;----------------------------------------------------------------------
-; 346 | API_STATUS(fcidx, API_fail);                                           
+; 346 | API_STATUS(fcidx, API_extrapolate);                                    
 ;----------------------------------------------------------------------
         ldp       @CL22,DP
         ldiu      *+fp(1),ar2           ; |346| 
-        ldiu      2,r2                  ; |346| 
+        ldiu      1,r2                  ; |346| 
         ldiu      @CL22,r0              ; |346| 
         callu     r0                    ; far call to _API_STATUS	; |346| 
                                         ; |346| Far Call Occurs
-	.line	132
+        bu        L114                  ; |215| 
+;*      Branch Occurs to L114           ; |215| 
+L102:        
+	.line	133
 ;----------------------------------------------------------------------
-; 347 | GIEP;                                                                  
+; 348 | else if (p<50.0)                                                       
 ;----------------------------------------------------------------------
-	pop		ST			
-	.line	134
+        ldfu      *+fp(5),f0            ; |348| 
+        cmpf      5.0000000000e+01,f0   ; |348| 
+        bge       L108                  ; |348| 
+;*      Branch Occurs to L108           ; |348| 
+	.line	135
 ;----------------------------------------------------------------------
-; 349 | return API_error_num;                                                  
+; 350 | if (t>250.0)                                                           
 ;----------------------------------------------------------------------
-        bud       L167                  ; |349| 
-	nop
-        ldp       @CL23,DP
-        ldfu      @CL23,f0              ; |349| 
-;*      Branch Occurs to L167           ; |349| 
-L106:        
-	.line	136
-;----------------------------------------------------------------------
-; 351 | else if (t>150.0)                                                      
-;----------------------------------------------------------------------
-        ldfu      *+fp(4),f0            ; |351| 
-        cmpf      1.5000000000e+02,f0   ; |351| 
-        ble       L108                  ; |351| 
-;*      Branch Occurs to L108           ; |351| 
+        ldfu      *+fp(4),f0            ; |350| 
+        cmpf      2.5000000000e+02,f0   ; |350| 
+        ble       L106                  ; |350| 
+;*      Branch Occurs to L106           ; |350| 
 	.line	137
 ;----------------------------------------------------------------------
-; 352 | API_STATUS(fcidx, API_extrapolate);                                    
+; 352 | API_STATUS(fcidx, API_fail);                                           
 ;----------------------------------------------------------------------
         ldp       @CL22,DP
         ldiu      *+fp(1),ar2           ; |352| 
-        ldiu      1,r2                  ; |352| 
+        ldiu      2,r2                  ; |352| 
         ldiu      @CL22,r0              ; |352| 
         callu     r0                    ; far call to _API_STATUS	; |352| 
                                         ; |352| Far Call Occurs
-L108:        
-	.line	140
+	.line	138
 ;----------------------------------------------------------------------
-; 355 | if (k_set[0]==-1)                                                      
+; 353 | GIEP;                                                                  
 ;----------------------------------------------------------------------
-        ldiu      *+fp(3),ar0           ; |355| 
-        ldiu      *ar0,r0               ; |355| 
-        cmpi      -1,r0                 ; |355| 
-        bne       L128                  ; |355| 
-;*      Branch Occurs to L128           ; |355| 
+	pop		ST			
+	.line	139
+;----------------------------------------------------------------------
+; 354 | return API_error_num;                                                  
+;----------------------------------------------------------------------
+        bud       L173                  ; |354| 
+	nop
+        ldp       @CL23,DP
+        ldfu      @CL23,f0              ; |354| 
+;*      Branch Occurs to L173           ; |354| 
+L106:        
+	.line	141
+;----------------------------------------------------------------------
+; 356 | else if (t>200.0)                                                      
+;----------------------------------------------------------------------
+        ldfu      *+fp(4),f0            ; |356| 
+        cmpf      2.0000000000e+02,f0   ; |356| 
+        ble       L114                  ; |356| 
+;*      Branch Occurs to L114           ; |356| 
 	.line	142
 ;----------------------------------------------------------------------
-; 357 | if ((p>=0.0) && (p<37.0))                                              
+; 357 | API_STATUS(fcidx, API_extrapolate);                                    
 ;----------------------------------------------------------------------
-        ldfu      *+fp(5),f0            ; |357| 
-        cmpf      0.0000000000e+00,f0   ; |357| 
-        blt       L112                  ; |357| 
-;*      Branch Occurs to L112           ; |357| 
-        cmpf      3.7000000000e+01,f0   ; |357| 
-        bge       L112                  ; |357| 
-;*      Branch Occurs to L112           ; |357| 
-	.line	143
-;----------------------------------------------------------------------
-; 358 | k_set[0] = 1;                                                          
-;----------------------------------------------------------------------
-        ldiu      1,r0                  ; |358| 
-        sti       r0,*ar0               ; |358| 
-        bu        L128                  ; |215| 
-;*      Branch Occurs to L128           ; |215| 
-L112:        
+        ldp       @CL22,DP
+        ldiu      *+fp(1),ar2           ; |357| 
+        ldiu      1,r2                  ; |357| 
+        ldiu      @CL22,r0              ; |357| 
+        callu     r0                    ; far call to _API_STATUS	; |357| 
+                                        ; |357| Far Call Occurs
+        bu        L114                  ; |215| 
+;*      Branch Occurs to L114           ; |215| 
+L108:        
 	.line	144
 ;----------------------------------------------------------------------
-; 359 | else if ((p>=37.0) && (p<48.0))                                        
+; 359 | else if (p<=85.0)                                                      
 ;----------------------------------------------------------------------
         ldfu      *+fp(5),f0            ; |359| 
-        cmpf      3.7000000000e+01,f0   ; |359| 
-        blt       L115                  ; |359| 
-;*      Branch Occurs to L115           ; |359| 
-        cmpf      4.8000000000e+01,f0   ; |359| 
-        bge       L115                  ; |359| 
-;*      Branch Occurs to L115           ; |359| 
-	.line	145
-;----------------------------------------------------------------------
-; 360 | k_set[0] = 2;                                                          
-;----------------------------------------------------------------------
-        ldiu      *+fp(3),ar0           ; |360| 
-        ldiu      2,r0                  ; |360| 
-        sti       r0,*ar0               ; |360| 
-        bu        L128                  ; |215| 
-;*      Branch Occurs to L128           ; |215| 
-L115:        
+        cmpf      8.5000000000e+01,f0   ; |359| 
+        bgt       L114                  ; |359| 
+;*      Branch Occurs to L114           ; |359| 
 	.line	146
 ;----------------------------------------------------------------------
-; 361 | else if ((p>=48.0) && (p<52.0))                                        
+; 361 | if (t>200.0)                                                           
 ;----------------------------------------------------------------------
-        ldfu      *+fp(5),f0            ; |361| 
-        cmpf      4.8000000000e+01,f0   ; |361| 
-        blt       L118                  ; |361| 
-;*      Branch Occurs to L118           ; |361| 
-        cmpf      5.2000000000e+01,f0   ; |361| 
-        bge       L118                  ; |361| 
-;*      Branch Occurs to L118           ; |361| 
-	.line	147
-;----------------------------------------------------------------------
-; 362 | k_set[0] = 3;                                                          
-;----------------------------------------------------------------------
-        ldiu      *+fp(3),ar0           ; |362| 
-        ldiu      3,r0                  ; |362| 
-        sti       r0,*ar0               ; |362| 
-        bu        L128                  ; |215| 
-;*      Branch Occurs to L128           ; |215| 
-L118:        
+        ldfu      *+fp(4),f0            ; |361| 
+        cmpf      2.0000000000e+02,f0   ; |361| 
+        ble       L112                  ; |361| 
+;*      Branch Occurs to L112           ; |361| 
 	.line	148
 ;----------------------------------------------------------------------
-; 363 | else if ((p>=52.0) && (p<=85.0))                                       
+; 363 | API_STATUS(fcidx, API_fail);                                           
 ;----------------------------------------------------------------------
-        ldfu      *+fp(5),f0            ; |363| 
-        cmpf      5.2000000000e+01,f0   ; |363| 
-        blt       L121                  ; |363| 
-;*      Branch Occurs to L121           ; |363| 
-        cmpf      8.5000000000e+01,f0   ; |363| 
-        bgt       L121                  ; |363| 
-;*      Branch Occurs to L121           ; |363| 
+        ldp       @CL22,DP
+        ldiu      *+fp(1),ar2           ; |363| 
+        ldiu      2,r2                  ; |363| 
+        ldiu      @CL22,r0              ; |363| 
+        callu     r0                    ; far call to _API_STATUS	; |363| 
+                                        ; |363| Far Call Occurs
 	.line	149
 ;----------------------------------------------------------------------
-; 364 | k_set[0] = 4;                                                          
-; 365 | else                                                                   
+; 364 | GIEP;                                                                  
 ;----------------------------------------------------------------------
-        ldiu      *+fp(3),ar0           ; |364| 
-        ldiu      4,r0                  ; |364| 
-        sti       r0,*ar0               ; |364| 
-        bu        L128                  ; |215| 
-;*      Branch Occurs to L128           ; |215| 
-L121:        
+	pop		ST			
 	.line	151
 ;----------------------------------------------------------------------
-; 366 | k_set[0] = -1;                                                         
-; 369 | switch (k_set[0])                                                      
-; 371 | case 1:                                                                
+; 366 | return API_error_num;                                                  
 ;----------------------------------------------------------------------
-        ldiu      *+fp(3),ar0           ; |366| 
-        ldiu      -1,r0                 ; |366| 
-        sti       r0,*ar0               ; |366| 
-        bu        L128                  ; |215| 
-;*      Branch Occurs to L128           ; |215| 
-L122:        
-	.line	158
+        bud       L173                  ; |366| 
+	nop
+        ldp       @CL23,DP
+        ldfu      @CL23,f0              ; |366| 
+;*      Branch Occurs to L173           ; |366| 
+L112:        
+	.line	153
 ;----------------------------------------------------------------------
-; 373 | k0 = 103.8720;                                                         
+; 368 | else if (t>150.0)                                                      
 ;----------------------------------------------------------------------
-        ldp       @CL26,DP
-        ldfu      @CL26,f0              ; |373| 
-        stf       f0,*+fp(7)            ; |373| 
+        ldfu      *+fp(4),f0            ; |368| 
+        cmpf      1.5000000000e+02,f0   ; |368| 
+        ble       L114                  ; |368| 
+;*      Branch Occurs to L114           ; |368| 
+	.line	154
+;----------------------------------------------------------------------
+; 369 | API_STATUS(fcidx, API_extrapolate);                                    
+;----------------------------------------------------------------------
+        ldp       @CL22,DP
+        ldiu      *+fp(1),ar2           ; |369| 
+        ldiu      1,r2                  ; |369| 
+        ldiu      @CL22,r0              ; |369| 
+        callu     r0                    ; far call to _API_STATUS	; |369| 
+                                        ; |369| Far Call Occurs
+L114:        
+	.line	157
+;----------------------------------------------------------------------
+; 372 | if (k_set[0]==-1)                                                      
+;----------------------------------------------------------------------
+        ldiu      *+fp(3),ar0           ; |372| 
+        ldiu      *ar0,r0               ; |372| 
+        cmpi      -1,r0                 ; |372| 
+        bne       L134                  ; |372| 
+;*      Branch Occurs to L134           ; |372| 
 	.line	159
 ;----------------------------------------------------------------------
-; 374 | k1 = 0.2701;                                                           
+; 374 | if ((p>=0.0) && (p<37.0))                                              
 ;----------------------------------------------------------------------
-        ldp       @CL27,DP
-        ldfu      @CL27,f0              ; |374| 
-        stf       f0,*+fp(8)            ; |374| 
+        ldfu      *+fp(5),f0            ; |374| 
+        cmpf      0.0000000000e+00,f0   ; |374| 
+        blt       L118                  ; |374| 
+;*      Branch Occurs to L118           ; |374| 
+        cmpf      3.7000000000e+01,f0   ; |374| 
+        bge       L118                  ; |374| 
+;*      Branch Occurs to L118           ; |374| 
 	.line	160
 ;----------------------------------------------------------------------
-; 375 | k2 = 0.0;                                                              
+; 375 | k_set[0] = 1;                                                          
 ;----------------------------------------------------------------------
-        ldfu      0.0000000000e+00,f0   ; |375| 
-        stf       f0,*+fp(9)            ; |375| 
+        ldiu      1,r0                  ; |375| 
+        sti       r0,*ar0               ; |375| 
+        bu        L134                  ; |215| 
+;*      Branch Occurs to L134           ; |215| 
+L118:        
+	.line	161
+;----------------------------------------------------------------------
+; 376 | else if ((p>=37.0) && (p<48.0))                                        
+;----------------------------------------------------------------------
+        ldfu      *+fp(5),f0            ; |376| 
+        cmpf      3.7000000000e+01,f0   ; |376| 
+        blt       L121                  ; |376| 
+;*      Branch Occurs to L121           ; |376| 
+        cmpf      4.8000000000e+01,f0   ; |376| 
+        bge       L121                  ; |376| 
+;*      Branch Occurs to L121           ; |376| 
 	.line	162
 ;----------------------------------------------------------------------
-; 377 | break;                                                                 
-; 379 | case 2:                                                                
+; 377 | k_set[0] = 2;                                                          
 ;----------------------------------------------------------------------
-        bu        L164                  ; |377| 
-;*      Branch Occurs to L164           ; |377| 
-L123:        
+        ldiu      *+fp(3),ar0           ; |377| 
+        ldiu      2,r0                  ; |377| 
+        sti       r0,*ar0               ; |377| 
+        bu        L134                  ; |215| 
+;*      Branch Occurs to L134           ; |215| 
+L121:        
+	.line	163
+;----------------------------------------------------------------------
+; 378 | else if ((p>=48.0) && (p<52.0))                                        
+;----------------------------------------------------------------------
+        ldfu      *+fp(5),f0            ; |378| 
+        cmpf      4.8000000000e+01,f0   ; |378| 
+        blt       L124                  ; |378| 
+;*      Branch Occurs to L124           ; |378| 
+        cmpf      5.2000000000e+01,f0   ; |378| 
+        bge       L124                  ; |378| 
+;*      Branch Occurs to L124           ; |378| 
+	.line	164
+;----------------------------------------------------------------------
+; 379 | k_set[0] = 3;                                                          
+;----------------------------------------------------------------------
+        ldiu      *+fp(3),ar0           ; |379| 
+        ldiu      3,r0                  ; |379| 
+        sti       r0,*ar0               ; |379| 
+        bu        L134                  ; |215| 
+;*      Branch Occurs to L134           ; |215| 
+L124:        
+	.line	165
+;----------------------------------------------------------------------
+; 380 | else if ((p>=52.0) && (p<=85.0))                                       
+;----------------------------------------------------------------------
+        ldfu      *+fp(5),f0            ; |380| 
+        cmpf      5.2000000000e+01,f0   ; |380| 
+        blt       L127                  ; |380| 
+;*      Branch Occurs to L127           ; |380| 
+        cmpf      8.5000000000e+01,f0   ; |380| 
+        bgt       L127                  ; |380| 
+;*      Branch Occurs to L127           ; |380| 
 	.line	166
 ;----------------------------------------------------------------------
-; 381 | k0 = 330.3010;                                                         
+; 381 | k_set[0] = 4;                                                          
+; 382 | else                                                                   
 ;----------------------------------------------------------------------
-        ldp       @CL28,DP
-        ldfu      @CL28,f0              ; |381| 
-        stf       f0,*+fp(7)            ; |381| 
-	.line	167
-;----------------------------------------------------------------------
-; 382 | k1 = 0.0;                                                              
-;----------------------------------------------------------------------
-        ldfu      0.0000000000e+00,f0   ; |382| 
-        stf       f0,*+fp(8)            ; |382| 
+        ldiu      *+fp(3),ar0           ; |381| 
+        ldiu      4,r0                  ; |381| 
+        sti       r0,*ar0               ; |381| 
+        bu        L134                  ; |215| 
+;*      Branch Occurs to L134           ; |215| 
+L127:        
 	.line	168
 ;----------------------------------------------------------------------
-; 383 | k2 = 0.0;                                                              
+; 383 | k_set[0] = -1;                                                         
+; 386 | switch (k_set[0])                                                      
+; 388 | case 1:                                                                
 ;----------------------------------------------------------------------
-        ldfu      0.0000000000e+00,f0   ; |383| 
-        stf       f0,*+fp(9)            ; |383| 
-	.line	170
-;----------------------------------------------------------------------
-; 385 | break;                                                                 
-; 387 | case 3:                                                                
-;----------------------------------------------------------------------
-        bu        L164                  ; |385| 
-;*      Branch Occurs to L164           ; |385| 
-L124:        
-	.line	174
-;----------------------------------------------------------------------
-; 389 | k0 = 1489.0670;                                                        
-;----------------------------------------------------------------------
-        ldp       @CL29,DP
-        ldfu      @CL29,f0              ; |389| 
-        stf       f0,*+fp(7)            ; |389| 
+        ldiu      *+fp(3),ar0           ; |383| 
+        ldiu      -1,r0                 ; |383| 
+        sti       r0,*ar0               ; |383| 
+        bu        L134                  ; |215| 
+;*      Branch Occurs to L134           ; |215| 
+L128:        
 	.line	175
 ;----------------------------------------------------------------------
-; 390 | k1 = 0.0;                                                              
+; 390 | k0 = 103.8720;                                                         
 ;----------------------------------------------------------------------
-        ldfu      0.0000000000e+00,f0   ; |390| 
-        stf       f0,*+fp(8)            ; |390| 
+        ldp       @CL26,DP
+        ldfu      @CL26,f0              ; |390| 
+        stf       f0,*+fp(7)            ; |390| 
 	.line	176
 ;----------------------------------------------------------------------
-; 391 | k2 = -0.00186840;                                                      
+; 391 | k1 = 0.2701;                                                           
 ;----------------------------------------------------------------------
-        ldp       @CL30,DP
-        ldfu      @CL30,f0              ; |391| 
-        stf       f0,*+fp(9)            ; |391| 
-	.line	178
+        ldp       @CL27,DP
+        ldfu      @CL27,f0              ; |391| 
+        stf       f0,*+fp(8)            ; |391| 
+	.line	177
 ;----------------------------------------------------------------------
-; 393 | break;                                                                 
-; 395 | case 4:                                                                
+; 392 | k2 = 0.0;                                                              
 ;----------------------------------------------------------------------
-        bu        L164                  ; |393| 
-;*      Branch Occurs to L164           ; |393| 
-L125:        
-	.line	182
+        ldfu      0.0000000000e+00,f0   ; |392| 
+        stf       f0,*+fp(9)            ; |392| 
+	.line	179
 ;----------------------------------------------------------------------
-; 397 | k0 = 192.4571;                                                         
+; 394 | break;                                                                 
+; 396 | case 2:                                                                
 ;----------------------------------------------------------------------
-        ldp       @CL31,DP
-        ldfu      @CL31,f0              ; |397| 
-        stf       f0,*+fp(7)            ; |397| 
+        bu        L170                  ; |394| 
+;*      Branch Occurs to L170           ; |394| 
+L129:        
 	.line	183
 ;----------------------------------------------------------------------
-; 398 | k1 = 0.2438;                                                           
+; 398 | k0 = 330.3010;                                                         
 ;----------------------------------------------------------------------
-        ldp       @CL32,DP
-        ldfu      @CL32,f0              ; |398| 
-        stf       f0,*+fp(8)            ; |398| 
+        ldp       @CL28,DP
+        ldfu      @CL28,f0              ; |398| 
+        stf       f0,*+fp(7)            ; |398| 
 	.line	184
 ;----------------------------------------------------------------------
-; 399 | k2 = 0.0;                                                              
+; 399 | k1 = 0.0;                                                              
 ;----------------------------------------------------------------------
         ldfu      0.0000000000e+00,f0   ; |399| 
-        stf       f0,*+fp(9)            ; |399| 
-	.line	186
+        stf       f0,*+fp(8)            ; |399| 
+	.line	185
 ;----------------------------------------------------------------------
-; 401 | break;                                                                 
-; 403 | case 0:                                                                
-; 404 | default:                                                               
+; 400 | k2 = 0.0;                                                              
 ;----------------------------------------------------------------------
-        bu        L164                  ; |401| 
-;*      Branch Occurs to L164           ; |401| 
-L126:        
+        ldfu      0.0000000000e+00,f0   ; |400| 
+        stf       f0,*+fp(9)            ; |400| 
+	.line	187
+;----------------------------------------------------------------------
+; 402 | break;                                                                 
+; 404 | case 3:                                                                
+;----------------------------------------------------------------------
+        bu        L170                  ; |402| 
+;*      Branch Occurs to L170           ; |402| 
+L130:        
 	.line	191
 ;----------------------------------------------------------------------
-; 406 | k_set[0] = -1;                                                         
+; 406 | k0 = 1489.0670;                                                        
 ;----------------------------------------------------------------------
-        ldiu      *+fp(3),ar0           ; |406| 
-        ldiu      -1,r0                 ; |406| 
-        sti       r0,*ar0               ; |406| 
+        ldp       @CL29,DP
+        ldfu      @CL29,f0              ; |406| 
+        stf       f0,*+fp(7)            ; |406| 
 	.line	192
 ;----------------------------------------------------------------------
-; 407 | GIEP;                                                                  
+; 407 | k1 = 0.0;                                                              
 ;----------------------------------------------------------------------
-	pop		ST			
-	.line	194
+        ldfu      0.0000000000e+00,f0   ; |407| 
+        stf       f0,*+fp(8)            ; |407| 
+	.line	193
 ;----------------------------------------------------------------------
-; 409 | return API_error_num;                                                  
+; 408 | k2 = -0.00186840;                                                      
 ;----------------------------------------------------------------------
-        bud       L167                  ; |409| 
-	nop
-        ldp       @CL23,DP
-        ldfu      @CL23,f0              ; |409| 
-;*      Branch Occurs to L167           ; |409| 
-L128:        
-	.line	154
-        ldiu      *+fp(3),ar0           ; |369| 
-        ldiu      *ar0,r0               ; |369| 
-        cmpi      0,r0                  ; |369| 
-        beq       L126                  ; |369| 
-;*      Branch Occurs to L126           ; |369| 
-        cmpi      1,r0                  ; |369| 
-        beq       L122                  ; |369| 
-;*      Branch Occurs to L122           ; |369| 
-        cmpi      2,r0                  ; |369| 
-        beq       L123                  ; |369| 
-;*      Branch Occurs to L123           ; |369| 
-        cmpi      3,r0                  ; |369| 
-        beq       L124                  ; |369| 
-;*      Branch Occurs to L124           ; |369| 
-        cmpi      4,r0                  ; |369| 
-        beq       L125                  ; |369| 
-;*      Branch Occurs to L125           ; |369| 
-        bu        L126                  ; |369| 
-;*      Branch Occurs to L126           ; |369| 
-	.line	198
+        ldp       @CL30,DP
+        ldfu      @CL30,f0              ; |408| 
+        stf       f0,*+fp(9)            ; |408| 
+	.line	195
 ;----------------------------------------------------------------------
-; 413 | break;                                                                 
-; 415 | case 'C':                                                              
+; 410 | break;                                                                 
+; 412 | case 4:                                                                
 ;----------------------------------------------------------------------
-L135:        
-	.line	202
+        bu        L170                  ; |410| 
+;*      Branch Occurs to L170           ; |410| 
+L131:        
+	.line	199
 ;----------------------------------------------------------------------
-; 417 | k_set[0] = 0;                                                          
+; 414 | k0 = 192.4571;                                                         
 ;----------------------------------------------------------------------
-        ldiu      *+fp(3),ar0           ; |417| 
-        ldiu      0,r0                  ; |417| 
-        sti       r0,*ar0               ; |417| 
+        ldp       @CL31,DP
+        ldfu      @CL31,f0              ; |414| 
+        stf       f0,*+fp(7)            ; |414| 
+	.line	200
+;----------------------------------------------------------------------
+; 415 | k1 = 0.2438;                                                           
+;----------------------------------------------------------------------
+        ldp       @CL32,DP
+        ldfu      @CL32,f0              ; |415| 
+        stf       f0,*+fp(8)            ; |415| 
+	.line	201
+;----------------------------------------------------------------------
+; 416 | k2 = 0.0;                                                              
+;----------------------------------------------------------------------
+        ldfu      0.0000000000e+00,f0   ; |416| 
+        stf       f0,*+fp(9)            ; |416| 
 	.line	203
 ;----------------------------------------------------------------------
-; 418 | a = f->a * 10e6;                                                       
+; 418 | break;                                                                 
+; 420 | case 0:                                                                
+; 421 | default:                                                               
 ;----------------------------------------------------------------------
-        ldp       @CL33,DP
-        ldiu      *+fp(13),ir0          ; |418| 
-        ldiu      399,ar0               ; |418| 
-        ldfu      @CL33,f0              ; |418| 
-        mpyf3     *+ar0(ir0),f0,f0      ; |418| 
-        stf       f0,*+fp(6)            ; |418| 
-	.line	205
-;----------------------------------------------------------------------
-; 420 | if ((t<0.0) || (a<270.0) || (a>930.0))                                 
-;----------------------------------------------------------------------
-        ldfu      *+fp(4),f0            ; |420| 
-        cmpf      0.0000000000e+00,f0   ; |420| 
-        blt       L138                  ; |420| 
-;*      Branch Occurs to L138           ; |420| 
-        ldp       @CL34,DP
-        ldfu      *+fp(6),f0            ; |420| 
-        cmpf      @CL34,f0              ; |420| 
-        blt       L138                  ; |420| 
-;*      Branch Occurs to L138           ; |420| 
-        ldp       @CL35,DP
-        cmpf      @CL35,f0              ; |420| 
-        ble       L140                  ; |420| 
-;*      Branch Occurs to L140           ; |420| 
-L138:        
-	.line	207
-;----------------------------------------------------------------------
-; 422 | API_STATUS(fcidx, API_fail);                                           
-;----------------------------------------------------------------------
-        ldp       @CL22,DP
-        ldiu      *+fp(1),ar2           ; |422| 
-        ldiu      2,r2                  ; |422| 
-        ldiu      @CL22,r0              ; |422| 
-        callu     r0                    ; far call to _API_STATUS	; |422| 
-                                        ; |422| Far Call Occurs
+        bu        L170                  ; |418| 
+;*      Branch Occurs to L170           ; |418| 
+L132:        
 	.line	208
 ;----------------------------------------------------------------------
-; 423 | GIEP;                                                                  
+; 423 | k_set[0] = -1;                                                         
+;----------------------------------------------------------------------
+        ldiu      *+fp(3),ar0           ; |423| 
+        ldiu      -1,r0                 ; |423| 
+        sti       r0,*ar0               ; |423| 
+	.line	209
+;----------------------------------------------------------------------
+; 424 | GIEP;                                                                  
 ;----------------------------------------------------------------------
 	pop		ST			
-	.line	210
+	.line	211
 ;----------------------------------------------------------------------
-; 425 | return API_error_num;                                                  
+; 426 | return API_error_num;                                                  
 ;----------------------------------------------------------------------
-        bud       L167                  ; |425| 
+        bud       L173                  ; |426| 
 	nop
         ldp       @CL23,DP
-        ldfu      @CL23,f0              ; |425| 
-;*      Branch Occurs to L167           ; |425| 
-L140:        
-	.line	212
-;----------------------------------------------------------------------
-; 427 | else if ((a<510.0) && (t>300.0))                                       
-;----------------------------------------------------------------------
-        ldp       @CL36,DP
-        ldfu      *+fp(6),f0            ; |427| 
-        cmpf      @CL36,f0              ; |427| 
-        bge       L144                  ; |427| 
-;*      Branch Occurs to L144           ; |427| 
-        ldp       @CL24,DP
-        ldfu      *+fp(4),f0            ; |427| 
-        cmpf      @CL24,f0              ; |427| 
-        ble       L144                  ; |427| 
-;*      Branch Occurs to L144           ; |427| 
-	.line	214
-;----------------------------------------------------------------------
-; 429 | API_STATUS(fcidx, API_fail);                                           
-;----------------------------------------------------------------------
-        ldp       @CL22,DP
-        ldiu      *+fp(1),ar2           ; |429| 
-        ldiu      2,r2                  ; |429| 
-        ldiu      @CL22,r0              ; |429| 
-        callu     r0                    ; far call to _API_STATUS	; |429| 
-                                        ; |429| Far Call Occurs
+        ldfu      @CL23,f0              ; |426| 
+;*      Branch Occurs to L173           ; |426| 
+L134:        
+	.line	171
+        ldiu      *+fp(3),ar0           ; |386| 
+        ldiu      *ar0,r0               ; |386| 
+        cmpi      0,r0                  ; |386| 
+        beq       L132                  ; |386| 
+;*      Branch Occurs to L132           ; |386| 
+        cmpi      1,r0                  ; |386| 
+        beq       L128                  ; |386| 
+;*      Branch Occurs to L128           ; |386| 
+        cmpi      2,r0                  ; |386| 
+        beq       L129                  ; |386| 
+;*      Branch Occurs to L129           ; |386| 
+        cmpi      3,r0                  ; |386| 
+        beq       L130                  ; |386| 
+;*      Branch Occurs to L130           ; |386| 
+        cmpi      4,r0                  ; |386| 
+        beq       L131                  ; |386| 
+;*      Branch Occurs to L131           ; |386| 
+        bu        L132                  ; |386| 
+;*      Branch Occurs to L132           ; |386| 
 	.line	215
 ;----------------------------------------------------------------------
-; 430 | GIEP;                                                                  
+; 430 | break;                                                                 
+; 432 | case 'C':                                                              
 ;----------------------------------------------------------------------
-	pop		ST			
-	.line	217
-;----------------------------------------------------------------------
-; 432 | return API_error_num;                                                  
-;----------------------------------------------------------------------
-        bud       L167                  ; |432| 
-	nop
-        ldp       @CL23,DP
-        ldfu      @CL23,f0              ; |432| 
-;*      Branch Occurs to L167           ; |432| 
-L144:        
+L141:        
 	.line	219
 ;----------------------------------------------------------------------
-; 434 | else if ((a<530.0) && (t>250.0))                                       
+; 434 | k_set[0] = 0;                                                          
 ;----------------------------------------------------------------------
-        ldp       @CL37,DP
-        ldfu      *+fp(6),f0            ; |434| 
-        cmpf      @CL37,f0              ; |434| 
-        bge       L148                  ; |434| 
-;*      Branch Occurs to L148           ; |434| 
-        ldfu      *+fp(4),f0            ; |434| 
-        cmpf      2.5000000000e+02,f0   ; |434| 
-        ble       L148                  ; |434| 
-;*      Branch Occurs to L148           ; |434| 
-	.line	221
+        ldiu      *+fp(3),ar0           ; |434| 
+        ldiu      0,r0                  ; |434| 
+        sti       r0,*ar0               ; |434| 
+	.line	220
 ;----------------------------------------------------------------------
-; 436 | API_STATUS(fcidx, API_fail);                                           
+; 435 | a = f->a * 10e6;                                                       
 ;----------------------------------------------------------------------
-        ldp       @CL22,DP
-        ldiu      *+fp(1),ar2           ; |436| 
-        ldiu      2,r2                  ; |436| 
-        ldiu      @CL22,r0              ; |436| 
-        callu     r0                    ; far call to _API_STATUS	; |436| 
-                                        ; |436| Far Call Occurs
+        ldp       @CL33,DP
+        ldiu      *+fp(13),ir0          ; |435| 
+        ldiu      399,ar0               ; |435| 
+        ldfu      @CL33,f0              ; |435| 
+        mpyf3     *+ar0(ir0),f0,f0      ; |435| 
+        stf       f0,*+fp(6)            ; |435| 
 	.line	222
 ;----------------------------------------------------------------------
-; 437 | GIEP;                                                                  
+; 437 | if ((t<0.0) || (a<270.0) || (a>930.0))                                 
 ;----------------------------------------------------------------------
-	pop		ST			
+        ldfu      *+fp(4),f0            ; |437| 
+        cmpf      0.0000000000e+00,f0   ; |437| 
+        blt       L144                  ; |437| 
+;*      Branch Occurs to L144           ; |437| 
+        ldp       @CL34,DP
+        ldfu      *+fp(6),f0            ; |437| 
+        cmpf      @CL34,f0              ; |437| 
+        blt       L144                  ; |437| 
+;*      Branch Occurs to L144           ; |437| 
+        ldp       @CL35,DP
+        cmpf      @CL35,f0              ; |437| 
+        ble       L146                  ; |437| 
+;*      Branch Occurs to L146           ; |437| 
+L144:        
 	.line	224
 ;----------------------------------------------------------------------
-; 439 | return API_error_num;                                                  
-;----------------------------------------------------------------------
-        bud       L167                  ; |439| 
-	nop
-        ldp       @CL23,DP
-        ldfu      @CL23,f0              ; |439| 
-;*      Branch Occurs to L167           ; |439| 
-L148:        
-	.line	226
-;----------------------------------------------------------------------
-; 441 | else if ((a<=930.0) && (t>200.0))                                      
-;----------------------------------------------------------------------
-        ldp       @CL35,DP
-        ldfu      *+fp(6),f0            ; |441| 
-        cmpf      @CL35,f0              ; |441| 
-        bgt       L151                  ; |441| 
-;*      Branch Occurs to L151           ; |441| 
-        ldfu      *+fp(4),f0            ; |441| 
-        cmpf      2.0000000000e+02,f0   ; |441| 
-        ble       L151                  ; |441| 
-;*      Branch Occurs to L151           ; |441| 
-	.line	228
-;----------------------------------------------------------------------
-; 443 | API_STATUS(fcidx, API_fail);                                           
+; 439 | API_STATUS(fcidx, API_fail);                                           
 ;----------------------------------------------------------------------
         ldp       @CL22,DP
-        ldiu      *+fp(1),ar2           ; |443| 
-        ldiu      2,r2                  ; |443| 
-        ldiu      @CL22,r0              ; |443| 
-        callu     r0                    ; far call to _API_STATUS	; |443| 
-                                        ; |443| Far Call Occurs
-	.line	229
+        ldiu      *+fp(1),ar2           ; |439| 
+        ldiu      2,r2                  ; |439| 
+        ldiu      @CL22,r0              ; |439| 
+        callu     r0                    ; far call to _API_STATUS	; |439| 
+                                        ; |439| Far Call Occurs
+	.line	225
 ;----------------------------------------------------------------------
-; 444 | GIEP;                                                                  
+; 440 | GIEP;                                                                  
 ;----------------------------------------------------------------------
 	pop		ST			
-	.line	231
+	.line	227
 ;----------------------------------------------------------------------
-; 446 | return API_error_num;                                                  
+; 442 | return API_error_num;                                                  
 ;----------------------------------------------------------------------
-        bud       L167                  ; |446| 
+        bud       L173                  ; |442| 
 	nop
         ldp       @CL23,DP
-        ldfu      @CL23,f0              ; |446| 
-;*      Branch Occurs to L167           ; |446| 
-L151:        
+        ldfu      @CL23,f0              ; |442| 
+;*      Branch Occurs to L173           ; |442| 
+L146:        
+	.line	229
+;----------------------------------------------------------------------
+; 444 | else if ((a<510.0) && (t>300.0))                                       
+;----------------------------------------------------------------------
+        ldp       @CL36,DP
+        ldfu      *+fp(6),f0            ; |444| 
+        cmpf      @CL36,f0              ; |444| 
+        bge       L150                  ; |444| 
+;*      Branch Occurs to L150           ; |444| 
+        ldp       @CL24,DP
+        ldfu      *+fp(4),f0            ; |444| 
+        cmpf      @CL24,f0              ; |444| 
+        ble       L150                  ; |444| 
+;*      Branch Occurs to L150           ; |444| 
+	.line	231
+;----------------------------------------------------------------------
+; 446 | API_STATUS(fcidx, API_fail);                                           
+;----------------------------------------------------------------------
+        ldp       @CL22,DP
+        ldiu      *+fp(1),ar2           ; |446| 
+        ldiu      2,r2                  ; |446| 
+        ldiu      @CL22,r0              ; |446| 
+        callu     r0                    ; far call to _API_STATUS	; |446| 
+                                        ; |446| Far Call Occurs
+	.line	232
+;----------------------------------------------------------------------
+; 447 | GIEP;                                                                  
+;----------------------------------------------------------------------
+	pop		ST			
 	.line	234
 ;----------------------------------------------------------------------
-; 449 | a = f->a;                                                              
+; 449 | return API_error_num;                                                  
 ;----------------------------------------------------------------------
-        ldiu      *+fp(13),ir0          ; |449| 
-        ldiu      399,ar0               ; |449| 
-        ldfu      *+ar0(ir0),f0         ; |449| 
-        stf       f0,*+fp(6)            ; |449| 
+        bud       L173                  ; |449| 
+	nop
+        ldp       @CL23,DP
+        ldfu      @CL23,f0              ; |449| 
+;*      Branch Occurs to L173           ; |449| 
+L150:        
 	.line	236
 ;----------------------------------------------------------------------
-; 451 | break;                                                                 
-; 453 | case 'D':                                                              
-; 454 | default:                                                               
+; 451 | else if ((a<530.0) && (t>250.0))                                       
 ;----------------------------------------------------------------------
-        bu        L164                  ; |451| 
-;*      Branch Occurs to L164           ; |451| 
-L152:        
+        ldp       @CL37,DP
+        ldfu      *+fp(6),f0            ; |451| 
+        cmpf      @CL37,f0              ; |451| 
+        bge       L154                  ; |451| 
+;*      Branch Occurs to L154           ; |451| 
+        ldfu      *+fp(4),f0            ; |451| 
+        cmpf      2.5000000000e+02,f0   ; |451| 
+        ble       L154                  ; |451| 
+;*      Branch Occurs to L154           ; |451| 
+	.line	238
+;----------------------------------------------------------------------
+; 453 | API_STATUS(fcidx, API_fail);                                           
+;----------------------------------------------------------------------
+        ldp       @CL22,DP
+        ldiu      *+fp(1),ar2           ; |453| 
+        ldiu      2,r2                  ; |453| 
+        ldiu      @CL22,r0              ; |453| 
+        callu     r0                    ; far call to _API_STATUS	; |453| 
+                                        ; |453| Far Call Occurs
+	.line	239
+;----------------------------------------------------------------------
+; 454 | GIEP;                                                                  
+;----------------------------------------------------------------------
+	pop		ST			
 	.line	241
 ;----------------------------------------------------------------------
-; 456 | f->API_TABLE = 'D'<<8;                                                 
+; 456 | return API_error_num;                                                  
 ;----------------------------------------------------------------------
-        ldiu      *+fp(13),ir0          ; |456| 
-        ldiu      398,ar0               ; |456| 
-        ldiu      17408,r0              ; |456| 
-        sti       r0,*+ar0(ir0)         ; |456| 
+        bud       L173                  ; |456| 
+	nop
+        ldp       @CL23,DP
+        ldfu      @CL23,f0              ; |456| 
+;*      Branch Occurs to L173           ; |456| 
+L154:        
 	.line	243
 ;----------------------------------------------------------------------
-; 458 | if ((p<-10.0) || (p>45.0) || (t<0.0) || (t>300.0))                     
+; 458 | else if ((a<=930.0) && (t>200.0))                                      
 ;----------------------------------------------------------------------
-        ldp       @CL38,DP
-        ldfu      *+fp(5),f0            ; |458| 
-        cmpf      @CL38,f0              ; |458| 
-        blt       L156                  ; |458| 
-;*      Branch Occurs to L156           ; |458| 
-        cmpf      4.5000000000e+01,f0   ; |458| 
-        bgt       L156                  ; |458| 
-;*      Branch Occurs to L156           ; |458| 
+        ldp       @CL35,DP
+        ldfu      *+fp(6),f0            ; |458| 
+        cmpf      @CL35,f0              ; |458| 
+        bgt       L157                  ; |458| 
+;*      Branch Occurs to L157           ; |458| 
         ldfu      *+fp(4),f0            ; |458| 
-        cmpf      0.0000000000e+00,f0   ; |458| 
-        blt       L156                  ; |458| 
-;*      Branch Occurs to L156           ; |458| 
-        ldp       @CL24,DP
-        cmpf      @CL24,f0              ; |458| 
+        cmpf      2.0000000000e+02,f0   ; |458| 
         ble       L157                  ; |458| 
 ;*      Branch Occurs to L157           ; |458| 
-L156:        
 	.line	245
 ;----------------------------------------------------------------------
 ; 460 | API_STATUS(fcidx, API_fail);                                           
@@ -2705,45 +2705,116 @@ L156:
 ;----------------------------------------------------------------------
 ; 463 | return API_error_num;                                                  
 ;----------------------------------------------------------------------
-        bud       L167                  ; |463| 
+        bud       L173                  ; |463| 
 	nop
         ldp       @CL23,DP
         ldfu      @CL23,f0              ; |463| 
-;*      Branch Occurs to L167           ; |463| 
+;*      Branch Occurs to L173           ; |463| 
 L157:        
 	.line	251
 ;----------------------------------------------------------------------
-; 466 | k_set[0] = 0;                                                          
+; 466 | a = f->a;                                                              
 ;----------------------------------------------------------------------
-        ldiu      *+fp(3),ar0           ; |466| 
-        ldiu      0,r0                  ; |466| 
-        sti       r0,*ar0               ; |466| 
-	.line	252
-;----------------------------------------------------------------------
-; 467 | k0               = 0.0;                                                
-;----------------------------------------------------------------------
-        ldfu      0.0000000000e+00,f0   ; |467| 
-        stf       f0,*+fp(7)            ; |467| 
+        ldiu      *+fp(13),ir0          ; |466| 
+        ldiu      399,ar0               ; |466| 
+        ldfu      *+ar0(ir0),f0         ; |466| 
+        stf       f0,*+fp(6)            ; |466| 
 	.line	253
 ;----------------------------------------------------------------------
-; 468 | k1               = 0.34878;                                            
+; 468 | break;                                                                 
+; 470 | case 'D':                                                              
+; 471 | default:                                                               
+;----------------------------------------------------------------------
+        bu        L170                  ; |468| 
+;*      Branch Occurs to L170           ; |468| 
+L158:        
+	.line	258
+;----------------------------------------------------------------------
+; 473 | f->API_TABLE = 'D'<<8;                                                 
+;----------------------------------------------------------------------
+        ldiu      *+fp(13),ir0          ; |473| 
+        ldiu      398,ar0               ; |473| 
+        ldiu      17408,r0              ; |473| 
+        sti       r0,*+ar0(ir0)         ; |473| 
+	.line	260
+;----------------------------------------------------------------------
+; 475 | if ((p<-10.0) || (p>45.0) || (t<0.0) || (t>300.0))                     
+;----------------------------------------------------------------------
+        ldp       @CL38,DP
+        ldfu      *+fp(5),f0            ; |475| 
+        cmpf      @CL38,f0              ; |475| 
+        blt       L162                  ; |475| 
+;*      Branch Occurs to L162           ; |475| 
+        cmpf      4.5000000000e+01,f0   ; |475| 
+        bgt       L162                  ; |475| 
+;*      Branch Occurs to L162           ; |475| 
+        ldfu      *+fp(4),f0            ; |475| 
+        cmpf      0.0000000000e+00,f0   ; |475| 
+        blt       L162                  ; |475| 
+;*      Branch Occurs to L162           ; |475| 
+        ldp       @CL24,DP
+        cmpf      @CL24,f0              ; |475| 
+        ble       L163                  ; |475| 
+;*      Branch Occurs to L163           ; |475| 
+L162:        
+	.line	262
+;----------------------------------------------------------------------
+; 477 | API_STATUS(fcidx, API_fail);                                           
+;----------------------------------------------------------------------
+        ldp       @CL22,DP
+        ldiu      *+fp(1),ar2           ; |477| 
+        ldiu      2,r2                  ; |477| 
+        ldiu      @CL22,r0              ; |477| 
+        callu     r0                    ; far call to _API_STATUS	; |477| 
+                                        ; |477| Far Call Occurs
+	.line	263
+;----------------------------------------------------------------------
+; 478 | GIEP;                                                                  
+;----------------------------------------------------------------------
+	pop		ST			
+	.line	265
+;----------------------------------------------------------------------
+; 480 | return API_error_num;                                                  
+;----------------------------------------------------------------------
+        bud       L173                  ; |480| 
+	nop
+        ldp       @CL23,DP
+        ldfu      @CL23,f0              ; |480| 
+;*      Branch Occurs to L173           ; |480| 
+L163:        
+	.line	268
+;----------------------------------------------------------------------
+; 483 | k_set[0] = 0;                                                          
+;----------------------------------------------------------------------
+        ldiu      *+fp(3),ar0           ; |483| 
+        ldiu      0,r0                  ; |483| 
+        sti       r0,*ar0               ; |483| 
+	.line	269
+;----------------------------------------------------------------------
+; 484 | k0               = 0.0;                                                
+;----------------------------------------------------------------------
+        ldfu      0.0000000000e+00,f0   ; |484| 
+        stf       f0,*+fp(7)            ; |484| 
+	.line	270
+;----------------------------------------------------------------------
+; 485 | k1               = 0.34878;                                            
 ;----------------------------------------------------------------------
         ldp       @CL39,DP
-        ldfu      @CL39,f0              ; |468| 
-        stf       f0,*+fp(8)            ; |468| 
-	.line	254
+        ldfu      @CL39,f0              ; |485| 
+        stf       f0,*+fp(8)            ; |485| 
+	.line	271
 ;----------------------------------------------------------------------
-; 469 | k2               = 0.0;                                                
+; 486 | k2               = 0.0;                                                
 ;----------------------------------------------------------------------
-        ldfu      0.0000000000e+00,f0   ; |469| 
-        stf       f0,*+fp(9)            ; |469| 
-	.line	256
+        ldfu      0.0000000000e+00,f0   ; |486| 
+        stf       f0,*+fp(9)            ; |486| 
+	.line	273
 ;----------------------------------------------------------------------
-; 471 | break;                                                                 
+; 488 | break;                                                                 
 ;----------------------------------------------------------------------
-        bu        L164                  ; |471| 
-;*      Branch Occurs to L164           ; |471| 
-L159:        
+        bu        L170                  ; |488| 
+;*      Branch Occurs to L170           ; |488| 
+L165:        
 	.line	27
         ldiu      *+fp(13),ir0          ; |242| 
         ldiu      398,ar0               ; |242| 
@@ -2753,146 +2824,146 @@ L159:
         beq       L56                   ; |242| 
 ;*      Branch Occurs to L56            ; |242| 
         cmpi      66,r0                 ; |242| 
-        beq       L85                   ; |242| 
-;*      Branch Occurs to L85            ; |242| 
+        beq       L91                   ; |242| 
+;*      Branch Occurs to L91            ; |242| 
         cmpi      67,r0                 ; |242| 
-        beq       L135                  ; |242| 
-;*      Branch Occurs to L135           ; |242| 
+        beq       L141                  ; |242| 
+;*      Branch Occurs to L141           ; |242| 
         cmpi      68,r0                 ; |242| 
-        beq       L152                  ; |242| 
-;*      Branch Occurs to L152           ; |242| 
-        bu        L152                  ; |242| 
-;*      Branch Occurs to L152           ; |242| 
-L164:        
-	.line	260
+        beq       L158                  ; |242| 
+;*      Branch Occurs to L158           ; |242| 
+        bu        L158                  ; |242| 
+;*      Branch Occurs to L158           ; |242| 
+L170:        
+	.line	277
 ;----------------------------------------------------------------------
-; 475 | t -= 60.0;                                                             
+; 492 | t -= 60.0;                                                             
 ;----------------------------------------------------------------------
-        ldfu      6.0000000000e+01,f0   ; |475| 
-        subrf     *+fp(4),f0            ; |475| 
-        stf       f0,*+fp(4)            ; |475| 
-	.line	261
+        ldfu      6.0000000000e+01,f0   ; |492| 
+        subrf     *+fp(4),f0            ; |492| 
+        stf       f0,*+fp(4)            ; |492| 
+	.line	278
 ;----------------------------------------------------------------------
-; 476 | p  = r;                                                                
+; 493 | p  = r;                                                                
 ;----------------------------------------------------------------------
-        ldfu      *+fp(2),f0            ; |476| 
-        stf       f0,*+fp(5)            ; |476| 
-	.line	263
+        ldfu      *+fp(2),f0            ; |493| 
+        stf       f0,*+fp(5)            ; |493| 
+	.line	280
 ;----------------------------------------------------------------------
-; 478 | if ((f->API_TABLE>>8) != 'C')                                          
-; 479 | {//a = (k0/(p*p)) + (k1/p) + k2;                                       
+; 495 | if ((f->API_TABLE>>8) != 'C')                                          
+; 496 | {//a = (k0/(p*p)) + (k1/p) + k2;                                       
 ;----------------------------------------------------------------------
-        ldiu      *+fp(13),ir0          ; |478| 
-        ldiu      398,ar0               ; |478| 
-        ldiu      -8,r0                 ; |478| 
-        ash3      r0,*+ar0(ir0),r0      ; |478| 
-        cmpi      67,r0                 ; |478| 
-        beq       L166                  ; |478| 
-;*      Branch Occurs to L166           ; |478| 
-	.line	265
+        ldiu      *+fp(13),ir0          ; |495| 
+        ldiu      398,ar0               ; |495| 
+        ldiu      -8,r0                 ; |495| 
+        ash3      r0,*+ar0(ir0),r0      ; |495| 
+        cmpi      67,r0                 ; |495| 
+        beq       L172                  ; |495| 
+;*      Branch Occurs to L172           ; |495| 
+	.line	282
 ;----------------------------------------------------------------------
-; 480 | t1 = truncate((k0/p),8);                                               
+; 497 | t1 = truncate((k0/p),8);                                               
 ;----------------------------------------------------------------------
-        ldfu      *+fp(7),f0            ; |480| 
-        ldfu      *+fp(5),f1            ; |480| 
-        call      DIV_F30               ; |480| 
-                                        ; |480| Call Occurs
+        ldfu      *+fp(7),f0            ; |497| 
+        ldfu      *+fp(5),f1            ; |497| 
+        call      DIV_F30               ; |497| 
+                                        ; |497| Call Occurs
         ldp       @CL40,DP
-        ldfu      f0,f2                 ; |480| 
-        ldiu      @CL40,r1              ; |480| 
-        ldiu      8,ar2                 ; |480| 
-        callu     r1                    ; far call to _truncate	; |480| 
-                                        ; |480| Far Call Occurs
-        stf       f0,*+fp(10)           ; |480| 
-	.line	266
+        ldfu      f0,f2                 ; |497| 
+        ldiu      @CL40,r1              ; |497| 
+        ldiu      8,ar2                 ; |497| 
+        callu     r1                    ; far call to _truncate	; |497| 
+                                        ; |497| Far Call Occurs
+        stf       f0,*+fp(10)           ; |497| 
+	.line	283
 ;----------------------------------------------------------------------
-; 481 | t2 = truncate((t1/p),8);                                               
+; 498 | t2 = truncate((t1/p),8);                                               
 ;----------------------------------------------------------------------
-        ldfu      *+fp(5),f1            ; |481| 
-        call      DIV_F30               ; |481| 
-                                        ; |481| Call Occurs
+        ldfu      *+fp(5),f1            ; |498| 
+        call      DIV_F30               ; |498| 
+                                        ; |498| Call Occurs
         ldp       @CL40,DP
-        ldiu      @CL40,r1              ; |481| 
-        ldiu      8,ar2                 ; |481| 
-        ldfu      f0,f2                 ; |481| 
-        callu     r1                    ; far call to _truncate	; |481| 
-                                        ; |481| Far Call Occurs
-        stf       f0,*+fp(11)           ; |481| 
-	.line	267
+        ldiu      @CL40,r1              ; |498| 
+        ldiu      8,ar2                 ; |498| 
+        ldfu      f0,f2                 ; |498| 
+        callu     r1                    ; far call to _truncate	; |498| 
+                                        ; |498| Far Call Occurs
+        stf       f0,*+fp(11)           ; |498| 
+	.line	284
 ;----------------------------------------------------------------------
-; 482 | t3 = truncate((k1/p),8);                                               
+; 499 | t3 = truncate((k1/p),8);                                               
 ;----------------------------------------------------------------------
-        ldfu      *+fp(5),f1            ; |482| 
-        ldfu      *+fp(8),f0            ; |482| 
-        call      DIV_F30               ; |482| 
-                                        ; |482| Call Occurs
+        ldfu      *+fp(5),f1            ; |499| 
+        ldfu      *+fp(8),f0            ; |499| 
+        call      DIV_F30               ; |499| 
+                                        ; |499| Call Occurs
         ldp       @CL40,DP
-        ldiu      @CL40,r1              ; |482| 
-        ldfu      f0,f2                 ; |482| 
-        ldiu      8,ar2                 ; |482| 
-        callu     r1                    ; far call to _truncate	; |482| 
-                                        ; |482| Far Call Occurs
-        stf       f0,*+fp(12)           ; |482| 
-	.line	268
+        ldiu      @CL40,r1              ; |499| 
+        ldfu      f0,f2                 ; |499| 
+        ldiu      8,ar2                 ; |499| 
+        callu     r1                    ; far call to _truncate	; |499| 
+                                        ; |499| Far Call Occurs
+        stf       f0,*+fp(12)           ; |499| 
+	.line	285
 ;----------------------------------------------------------------------
-; 483 | a  = sigfig((t2+t3+k2), 4);                                            
+; 500 | a  = sigfig((t2+t3+k2), 4);                                            
 ;----------------------------------------------------------------------
         ldfu      f0,f2
-        addf      *+fp(11),f2           ; |483| 
-        ldiu      4,ar2                 ; |483| 
+        addf      *+fp(11),f2           ; |500| 
+        ldiu      4,ar2                 ; |500| 
         ldp       @CL41,DP
-        addf      *+fp(9),f2            ; |483| 
-        ldiu      @CL41,r0              ; |483| 
-        callu     r0                    ; far call to _sigfig	; |483| 
-                                        ; |483| Far Call Occurs
-        stf       f0,*+fp(6)            ; |483| 
-L166:        
-	.line	271
+        addf      *+fp(9),f2            ; |500| 
+        ldiu      @CL41,r0              ; |500| 
+        callu     r0                    ; far call to _sigfig	; |500| 
+                                        ; |500| Far Call Occurs
+        stf       f0,*+fp(6)            ; |500| 
+L172:        
+	.line	288
 ;----------------------------------------------------------------------
-; 486 | t = p * exp(-a*t*(1.0+0.8*a*t));                                       
+; 503 | t = p * exp(-a*t*(1.0+0.8*a*t));                                       
 ;----------------------------------------------------------------------
-        ldfu      *+fp(6),f1            ; |486| 
+        ldfu      *+fp(6),f1            ; |503| 
         ldp       @CL42,DP
-        negf      *+fp(6),f0            ; |486| 
-        mpyf      @CL42,f1              ; |486| 
-        mpyf      *+fp(4),f0            ; |486| 
+        negf      *+fp(6),f0            ; |503| 
+        mpyf      @CL42,f1              ; |503| 
+        mpyf      *+fp(4),f0            ; |503| 
         ldp       @CL43,DP
-        mpyf      *+fp(4),f1            ; |486| 
-        ldiu      @CL43,r3              ; |486| 
-        addf      1.0000000000e+00,f1   ; |486| 
-        mpyf3     f1,f0,f2              ; |486| 
-        callu     r3                    ; far call to _exp	; |486| 
-                                        ; |486| Far Call Occurs
-        mpyf      *+fp(5),f0            ; |486| 
-        stf       f0,*+fp(4)            ; |486| 
-	.line	272
+        mpyf      *+fp(4),f1            ; |503| 
+        ldiu      @CL43,r3              ; |503| 
+        addf      1.0000000000e+00,f1   ; |503| 
+        mpyf3     f1,f0,f2              ; |503| 
+        callu     r3                    ; far call to _exp	; |503| 
+                                        ; |503| Far Call Occurs
+        mpyf      *+fp(5),f0            ; |503| 
+        stf       f0,*+fp(4)            ; |503| 
+	.line	289
 ;----------------------------------------------------------------------
-; 487 | GIEP;                                                                  
+; 504 | GIEP;                                                                  
 ;----------------------------------------------------------------------
 	pop		ST			
-	.line	274
+	.line	291
 ;----------------------------------------------------------------------
-; 489 | return t;                                                              
+; 506 | return t;                                                              
 ;----------------------------------------------------------------------
-L167:        
-	.line	275
+L173:        
+	.line	292
                                         ; Begin Epilog Code
-        ldiu      *-fp(1),r1            ; |490| 
-        ldiu      *fp,fp                ; |490| 
+        ldiu      *-fp(1),r1            ; |507| 
+        ldiu      *fp,fp                ; |507| 
                                         ; Restore SOE Registers
-        pop       ar4                   ; |490| 
+        pop       ar4                   ; |507| 
                                         ; Unallocate the Frame
-        subi      15,sp                 ; |490| 
+        subi      15,sp                 ; |507| 
         bu        r1
 ;*      Branch Occurs to r1 
-	.endfunc	490,000001000h,13
+	.endfunc	507,000001000h,13
 
 
 	.sect	 ".text"
 
 	.global	_API_15C_PT
 	.sym	_API_15C_PT,_API_15C_PT,39,2,0
-	.func	506
+	.func	523
 ;******************************************************************************
 ;* FUNCTION NAME: _API_15C_PT                                                 *
 ;*                                                                            *
@@ -2926,7 +2997,7 @@ _API_15C_PT:
 	.sym	_f,13,24,1,32,.fake31
 	.line	1
 ;----------------------------------------------------------------------
-; 506 | double API_15C_PT(const int fcidx, const double r, int* k_set)         
+; 523 | double API_15C_PT(const int fcidx, const double r, int* k_set)         
 ;----------------------------------------------------------------------
         push      fp
         ldiu      sp,fp
@@ -2934,1351 +3005,1354 @@ _API_15C_PT:
         push      ar4
 	.line	2
 ;----------------------------------------------------------------------
-; 508 | double t;       /* temperature */                                      
-; 510 | double p;       /* pressure (NOT! -DHA)*/                              
-; 516 | double a;       /* case C variable */                                  
-; 517 | double k0;      /* constant */                                         
-; 518 | double k1;      /* constant */                                         
-; 519 | double k2;      /* constant */                                         
-; 520 | double t1;                                                             
-; 521 | double t2;                                                             
-; 522 | double t3;                                                             
-; 523 | FLOW_COMP* f; /* flow computer */                                      
+; 525 | double t;       /* temperature */                                      
+; 527 | double p;       /* pressure (NOT! -DHA)*/                              
+; 533 | double a;       /* case C variable */                                  
+; 534 | double k0;      /* constant */                                         
+; 535 | double k1;      /* constant */                                         
+; 536 | double k2;      /* constant */                                         
+; 537 | double t1;                                                             
+; 538 | double t2;                                                             
+; 539 | double t3;                                                             
+; 540 | FLOW_COMP* f; /* flow computer */                                      
 ;----------------------------------------------------------------------
-        sti       r3,*+fp(3)            ; |507| 
-        stf       f2,*+fp(2)            ; |507| 
-        sti       ar2,*+fp(1)           ; |507| 
+        sti       r3,*+fp(3)            ; |524| 
+        stf       f2,*+fp(2)            ; |524| 
+        sti       ar2,*+fp(1)           ; |524| 
 	.line	20
 ;----------------------------------------------------------------------
-; 525 | _GIEP;                                                                 
+; 542 | _GIEP;                                                                 
 ;----------------------------------------------------------------------
 	push	ST			
 	andn	2000h, ST	
 	.line	22
 ;----------------------------------------------------------------------
-; 527 | f = &FC[fcidx];                                                        
+; 544 | f = &FC[fcidx];                                                        
 ;----------------------------------------------------------------------
         ldiu      ar2,r0
         ldp       @CL20,DP
-        mpyi      1336,r0               ; |527| 
-        addi      @CL20,r0              ; |527| Unsigned
-        sti       r0,*+fp(13)           ; |527| 
+        mpyi      1336,r0               ; |544| 
+        addi      @CL20,r0              ; |544| Unsigned
+        sti       r0,*+fp(13)           ; |544| 
 	.line	23
 ;----------------------------------------------------------------------
-; 528 | t = Convert(f->T.class, f->T.calc_unit, u_temp_C, f->T.calc_val, 0, f->
+; 545 | t = Convert(f->T.class, f->T.calc_unit, u_temp_C, f->T.calc_val, 0, f->
 ;     | T.aux);                                                                
 ;----------------------------------------------------------------------
-        ldiu      32,rc                 ; |528| 
+        ldiu      32,rc                 ; |545| 
         ldiu      r0,ar1
         ldp       @CL1,DP
         ldiu      r0,ar0
         ldiu      r0,ar2
-        ldfu      *+ar1(53),f2          ; |528| 40b float hi half
+        ldfu      *+ar1(53),f2          ; |545| 40b float hi half
         ldiu      r0,ar4
-        ldiu      *+ar2(50),re          ; |528| 
-        ldiu      *+ar0(58),r3          ; |528| 
-        ldiu      *+ar4(59),ar2         ; |528| 
-        ldiu      @CL1,r0               ; |528| 
-        ldiu      *+ar1(54),r2          ; |528| 40b float lo half
-        ldiu      0,rs                  ; |528| 
-        callu     r0                    ; far call to _Convert	; |528| 
-                                        ; |528| Far Call Occurs
-        rnd       f0,f0                 ; |528| Demote to low precision
-        stf       f0,*+fp(4)            ; |528| 
+        ldiu      *+ar2(50),re          ; |545| 
+        ldiu      *+ar0(58),r3          ; |545| 
+        ldiu      *+ar4(59),ar2         ; |545| 
+        ldiu      @CL1,r0               ; |545| 
+        ldiu      *+ar1(54),r2          ; |545| 40b float lo half
+        ldiu      0,rs                  ; |545| 
+        callu     r0                    ; far call to _Convert	; |545| 
+                                        ; |545| Far Call Occurs
+        rnd       f0,f0                 ; |545| Demote to low precision
+        stf       f0,*+fp(4)            ; |545| 
 	.line	24
 ;----------------------------------------------------------------------
-; 529 | p = r;                                                                 
+; 546 | p = r;                                                                 
 ;----------------------------------------------------------------------
-        ldfu      *+fp(2),f0            ; |529| 
-        stf       f0,*+fp(5)            ; |529| 
+        ldfu      *+fp(2),f0            ; |546| 
+        stf       f0,*+fp(5)            ; |546| 
 	.line	26
 ;----------------------------------------------------------------------
-; 531 | API_STATUS(fcidx, 0);                   /* clear API status bits */    
-; 533 | switch (f->API_TABLE>>8)                                               
-; 535 |         case 'A':                                                      
-; 537 |                 //if ((t<-18.0) || (p<610.5) || (p>1075.0))            
+; 548 | API_STATUS(fcidx, 0);                   /* clear API status bits */    
+; 550 | switch (f->API_TABLE>>8)                                               
+; 552 |         case 'A':                                                      
+; 554 |                 //if ((t<-18.0) || (p<610.5) || (p>1075.0))            
 ;----------------------------------------------------------------------
         ldp       @CL22,DP
-        ldiu      @CL22,r0              ; |531| 
-        ldiu      0,r2                  ; |531| 
-        ldiu      *+fp(1),ar2           ; |531| 
-        callu     r0                    ; far call to _API_STATUS	; |531| 
-                                        ; |531| Far Call Occurs
-        bu        L273                  ; |505| 
-;*      Branch Occurs to L273           ; |505| 
-L170:        
+        ldiu      @CL22,r0              ; |548| 
+        ldiu      0,r2                  ; |548| 
+        ldiu      *+fp(1),ar2           ; |548| 
+        callu     r0                    ; far call to _API_STATUS	; |548| 
+                                        ; |548| Far Call Occurs
+        bu        L279                  ; |522| 
+;*      Branch Occurs to L279           ; |522| 
+L176:        
 	.line	33
 ;----------------------------------------------------------------------
-; 538 | if ((t<-18.0) || (p<450.0) || (p>1075.0))                              
+; 555 | if ((t<-18.0) || (p<450.0) || (p>1075.0))                              
 ;----------------------------------------------------------------------
         ldp       @CL44,DP
-        ldfu      *+fp(4),f0            ; |538| 
-        cmpf      @CL44,f0              ; |538| 
-        blt       L173                  ; |538| 
-;*      Branch Occurs to L173           ; |538| 
+        ldfu      *+fp(4),f0            ; |555| 
+        cmpf      @CL44,f0              ; |555| 
+        blt       L179                  ; |555| 
+;*      Branch Occurs to L179           ; |555| 
         ldp       @CL45,DP
-        ldfu      *+fp(5),f0            ; |538| 
-        cmpf      @CL45,f0              ; |538| 
-        blt       L173                  ; |538| 
-;*      Branch Occurs to L173           ; |538| 
+        ldfu      *+fp(5),f0            ; |555| 
+        cmpf      @CL45,f0              ; |555| 
+        blt       L179                  ; |555| 
+;*      Branch Occurs to L179           ; |555| 
         ldp       @CL46,DP
-        cmpf      @CL46,f0              ; |538| 
-        ble       L175                  ; |538| 
-;*      Branch Occurs to L175           ; |538| 
-L173:        
+        cmpf      @CL46,f0              ; |555| 
+        ble       L181                  ; |555| 
+;*      Branch Occurs to L181           ; |555| 
+L179:        
 	.line	35
 ;----------------------------------------------------------------------
-; 540 | API_STATUS(fcidx, API_fail);                                           
+; 557 | API_STATUS(fcidx, API_fail);                                           
 ;----------------------------------------------------------------------
         ldp       @CL22,DP
-        ldiu      *+fp(1),ar2           ; |540| 
-        ldiu      2,r2                  ; |540| 
-        ldiu      @CL22,r0              ; |540| 
-        callu     r0                    ; far call to _API_STATUS	; |540| 
-                                        ; |540| Far Call Occurs
+        ldiu      *+fp(1),ar2           ; |557| 
+        ldiu      2,r2                  ; |557| 
+        ldiu      @CL22,r0              ; |557| 
+        callu     r0                    ; far call to _API_STATUS	; |557| 
+                                        ; |557| Far Call Occurs
 	.line	36
 ;----------------------------------------------------------------------
-; 541 | GIEP;                                                                  
+; 558 | GIEP;                                                                  
 ;----------------------------------------------------------------------
 	pop		ST			
 	.line	38
 ;----------------------------------------------------------------------
-; 543 | return API_error_num;                                                  
+; 560 | return API_error_num;                                                  
 ;----------------------------------------------------------------------
-        bud       L281                  ; |543| 
+        bud       L287                  ; |560| 
 	nop
         ldp       @CL23,DP
-        ldfu      @CL23,f0              ; |543| 
-;*      Branch Occurs to L281           ; |543| 
-L175:        
+        ldfu      @CL23,f0              ; |560| 
+;*      Branch Occurs to L287           ; |560| 
+L181:        
 	.line	40
 ;----------------------------------------------------------------------
-; 545 | else if (p<758.0)                                                      
+; 562 | else if (p<758.0)                                                      
+; 564 |         //if (t>90.0) // JAN 12, 2022 : DKOH : bug#112                 
 ;----------------------------------------------------------------------
         ldp       @CL47,DP
-        ldfu      *+fp(5),f0            ; |545| 
-        cmpf      @CL47,f0              ; |545| 
-        bge       L180                  ; |545| 
-;*      Branch Occurs to L180           ; |545| 
-	.line	42
+        ldfu      *+fp(5),f0            ; |562| 
+        cmpf      @CL47,f0              ; |562| 
+        bge       L186                  ; |562| 
+;*      Branch Occurs to L186           ; |562| 
+	.line	43
 ;----------------------------------------------------------------------
-; 547 | if (t>90.0)                                                            
+; 565 | if (t>150.0)                                                           
 ;----------------------------------------------------------------------
-        ldfu      *+fp(4),f0            ; |547| 
-        cmpf      9.0000000000e+01,f0   ; |547| 
-        ble       L179                  ; |547| 
-;*      Branch Occurs to L179           ; |547| 
-	.line	44
-;----------------------------------------------------------------------
-; 549 | API_STATUS(fcidx, API_fail);                                           
-;----------------------------------------------------------------------
-        ldp       @CL22,DP
-        ldiu      *+fp(1),ar2           ; |549| 
-        ldiu      2,r2                  ; |549| 
-        ldiu      @CL22,r0              ; |549| 
-        callu     r0                    ; far call to _API_STATUS	; |549| 
-                                        ; |549| Far Call Occurs
+        ldfu      *+fp(4),f0            ; |565| 
+        cmpf      1.5000000000e+02,f0   ; |565| 
+        ble       L185                  ; |565| 
+;*      Branch Occurs to L185           ; |565| 
 	.line	45
 ;----------------------------------------------------------------------
-; 550 | GIEP;                                                                  
-;----------------------------------------------------------------------
-	pop		ST			
-	.line	47
-;----------------------------------------------------------------------
-; 552 | return API_error_num;                                                  
-; 554 | else                                                                   
-;----------------------------------------------------------------------
-        bud       L281                  ; |552| 
-	nop
-        ldp       @CL23,DP
-        ldfu      @CL23,f0              ; |552| 
-;*      Branch Occurs to L281           ; |552| 
-L179:        
-	.line	50
-;----------------------------------------------------------------------
-; 555 | API_STATUS(fcidx, API_extrapolate);                                    
-;----------------------------------------------------------------------
-        ldp       @CL22,DP
-        ldiu      *+fp(1),ar2           ; |555| 
-        ldiu      1,r2                  ; |555| 
-        ldiu      @CL22,r0              ; |555| 
-        callu     r0                    ; far call to _API_STATUS	; |555| 
-                                        ; |555| Far Call Occurs
-        bu        L198                  ; |505| 
-;*      Branch Occurs to L198           ; |505| 
-L180:        
-	.line	52
-;----------------------------------------------------------------------
-; 557 | else if (p<778.5)                                                      
-;----------------------------------------------------------------------
-        ldp       @CL48,DP
-        ldfu      *+fp(5),f0            ; |557| 
-        cmpf      @CL48,f0              ; |557| 
-        bge       L186                  ; |557| 
-;*      Branch Occurs to L186           ; |557| 
-	.line	54
-;----------------------------------------------------------------------
-; 559 | if (t>90.0)                                                            
-;----------------------------------------------------------------------
-        ldfu      *+fp(4),f0            ; |559| 
-        cmpf      9.0000000000e+01,f0   ; |559| 
-        ble       L184                  ; |559| 
-;*      Branch Occurs to L184           ; |559| 
-	.line	56
-;----------------------------------------------------------------------
-; 561 | API_STATUS(fcidx, API_fail);                                           
-;----------------------------------------------------------------------
-        ldp       @CL22,DP
-        ldiu      *+fp(1),ar2           ; |561| 
-        ldiu      2,r2                  ; |561| 
-        ldiu      @CL22,r0              ; |561| 
-        callu     r0                    ; far call to _API_STATUS	; |561| 
-                                        ; |561| Far Call Occurs
-	.line	57
-;----------------------------------------------------------------------
-; 562 | GIEP;                                                                  
-;----------------------------------------------------------------------
-	pop		ST			
-	.line	59
-;----------------------------------------------------------------------
-; 564 | return API_error_num;                                                  
-;----------------------------------------------------------------------
-        bud       L281                  ; |564| 
-	nop
-        ldp       @CL23,DP
-        ldfu      @CL23,f0              ; |564| 
-;*      Branch Occurs to L281           ; |564| 
-L184:        
-	.line	61
-;----------------------------------------------------------------------
-; 566 | else if (t>60.0)                                                       
-;----------------------------------------------------------------------
-        ldfu      *+fp(4),f0            ; |566| 
-        cmpf      6.0000000000e+01,f0   ; |566| 
-        ble       L198                  ; |566| 
-;*      Branch Occurs to L198           ; |566| 
-	.line	62
-;----------------------------------------------------------------------
-; 567 | API_STATUS(fcidx, API_extrapolate);                                    
+; 567 | API_STATUS(fcidx, API_fail);                                           
 ;----------------------------------------------------------------------
         ldp       @CL22,DP
         ldiu      *+fp(1),ar2           ; |567| 
-        ldiu      1,r2                  ; |567| 
+        ldiu      2,r2                  ; |567| 
         ldiu      @CL22,r0              ; |567| 
         callu     r0                    ; far call to _API_STATUS	; |567| 
                                         ; |567| Far Call Occurs
-        bu        L198                  ; |505| 
-;*      Branch Occurs to L198           ; |505| 
-L186:        
-	.line	64
+	.line	46
 ;----------------------------------------------------------------------
-; 569 | else if (p<824.0)                                                      
+; 568 | GIEP;                                                                  
 ;----------------------------------------------------------------------
-        ldp       @CL49,DP
-        ldfu      *+fp(5),f0            ; |569| 
-        cmpf      @CL49,f0              ; |569| 
-        bge       L192                  ; |569| 
-;*      Branch Occurs to L192           ; |569| 
-	.line	66
+	pop		ST			
+	.line	48
 ;----------------------------------------------------------------------
-; 571 | if (t>120.0)                                                           
+; 570 | return API_error_num;                                                  
+; 572 | else                                                                   
 ;----------------------------------------------------------------------
-        ldfu      *+fp(4),f0            ; |571| 
-        cmpf      1.2000000000e+02,f0   ; |571| 
-        ble       L190                  ; |571| 
-;*      Branch Occurs to L190           ; |571| 
-	.line	68
+        bud       L287                  ; |570| 
+	nop
+        ldp       @CL23,DP
+        ldfu      @CL23,f0              ; |570| 
+;*      Branch Occurs to L287           ; |570| 
+L185:        
+	.line	51
 ;----------------------------------------------------------------------
-; 573 | API_STATUS(fcidx, API_fail);                                           
+; 573 | API_STATUS(fcidx, API_extrapolate);                                    
 ;----------------------------------------------------------------------
         ldp       @CL22,DP
         ldiu      *+fp(1),ar2           ; |573| 
-        ldiu      2,r2                  ; |573| 
+        ldiu      1,r2                  ; |573| 
         ldiu      @CL22,r0              ; |573| 
         callu     r0                    ; far call to _API_STATUS	; |573| 
                                         ; |573| Far Call Occurs
+        bu        L204                  ; |522| 
+;*      Branch Occurs to L204           ; |522| 
+L186:        
+	.line	53
+;----------------------------------------------------------------------
+; 575 | else if (p<778.5)                                                      
+; 577 |         //if (t>90.0)// JAN 12, 2022 : DKOH : bug#112                  
+;----------------------------------------------------------------------
+        ldp       @CL48,DP
+        ldfu      *+fp(5),f0            ; |575| 
+        cmpf      @CL48,f0              ; |575| 
+        bge       L192                  ; |575| 
+;*      Branch Occurs to L192           ; |575| 
+	.line	56
+;----------------------------------------------------------------------
+; 578 | if (t>150.0)                                                           
+;----------------------------------------------------------------------
+        ldfu      *+fp(4),f0            ; |578| 
+        cmpf      1.5000000000e+02,f0   ; |578| 
+        ble       L190                  ; |578| 
+;*      Branch Occurs to L190           ; |578| 
+	.line	58
+;----------------------------------------------------------------------
+; 580 | API_STATUS(fcidx, API_fail);                                           
+;----------------------------------------------------------------------
+        ldp       @CL22,DP
+        ldiu      *+fp(1),ar2           ; |580| 
+        ldiu      2,r2                  ; |580| 
+        ldiu      @CL22,r0              ; |580| 
+        callu     r0                    ; far call to _API_STATUS	; |580| 
+                                        ; |580| Far Call Occurs
+	.line	59
+;----------------------------------------------------------------------
+; 581 | GIEP;                                                                  
+;----------------------------------------------------------------------
+	pop		ST			
+	.line	61
+;----------------------------------------------------------------------
+; 583 | return API_error_num;                                                  
+;----------------------------------------------------------------------
+        bud       L287                  ; |583| 
+	nop
+        ldp       @CL23,DP
+        ldfu      @CL23,f0              ; |583| 
+;*      Branch Occurs to L287           ; |583| 
+L190:        
+	.line	63
+;----------------------------------------------------------------------
+; 585 | else if (t>60.0)                                                       
+;----------------------------------------------------------------------
+        ldfu      *+fp(4),f0            ; |585| 
+        cmpf      6.0000000000e+01,f0   ; |585| 
+        ble       L204                  ; |585| 
+;*      Branch Occurs to L204           ; |585| 
+	.line	64
+;----------------------------------------------------------------------
+; 586 | API_STATUS(fcidx, API_extrapolate);                                    
+;----------------------------------------------------------------------
+        ldp       @CL22,DP
+        ldiu      *+fp(1),ar2           ; |586| 
+        ldiu      1,r2                  ; |586| 
+        ldiu      @CL22,r0              ; |586| 
+        callu     r0                    ; far call to _API_STATUS	; |586| 
+                                        ; |586| Far Call Occurs
+        bu        L204                  ; |522| 
+;*      Branch Occurs to L204           ; |522| 
+L192:        
+	.line	66
+;----------------------------------------------------------------------
+; 588 | else if (p<824.0)                                                      
+; 590 |         //if (t>120.0)// JAN 12, 2022 : DKOH : bug#112                 
+;----------------------------------------------------------------------
+        ldp       @CL49,DP
+        ldfu      *+fp(5),f0            ; |588| 
+        cmpf      @CL49,f0              ; |588| 
+        bge       L198                  ; |588| 
+;*      Branch Occurs to L198           ; |588| 
 	.line	69
 ;----------------------------------------------------------------------
-; 574 | GIEP; return API_error_num;                                            
+; 591 | if (t>150.0)                                                           
 ;----------------------------------------------------------------------
-	pop		ST			
-        bud       L281                  ; |574| 
-	nop
-        ldp       @CL23,DP
-        ldfu      @CL23,f0              ; |574| 
-;*      Branch Occurs to L281           ; |574| 
-L190:        
+        ldfu      *+fp(4),f0            ; |591| 
+        cmpf      1.5000000000e+02,f0   ; |591| 
+        ble       L196                  ; |591| 
+;*      Branch Occurs to L196           ; |591| 
 	.line	71
 ;----------------------------------------------------------------------
-; 576 | else if (t>90.0)                                                       
+; 593 | API_STATUS(fcidx, API_fail);                                           
 ;----------------------------------------------------------------------
-        ldfu      *+fp(4),f0            ; |576| 
-        cmpf      9.0000000000e+01,f0   ; |576| 
-        ble       L198                  ; |576| 
-;*      Branch Occurs to L198           ; |576| 
+        ldp       @CL22,DP
+        ldiu      *+fp(1),ar2           ; |593| 
+        ldiu      2,r2                  ; |593| 
+        ldiu      @CL22,r0              ; |593| 
+        callu     r0                    ; far call to _API_STATUS	; |593| 
+                                        ; |593| Far Call Occurs
 	.line	72
 ;----------------------------------------------------------------------
-; 577 | API_STATUS(fcidx, API_extrapolate);                                    
-;----------------------------------------------------------------------
-        ldp       @CL22,DP
-        ldiu      *+fp(1),ar2           ; |577| 
-        ldiu      1,r2                  ; |577| 
-        ldiu      @CL22,r0              ; |577| 
-        callu     r0                    ; far call to _API_STATUS	; |577| 
-                                        ; |577| Far Call Occurs
-        bu        L198                  ; |505| 
-;*      Branch Occurs to L198           ; |505| 
-L192:        
-	.line	74
-;----------------------------------------------------------------------
-; 579 | else if (p<=1075.0)                                                    
-;----------------------------------------------------------------------
-        ldp       @CL46,DP
-        ldfu      *+fp(5),f0            ; |579| 
-        cmpf      @CL46,f0              ; |579| 
-        bgt       L198                  ; |579| 
-;*      Branch Occurs to L198           ; |579| 
-	.line	76
-;----------------------------------------------------------------------
-; 581 | if (t>150.0)                                                           
-;----------------------------------------------------------------------
-        ldfu      *+fp(4),f0            ; |581| 
-        cmpf      1.5000000000e+02,f0   ; |581| 
-        ble       L196                  ; |581| 
-;*      Branch Occurs to L196           ; |581| 
-	.line	78
-;----------------------------------------------------------------------
-; 583 | API_STATUS(fcidx, API_fail);                                           
-;----------------------------------------------------------------------
-        ldp       @CL22,DP
-        ldiu      *+fp(1),ar2           ; |583| 
-        ldiu      2,r2                  ; |583| 
-        ldiu      @CL22,r0              ; |583| 
-        callu     r0                    ; far call to _API_STATUS	; |583| 
-                                        ; |583| Far Call Occurs
-	.line	79
-;----------------------------------------------------------------------
-; 584 | GIEP; return API_error_num;                                            
+; 594 | GIEP; return API_error_num;                                            
 ;----------------------------------------------------------------------
 	pop		ST			
-        bud       L281                  ; |584| 
+        bud       L287                  ; |594| 
 	nop
         ldp       @CL23,DP
-        ldfu      @CL23,f0              ; |584| 
-;*      Branch Occurs to L281           ; |584| 
+        ldfu      @CL23,f0              ; |594| 
+;*      Branch Occurs to L287           ; |594| 
 L196:        
+	.line	74
+;----------------------------------------------------------------------
+; 596 | else if (t>90.0)                                                       
+;----------------------------------------------------------------------
+        ldfu      *+fp(4),f0            ; |596| 
+        cmpf      9.0000000000e+01,f0   ; |596| 
+        ble       L204                  ; |596| 
+;*      Branch Occurs to L204           ; |596| 
+	.line	75
+;----------------------------------------------------------------------
+; 597 | API_STATUS(fcidx, API_extrapolate);                                    
+;----------------------------------------------------------------------
+        ldp       @CL22,DP
+        ldiu      *+fp(1),ar2           ; |597| 
+        ldiu      1,r2                  ; |597| 
+        ldiu      @CL22,r0              ; |597| 
+        callu     r0                    ; far call to _API_STATUS	; |597| 
+                                        ; |597| Far Call Occurs
+        bu        L204                  ; |522| 
+;*      Branch Occurs to L204           ; |522| 
+L198:        
+	.line	77
+;----------------------------------------------------------------------
+; 599 | else if (p<=1075.0)                                                    
+;----------------------------------------------------------------------
+        ldp       @CL46,DP
+        ldfu      *+fp(5),f0            ; |599| 
+        cmpf      @CL46,f0              ; |599| 
+        bgt       L204                  ; |599| 
+;*      Branch Occurs to L204           ; |599| 
+	.line	79
+;----------------------------------------------------------------------
+; 601 | if (t>150.0)                                                           
+;----------------------------------------------------------------------
+        ldfu      *+fp(4),f0            ; |601| 
+        cmpf      1.5000000000e+02,f0   ; |601| 
+        ble       L202                  ; |601| 
+;*      Branch Occurs to L202           ; |601| 
 	.line	81
 ;----------------------------------------------------------------------
-; 586 | else if (t>120.0)                                                      
+; 603 | API_STATUS(fcidx, API_fail);                                           
 ;----------------------------------------------------------------------
-        ldfu      *+fp(4),f0            ; |586| 
-        cmpf      1.2000000000e+02,f0   ; |586| 
-        ble       L198                  ; |586| 
-;*      Branch Occurs to L198           ; |586| 
+        ldp       @CL22,DP
+        ldiu      *+fp(1),ar2           ; |603| 
+        ldiu      2,r2                  ; |603| 
+        ldiu      @CL22,r0              ; |603| 
+        callu     r0                    ; far call to _API_STATUS	; |603| 
+                                        ; |603| Far Call Occurs
 	.line	82
 ;----------------------------------------------------------------------
-; 587 | API_STATUS(fcidx, API_extrapolate);                                    
-;----------------------------------------------------------------------
-        ldp       @CL22,DP
-        ldiu      *+fp(1),ar2           ; |587| 
-        ldiu      1,r2                  ; |587| 
-        ldiu      @CL22,r0              ; |587| 
-        callu     r0                    ; far call to _API_STATUS	; |587| 
-                                        ; |587| Far Call Occurs
-L198:        
-	.line	85
-;----------------------------------------------------------------------
-; 590 | k_set[0] = 0;                                                          
-;----------------------------------------------------------------------
-        ldiu      *+fp(3),ar0           ; |590| 
-        ldiu      0,r0                  ; |590| 
-        sti       r0,*ar0               ; |590| 
-	.line	86
-;----------------------------------------------------------------------
-; 591 | k0 = 613.9723;                                                         
-;----------------------------------------------------------------------
-        ldp       @CL50,DP
-        ldfu      @CL50,f0              ; |591| 
-        stf       f0,*+fp(7)            ; |591| 
-	.line	87
-;----------------------------------------------------------------------
-; 592 | k1 = 0.0;                                                              
-;----------------------------------------------------------------------
-        ldfu      0.0000000000e+00,f0   ; |592| 
-        stf       f0,*+fp(8)            ; |592| 
-	.line	88
-;----------------------------------------------------------------------
-; 593 | k2 = 0.0;                                                              
-;----------------------------------------------------------------------
-        ldfu      0.0000000000e+00,f0   ; |593| 
-        stf       f0,*+fp(9)            ; |593| 
-	.line	90
-;----------------------------------------------------------------------
-; 595 | break;                                                                 
-; 597 | case 'B':                                                              
-;----------------------------------------------------------------------
-        bu        L278                  ; |595| 
-;*      Branch Occurs to L278           ; |595| 
-L199:        
-	.line	94
-;----------------------------------------------------------------------
-; 599 | if ((t<-18.0) || (p<653.0) || (p>1075.0))                              
-;----------------------------------------------------------------------
-        ldp       @CL44,DP
-        ldfu      *+fp(4),f0            ; |599| 
-        cmpf      @CL44,f0              ; |599| 
-        blt       L202                  ; |599| 
-;*      Branch Occurs to L202           ; |599| 
-        ldp       @CL51,DP
-        ldfu      *+fp(5),f0            ; |599| 
-        cmpf      @CL51,f0              ; |599| 
-        blt       L202                  ; |599| 
-;*      Branch Occurs to L202           ; |599| 
-        ldp       @CL46,DP
-        cmpf      @CL46,f0              ; |599| 
-        ble       L204                  ; |599| 
-;*      Branch Occurs to L204           ; |599| 
-L202:        
-	.line	96
-;----------------------------------------------------------------------
-; 601 | API_STATUS(fcidx, API_fail);                                           
-;----------------------------------------------------------------------
-        ldp       @CL22,DP
-        ldiu      *+fp(1),ar2           ; |601| 
-        ldiu      2,r2                  ; |601| 
-        ldiu      @CL22,r0              ; |601| 
-        callu     r0                    ; far call to _API_STATUS	; |601| 
-                                        ; |601| Far Call Occurs
-	.line	97
-;----------------------------------------------------------------------
-; 602 | GIEP;                                                                  
+; 604 | GIEP; return API_error_num;                                            
 ;----------------------------------------------------------------------
 	pop		ST			
-	.line	99
-;----------------------------------------------------------------------
-; 604 | return API_error_num;                                                  
-;----------------------------------------------------------------------
-        bud       L281                  ; |604| 
+        bud       L287                  ; |604| 
 	nop
         ldp       @CL23,DP
         ldfu      @CL23,f0              ; |604| 
-;*      Branch Occurs to L281           ; |604| 
-L204:        
-	.line	101
+;*      Branch Occurs to L287           ; |604| 
+L202:        
+	.line	84
 ;----------------------------------------------------------------------
-; 606 | else if (p<778.5)                                                      
+; 606 | else if (t>120.0)                                                      
+;----------------------------------------------------------------------
+        ldfu      *+fp(4),f0            ; |606| 
+        cmpf      1.2000000000e+02,f0   ; |606| 
+        ble       L204                  ; |606| 
+;*      Branch Occurs to L204           ; |606| 
+	.line	85
+;----------------------------------------------------------------------
+; 607 | API_STATUS(fcidx, API_extrapolate);                                    
+;----------------------------------------------------------------------
+        ldp       @CL22,DP
+        ldiu      *+fp(1),ar2           ; |607| 
+        ldiu      1,r2                  ; |607| 
+        ldiu      @CL22,r0              ; |607| 
+        callu     r0                    ; far call to _API_STATUS	; |607| 
+                                        ; |607| Far Call Occurs
+L204:        
+	.line	88
+;----------------------------------------------------------------------
+; 610 | k_set[0] = 0;                                                          
+;----------------------------------------------------------------------
+        ldiu      *+fp(3),ar0           ; |610| 
+        ldiu      0,r0                  ; |610| 
+        sti       r0,*ar0               ; |610| 
+	.line	89
+;----------------------------------------------------------------------
+; 611 | k0 = 613.9723;                                                         
+;----------------------------------------------------------------------
+        ldp       @CL50,DP
+        ldfu      @CL50,f0              ; |611| 
+        stf       f0,*+fp(7)            ; |611| 
+	.line	90
+;----------------------------------------------------------------------
+; 612 | k1 = 0.0;                                                              
+;----------------------------------------------------------------------
+        ldfu      0.0000000000e+00,f0   ; |612| 
+        stf       f0,*+fp(8)            ; |612| 
+	.line	91
+;----------------------------------------------------------------------
+; 613 | k2 = 0.0;                                                              
+;----------------------------------------------------------------------
+        ldfu      0.0000000000e+00,f0   ; |613| 
+        stf       f0,*+fp(9)            ; |613| 
+	.line	93
+;----------------------------------------------------------------------
+; 615 | break;                                                                 
+; 617 | case 'B':                                                              
+;----------------------------------------------------------------------
+        bu        L284                  ; |615| 
+;*      Branch Occurs to L284           ; |615| 
+L205:        
+	.line	97
+;----------------------------------------------------------------------
+; 619 | if ((t<-18.0) || (p<653.0) || (p>1075.0))                              
+;----------------------------------------------------------------------
+        ldp       @CL44,DP
+        ldfu      *+fp(4),f0            ; |619| 
+        cmpf      @CL44,f0              ; |619| 
+        blt       L208                  ; |619| 
+;*      Branch Occurs to L208           ; |619| 
+        ldp       @CL51,DP
+        ldfu      *+fp(5),f0            ; |619| 
+        cmpf      @CL51,f0              ; |619| 
+        blt       L208                  ; |619| 
+;*      Branch Occurs to L208           ; |619| 
+        ldp       @CL46,DP
+        cmpf      @CL46,f0              ; |619| 
+        ble       L210                  ; |619| 
+;*      Branch Occurs to L210           ; |619| 
+L208:        
+	.line	99
+;----------------------------------------------------------------------
+; 621 | API_STATUS(fcidx, API_fail);                                           
+;----------------------------------------------------------------------
+        ldp       @CL22,DP
+        ldiu      *+fp(1),ar2           ; |621| 
+        ldiu      2,r2                  ; |621| 
+        ldiu      @CL22,r0              ; |621| 
+        callu     r0                    ; far call to _API_STATUS	; |621| 
+                                        ; |621| Far Call Occurs
+	.line	100
+;----------------------------------------------------------------------
+; 622 | GIEP;                                                                  
+;----------------------------------------------------------------------
+	pop		ST			
+	.line	102
+;----------------------------------------------------------------------
+; 624 | return API_error_num;                                                  
+;----------------------------------------------------------------------
+        bud       L287                  ; |624| 
+	nop
+        ldp       @CL23,DP
+        ldfu      @CL23,f0              ; |624| 
+;*      Branch Occurs to L287           ; |624| 
+L210:        
+	.line	104
+;----------------------------------------------------------------------
+; 626 | else if (p<778.5)                                                      
 ;----------------------------------------------------------------------
         ldp       @CL48,DP
-        ldfu      *+fp(5),f0            ; |606| 
-        cmpf      @CL48,f0              ; |606| 
-        bge       L210                  ; |606| 
-;*      Branch Occurs to L210           ; |606| 
-	.line	103
-;----------------------------------------------------------------------
-; 608 | if (t>90.0)                                                            
-;----------------------------------------------------------------------
-        ldfu      *+fp(4),f0            ; |608| 
-        cmpf      9.0000000000e+01,f0   ; |608| 
-        ble       L208                  ; |608| 
-;*      Branch Occurs to L208           ; |608| 
-	.line	105
-;----------------------------------------------------------------------
-; 610 | API_STATUS(fcidx, API_fail);                                           
-;----------------------------------------------------------------------
-        ldp       @CL22,DP
-        ldiu      *+fp(1),ar2           ; |610| 
-        ldiu      2,r2                  ; |610| 
-        ldiu      @CL22,r0              ; |610| 
-        callu     r0                    ; far call to _API_STATUS	; |610| 
-                                        ; |610| Far Call Occurs
+        ldfu      *+fp(5),f0            ; |626| 
+        cmpf      @CL48,f0              ; |626| 
+        bge       L216                  ; |626| 
+;*      Branch Occurs to L216           ; |626| 
 	.line	106
 ;----------------------------------------------------------------------
-; 611 | GIEP;                                                                  
+; 628 | if (t>90.0)                                                            
 ;----------------------------------------------------------------------
-	pop		ST			
+        ldfu      *+fp(4),f0            ; |628| 
+        cmpf      9.0000000000e+01,f0   ; |628| 
+        ble       L214                  ; |628| 
+;*      Branch Occurs to L214           ; |628| 
 	.line	108
 ;----------------------------------------------------------------------
-; 613 | return API_error_num;                                                  
+; 630 | API_STATUS(fcidx, API_fail);                                           
 ;----------------------------------------------------------------------
-        bud       L281                  ; |613| 
-	nop
-        ldp       @CL23,DP
-        ldfu      @CL23,f0              ; |613| 
-;*      Branch Occurs to L281           ; |613| 
-L208:        
-	.line	110
+        ldp       @CL22,DP
+        ldiu      *+fp(1),ar2           ; |630| 
+        ldiu      2,r2                  ; |630| 
+        ldiu      @CL22,r0              ; |630| 
+        callu     r0                    ; far call to _API_STATUS	; |630| 
+                                        ; |630| Far Call Occurs
+	.line	109
 ;----------------------------------------------------------------------
-; 615 | else if (t>60.0)                                                       
+; 631 | GIEP;                                                                  
 ;----------------------------------------------------------------------
-        ldfu      *+fp(4),f0            ; |615| 
-        cmpf      6.0000000000e+01,f0   ; |615| 
-        ble       L222                  ; |615| 
-;*      Branch Occurs to L222           ; |615| 
+	pop		ST			
 	.line	111
 ;----------------------------------------------------------------------
-; 616 | API_STATUS(fcidx, API_extrapolate);                                    
+; 633 | return API_error_num;                                                  
 ;----------------------------------------------------------------------
-        ldp       @CL22,DP
-        ldiu      *+fp(1),ar2           ; |616| 
-        ldiu      1,r2                  ; |616| 
-        ldiu      @CL22,r0              ; |616| 
-        callu     r0                    ; far call to _API_STATUS	; |616| 
-                                        ; |616| Far Call Occurs
-        bu        L222                  ; |505| 
-;*      Branch Occurs to L222           ; |505| 
-L210:        
+        bud       L287                  ; |633| 
+	nop
+        ldp       @CL23,DP
+        ldfu      @CL23,f0              ; |633| 
+;*      Branch Occurs to L287           ; |633| 
+L214:        
 	.line	113
 ;----------------------------------------------------------------------
-; 618 | else if (p<824.0)                                                      
+; 635 | else if (t>60.0)                                                       
+;----------------------------------------------------------------------
+        ldfu      *+fp(4),f0            ; |635| 
+        cmpf      6.0000000000e+01,f0   ; |635| 
+        ble       L228                  ; |635| 
+;*      Branch Occurs to L228           ; |635| 
+	.line	114
+;----------------------------------------------------------------------
+; 636 | API_STATUS(fcidx, API_extrapolate);                                    
+;----------------------------------------------------------------------
+        ldp       @CL22,DP
+        ldiu      *+fp(1),ar2           ; |636| 
+        ldiu      1,r2                  ; |636| 
+        ldiu      @CL22,r0              ; |636| 
+        callu     r0                    ; far call to _API_STATUS	; |636| 
+                                        ; |636| Far Call Occurs
+        bu        L228                  ; |522| 
+;*      Branch Occurs to L228           ; |522| 
+L216:        
+	.line	116
+;----------------------------------------------------------------------
+; 638 | else if (p<824.0)                                                      
 ;----------------------------------------------------------------------
         ldp       @CL49,DP
-        ldfu      *+fp(5),f0            ; |618| 
-        cmpf      @CL49,f0              ; |618| 
-        bge       L216                  ; |618| 
-;*      Branch Occurs to L216           ; |618| 
-	.line	115
-;----------------------------------------------------------------------
-; 620 | if (t>120.0)                                                           
-;----------------------------------------------------------------------
-        ldfu      *+fp(4),f0            ; |620| 
-        cmpf      1.2000000000e+02,f0   ; |620| 
-        ble       L214                  ; |620| 
-;*      Branch Occurs to L214           ; |620| 
-	.line	117
-;----------------------------------------------------------------------
-; 622 | API_STATUS(fcidx, API_fail);                                           
-;----------------------------------------------------------------------
-        ldp       @CL22,DP
-        ldiu      *+fp(1),ar2           ; |622| 
-        ldiu      2,r2                  ; |622| 
-        ldiu      @CL22,r0              ; |622| 
-        callu     r0                    ; far call to _API_STATUS	; |622| 
-                                        ; |622| Far Call Occurs
+        ldfu      *+fp(5),f0            ; |638| 
+        cmpf      @CL49,f0              ; |638| 
+        bge       L222                  ; |638| 
+;*      Branch Occurs to L222           ; |638| 
 	.line	118
 ;----------------------------------------------------------------------
-; 623 | GIEP;                                                                  
+; 640 | if (t>120.0)                                                           
 ;----------------------------------------------------------------------
-	pop		ST			
+        ldfu      *+fp(4),f0            ; |640| 
+        cmpf      1.2000000000e+02,f0   ; |640| 
+        ble       L220                  ; |640| 
+;*      Branch Occurs to L220           ; |640| 
 	.line	120
 ;----------------------------------------------------------------------
-; 625 | return API_error_num;                                                  
+; 642 | API_STATUS(fcidx, API_fail);                                           
 ;----------------------------------------------------------------------
-        bud       L281                  ; |625| 
-	nop
-        ldp       @CL23,DP
-        ldfu      @CL23,f0              ; |625| 
-;*      Branch Occurs to L281           ; |625| 
-L214:        
-	.line	122
+        ldp       @CL22,DP
+        ldiu      *+fp(1),ar2           ; |642| 
+        ldiu      2,r2                  ; |642| 
+        ldiu      @CL22,r0              ; |642| 
+        callu     r0                    ; far call to _API_STATUS	; |642| 
+                                        ; |642| Far Call Occurs
+	.line	121
 ;----------------------------------------------------------------------
-; 627 | else if (t>90.0)                                                       
+; 643 | GIEP;                                                                  
 ;----------------------------------------------------------------------
-        ldfu      *+fp(4),f0            ; |627| 
-        cmpf      9.0000000000e+01,f0   ; |627| 
-        ble       L222                  ; |627| 
-;*      Branch Occurs to L222           ; |627| 
+	pop		ST			
 	.line	123
 ;----------------------------------------------------------------------
-; 628 | API_STATUS(fcidx, API_extrapolate);                                    
+; 645 | return API_error_num;                                                  
 ;----------------------------------------------------------------------
-        ldp       @CL22,DP
-        ldiu      *+fp(1),ar2           ; |628| 
-        ldiu      1,r2                  ; |628| 
-        ldiu      @CL22,r0              ; |628| 
-        callu     r0                    ; far call to _API_STATUS	; |628| 
-                                        ; |628| Far Call Occurs
-        bu        L222                  ; |505| 
-;*      Branch Occurs to L222           ; |505| 
-L216:        
+        bud       L287                  ; |645| 
+	nop
+        ldp       @CL23,DP
+        ldfu      @CL23,f0              ; |645| 
+;*      Branch Occurs to L287           ; |645| 
+L220:        
 	.line	125
 ;----------------------------------------------------------------------
-; 630 | else if (p<=1075.0)                                                    
+; 647 | else if (t>90.0)                                                       
 ;----------------------------------------------------------------------
-        ldp       @CL46,DP
-        ldfu      *+fp(5),f0            ; |630| 
-        cmpf      @CL46,f0              ; |630| 
-        bgt       L222                  ; |630| 
-;*      Branch Occurs to L222           ; |630| 
-	.line	127
+        ldfu      *+fp(4),f0            ; |647| 
+        cmpf      9.0000000000e+01,f0   ; |647| 
+        ble       L228                  ; |647| 
+;*      Branch Occurs to L228           ; |647| 
+	.line	126
 ;----------------------------------------------------------------------
-; 632 | if (t>150.0)                                                           
-;----------------------------------------------------------------------
-        ldfu      *+fp(4),f0            ; |632| 
-        cmpf      1.5000000000e+02,f0   ; |632| 
-        ble       L220                  ; |632| 
-;*      Branch Occurs to L220           ; |632| 
-	.line	129
-;----------------------------------------------------------------------
-; 634 | API_STATUS(fcidx, API_fail);                                           
+; 648 | API_STATUS(fcidx, API_extrapolate);                                    
 ;----------------------------------------------------------------------
         ldp       @CL22,DP
-        ldiu      *+fp(1),ar2           ; |634| 
-        ldiu      2,r2                  ; |634| 
-        ldiu      @CL22,r0              ; |634| 
-        callu     r0                    ; far call to _API_STATUS	; |634| 
-                                        ; |634| Far Call Occurs
+        ldiu      *+fp(1),ar2           ; |648| 
+        ldiu      1,r2                  ; |648| 
+        ldiu      @CL22,r0              ; |648| 
+        callu     r0                    ; far call to _API_STATUS	; |648| 
+                                        ; |648| Far Call Occurs
+        bu        L228                  ; |522| 
+;*      Branch Occurs to L228           ; |522| 
+L222:        
+	.line	128
+;----------------------------------------------------------------------
+; 650 | else if (p<=1075.0)                                                    
+;----------------------------------------------------------------------
+        ldp       @CL46,DP
+        ldfu      *+fp(5),f0            ; |650| 
+        cmpf      @CL46,f0              ; |650| 
+        bgt       L228                  ; |650| 
+;*      Branch Occurs to L228           ; |650| 
 	.line	130
 ;----------------------------------------------------------------------
-; 635 | GIEP;                                                                  
+; 652 | if (t>150.0)                                                           
 ;----------------------------------------------------------------------
-	pop		ST			
+        ldfu      *+fp(4),f0            ; |652| 
+        cmpf      1.5000000000e+02,f0   ; |652| 
+        ble       L226                  ; |652| 
+;*      Branch Occurs to L226           ; |652| 
 	.line	132
 ;----------------------------------------------------------------------
-; 637 | return API_error_num;                                                  
+; 654 | API_STATUS(fcidx, API_fail);                                           
 ;----------------------------------------------------------------------
-        bud       L281                  ; |637| 
-	nop
-        ldp       @CL23,DP
-        ldfu      @CL23,f0              ; |637| 
-;*      Branch Occurs to L281           ; |637| 
-L220:        
-	.line	134
+        ldp       @CL22,DP
+        ldiu      *+fp(1),ar2           ; |654| 
+        ldiu      2,r2                  ; |654| 
+        ldiu      @CL22,r0              ; |654| 
+        callu     r0                    ; far call to _API_STATUS	; |654| 
+                                        ; |654| Far Call Occurs
+	.line	133
 ;----------------------------------------------------------------------
-; 639 | else if (t>120.0)                                                      
+; 655 | GIEP;                                                                  
 ;----------------------------------------------------------------------
-        ldfu      *+fp(4),f0            ; |639| 
-        cmpf      1.2000000000e+02,f0   ; |639| 
-        ble       L222                  ; |639| 
-;*      Branch Occurs to L222           ; |639| 
+	pop		ST			
 	.line	135
 ;----------------------------------------------------------------------
-; 640 | API_STATUS(fcidx, API_extrapolate);                                    
+; 657 | return API_error_num;                                                  
 ;----------------------------------------------------------------------
-        ldp       @CL22,DP
-        ldiu      *+fp(1),ar2           ; |640| 
-        ldiu      1,r2                  ; |640| 
-        ldiu      @CL22,r0              ; |640| 
-        callu     r0                    ; far call to _API_STATUS	; |640| 
-                                        ; |640| Far Call Occurs
-L222:        
+        bud       L287                  ; |657| 
+	nop
+        ldp       @CL23,DP
+        ldfu      @CL23,f0              ; |657| 
+;*      Branch Occurs to L287           ; |657| 
+L226:        
+	.line	137
+;----------------------------------------------------------------------
+; 659 | else if (t>120.0)                                                      
+;----------------------------------------------------------------------
+        ldfu      *+fp(4),f0            ; |659| 
+        cmpf      1.2000000000e+02,f0   ; |659| 
+        ble       L228                  ; |659| 
+;*      Branch Occurs to L228           ; |659| 
 	.line	138
 ;----------------------------------------------------------------------
-; 643 | if (k_set[0]==-1)                                                      
+; 660 | API_STATUS(fcidx, API_extrapolate);                                    
 ;----------------------------------------------------------------------
-        ldiu      *+fp(3),ar0           ; |643| 
-        ldiu      *ar0,r0               ; |643| 
-        cmpi      -1,r0                 ; |643| 
-        bne       L242                  ; |643| 
-;*      Branch Occurs to L242           ; |643| 
-	.line	140
-;----------------------------------------------------------------------
-; 645 | if ((p>=653.0) && (p<770.0))                                           
-;----------------------------------------------------------------------
-        ldp       @CL51,DP
-        ldfu      *+fp(5),f0            ; |645| 
-        cmpf      @CL51,f0              ; |645| 
-        blt       L226                  ; |645| 
-;*      Branch Occurs to L226           ; |645| 
-        ldp       @CL52,DP
-        cmpf      @CL52,f0              ; |645| 
-        bge       L226                  ; |645| 
-;*      Branch Occurs to L226           ; |645| 
+        ldp       @CL22,DP
+        ldiu      *+fp(1),ar2           ; |660| 
+        ldiu      1,r2                  ; |660| 
+        ldiu      @CL22,r0              ; |660| 
+        callu     r0                    ; far call to _API_STATUS	; |660| 
+                                        ; |660| Far Call Occurs
+L228:        
 	.line	141
 ;----------------------------------------------------------------------
-; 646 | k_set[0] = 1;                                                          
+; 663 | if (k_set[0]==-1)                                                      
 ;----------------------------------------------------------------------
-        ldiu      1,r0                  ; |646| 
-        sti       r0,*ar0               ; |646| 
-        bu        L242                  ; |505| 
-;*      Branch Occurs to L242           ; |505| 
-L226:        
-	.line	142
-;----------------------------------------------------------------------
-; 647 | else if ((p>=770.0) && (p<788.0))                                      
-;----------------------------------------------------------------------
-        ldp       @CL52,DP
-        ldfu      *+fp(5),f0            ; |647| 
-        cmpf      @CL52,f0              ; |647| 
-        blt       L229                  ; |647| 
-;*      Branch Occurs to L229           ; |647| 
-        ldp       @CL53,DP
-        cmpf      @CL53,f0              ; |647| 
-        bge       L229                  ; |647| 
-;*      Branch Occurs to L229           ; |647| 
+        ldiu      *+fp(3),ar0           ; |663| 
+        ldiu      *ar0,r0               ; |663| 
+        cmpi      -1,r0                 ; |663| 
+        bne       L248                  ; |663| 
+;*      Branch Occurs to L248           ; |663| 
 	.line	143
 ;----------------------------------------------------------------------
-; 648 | k_set[0] = 2;                                                          
+; 665 | if ((p>=653.0) && (p<770.0))                                           
 ;----------------------------------------------------------------------
-        ldiu      *+fp(3),ar0           ; |648| 
-        ldiu      2,r0                  ; |648| 
-        sti       r0,*ar0               ; |648| 
-        bu        L242                  ; |505| 
-;*      Branch Occurs to L242           ; |505| 
-L229:        
+        ldp       @CL51,DP
+        ldfu      *+fp(5),f0            ; |665| 
+        cmpf      @CL51,f0              ; |665| 
+        blt       L232                  ; |665| 
+;*      Branch Occurs to L232           ; |665| 
+        ldp       @CL52,DP
+        cmpf      @CL52,f0              ; |665| 
+        bge       L232                  ; |665| 
+;*      Branch Occurs to L232           ; |665| 
 	.line	144
 ;----------------------------------------------------------------------
-; 649 | else if ((p>=788.0) && (p<839.0))                                      
+; 666 | k_set[0] = 1;                                                          
 ;----------------------------------------------------------------------
-        ldp       @CL53,DP
-        ldfu      *+fp(5),f0            ; |649| 
-        cmpf      @CL53,f0              ; |649| 
-        blt       L232                  ; |649| 
-;*      Branch Occurs to L232           ; |649| 
-        ldp       @CL54,DP
-        cmpf      @CL54,f0              ; |649| 
-        bge       L232                  ; |649| 
-;*      Branch Occurs to L232           ; |649| 
+        ldiu      1,r0                  ; |666| 
+        sti       r0,*ar0               ; |666| 
+        bu        L248                  ; |522| 
+;*      Branch Occurs to L248           ; |522| 
+L232:        
 	.line	145
 ;----------------------------------------------------------------------
-; 650 | k_set[0] = 3;                                                          
+; 667 | else if ((p>=770.0) && (p<788.0))                                      
 ;----------------------------------------------------------------------
-        ldiu      *+fp(3),ar0           ; |650| 
-        ldiu      3,r0                  ; |650| 
-        sti       r0,*ar0               ; |650| 
-        bu        L242                  ; |505| 
-;*      Branch Occurs to L242           ; |505| 
-L232:        
+        ldp       @CL52,DP
+        ldfu      *+fp(5),f0            ; |667| 
+        cmpf      @CL52,f0              ; |667| 
+        blt       L235                  ; |667| 
+;*      Branch Occurs to L235           ; |667| 
+        ldp       @CL53,DP
+        cmpf      @CL53,f0              ; |667| 
+        bge       L235                  ; |667| 
+;*      Branch Occurs to L235           ; |667| 
 	.line	146
 ;----------------------------------------------------------------------
-; 651 | else if ((p>=839.0) && (p<=1075.0))                                    
+; 668 | k_set[0] = 2;                                                          
 ;----------------------------------------------------------------------
-        ldp       @CL54,DP
-        ldfu      *+fp(5),f0            ; |651| 
-        cmpf      @CL54,f0              ; |651| 
-        blt       L235                  ; |651| 
-;*      Branch Occurs to L235           ; |651| 
-        ldp       @CL46,DP
-        cmpf      @CL46,f0              ; |651| 
-        bgt       L235                  ; |651| 
-;*      Branch Occurs to L235           ; |651| 
+        ldiu      *+fp(3),ar0           ; |668| 
+        ldiu      2,r0                  ; |668| 
+        sti       r0,*ar0               ; |668| 
+        bu        L248                  ; |522| 
+;*      Branch Occurs to L248           ; |522| 
+L235:        
 	.line	147
 ;----------------------------------------------------------------------
-; 652 | k_set[0] = 4;                                                          
-; 653 | else                                                                   
+; 669 | else if ((p>=788.0) && (p<839.0))                                      
 ;----------------------------------------------------------------------
-        ldiu      *+fp(3),ar0           ; |652| 
-        ldiu      4,r0                  ; |652| 
-        sti       r0,*ar0               ; |652| 
-        bu        L242                  ; |505| 
-;*      Branch Occurs to L242           ; |505| 
-L235:        
+        ldp       @CL53,DP
+        ldfu      *+fp(5),f0            ; |669| 
+        cmpf      @CL53,f0              ; |669| 
+        blt       L238                  ; |669| 
+;*      Branch Occurs to L238           ; |669| 
+        ldp       @CL54,DP
+        cmpf      @CL54,f0              ; |669| 
+        bge       L238                  ; |669| 
+;*      Branch Occurs to L238           ; |669| 
+	.line	148
+;----------------------------------------------------------------------
+; 670 | k_set[0] = 3;                                                          
+;----------------------------------------------------------------------
+        ldiu      *+fp(3),ar0           ; |670| 
+        ldiu      3,r0                  ; |670| 
+        sti       r0,*ar0               ; |670| 
+        bu        L248                  ; |522| 
+;*      Branch Occurs to L248           ; |522| 
+L238:        
 	.line	149
 ;----------------------------------------------------------------------
-; 654 | k_set[0] = -1;                                                         
-; 657 | switch (k_set[0])                                                      
-; 659 | case 1:                                                                
+; 671 | else if ((p>=839.0) && (p<=1075.0))                                    
 ;----------------------------------------------------------------------
-        ldiu      *+fp(3),ar0           ; |654| 
-        ldiu      -1,r0                 ; |654| 
-        sti       r0,*ar0               ; |654| 
-        bu        L242                  ; |505| 
-;*      Branch Occurs to L242           ; |505| 
-L236:        
-	.line	156
+        ldp       @CL54,DP
+        ldfu      *+fp(5),f0            ; |671| 
+        cmpf      @CL54,f0              ; |671| 
+        blt       L241                  ; |671| 
+;*      Branch Occurs to L241           ; |671| 
+        ldp       @CL46,DP
+        cmpf      @CL46,f0              ; |671| 
+        bgt       L241                  ; |671| 
+;*      Branch Occurs to L241           ; |671| 
+	.line	150
 ;----------------------------------------------------------------------
-; 661 | k0 = 346.4228;                                                         
+; 672 | k_set[0] = 4;                                                          
+; 673 | else                                                                   
+;----------------------------------------------------------------------
+        ldiu      *+fp(3),ar0           ; |672| 
+        ldiu      4,r0                  ; |672| 
+        sti       r0,*ar0               ; |672| 
+        bu        L248                  ; |522| 
+;*      Branch Occurs to L248           ; |522| 
+L241:        
+	.line	152
+;----------------------------------------------------------------------
+; 674 | k_set[0] = -1;                                                         
+; 677 | switch (k_set[0])                                                      
+; 679 | case 1:                                                                
+;----------------------------------------------------------------------
+        ldiu      *+fp(3),ar0           ; |674| 
+        ldiu      -1,r0                 ; |674| 
+        sti       r0,*ar0               ; |674| 
+        bu        L248                  ; |522| 
+;*      Branch Occurs to L248           ; |522| 
+L242:        
+	.line	159
+;----------------------------------------------------------------------
+; 681 | k0 = 346.4228;                                                         
 ;----------------------------------------------------------------------
         ldp       @CL55,DP
-        ldfu      @CL55,f0              ; |661| 
-        stf       f0,*+fp(7)            ; |661| 
-	.line	157
-;----------------------------------------------------------------------
-; 662 | k1 = 0.4388;                                                           
-;----------------------------------------------------------------------
-        ldp       @CL56,DP
-        ldfu      @CL56,f0              ; |662| 
-        stf       f0,*+fp(8)            ; |662| 
-	.line	158
-;----------------------------------------------------------------------
-; 663 | k2 = 0.0;                                                              
-;----------------------------------------------------------------------
-        ldfu      0.0000000000e+00,f0   ; |663| 
-        stf       f0,*+fp(9)            ; |663| 
+        ldfu      @CL55,f0              ; |681| 
+        stf       f0,*+fp(7)            ; |681| 
 	.line	160
 ;----------------------------------------------------------------------
-; 665 | break;                                                                 
-; 667 | case 2:                                                                
+; 682 | k1 = 0.4388;                                                           
 ;----------------------------------------------------------------------
-        bu        L278                  ; |665| 
-;*      Branch Occurs to L278           ; |665| 
-L237:        
-	.line	164
+        ldp       @CL56,DP
+        ldfu      @CL56,f0              ; |682| 
+        stf       f0,*+fp(8)            ; |682| 
+	.line	161
 ;----------------------------------------------------------------------
-; 669 | k0 = 2680.3206;                                                        
+; 683 | k2 = 0.0;                                                              
+;----------------------------------------------------------------------
+        ldfu      0.0000000000e+00,f0   ; |683| 
+        stf       f0,*+fp(9)            ; |683| 
+	.line	163
+;----------------------------------------------------------------------
+; 685 | break;                                                                 
+; 687 | case 2:                                                                
+;----------------------------------------------------------------------
+        bu        L284                  ; |685| 
+;*      Branch Occurs to L284           ; |685| 
+L243:        
+	.line	167
+;----------------------------------------------------------------------
+; 689 | k0 = 2680.3206;                                                        
 ;----------------------------------------------------------------------
         ldp       @CL57,DP
-        ldfu      @CL57,f0              ; |669| 
-        stf       f0,*+fp(7)            ; |669| 
-	.line	165
-;----------------------------------------------------------------------
-; 670 | k1 = 0.0;                                                              
-;----------------------------------------------------------------------
-        ldfu      0.0000000000e+00,f0   ; |670| 
-        stf       f0,*+fp(8)            ; |670| 
-	.line	166
-;----------------------------------------------------------------------
-; 671 | k2 = -0.00336312;                                                      
-;----------------------------------------------------------------------
-        ldp       @CL58,DP
-        ldfu      @CL58,f0              ; |671| 
-        stf       f0,*+fp(9)            ; |671| 
+        ldfu      @CL57,f0              ; |689| 
+        stf       f0,*+fp(7)            ; |689| 
 	.line	168
 ;----------------------------------------------------------------------
-; 673 | break;                                                                 
-; 675 | case 3:                                                                
+; 690 | k1 = 0.0;                                                              
 ;----------------------------------------------------------------------
-        bu        L278                  ; |673| 
-;*      Branch Occurs to L278           ; |673| 
-L238:        
-	.line	172
+        ldfu      0.0000000000e+00,f0   ; |690| 
+        stf       f0,*+fp(8)            ; |690| 
+	.line	169
 ;----------------------------------------------------------------------
-; 677 | k0 = 594.5470;                                                         
+; 691 | k2 = -0.00336312;                                                      
+;----------------------------------------------------------------------
+        ldp       @CL58,DP
+        ldfu      @CL58,f0              ; |691| 
+        stf       f0,*+fp(9)            ; |691| 
+	.line	171
+;----------------------------------------------------------------------
+; 693 | break;                                                                 
+; 695 | case 3:                                                                
+;----------------------------------------------------------------------
+        bu        L284                  ; |693| 
+;*      Branch Occurs to L284           ; |693| 
+L244:        
+	.line	175
+;----------------------------------------------------------------------
+; 697 | k0 = 594.5470;                                                         
 ;----------------------------------------------------------------------
         ldp       @CL59,DP
-        ldfu      @CL59,f0              ; |677| 
-        stf       f0,*+fp(7)            ; |677| 
-	.line	173
-;----------------------------------------------------------------------
-; 678 | k1 = 0.0;                                                              
-;----------------------------------------------------------------------
-        ldfu      0.0000000000e+00,f0   ; |678| 
-        stf       f0,*+fp(8)            ; |678| 
-	.line	174
-;----------------------------------------------------------------------
-; 679 | k2 = 0.0;                                                              
-;----------------------------------------------------------------------
-        ldfu      0.0000000000e+00,f0   ; |679| 
-        stf       f0,*+fp(9)            ; |679| 
+        ldfu      @CL59,f0              ; |697| 
+        stf       f0,*+fp(7)            ; |697| 
 	.line	176
 ;----------------------------------------------------------------------
-; 681 | break;                                                                 
-; 683 | case 4:                                                                
+; 698 | k1 = 0.0;                                                              
 ;----------------------------------------------------------------------
-        bu        L278                  ; |681| 
-;*      Branch Occurs to L278           ; |681| 
-L239:        
-	.line	180
+        ldfu      0.0000000000e+00,f0   ; |698| 
+        stf       f0,*+fp(8)            ; |698| 
+	.line	177
 ;----------------------------------------------------------------------
-; 685 | k0 = 186.9696;                                                         
+; 699 | k2 = 0.0;                                                              
 ;----------------------------------------------------------------------
-        ldp       @CL60,DP
-        ldfu      @CL60,f0              ; |685| 
-        stf       f0,*+fp(7)            ; |685| 
-	.line	181
-;----------------------------------------------------------------------
-; 686 | k1 = 0.4862;                                                           
-;----------------------------------------------------------------------
-        ldp       @CL61,DP
-        ldfu      @CL61,f0              ; |686| 
-        stf       f0,*+fp(8)            ; |686| 
-	.line	182
-;----------------------------------------------------------------------
-; 687 | k2 = 0.0;                                                              
-;----------------------------------------------------------------------
-        ldfu      0.0000000000e+00,f0   ; |687| 
-        stf       f0,*+fp(9)            ; |687| 
-	.line	184
-;----------------------------------------------------------------------
-; 689 | break;                                                                 
-; 691 | case 0:                                                                
-; 692 | default:                                                               
-;----------------------------------------------------------------------
-        bu        L278                  ; |689| 
-;*      Branch Occurs to L278           ; |689| 
-L240:        
-	.line	189
-;----------------------------------------------------------------------
-; 694 | k_set[0] = -1;                                                         
-;----------------------------------------------------------------------
-        ldiu      *+fp(3),ar0           ; |694| 
-        ldiu      -1,r0                 ; |694| 
-        sti       r0,*ar0               ; |694| 
-	.line	190
-;----------------------------------------------------------------------
-; 695 | GIEP;                                                                  
-;----------------------------------------------------------------------
-	pop		ST			
-	.line	192
-;----------------------------------------------------------------------
-; 697 | return API_error_num;                                                  
-;----------------------------------------------------------------------
-        bud       L281                  ; |697| 
-	nop
-        ldp       @CL23,DP
-        ldfu      @CL23,f0              ; |697| 
-;*      Branch Occurs to L281           ; |697| 
-L242:        
-	.line	152
-        ldiu      *+fp(3),ar0           ; |657| 
-        ldiu      *ar0,r0               ; |657| 
-        cmpi      0,r0                  ; |657| 
-        beq       L240                  ; |657| 
-;*      Branch Occurs to L240           ; |657| 
-        cmpi      1,r0                  ; |657| 
-        beq       L236                  ; |657| 
-;*      Branch Occurs to L236           ; |657| 
-        cmpi      2,r0                  ; |657| 
-        beq       L237                  ; |657| 
-;*      Branch Occurs to L237           ; |657| 
-        cmpi      3,r0                  ; |657| 
-        beq       L238                  ; |657| 
-;*      Branch Occurs to L238           ; |657| 
-        cmpi      4,r0                  ; |657| 
-        beq       L239                  ; |657| 
-;*      Branch Occurs to L239           ; |657| 
-        bu        L240                  ; |657| 
-;*      Branch Occurs to L240           ; |657| 
-	.line	196
+        ldfu      0.0000000000e+00,f0   ; |699| 
+        stf       f0,*+fp(9)            ; |699| 
+	.line	179
 ;----------------------------------------------------------------------
 ; 701 | break;                                                                 
-; 703 | case 'C':                                                              
+; 703 | case 4:                                                                
 ;----------------------------------------------------------------------
-L249:        
-	.line	200
+        bu        L284                  ; |701| 
+;*      Branch Occurs to L284           ; |701| 
+L245:        
+	.line	183
 ;----------------------------------------------------------------------
-; 705 | k_set[0] = 0;                                                          
+; 705 | k0 = 186.9696;                                                         
 ;----------------------------------------------------------------------
-        ldiu      *+fp(3),ar0           ; |705| 
-        ldiu      0,r0                  ; |705| 
-        sti       r0,*ar0               ; |705| 
-	.line	201
+        ldp       @CL60,DP
+        ldfu      @CL60,f0              ; |705| 
+        stf       f0,*+fp(7)            ; |705| 
+	.line	184
 ;----------------------------------------------------------------------
-; 706 | a                = f->a * 10e6;                                        
+; 706 | k1 = 0.4862;                                                           
 ;----------------------------------------------------------------------
-        ldp       @CL33,DP
-        ldiu      *+fp(13),ir0          ; |706| 
-        ldiu      399,ar0               ; |706| 
-        ldfu      @CL33,f0              ; |706| 
-        mpyf3     *+ar0(ir0),f0,f0      ; |706| 
-        stf       f0,*+fp(6)            ; |706| 
-	.line	202
+        ldp       @CL61,DP
+        ldfu      @CL61,f0              ; |706| 
+        stf       f0,*+fp(8)            ; |706| 
+	.line	185
 ;----------------------------------------------------------------------
-; 707 | t1               = (t*1.8) + 32.0;                                     
+; 707 | k2 = 0.0;                                                              
 ;----------------------------------------------------------------------
-        ldp       @CL62,DP
-        ldfu      @CL62,f0              ; |707| 
-        mpyf      *+fp(4),f0            ; |707| 
-        addf      3.2000000000e+01,f0   ; |707| 
-        stf       f0,*+fp(10)           ; |707| 
+        ldfu      0.0000000000e+00,f0   ; |707| 
+        stf       f0,*+fp(9)            ; |707| 
+	.line	187
+;----------------------------------------------------------------------
+; 709 | break;                                                                 
+; 711 | case 0:                                                                
+; 712 | default:                                                               
+;----------------------------------------------------------------------
+        bu        L284                  ; |709| 
+;*      Branch Occurs to L284           ; |709| 
+L246:        
+	.line	192
+;----------------------------------------------------------------------
+; 714 | k_set[0] = -1;                                                         
+;----------------------------------------------------------------------
+        ldiu      *+fp(3),ar0           ; |714| 
+        ldiu      -1,r0                 ; |714| 
+        sti       r0,*ar0               ; |714| 
+	.line	193
+;----------------------------------------------------------------------
+; 715 | GIEP;                                                                  
+;----------------------------------------------------------------------
+	pop		ST			
+	.line	195
+;----------------------------------------------------------------------
+; 717 | return API_error_num;                                                  
+;----------------------------------------------------------------------
+        bud       L287                  ; |717| 
+	nop
+        ldp       @CL23,DP
+        ldfu      @CL23,f0              ; |717| 
+;*      Branch Occurs to L287           ; |717| 
+L248:        
+	.line	155
+        ldiu      *+fp(3),ar0           ; |677| 
+        ldiu      *ar0,r0               ; |677| 
+        cmpi      0,r0                  ; |677| 
+        beq       L246                  ; |677| 
+;*      Branch Occurs to L246           ; |677| 
+        cmpi      1,r0                  ; |677| 
+        beq       L242                  ; |677| 
+;*      Branch Occurs to L242           ; |677| 
+        cmpi      2,r0                  ; |677| 
+        beq       L243                  ; |677| 
+;*      Branch Occurs to L243           ; |677| 
+        cmpi      3,r0                  ; |677| 
+        beq       L244                  ; |677| 
+;*      Branch Occurs to L244           ; |677| 
+        cmpi      4,r0                  ; |677| 
+        beq       L245                  ; |677| 
+;*      Branch Occurs to L245           ; |677| 
+        bu        L246                  ; |677| 
+;*      Branch Occurs to L246           ; |677| 
+	.line	199
+;----------------------------------------------------------------------
+; 721 | break;                                                                 
+; 723 | case 'C':                                                              
+;----------------------------------------------------------------------
+L255:        
+	.line	203
+;----------------------------------------------------------------------
+; 725 | k_set[0] = 0;                                                          
+;----------------------------------------------------------------------
+        ldiu      *+fp(3),ar0           ; |725| 
+        ldiu      0,r0                  ; |725| 
+        sti       r0,*ar0               ; |725| 
 	.line	204
 ;----------------------------------------------------------------------
-; 709 | if ((t1<0.0) || (a<270.0) || (a>930.0))                                
+; 726 | a                = f->a * 10e6;                                        
 ;----------------------------------------------------------------------
-        cmpf      0.0000000000e+00,f0   ; |709| 
-        blt       L252                  ; |709| 
-;*      Branch Occurs to L252           ; |709| 
-        ldp       @CL34,DP
-        ldfu      *+fp(6),f0            ; |709| 
-        cmpf      @CL34,f0              ; |709| 
-        blt       L252                  ; |709| 
-;*      Branch Occurs to L252           ; |709| 
-        ldp       @CL35,DP
-        cmpf      @CL35,f0              ; |709| 
-        ble       L254                  ; |709| 
-;*      Branch Occurs to L254           ; |709| 
-L252:        
-	.line	206
+        ldp       @CL33,DP
+        ldiu      *+fp(13),ir0          ; |726| 
+        ldiu      399,ar0               ; |726| 
+        ldfu      @CL33,f0              ; |726| 
+        mpyf3     *+ar0(ir0),f0,f0      ; |726| 
+        stf       f0,*+fp(6)            ; |726| 
+	.line	205
 ;----------------------------------------------------------------------
-; 711 | API_STATUS(fcidx, API_fail);                                           
-;----------------------------------------------------------------------
-        ldp       @CL22,DP
-        ldiu      *+fp(1),ar2           ; |711| 
-        ldiu      2,r2                  ; |711| 
-        ldiu      @CL22,r0              ; |711| 
-        callu     r0                    ; far call to _API_STATUS	; |711| 
-                                        ; |711| Far Call Occurs
-	.line	207
-;----------------------------------------------------------------------
-; 712 | GIEP;                                                                  
-;----------------------------------------------------------------------
-	pop		ST			
-	.line	209
-;----------------------------------------------------------------------
-; 714 | return API_error_num;                                                  
-;----------------------------------------------------------------------
-        bud       L281                  ; |714| 
-	nop
-        ldp       @CL23,DP
-        ldfu      @CL23,f0              ; |714| 
-;*      Branch Occurs to L281           ; |714| 
-L254:        
-	.line	211
-;----------------------------------------------------------------------
-; 716 | else if ((a<510.0) && (t1>300.0))                                      
-;----------------------------------------------------------------------
-        ldp       @CL36,DP
-        ldfu      *+fp(6),f0            ; |716| 
-        cmpf      @CL36,f0              ; |716| 
-        bge       L258                  ; |716| 
-;*      Branch Occurs to L258           ; |716| 
-        ldp       @CL24,DP
-        ldfu      *+fp(10),f0           ; |716| 
-        cmpf      @CL24,f0              ; |716| 
-        ble       L258                  ; |716| 
-;*      Branch Occurs to L258           ; |716| 
-	.line	213
-;----------------------------------------------------------------------
-; 718 | API_STATUS(fcidx, API_fail);                                           
-;----------------------------------------------------------------------
-        ldp       @CL22,DP
-        ldiu      *+fp(1),ar2           ; |718| 
-        ldiu      2,r2                  ; |718| 
-        ldiu      @CL22,r0              ; |718| 
-        callu     r0                    ; far call to _API_STATUS	; |718| 
-                                        ; |718| Far Call Occurs
-	.line	214
-;----------------------------------------------------------------------
-; 719 | GIEP;                                                                  
-;----------------------------------------------------------------------
-	pop		ST			
-	.line	216
-;----------------------------------------------------------------------
-; 721 | return API_error_num;                                                  
-;----------------------------------------------------------------------
-        bud       L281                  ; |721| 
-	nop
-        ldp       @CL23,DP
-        ldfu      @CL23,f0              ; |721| 
-;*      Branch Occurs to L281           ; |721| 
-L258:        
-	.line	218
-;----------------------------------------------------------------------
-; 723 | else if ((a<530.0) && (t1>250.0))                                      
-;----------------------------------------------------------------------
-        ldp       @CL37,DP
-        ldfu      *+fp(6),f0            ; |723| 
-        cmpf      @CL37,f0              ; |723| 
-        bge       L262                  ; |723| 
-;*      Branch Occurs to L262           ; |723| 
-        ldfu      *+fp(10),f0           ; |723| 
-        cmpf      2.5000000000e+02,f0   ; |723| 
-        ble       L262                  ; |723| 
-;*      Branch Occurs to L262           ; |723| 
-	.line	220
-;----------------------------------------------------------------------
-; 725 | API_STATUS(fcidx, API_fail);                                           
-;----------------------------------------------------------------------
-        ldp       @CL22,DP
-        ldiu      *+fp(1),ar2           ; |725| 
-        ldiu      2,r2                  ; |725| 
-        ldiu      @CL22,r0              ; |725| 
-        callu     r0                    ; far call to _API_STATUS	; |725| 
-                                        ; |725| Far Call Occurs
-	.line	221
-;----------------------------------------------------------------------
-; 726 | GIEP;                                                                  
-;----------------------------------------------------------------------
-	pop		ST			
-	.line	223
-;----------------------------------------------------------------------
-; 728 | return API_error_num;                                                  
-;----------------------------------------------------------------------
-        bud       L281                  ; |728| 
-	nop
-        ldp       @CL23,DP
-        ldfu      @CL23,f0              ; |728| 
-;*      Branch Occurs to L281           ; |728| 
-L262:        
-	.line	225
-;----------------------------------------------------------------------
-; 730 | else if ((a<=930.0) && (t1>200.0))                                     
-;----------------------------------------------------------------------
-        ldp       @CL35,DP
-        ldfu      *+fp(6),f0            ; |730| 
-        cmpf      @CL35,f0              ; |730| 
-        bgt       L265                  ; |730| 
-;*      Branch Occurs to L265           ; |730| 
-        ldfu      *+fp(10),f0           ; |730| 
-        cmpf      2.0000000000e+02,f0   ; |730| 
-        ble       L265                  ; |730| 
-;*      Branch Occurs to L265           ; |730| 
-	.line	227
-;----------------------------------------------------------------------
-; 732 | API_STATUS(fcidx, API_fail);                                           
-;----------------------------------------------------------------------
-        ldp       @CL22,DP
-        ldiu      *+fp(1),ar2           ; |732| 
-        ldiu      2,r2                  ; |732| 
-        ldiu      @CL22,r0              ; |732| 
-        callu     r0                    ; far call to _API_STATUS	; |732| 
-                                        ; |732| Far Call Occurs
-	.line	228
-;----------------------------------------------------------------------
-; 733 | GIEP;                                                                  
-;----------------------------------------------------------------------
-	pop		ST			
-	.line	230
-;----------------------------------------------------------------------
-; 735 | return API_error_num;                                                  
-;----------------------------------------------------------------------
-        bud       L281                  ; |735| 
-	nop
-        ldp       @CL23,DP
-        ldfu      @CL23,f0              ; |735| 
-;*      Branch Occurs to L281           ; |735| 
-L265:        
-	.line	233
-;----------------------------------------------------------------------
-; 738 | a = f->a;                                                              
-;----------------------------------------------------------------------
-        ldiu      *+fp(13),ir0          ; |738| 
-        ldiu      399,ar0               ; |738| 
-        ldfu      *+ar0(ir0),f0         ; |738| 
-        stf       f0,*+fp(6)            ; |738| 
-	.line	235
-;----------------------------------------------------------------------
-; 740 | break;                                                                 
-; 742 | case 'D':                                                              
-; 743 | default:                                                               
-;----------------------------------------------------------------------
-        bu        L278                  ; |740| 
-;*      Branch Occurs to L278           ; |740| 
-L266:        
-	.line	240
-;----------------------------------------------------------------------
-; 745 | f->API_TABLE = 'D'<<8;                                                 
-;----------------------------------------------------------------------
-        ldiu      *+fp(13),ir0          ; |745| 
-        ldiu      398,ar0               ; |745| 
-        ldiu      17408,r0              ; |745| 
-        sti       r0,*+ar0(ir0)         ; |745| 
-	.line	241
-;----------------------------------------------------------------------
-; 746 | p                        = kgm3_to_API(r);                             
-;----------------------------------------------------------------------
-        ldp       @CL21,DP
-        ldfu      *+fp(2),f2            ; |746| 
-        ldiu      @CL21,r0              ; |746| 
-        callu     r0                    ; far call to _kgm3_to_API	; |746| 
-                                        ; |746| Far Call Occurs
-        stf       f0,*+fp(5)            ; |746| 
-	.line	242
-;----------------------------------------------------------------------
-; 747 | t1                       = (t*1.8) + 32.0;                             
+; 727 | t1               = (t*1.8) + 32.0;                                     
 ;----------------------------------------------------------------------
         ldp       @CL62,DP
-        ldfu      @CL62,f0              ; |747| 
-        mpyf      *+fp(4),f0            ; |747| 
-        addf      3.2000000000e+01,f0   ; |747| 
-        stf       f0,*+fp(10)           ; |747| 
-	.line	244
+        ldfu      @CL62,f0              ; |727| 
+        mpyf      *+fp(4),f0            ; |727| 
+        addf      3.2000000000e+01,f0   ; |727| 
+        stf       f0,*+fp(10)           ; |727| 
+	.line	207
 ;----------------------------------------------------------------------
-; 749 | if ((p<-10.0) || (p>45.0) || (t1<0.0) || (t1>300.0))                   
+; 729 | if ((t1<0.0) || (a<270.0) || (a>930.0))                                
 ;----------------------------------------------------------------------
-        ldp       @CL38,DP
-        ldfu      *+fp(5),f0            ; |749| 
-        cmpf      @CL38,f0              ; |749| 
-        blt       L270                  ; |749| 
-;*      Branch Occurs to L270           ; |749| 
-        cmpf      4.5000000000e+01,f0   ; |749| 
-        bgt       L270                  ; |749| 
-;*      Branch Occurs to L270           ; |749| 
-        ldfu      *+fp(10),f0           ; |749| 
-        cmpf      0.0000000000e+00,f0   ; |749| 
-        blt       L270                  ; |749| 
-;*      Branch Occurs to L270           ; |749| 
-        ldp       @CL24,DP
-        cmpf      @CL24,f0              ; |749| 
-        ble       L271                  ; |749| 
-;*      Branch Occurs to L271           ; |749| 
-L270:        
-	.line	246
+        cmpf      0.0000000000e+00,f0   ; |729| 
+        blt       L258                  ; |729| 
+;*      Branch Occurs to L258           ; |729| 
+        ldp       @CL34,DP
+        ldfu      *+fp(6),f0            ; |729| 
+        cmpf      @CL34,f0              ; |729| 
+        blt       L258                  ; |729| 
+;*      Branch Occurs to L258           ; |729| 
+        ldp       @CL35,DP
+        cmpf      @CL35,f0              ; |729| 
+        ble       L260                  ; |729| 
+;*      Branch Occurs to L260           ; |729| 
+L258:        
+	.line	209
 ;----------------------------------------------------------------------
-; 751 | API_STATUS(fcidx, API_fail);                                           
+; 731 | API_STATUS(fcidx, API_fail);                                           
 ;----------------------------------------------------------------------
         ldp       @CL22,DP
-        ldiu      *+fp(1),ar2           ; |751| 
-        ldiu      2,r2                  ; |751| 
-        ldiu      @CL22,r0              ; |751| 
-        callu     r0                    ; far call to _API_STATUS	; |751| 
-                                        ; |751| Far Call Occurs
-	.line	247
+        ldiu      *+fp(1),ar2           ; |731| 
+        ldiu      2,r2                  ; |731| 
+        ldiu      @CL22,r0              ; |731| 
+        callu     r0                    ; far call to _API_STATUS	; |731| 
+                                        ; |731| Far Call Occurs
+	.line	210
 ;----------------------------------------------------------------------
-; 752 | GIEP;                                                                  
+; 732 | GIEP;                                                                  
 ;----------------------------------------------------------------------
 	pop		ST			
-	.line	249
+	.line	212
 ;----------------------------------------------------------------------
-; 754 | return API_error_num;                                                  
+; 734 | return API_error_num;                                                  
 ;----------------------------------------------------------------------
-        bud       L281                  ; |754| 
+        bud       L287                  ; |734| 
 	nop
         ldp       @CL23,DP
-        ldfu      @CL23,f0              ; |754| 
-;*      Branch Occurs to L281           ; |754| 
-L271:        
-	.line	252
+        ldfu      @CL23,f0              ; |734| 
+;*      Branch Occurs to L287           ; |734| 
+L260:        
+	.line	214
 ;----------------------------------------------------------------------
-; 757 | k_set[0] = 0;                                                          
+; 736 | else if ((a<510.0) && (t1>300.0))                                      
 ;----------------------------------------------------------------------
-        ldiu      *+fp(3),ar0           ; |757| 
-        ldiu      0,r0                  ; |757| 
-        sti       r0,*ar0               ; |757| 
-	.line	253
+        ldp       @CL36,DP
+        ldfu      *+fp(6),f0            ; |736| 
+        cmpf      @CL36,f0              ; |736| 
+        bge       L264                  ; |736| 
+;*      Branch Occurs to L264           ; |736| 
+        ldp       @CL24,DP
+        ldfu      *+fp(10),f0           ; |736| 
+        cmpf      @CL24,f0              ; |736| 
+        ble       L264                  ; |736| 
+;*      Branch Occurs to L264           ; |736| 
+	.line	216
 ;----------------------------------------------------------------------
-; 758 | k0               = 0.0;                                                
+; 738 | API_STATUS(fcidx, API_fail);                                           
 ;----------------------------------------------------------------------
-        ldfu      0.0000000000e+00,f0   ; |758| 
-        stf       f0,*+fp(7)            ; |758| 
-	.line	254
+        ldp       @CL22,DP
+        ldiu      *+fp(1),ar2           ; |738| 
+        ldiu      2,r2                  ; |738| 
+        ldiu      @CL22,r0              ; |738| 
+        callu     r0                    ; far call to _API_STATUS	; |738| 
+                                        ; |738| Far Call Occurs
+	.line	217
 ;----------------------------------------------------------------------
-; 759 | k1               = 0.6278;                                             
-;----------------------------------------------------------------------
-        ldp       @CL63,DP
-        ldfu      @CL63,f0              ; |759| 
-        stf       f0,*+fp(8)            ; |759| 
-	.line	255
-;----------------------------------------------------------------------
-; 760 | k2               = 0.0;                                                
-;----------------------------------------------------------------------
-        ldfu      0.0000000000e+00,f0   ; |760| 
-        stf       f0,*+fp(9)            ; |760| 
-	.line	257
-;----------------------------------------------------------------------
-; 762 | break;                                                                 
-;----------------------------------------------------------------------
-        bu        L278                  ; |762| 
-;*      Branch Occurs to L278           ; |762| 
-L273:        
-	.line	28
-        ldiu      *+fp(13),ir0          ; |533| 
-        ldiu      398,ar0               ; |533| 
-        ldiu      -8,r0                 ; |533| 
-        ash3      r0,*+ar0(ir0),r0      ; |533| 
-        cmpi      65,r0                 ; |533| 
-        beq       L170                  ; |533| 
-;*      Branch Occurs to L170           ; |533| 
-        cmpi      66,r0                 ; |533| 
-        beq       L199                  ; |533| 
-;*      Branch Occurs to L199           ; |533| 
-        cmpi      67,r0                 ; |533| 
-        beq       L249                  ; |533| 
-;*      Branch Occurs to L249           ; |533| 
-        cmpi      68,r0                 ; |533| 
-        beq       L266                  ; |533| 
-;*      Branch Occurs to L266           ; |533| 
-        bu        L266                  ; |533| 
-;*      Branch Occurs to L266           ; |533| 
-L278:        
-	.line	261
-;----------------------------------------------------------------------
-; 766 | t -= 15.0;                                                             
-;----------------------------------------------------------------------
-        ldfu      1.5000000000e+01,f0   ; |766| 
-        subrf     *+fp(4),f0            ; |766| 
-        stf       f0,*+fp(4)            ; |766| 
-	.line	262
-;----------------------------------------------------------------------
-; 767 | p  = r;                                                                
-;----------------------------------------------------------------------
-        ldfu      *+fp(2),f0            ; |767| 
-        stf       f0,*+fp(5)            ; |767| 
-	.line	264
-;----------------------------------------------------------------------
-; 769 | if ((f->API_TABLE>>8) != 'C')                                          
-; 770 | {//a = (k0/(p*p)) + (k1/p) + k2;                                       
-;----------------------------------------------------------------------
-        ldiu      *+fp(13),ir0          ; |769| 
-        ldiu      398,ar0               ; |769| 
-        ldiu      -8,r0                 ; |769| 
-        ash3      r0,*+ar0(ir0),r0      ; |769| 
-        cmpi      67,r0                 ; |769| 
-        beq       L280                  ; |769| 
-;*      Branch Occurs to L280           ; |769| 
-	.line	266
-;----------------------------------------------------------------------
-; 771 | t1 = truncate((k0/p),8);                                               
-;----------------------------------------------------------------------
-        ldfu      *+fp(7),f0            ; |771| 
-        ldfu      *+fp(5),f1            ; |771| 
-        call      DIV_F30               ; |771| 
-                                        ; |771| Call Occurs
-        ldp       @CL40,DP
-        ldfu      f0,f2                 ; |771| 
-        ldiu      @CL40,r1              ; |771| 
-        ldiu      8,ar2                 ; |771| 
-        callu     r1                    ; far call to _truncate	; |771| 
-                                        ; |771| Far Call Occurs
-        stf       f0,*+fp(10)           ; |771| 
-	.line	267
-;----------------------------------------------------------------------
-; 772 | t2 = truncate((t1/p),8);                                               
-;----------------------------------------------------------------------
-        ldfu      *+fp(5),f1            ; |772| 
-        call      DIV_F30               ; |772| 
-                                        ; |772| Call Occurs
-        ldp       @CL40,DP
-        ldiu      @CL40,r1              ; |772| 
-        ldiu      8,ar2                 ; |772| 
-        ldfu      f0,f2                 ; |772| 
-        callu     r1                    ; far call to _truncate	; |772| 
-                                        ; |772| Far Call Occurs
-        stf       f0,*+fp(11)           ; |772| 
-	.line	268
-;----------------------------------------------------------------------
-; 773 | t3 = truncate((k1/p),8);                                               
-;----------------------------------------------------------------------
-        ldfu      *+fp(5),f1            ; |773| 
-        ldfu      *+fp(8),f0            ; |773| 
-        call      DIV_F30               ; |773| 
-                                        ; |773| Call Occurs
-        ldp       @CL40,DP
-        ldiu      @CL40,r1              ; |773| 
-        ldfu      f0,f2                 ; |773| 
-        ldiu      8,ar2                 ; |773| 
-        callu     r1                    ; far call to _truncate	; |773| 
-                                        ; |773| Far Call Occurs
-        stf       f0,*+fp(12)           ; |773| 
-	.line	269
-;----------------------------------------------------------------------
-; 774 | a  = sigfig((t2+t3+k2), 4);                                            
-;----------------------------------------------------------------------
-        ldfu      f0,f2
-        addf      *+fp(11),f2           ; |774| 
-        ldiu      4,ar2                 ; |774| 
-        ldp       @CL41,DP
-        addf      *+fp(9),f2            ; |774| 
-        ldiu      @CL41,r0              ; |774| 
-        callu     r0                    ; far call to _sigfig	; |774| 
-                                        ; |774| Far Call Occurs
-        stf       f0,*+fp(6)            ; |774| 
-L280:        
-	.line	272
-;----------------------------------------------------------------------
-; 777 | t = p * exp(-a*t*(1.0+0.8*a*t));                                       
-;----------------------------------------------------------------------
-        ldfu      *+fp(6),f1            ; |777| 
-        ldp       @CL42,DP
-        negf      *+fp(6),f0            ; |777| 
-        mpyf      @CL42,f1              ; |777| 
-        mpyf      *+fp(4),f0            ; |777| 
-        ldp       @CL43,DP
-        mpyf      *+fp(4),f1            ; |777| 
-        ldiu      @CL43,r3              ; |777| 
-        addf      1.0000000000e+00,f1   ; |777| 
-        mpyf3     f1,f0,f2              ; |777| 
-        callu     r3                    ; far call to _exp	; |777| 
-                                        ; |777| Far Call Occurs
-        mpyf      *+fp(5),f0            ; |777| 
-        stf       f0,*+fp(4)            ; |777| 
-	.line	274
-;----------------------------------------------------------------------
-; 779 | GIEP;                                                                  
+; 739 | GIEP;                                                                  
 ;----------------------------------------------------------------------
 	pop		ST			
+	.line	219
+;----------------------------------------------------------------------
+; 741 | return API_error_num;                                                  
+;----------------------------------------------------------------------
+        bud       L287                  ; |741| 
+	nop
+        ldp       @CL23,DP
+        ldfu      @CL23,f0              ; |741| 
+;*      Branch Occurs to L287           ; |741| 
+L264:        
+	.line	221
+;----------------------------------------------------------------------
+; 743 | else if ((a<530.0) && (t1>250.0))                                      
+;----------------------------------------------------------------------
+        ldp       @CL37,DP
+        ldfu      *+fp(6),f0            ; |743| 
+        cmpf      @CL37,f0              ; |743| 
+        bge       L268                  ; |743| 
+;*      Branch Occurs to L268           ; |743| 
+        ldfu      *+fp(10),f0           ; |743| 
+        cmpf      2.5000000000e+02,f0   ; |743| 
+        ble       L268                  ; |743| 
+;*      Branch Occurs to L268           ; |743| 
+	.line	223
+;----------------------------------------------------------------------
+; 745 | API_STATUS(fcidx, API_fail);                                           
+;----------------------------------------------------------------------
+        ldp       @CL22,DP
+        ldiu      *+fp(1),ar2           ; |745| 
+        ldiu      2,r2                  ; |745| 
+        ldiu      @CL22,r0              ; |745| 
+        callu     r0                    ; far call to _API_STATUS	; |745| 
+                                        ; |745| Far Call Occurs
+	.line	224
+;----------------------------------------------------------------------
+; 746 | GIEP;                                                                  
+;----------------------------------------------------------------------
+	pop		ST			
+	.line	226
+;----------------------------------------------------------------------
+; 748 | return API_error_num;                                                  
+;----------------------------------------------------------------------
+        bud       L287                  ; |748| 
+	nop
+        ldp       @CL23,DP
+        ldfu      @CL23,f0              ; |748| 
+;*      Branch Occurs to L287           ; |748| 
+L268:        
+	.line	228
+;----------------------------------------------------------------------
+; 750 | else if ((a<=930.0) && (t1>200.0))                                     
+;----------------------------------------------------------------------
+        ldp       @CL35,DP
+        ldfu      *+fp(6),f0            ; |750| 
+        cmpf      @CL35,f0              ; |750| 
+        bgt       L271                  ; |750| 
+;*      Branch Occurs to L271           ; |750| 
+        ldfu      *+fp(10),f0           ; |750| 
+        cmpf      2.0000000000e+02,f0   ; |750| 
+        ble       L271                  ; |750| 
+;*      Branch Occurs to L271           ; |750| 
+	.line	230
+;----------------------------------------------------------------------
+; 752 | API_STATUS(fcidx, API_fail);                                           
+;----------------------------------------------------------------------
+        ldp       @CL22,DP
+        ldiu      *+fp(1),ar2           ; |752| 
+        ldiu      2,r2                  ; |752| 
+        ldiu      @CL22,r0              ; |752| 
+        callu     r0                    ; far call to _API_STATUS	; |752| 
+                                        ; |752| Far Call Occurs
+	.line	231
+;----------------------------------------------------------------------
+; 753 | GIEP;                                                                  
+;----------------------------------------------------------------------
+	pop		ST			
+	.line	233
+;----------------------------------------------------------------------
+; 755 | return API_error_num;                                                  
+;----------------------------------------------------------------------
+        bud       L287                  ; |755| 
+	nop
+        ldp       @CL23,DP
+        ldfu      @CL23,f0              ; |755| 
+;*      Branch Occurs to L287           ; |755| 
+L271:        
+	.line	236
+;----------------------------------------------------------------------
+; 758 | a = f->a;                                                              
+;----------------------------------------------------------------------
+        ldiu      *+fp(13),ir0          ; |758| 
+        ldiu      399,ar0               ; |758| 
+        ldfu      *+ar0(ir0),f0         ; |758| 
+        stf       f0,*+fp(6)            ; |758| 
+	.line	238
+;----------------------------------------------------------------------
+; 760 | break;                                                                 
+; 762 | case 'D':                                                              
+; 763 | default:                                                               
+;----------------------------------------------------------------------
+        bu        L284                  ; |760| 
+;*      Branch Occurs to L284           ; |760| 
+L272:        
+	.line	243
+;----------------------------------------------------------------------
+; 765 | f->API_TABLE = 'D'<<8;                                                 
+;----------------------------------------------------------------------
+        ldiu      *+fp(13),ir0          ; |765| 
+        ldiu      398,ar0               ; |765| 
+        ldiu      17408,r0              ; |765| 
+        sti       r0,*+ar0(ir0)         ; |765| 
+	.line	244
+;----------------------------------------------------------------------
+; 766 | p                        = kgm3_to_API(r);                             
+;----------------------------------------------------------------------
+        ldp       @CL21,DP
+        ldfu      *+fp(2),f2            ; |766| 
+        ldiu      @CL21,r0              ; |766| 
+        callu     r0                    ; far call to _kgm3_to_API	; |766| 
+                                        ; |766| Far Call Occurs
+        stf       f0,*+fp(5)            ; |766| 
+	.line	245
+;----------------------------------------------------------------------
+; 767 | t1                       = (t*1.8) + 32.0;                             
+;----------------------------------------------------------------------
+        ldp       @CL62,DP
+        ldfu      @CL62,f0              ; |767| 
+        mpyf      *+fp(4),f0            ; |767| 
+        addf      3.2000000000e+01,f0   ; |767| 
+        stf       f0,*+fp(10)           ; |767| 
+	.line	247
+;----------------------------------------------------------------------
+; 769 | if ((p<-10.0) || (p>45.0) || (t1<0.0) || (t1>300.0))                   
+;----------------------------------------------------------------------
+        ldp       @CL38,DP
+        ldfu      *+fp(5),f0            ; |769| 
+        cmpf      @CL38,f0              ; |769| 
+        blt       L276                  ; |769| 
+;*      Branch Occurs to L276           ; |769| 
+        cmpf      4.5000000000e+01,f0   ; |769| 
+        bgt       L276                  ; |769| 
+;*      Branch Occurs to L276           ; |769| 
+        ldfu      *+fp(10),f0           ; |769| 
+        cmpf      0.0000000000e+00,f0   ; |769| 
+        blt       L276                  ; |769| 
+;*      Branch Occurs to L276           ; |769| 
+        ldp       @CL24,DP
+        cmpf      @CL24,f0              ; |769| 
+        ble       L277                  ; |769| 
+;*      Branch Occurs to L277           ; |769| 
+L276:        
+	.line	249
+;----------------------------------------------------------------------
+; 771 | API_STATUS(fcidx, API_fail);                                           
+;----------------------------------------------------------------------
+        ldp       @CL22,DP
+        ldiu      *+fp(1),ar2           ; |771| 
+        ldiu      2,r2                  ; |771| 
+        ldiu      @CL22,r0              ; |771| 
+        callu     r0                    ; far call to _API_STATUS	; |771| 
+                                        ; |771| Far Call Occurs
+	.line	250
+;----------------------------------------------------------------------
+; 772 | GIEP;                                                                  
+;----------------------------------------------------------------------
+	pop		ST			
+	.line	252
+;----------------------------------------------------------------------
+; 774 | return API_error_num;                                                  
+;----------------------------------------------------------------------
+        bud       L287                  ; |774| 
+	nop
+        ldp       @CL23,DP
+        ldfu      @CL23,f0              ; |774| 
+;*      Branch Occurs to L287           ; |774| 
+L277:        
+	.line	255
+;----------------------------------------------------------------------
+; 777 | k_set[0] = 0;                                                          
+;----------------------------------------------------------------------
+        ldiu      *+fp(3),ar0           ; |777| 
+        ldiu      0,r0                  ; |777| 
+        sti       r0,*ar0               ; |777| 
+	.line	256
+;----------------------------------------------------------------------
+; 778 | k0               = 0.0;                                                
+;----------------------------------------------------------------------
+        ldfu      0.0000000000e+00,f0   ; |778| 
+        stf       f0,*+fp(7)            ; |778| 
+	.line	257
+;----------------------------------------------------------------------
+; 779 | k1               = 0.6278;                                             
+;----------------------------------------------------------------------
+        ldp       @CL63,DP
+        ldfu      @CL63,f0              ; |779| 
+        stf       f0,*+fp(8)            ; |779| 
+	.line	258
+;----------------------------------------------------------------------
+; 780 | k2               = 0.0;                                                
+;----------------------------------------------------------------------
+        ldfu      0.0000000000e+00,f0   ; |780| 
+        stf       f0,*+fp(9)            ; |780| 
+	.line	260
+;----------------------------------------------------------------------
+; 782 | break;                                                                 
+;----------------------------------------------------------------------
+        bu        L284                  ; |782| 
+;*      Branch Occurs to L284           ; |782| 
+L279:        
+	.line	28
+        ldiu      *+fp(13),ir0          ; |550| 
+        ldiu      398,ar0               ; |550| 
+        ldiu      -8,r0                 ; |550| 
+        ash3      r0,*+ar0(ir0),r0      ; |550| 
+        cmpi      65,r0                 ; |550| 
+        beq       L176                  ; |550| 
+;*      Branch Occurs to L176           ; |550| 
+        cmpi      66,r0                 ; |550| 
+        beq       L205                  ; |550| 
+;*      Branch Occurs to L205           ; |550| 
+        cmpi      67,r0                 ; |550| 
+        beq       L255                  ; |550| 
+;*      Branch Occurs to L255           ; |550| 
+        cmpi      68,r0                 ; |550| 
+        beq       L272                  ; |550| 
+;*      Branch Occurs to L272           ; |550| 
+        bu        L272                  ; |550| 
+;*      Branch Occurs to L272           ; |550| 
+L284:        
+	.line	264
+;----------------------------------------------------------------------
+; 786 | t -= 15.0;                                                             
+;----------------------------------------------------------------------
+        ldfu      1.5000000000e+01,f0   ; |786| 
+        subrf     *+fp(4),f0            ; |786| 
+        stf       f0,*+fp(4)            ; |786| 
+	.line	265
+;----------------------------------------------------------------------
+; 787 | p  = r;                                                                
+;----------------------------------------------------------------------
+        ldfu      *+fp(2),f0            ; |787| 
+        stf       f0,*+fp(5)            ; |787| 
+	.line	267
+;----------------------------------------------------------------------
+; 789 | if ((f->API_TABLE>>8) != 'C')                                          
+; 790 | {//a = (k0/(p*p)) + (k1/p) + k2;                                       
+;----------------------------------------------------------------------
+        ldiu      *+fp(13),ir0          ; |789| 
+        ldiu      398,ar0               ; |789| 
+        ldiu      -8,r0                 ; |789| 
+        ash3      r0,*+ar0(ir0),r0      ; |789| 
+        cmpi      67,r0                 ; |789| 
+        beq       L286                  ; |789| 
+;*      Branch Occurs to L286           ; |789| 
+	.line	269
+;----------------------------------------------------------------------
+; 791 | t1 = truncate((k0/p),8);                                               
+;----------------------------------------------------------------------
+        ldfu      *+fp(7),f0            ; |791| 
+        ldfu      *+fp(5),f1            ; |791| 
+        call      DIV_F30               ; |791| 
+                                        ; |791| Call Occurs
+        ldp       @CL40,DP
+        ldfu      f0,f2                 ; |791| 
+        ldiu      @CL40,r1              ; |791| 
+        ldiu      8,ar2                 ; |791| 
+        callu     r1                    ; far call to _truncate	; |791| 
+                                        ; |791| Far Call Occurs
+        stf       f0,*+fp(10)           ; |791| 
+	.line	270
+;----------------------------------------------------------------------
+; 792 | t2 = truncate((t1/p),8);                                               
+;----------------------------------------------------------------------
+        ldfu      *+fp(5),f1            ; |792| 
+        call      DIV_F30               ; |792| 
+                                        ; |792| Call Occurs
+        ldp       @CL40,DP
+        ldiu      @CL40,r1              ; |792| 
+        ldiu      8,ar2                 ; |792| 
+        ldfu      f0,f2                 ; |792| 
+        callu     r1                    ; far call to _truncate	; |792| 
+                                        ; |792| Far Call Occurs
+        stf       f0,*+fp(11)           ; |792| 
+	.line	271
+;----------------------------------------------------------------------
+; 793 | t3 = truncate((k1/p),8);                                               
+;----------------------------------------------------------------------
+        ldfu      *+fp(5),f1            ; |793| 
+        ldfu      *+fp(8),f0            ; |793| 
+        call      DIV_F30               ; |793| 
+                                        ; |793| Call Occurs
+        ldp       @CL40,DP
+        ldiu      @CL40,r1              ; |793| 
+        ldfu      f0,f2                 ; |793| 
+        ldiu      8,ar2                 ; |793| 
+        callu     r1                    ; far call to _truncate	; |793| 
+                                        ; |793| Far Call Occurs
+        stf       f0,*+fp(12)           ; |793| 
+	.line	272
+;----------------------------------------------------------------------
+; 794 | a  = sigfig((t2+t3+k2), 4);                                            
+;----------------------------------------------------------------------
+        ldfu      f0,f2
+        addf      *+fp(11),f2           ; |794| 
+        ldiu      4,ar2                 ; |794| 
+        ldp       @CL41,DP
+        addf      *+fp(9),f2            ; |794| 
+        ldiu      @CL41,r0              ; |794| 
+        callu     r0                    ; far call to _sigfig	; |794| 
+                                        ; |794| Far Call Occurs
+        stf       f0,*+fp(6)            ; |794| 
+L286:        
 	.line	275
 ;----------------------------------------------------------------------
-; 780 | return t;                                                              
+; 797 | t = p * exp(-a*t*(1.0+0.8*a*t));                                       
 ;----------------------------------------------------------------------
-L281:        
-	.line	276
+        ldfu      *+fp(6),f1            ; |797| 
+        ldp       @CL42,DP
+        negf      *+fp(6),f0            ; |797| 
+        mpyf      @CL42,f1              ; |797| 
+        mpyf      *+fp(4),f0            ; |797| 
+        ldp       @CL43,DP
+        mpyf      *+fp(4),f1            ; |797| 
+        ldiu      @CL43,r3              ; |797| 
+        addf      1.0000000000e+00,f1   ; |797| 
+        mpyf3     f1,f0,f2              ; |797| 
+        callu     r3                    ; far call to _exp	; |797| 
+                                        ; |797| Far Call Occurs
+        mpyf      *+fp(5),f0            ; |797| 
+        stf       f0,*+fp(4)            ; |797| 
+	.line	277
+;----------------------------------------------------------------------
+; 799 | GIEP;                                                                  
+;----------------------------------------------------------------------
+	pop		ST			
+	.line	278
+;----------------------------------------------------------------------
+; 800 | return t;                                                              
+;----------------------------------------------------------------------
+L287:        
+	.line	279
                                         ; Begin Epilog Code
-        ldiu      *-fp(1),r1            ; |781| 
-        ldiu      *fp,fp                ; |781| 
+        ldiu      *-fp(1),r1            ; |801| 
+        ldiu      *fp,fp                ; |801| 
                                         ; Restore SOE Registers
-        pop       ar4                   ; |781| 
+        pop       ar4                   ; |801| 
                                         ; Unallocate the Frame
-        subi      15,sp                 ; |781| 
+        subi      15,sp                 ; |801| 
         bu        r1
 ;*      Branch Occurs to r1 
-	.endfunc	781,000001000h,13
+	.endfunc	801,000001000h,13
 
 
 	.sect	 ".text"
 
 	.global	_API_PT_ST
 	.sym	_API_PT_ST,_API_PT_ST,39,2,0
-	.func	798
+	.func	818
 ;******************************************************************************
 ;* FUNCTION NAME: _API_PT_ST                                                  *
 ;*                                                                            *
@@ -4316,7 +4390,7 @@ _API_PT_ST:
 	.sym	_f,16,24,1,32,.fake31
 	.line	1
 ;----------------------------------------------------------------------
-; 798 | double API_PT_ST(const int fcidx, const double r, const BOOL F60, const
+; 818 | double API_PT_ST(const int fcidx, const double r, const BOOL F60, const
 ;     |  BOOL RET_VCF)                                                         
 ;----------------------------------------------------------------------
         push      fp
@@ -4324,745 +4398,745 @@ _API_PT_ST:
         addi      16,sp
 	.line	2
 ;----------------------------------------------------------------------
-; 800 | double pini;    /* initial data */                                     
-; 801 | double pn;              /* calculated data */                          
-; 802 | double pnext;                                                          
-; 803 | double a;               /* API @ process temperature */                
-; 804 | double p;               /* process API */                              
-; 805 | double vcf;                                                            
-; 806 | int i;                  /* Counter */                                  
-; 807 | int k, k0;              /* Constants */                                
-; 808 | BOOL k_change;  /* Change constants? */                                
-; 809 | BOOL cont;              /* Continue? */                                
-; 810 | FLOW_COMP* f;   /* FC[fcidx] - Flow Computer @ index */                
+; 820 | double pini;    /* initial data */                                     
+; 821 | double pn;              /* calculated data */                          
+; 822 | double pnext;                                                          
+; 823 | double a;               /* API @ process temperature */                
+; 824 | double p;               /* process API */                              
+; 825 | double vcf;                                                            
+; 826 | int i;                  /* Counter */                                  
+; 827 | int k, k0;              /* Constants */                                
+; 828 | BOOL k_change;  /* Change constants? */                                
+; 829 | BOOL cont;              /* Continue? */                                
+; 830 | FLOW_COMP* f;   /* FC[fcidx] - Flow Computer @ index */                
 ;----------------------------------------------------------------------
-        sti       rc,*+fp(4)            ; |799| 
-        sti       r3,*+fp(3)            ; |799| 
-        stf       f2,*+fp(2)            ; |799| 
-        sti       ar2,*+fp(1)           ; |799| 
+        sti       rc,*+fp(4)            ; |819| 
+        sti       r3,*+fp(3)            ; |819| 
+        stf       f2,*+fp(2)            ; |819| 
+        sti       ar2,*+fp(1)           ; |819| 
 	.line	15
 ;----------------------------------------------------------------------
-; 812 | _GIEP;                                                                 
+; 832 | _GIEP;                                                                 
 ;----------------------------------------------------------------------
 	push	ST			
 	andn	2000h, ST	
 	.line	17
 ;----------------------------------------------------------------------
-; 814 | i = 0;                                                                 
+; 834 | i = 0;                                                                 
 ;----------------------------------------------------------------------
-        ldiu      0,r0                  ; |814| 
-        sti       r0,*+fp(11)           ; |814| 
+        ldiu      0,r0                  ; |834| 
+        sti       r0,*+fp(11)           ; |834| 
 	.line	18
 ;----------------------------------------------------------------------
-; 815 | f = &FC[fcidx];                                                        
+; 835 | f = &FC[fcidx];                                                        
 ;----------------------------------------------------------------------
         ldp       @CL20,DP
         ldiu      ar2,r0
-        mpyi      1336,r0               ; |815| 
-        addi      @CL20,r0              ; |815| Unsigned
-        sti       r0,*+fp(16)           ; |815| 
+        mpyi      1336,r0               ; |835| 
+        addi      @CL20,r0              ; |835| Unsigned
+        sti       r0,*+fp(16)           ; |835| 
 	.line	19
 ;----------------------------------------------------------------------
-; 816 | pini = r;                                                              
+; 836 | pini = r;                                                              
 ;----------------------------------------------------------------------
         ldfu      f2,f0
-        stf       f0,*+fp(5)            ; |816| 
+        stf       f0,*+fp(5)            ; |836| 
 	.line	20
 ;----------------------------------------------------------------------
-; 817 | pn = pini;                                                             
+; 837 | pn = pini;                                                             
 ;----------------------------------------------------------------------
-        stf       f0,*+fp(6)            ; |817| 
+        stf       f0,*+fp(6)            ; |837| 
 	.line	21
 ;----------------------------------------------------------------------
-; 818 | pnext = API_error_num;                                                 
+; 838 | pnext = API_error_num;                                                 
 ;----------------------------------------------------------------------
         ldp       @CL23,DP
-        ldfu      @CL23,f0              ; |818| 
-        stf       f0,*+fp(7)            ; |818| 
+        ldfu      @CL23,f0              ; |838| 
+        stf       f0,*+fp(7)            ; |838| 
 	.line	22
 ;----------------------------------------------------------------------
-; 819 | k = -1;                                                                
-; 821 | while(1)                                                               
+; 839 | k = -1;                                                                
+; 841 | while(1)                                                               
 ;----------------------------------------------------------------------
-        ldiu      -1,r0                 ; |819| 
-        sti       r0,*+fp(12)           ; |819| 
-L284:        
+        ldiu      -1,r0                 ; |839| 
+        sti       r0,*+fp(12)           ; |839| 
+L290:        
 	.line	26
 ;----------------------------------------------------------------------
-; 823 | i++;                                                                   
+; 843 | i++;                                                                   
 ;----------------------------------------------------------------------
-        ldiu      1,r0                  ; |823| 
-        addi      *+fp(11),r0           ; |823| 
-        sti       r0,*+fp(11)           ; |823| 
+        ldiu      1,r0                  ; |843| 
+        addi      *+fp(11),r0           ; |843| 
+        sti       r0,*+fp(11)           ; |843| 
 	.line	28
 ;----------------------------------------------------------------------
-; 825 | if (i>25)                                                              
+; 845 | if (i>25)                                                              
 ;----------------------------------------------------------------------
-        cmpi      25,r0                 ; |825| 
-        ble       L286                  ; |825| 
-;*      Branch Occurs to L286           ; |825| 
+        cmpi      25,r0                 ; |845| 
+        ble       L292                  ; |845| 
+;*      Branch Occurs to L292           ; |845| 
 	.line	30
 ;----------------------------------------------------------------------
-; 827 | API_STATUS(fcidx, API_fail);                                           
+; 847 | API_STATUS(fcidx, API_fail);                                           
 ;----------------------------------------------------------------------
         ldp       @CL22,DP
-        ldiu      *+fp(1),ar2           ; |827| 
-        ldiu      2,r2                  ; |827| 
-        ldiu      @CL22,r0              ; |827| 
-        callu     r0                    ; far call to _API_STATUS	; |827| 
-                                        ; |827| Far Call Occurs
+        ldiu      *+fp(1),ar2           ; |847| 
+        ldiu      2,r2                  ; |847| 
+        ldiu      @CL22,r0              ; |847| 
+        callu     r0                    ; far call to _API_STATUS	; |847| 
+                                        ; |847| Far Call Occurs
 	.line	31
 ;----------------------------------------------------------------------
-; 828 | pnext = API_error_num;                                                 
+; 848 | pnext = API_error_num;                                                 
 ;----------------------------------------------------------------------
         ldp       @CL23,DP
-        ldfu      @CL23,f0              ; |828| 
-        stf       f0,*+fp(7)            ; |828| 
+        ldfu      @CL23,f0              ; |848| 
+        stf       f0,*+fp(7)            ; |848| 
 	.line	33
 ;----------------------------------------------------------------------
-; 830 | break;                                                                 
+; 850 | break;                                                                 
 ;----------------------------------------------------------------------
-        bu        L349                  ; |830| 
-;*      Branch Occurs to L349           ; |830| 
-L286:        
+        bu        L355                  ; |850| 
+;*      Branch Occurs to L355           ; |850| 
+L292:        
 	.line	36
 ;----------------------------------------------------------------------
-; 833 | k0 = k;                                                                
+; 853 | k0 = k;                                                                
 ;----------------------------------------------------------------------
-        ldiu      *+fp(12),r0           ; |833| 
-        sti       r0,*+fp(13)           ; |833| 
+        ldiu      *+fp(12),r0           ; |853| 
+        sti       r0,*+fp(13)           ; |853| 
 	.line	38
 ;----------------------------------------------------------------------
-; 835 | if (F60)                                                               
+; 855 | if (F60)                                                               
 ;----------------------------------------------------------------------
-        ldiu      *+fp(3),r0            ; |835| 
-        cmpi      0,r0                  ; |835| 
-        beq       L288                  ; |835| 
-;*      Branch Occurs to L288           ; |835| 
+        ldiu      *+fp(3),r0            ; |855| 
+        cmpi      0,r0                  ; |855| 
+        beq       L294                  ; |855| 
+;*      Branch Occurs to L294           ; |855| 
 	.line	39
 ;----------------------------------------------------------------------
-; 836 | a = API_60F_PT(fcidx, pn, &k);                                         
-; 837 | else                                                                   
+; 856 | a = API_60F_PT(fcidx, pn, &k);                                         
+; 857 | else                                                                   
 ;----------------------------------------------------------------------
         ldp       @CL64,DP
-        ldiu      fp,r3                 ; |836| 
-        ldiu      *+fp(1),ar2           ; |836| 
-        ldfu      *+fp(6),f2            ; |836| 
-        ldiu      @CL64,r0              ; |836| 
-        addi      12,r3                 ; |836| 
-        callu     r0                    ; far call to _API_60F_PT	; |836| 
-                                        ; |836| Far Call Occurs
-        stf       f0,*+fp(8)            ; |836| 
-        bu        L289                  ; |797| 
-;*      Branch Occurs to L289           ; |797| 
-L288:        
+        ldiu      fp,r3                 ; |856| 
+        ldiu      *+fp(1),ar2           ; |856| 
+        ldfu      *+fp(6),f2            ; |856| 
+        ldiu      @CL64,r0              ; |856| 
+        addi      12,r3                 ; |856| 
+        callu     r0                    ; far call to _API_60F_PT	; |856| 
+                                        ; |856| Far Call Occurs
+        stf       f0,*+fp(8)            ; |856| 
+        bu        L295                  ; |817| 
+;*      Branch Occurs to L295           ; |817| 
+L294:        
 	.line	41
 ;----------------------------------------------------------------------
-; 838 | a = API_15C_PT(fcidx, pn, &k);                                         
+; 858 | a = API_15C_PT(fcidx, pn, &k);                                         
 ;----------------------------------------------------------------------
         ldp       @CL65,DP
-        ldiu      fp,r3                 ; |838| 
-        ldiu      *+fp(1),ar2           ; |838| 
-        ldfu      *+fp(6),f2            ; |838| 
-        ldiu      @CL65,r0              ; |838| 
-        addi      12,r3                 ; |838| 
-        callu     r0                    ; far call to _API_15C_PT	; |838| 
-                                        ; |838| Far Call Occurs
-        stf       f0,*+fp(8)            ; |838| 
-L289:        
+        ldiu      fp,r3                 ; |858| 
+        ldiu      *+fp(1),ar2           ; |858| 
+        ldfu      *+fp(6),f2            ; |858| 
+        ldiu      @CL65,r0              ; |858| 
+        addi      12,r3                 ; |858| 
+        callu     r0                    ; far call to _API_15C_PT	; |858| 
+                                        ; |858| Far Call Occurs
+        stf       f0,*+fp(8)            ; |858| 
+L295:        
 	.line	43
 ;----------------------------------------------------------------------
-; 840 | if (a==API_error_num)                                                  
+; 860 | if (a==API_error_num)                                                  
 ;----------------------------------------------------------------------
         ldp       @CL23,DP
-        ldfu      *+fp(8),f0            ; |840| 
-        cmpf      @CL23,f0              ; |840| 
-        bne       L291                  ; |840| 
-;*      Branch Occurs to L291           ; |840| 
+        ldfu      *+fp(8),f0            ; |860| 
+        cmpf      @CL23,f0              ; |860| 
+        bne       L297                  ; |860| 
+;*      Branch Occurs to L297           ; |860| 
 	.line	45
 ;----------------------------------------------------------------------
-; 842 | pnext = API_error_num;                                                 
+; 862 | pnext = API_error_num;                                                 
 ;----------------------------------------------------------------------
         ldp       @CL23,DP
-        ldfu      @CL23,f0              ; |842| 
-        stf       f0,*+fp(7)            ; |842| 
+        ldfu      @CL23,f0              ; |862| 
+        stf       f0,*+fp(7)            ; |862| 
 	.line	47
 ;----------------------------------------------------------------------
-; 844 | break;                                                                 
+; 864 | break;                                                                 
 ;----------------------------------------------------------------------
-        bu        L349                  ; |844| 
-;*      Branch Occurs to L349           ; |844| 
-L291:        
+        bu        L355                  ; |864| 
+;*      Branch Occurs to L355           ; |864| 
+L297:        
 	.line	50
 ;----------------------------------------------------------------------
-; 847 | p                = kgm3_to_API(a);                                     
+; 867 | p                = kgm3_to_API(a);                                     
 ;----------------------------------------------------------------------
         ldp       @CL21,DP
-        ldfu      *+fp(8),f2            ; |847| 
-        ldiu      @CL21,r0              ; |847| 
-        callu     r0                    ; far call to _kgm3_to_API	; |847| 
-                                        ; |847| Far Call Occurs
-        stf       f0,*+fp(9)            ; |847| 
+        ldfu      *+fp(8),f2            ; |867| 
+        ldiu      @CL21,r0              ; |867| 
+        callu     r0                    ; far call to _kgm3_to_API	; |867| 
+                                        ; |867| Far Call Occurs
+        stf       f0,*+fp(9)            ; |867| 
 	.line	51
 ;----------------------------------------------------------------------
-; 848 | k_change = FALSE;                                                      
+; 868 | k_change = FALSE;                                                      
 ;----------------------------------------------------------------------
-        ldiu      0,r0                  ; |848| 
-        sti       r0,*+fp(14)           ; |848| 
+        ldiu      0,r0                  ; |868| 
+        sti       r0,*+fp(14)           ; |868| 
 	.line	52
 ;----------------------------------------------------------------------
-; 849 | cont     = FALSE;                                                      
-; 851 | switch (f->API_TABLE>>8)                                               
-; 853 |         case 'A':       /* crude oil */                                
+; 869 | cont     = FALSE;                                                      
+; 871 | switch (f->API_TABLE>>8)                                               
+; 873 |         case 'A':       /* crude oil */                                
 ;----------------------------------------------------------------------
-        sti       r0,*+fp(15)           ; |849| 
-        bu        L339                  ; |797| 
-;*      Branch Occurs to L339           ; |797| 
+        sti       r0,*+fp(15)           ; |869| 
+        bu        L345                  ; |817| 
+;*      Branch Occurs to L345           ; |817| 
 	.line	57
 ;----------------------------------------------------------------------
-; 854 | break;                                                                 
-; 855 | case 'B':                                                              
+; 874 | break;                                                                 
+; 875 | case 'B':                                                              
 ;----------------------------------------------------------------------
-L293:        
+L299:        
 	.line	60
 ;----------------------------------------------------------------------
-; 857 | if (F60)                                                               
+; 877 | if (F60)                                                               
 ;----------------------------------------------------------------------
-        ldiu      *+fp(3),r0            ; |857| 
-        cmpi      0,r0                  ; |857| 
-        beq       L314                  ; |857| 
-;*      Branch Occurs to L314           ; |857| 
+        ldiu      *+fp(3),r0            ; |877| 
+        cmpi      0,r0                  ; |877| 
+        beq       L320                  ; |877| 
+;*      Branch Occurs to L320           ; |877| 
 	.line	62
 ;----------------------------------------------------------------------
-; 859 | if ((p>=0.0) && (p<37.0))                                              
-;----------------------------------------------------------------------
-        ldfu      *+fp(9),f0            ; |859| 
-        cmpf      0.0000000000e+00,f0   ; |859| 
-        blt       L299                  ; |859| 
-;*      Branch Occurs to L299           ; |859| 
-        cmpf      3.7000000000e+01,f0   ; |859| 
-        bge       L299                  ; |859| 
-;*      Branch Occurs to L299           ; |859| 
-	.line	64
-;----------------------------------------------------------------------
-; 861 | if (k!=k0)                                                             
-;----------------------------------------------------------------------
-        ldiu      *+fp(12),r0           ; |861| 
-        cmpi      *+fp(13),r0           ; |861| 
-        beq       L334                  ; |861| 
-;*      Branch Occurs to L334           ; |861| 
-	.line	66
-;----------------------------------------------------------------------
-; 863 | k = 1;                                                                 
-;----------------------------------------------------------------------
-        ldiu      1,r0                  ; |863| 
-        sti       r0,*+fp(12)           ; |863| 
-	.line	68
-;----------------------------------------------------------------------
-; 865 | if (k0!=-1)                                                            
-;----------------------------------------------------------------------
-        ldiu      *+fp(13),r0           ; |865| 
-        cmpi      -1,r0                 ; |865| 
-        beq       L334                  ; |865| 
-;*      Branch Occurs to L334           ; |865| 
-	.line	69
-;----------------------------------------------------------------------
-; 866 | k_change = TRUE;                                                       
-;----------------------------------------------------------------------
-        ldiu      1,r0                  ; |866| 
-        sti       r0,*+fp(14)           ; |866| 
-        bu        L334                  ; |797| 
-;*      Branch Occurs to L334           ; |797| 
-L299:        
-	.line	72
-;----------------------------------------------------------------------
-; 869 | else if ((p>=37.0) && (p<48.0))                                        
-;----------------------------------------------------------------------
-        ldfu      *+fp(9),f0            ; |869| 
-        cmpf      3.7000000000e+01,f0   ; |869| 
-        blt       L304                  ; |869| 
-;*      Branch Occurs to L304           ; |869| 
-        cmpf      4.8000000000e+01,f0   ; |869| 
-        bge       L304                  ; |869| 
-;*      Branch Occurs to L304           ; |869| 
-	.line	74
-;----------------------------------------------------------------------
-; 871 | if (k!=k0)                                                             
-;----------------------------------------------------------------------
-        ldiu      *+fp(12),r0           ; |871| 
-        cmpi      *+fp(13),r0           ; |871| 
-        beq       L334                  ; |871| 
-;*      Branch Occurs to L334           ; |871| 
-	.line	76
-;----------------------------------------------------------------------
-; 873 | k = 2;                                                                 
-;----------------------------------------------------------------------
-        ldiu      2,r0                  ; |873| 
-        sti       r0,*+fp(12)           ; |873| 
-	.line	78
-;----------------------------------------------------------------------
-; 875 | if (k0!=-1)                                                            
-;----------------------------------------------------------------------
-        ldiu      *+fp(13),r0           ; |875| 
-        cmpi      -1,r0                 ; |875| 
-        beq       L334                  ; |875| 
-;*      Branch Occurs to L334           ; |875| 
-	.line	79
-;----------------------------------------------------------------------
-; 876 | k_change = TRUE;                                                       
-;----------------------------------------------------------------------
-        ldiu      1,r0                  ; |876| 
-        sti       r0,*+fp(14)           ; |876| 
-        bu        L334                  ; |797| 
-;*      Branch Occurs to L334           ; |797| 
-L304:        
-	.line	82
-;----------------------------------------------------------------------
-; 879 | else if ((p>=48.0) && (p<52.0))                                        
+; 879 | if ((p>=0.0) && (p<37.0))                                              
 ;----------------------------------------------------------------------
         ldfu      *+fp(9),f0            ; |879| 
-        cmpf      4.8000000000e+01,f0   ; |879| 
-        blt       L309                  ; |879| 
-;*      Branch Occurs to L309           ; |879| 
-        cmpf      5.2000000000e+01,f0   ; |879| 
-        bge       L309                  ; |879| 
-;*      Branch Occurs to L309           ; |879| 
-	.line	84
+        cmpf      0.0000000000e+00,f0   ; |879| 
+        blt       L305                  ; |879| 
+;*      Branch Occurs to L305           ; |879| 
+        cmpf      3.7000000000e+01,f0   ; |879| 
+        bge       L305                  ; |879| 
+;*      Branch Occurs to L305           ; |879| 
+	.line	64
 ;----------------------------------------------------------------------
 ; 881 | if (k!=k0)                                                             
 ;----------------------------------------------------------------------
         ldiu      *+fp(12),r0           ; |881| 
         cmpi      *+fp(13),r0           ; |881| 
-        beq       L334                  ; |881| 
-;*      Branch Occurs to L334           ; |881| 
-	.line	86
+        beq       L340                  ; |881| 
+;*      Branch Occurs to L340           ; |881| 
+	.line	66
 ;----------------------------------------------------------------------
-; 883 | k = 3;                                                                 
+; 883 | k = 1;                                                                 
 ;----------------------------------------------------------------------
-        ldiu      3,r0                  ; |883| 
+        ldiu      1,r0                  ; |883| 
         sti       r0,*+fp(12)           ; |883| 
-	.line	88
+	.line	68
 ;----------------------------------------------------------------------
 ; 885 | if (k0!=-1)                                                            
 ;----------------------------------------------------------------------
         ldiu      *+fp(13),r0           ; |885| 
         cmpi      -1,r0                 ; |885| 
-        beq       L334                  ; |885| 
-;*      Branch Occurs to L334           ; |885| 
-	.line	89
+        beq       L340                  ; |885| 
+;*      Branch Occurs to L340           ; |885| 
+	.line	69
 ;----------------------------------------------------------------------
 ; 886 | k_change = TRUE;                                                       
 ;----------------------------------------------------------------------
         ldiu      1,r0                  ; |886| 
         sti       r0,*+fp(14)           ; |886| 
-        bu        L334                  ; |797| 
-;*      Branch Occurs to L334           ; |797| 
-L309:        
-	.line	92
+        bu        L340                  ; |817| 
+;*      Branch Occurs to L340           ; |817| 
+L305:        
+	.line	72
 ;----------------------------------------------------------------------
-; 889 | else if ((p>=52.0) && (p<=85.0))                                       
+; 889 | else if ((p>=37.0) && (p<48.0))                                        
 ;----------------------------------------------------------------------
         ldfu      *+fp(9),f0            ; |889| 
-        cmpf      5.2000000000e+01,f0   ; |889| 
-        blt       L334                  ; |889| 
-;*      Branch Occurs to L334           ; |889| 
-        cmpf      8.5000000000e+01,f0   ; |889| 
-        bgt       L334                  ; |889| 
-;*      Branch Occurs to L334           ; |889| 
-	.line	94
+        cmpf      3.7000000000e+01,f0   ; |889| 
+        blt       L310                  ; |889| 
+;*      Branch Occurs to L310           ; |889| 
+        cmpf      4.8000000000e+01,f0   ; |889| 
+        bge       L310                  ; |889| 
+;*      Branch Occurs to L310           ; |889| 
+	.line	74
 ;----------------------------------------------------------------------
 ; 891 | if (k!=k0)                                                             
 ;----------------------------------------------------------------------
         ldiu      *+fp(12),r0           ; |891| 
         cmpi      *+fp(13),r0           ; |891| 
-        beq       L334                  ; |891| 
-;*      Branch Occurs to L334           ; |891| 
-	.line	96
+        beq       L340                  ; |891| 
+;*      Branch Occurs to L340           ; |891| 
+	.line	76
 ;----------------------------------------------------------------------
-; 893 | k = 4;                                                                 
+; 893 | k = 2;                                                                 
 ;----------------------------------------------------------------------
-        ldiu      4,r0                  ; |893| 
+        ldiu      2,r0                  ; |893| 
         sti       r0,*+fp(12)           ; |893| 
-	.line	98
+	.line	78
 ;----------------------------------------------------------------------
 ; 895 | if (k0!=-1)                                                            
 ;----------------------------------------------------------------------
         ldiu      *+fp(13),r0           ; |895| 
         cmpi      -1,r0                 ; |895| 
-        beq       L334                  ; |895| 
-;*      Branch Occurs to L334           ; |895| 
-	.line	99
+        beq       L340                  ; |895| 
+;*      Branch Occurs to L340           ; |895| 
+	.line	79
 ;----------------------------------------------------------------------
 ; 896 | k_change = TRUE;                                                       
-; 900 | else                                                                   
 ;----------------------------------------------------------------------
         ldiu      1,r0                  ; |896| 
         sti       r0,*+fp(14)           ; |896| 
-        bu        L334                  ; |797| 
-;*      Branch Occurs to L334           ; |797| 
-L314:        
-	.line	105
+        bu        L340                  ; |817| 
+;*      Branch Occurs to L340           ; |817| 
+L310:        
+	.line	82
 ;----------------------------------------------------------------------
-; 902 | if ((p>=653.0) && (p<770.0))                                           
+; 899 | else if ((p>=48.0) && (p<52.0))                                        
 ;----------------------------------------------------------------------
-        ldp       @CL51,DP
-        ldfu      *+fp(9),f0            ; |902| 
-        cmpf      @CL51,f0              ; |902| 
-        blt       L319                  ; |902| 
-;*      Branch Occurs to L319           ; |902| 
-        ldp       @CL52,DP
-        cmpf      @CL52,f0              ; |902| 
-        bge       L319                  ; |902| 
-;*      Branch Occurs to L319           ; |902| 
-	.line	107
+        ldfu      *+fp(9),f0            ; |899| 
+        cmpf      4.8000000000e+01,f0   ; |899| 
+        blt       L315                  ; |899| 
+;*      Branch Occurs to L315           ; |899| 
+        cmpf      5.2000000000e+01,f0   ; |899| 
+        bge       L315                  ; |899| 
+;*      Branch Occurs to L315           ; |899| 
+	.line	84
 ;----------------------------------------------------------------------
-; 904 | if (k!=k0)                                                             
+; 901 | if (k!=k0)                                                             
 ;----------------------------------------------------------------------
-        ldiu      *+fp(12),r0           ; |904| 
-        cmpi      *+fp(13),r0           ; |904| 
-        beq       L344                  ; |904| 
-;*      Branch Occurs to L344           ; |904| 
-	.line	109
+        ldiu      *+fp(12),r0           ; |901| 
+        cmpi      *+fp(13),r0           ; |901| 
+        beq       L340                  ; |901| 
+;*      Branch Occurs to L340           ; |901| 
+	.line	86
 ;----------------------------------------------------------------------
-; 906 | k = 1;                                                                 
+; 903 | k = 3;                                                                 
+;----------------------------------------------------------------------
+        ldiu      3,r0                  ; |903| 
+        sti       r0,*+fp(12)           ; |903| 
+	.line	88
+;----------------------------------------------------------------------
+; 905 | if (k0!=-1)                                                            
+;----------------------------------------------------------------------
+        ldiu      *+fp(13),r0           ; |905| 
+        cmpi      -1,r0                 ; |905| 
+        beq       L340                  ; |905| 
+;*      Branch Occurs to L340           ; |905| 
+	.line	89
+;----------------------------------------------------------------------
+; 906 | k_change = TRUE;                                                       
 ;----------------------------------------------------------------------
         ldiu      1,r0                  ; |906| 
-        sti       r0,*+fp(12)           ; |906| 
-	.line	111
+        sti       r0,*+fp(14)           ; |906| 
+        bu        L340                  ; |817| 
+;*      Branch Occurs to L340           ; |817| 
+L315:        
+	.line	92
 ;----------------------------------------------------------------------
-; 908 | if (k0!=-1)                                                            
+; 909 | else if ((p>=52.0) && (p<=85.0))                                       
 ;----------------------------------------------------------------------
-        ldiu      *+fp(13),r0           ; |908| 
-        cmpi      -1,r0                 ; |908| 
-        beq       L344                  ; |908| 
-;*      Branch Occurs to L344           ; |908| 
-	.line	112
+        ldfu      *+fp(9),f0            ; |909| 
+        cmpf      5.2000000000e+01,f0   ; |909| 
+        blt       L340                  ; |909| 
+;*      Branch Occurs to L340           ; |909| 
+        cmpf      8.5000000000e+01,f0   ; |909| 
+        bgt       L340                  ; |909| 
+;*      Branch Occurs to L340           ; |909| 
+	.line	94
 ;----------------------------------------------------------------------
-; 909 | k_change = TRUE;                                                       
+; 911 | if (k!=k0)                                                             
 ;----------------------------------------------------------------------
-        ldiu      1,r0                  ; |909| 
-        sti       r0,*+fp(14)           ; |909| 
-        bu        L344                  ; |797| 
-;*      Branch Occurs to L344           ; |797| 
-L319:        
-	.line	115
+        ldiu      *+fp(12),r0           ; |911| 
+        cmpi      *+fp(13),r0           ; |911| 
+        beq       L340                  ; |911| 
+;*      Branch Occurs to L340           ; |911| 
+	.line	96
 ;----------------------------------------------------------------------
-; 912 | else if ((p>=770.0) && (p<788.0))                                      
+; 913 | k = 4;                                                                 
 ;----------------------------------------------------------------------
-        ldp       @CL52,DP
-        ldfu      *+fp(9),f0            ; |912| 
-        cmpf      @CL52,f0              ; |912| 
-        blt       L324                  ; |912| 
-;*      Branch Occurs to L324           ; |912| 
-        ldp       @CL53,DP
-        cmpf      @CL53,f0              ; |912| 
-        bge       L324                  ; |912| 
-;*      Branch Occurs to L324           ; |912| 
-	.line	117
+        ldiu      4,r0                  ; |913| 
+        sti       r0,*+fp(12)           ; |913| 
+	.line	98
 ;----------------------------------------------------------------------
-; 914 | if (k!=k0)                                                             
+; 915 | if (k0!=-1)                                                            
 ;----------------------------------------------------------------------
-        ldiu      *+fp(12),r0           ; |914| 
-        cmpi      *+fp(13),r0           ; |914| 
-        beq       L344                  ; |914| 
-;*      Branch Occurs to L344           ; |914| 
-	.line	119
+        ldiu      *+fp(13),r0           ; |915| 
+        cmpi      -1,r0                 ; |915| 
+        beq       L340                  ; |915| 
+;*      Branch Occurs to L340           ; |915| 
+	.line	99
 ;----------------------------------------------------------------------
-; 916 | k = 2;                                                                 
+; 916 | k_change = TRUE;                                                       
+; 920 | else                                                                   
 ;----------------------------------------------------------------------
-        ldiu      2,r0                  ; |916| 
-        sti       r0,*+fp(12)           ; |916| 
-	.line	121
+        ldiu      1,r0                  ; |916| 
+        sti       r0,*+fp(14)           ; |916| 
+        bu        L340                  ; |817| 
+;*      Branch Occurs to L340           ; |817| 
+L320:        
+	.line	105
 ;----------------------------------------------------------------------
-; 918 | if (k0!=-1)                                                            
+; 922 | if ((p>=653.0) && (p<770.0))                                           
 ;----------------------------------------------------------------------
-        ldiu      *+fp(13),r0           ; |918| 
-        cmpi      -1,r0                 ; |918| 
-        beq       L344                  ; |918| 
-;*      Branch Occurs to L344           ; |918| 
-	.line	122
-;----------------------------------------------------------------------
-; 919 | k_change = TRUE;                                                       
-;----------------------------------------------------------------------
-        ldiu      1,r0                  ; |919| 
-        sti       r0,*+fp(14)           ; |919| 
-        bu        L344                  ; |797| 
-;*      Branch Occurs to L344           ; |797| 
-L324:        
-	.line	125
-;----------------------------------------------------------------------
-; 922 | else if ((p>=788.0) && (p<839.0))                                      
-;----------------------------------------------------------------------
-        ldp       @CL53,DP
+        ldp       @CL51,DP
         ldfu      *+fp(9),f0            ; |922| 
-        cmpf      @CL53,f0              ; |922| 
-        blt       L329                  ; |922| 
-;*      Branch Occurs to L329           ; |922| 
-        ldp       @CL54,DP
-        cmpf      @CL54,f0              ; |922| 
-        bge       L329                  ; |922| 
-;*      Branch Occurs to L329           ; |922| 
-	.line	127
+        cmpf      @CL51,f0              ; |922| 
+        blt       L325                  ; |922| 
+;*      Branch Occurs to L325           ; |922| 
+        ldp       @CL52,DP
+        cmpf      @CL52,f0              ; |922| 
+        bge       L325                  ; |922| 
+;*      Branch Occurs to L325           ; |922| 
+	.line	107
 ;----------------------------------------------------------------------
 ; 924 | if (k!=k0)                                                             
 ;----------------------------------------------------------------------
         ldiu      *+fp(12),r0           ; |924| 
         cmpi      *+fp(13),r0           ; |924| 
-        beq       L344                  ; |924| 
-;*      Branch Occurs to L344           ; |924| 
-	.line	129
+        beq       L350                  ; |924| 
+;*      Branch Occurs to L350           ; |924| 
+	.line	109
 ;----------------------------------------------------------------------
-; 926 | k = 3;                                                                 
+; 926 | k = 1;                                                                 
 ;----------------------------------------------------------------------
-        ldiu      3,r0                  ; |926| 
+        ldiu      1,r0                  ; |926| 
         sti       r0,*+fp(12)           ; |926| 
-	.line	131
+	.line	111
 ;----------------------------------------------------------------------
 ; 928 | if (k0!=-1)                                                            
 ;----------------------------------------------------------------------
         ldiu      *+fp(13),r0           ; |928| 
         cmpi      -1,r0                 ; |928| 
-        beq       L344                  ; |928| 
-;*      Branch Occurs to L344           ; |928| 
-	.line	132
+        beq       L350                  ; |928| 
+;*      Branch Occurs to L350           ; |928| 
+	.line	112
 ;----------------------------------------------------------------------
 ; 929 | k_change = TRUE;                                                       
 ;----------------------------------------------------------------------
         ldiu      1,r0                  ; |929| 
         sti       r0,*+fp(14)           ; |929| 
-        bu        L344                  ; |797| 
-;*      Branch Occurs to L344           ; |797| 
-L329:        
-	.line	135
+        bu        L350                  ; |817| 
+;*      Branch Occurs to L350           ; |817| 
+L325:        
+	.line	115
 ;----------------------------------------------------------------------
-; 932 | else if ((p>=839.0) && (p<=1075.0))                                    
+; 932 | else if ((p>=770.0) && (p<788.0))                                      
 ;----------------------------------------------------------------------
-        ldp       @CL54,DP
+        ldp       @CL52,DP
         ldfu      *+fp(9),f0            ; |932| 
-        cmpf      @CL54,f0              ; |932| 
-        blt       L344                  ; |932| 
-;*      Branch Occurs to L344           ; |932| 
-        ldp       @CL46,DP
-        cmpf      @CL46,f0              ; |932| 
-        bgt       L344                  ; |932| 
-;*      Branch Occurs to L344           ; |932| 
-	.line	137
+        cmpf      @CL52,f0              ; |932| 
+        blt       L330                  ; |932| 
+;*      Branch Occurs to L330           ; |932| 
+        ldp       @CL53,DP
+        cmpf      @CL53,f0              ; |932| 
+        bge       L330                  ; |932| 
+;*      Branch Occurs to L330           ; |932| 
+	.line	117
 ;----------------------------------------------------------------------
 ; 934 | if (k!=k0)                                                             
 ;----------------------------------------------------------------------
         ldiu      *+fp(12),r0           ; |934| 
         cmpi      *+fp(13),r0           ; |934| 
-        beq       L344                  ; |934| 
-;*      Branch Occurs to L344           ; |934| 
-	.line	139
+        beq       L350                  ; |934| 
+;*      Branch Occurs to L350           ; |934| 
+	.line	119
 ;----------------------------------------------------------------------
-; 936 | k = 4;                                                                 
+; 936 | k = 2;                                                                 
 ;----------------------------------------------------------------------
-        ldiu      4,r0                  ; |936| 
+        ldiu      2,r0                  ; |936| 
         sti       r0,*+fp(12)           ; |936| 
-	.line	141
+	.line	121
 ;----------------------------------------------------------------------
 ; 938 | if (k0!=-1)                                                            
 ;----------------------------------------------------------------------
         ldiu      *+fp(13),r0           ; |938| 
         cmpi      -1,r0                 ; |938| 
-        beq       L344                  ; |938| 
-;*      Branch Occurs to L344           ; |938| 
-	.line	142
+        beq       L350                  ; |938| 
+;*      Branch Occurs to L350           ; |938| 
+	.line	122
 ;----------------------------------------------------------------------
 ; 939 | k_change = TRUE;                                                       
 ;----------------------------------------------------------------------
         ldiu      1,r0                  ; |939| 
         sti       r0,*+fp(14)           ; |939| 
-	.line	146
+        bu        L350                  ; |817| 
+;*      Branch Occurs to L350           ; |817| 
+L330:        
+	.line	125
 ;----------------------------------------------------------------------
-; 943 | break;                                                                 
+; 942 | else if ((p>=788.0) && (p<839.0))                                      
 ;----------------------------------------------------------------------
-        bu        L344                  ; |943| 
-;*      Branch Occurs to L344           ; |943| 
-L334:        
-	.line	149
+        ldp       @CL53,DP
+        ldfu      *+fp(9),f0            ; |942| 
+        cmpf      @CL53,f0              ; |942| 
+        blt       L335                  ; |942| 
+;*      Branch Occurs to L335           ; |942| 
+        ldp       @CL54,DP
+        cmpf      @CL54,f0              ; |942| 
+        bge       L335                  ; |942| 
+;*      Branch Occurs to L335           ; |942| 
+	.line	127
 ;----------------------------------------------------------------------
-; 946 | if (k_change)                                                          
+; 944 | if (k!=k0)                                                             
 ;----------------------------------------------------------------------
-        ldiu      *+fp(14),r0           ; |946| 
-        cmpi      0,r0                  ; |946| 
-        beq       L344                  ; |946| 
-;*      Branch Occurs to L344           ; |946| 
-	.line	151
+        ldiu      *+fp(12),r0           ; |944| 
+        cmpi      *+fp(13),r0           ; |944| 
+        beq       L350                  ; |944| 
+;*      Branch Occurs to L350           ; |944| 
+	.line	129
 ;----------------------------------------------------------------------
-; 948 | pn       = pini;                                                       
+; 946 | k = 3;                                                                 
 ;----------------------------------------------------------------------
-        ldfu      *+fp(5),f0            ; |948| 
-        stf       f0,*+fp(6)            ; |948| 
-	.line	152
+        ldiu      3,r0                  ; |946| 
+        sti       r0,*+fp(12)           ; |946| 
+	.line	131
 ;----------------------------------------------------------------------
-; 949 | cont = TRUE;                                                           
+; 948 | if (k0!=-1)                                                            
+;----------------------------------------------------------------------
+        ldiu      *+fp(13),r0           ; |948| 
+        cmpi      -1,r0                 ; |948| 
+        beq       L350                  ; |948| 
+;*      Branch Occurs to L350           ; |948| 
+	.line	132
+;----------------------------------------------------------------------
+; 949 | k_change = TRUE;                                                       
 ;----------------------------------------------------------------------
         ldiu      1,r0                  ; |949| 
-        sti       r0,*+fp(15)           ; |949| 
+        sti       r0,*+fp(14)           ; |949| 
+        bu        L350                  ; |817| 
+;*      Branch Occurs to L350           ; |817| 
+L335:        
+	.line	135
+;----------------------------------------------------------------------
+; 952 | else if ((p>=839.0) && (p<=1075.0))                                    
+;----------------------------------------------------------------------
+        ldp       @CL54,DP
+        ldfu      *+fp(9),f0            ; |952| 
+        cmpf      @CL54,f0              ; |952| 
+        blt       L350                  ; |952| 
+;*      Branch Occurs to L350           ; |952| 
+        ldp       @CL46,DP
+        cmpf      @CL46,f0              ; |952| 
+        bgt       L350                  ; |952| 
+;*      Branch Occurs to L350           ; |952| 
+	.line	137
+;----------------------------------------------------------------------
+; 954 | if (k!=k0)                                                             
+;----------------------------------------------------------------------
+        ldiu      *+fp(12),r0           ; |954| 
+        cmpi      *+fp(13),r0           ; |954| 
+        beq       L350                  ; |954| 
+;*      Branch Occurs to L350           ; |954| 
+	.line	139
+;----------------------------------------------------------------------
+; 956 | k = 4;                                                                 
+;----------------------------------------------------------------------
+        ldiu      4,r0                  ; |956| 
+        sti       r0,*+fp(12)           ; |956| 
+	.line	141
+;----------------------------------------------------------------------
+; 958 | if (k0!=-1)                                                            
+;----------------------------------------------------------------------
+        ldiu      *+fp(13),r0           ; |958| 
+        cmpi      -1,r0                 ; |958| 
+        beq       L350                  ; |958| 
+;*      Branch Occurs to L350           ; |958| 
+	.line	142
+;----------------------------------------------------------------------
+; 959 | k_change = TRUE;                                                       
+;----------------------------------------------------------------------
+        ldiu      1,r0                  ; |959| 
+        sti       r0,*+fp(14)           ; |959| 
+	.line	146
+;----------------------------------------------------------------------
+; 963 | break;                                                                 
+;----------------------------------------------------------------------
+        bu        L350                  ; |963| 
+;*      Branch Occurs to L350           ; |963| 
+L340:        
+	.line	149
+;----------------------------------------------------------------------
+; 966 | if (k_change)                                                          
+;----------------------------------------------------------------------
+        ldiu      *+fp(14),r0           ; |966| 
+        cmpi      0,r0                  ; |966| 
+        beq       L350                  ; |966| 
+;*      Branch Occurs to L350           ; |966| 
+	.line	151
+;----------------------------------------------------------------------
+; 968 | pn       = pini;                                                       
+;----------------------------------------------------------------------
+        ldfu      *+fp(5),f0            ; |968| 
+        stf       f0,*+fp(6)            ; |968| 
+	.line	152
+;----------------------------------------------------------------------
+; 969 | cont = TRUE;                                                           
+;----------------------------------------------------------------------
+        ldiu      1,r0                  ; |969| 
+        sti       r0,*+fp(15)           ; |969| 
 	.line	155
 ;----------------------------------------------------------------------
-; 952 | break;                                                                 
-; 954 | case 'C':                                                              
+; 972 | break;                                                                 
+; 974 | case 'C':                                                              
 ;----------------------------------------------------------------------
-        bu        L344                  ; |952| 
-;*      Branch Occurs to L344           ; |952| 
+        bu        L350                  ; |972| 
+;*      Branch Occurs to L350           ; |972| 
 	.line	158
 ;----------------------------------------------------------------------
-; 955 | break;                                                                 
-; 956 | case 'D':                                                              
-; 957 | default:                                                               
+; 975 | break;                                                                 
+; 976 | case 'D':                                                              
+; 977 | default:                                                               
 ;----------------------------------------------------------------------
-L337:        
+L343:        
 	.line	162
 ;----------------------------------------------------------------------
-; 959 | f->API_TABLE = 'D'<<8;                                                 
+; 979 | f->API_TABLE = 'D'<<8;                                                 
 ;----------------------------------------------------------------------
-        ldiu      *+fp(16),ir0          ; |959| 
-        ldiu      398,ar0               ; |959| 
-        ldiu      17408,r0              ; |959| 
-        sti       r0,*+ar0(ir0)         ; |959| 
+        ldiu      *+fp(16),ir0          ; |979| 
+        ldiu      398,ar0               ; |979| 
+        ldiu      17408,r0              ; |979| 
+        sti       r0,*+ar0(ir0)         ; |979| 
 	.line	163
 ;----------------------------------------------------------------------
-; 960 | break;                                                                 
+; 980 | break;                                                                 
 ;----------------------------------------------------------------------
-        bu        L344                  ; |960| 
-;*      Branch Occurs to L344           ; |960| 
-L339:        
+        bu        L350                  ; |980| 
+;*      Branch Occurs to L350           ; |980| 
+L345:        
 	.line	54
-        ldiu      *+fp(16),ir0          ; |851| 
-        ldiu      398,ar0               ; |851| 
-        ldiu      -8,r0                 ; |851| 
-        ash3      r0,*+ar0(ir0),r0      ; |851| 
-        cmpi      65,r0                 ; |851| 
-        beq       L344                  ; |851| 
-;*      Branch Occurs to L344           ; |851| 
-        cmpi      66,r0                 ; |851| 
-        beq       L293                  ; |851| 
-;*      Branch Occurs to L293           ; |851| 
-        cmpi      67,r0                 ; |851| 
-        beq       L344                  ; |851| 
-;*      Branch Occurs to L344           ; |851| 
-        cmpi      68,r0                 ; |851| 
-        beq       L337                  ; |851| 
-;*      Branch Occurs to L337           ; |851| 
-        bu        L337                  ; |851| 
-;*      Branch Occurs to L337           ; |851| 
-L344:        
+        ldiu      *+fp(16),ir0          ; |871| 
+        ldiu      398,ar0               ; |871| 
+        ldiu      -8,r0                 ; |871| 
+        ash3      r0,*+ar0(ir0),r0      ; |871| 
+        cmpi      65,r0                 ; |871| 
+        beq       L350                  ; |871| 
+;*      Branch Occurs to L350           ; |871| 
+        cmpi      66,r0                 ; |871| 
+        beq       L299                  ; |871| 
+;*      Branch Occurs to L299           ; |871| 
+        cmpi      67,r0                 ; |871| 
+        beq       L350                  ; |871| 
+;*      Branch Occurs to L350           ; |871| 
+        cmpi      68,r0                 ; |871| 
+        beq       L343                  ; |871| 
+;*      Branch Occurs to L343           ; |871| 
+        bu        L343                  ; |871| 
+;*      Branch Occurs to L343           ; |871| 
+L350:        
 	.line	167
 ;----------------------------------------------------------------------
-; 964 | if (cont)                                                              
+; 984 | if (cont)                                                              
 ;----------------------------------------------------------------------
-        ldiu      *+fp(15),r0           ; |964| 
-        cmpi      0,r0                  ; |964| 
-        bne       L284                  ; |964| 
-;*      Branch Occurs to L284           ; |964| 
+        ldiu      *+fp(15),r0           ; |984| 
+        cmpi      0,r0                  ; |984| 
+        bne       L290                  ; |984| 
+;*      Branch Occurs to L290           ; |984| 
 	.line	168
 ;----------------------------------------------------------------------
-; 965 | continue;                                                              
+; 985 | continue;                                                              
 ;----------------------------------------------------------------------
 	.line	170
 ;----------------------------------------------------------------------
-; 967 | vcf = sigfig(a/pn,7);                                                  
+; 987 | vcf = sigfig(a/pn,7);                                                  
 ;----------------------------------------------------------------------
-        ldfu      *+fp(8),f0            ; |967| 
-        ldfu      *+fp(6),f1            ; |967| 
-        call      DIV_F30               ; |967| 
-                                        ; |967| Call Occurs
+        ldfu      *+fp(8),f0            ; |987| 
+        ldfu      *+fp(6),f1            ; |987| 
+        call      DIV_F30               ; |987| 
+                                        ; |987| Call Occurs
         ldp       @CL41,DP
-        ldiu      @CL41,r1              ; |967| 
-        ldiu      7,ar2                 ; |967| 
-        ldfu      f0,f2                 ; |967| 
-        callu     r1                    ; far call to _sigfig	; |967| 
-                                        ; |967| Far Call Occurs
-        stf       f0,*+fp(10)           ; |967| 
+        ldiu      @CL41,r1              ; |987| 
+        ldiu      7,ar2                 ; |987| 
+        ldfu      f0,f2                 ; |987| 
+        callu     r1                    ; far call to _sigfig	; |987| 
+                                        ; |987| Far Call Occurs
+        stf       f0,*+fp(10)           ; |987| 
 	.line	172
 ;----------------------------------------------------------------------
-; 969 | if (RET_VCF)                                                           
+; 989 | if (RET_VCF)                                                           
 ;----------------------------------------------------------------------
-        ldiu      *+fp(4),r0            ; |969| 
-        cmpi      0,r0                  ; |969| 
-        beq       L347                  ; |969| 
-;*      Branch Occurs to L347           ; |969| 
+        ldiu      *+fp(4),r0            ; |989| 
+        cmpi      0,r0                  ; |989| 
+        beq       L353                  ; |989| 
+;*      Branch Occurs to L353           ; |989| 
 	.line	174
 ;----------------------------------------------------------------------
-; 971 | pnext = vcf;                                                           
+; 991 | pnext = vcf;                                                           
 ;----------------------------------------------------------------------
-        ldfu      *+fp(10),f0           ; |971| 
-        stf       f0,*+fp(7)            ; |971| 
+        ldfu      *+fp(10),f0           ; |991| 
+        stf       f0,*+fp(7)            ; |991| 
 	.line	176
 ;----------------------------------------------------------------------
-; 973 | break;                                                                 
+; 993 | break;                                                                 
 ;----------------------------------------------------------------------
-        bu        L349                  ; |973| 
-;*      Branch Occurs to L349           ; |973| 
-L347:        
+        bu        L355                  ; |993| 
+;*      Branch Occurs to L355           ; |993| 
+L353:        
 	.line	179
 ;----------------------------------------------------------------------
-; 976 | pnext = sigfig(pini/vcf,7);                                            
+; 996 | pnext = sigfig(pini/vcf,7);                                            
 ;----------------------------------------------------------------------
-        ldfu      *+fp(5),f0            ; |976| 
-        ldfu      *+fp(10),f1           ; |976| 
-        call      DIV_F30               ; |976| 
-                                        ; |976| Call Occurs
+        ldfu      *+fp(5),f0            ; |996| 
+        ldfu      *+fp(10),f1           ; |996| 
+        call      DIV_F30               ; |996| 
+                                        ; |996| Call Occurs
         ldp       @CL41,DP
-        ldiu      @CL41,r1              ; |976| 
-        ldiu      7,ar2                 ; |976| 
-        ldfu      f0,f2                 ; |976| 
-        callu     r1                    ; far call to _sigfig	; |976| 
-                                        ; |976| Far Call Occurs
-        stf       f0,*+fp(7)            ; |976| 
+        ldiu      @CL41,r1              ; |996| 
+        ldiu      7,ar2                 ; |996| 
+        ldfu      f0,f2                 ; |996| 
+        callu     r1                    ; far call to _sigfig	; |996| 
+                                        ; |996| Far Call Occurs
+        stf       f0,*+fp(7)            ; |996| 
 	.line	181
 ;----------------------------------------------------------------------
-; 978 | if ((pnext-pn)<0.050)                                                  
+; 998 | if ((pnext-pn)<0.050)                                                  
 ;----------------------------------------------------------------------
         ldp       @CL66,DP
-        ldfu      *+fp(6),f0            ; |978| 
-        subrf     *+fp(7),f0            ; |978| 
-        cmpf      @CL66,f0              ; |978| 
-        blt       L349                  ; |978| 
-;*      Branch Occurs to L349           ; |978| 
+        ldfu      *+fp(6),f0            ; |998| 
+        subrf     *+fp(7),f0            ; |998| 
+        cmpf      @CL66,f0              ; |998| 
+        blt       L355                  ; |998| 
+;*      Branch Occurs to L355           ; |998| 
 	.line	182
 ;----------------------------------------------------------------------
-; 979 | break;                                                                 
+; 999 | break;                                                                 
 ;----------------------------------------------------------------------
 	.line	184
 ;----------------------------------------------------------------------
-; 981 | pn = pnext;                                                            
+; 1001 | pn = pnext;                                                            
 ;----------------------------------------------------------------------
-        ldfu      *+fp(7),f0            ; |981| 
-        stf       f0,*+fp(6)            ; |981| 
+        ldfu      *+fp(7),f0            ; |1001| 
+        stf       f0,*+fp(6)            ; |1001| 
 	.line	185
-        bu        L284                  ; |982| 
-;*      Branch Occurs to L284           ; |982| 
-L349:        
+        bu        L290                  ; |1002| 
+;*      Branch Occurs to L290           ; |1002| 
+L355:        
 	.line	187
 ;----------------------------------------------------------------------
-; 984 | GIEP;                                                                  
+; 1004 | GIEP;                                                                  
 ;----------------------------------------------------------------------
 	pop		ST			
 	.line	188
 ;----------------------------------------------------------------------
-; 985 | return pnext;                                                          
+; 1005 | return pnext;                                                          
 ;----------------------------------------------------------------------
-        ldfu      *+fp(7),f0            ; |985| 
+        ldfu      *+fp(7),f0            ; |1005| 
 	.line	189
                                         ; Begin Epilog Code
-        ldiu      *-fp(1),r1            ; |986| 
-        ldiu      *fp,fp                ; |986| 
+        ldiu      *-fp(1),r1            ; |1006| 
+        ldiu      *fp,fp                ; |1006| 
                                         ; Unallocate the Frame
-        subi      18,sp                 ; |986| 
+        subi      18,sp                 ; |1006| 
         bu        r1
 ;*      Branch Occurs to r1 
-	.endfunc	986,000000000h,16
+	.endfunc	1006,000000000h,16
 
 
 	.sect	 ".text"
 
 	.global	_kgm3_to_API
 	.sym	_kgm3_to_API,_kgm3_to_API,39,2,0
-	.func	1000
+	.func	1020
 ;******************************************************************************
 ;* FUNCTION NAME: _kgm3_to_API                                                *
 ;*                                                                            *
@@ -5079,58 +5153,58 @@ _kgm3_to_API:
 	.sym	_r,1,7,1,32
 	.line	1
 ;----------------------------------------------------------------------
-; 1000 | double kgm3_to_API(const double r)                                     
+; 1020 | double kgm3_to_API(const double r)                                     
 ;----------------------------------------------------------------------
         push      fp
         ldiu      sp,fp
         addi      1,sp
 	.line	2
-        stf       f2,*+fp(1)            ; |1001| 
+        stf       f2,*+fp(1)            ; |1021| 
 	.line	3
 ;----------------------------------------------------------------------
-; 1002 | if (r<=(double)0.0)                                                    
+; 1022 | if (r<=(double)0.0)                                                    
 ;----------------------------------------------------------------------
         ldfu      f2,f0
-        cmpf      0.0000000000e+00,f0   ; |1002| 
-        bgt       L354                  ; |1002| 
-;*      Branch Occurs to L354           ; |1002| 
+        cmpf      0.0000000000e+00,f0   ; |1022| 
+        bgt       L360                  ; |1022| 
+;*      Branch Occurs to L360           ; |1022| 
 	.line	4
 ;----------------------------------------------------------------------
-; 1003 | return (double)API_error_num;                                          
+; 1023 | return (double)API_error_num;                                          
 ;----------------------------------------------------------------------
-        bud       L355                  ; |1003| 
+        bud       L361                  ; |1023| 
 	nop
         ldp       @CL23,DP
-        ldfu      @CL23,f0              ; |1003| 
-;*      Branch Occurs to L355           ; |1003| 
-L354:        
+        ldfu      @CL23,f0              ; |1023| 
+;*      Branch Occurs to L361           ; |1023| 
+L360:        
 	.line	6
 ;----------------------------------------------------------------------
-; 1005 | return (double)(((141.5*999.012)/r)-131.5);                            
+; 1025 | return (double)(((141.5*999.012)/r)-131.5);                            
 ;----------------------------------------------------------------------
         ldp       @CL67,DP
-        ldfu      *+fp(1),f1            ; |1005| 
-        ldfu      @CL67,f0              ; |1005| 
-        call      DIV_F30               ; |1005| 
-                                        ; |1005| Call Occurs
-        subf      1.3150000000e+02,f0   ; |1005| 
-L355:        
+        ldfu      *+fp(1),f1            ; |1025| 
+        ldfu      @CL67,f0              ; |1025| 
+        call      DIV_F30               ; |1025| 
+                                        ; |1025| Call Occurs
+        subf      1.3150000000e+02,f0   ; |1025| 
+L361:        
 	.line	7
                                         ; Begin Epilog Code
-        ldiu      *-fp(1),r1            ; |1006| 
-        ldiu      *fp,fp                ; |1006| 
+        ldiu      *-fp(1),r1            ; |1026| 
+        ldiu      *fp,fp                ; |1026| 
                                         ; Unallocate the Frame
-        subi      3,sp                  ; |1006| 
+        subi      3,sp                  ; |1026| 
         bu        r1
 ;*      Branch Occurs to r1 
-	.endfunc	1006,000000000h,1
+	.endfunc	1026,000000000h,1
 
 
 	.sect	 ".text"
 
 	.global	_API_to_kgm3
 	.sym	_API_to_kgm3,_API_to_kgm3,39,2,0
-	.func	1020
+	.func	1040
 ;******************************************************************************
 ;* FUNCTION NAME: _API_to_kgm3                                                *
 ;*                                                                            *
@@ -5147,52 +5221,52 @@ _API_to_kgm3:
 	.sym	_r,1,7,1,32
 	.line	1
 ;----------------------------------------------------------------------
-; 1020 | double API_to_kgm3(const double r)                                     
+; 1040 | double API_to_kgm3(const double r)                                     
 ;----------------------------------------------------------------------
         push      fp
         ldiu      sp,fp
         addi      1,sp
 	.line	2
-        stf       f2,*+fp(1)            ; |1021| 
+        stf       f2,*+fp(1)            ; |1041| 
 	.line	3
 ;----------------------------------------------------------------------
-; 1022 | if (r==(double)API_error_num)                                          
+; 1042 | if (r==(double)API_error_num)                                          
 ;----------------------------------------------------------------------
         ldp       @CL23,DP
         ldfu      f2,f0
-        cmpf      @CL23,f0              ; |1022| 
-        bne       L359                  ; |1022| 
-;*      Branch Occurs to L359           ; |1022| 
+        cmpf      @CL23,f0              ; |1042| 
+        bne       L365                  ; |1042| 
+;*      Branch Occurs to L365           ; |1042| 
 	.line	4
 ;----------------------------------------------------------------------
-; 1023 | return (double)0.0;                                                    
+; 1043 | return (double)0.0;                                                    
 ;----------------------------------------------------------------------
-        bud       L360                  ; |1023| 
+        bud       L366                  ; |1043| 
 	nop
 	nop
-        ldfu      0.0000000000e+00,f0   ; |1023| 
-;*      Branch Occurs to L360           ; |1023| 
-L359:        
+        ldfu      0.0000000000e+00,f0   ; |1043| 
+;*      Branch Occurs to L366           ; |1043| 
+L365:        
 	.line	6
 ;----------------------------------------------------------------------
-; 1025 | return (double)(141.5*999.012/(r+131.5));                              
+; 1045 | return (double)(141.5*999.012/(r+131.5));                              
 ;----------------------------------------------------------------------
         ldp       @CL67,DP
-        ldfu      1.3150000000e+02,f1   ; |1025| 
-        ldfu      @CL67,f0              ; |1025| 
-        addf      *+fp(1),f1            ; |1025| 
-        call      DIV_F30               ; |1025| 
-                                        ; |1025| Call Occurs
-L360:        
+        ldfu      1.3150000000e+02,f1   ; |1045| 
+        ldfu      @CL67,f0              ; |1045| 
+        addf      *+fp(1),f1            ; |1045| 
+        call      DIV_F30               ; |1045| 
+                                        ; |1045| Call Occurs
+L366:        
 	.line	7
                                         ; Begin Epilog Code
-        ldiu      *-fp(1),r1            ; |1026| 
-        ldiu      *fp,fp                ; |1026| 
+        ldiu      *-fp(1),r1            ; |1046| 
+        ldiu      *fp,fp                ; |1046| 
                                         ; Unallocate the Frame
-        subi      3,sp                  ; |1026| 
+        subi      3,sp                  ; |1046| 
         bu        r1
 ;*      Branch Occurs to r1 
-	.endfunc	1026,000000000h,1
+	.endfunc	1046,000000000h,1
 
 
 ;******************************************************************************

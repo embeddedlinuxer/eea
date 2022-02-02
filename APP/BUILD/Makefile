@@ -1,7 +1,7 @@
 VER = 6.15.09
 VER2 = 6_15_09
-GIT_COMMIT = ec483ceb445676aa1c58fcf9568eacd50823fa68
-GIT_DATE = "Thu Dec 16 07:57:21 2021 -0600"
+GIT_COMMIT = 88d6da9bc392bec250e6361ef6cad0b7ba8804c6
+GIT_DATE = "Wed Feb 2 11:37:51 2022 -0600"
 
 define BUGS
 BUG[112]: Increase high temp limit in Density Correction [http://10.10.1.51/bugzilla/show_bug.cgi?id=112]
@@ -51,6 +51,12 @@ LINE9 = "-----------------------------------------------------"
 LINE10 = "-----------------------------------------------------"
 LINE11 = "MD5 HASHES"
 LINE12 = "-----------------------------------------------------"
+LINE13 = "-----------------------------------------------------"
+LINE14 = "GIT VERSION CONTROL"
+LINE15 = "-----------------------------------------------------"
+LINE16 = "COMMIT : $(GIT_COMMIT)"
+LINE17 = "DATE   : $(GIT_DATE)"
+LINE18 = "-----------------------------------------------------"
 
 all	: clean create_dirs md5hash update_version_note copy_files compress 
 
@@ -92,7 +98,7 @@ md5hash	:
 	@$(ECHO) $(LINE7) >> $(RELEASE_NOTE_FILE)
 	@$(ECHO) $(LINE8) >> $(RELEASE_NOTE_FILE)
 	@$(ECHO) $(LINE9) >> $(RELEASE_NOTE_FILE)
-	@$(ECHO) $(BUGS) >> $(RELEASE_NOTE_FILE)
+	@$(ECHO) "$$BUGS" >> $(RELEASE_NOTE_FILE)
 	@$(ECHO) "" 		 >> $(RELEASE_NOTE_FILE)
 	@$(ECHO) "" 		 >> $(RELEASE_NOTE_FILE)
 	@$(ECHO) "" 		 >> $(RELEASE_NOTE_FILE)
@@ -100,6 +106,15 @@ md5hash	:
 	@$(ECHO) $(LINE11) >> $(RELEASE_NOTE_FILE)
 	@$(ECHO) $(LINE12) >> $(RELEASE_NOTE_FILE)
 	$(MD5SUM) $(MD5_FILES) >> $(RELEASE_NOTE_FILE)
+	@$(ECHO) "" 		 >> $(RELEASE_NOTE_FILE)
+	@$(ECHO) "" 		 >> $(RELEASE_NOTE_FILE)
+	@$(ECHO) "" 		 >> $(RELEASE_NOTE_FILE)
+	@$(ECHO) $(LINE13) >> $(RELEASE_NOTE_FILE)
+	@$(ECHO) $(LINE14) >> $(RELEASE_NOTE_FILE)
+	@$(ECHO) $(LINE15) >> $(RELEASE_NOTE_FILE)
+	@$(ECHO) $(LINE16) >> $(RELEASE_NOTE_FILE)
+	@$(ECHO) $(LINE17) >> $(RELEASE_NOTE_FILE)
+	@$(ECHO) $(LINE18) >> $(RELEASE_NOTE_FILE)
 
 clean:
 	@$(RM) $(RM_OPTIONS) $(CLEAN_THESE)

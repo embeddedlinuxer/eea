@@ -8,3 +8,4 @@ copy pdi.out U:\MODULE\PROG_FILES\Current_Development\FLASH
 copy Versions.txt U:\MODULE\PROG_FILES\Current_Development\FLASH
 copy vssver.scc U:\MODULE\PROG_FILES\Current_Development\FLASH
 copy RELEASE_NOTE.txt U:\MODULE\PROG_FILES\Current_Development\FLASH
+copy RELEASE_NOTE.txt U:\MODULE\PROG_FILES\Current_Development

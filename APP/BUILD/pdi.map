@@ -1,7 +1,7 @@
 ******************************************************************************
 TMS320C3x/4x COFF Linker                Version 5.11                   
 ******************************************************************************
->> Linked Wed Feb  2 11:35:45 2022
+>> Linked Wed Feb  2 15:42:23 2022
 
 OUTPUT FILE NAME:   <pdi.out>
 ENTRY POINT SYMBOL: "_c_int00"  address: 00420000
@@ -24,14 +24,14 @@ MEMORY CONFIGURATION
          FLASH_IN  00420000  000008000  00007d66     RWIX      
          FLASH_FA  00428000  000008000  00000000     RWIX      
          FLASH_AP  00430000  000030000  000211b6     RWIX      
-         FLASH     00460000  0003a0000  000019bc     RWIX      
+         FLASH     00460000  0003a0000  000019bd     RWIX      
          INRAM23   00800000  000008000  0000655f     RWIX      
          BOOTSTK   00809800  000000002  00000000     RWIX      
          INRAM01   00809802  0000007bf  000007bf     RWIX      
          BRTABLE   00809fc1  00000003f  00000000     RWIX      
          EXRAM_CF  00a00000  000007fff  00005fa7     RWIX      
          EXRAM_C1  00a07fff  000000001  00000000     RWIX      
-         EXRAM_EX  00a08000  000030000  0000360d     RWIX      
+         EXRAM_EX  00a08000  000030000  0000360e     RWIX      
          SPAD_EEA  00a38000  000007fff  00000000     RWIX      
          SPAD_CRC  00a3ffff  000000001  00000000     RWIX      
          SPAD_SA   00b00000  000007fff  00000000     RWIX      
@@ -188,72 +188,72 @@ TABLES     0    0044b7e6    000059d0
                   0044f733    00000ff4     MODBUSRTU.obj (TABLES)
                   00450727    00000a8f     VARIABLE.obj (TABLES)
 
-.bss       0    00a08000    0000360d     UNINITIALIZED
-                  00a08000    00000043     API.obj (.bss)
-                  00a08043    00000000     pdi.lib : memccpy.obj (.bss)
-                  00a08043    00000000             : ltoa.obj (.bss)
-                  00a08043    00000000             : ldexp30.obj (.bss)
-                  00a08043    00000000             : frexp30.obj (.bss)
-                  00a08043    00000000             : strlen.obj (.bss)
-                  00a08043    00000000             : strcpy.obj (.bss)
-                  00a08043    00000000             : strcat.obj (.bss)
-                  00a08043    00000000             : mpyld.obj (.bss)
-                  00a08043    00000000             : mpyk.obj (.bss)
-                  00a08043    00000000             : mpyi.obj (.bss)
-                  00a08043    00000000             : modu.obj (.bss)
-                  00a08043    00000000             : modi.obj (.bss)
-                  00a08043    00000000             : modf30.obj (.bss)
-                  00a08043    00000000             : divu.obj (.bss)
-                  00a08043    00000000             : divld.obj (.bss)
-                  00a08043    00000000             : divi.obj (.bss)
-                  00a08043    00000000             : divf.obj (.bss)
-                  00a08043    00000000     LIST.obj (.bss)
-                  00a08043    00000000     FLOAT1.obj (.bss)
-                  00a08043    00000000     boot.obj (.bss)
-                  00a08043    00000000     ETC.obj (.bss)
-                  00a08043    0000061d     MENU.obj (.bss)
-                  00a08660    00000014     LCD.obj (.bss)
-                  00a08674    000001d7     I2C.obj (.bss)
-                  00a0884b    000000c1     SELFTEST.obj (.bss)
-                  00a0890c    000000b7     DEMO.obj (.bss)
-                  00a089c3    00000090     LOG.obj (.bss)
-                  00a08a53    000000ae     HART.obj (.bss)
-                  00a08b01    000013ab     GLBLS.obj (.bss)
-                  00a09eac    00000004     BUFFER.obj (.bss)
-                  00a09eb0    0000027f     MODBUSRTU.obj (.bss)
-                  00a0a12f    0000002b     FLASH.obj (.bss)
-                  00a0a15a    00000038     EXECUTE.obj (.bss)
-                  00a0a192    0000004e     VARIABLE.obj (.bss)
-                  00a0a1e0    00000034     TIMER.obj (.bss)
-                  00a0a214    00000717     SERIAL.obj (.bss)
-                  00a0a92b    000006f4     MISC.obj (.bss)
-                  00a0b01f    000001bf     MAIN.obj (.bss)
-                  00a0b1de    00000064     ISR.obj (.bss)
-                  00a0b242    00000059     DAC.obj (.bss)
-                  00a0b29b    0000006d     ADC.obj (.bss)
-                  00a0b308    00000001     pdi.lib : ceil.obj (.bss)
-                  00a0b309    0000000b             : exp.obj (.bss)
-                  00a0b314    00000001             : floor.obj (.bss)
-                  00a0b315    00000001             : fmod.obj (.bss)
-                  00a0b316    00000009             : log.obj (.bss)
-                  00a0b31f    0000000a             : log10.obj (.bss)
-                  00a0b329    00000011             : pow.obj (.bss)
-                  00a0b33a    00000005             : sprintf.obj (.bss)
-                  00a0b33f    00000005             : sscanf.obj (.bss)
-                  00a0b344    00000001             : strncmp.obj (.bss)
-                  00a0b345    00000001             : strncpy.obj (.bss)
-                  00a0b346    00000004             : strtol.obj (.bss)
-                  00a0b34a    000000a3             : _printfi.obj (.bss)
-                  00a0b3ed    0000000d             : _scanfi.obj (.bss)
-                  00a0b3fa    00000002             : atoi.obj (.bss)
-                  00a0b3fc    00000101             : ctype.obj (.bss)
-                  00a0b4fd    00000069             : ecvt.obj (.bss)
-                  00a0b566    00000001             : errno.obj (.bss)
-                  00a0b567    00000069             : fcvt.obj (.bss)
-                  00a0b5d0    00000001             : memcpy.obj (.bss)
-                  00a0b5d1    0000000d             : memory.obj (.bss)
-                  00a0b5de    0000002c             : strtod.obj (.bss)
-                  00a0b60a    00000003             : strtoul.obj (.bss)
+.bss       0    00a08000    0000360e     UNINITIALIZED
+                  00a08000    00000044     API.obj (.bss)
+                  00a08044    00000000     pdi.lib : memccpy.obj (.bss)
+                  00a08044    00000000             : ltoa.obj (.bss)
+                  00a08044    00000000             : ldexp30.obj (.bss)
+                  00a08044    00000000             : frexp30.obj (.bss)
+                  00a08044    00000000             : strlen.obj (.bss)
+                  00a08044    00000000             : strcpy.obj (.bss)
+                  00a08044    00000000             : strcat.obj (.bss)
+                  00a08044    00000000             : mpyld.obj (.bss)
+                  00a08044    00000000             : mpyk.obj (.bss)
+                  00a08044    00000000             : mpyi.obj (.bss)
+                  00a08044    00000000             : modu.obj (.bss)
+                  00a08044    00000000             : modi.obj (.bss)
+                  00a08044    00000000             : modf30.obj (.bss)
+                  00a08044    00000000             : divu.obj (.bss)
+                  00a08044    00000000             : divld.obj (.bss)
+                  00a08044    00000000             : divi.obj (.bss)
+                  00a08044    00000000             : divf.obj (.bss)
+                  00a08044    00000000     LIST.obj (.bss)
+                  00a08044    00000000     FLOAT1.obj (.bss)
+                  00a08044    00000000     boot.obj (.bss)
+                  00a08044    00000000     ETC.obj (.bss)
+                  00a08044    0000061d     MENU.obj (.bss)
+                  00a08661    00000014     LCD.obj (.bss)
+                  00a08675    000001d7     I2C.obj (.bss)
+                  00a0884c    000000c1     SELFTEST.obj (.bss)
+                  00a0890d    000000b7     DEMO.obj (.bss)
+                  00a089c4    00000090     LOG.obj (.bss)
+                  00a08a54    000000ae     HART.obj (.bss)
+                  00a08b02    000013ab     GLBLS.obj (.bss)
+                  00a09ead    00000004     BUFFER.obj (.bss)
+                  00a09eb1    0000027f     MODBUSRTU.obj (.bss)
+                  00a0a130    0000002b     FLASH.obj (.bss)
+                  00a0a15b    00000038     EXECUTE.obj (.bss)
+                  00a0a193    0000004e     VARIABLE.obj (.bss)
+                  00a0a1e1    00000034     TIMER.obj (.bss)
+                  00a0a215    00000717     SERIAL.obj (.bss)
+                  00a0a92c    000006f4     MISC.obj (.bss)
+                  00a0b020    000001bf     MAIN.obj (.bss)
+                  00a0b1df    00000064     ISR.obj (.bss)
+                  00a0b243    00000059     DAC.obj (.bss)
+                  00a0b29c    0000006d     ADC.obj (.bss)
+                  00a0b309    00000001     pdi.lib : ceil.obj (.bss)
+                  00a0b30a    0000000b             : exp.obj (.bss)
+                  00a0b315    00000001             : floor.obj (.bss)
+                  00a0b316    00000001             : fmod.obj (.bss)
+                  00a0b317    00000009             : log.obj (.bss)
+                  00a0b320    0000000a             : log10.obj (.bss)
+                  00a0b32a    00000011             : pow.obj (.bss)
+                  00a0b33b    00000005             : sprintf.obj (.bss)
+                  00a0b340    00000005             : sscanf.obj (.bss)
+                  00a0b345    00000001             : strncmp.obj (.bss)
+                  00a0b346    00000001             : strncpy.obj (.bss)
+                  00a0b347    00000004             : strtol.obj (.bss)
+                  00a0b34b    000000a3             : _printfi.obj (.bss)
+                  00a0b3ee    0000000d             : _scanfi.obj (.bss)
+                  00a0b3fb    00000002             : atoi.obj (.bss)
+                  00a0b3fd    00000101             : ctype.obj (.bss)
+                  00a0b4fe    00000069             : ecvt.obj (.bss)
+                  00a0b567    00000001             : errno.obj (.bss)
+                  00a0b568    00000069             : fcvt.obj (.bss)
+                  00a0b5d1    00000001             : memcpy.obj (.bss)
+                  00a0b5d2    0000000d             : memory.obj (.bss)
+                  00a0b5df    0000002c             : strtod.obj (.bss)
+                  00a0b60b    00000003             : strtoul.obj (.bss)
 
 .sysmem    0    0080455f    00002000     UNINITIALIZED
                   0080455f    00000001     pdi.lib : memory.obj (.sysmem)
@@ -279,52 +279,52 @@ initialization   0    004229e0    00005347
 branch_table   0    00427d27    0000003f     
                   00427d27    0000003f     ISR.obj (branch_table)
 
-.cinit     0    00460000    000019bc     
-                  00460000    00000045     API.obj (.cinit)
-                  00460045    000003a0     MENU.obj (.cinit)
-                  004603e5    00000016     LCD.obj (.cinit)
-                  004603fb    0000000d     I2C.obj (.cinit)
-                  00460408    00000058     SELFTEST.obj (.cinit)
-                  00460460    000000b9     DEMO.obj (.cinit)
-                  00460519    0000006c     LOG.obj (.cinit)
-                  00460585    000000a1     HART.obj (.cinit)
-                  00460626    000005ee     GLBLS.obj (.cinit)
-                  00460c14    00000006     BUFFER.obj (.cinit)
-                  00460c1a    0000026d     MODBUSRTU.obj (.cinit)
-                  00460e87    0000002c     FLASH.obj (.cinit)
-                  00460eb3    0000000b     EXECUTE.obj (.cinit)
-                  00460ebe    0000004c     VARIABLE.obj (.cinit)
-                  00460f0a    00000033     TIMER.obj (.cinit)
-                  00460f3d    000000ed     SERIAL.obj (.cinit)
-                  0046102a    000004cc     MISC.obj (.cinit)
-                  004614f6    000001c1     MAIN.obj (.cinit)
-                  004616b7    00000066     ISR.obj (.cinit)
-                  0046171d    0000004f     DAC.obj (.cinit)
-                  0046176c    0000005d     ADC.obj (.cinit)
-                  004617c9    00000003     pdi.lib : ceil.obj (.cinit)
-                  004617cc    0000000d             : exp.obj (.cinit)
-                  004617d9    00000003             : floor.obj (.cinit)
-                  004617dc    00000003             : fmod.obj (.cinit)
-                  004617df    0000000b             : log.obj (.cinit)
-                  004617ea    0000000c             : log10.obj (.cinit)
-                  004617f6    00000013             : pow.obj (.cinit)
-                  00461809    00000006             : sprintf.obj (.cinit)
-                  0046180f    00000007             : sscanf.obj (.cinit)
-                  00461816    00000003             : strncmp.obj (.cinit)
-                  00461819    00000003             : strncpy.obj (.cinit)
-                  0046181c    00000006             : strtol.obj (.cinit)
-                  00461822    00000025             : _printfi.obj (.cinit)
-                  00461847    0000000f             : _scanfi.obj (.cinit)
-                  00461856    00000004             : atoi.obj (.cinit)
-                  0046185a    00000103             : ctype.obj (.cinit)
-                  0046195d    00000007             : ecvt.obj (.cinit)
-                  00461964    00000003             : errno.obj (.cinit)
-                  00461967    00000007             : fcvt.obj (.cinit)
-                  0046196e    00000003             : memcpy.obj (.cinit)
-                  00461971    00000013             : memory.obj (.cinit)
-                  00461984    00000032             : strtod.obj (.cinit)
-                  004619b6    00000005             : strtoul.obj (.cinit)
-                  004619bb    00000001     --HOLE-- [fill = 00000000]
+.cinit     0    00460000    000019bd     
+                  00460000    00000046     API.obj (.cinit)
+                  00460046    000003a0     MENU.obj (.cinit)
+                  004603e6    00000016     LCD.obj (.cinit)
+                  004603fc    0000000d     I2C.obj (.cinit)
+                  00460409    00000058     SELFTEST.obj (.cinit)
+                  00460461    000000b9     DEMO.obj (.cinit)
+                  0046051a    0000006c     LOG.obj (.cinit)
+                  00460586    000000a1     HART.obj (.cinit)
+                  00460627    000005ee     GLBLS.obj (.cinit)
+                  00460c15    00000006     BUFFER.obj (.cinit)
+                  00460c1b    0000026d     MODBUSRTU.obj (.cinit)
+                  00460e88    0000002c     FLASH.obj (.cinit)
+                  00460eb4    0000000b     EXECUTE.obj (.cinit)
+                  00460ebf    0000004c     VARIABLE.obj (.cinit)
+                  00460f0b    00000033     TIMER.obj (.cinit)
+                  00460f3e    000000ed     SERIAL.obj (.cinit)
+                  0046102b    000004cc     MISC.obj (.cinit)
+                  004614f7    000001c1     MAIN.obj (.cinit)
+                  004616b8    00000066     ISR.obj (.cinit)
+                  0046171e    0000004f     DAC.obj (.cinit)
+                  0046176d    0000005d     ADC.obj (.cinit)
+                  004617ca    00000003     pdi.lib : ceil.obj (.cinit)
+                  004617cd    0000000d             : exp.obj (.cinit)
+                  004617da    00000003             : floor.obj (.cinit)
+                  004617dd    00000003             : fmod.obj (.cinit)
+                  004617e0    0000000b             : log.obj (.cinit)
+                  004617eb    0000000c             : log10.obj (.cinit)
+                  004617f7    00000013             : pow.obj (.cinit)
+                  0046180a    00000006             : sprintf.obj (.cinit)
+                  00461810    00000007             : sscanf.obj (.cinit)
+                  00461817    00000003             : strncmp.obj (.cinit)
+                  0046181a    00000003             : strncpy.obj (.cinit)
+                  0046181d    00000006             : strtol.obj (.cinit)
+                  00461823    00000025             : _printfi.obj (.cinit)
+                  00461848    0000000f             : _scanfi.obj (.cinit)
+                  00461857    00000004             : atoi.obj (.cinit)
+                  0046185b    00000103             : ctype.obj (.cinit)
+                  0046195e    00000007             : ecvt.obj (.cinit)
+                  00461965    00000003             : errno.obj (.cinit)
+                  00461968    00000007             : fcvt.obj (.cinit)
+                  0046196f    00000003             : memcpy.obj (.cinit)
+                  00461972    00000013             : memory.obj (.cinit)
+                  00461985    00000032             : strtod.obj (.cinit)
+                  004619b7    00000005             : strtoul.obj (.cinit)
+                  004619bc    00000001     --HOLE-- [fill = 00000000]
 
 CFG        0    00a00000    00005fa7     UNINITIALIZED
                   00a00000    000000e4     SELFTEST.obj (CFG)
@@ -406,32 +406,32 @@ UART_ADDR   0    00c00000    00000080     UNINITIALIZED
                   00000000    00000000     LCD.obj (.data)
                   00000000    00000000     MENU.obj (.data)
 
-.xref      0    00000000    0003644a     COPY SECTION
-                  00000000    00000bfd     API.obj (.xref)
-                  00000bfd    0000c699     MENU.obj (.xref)
-                  0000d296    00000504     LCD.obj (.xref)
-                  0000d79a    000004ec     I2C.obj (.xref)
-                  0000dc86    00000016     ETC.obj (.xref)
-                  0000dc9c    00000ab9     SELFTEST.obj (.xref)
-                  0000e755    00000c82     DEMO.obj (.xref)
-                  0000f3d7    00000dad     LOG.obj (.xref)
-                  00010184    00000040     boot.obj (.xref)
-                  000101c4    00003826     HART.obj (.xref)
-                  000139ea    00007577     GLBLS.obj (.xref)
-                  0001af61    0000001e     FLOAT1.obj (.xref)
-                  0001af7f    000001c8     BUFFER.obj (.xref)
-                  0001b147    000076fa     MODBUSRTU.obj (.xref)
-                  00022841    00000118     LIST.obj (.xref)
-                  00022959    00000648     FLASH.obj (.xref)
-                  00022fa1    000001a7     EXECUTE.obj (.xref)
-                  00023148    00001465     VARIABLE.obj (.xref)
-                  000245ad    00000604     TIMER.obj (.xref)
-                  00024bb1    00001837     SERIAL.obj (.xref)
-                  000263e8    0000c0b7     MISC.obj (.xref)
-                  0003249f    00001f31     MAIN.obj (.xref)
-                  000343d0    000008bb     ISR.obj (.xref)
-                  00034c8b    00000b42     DAC.obj (.xref)
-                  000357cd    00000c7d     ADC.obj (.xref)
+.xref      0    00000000    0003644f     COPY SECTION
+                  00000000    00000c02     API.obj (.xref)
+                  00000c02    0000c699     MENU.obj (.xref)
+                  0000d29b    00000504     LCD.obj (.xref)
+                  0000d79f    000004ec     I2C.obj (.xref)
+                  0000dc8b    00000016     ETC.obj (.xref)
+                  0000dca1    00000ab9     SELFTEST.obj (.xref)
+                  0000e75a    00000c82     DEMO.obj (.xref)
+                  0000f3dc    00000dad     LOG.obj (.xref)
+                  00010189    00000040     boot.obj (.xref)
+                  000101c9    00003826     HART.obj (.xref)
+                  000139ef    00007577     GLBLS.obj (.xref)
+                  0001af66    0000001e     FLOAT1.obj (.xref)
+                  0001af84    000001c8     BUFFER.obj (.xref)
+                  0001b14c    000076fa     MODBUSRTU.obj (.xref)
+                  00022846    00000118     LIST.obj (.xref)
+                  0002295e    00000648     FLASH.obj (.xref)
+                  00022fa6    000001a7     EXECUTE.obj (.xref)
+                  0002314d    00001465     VARIABLE.obj (.xref)
+                  000245b2    00000604     TIMER.obj (.xref)
+                  00024bb6    00001837     SERIAL.obj (.xref)
+                  000263ed    0000c0b7     MISC.obj (.xref)
+                  000324a4    00001f31     MAIN.obj (.xref)
+                  000343d5    000008bb     ISR.obj (.xref)
+                  00034c90    00000b42     DAC.obj (.xref)
+                  000357d2    00000c7d     ADC.obj (.xref)
 
 
 GLOBAL SYMBOLS
@@ -451,8 +451,8 @@ address  name                             address  name
 0044a46d MPY_I30                          0042003e _MENU_PAGE_NORMAL
 0044a47b MPY_K30                          00420051 _MENU_PAGE_TECH
 0044a484 MPY_LD                           004219c3 _anademo
-00a0b2a7 _ADC_ACTIVE                      004219e9 _copyright
-00a0b29b _ADC_INT                         00421a12 _credit
+00a0b2a8 _ADC_ACTIVE                      004219e9 _copyright
+00a0b29c _ADC_INT                         00421a12 _credit
 00a0211e _ADC_TRIM_F_0                    004229e0 _RTC_setup
 00a0212a _ADC_TRIM_F_1                    00422a35 _lowdemo
 00a039cf _ADC_TRIM_I_0                    00422a5b _middemo
@@ -484,7 +484,7 @@ address  name                             address  name
 0043073c _API_to_kgm3                     00427d2b _XINT0
 00448a54 _ASCII_to_Hex                    00427d2c _RINT0
 00a0345b _AVG_RESET                       00427d2f _TINT0
-00a08de6 _AVG_TEMP                        00427d30 _TINT1
+00a08de7 _AVG_TEMP                        00427d30 _TINT1
 004455b0 _Accum_Fractional_Gas            00430000 .text
 004454ea _Accum_Fractional_Oil            00430000 ___text__
 0044554d _Accum_Fractional_Water          00430000 _API_VCF
@@ -526,19 +526,19 @@ address  name                             address  name
 00a038b1 _CALC_WC_DENSITY                 004323cc _MENU_PAGE_WATER_LO
 00a00c48 _CAP_OIL_STOP                    00432420 _MENU_PAGE_WATER_HI
 00a017e0 _CAP_WATER_STOP                  00432474 _MENU_PAGE_OIL_IDX
-00a08de8 _CCMREC                          004324c4 _MENU_PAGE_OIL_LO
-00a08d89 _CCM_24_GAS                      00432514 _MENU_PAGE_OIL_HI
-00a08ba6 _CCM_24_OIL                      00432564 _MENU_PAGE_OIL_P1
-00a0913a _CCM_24_TOTAL                    0043259d _MENU_PAGE_OIL_P0
-00a08bae _CCM_24_WATER                    004325d6 _MENU_PAGE_CAPTURE_OIL
+00a08de9 _CCMREC                          004324c4 _MENU_PAGE_OIL_LO
+00a08d8a _CCM_24_GAS                      00432514 _MENU_PAGE_OIL_HI
+00a08ba7 _CCM_24_OIL                      00432564 _MENU_PAGE_OIL_P1
+00a0913b _CCM_24_TOTAL                    0043259d _MENU_PAGE_OIL_P0
+00a08baf _CCM_24_WATER                    004325d6 _MENU_PAGE_CAPTURE_OIL
 00a0051b _CCM_2GAS                        0043270a _MENU_PAGE_CAPTURE_WATER
 00a004c1 _CCM_2LIQ                        00432839 _MENU_PAGE_CAL_OIL
-00a08ba2 _CCM_CNT                         00432889 _MENU_PAGE_CAL_WATER
+00a08ba3 _CCM_CNT                         00432889 _MENU_PAGE_CAL_WATER
 00a039db _CCM_CORRECT_GAS_TO_STP          004328dd _MENU_PAGE_WATERCUT_RAW
 00a03567 _CCM_CORRECT_LIQ_HEIGHT          004329ae _MENU_PAGE_AVGACCUM
 00a007f1 _CCM_DURATION                    00432a58 _MENU_PAGE_ACCUMN
-00a08fdc _CCM_ELAPSED_S                   00432b67 _MENU_PAGE_ACCUMG
-00a08de5 _CCM_GAS_CNT                     00432c73 _MENU_PAGE_FLOW
+00a08fdd _CCM_ELAPSED_S                   00432b67 _MENU_PAGE_ACCUMG
+00a08de6 _CCM_GAS_CNT                     00432c73 _MENU_PAGE_FLOW
 00a0322a _CCM_GAS_DENSITY                 00432d79 _MENU_PAGE_NET_FLOW
 00a004ef _CCM_GAS_DENSITY_INPUT           00432e7f _MENU_DENSITY
 00a01e12 _CCM_GAS_FLOW                    0043303a _MENU_PAGE_DENSITY
@@ -548,12 +548,12 @@ address  name                             address  name
 00a00cb9 _CCM_GAS_TOTAL                   00434093 _MENU_RELAY_CFG
 00a0088e _CCM_PURGE                       00434957 _MENU_AI_CFG
 00447227 _CCM_PURGING                     004354ad _MENU_AO_CFG
-00a08d14 _CCM_REMAINING                   00436721 _MENU_PAGE_TRIM_RTD_SELECT
-00a08ba1 _CCM_REMAINING_S                 00436a8e _MENU_OIL_CALC_MODE
-00a089c3 _CCM_Records                     00436aa5 _MENU_DENSITY_CORRECTION
+00a08d15 _CCM_REMAINING                   00436721 _MENU_PAGE_TRIM_RTD_SELECT
+00a08ba2 _CCM_REMAINING_S                 00436a8e _MENU_OIL_CALC_MODE
+00a089c4 _CCM_Records                     00436aa5 _MENU_DENSITY_CORRECTION
 00446f3b _CCM_Record_Viewer               00436bf7 _MENU_Density_D3
 00a0013e _CCM_Record_view                 00436c4f _MENU_Density_D2
-00a08bb1 _CCM_Record                      00436ca7 _MENU_Density_D1
+00a08bb2 _CCM_Record                      00436ca7 _MENU_Density_D1
 00a03ec1 _CCM_SETPOINT_L1                 00436cff _MENU_Density_D0
 00a00179 _CCM_SETPOINT_L2                 00436d57 _MENU_Density_Cal_Unit
 00a01625 _CCM_SETPOINT_LEVEL              00436df9 _MENU_Density_Cal
@@ -563,18 +563,18 @@ address  name                             address  name
 00a038b7 _CCM_SETPOINT_PRESSURE           00436fd3 _MENU_DCM_CFG_CUTOFF
 00447305 _CCM_START                       00437060 _MENU_DCM_ZERO
 0044707c _CCM_TESTING                     00437113 _MENU_Density_ADJ
-00a0913c _CCM_TIME_ELAPSED                004371ad _MENU_FC_PRESSURE_UNIT
-00a08d8b _CCM_TIME_REMAINING              004372c8 _MENU_FC_TEMP_UNIT
-00a08bd6 _CCM_TIME_START                  004373e3 _MENU_FC_DENSITY_UNIT
-00a08d95 _CCM_TIME_STOP                   004374fe _MENU_FC_ACCUM_UNIT
+00a0913d _CCM_TIME_ELAPSED                004371ad _MENU_FC_PRESSURE_UNIT
+00a08d8c _CCM_TIME_REMAINING              004372c8 _MENU_FC_TEMP_UNIT
+00a08bd7 _CCM_TIME_START                  004373e3 _MENU_FC_DENSITY_UNIT
+00a08d96 _CCM_TIME_STOP                   004374fe _MENU_FC_ACCUM_UNIT
 00a006e6 _CCM_VESSEL_LEVEL                00437624 _MENU_FC_FLOW_UNIT
 00a00b8b _CCM_VESSEL_MAX_LEVEL            00437743 _MENU_FC_FLOW_CLASS
 00a009af _CCM_VESSEL_PRESSURE             0043780d _MENU_FC_EMUL_DENSITY
-00a08baf _CHANGE                          00437873 _MENU_FC_SALINITY
+00a08bb0 _CHANGE                          00437873 _MENU_FC_SALINITY
 00444bf9 _CLEAR_LOCKOUT                   004378e1 _MENU_FC_WATERCUT
 00443720 _CLEAR_PORT_COUNT                0043794d _MENU_FC_PRESSURE
 004412c9 _CLEAR_TIME                      004379b3 _MENU_FC_TEMP
-00a08b26 _CLOCK                           00437a21 _MENU_FC_FLOW
+00a08b27 _CLOCK                           00437a21 _MENU_FC_FLOW
 00a004c2 _COEFF_C0                        00437a8f _MENU_FC_WATER_DENSITY_PT
 00a0060f _COEFF_D1                        00437afd _MENU_FC_WATER_DENSITY_ST
 00a0062f _COEFF_D2                        00437b63 _MENU_FC_OIL_DENSITY_PT
@@ -596,7 +596,7 @@ address  name                             address  name
 00a03b86 _COEFF_TEMP_OIL                  004385e6 _MENU_FC_MAN_TEMP
 00a003d1 _COMM                            004386af _MENU_FC_MAN_WATERCUT
 00446ca8 _CORIOLIS_CFG                    00438774 _MENU_FC_MAN_PRESSURE
-00a09147 _COR                             00438824 _MENU_FC_MAN_DENSITY
+00a09148 _COR                             00438824 _MENU_FC_MAN_DENSITY
 00446d35 _CORIOLIS_INT_CFG                004388d4 _MENU_FC_MAN_SALINITY
 00446dc9 _CORIOLIS_ZERO1                  0043899d _MENU_FC_PULSES_PER_VOL_UNIT
 00446e43 _CORIOLIS_ZERO2                  00438a83 _MENU_FLOW_COMPUTER
@@ -608,7 +608,7 @@ address  name                             address  name
 00a006b5 _CRC_BOOT                        00438eda _LCD_INIT
 00a01089 _CRC_FAST                        00438f3f _Write_DS1340
 00a00494 _CRC_INIT                        00438fbb _Read_DS1340
-00a08d7b _CURRENT_OSC                     0043903b _Clear_Diagnostics
+00a08d7c _CURRENT_OSC                     0043903b _Clear_Diagnostics
 00426e25 _Calc_CRC                        00439058 _Set_Diag_Status
 004433a4 _Calibrate_OIL                   0043940a _DataLogUserClearFlag
 00443b82 _Calibrate_RTD                   00439414 _DataLogSysClearFlag
@@ -630,24 +630,24 @@ address  name                             address  name
 00449ccb _Convert_ADC                     0043bb8d _HART_RX_DELIMITER
 00443f9d _CopyTempVars                    0043bc7d _FLOAT_TABLE
 00443233 _Copy_CAPDATA                    0043bc87 _FMIEEE
-00a0b242 _DAC_INT                         0043bc94 _TOIEEE
+00a0b243 _DAC_INT                         0043bc94 _TOIEEE
 00a01d2d _DAC_TRIM_F_0                    0043bcf4 _MB_exception
 00a01d70 _DAC_TRIM_F_1                    0043bd4d _MB_Diag
 00a03595 _DAC_TRIM_I_0                    0043be16 _Force_Slave_Pipe
 00a035a3 _DAC_TRIM_I_1                    0043bece _Report_Slave_Info
 00a03f03 _DAMP                            0043bf8a _Process_Memory
 00a00250 _DATA_CHANGE                     0043c070 _Process
-00a08b9e _DB_IP_RP_O                      0043d7f5 _MB_Calibrate
-00a08ba5 _DB_IP_RP_W                      0043d9a0 _MB_POLL_0
+00a08b9f _DB_IP_RP_O                      0043d7f5 _MB_Calibrate
+00a08ba6 _DB_IP_RP_W                      0043d9a0 _MB_POLL_0
 00a01877 _DCM_PORT                        0043d9aa _MB_POLL_1
 00a03c73 _DEMO_ANALYZER_MODE              0043d9b4 _MB_POLL_2
 00a02220 _DEMO                            0043d9be _MB_POLL_3
 00422b7f _DEMO_Init                       0043d9c8 _MB_POLL_4
-00a088b2 _DIAGNOSTICS                     0043d9d2 _MB_POLL_5
-00a0884b _DIAGNOSTICS_ERROR_CODE          0043d9dc _MB_POLL_6
+00a088b3 _DIAGNOSTICS                     0043d9d2 _MB_POLL_5
+00a0884c _DIAGNOSTICS_ERROR_CODE          0043d9dc _MB_POLL_6
 00a000df _DIAGNOSTICS_MASK                0043d9e6 _MB_POLL_7
-00a088b1 _DIAGNOSTICS_MSG_CODE            0043d9f0 _MB_RETRY_0
-00a088b4 _DIAG_TEMP                       0043d9fa _MB_RETRY_1
+00a088b2 _DIAGNOSTICS_MSG_CODE            0043d9f0 _MB_RETRY_0
+00a088b5 _DIAG_TEMP                       0043d9fa _MB_RETRY_1
 00a000dc _DIO_ALARM                       0043da04 _MB_RETRY_2
 00a03333 _DIO_ANALOGIO_GET                0043da0e _MB_RETRY_3
 00a01eb0 _DIO_ANALOGIO_SET                0043da18 _MB_RETRY_4
@@ -678,7 +678,7 @@ address  name                             address  name
 00a00f18 _DIO_MANUAL_RESET                0043ea09 _MB_RX_COR0CFGD
 00a03efd _DIO_MOTHERBOARD_GET             0043ea3f _MB_RX_COR1CFGD
 00a03acb _DIO_MOTHERBOARD_SET             0043ea75 _MB_RX_COR2CFGD
-00a08260 _DIO_MSVE                        0043eaab _MB_RX_COR3CFGD
+00a08261 _DIO_MSVE                        0043eaab _MB_RX_COR3CFGD
 00a039a0 _DIO_PORT_DEFAULTS               0043eae1 _MB_RX_COR0CFG
 00a03bae _DIO_PORT_IGNORE_DATA_EXCEPTION  0043eb74 _MB_RX_COR1CFG
 00a01e0e _DIO_POWER_GET                   0043ec07 _MB_RX_COR2CFG
@@ -697,9 +697,9 @@ address  name                             address  name
 00a015e5 _DIO_TOTALIZER_CONTROL           0043f16e _MB_RX_CA2
 00a0102e _DIO_uP_GET                      0043f1ee _MB_RX_CA3
 00a00b04 _DIO_uP_SET                      0043f26e _MB_RX_CA4
-00a08b28 _DIPSWITCH                       0043f2ee _MB_RX_CAP1
+00a08b29 _DIPSWITCH                       0043f2ee _MB_RX_CAP1
 00a00ff7 _DISPLAY                         0043f353 _Xlate_3095_P_units
-00a08d94 _DUMMY                           0043f386 _Xlate_3095_T_units
+00a08d95 _DUMMY                           0043f386 _Xlate_3095_T_units
 00a03940 _DUMMY_COIL                      0043f3a1 _MB_RX_C1
 00801e15 _DataLogCounters                 0043f5f8 _MB_RX_C2
 00801d81 _DataLogCounter                  0043fa2f _MB_RX_C3
@@ -722,22 +722,22 @@ address  name                             address  name
 00444f5e _Disable_PDI_WC_Mode             00440ab0 _VAR_Check_Bounds
 00444f72 _Disable_WC_Density_Mode         00440add _Get_Unit_Coeff
 00a03a53 _ENABLED                         00440b7e _Convert
-00a082a2 _ENG_STR                         00440ca0 _Get_Prev_Unit
-00a08261 _ENG_STR2                        00440d04 _Get_Next_Unit
-00a08b03 _ESN_MFGR                        00440d67 _Get_Unit
-00a08ba9 _ESN_USER                        00440dc8 _Get_Class
+00a082a3 _ENG_STR                         00440ca0 _Get_Prev_Unit
+00a08262 _ENG_STR2                        00440d04 _Get_Next_Unit
+00a08b04 _ESN_MFGR                        00440d67 _Get_Unit
+00a08baa _ESN_USER                        00440dc8 _Get_Class
 00a0334a _EXP_FREQ                        00440e03 _Time_Scale_Flow
 00a03b53 _EXTENDED_FW_VERSION_ENABLE      00440f68 _Breakout_Flow_Units
 00a00f1b _EXTUNE                          004410d4 _Join_MassTime_Units
 00a0187c _EXT_ANALOG_OUT                  00441156 _Timer_Create
-00a0884c _E_STRING                        00441197 _Setup_Gate
+00a0884d _E_STRING                        00441197 _Setup_Gate
 00801fac _EraseEntireLog                  0044124c _GET_TIME
 00801b0f _EraseSector                     004412c9 _CLEAR_TIME
 00426184 _Execute_Init                    004412e4 _No_Port
 0044044b _Execute_Insert                  00441316 _Poll
 004404be _Execute                         00443004 _FS
 00a02253 _FC                              00443038 _FS2
-00a089dd _FC_Periodic                     0044308c _Span
+00a089de _FC_Periodic                     0044308c _Span
 00a006b6 _FINAL_ASSY                      004430be _Setup_Sample
 00802aff _FLASH_CHECK_ADDR                0044310e _Refresh_IDEC_Time
 00802bc0 _FLASH_ERASE_BLK                 00443161 _Reset_IDEC
@@ -752,8 +752,8 @@ address  name                             address  name
 0043bc7d _FLOAT_TABLE                     0044392e _Capture_Watercut_Water
 0043bc87 _FMIEEE                          00443979 _Capture_Watercut_Oil
 00a02225 _FREQ_FACTOR                     004439b9 _PVAVG24
-00a08bd4 _FREQ_O                          00443a57 _PV_AVERAGE
-00a08d16 _FREQ_W                          00443aa9 _System_Reset
+00a08bd5 _FREQ_O                          00443a57 _PV_AVERAGE
+00a08d17 _FREQ_W                          00443aa9 _System_Reset
 00443038 _FS2                             00443ab6 _System_Restart
 00443004 _FS                              00443abe _Set_Temperature_Unit
 008020d1 _FindLastLogRecord               00443aed _Set_ASCII_Temp_Unit
@@ -771,7 +771,7 @@ address  name                             address  name
 00a03e82 _GAS_VALVE_D                     0044422d _Oil_RP_plot_min
 00a001e5 _GAS_VALVE_I                     00444253 _Oil_RP_plot_max
 00a0025f _GAS_VALVE_P                     00444279 _Water_RP_plot_min
-00a0a1e2 _GATE_TIMEOUT                    0044429f _Water_RP_plot_max
+00a0a1e3 _GATE_TIMEOUT                    0044429f _Water_RP_plot_max
 00a00905 _GATE_TIME                       004442c5 _Timer_T
 00447b7b _GET_ANALOGIO_CONFIG             004442da _Send_Sample
 0044758f _GET_ANALYZER_CONFIG             004444ab _Interpolate
@@ -793,7 +793,7 @@ address  name                             address  name
 00440d67 _Get_Unit                        00444ba7 _STATUS_LED_on
 0043941e _HART_5                          00444be4 _STATUS_LED_off
 00a00148 _HART_BURST_CMD                  00444bf9 _CLEAR_LOCKOUT
-00a08a61 _HART_BURST_MASTER_SEL           00444c03 _Submit_Setup_Basics
+00a08a62 _HART_BURST_MASTER_SEL           00444c03 _Submit_Setup_Basics
 00a00141 _HART_BURST_MODE                 00444c10 _Submit_Write_CFG_USER
 0043b775 _HART_BURST_REPEAT               00444c1d _Submit_Write_CFG_FACTORY
 00a00142 _HART_BURST_VAR_LIST             00444c2a _Submit_Restore_CFG_USER
@@ -822,14 +822,14 @@ address  name                             address  name
 004394fe _HCFG_CHANGE                     004453ec _Check_Zero
 00a00140 _HCHANGE_COUNTER                 0044540c _truncate
 00a00146 _HCHANGE                         0044543e _round
-00a08a54 _HCOLD                           0044547a _sigfig
+00a08a55 _HCOLD                           0044547a _sigfig
 00447537 _HSALT_CLEAR                     004454ba _PULSE_UPDATE
 00a03e46 _HSALT_ENABLE                    004454ea _Accum_Fractional_Oil
 00a002f7 _HSALT_FREQ_TRIGGER              0044554d _Accum_Fractional_Water
 00a03baf _HSALT                           004455b0 _Accum_Fractional_Gas
 00a00317 _HSALT_MIN_FLOW                  00445606 _Disable_Heater
 00a01ea3 _HSALT_TEMP_TRIGGER              00445622 _Set_Class_Units_AO1
-00a09145 _HW_VER                          0044562e _Set_Class_Units_AO2
+00a09146 _HW_VER                          0044562e _Set_Class_Units_AO2
 00448a78 _Hex32_to_String                 0044563a _Set_Class_Units_AO3
 00448a39 _Hex_to_ASCII                    00445646 _Set_Class_Units_AO4
 00a008d9 _Hsalt_Min_WC                    00445652 _Set_Class_Units_AO5
@@ -837,17 +837,17 @@ address  name                             address  name
 008011b4 _I2C_RX_BYTE_5                   0044566a _Set_Class_Units_AO7
 00801158 _I2C_TX_BYTE_5                   00445676 _Set_Class_Units_AO8
 008014e4 _I2C_TX_BYTE                     00445682 _Set_Class_Units_AO9
-00a08b25 _IDEC_PORT                       0044568e _Set_Class_Units_AO
-00a08dcb _IDEC_SA                         004456b9 _Set_Class_Units_AI1
-00a08fd3 _INITIALIZING                    004456c5 _Set_Class_Units_AI2
+00a08b26 _IDEC_PORT                       0044568e _Set_Class_Units_AO
+00a08dcc _IDEC_SA                         004456b9 _Set_Class_Units_AI1
+00a08fd4 _INITIALIZING                    004456c5 _Set_Class_Units_AI2
 00427d27 _INT0                            004456d1 _Set_Class_Units_AI3
 00427d28 _INT1                            004456dd _Set_Class_Units_AI4
 00427d29 _INT2                            004456e9 _Set_Class_Units_AI5
 00427d2a _INT3                            004456f5 _Set_Class_Units_Pulse1
-00a08fd2 _IP_O                            00445701 _Set_Class_Units_Pulse2
-00a08bcf _IP_RP_O                         0044570d _Set_Class_Units_Pulse3
-00a08d15 _IP_RP_W                         00445719 _Set_Class_Units_AI
-00a08fdf _IP_W                            00445744 _Set_Class_Units_Pulse
+00a08fd3 _IP_O                            00445701 _Set_Class_Units_Pulse2
+00a08bd0 _IP_RP_O                         0044570d _Set_Class_Units_Pulse3
+00a08d16 _IP_RP_W                         00445719 _Set_Class_Units_AI
+00a08fe0 _IP_W                            00445744 _Set_Class_Units_Pulse
 00a03c9f _IRDA_ENABLE                     0044576f _Set_RLY_Units
 008019cc _InitLog                         0044579b _Set_Units
 0042796a _Initialize_Hardware             0044584e _Set_Pulse_Units
@@ -856,29 +856,29 @@ address  name                             address  name
 004444ab _Interpolate                     00445940 _Accumulate
 00448a0f _Is_Expired                      004469a6 _Set_FC_Units
 004410d4 _Join_MassTime_Units             00446b81 _Set_Density_Cal_Unit
-00a0913b _LAST_TEMP_RESET                 00446c35 _PDI_Density_Correction
-00a0867f _LCD                             00446c5f _PDI_Density_Adj
+00a0913c _LAST_TEMP_RESET                 00446c35 _PDI_Density_Correction
+00a08680 _LCD                             00446c5f _PDI_Density_Adj
 00801368 _LCD_CHAR                        00446ca8 _CORIOLIS_CFG
 008012f7 _LCD_CMD                         00446d35 _CORIOLIS_INT_CFG
-00a08674 _LCD_CNT                         00446dc9 _CORIOLIS_ZERO1
-00a0883f _LCD_DIPSW                       00446e43 _CORIOLIS_ZERO2
-00a086ab _LCD_DISPLAY                     00446e6f _CORIOLIS_ZERO3
+00a08675 _LCD_CNT                         00446dc9 _CORIOLIS_ZERO1
+00a08840 _LCD_DIPSW                       00446e43 _CORIOLIS_ZERO2
+00a086ac _LCD_DISPLAY                     00446e6f _CORIOLIS_ZERO3
 00438eda _LCD_INIT                        00446ea0 _CORIOLIS_ZERO4
 0080147f _LCD_PAGE                        00446ed1 _Sampling_Error
-00a086aa _LCD_PRESENT                     00446f3b _CCM_Record_Viewer
+00a086ab _LCD_PRESENT                     00446f3b _CCM_Record_Viewer
 008013d7 _LCD_STR                         0044707c _CCM_TESTING
-00a08bd5 _LED_GREEN                       00447227 _CCM_PURGING
+00a08bd6 _LED_GREEN                       00447227 _CCM_PURGING
 00a00932 _LIQ_VALVE_D                     00447305 _CCM_START
 00a00a8d _LIQ_VALVE_I                     004473ee _VAR_SET_STR_DV
 00a00c7d _LIQ_VALVE_P                     00447406 _VAR_SET_STR_DVIN
 00a03f7b _LIST_DAMP                       0044741e _VAR_SET_STR
 00a03f00 _LIST_DAMP_EMPTY                 0044749e _Read_RTC
-00a0a15a _LIST_EXEC_EMPTY                 004474b0 _Update_i_Log_Var
-00a0a15d _LIST_EXEC                       00447537 _HSALT_CLEAR
-00a0a83c _LIST_MASTER_EMPTY               00447582 _Submit_GET_ANALYZER_CONFIG
+00a0a15b _LIST_EXEC_EMPTY                 004474b0 _Update_i_Log_Var
+00a0a15e _LIST_EXEC                       00447537 _HSALT_CLEAR
+00a0a83d _LIST_MASTER_EMPTY               00447582 _Submit_GET_ANALYZER_CONFIG
 00802fdd _LIST_TIMER0                     0044758f _GET_ANALYZER_CONFIG
 00802fd1 _LIST_TMR_EMPTY                  00447842 _Submit_STORE_ANALYZER_CONFIG
-00a08bcd _LOCKOUT                         0044784f _STORE_ANALYZER_CONFIG
+00a08bce _LOCKOUT                         0044784f _STORE_ANALYZER_CONFIG
 00a00b8f _LOG_STATUS                      00447b6e _Submit_GET_ANALOGIO_CONFIG
 00a00611 _LOG_VAR_SEL                     00447b7b _GET_ANALOGIO_CONFIG
 00a01d6d _LOOP_ENABLED                    00447d4c _Submit_STORE_ANALOGIO_CONFIG
@@ -897,7 +897,7 @@ address  name                             address  name
 0043d7f5 _MB_Calibrate                    004482c2 _STORE_POWER_CONFIG
 0043bd4d _MB_Diag                         0044835b _Submit_GET_DISPLAY_CONFIG
 0043dee8 _MB_Init_Master                  00448368 _GET_DISPLAY_CONFIG
-00a08682 _MB_LCD_DISPLAY                  004483d2 _Submit_STORE_DISPLAY_CONFIG
+00a08683 _MB_LCD_DISPLAY                  004483d2 _Submit_STORE_DISPLAY_CONFIG
 0043d9a0 _MB_POLL_0                       004483df _STORE_DISPLAY_CONFIG
 0043d9aa _MB_POLL_1                       00448478 _Submit_GET_MOTHERBOARD_CONFIG
 0043d9b4 _MB_POLL_2                       00448485 _GET_MOTHERBOARD_CONFIG
@@ -966,7 +966,7 @@ address  name                             address  name
 0043e757 _MB_RX_MCFU4                     00449ee7 _Read_ADCn
 00440329 _MB_TX_A_PLC                     0044a1a1 _ADC_UPDATE
 0043bcf4 _MB_exception                    0044a356 DIV_F30
-00a08d18 _MEM                             0044a37e DIV_I30
+00a08d19 _MEM                             0044a37e DIV_I30
 00434957 _MENU_AI_CFG                     0044a3a2 DIV_LD
 004354ad _MENU_AO_CFG                     0044a3e6 DIV_U30
 00436fd3 _MENU_DCM_CFG_CUTOFF             0044a418 _modf
@@ -1078,7 +1078,7 @@ address  name                             address  name
 00438d26 _MENU_USB_LOGGING                00801d81 _DataLogCounter
 00a001b5 _MM_GAS_fail                     00801e15 _DataLogCounters
 00a0051c _MM_LIQ_fail                     00801e41 _DataLogUser
-00a09eb0 _MODBUS_CRITICAL_ERROR           00801f14 _DataLog
+00a09eb1 _MODBUS_CRITICAL_ERROR           00801f14 _DataLog
 00802615 _MODBUS_RX_CRC                   00801f64 _CfgLog
 008024b4 _MODBUS_RX_FUNCTION              00801fac _EraseEntireLog
 0080244c _MODBUS_RX_ID                    00801fff _FindNextLogIndex
@@ -1086,7 +1086,7 @@ address  name                             address  name
 0080255a _MODBUS_RX_n                     0080216d _SIZE_ALFAT_TX
 008025a3 _MODBUS_RX_nDATA                 0080216e _ALFAT_INIT_ALL
 00a02217 _MOTHERBOARD                     0080216f _ALFAT_NO_ERROR
-00a08043 _MSVE                            00802170 _ALFAT_RX
+00a08044 _MSVE                            00802170 _ALFAT_RX
 00430be1 _MSVE_Data_Input                 008021f0 _ALFAT_TX
 0044945a _Make_Russian_Line               0080231c _ALFAT_STATUS_REG
 00801b3c _MarkLogStart                    0080231d _CRC16
@@ -1096,9 +1096,9 @@ address  name                             address  name
 00426033 _Modbus_Initialize               0080240c _Clear
 00a007c4 _NUM_PREAMBLE_MS                 0080244c _MODBUS_RX_ID
 00a009ae _NUM_PREAMBLE_SM                 0080248a _MODBUS_RX_LONG_ADDR
-00a08b9c _N_FREQ                          008024b4 _MODBUS_RX_FUNCTION
-00a08b4c _N_TEMP                          0080255a _MODBUS_RX_n
-00a08b8d _N_WC                            008025a3 _MODBUS_RX_nDATA
+00a08b9d _N_FREQ                          008024b4 _MODBUS_RX_FUNCTION
+00a08b4d _N_TEMP                          0080255a _MODBUS_RX_n
+00a08b8e _N_WC                            008025a3 _MODBUS_RX_nDATA
 00a03943 _NaN_val_flt                     00802615 _MODBUS_RX_CRC
 00a039eb _NaN_val                         008029ae _List_Add
 00a002f6 _NaN_val_int                     008029dd _List_Remove
@@ -1113,36 +1113,36 @@ address  name                             address  name
 00a00f57 _OIL_P1                          00802c95 _FLASH_STATUS
 00a017a4 _OIL_PHASE_ONLY_ENABLE           00802cfa _FLASH_READ_ESN_MFGR
 00a01e3e _OIL_PHASE_ONLY                  00802d37 _FLASH_READ_ESN_USER
-00a08a53 _OLD_CURRENT                     00802d74 _FLASH_WRITE_ESN_USER
+00a08a54 _OLD_CURRENT                     00802d74 _FLASH_WRITE_ESN_USER
 00a0024f _OSC_OIL_CALC                    00802def _FLASH_LOCK_ESN_USER
 00a03a57 _OSC                             00802e37 _vect_tm
 00a00e56 _OSC_WATER_CALC                  00802e38 _vect_pt0
-00a09001 _OSWITCH                         00802e39 _vect_pt1
-00a08240 _OUT_STR2                        00802e3a _vect_pt2
-00a08281 _OUT_STR                         00802e3b _vect_pt3
+00a09002 _OSWITCH                         00802e39 _vect_pt1
+00a08241 _OUT_STR2                        00802e3a _vect_pt2
+00a08282 _OUT_STR                         00802e3b _vect_pt3
 00a0105d _Oil_Phase_Filter                00802e3c _vect_pt4
 00a00630 _Oil_Phase_Maximum               00802e3d _vect_pt5
 00444253 _Oil_RP_plot_max                 00802e3e _vect_pt6
 0044422d _Oil_RP_plot_min                 00802e3f _vect_pt7
 00446c5f _PDI_Density_Adj                 00802e40 _TIMER0_COUNTER
 00446c35 _PDI_Density_Correction          00802e41 _QUEUE_TMR
-00a0a83f _PDI_id                          00802fd1 _LIST_TMR_EMPTY
+00a0a840 _PDI_id                          00802fd1 _LIST_TMR_EMPTY
 00449a26 _PID                             00802fd4 _TIMER1_COUNTER
 004499f8 _PID_Init                        00802fdd _LIST_TIMER0
-00a08daa _PORT2_GAS_TEMP                  00802fe0 _TXbuf
-00a08fdd _PORT2_LIQ_TEMP                  00803978 _PORT
-00a08b9d _PORT3_TEMP                      00803bb0 _vect_p0
+00a08dab _PORT2_GAS_TEMP                  00802fe0 _TXbuf
+00a08fde _PORT2_LIQ_TEMP                  00803978 _PORT
+00a08b9e _PORT3_TEMP                      00803bb0 _vect_p0
 00803978 _PORT                            00803bb1 _vect_p1
 00a03f7e _PORTCFG                         00803bb2 _vect_p2
 00a0109b _POWER                           00803bb3 _vect_p3
 00a00610 _PRESCALE                        00803bb4 _vect_p4
-00a08b72 _PRESS                           00803bb5 _vect_p5
+00a08b73 _PRESS                           00803bb5 _vect_p5
 004454ba _PULSE_UPDATE                    00803bb6 _vect_p6
 004439b9 _PVAVG24                         00803bb7 _vect_p7
 00443a57 _PV_AVERAGE                      00803bb8 _RXbuf
-00a08e4c _PV_SAMPLES_24hr                 00804550 _main
-00a09006 _PV_SAMPLES                      0080455f __sys_memory
-00a08be1 _PV_SAMPLES_5min                 00809802 __stack
+00a08e4d _PV_SAMPLES_24hr                 00804550 _main
+00a09007 _PV_SAMPLES                      0080455f __sys_memory
+00a08be2 _PV_SAMPLES_5min                 00809802 __stack
 00444687 _Pack_ASCII                      00a00000 _REG_DIAG
 00445880 _Periodic_Accumulate             00a000dc _DIO_ALARM
 00a006b7 _Plot_Limit_Oil_Freq_High        00a000df _DIAGNOSTICS_MASK
@@ -1170,10 +1170,10 @@ address  name                             address  name
 004485df _PutInt                          00a0024f _OSC_OIL_CALC
 0044459c _Put_IEEE                        00a00250 _DATA_CHANGE
 008023ba _Put_n                           00a00253 _DIO_PV_PERCMASS
-00a0a160 _QUEUE_EXEC                      00a00254 _DIO_CAP_WATER
-00a0a215 _QUEUE_MASTER                    00a00257 _DIO_BEEP
+00a0a161 _QUEUE_EXEC                      00a00254 _DIO_CAP_WATER
+00a0a216 _QUEUE_MASTER                    00a00257 _DIO_BEEP
 00802e41 _QUEUE_TMR                       00a0025a _ALFAT_APPEND_LF
-00a08da8 _READ_ADC_INPUTS                 00a0025b _RESET_AT_PURGE
+00a08da9 _READ_ADC_INPUTS                 00a0025b _RESET_AT_PURGE
 00a02227 _REG_20mA_max_flow_rate_input    00a0025c _GAS_ENTRAINED_DENS_DETECT
 00a01eb3 _REG_ADC                         00a0025f _GAS_VALVE_P
 00a01e77 _REG_ALFAT_LOG_PERIOD            00a0029b _REG_reference_currrent_mode
@@ -1199,15 +1199,15 @@ address  name                             address  name
 00a0353a _REG_HART_num_preamble           00a00457 _stream_bubble_length
 00a00ffe _REG_HART_response_delay         00a00493 _DIO_Autosave_on_pair_boundary
 00a0337c _REG_LOCK                        00a00494 _CRC_INIT
-00a08f7f _REG_LOWSALT_THRESHOLD           00a00495 _REG_DELTA_TEMP
+00a08f80 _REG_LOWSALT_THRESHOLD           00a00495 _REG_DELTA_TEMP
 00a003a5 _REG_NUM_SAMP                    00a004c1 _CCM_2LIQ
 00a03c47 _REG_OIL_ADJ                     00a004c2 _COEFF_C0
 00a005e3 _REG_OIL_INDEX                   00a004c3 _CCM_SETPOINT_PRESSURE_MAX_OVER
 00a017e3 _REG_PHASE_HOLD_CYCLES           00a004ef _CCM_GAS_DENSITY_INPUT
-00a08da9 _REG_PV_AVG_1sec                 00a0051b _CCM_2GAS
-00a09003 _REG_PV_AVG_24hr                 00a0051c _MM_LIQ_fail
-00a08d7e _REG_PV_AVG_5min                 00a0051f _REG_VINC_O
-00a08fe0 _REG_PV_AVG_CNT                  00a0054b _REG_TEMPERATURE_AVG
+00a08daa _REG_PV_AVG_1sec                 00a0051b _CCM_2GAS
+00a09004 _REG_PV_AVG_24hr                 00a0051c _MM_LIQ_fail
+00a08d7f _REG_PV_AVG_5min                 00a0051f _REG_VINC_O
+00a08fe1 _REG_PV_AVG_CNT                  00a0054b _REG_TEMPERATURE_AVG
 00a00850 _REG_PW                          00a00577 _stream_boxcar_expire_minutes
 00a03afb _REG_SALINITY                    00a005b3 _USE_PDI_WATERCUT
 00a01031 _REG_STREAM_SELECT               00a005b6 _Plot_Limit_Water_Freq_Low
@@ -1215,7 +1215,7 @@ address  name                             address  name
 00a00a34 _REG_TEMPERATURE_EXTERNAL        00a005e3 _REG_OIL_INDEX
 00a03a6b _REG_TEMPERATURE_USER_ADJUST     00a0060f _COEFF_D1
 00a00740 _REG_TEMPERATURE_USER            00a00610 _PRESCALE
-00a08fde _REG_TIME                        00a00611 _LOG_VAR_SEL
+00a08fdf _REG_TIME                        00a00611 _LOG_VAR_SEL
 00a03336 _REG_USER_DEFINE                 00a0062f _COEFF_D2
 00a0167e _REG_VINC                        00a00630 _Oil_Phase_Maximum
 00a0051f _REG_VINC_O                      00a0065c _REG_FREQ_VARIANCE_RATIO
@@ -1227,7 +1227,7 @@ address  name                             address  name
 00a03d96 _REG_VTUNE_SET                   00a006e3 _DIO_SYSTEM_RESET
 00a021b5 _REG_WATERCUT                    00a006e6 _CCM_VESSEL_LEVEL
 00a03a99 _REG_WATERCUT_DENSITY            00a0073e _STR_HART_Date
-00a08bdf _REG_WATERCUT_RAW                00a00740 _REG_TEMPERATURE_USER
+00a08be0 _REG_WATERCUT_RAW                00a00740 _REG_TEMPERATURE_USER
 00a00e83 _REG_WATERCUT_ALARM_HI           00a0076c _REG_flow_volume_unit
 00a015b6 _REG_WATERCUT_ALARM_LO           00a00798 _REG_CCM_TEST_STAT
 00a010d6 _REG_WATER_ADJ                   00a007c4 _NUM_PREAMBLE_MS
@@ -1250,22 +1250,22 @@ address  name                             address  name
 00a0029b _REG_reference_currrent_mode     00a00932 _LIQ_VALVE_D
 00a03ac5 _RELAY1_REVERT                   00a0096e _Plot_Limit_Oil_RP_High
 00a00be8 _RELAY2_REVERT                   00a0099a _SALTS
-00a0ab07 _RESEARCH_ENABLED                00a009ae _NUM_PREAMBLE_SM
-00a08b71 _RESEARCH_FORCE_MODE             00a009af _CCM_VESSEL_PRESSURE
-00a0aaac _RESEARCH_GATE                   00a00a07 _RTD_CAL_HI_V
-00a0ab3d _RESEARCH_OSC                    00a00a08 _Density_D0
-00a0aa7f _RESEARCH_PS                     00a00a34 _REG_TEMPERATURE_EXTERNAL
-00a0aa8a _RESEARCH_VTUNE                  00a00a60 _SIM_TEMPERATURE_EXTERNAL
+00a0ab08 _RESEARCH_ENABLED                00a009ae _NUM_PREAMBLE_SM
+00a08b72 _RESEARCH_FORCE_MODE             00a009af _CCM_VESSEL_PRESSURE
+00a0aaad _RESEARCH_GATE                   00a00a07 _RTD_CAL_HI_V
+00a0ab3e _RESEARCH_OSC                    00a00a08 _Density_D0
+00a0aa80 _RESEARCH_PS                     00a00a34 _REG_TEMPERATURE_EXTERNAL
+00a0aa8b _RESEARCH_VTUNE                  00a00a60 _SIM_TEMPERATURE_EXTERNAL
 00443ba6 _RESEARCH                        00a00a61 _Density_D1
 00a0025b _RESET_AT_PURGE                  00a00a8d _LIQ_VALVE_I
 00a03566 _RESET_COUNTER                   00a00ac9 _Cap_Oil
 008001ab _RESET_PKT                       00a00ad8 _Density_D2
 00427d2c _RINT0                           00a00b04 _DIO_uP_SET
 00a00414 _RLY                             00a00b07 _REG_FREQ_WATER_LO
-00a08d1a _RP_O                            00a00b33 _REG_WC_NUM_SAMPLES
-00a08d7a _RP_W                            00a00b5f _Density_D3
-00a08675 _RTC                             00a00b8b _CCM_VESSEL_MAX_LEVEL
-00a08681 _RTC_PRESENT                     00a00b8d _OIL_CALC_MAX
+00a08d1b _RP_O                            00a00b33 _REG_WC_NUM_SAMPLES
+00a08d7b _RP_W                            00a00b5f _Density_D3
+00a08676 _RTC                             00a00b8b _CCM_VESSEL_MAX_LEVEL
+00a08682 _RTC_PRESENT                     00a00b8d _OIL_CALC_MAX
 004229e0 _RTC_setup                       00a00b8f _LOG_STATUS
 00a00a07 _RTD_CAL_HI_V                    00a00b90 _REG_num_water_cal_samples
 00a002fa _RTD_CAL_HI_OHM                  00a00bbc _REG_osc_settle_long
@@ -1274,7 +1274,7 @@ address  name                             address  name
 00a03c42 _RTD_CAL_LO_V                    00a00bef _DIO_AUX_FREQ_MODE
 00a001e4 _RTD_CURRENT                     00a00bf0 _Plot_Limit_Water_RP_Low
 00a00221 _RTD_GAIN                        00a00c1c _Plot_Limit_Temp_Low
-00a08bcc _RTD_R                           00a00c48 _CAP_OIL_STOP
+00a08bcd _RTD_R                           00a00c48 _CAP_OIL_STOP
 0044b7e6 _RUSS_MENU_TBL                   00a00c4b _REG_CCM_PURGE_STAT
 00a00d3d _RUSS_TBL_LEN                    00a00c77 _DIO_CCM_PURGE_STAT
 00a0337b _RUSS                            00a00c7a _DIO_BUILT_IN_TEST
@@ -1299,11 +1299,11 @@ address  name                             address  name
 00444cdb _Restore_CFG                     00a00f83 _ALYESKA
 00444c95 _Restore_CFG_USER                00a00fc7 _BOXCAR_RESET
 00a031fb _Rosemount_fail                  00a00fc8 _Num_Water_Samples
-00a09002 _SA                              00a00ff4 _DIO_SAVE_USER_CONFIG
+00a09003 _SA                              00a00ff4 _DIO_SAVE_USER_CONFIG
 00a00edc _SALINITY                        00a00ff7 _DISPLAY
 00a0099a _SALTS                           00a00ffe _REG_HART_response_delay
 00a03568 _SALT_MAX                        00a0102a _STR_Analyzer_UNIT
-00a09139 _SAMPLE_PENDING                  00a0102e _DIO_uP_GET
+00a0913a _SAMPLE_PENDING                  00a0102e _DIO_uP_GET
 00444c7e _SET_BASICS                      00a01031 _REG_STREAM_SELECT
 00a01d66 _SIM_FREQ                        00a0105d _Oil_Phase_Filter
 00a00a60 _SIM_TEMPERATURE_EXTERNAL        00a01089 _CRC_FAST
@@ -1314,9 +1314,9 @@ address  name                             address  name
 00a00edb _SN_DC_BOARD                     00a010a3 _ALFAT_LOG_DAY
 00a0109a _SN_OSC                          00a010a4 _DIO_CAP_OIL
 00a0390f _SN_PIPE                         00a010a7 _COEFF_IPA2
-00a0a214 _SP0_RX_DATA                     00a010a8 _ANALYZER_MODE
+00a0a215 _SP0_RX_DATA                     00a010a8 _ANALYZER_MODE
 00a0081e _SPAD                            00a010aa _Plot_Limit_Oil_Freq_Low
-00a0a12f _SRAM_SCRATCHPAD                 00a010d6 _REG_WATER_ADJ
+00a0a130 _SRAM_SCRATCHPAD                 00a010d6 _REG_WATER_ADJ
 00444be4 _STATUS_LED_off                  00a01102 _COEFF_T1
 00444c8c _STAT                            00a01103 _COEFF_SALT_TEMP_WATER
 00444ba7 _STATUS_LED_on                   00a015b3 _COEFF_T2
@@ -1338,14 +1338,14 @@ address  name                             address  name
 00a0108a _STR_HART_Tag_Long               00a017a4 _OIL_PHASE_ONLY_ENABLE
 00a003a1 _STR_HART_Tag                    00a017e0 _CAP_WATER_STOP
 00a035a1 _STR_INIT                        00a017e3 _REG_PHASE_HOLD_CYCLES
-00a08b8e _STR_VAR_DESC                    00a0180f _stream_boxcar_expire
-00a08bd0 _STR_VAR_UNIT                    00a0184b _Density_Cal
+00a08b8f _STR_VAR_DESC                    00a0180f _stream_boxcar_expire
+00a08bd1 _STR_VAR_UNIT                    00a0184b _Density_Cal
 00a015b5 _STR_VER                         00a01877 _DCM_PORT
-00a08d7c _SUM_TEMP                        00a01879 _DIO_ANALYZER_SET
-00a089d0 _SYS                             00a0187c _EXT_ANALOG_OUT
+00a08d7d _SUM_TEMP                        00a01879 _DIO_ANALYZER_SET
+00a089d1 _SYS                             00a0187c _EXT_ANALOG_OUT
 00a00112 _SYS_log_sample_period           00a0187d _Cap_Records
 00a000e4 _SYS_LOG_ENABLED                 00a01d2d _DAC_TRIM_F_0
-00a089dc _SYS_LOG_EVENT                   00a01d39 _REG_EM_PHASE_HOLD
+00a089dd _SYS_LOG_EVENT                   00a01d39 _REG_EM_PHASE_HOLD
 00446ed1 _Sampling_Error                  00a01d65 _TEMPERATURE_TRIM_T0
 008019a4 _Self_Test1                      00a01d66 _SIM_FREQ
 0080197c _Self_Test2                      00a01d6a _DIO_CCM_START
@@ -1429,335 +1429,335 @@ address  name                             address  name
 00a01e41 _TEMPS_OIL                       00a03872 _stream_pattern_length
 00a00356 _TEMPS_WATER                     00a038ae _DIO_RESEARCH_MODE
 00a01e11 _TEMP_OIL_MAX                    00a038b1 _CALC_WC_DENSITY
-00a08b01 _TEMP_SAMPLE                     00a038b4 _DIO_SYSTEM_RESTART
+00a08b02 _TEMP_SAMPLE                     00a038b4 _DIO_SYSTEM_RESTART
 00a00855 _TEMP_WATER_MAX                  00a038b7 _CCM_SETPOINT_PRESSURE
-00a0a1e0 _TIME0                           00a0390f _SN_PIPE
-00a0a1e1 _TIME1                           00a03910 _Plot_Limit_Watercut_High
+00a0a1e1 _TIME0                           00a0390f _SN_PIPE
+00a0a1e2 _TIME1                           00a03910 _Plot_Limit_Watercut_High
 00802e40 _TIMER0_COUNTER                  00a0393c _SIM_VINC
 00802fd4 _TIMER1_COUNTER                  00a03940 _DUMMY_COIL
-00a08b6e _TIME_COUNT                      00a03943 _NaN_val_flt
+00a08b6f _TIME_COUNT                      00a03943 _NaN_val_flt
 00427d2f _TINT0                           00a03944 _DensityCF_D0
 00427d30 _TINT1                           00a03945 _pattern_new_length
-00a0b2aa _TLV_REF                         00a03971 _DIO_RESTORE_USER_CONFIG
-00a08b09 _TMPTRANS                        00a03974 _REG_flow_meter_type
-00a08fd4 _TMP_FREQ                        00a039a0 _DIO_PORT_DEFAULTS
-00a08b6f _TMP_TEMP                        00a039a3 _REG_port1_stop_bits
-00a08b1c _TMP_VINC                        00a039cf _ADC_TRIM_I_0
-00a08d81 _TMP_VREF                        00a039db _CCM_CORRECT_GAS_TO_STP
-00a08da0 _TMP_VTUNE                       00a039dc _ADC_TRIM_I_1
-00a0aad5 _TMR_ADC_UPDATE                  00a039e8 _BULK_LEVEL_ENABLED
-00a0a9f3 _TMR_ALFAT_LOG                   00a039eb _NaN_val
-00a09eb1 _TMR_ALYESKA_PLC                 00a039ec _DIO_HEATER_DISABLE
-00a0aa11 _TMR_BEEP_OFF                    00a039ef _ALFAT_INITIALIZED
-00a08a5f _TMR_BURST                       00a039f0 _STR_Analyzer_Info
-00a0aa43 _TMR_CCM_PURGE                   00a039fa _boxcar_expire_val_minutes
-00a0a97b _TMR_CCM_TEST                    00a03a26 _CCM_GAS_TEMPERATURE
-00a0a971 _TMR_CHECK_ZERO                  00a03a52 _GAS_DENSITY_INPUT_ENABLED
-00a0aa57 _TMR_CLEAR_LOCKOUT               00a03a53 _ENABLED
-00a0aa39 _TMR_CLEAR_SYS_LOG_EVENT_FLAG    00a03a57 _OSC
-00a0aa07 _TMR_CLEAR_USER_LOG_EVENT_FLAG   00a03a5b _STR_HART_Msg
-00a0aae9 _TMR_DAMP                        00a03a6b _REG_TEMPERATURE_USER_ADJUST
-00a0aa4d _TMR_DATALOG_COUNTERS            00a03a97 _CCM_GAS_MASS
-00a0ab1f _TMR_DATALOG_USER                00a03a98 _U_TEMP_ASCII
-00a0aa6b _TMR_DATALOG                     00a03a99 _REG_WATERCUT_DENSITY
-00a0ab4b _TMR_GET_ANALOGIO_CONFIG         00a03ac5 _RELAY1_REVERT
-00a0a9d5 _TMR_GET_ANALYZER_CONFIG         00a03ac8 _OIL_CALC_CUTOFF
-00a0a999 _TMR_GET_COMM_CONFIG             00a03ac9 _Density_Correction_Mode
-00a0a9e9 _TMR_GET_DISPLAY_CONFIG          00a03acb _DIO_MOTHERBOARD_SET
-00a0aa2f _TMR_GET_MOTHERBOARD_CONFIG      00a03ace _USE_COR0_TEMP
-00a0a98f _TMR_GET_POWER_CONFIG            00a03acf _REG_port1_parity
-00a0a985 _TMR_GET_uP_CONFIG               00a03afb _REG_SALINITY
-00a0aab7 _TMR_LEDOFF                      00a03b27 _REG_BULK_LEVEL
-00a0aa61 _TMR_LEDON                       00a03b53 _EXTENDED_FW_VERSION_ENABLE
-00a0aac1 _TMR_MENU_REFRESH                00a03b7f _SIM_VTUNE
-00a0aaa2 _TMR_OSC_DELAY_LONG              00a03b83 _DensityCFT_D1
-00a0a93f _TMR_OSC_DELAY_SHORT             00a03b84 _Density_Cal_Unit
-00a0aa1b _TMR_PERIODIC_ACCUM              00a03b86 _COEFF_TEMP_OIL
-00a0ab0b _TMR_POLL                        00a03bae _DIO_PORT_IGNORE_DATA_EXCEPTION
-00a0aaad _TMR_PULSE_UPDATE                00a03baf _HSALT
-00a0aafd _TMR_PVAVG                       00a03bfc _ALFAT_USB_MOUNTED
-00a0aadf _TMR_REFRESH_TIME                00a03bff _ANALYZER
-00a0a9ad _TMR_RESET                       00a03c06 _GAS_ROUTINE_ENABLE
-00a0a967 _TMR_RESTART                     00a03c42 _RTD_CAL_LO_V
-00a0ab29 _TMR_RESTORE_CFGF                00a03c43 _DIO_CCM_PURGE_TIME
-00a0a92b _TMR_RESTORE_CFGU                00a03c46 _AMETEK
-00a0a949 _TMR_RTC_UPDATE                  00a03c47 _REG_OIL_ADJ
-00a0a953 _TMR_SAMPLE_ERROR                00a03c73 _DEMO_ANALYZER_MODE
-00a0a9c1 _TMR_SAVE_CFGF                   00a03c9f _IRDA_ENABLE
-00a0a9fd _TMR_SAVE_CFGU                   00a03ca0 _REG_FREQ_O
-00a0aa80 _TMR_SELFTEST                    00a03ccc _REG_VREF
-00a0a95d _TMR_SELF_TEST                   00a03d7c _DIO_CLEAR_COUNTERS
-00a0ab15 _TMR_SERDEF                      00a03d7f _ALFAT_USB_DETECTED
-00a0aa98 _TMR_SET_BASICS                  00a03d82 _STR_Copyright
-00a08a60 _TMR_SET_BT                      00a03d96 _REG_VTUNE_SET
-00a0aaf3 _TMR_SET_CURRENT                 00a03e46 _HSALT_ENABLE
-00a08a5e _TMR_SET_RT1                     00a03e82 _GAS_VALVE_D
-00a0a935 _TMR_STAT                        00a03ebe _DIO_DISPLAY_SET
-00a0ab41 _TMR_STORE_ANALOGIO_CONFIG       00a03ec1 _CCM_SETPOINT_L1
-00a0a9cb _TMR_STORE_ANALYZER_CONFIG       00a03efd _DIO_MOTHERBOARD_GET
-00a0aacb _TMR_STORE_COMM_CONFIG           00a03f00 _LIST_DAMP_EMPTY
-00a0ab33 _TMR_STORE_DISPLAY_CONFIG        00a03f03 _DAMP
-00a0aa25 _TMR_STORE_MOTHERBOARD_CONFIG    00a03f7b _LIST_DAMP
-00a0a9df _TMR_STORE_POWER_CONFIG          00a03f7e _PORTCFG
-00a0aa8e _TMR_STORE_uP_CONFIG             00a04ab6 _AO
-00a0a9b7 _TMR_T                           00a05971 _AI
-00a0a9a3 _TMR_UPDATE_RELAYS               00a08000 ___bss__
-00a0aa75 _TMR_iLV                         00a08000 .bss
-0043bc94 _TOIEEE                          00a08043 _MSVE
-00a08ba0 _TRIM_RTD_HI                     00a08240 _OUT_STR2
-00a08bb0 _TRIM_RTD_LO                     00a08260 _DIO_MSVE
-00800911 _TX_P                            00a08261 _ENG_STR2
-008008e7 _TX_P1                           00a08281 _OUT_STR
-008008b6 _TX_S                            00a082a1 _vect_m
-008005a4 _TX_S1                           00a082a2 _ENG_STR
-00802fe0 _TXbuf                           00a08674 _LCD_CNT
-004441d3 _Temp_plot_max                   00a08675 _RTC
-004441b5 _Temp_plot_min                   00a0867f _LCD
-00440e03 _Time_Scale_Flow                 00a08681 _RTC_PRESENT
-00441156 _Timer_Create                    00a08682 _MB_LCD_DISPLAY
-00800000 _Timer_Insert                    00a086aa _LCD_PRESENT
-008000ee _Timer_Remove                    00a086ab _LCD_DISPLAY
-004442c5 _Timer_T                         00a0883f _LCD_DIPSW
-00445313 _Totalizer_Control               00a0884b _DIAGNOSTICS_ERROR_CODE
-00c00000 _UART                            00a0884c _E_STRING
-00a000e5 _USER_LOG_ENABLED                00a088b1 _DIAGNOSTICS_MSG_CODE
-00a089cf _USER_LOG_EVENT                  00a088b2 _DIAGNOSTICS
-00a000e6 _USER_log_sample_period          00a088b4 _DIAG_TEMP
-00a03ace _USE_COR0_TEMP                   00a089c3 _CCM_Records
-00a005b3 _USE_PDI_WATERCUT                00a089cf _USER_LOG_EVENT
-00a03a98 _U_TEMP_ASCII                    00a089d0 _SYS
-004444e9 _UnLock_P0                       00a089dc _SYS_LOG_EVENT
-004444f5 _UnLock_P1                       00a089dd _FC_Periodic
-00444525 _UnLock_P                        00a08a53 _OLD_CURRENT
-00444501 _UnLock_P2                       00a08a54 _HCOLD
-0044450d _UnLock_P3                       00a08a56 _vect_hexec0
-00444519 _UnLock_P4                       00a08a57 _vect_hexec1
-004445dd _Unpack_ASCII                    00a08a58 _vect_hexec2
-0044875c _Update_Boxcar                   00a08a59 _vect_hexec3
-004487fa _Update_Bubble                   00a08a5a _vect_hexec4
-00430b9d _Update_Flags_Goto_Next_Menu     00a08a5b _vect_hexec5
-004488eb _Update_Pattern                  00a08a5c _vect_hexec6
-00444ddd _Update_Relays                   00a08a5d _vect_hexec7
-004474b0 _Update_i_Log_Var                00a08a5e _TMR_SET_RT1
-00a00d3e _VARUSER                         00a08a5f _TMR_BURST
-004409c2 _VAR_CheckSet_Bounds             00a08a60 _TMR_SET_BT
-00440ab0 _VAR_Check_Bounds                00a08a61 _HART_BURST_MASTER_SEL
-0044052a _VAR_Copy                        00a08b01 _TEMP_SAMPLE
-004408d9 _VAR_DAMP                        00a08b02 _i_FREQ_W
-004261a7 _VAR_DAMP_Init                   00a08b03 _ESN_MFGR
-004407f4 _VAR_Get_Unit_Param              00a08b08 _i_CCM_Pressure
-00a09146 _VAR_INT_SCALE                   00a08b09 _TMPTRANS
-004261f1 _VAR_Initialize                  00a08b1b _boxcar_reset_needed
-00a08b24 _VAR_LONGINT_SCALE               00a08b1c _TMP_VINC
-0044088b _VAR_NaN                         00a08b24 _VAR_LONGINT_SCALE
-00a08d7f _VAR_SELECT_DVIN                 00a08b25 _IDEC_PORT
-00a08dc9 _VAR_SELECT_DV                   00a08b26 _CLOCK
-0044741e _VAR_SET_STR                     00a08b27 _i_IP_O
-004473ee _VAR_SET_STR_DV                  00a08b28 _DIPSWITCH
-00447406 _VAR_SET_STR_DVIN                00a08b2a _bubble
-00440759 _VAR_Set_Unit_Param              00a08b4c _N_TEMP
-00440738 _VAR_Set_Unit                    00a08b4d _i_IP_W
-00426290 _VAR_Setup_Unit                  00a08b4e _il_LV
-004405f3 _VAR_Update                      00a08b6c _ccm_gas_total_fract_part
-00a08d19 _VT_SELECT                       00a08b6e _TIME_COUNT
-00a02136 _WATER_ADJ                       00a08b6f _TMP_TEMP
-00a00895 _WATER_ALARM_HI                  00a08b71 _RESEARCH_FORCE_MODE
-00a00e1a _WATER_ALARM_LO                  00a08b72 _PRESS
-00a002fb _WATER_PHASE_ONLY                00a08b8d _N_WC
-00a01768 _WATER_PHASE_ONLY_ENABLE         00a08b8e _STR_VAR_DESC
-00a08fe2 _WC_SUM                          00a08b98 _ccm_gas_total_whole_part
-00a098bd _WC                              00a08b9a _ZERO_INPUT
-00a08dab _WC_SAMPLE                       00a08b9b _i_CCM_Level
-00800579 _WDOG_P                          00a08b9c _N_FREQ
-00a00856 _Water_Phase_Filter              00a08b9d _PORT3_TEMP
-00a00906 _Water_Phase_Minimum             00a08b9e _DB_IP_RP_O
-0044429f _Water_RP_plot_max               00a08b9f _i_TEMP
-00444279 _Water_RP_plot_min               00a08ba0 _TRIM_RTD_HI
-0044420f _Watercut_plot_max               00a08ba1 _CCM_REMAINING_S
-004441f1 _Watercut_plot_min               00a08ba2 _CCM_CNT
-00449d05 _Write_ADC_DAC                   00a08ba3 _i_CCM_Flow_Water
-00444d84 _Write_CFG_FACTORY               00a08ba4 _i_RP_O
-00444d40 _Write_CFG_USER                  00a08ba5 _DB_IP_RP_W
-004494a1 _Write_DAC                       00a08ba6 _CCM_24_OIL
-00438f3f _Write_DS1340                    00a08ba7 _phase_rollover_count
-00801211 _Write_I2C_5                     00a08ba8 _i_RP_W
-0080159d _Write_I2C                       00a08ba9 _ESN_USER
-00801697 _Write_MC24C02_Record            00a08bae _CCM_24_WATER
-00449deb _Write_TMP75                     00a08baf _CHANGE
-00427d2b _XINT0                           00a08bb0 _TRIM_RTD_LO
-0043f353 _Xlate_3095_P_units              00a08bb1 _CCM_Record
-0043f386 _Xlate_3095_T_units              00a08bca _previous_phase
-0043f01c _Xlate_COR_Special_Units         00a08bcb _gas_routine_reset_needed
-00a08b9a _ZERO_INPUT                      00a08bcc _RTD_R
-00444f40 _Zero_FC1                        00a08bcd _LOCKOUT
-00444f4a _Zero_FC2                        00a08bce _i_CCM_Flow_Gas
-00444f54 _Zero_FC3                        00a08bcf _IP_RP_O
-000007bf __STACK_SIZE                     00a08bd0 _STR_VAR_UNIT
-00002000 __SYSMEM_SIZE                    00a08bd4 _FREQ_O
-00a08000 ___bss__                         00a08bd5 _LED_GREEN
-00460000 ___cinit__                       00a08bd6 _CCM_TIME_START
-00000000 ___data__                        00a08bdf _REG_WATERCUT_RAW
-00000000 ___edata__                       00a08be0 _i_CCM_Gas_Valve
-00a0b60d ___end__                         00a08be1 _PV_SAMPLES_5min
-0044b7e6 ___etext__                       00a08d14 _CCM_REMAINING
-ffffffff ___pinit__                       00a08d15 _IP_RP_W
-00430000 ___text__                        00a08d16 _FREQ_W
-00a0b3fc __ctypes_                        00a08d17 _water_freq_in
-0044a857 __printfi                        00a08d18 _MEM
-0044ae72 __scanfi                         00a08d19 _VT_SELECT
-00809802 __stack                          00a08d1a _RP_O
-0080455f __sys_memory                     00a08d1b _i_CCM_Liquid_Valve
-004219c3 _anademo                         00a08d1c _pattern
-0044b312 _atoi                            00a08d7a _RP_W
-0044b340 _atol                            00a08d7b _CURRENT_OSC
-0044b628 _bmalloc                         00a08d7c _SUM_TEMP
-00a039fa _boxcar_expire_val_minutes       00a08d7e _REG_PV_AVG_5min
-00a00e57 _boxcar_expire_val               00a08d7f _VAR_SELECT_DVIN
-00a08fca _boxcar_list                     00a08d81 _TMP_VREF
-00a08b1b _boxcar_reset_needed             00a08d89 _CCM_24_GAS
-00a08b2a _bubble                          00a08d8a _i_CCM_Flow_Oil
-00a03846 _bubble_new_length               00a08d8b _CCM_TIME_REMAINING
-00800a07 _c_INT0                          00a08d94 _DUMMY
-00800a80 _c_INT1                          00a08d95 _CCM_TIME_STOP
-00800c32 _c_INT2                          00a08d9e _compatibility_dummy
-00800c76 _c_INT3                          00a08d9f _i_CCM_Level_Setpoint
-008009ff _c_RINT0                         00a08da0 _TMP_VTUNE
-00801150 _c_SPURINT                       00a08da8 _READ_ADC_INPUTS
-00800d18 _c_TINT0                         00a08da9 _REG_PV_AVG_1sec
-00801148 _c_TINT1                         00a08daa _PORT2_GAS_TEMP
-008009f7 _c_XINT0                         00a08dab _WC_SAMPLE
-00420000 _c_int00                         00a08dc9 _VAR_SELECT_DV
-0042002c _call_to_main                    00a08dcb _IDEC_SA
-0044b545 _calloc                          00a08de5 _CCM_GAS_CNT
-00a08b6c _ccm_gas_total_fract_part        00a08de6 _AVG_TEMP
-00a08b98 _ccm_gas_total_whole_part        00a08de8 _CCMREC
-0044a493 _ceil                            00a08e4c _PV_SAMPLES_24hr
-00a08d9e _compatibility_dummy             00a08f7f _REG_LOWSALT_THRESHOLD
-004219e9 _copyright                       00a08fab _i_LV
-00421a12 _credit                          00a08fc9 _cycles
-00a08fc9 _cycles                          00a08fca _boxcar_list
-0044b344 _ecvt                            00a08fd2 _IP_O
-00a0b566 _errno                           00a08fd3 _INITIALIZING
-0044a4a7 _exp                             00a08fd4 _TMP_FREQ
-00a08fe3 _f_LV                            00a08fdc _CCM_ELAPSED_S
-0044096c _f_compare                       00a08fdd _PORT2_LIQ_TEMP
-0044b3ce _fcvt                            00a08fde _REG_TIME
-0044a4e5 _floor                           00a08fdf _IP_W
-0044a4f9 _fmod                            00a08fe0 _REG_PV_AVG_CNT
-0044b5c7 _free                            00a08fe1 _i_CCM_Pressure_Setpoint
-0044a82f _frexp                           00a08fe2 _WC_SUM
-00422b00 _fulldemo                        00a08fe3 _f_LV
-00a08bcb _gas_routine_reset_needed        00a09001 _OSWITCH
-00422a81 _highdemo                        00a09002 _SA
-00a08bce _i_CCM_Flow_Gas                  00a09003 _REG_PV_AVG_24hr
-00a08d8a _i_CCM_Flow_Oil                  00a09004 _phase
-00a08ba3 _i_CCM_Flow_Water                00a09005 _i_WC
-00a098bf _i_CCM_Flow                      00a09006 _PV_SAMPLES
-00a08be0 _i_CCM_Gas_Valve                 00a09139 _SAMPLE_PENDING
-00a08d9f _i_CCM_Level_Setpoint            00a0913a _CCM_24_TOTAL
-00a08b9b _i_CCM_Level                     00a0913b _LAST_TEMP_RESET
-00a08d1b _i_CCM_Liquid_Valve              00a0913c _CCM_TIME_ELAPSED
-00a08b08 _i_CCM_Pressure                  00a09145 _HW_VER
-00a08fe1 _i_CCM_Pressure_Setpoint         00a09146 _VAR_INT_SCALE
-00a098be _i_FREQ_O                        00a09147 _COR
-00a08b02 _i_FREQ_W                        00a098bd _WC
-00a08b27 _i_IP_O                          00a098be _i_FREQ_O
-00a08b4d _i_IP_W                          00a098bf _i_CCM_Flow
-00a08fab _i_LV                            00a09eb0 _MODBUS_CRITICAL_ERROR
-00a08ba4 _i_RP_O                          00a09eb1 _TMR_ALYESKA_PLC
-00a08ba8 _i_RP_W                          00a09ebb _vect_exec0
-00a08b9f _i_TEMP                          00a09ebc _vect_exec1
-00a09005 _i_WC                            00a09ebd _vect_exec2
-00a08b4e _il_LV                           00a09ebe _vect_exec3
-00430728 _kgm3_to_API                     00a09ebf _vect_exec4
-00440991 _l_compare                       00a09ec0 _vect_exec5
-0044a840 _ldexp                           00a09ec1 _vect_exec6
-0044a53b _log                             00a09ec2 _vect_exec7
-0044a582 _log10                           00a09ec3 _vect_exec8
-00422a35 _lowdemo                         00a0a12f _SRAM_SCRATCHPAD
-0044b462 _ltoa                            00a0a15a _LIST_EXEC_EMPTY
-00804550 _main                            00a0a15d _LIST_EXEC
-0044b50a _malloc                          00a0a160 _QUEUE_EXEC
-004504c1 _mb_coil                         00a0a188 _vect_ex
-004506e3 _mb_ext                          00a0a192 _vect_v1
-0044fd09 _mb_fc                           00a0a193 _vect_v2
-0045002f _mb_flt                          00a0a194 _vect_var1
-0044f733 _mb_int                          00a0a195 _vect_var2
-0044b48e _memccpy                         00a0a1e0 _TIME0
-0044b49e _memcpy                          00a0a1e1 _TIME1
-00422a5b _middemo                         00a0a1e2 _GATE_TIMEOUT
-0044b4ff _minit                           00a0a214 _SP0_RX_DATA
-0044a418 _modf                            00a0a215 _QUEUE_MASTER
-00a08d1c _pattern                         00a0a83c _LIST_MASTER_EMPTY
-00a03945 _pattern_new_length              00a0a83f _PDI_id
-00a08ba7 _phase_rollover_count            00a0a92b _TMR_RESTORE_CFGU
-00a09004 _phase                           00a0a935 _TMR_STAT
-0044a5cb _pow                             00a0a93f _TMR_OSC_DELAY_SHORT
-00a08bca _previous_phase                  00a0a949 _TMR_RTC_UPDATE
-0044b559 _realloc                         00a0a953 _TMR_SAMPLE_ERROR
-0044543e _round                           00a0a95d _TMR_SELF_TEST
-0044547a _sigfig                          00a0a967 _TMR_RESTART
-0044a6b5 _sprintf                         00a0a971 _TMR_CHECK_ZERO
-0044a6f0 _sscanf                          00a0a97b _TMR_CCM_TEST
-0044a74b _strcat                          00a0a985 _TMR_GET_uP_CONFIG
-0044a755 _strcpy                          00a0a98f _TMR_GET_POWER_CONFIG
-00a0180f _stream_boxcar_expire            00a0a999 _TMR_GET_COMM_CONFIG
-00a00577 _stream_boxcar_expire_minutes    00a0a9a3 _TMR_UPDATE_RELAYS
-00a00457 _stream_bubble_length            00a0a9ad _TMR_RESET
-00a02179 _stream_delta_temp               00a0a9b7 _TMR_T
-00a03872 _stream_pattern_length           00a0a9c1 _TMR_SAVE_CFGF
-0044a75c _strlen                          00a0a9cb _TMR_STORE_ANALYZER_CONFIG
-0044a762 _strncmp                         00a0a9d5 _TMR_GET_ANALYZER_CONFIG
-0044a775 _strncpy                         00a0a9df _TMR_STORE_POWER_CONFIG
-0044b67c _strtod                          00a0a9e9 _TMR_GET_DISPLAY_CONFIG
-0044a78a _strtol                          00a0a9f3 _TMR_ALFAT_LOG
-0044b75e _strtoul                         00a0a9fd _TMR_SAVE_CFGU
-0044540c _truncate                        00a0aa07 _TMR_CLEAR_USER_LOG_EVENT_FLAG
-00a02172 _uP                              00a0aa11 _TMR_BEEP_OFF
-00a09ebb _vect_exec0                      00a0aa1b _TMR_PERIODIC_ACCUM
-00a09ebc _vect_exec1                      00a0aa25 _TMR_STORE_MOTHERBOARD_CONFIG
-00a09ebd _vect_exec2                      00a0aa2f _TMR_GET_MOTHERBOARD_CONFIG
-00a09ebe _vect_exec3                      00a0aa39 _TMR_CLEAR_SYS_LOG_EVENT_FLAG
-00a09ebf _vect_exec4                      00a0aa43 _TMR_CCM_PURGE
-00a0a188 _vect_ex                         00a0aa4d _TMR_DATALOG_COUNTERS
-00a09ec0 _vect_exec5                      00a0aa57 _TMR_CLEAR_LOCKOUT
-00a09ec1 _vect_exec6                      00a0aa61 _TMR_LEDON
-00a09ec2 _vect_exec7                      00a0aa6b _TMR_DATALOG
-00a09ec3 _vect_exec8                      00a0aa75 _TMR_iLV
-00a08a56 _vect_hexec0                     00a0aa7f _RESEARCH_PS
-00a08a57 _vect_hexec1                     00a0aa80 _TMR_SELFTEST
-00a08a58 _vect_hexec2                     00a0aa8a _RESEARCH_VTUNE
-00a08a59 _vect_hexec3                     00a0aa8e _TMR_STORE_uP_CONFIG
-00a08a5a _vect_hexec4                     00a0aa98 _TMR_SET_BASICS
-00a08a5b _vect_hexec5                     00a0aaa2 _TMR_OSC_DELAY_LONG
-00a08a5c _vect_hexec6                     00a0aaac _RESEARCH_GATE
-00a08a5d _vect_hexec7                     00a0aaad _TMR_PULSE_UPDATE
-00a082a1 _vect_m                          00a0aab7 _TMR_LEDOFF
-00803bb0 _vect_p0                         00a0aac1 _TMR_MENU_REFRESH
-00803bb1 _vect_p1                         00a0aacb _TMR_STORE_COMM_CONFIG
-00803bb2 _vect_p2                         00a0aad5 _TMR_ADC_UPDATE
-00803bb3 _vect_p3                         00a0aadf _TMR_REFRESH_TIME
-00803bb4 _vect_p4                         00a0aae9 _TMR_DAMP
-00803bb5 _vect_p5                         00a0aaf3 _TMR_SET_CURRENT
-00803bb6 _vect_p6                         00a0aafd _TMR_PVAVG
-00803bb7 _vect_p7                         00a0ab07 _RESEARCH_ENABLED
-00802e38 _vect_pt0                        00a0ab0b _TMR_POLL
-00802e39 _vect_pt1                        00a0ab15 _TMR_SERDEF
-00802e3a _vect_pt2                        00a0ab1f _TMR_DATALOG_USER
-00802e3b _vect_pt3                        00a0ab29 _TMR_RESTORE_CFGF
-00802e3c _vect_pt4                        00a0ab33 _TMR_STORE_DISPLAY_CONFIG
-00802e3d _vect_pt5                        00a0ab3d _RESEARCH_OSC
-00802e3e _vect_pt6                        00a0ab41 _TMR_STORE_ANALOGIO_CONFIG
-00802e3f _vect_pt7                        00a0ab4b _TMR_GET_ANALOGIO_CONFIG
-00802e37 _vect_tm                         00a0b242 _DAC_INT
-00a0a192 _vect_v1                         00a0b29b _ADC_INT
-00a0a193 _vect_v2                         00a0b2a7 _ADC_ACTIVE
-00a0a194 _vect_var1                       00a0b2aa _TLV_REF
-00a0a195 _vect_var2                       00a0b3fc __ctypes_
-00a08d17 _water_freq_in                   00a0b566 _errno
-00460000 cinit                            00a0b60d end
-00000000 edata                            00a0b60d ___end__
-00a0b60d end                              00c00000 _UART
+00a0b2ab _TLV_REF                         00a03971 _DIO_RESTORE_USER_CONFIG
+00a08b0a _TMPTRANS                        00a03974 _REG_flow_meter_type
+00a08fd5 _TMP_FREQ                        00a039a0 _DIO_PORT_DEFAULTS
+00a08b70 _TMP_TEMP                        00a039a3 _REG_port1_stop_bits
+00a08b1d _TMP_VINC                        00a039cf _ADC_TRIM_I_0
+00a08d82 _TMP_VREF                        00a039db _CCM_CORRECT_GAS_TO_STP
+00a08da1 _TMP_VTUNE                       00a039dc _ADC_TRIM_I_1
+00a0aad6 _TMR_ADC_UPDATE                  00a039e8 _BULK_LEVEL_ENABLED
+00a0a9f4 _TMR_ALFAT_LOG                   00a039eb _NaN_val
+00a09eb2 _TMR_ALYESKA_PLC                 00a039ec _DIO_HEATER_DISABLE
+00a0aa12 _TMR_BEEP_OFF                    00a039ef _ALFAT_INITIALIZED
+00a08a60 _TMR_BURST                       00a039f0 _STR_Analyzer_Info
+00a0aa44 _TMR_CCM_PURGE                   00a039fa _boxcar_expire_val_minutes
+00a0a97c _TMR_CCM_TEST                    00a03a26 _CCM_GAS_TEMPERATURE
+00a0a972 _TMR_CHECK_ZERO                  00a03a52 _GAS_DENSITY_INPUT_ENABLED
+00a0aa58 _TMR_CLEAR_LOCKOUT               00a03a53 _ENABLED
+00a0aa3a _TMR_CLEAR_SYS_LOG_EVENT_FLAG    00a03a57 _OSC
+00a0aa08 _TMR_CLEAR_USER_LOG_EVENT_FLAG   00a03a5b _STR_HART_Msg
+00a0aaea _TMR_DAMP                        00a03a6b _REG_TEMPERATURE_USER_ADJUST
+00a0aa4e _TMR_DATALOG_COUNTERS            00a03a97 _CCM_GAS_MASS
+00a0ab20 _TMR_DATALOG_USER                00a03a98 _U_TEMP_ASCII
+00a0aa6c _TMR_DATALOG                     00a03a99 _REG_WATERCUT_DENSITY
+00a0ab4c _TMR_GET_ANALOGIO_CONFIG         00a03ac5 _RELAY1_REVERT
+00a0a9d6 _TMR_GET_ANALYZER_CONFIG         00a03ac8 _OIL_CALC_CUTOFF
+00a0a99a _TMR_GET_COMM_CONFIG             00a03ac9 _Density_Correction_Mode
+00a0a9ea _TMR_GET_DISPLAY_CONFIG          00a03acb _DIO_MOTHERBOARD_SET
+00a0aa30 _TMR_GET_MOTHERBOARD_CONFIG      00a03ace _USE_COR0_TEMP
+00a0a990 _TMR_GET_POWER_CONFIG            00a03acf _REG_port1_parity
+00a0a986 _TMR_GET_uP_CONFIG               00a03afb _REG_SALINITY
+00a0aab8 _TMR_LEDOFF                      00a03b27 _REG_BULK_LEVEL
+00a0aa62 _TMR_LEDON                       00a03b53 _EXTENDED_FW_VERSION_ENABLE
+00a0aac2 _TMR_MENU_REFRESH                00a03b7f _SIM_VTUNE
+00a0aaa3 _TMR_OSC_DELAY_LONG              00a03b83 _DensityCFT_D1
+00a0a940 _TMR_OSC_DELAY_SHORT             00a03b84 _Density_Cal_Unit
+00a0aa1c _TMR_PERIODIC_ACCUM              00a03b86 _COEFF_TEMP_OIL
+00a0ab0c _TMR_POLL                        00a03bae _DIO_PORT_IGNORE_DATA_EXCEPTION
+00a0aaae _TMR_PULSE_UPDATE                00a03baf _HSALT
+00a0aafe _TMR_PVAVG                       00a03bfc _ALFAT_USB_MOUNTED
+00a0aae0 _TMR_REFRESH_TIME                00a03bff _ANALYZER
+00a0a9ae _TMR_RESET                       00a03c06 _GAS_ROUTINE_ENABLE
+00a0a968 _TMR_RESTART                     00a03c42 _RTD_CAL_LO_V
+00a0ab2a _TMR_RESTORE_CFGF                00a03c43 _DIO_CCM_PURGE_TIME
+00a0a92c _TMR_RESTORE_CFGU                00a03c46 _AMETEK
+00a0a94a _TMR_RTC_UPDATE                  00a03c47 _REG_OIL_ADJ
+00a0a954 _TMR_SAMPLE_ERROR                00a03c73 _DEMO_ANALYZER_MODE
+00a0a9c2 _TMR_SAVE_CFGF                   00a03c9f _IRDA_ENABLE
+00a0a9fe _TMR_SAVE_CFGU                   00a03ca0 _REG_FREQ_O
+00a0aa81 _TMR_SELFTEST                    00a03ccc _REG_VREF
+00a0a95e _TMR_SELF_TEST                   00a03d7c _DIO_CLEAR_COUNTERS
+00a0ab16 _TMR_SERDEF                      00a03d7f _ALFAT_USB_DETECTED
+00a0aa99 _TMR_SET_BASICS                  00a03d82 _STR_Copyright
+00a08a61 _TMR_SET_BT                      00a03d96 _REG_VTUNE_SET
+00a0aaf4 _TMR_SET_CURRENT                 00a03e46 _HSALT_ENABLE
+00a08a5f _TMR_SET_RT1                     00a03e82 _GAS_VALVE_D
+00a0a936 _TMR_STAT                        00a03ebe _DIO_DISPLAY_SET
+00a0ab42 _TMR_STORE_ANALOGIO_CONFIG       00a03ec1 _CCM_SETPOINT_L1
+00a0a9cc _TMR_STORE_ANALYZER_CONFIG       00a03efd _DIO_MOTHERBOARD_GET
+00a0aacc _TMR_STORE_COMM_CONFIG           00a03f00 _LIST_DAMP_EMPTY
+00a0ab34 _TMR_STORE_DISPLAY_CONFIG        00a03f03 _DAMP
+00a0aa26 _TMR_STORE_MOTHERBOARD_CONFIG    00a03f7b _LIST_DAMP
+00a0a9e0 _TMR_STORE_POWER_CONFIG          00a03f7e _PORTCFG
+00a0aa8f _TMR_STORE_uP_CONFIG             00a04ab6 _AO
+00a0a9b8 _TMR_T                           00a05971 _AI
+00a0a9a4 _TMR_UPDATE_RELAYS               00a08000 ___bss__
+00a0aa76 _TMR_iLV                         00a08000 .bss
+0043bc94 _TOIEEE                          00a08044 _MSVE
+00a08ba1 _TRIM_RTD_HI                     00a08241 _OUT_STR2
+00a08bb1 _TRIM_RTD_LO                     00a08261 _DIO_MSVE
+00800911 _TX_P                            00a08262 _ENG_STR2
+008008e7 _TX_P1                           00a08282 _OUT_STR
+008008b6 _TX_S                            00a082a2 _vect_m
+008005a4 _TX_S1                           00a082a3 _ENG_STR
+00802fe0 _TXbuf                           00a08675 _LCD_CNT
+004441d3 _Temp_plot_max                   00a08676 _RTC
+004441b5 _Temp_plot_min                   00a08680 _LCD
+00440e03 _Time_Scale_Flow                 00a08682 _RTC_PRESENT
+00441156 _Timer_Create                    00a08683 _MB_LCD_DISPLAY
+00800000 _Timer_Insert                    00a086ab _LCD_PRESENT
+008000ee _Timer_Remove                    00a086ac _LCD_DISPLAY
+004442c5 _Timer_T                         00a08840 _LCD_DIPSW
+00445313 _Totalizer_Control               00a0884c _DIAGNOSTICS_ERROR_CODE
+00c00000 _UART                            00a0884d _E_STRING
+00a000e5 _USER_LOG_ENABLED                00a088b2 _DIAGNOSTICS_MSG_CODE
+00a089d0 _USER_LOG_EVENT                  00a088b3 _DIAGNOSTICS
+00a000e6 _USER_log_sample_period          00a088b5 _DIAG_TEMP
+00a03ace _USE_COR0_TEMP                   00a089c4 _CCM_Records
+00a005b3 _USE_PDI_WATERCUT                00a089d0 _USER_LOG_EVENT
+00a03a98 _U_TEMP_ASCII                    00a089d1 _SYS
+004444e9 _UnLock_P0                       00a089dd _SYS_LOG_EVENT
+004444f5 _UnLock_P1                       00a089de _FC_Periodic
+00444525 _UnLock_P                        00a08a54 _OLD_CURRENT
+00444501 _UnLock_P2                       00a08a55 _HCOLD
+0044450d _UnLock_P3                       00a08a57 _vect_hexec0
+00444519 _UnLock_P4                       00a08a58 _vect_hexec1
+004445dd _Unpack_ASCII                    00a08a59 _vect_hexec2
+0044875c _Update_Boxcar                   00a08a5a _vect_hexec3
+004487fa _Update_Bubble                   00a08a5b _vect_hexec4
+00430b9d _Update_Flags_Goto_Next_Menu     00a08a5c _vect_hexec5
+004488eb _Update_Pattern                  00a08a5d _vect_hexec6
+00444ddd _Update_Relays                   00a08a5e _vect_hexec7
+004474b0 _Update_i_Log_Var                00a08a5f _TMR_SET_RT1
+00a00d3e _VARUSER                         00a08a60 _TMR_BURST
+004409c2 _VAR_CheckSet_Bounds             00a08a61 _TMR_SET_BT
+00440ab0 _VAR_Check_Bounds                00a08a62 _HART_BURST_MASTER_SEL
+0044052a _VAR_Copy                        00a08b02 _TEMP_SAMPLE
+004408d9 _VAR_DAMP                        00a08b03 _i_FREQ_W
+004261a7 _VAR_DAMP_Init                   00a08b04 _ESN_MFGR
+004407f4 _VAR_Get_Unit_Param              00a08b09 _i_CCM_Pressure
+00a09147 _VAR_INT_SCALE                   00a08b0a _TMPTRANS
+004261f1 _VAR_Initialize                  00a08b1c _boxcar_reset_needed
+00a08b25 _VAR_LONGINT_SCALE               00a08b1d _TMP_VINC
+0044088b _VAR_NaN                         00a08b25 _VAR_LONGINT_SCALE
+00a08d80 _VAR_SELECT_DVIN                 00a08b26 _IDEC_PORT
+00a08dca _VAR_SELECT_DV                   00a08b27 _CLOCK
+0044741e _VAR_SET_STR                     00a08b28 _i_IP_O
+004473ee _VAR_SET_STR_DV                  00a08b29 _DIPSWITCH
+00447406 _VAR_SET_STR_DVIN                00a08b2b _bubble
+00440759 _VAR_Set_Unit_Param              00a08b4d _N_TEMP
+00440738 _VAR_Set_Unit                    00a08b4e _i_IP_W
+00426290 _VAR_Setup_Unit                  00a08b4f _il_LV
+004405f3 _VAR_Update                      00a08b6d _ccm_gas_total_fract_part
+00a08d1a _VT_SELECT                       00a08b6f _TIME_COUNT
+00a02136 _WATER_ADJ                       00a08b70 _TMP_TEMP
+00a00895 _WATER_ALARM_HI                  00a08b72 _RESEARCH_FORCE_MODE
+00a00e1a _WATER_ALARM_LO                  00a08b73 _PRESS
+00a002fb _WATER_PHASE_ONLY                00a08b8e _N_WC
+00a01768 _WATER_PHASE_ONLY_ENABLE         00a08b8f _STR_VAR_DESC
+00a08fe3 _WC_SUM                          00a08b99 _ccm_gas_total_whole_part
+00a098be _WC                              00a08b9b _ZERO_INPUT
+00a08dac _WC_SAMPLE                       00a08b9c _i_CCM_Level
+00800579 _WDOG_P                          00a08b9d _N_FREQ
+00a00856 _Water_Phase_Filter              00a08b9e _PORT3_TEMP
+00a00906 _Water_Phase_Minimum             00a08b9f _DB_IP_RP_O
+0044429f _Water_RP_plot_max               00a08ba0 _i_TEMP
+00444279 _Water_RP_plot_min               00a08ba1 _TRIM_RTD_HI
+0044420f _Watercut_plot_max               00a08ba2 _CCM_REMAINING_S
+004441f1 _Watercut_plot_min               00a08ba3 _CCM_CNT
+00449d05 _Write_ADC_DAC                   00a08ba4 _i_CCM_Flow_Water
+00444d84 _Write_CFG_FACTORY               00a08ba5 _i_RP_O
+00444d40 _Write_CFG_USER                  00a08ba6 _DB_IP_RP_W
+004494a1 _Write_DAC                       00a08ba7 _CCM_24_OIL
+00438f3f _Write_DS1340                    00a08ba8 _phase_rollover_count
+00801211 _Write_I2C_5                     00a08ba9 _i_RP_W
+0080159d _Write_I2C                       00a08baa _ESN_USER
+00801697 _Write_MC24C02_Record            00a08baf _CCM_24_WATER
+00449deb _Write_TMP75                     00a08bb0 _CHANGE
+00427d2b _XINT0                           00a08bb1 _TRIM_RTD_LO
+0043f353 _Xlate_3095_P_units              00a08bb2 _CCM_Record
+0043f386 _Xlate_3095_T_units              00a08bcb _previous_phase
+0043f01c _Xlate_COR_Special_Units         00a08bcc _gas_routine_reset_needed
+00a08b9b _ZERO_INPUT                      00a08bcd _RTD_R
+00444f40 _Zero_FC1                        00a08bce _LOCKOUT
+00444f4a _Zero_FC2                        00a08bcf _i_CCM_Flow_Gas
+00444f54 _Zero_FC3                        00a08bd0 _IP_RP_O
+000007bf __STACK_SIZE                     00a08bd1 _STR_VAR_UNIT
+00002000 __SYSMEM_SIZE                    00a08bd5 _FREQ_O
+00a08000 ___bss__                         00a08bd6 _LED_GREEN
+00460000 ___cinit__                       00a08bd7 _CCM_TIME_START
+00000000 ___data__                        00a08be0 _REG_WATERCUT_RAW
+00000000 ___edata__                       00a08be1 _i_CCM_Gas_Valve
+00a0b60e ___end__                         00a08be2 _PV_SAMPLES_5min
+0044b7e6 ___etext__                       00a08d15 _CCM_REMAINING
+ffffffff ___pinit__                       00a08d16 _IP_RP_W
+00430000 ___text__                        00a08d17 _FREQ_W
+00a0b3fd __ctypes_                        00a08d18 _water_freq_in
+0044a857 __printfi                        00a08d19 _MEM
+0044ae72 __scanfi                         00a08d1a _VT_SELECT
+00809802 __stack                          00a08d1b _RP_O
+0080455f __sys_memory                     00a08d1c _i_CCM_Liquid_Valve
+004219c3 _anademo                         00a08d1d _pattern
+0044b312 _atoi                            00a08d7b _RP_W
+0044b340 _atol                            00a08d7c _CURRENT_OSC
+0044b628 _bmalloc                         00a08d7d _SUM_TEMP
+00a039fa _boxcar_expire_val_minutes       00a08d7f _REG_PV_AVG_5min
+00a00e57 _boxcar_expire_val               00a08d80 _VAR_SELECT_DVIN
+00a08fcb _boxcar_list                     00a08d82 _TMP_VREF
+00a08b1c _boxcar_reset_needed             00a08d8a _CCM_24_GAS
+00a08b2b _bubble                          00a08d8b _i_CCM_Flow_Oil
+00a03846 _bubble_new_length               00a08d8c _CCM_TIME_REMAINING
+00800a07 _c_INT0                          00a08d95 _DUMMY
+00800a80 _c_INT1                          00a08d96 _CCM_TIME_STOP
+00800c32 _c_INT2                          00a08d9f _compatibility_dummy
+00800c76 _c_INT3                          00a08da0 _i_CCM_Level_Setpoint
+008009ff _c_RINT0                         00a08da1 _TMP_VTUNE
+00801150 _c_SPURINT                       00a08da9 _READ_ADC_INPUTS
+00800d18 _c_TINT0                         00a08daa _REG_PV_AVG_1sec
+00801148 _c_TINT1                         00a08dab _PORT2_GAS_TEMP
+008009f7 _c_XINT0                         00a08dac _WC_SAMPLE
+00420000 _c_int00                         00a08dca _VAR_SELECT_DV
+0042002c _call_to_main                    00a08dcc _IDEC_SA
+0044b545 _calloc                          00a08de6 _CCM_GAS_CNT
+00a08b6d _ccm_gas_total_fract_part        00a08de7 _AVG_TEMP
+00a08b99 _ccm_gas_total_whole_part        00a08de9 _CCMREC
+0044a493 _ceil                            00a08e4d _PV_SAMPLES_24hr
+00a08d9f _compatibility_dummy             00a08f80 _REG_LOWSALT_THRESHOLD
+004219e9 _copyright                       00a08fac _i_LV
+00421a12 _credit                          00a08fca _cycles
+00a08fca _cycles                          00a08fcb _boxcar_list
+0044b344 _ecvt                            00a08fd3 _IP_O
+00a0b567 _errno                           00a08fd4 _INITIALIZING
+0044a4a7 _exp                             00a08fd5 _TMP_FREQ
+00a08fe4 _f_LV                            00a08fdd _CCM_ELAPSED_S
+0044096c _f_compare                       00a08fde _PORT2_LIQ_TEMP
+0044b3ce _fcvt                            00a08fdf _REG_TIME
+0044a4e5 _floor                           00a08fe0 _IP_W
+0044a4f9 _fmod                            00a08fe1 _REG_PV_AVG_CNT
+0044b5c7 _free                            00a08fe2 _i_CCM_Pressure_Setpoint
+0044a82f _frexp                           00a08fe3 _WC_SUM
+00422b00 _fulldemo                        00a08fe4 _f_LV
+00a08bcc _gas_routine_reset_needed        00a09002 _OSWITCH
+00422a81 _highdemo                        00a09003 _SA
+00a08bcf _i_CCM_Flow_Gas                  00a09004 _REG_PV_AVG_24hr
+00a08d8b _i_CCM_Flow_Oil                  00a09005 _phase
+00a08ba4 _i_CCM_Flow_Water                00a09006 _i_WC
+00a098c0 _i_CCM_Flow                      00a09007 _PV_SAMPLES
+00a08be1 _i_CCM_Gas_Valve                 00a0913a _SAMPLE_PENDING
+00a08da0 _i_CCM_Level_Setpoint            00a0913b _CCM_24_TOTAL
+00a08b9c _i_CCM_Level                     00a0913c _LAST_TEMP_RESET
+00a08d1c _i_CCM_Liquid_Valve              00a0913d _CCM_TIME_ELAPSED
+00a08b09 _i_CCM_Pressure                  00a09146 _HW_VER
+00a08fe2 _i_CCM_Pressure_Setpoint         00a09147 _VAR_INT_SCALE
+00a098bf _i_FREQ_O                        00a09148 _COR
+00a08b03 _i_FREQ_W                        00a098be _WC
+00a08b28 _i_IP_O                          00a098bf _i_FREQ_O
+00a08b4e _i_IP_W                          00a098c0 _i_CCM_Flow
+00a08fac _i_LV                            00a09eb1 _MODBUS_CRITICAL_ERROR
+00a08ba5 _i_RP_O                          00a09eb2 _TMR_ALYESKA_PLC
+00a08ba9 _i_RP_W                          00a09ebc _vect_exec0
+00a08ba0 _i_TEMP                          00a09ebd _vect_exec1
+00a09006 _i_WC                            00a09ebe _vect_exec2
+00a08b4f _il_LV                           00a09ebf _vect_exec3
+00430728 _kgm3_to_API                     00a09ec0 _vect_exec4
+00440991 _l_compare                       00a09ec1 _vect_exec5
+0044a840 _ldexp                           00a09ec2 _vect_exec6
+0044a53b _log                             00a09ec3 _vect_exec7
+0044a582 _log10                           00a09ec4 _vect_exec8
+00422a35 _lowdemo                         00a0a130 _SRAM_SCRATCHPAD
+0044b462 _ltoa                            00a0a15b _LIST_EXEC_EMPTY
+00804550 _main                            00a0a15e _LIST_EXEC
+0044b50a _malloc                          00a0a161 _QUEUE_EXEC
+004504c1 _mb_coil                         00a0a189 _vect_ex
+004506e3 _mb_ext                          00a0a193 _vect_v1
+0044fd09 _mb_fc                           00a0a194 _vect_v2
+0045002f _mb_flt                          00a0a195 _vect_var1
+0044f733 _mb_int                          00a0a196 _vect_var2
+0044b48e _memccpy                         00a0a1e1 _TIME0
+0044b49e _memcpy                          00a0a1e2 _TIME1
+00422a5b _middemo                         00a0a1e3 _GATE_TIMEOUT
+0044b4ff _minit                           00a0a215 _SP0_RX_DATA
+0044a418 _modf                            00a0a216 _QUEUE_MASTER
+00a08d1d _pattern                         00a0a83d _LIST_MASTER_EMPTY
+00a03945 _pattern_new_length              00a0a840 _PDI_id
+00a08ba8 _phase_rollover_count            00a0a92c _TMR_RESTORE_CFGU
+00a09005 _phase                           00a0a936 _TMR_STAT
+0044a5cb _pow                             00a0a940 _TMR_OSC_DELAY_SHORT
+00a08bcb _previous_phase                  00a0a94a _TMR_RTC_UPDATE
+0044b559 _realloc                         00a0a954 _TMR_SAMPLE_ERROR
+0044543e _round                           00a0a95e _TMR_SELF_TEST
+0044547a _sigfig                          00a0a968 _TMR_RESTART
+0044a6b5 _sprintf                         00a0a972 _TMR_CHECK_ZERO
+0044a6f0 _sscanf                          00a0a97c _TMR_CCM_TEST
+0044a74b _strcat                          00a0a986 _TMR_GET_uP_CONFIG
+0044a755 _strcpy                          00a0a990 _TMR_GET_POWER_CONFIG
+00a0180f _stream_boxcar_expire            00a0a99a _TMR_GET_COMM_CONFIG
+00a00577 _stream_boxcar_expire_minutes    00a0a9a4 _TMR_UPDATE_RELAYS
+00a00457 _stream_bubble_length            00a0a9ae _TMR_RESET
+00a02179 _stream_delta_temp               00a0a9b8 _TMR_T
+00a03872 _stream_pattern_length           00a0a9c2 _TMR_SAVE_CFGF
+0044a75c _strlen                          00a0a9cc _TMR_STORE_ANALYZER_CONFIG
+0044a762 _strncmp                         00a0a9d6 _TMR_GET_ANALYZER_CONFIG
+0044a775 _strncpy                         00a0a9e0 _TMR_STORE_POWER_CONFIG
+0044b67c _strtod                          00a0a9ea _TMR_GET_DISPLAY_CONFIG
+0044a78a _strtol                          00a0a9f4 _TMR_ALFAT_LOG
+0044b75e _strtoul                         00a0a9fe _TMR_SAVE_CFGU
+0044540c _truncate                        00a0aa08 _TMR_CLEAR_USER_LOG_EVENT_FLAG
+00a02172 _uP                              00a0aa12 _TMR_BEEP_OFF
+00a09ebc _vect_exec0                      00a0aa1c _TMR_PERIODIC_ACCUM
+00a09ebd _vect_exec1                      00a0aa26 _TMR_STORE_MOTHERBOARD_CONFIG
+00a09ebe _vect_exec2                      00a0aa30 _TMR_GET_MOTHERBOARD_CONFIG
+00a09ebf _vect_exec3                      00a0aa3a _TMR_CLEAR_SYS_LOG_EVENT_FLAG
+00a09ec0 _vect_exec4                      00a0aa44 _TMR_CCM_PURGE
+00a0a189 _vect_ex                         00a0aa4e _TMR_DATALOG_COUNTERS
+00a09ec1 _vect_exec5                      00a0aa58 _TMR_CLEAR_LOCKOUT
+00a09ec2 _vect_exec6                      00a0aa62 _TMR_LEDON
+00a09ec3 _vect_exec7                      00a0aa6c _TMR_DATALOG
+00a09ec4 _vect_exec8                      00a0aa76 _TMR_iLV
+00a08a57 _vect_hexec0                     00a0aa80 _RESEARCH_PS
+00a08a58 _vect_hexec1                     00a0aa81 _TMR_SELFTEST
+00a08a59 _vect_hexec2                     00a0aa8b _RESEARCH_VTUNE
+00a08a5a _vect_hexec3                     00a0aa8f _TMR_STORE_uP_CONFIG
+00a08a5b _vect_hexec4                     00a0aa99 _TMR_SET_BASICS
+00a08a5c _vect_hexec5                     00a0aaa3 _TMR_OSC_DELAY_LONG
+00a08a5d _vect_hexec6                     00a0aaad _RESEARCH_GATE
+00a08a5e _vect_hexec7                     00a0aaae _TMR_PULSE_UPDATE
+00a082a2 _vect_m                          00a0aab8 _TMR_LEDOFF
+00803bb0 _vect_p0                         00a0aac2 _TMR_MENU_REFRESH
+00803bb1 _vect_p1                         00a0aacc _TMR_STORE_COMM_CONFIG
+00803bb2 _vect_p2                         00a0aad6 _TMR_ADC_UPDATE
+00803bb3 _vect_p3                         00a0aae0 _TMR_REFRESH_TIME
+00803bb4 _vect_p4                         00a0aaea _TMR_DAMP
+00803bb5 _vect_p5                         00a0aaf4 _TMR_SET_CURRENT
+00803bb6 _vect_p6                         00a0aafe _TMR_PVAVG
+00803bb7 _vect_p7                         00a0ab08 _RESEARCH_ENABLED
+00802e38 _vect_pt0                        00a0ab0c _TMR_POLL
+00802e39 _vect_pt1                        00a0ab16 _TMR_SERDEF
+00802e3a _vect_pt2                        00a0ab20 _TMR_DATALOG_USER
+00802e3b _vect_pt3                        00a0ab2a _TMR_RESTORE_CFGF
+00802e3c _vect_pt4                        00a0ab34 _TMR_STORE_DISPLAY_CONFIG
+00802e3d _vect_pt5                        00a0ab3e _RESEARCH_OSC
+00802e3e _vect_pt6                        00a0ab42 _TMR_STORE_ANALOGIO_CONFIG
+00802e3f _vect_pt7                        00a0ab4c _TMR_GET_ANALOGIO_CONFIG
+00802e37 _vect_tm                         00a0b243 _DAC_INT
+00a0a193 _vect_v1                         00a0b29c _ADC_INT
+00a0a194 _vect_v2                         00a0b2a8 _ADC_ACTIVE
+00a0a195 _vect_var1                       00a0b2ab _TLV_REF
+00a0a196 _vect_var2                       00a0b3fd __ctypes_
+00a08d18 _water_freq_in                   00a0b567 _errno
+00460000 cinit                            00a0b60e end
+00000000 edata                            00a0b60e ___end__
+00a0b60e end                              00c00000 _UART
 0044b7e6 etext                            ffffffff ___pinit__
 ffffffff pinit                            ffffffff pinit
 

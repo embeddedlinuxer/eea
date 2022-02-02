@@ -252,8 +252,9 @@ double API_60F_PT(const int fcidx, const double r, int* k_set)
 				return API_error_num;
 			}
 			else if(p<40.0)
-			{/* p<40 && (300<t>250) ? extrapolate : fail */
-				if(t>300.0)
+			{/* p<40 && (250<t<400) ? extrapolate : fail */
+				//if(t>300.0) // FEB 2, 2022 : DKOH : bug#112
+				if(t>400.0) // FEB 2, 2022 : DKOH : bug#112
 				{/* fail */
 					API_STATUS(fcidx, API_fail);
 					GIEP; 
@@ -264,9 +265,9 @@ double API_60F_PT(const int fcidx, const double r, int* k_set)
 					API_STATUS(fcidx, API_extrapolate);
 			}
 			else if(p<50.0)
-			{/* p<50 && (300<t>200) ? extrapolate : fail */
-				//if(t>250.0) // JAN 12, 2022 : DKOH : bug#112
-				if(t>300.0)
+			{/* p<50 && (200<t<400) ? extrapolate : fail */
+				//if(t>250.0) // FEB 2, 2022 : DKOH : bug#112
+				if(t>400.0) // FEB 2, 2022 : DKOH : bug#112
 				{/* fail */
 					API_STATUS(fcidx, API_fail);
 					GIEP; 
@@ -277,9 +278,9 @@ double API_60F_PT(const int fcidx, const double r, int* k_set)
 					API_STATUS(fcidx, API_extrapolate);
 			}
 			else if(p<55.0)
-			{/* p<55 && (300<t>150) ? extrapolate : fail */
-				//if(t>200.0) // JAN 12, 2022 : DKOH : bug#112
-				if(t>300.0)
+			{/* p<55 && (150<t<400) ? extrapolate : fail */
+				//if(t>200.0) // FEB 2, 2022 : DKOH : bug#112
+				if(t>400.0) // FEB 2, 2022 : DKOH : bug#112
 				{/* fail */
 					API_STATUS(fcidx, API_fail);
 					GIEP; 
@@ -290,9 +291,9 @@ double API_60F_PT(const int fcidx, const double r, int* k_set)
 					API_STATUS(fcidx, API_extrapolate);
 			}
 			else if(p<=100.0)
-			{/* p<=100 && t<300 ? extrapolate : fail */
-				//if(t>200.0) // JAN 12, 2022 : DKOH : bug#112
-				if(t>300.0)
+			{/* p<=100 && t<400 ? extrapolate : fail */
+				//if(t>200.0) // FEB 2, 2022 : DKOH : bug#112
+				if(t>400.0) // FEB 2, 2022 : DKOH : bug#112
 				{/* fail */
 					API_STATUS(fcidx, API_fail);
 					GIEP; 
@@ -304,8 +305,8 @@ double API_60F_PT(const int fcidx, const double r, int* k_set)
 			}
 ////////// ADDED BY DKOH JAN 12, 2022 BUG#112 /////////////
 			else if(p<=183.0)
-			{/* p<=183 && t<300 ? PDI : fail */
-				if(t>300.0)
+			{/* p<=183 && t<400 ? PDI : fail */
+				if(t>400.0) // FEB 2, 2022 : DKOH : bug#112
 				{/* fail */
 					API_STATUS(fcidx, API_fail);
 					GIEP; 
@@ -560,9 +561,9 @@ double API_15C_PT(const int fcidx, const double r, int* k_set)
 				return API_error_num;
 			}
 			else if (p<758.0)
-			{/* p<758 && t<150 ? extrapolate : fail */
-				//if (t>90.0) // JAN 12, 2022 : DKOH : bug#112
-				if (t>150.0)
+			{/* p<758 && t<204 ? extrapolate : fail */
+				//if (t>90.0)// FEB 2, 2022 : DKOH : bug#112
+				if (t>204.0) // FEB 2, 2022 : DKOH : bug#112
 				{
 					API_STATUS(fcidx, API_fail);
 					GIEP; 
@@ -573,9 +574,9 @@ double API_15C_PT(const int fcidx, const double r, int* k_set)
 					API_STATUS(fcidx, API_extrapolate);
 			}
 			else if (p<778.5)
-			{/* p<778.5 && 60<t<150 ? extrapolate : fail */
-				//if (t>90.0)// JAN 12, 2022 : DKOH : bug#112
-				if (t>150.0)
+			{/* p<778.5 && 60<t<204 ? extrapolate : fail */
+				//if (t>90.0)// FEB 2, 2022 : DKOH : bug#112
+				if (t>204.0) // FEB 2, 2022 : DKOH : bug#112
 				{
 					API_STATUS(fcidx, API_fail);
 					GIEP; 
@@ -586,9 +587,9 @@ double API_15C_PT(const int fcidx, const double r, int* k_set)
 					API_STATUS(fcidx, API_extrapolate);
 			}                                               
 			else if (p<824.0)
-			{/* p<824 && 90<t<150 ? extrapolate : fail */
-				//if (t>120.0)// JAN 12, 2022 : DKOH : bug#112
-				if (t>150.0)
+			{/* p<824 && 90<t<204 ? extrapolate : fail */
+				//if (t>120.0) // FEB 2, 2022 : DKOH : bug#112
+				if (t>204.0) // FEB 2, 2022 : DKOH : bug#112
 				{
 					API_STATUS(fcidx, API_fail);
 					GIEP; return API_error_num;
@@ -597,8 +598,9 @@ double API_15C_PT(const int fcidx, const double r, int* k_set)
 					API_STATUS(fcidx, API_extrapolate);
 			}
 			else if (p<=1075.0)
-			{/* p<1075 && 120<t<150 ? extrapolate : fail */
-				if (t>150.0)
+			{/* p<1075 && 120<t<204 ? extrapolate : fail */
+				//if (t>150) // FEB 2, 2022 : DKOH : bug#112
+				if (t>204.0) // FEB 2, 2022 : DKOH : bug#112
 				{
 					API_STATUS(fcidx, API_fail);
 					GIEP; return API_error_num;

@@ -1,6 +1,6 @@
 ;******************************************************************************
 ;* TMS320C3x/4x ANSI C Code Generator                            Version 5.11 *
-;* Date/Time created: Mon Jan 31 16:12:55 2022                                *
+;* Date/Time created: Wed Feb  2 11:34:31 2022                                *
 ;******************************************************************************
 	.regalias	; enable floating point register aliases
 fp	.set	ar3
@@ -17,7 +17,7 @@ FP	.set	ar3
 ;*   Calls              : Normal Library ASM calls                            *
 ;*   Debug Info         : Standard TI Debug Information                       *
 ;******************************************************************************
-;	C:\tic3x4x\c3x4x\cgtools\bin\ac30.exe -@_B10.AAA 
+;	C:\tic3x4x\c3x4x\cgtools\bin\ac30.exe -@_CMG.AAA 
 	.file	"main.c"
 	.file	"Y:\workspace_eea\V615\APP\SOURCE\INCLUDE\GLBLS.H"
 	.file	"Y:\workspace_eea\V615\INCLUDE\stdarg.h"
@@ -4915,7 +4915,7 @@ L74:
 ; 643 | i       = FIRMWARE_SUBVERSION;                                         
 ; 648 | #ifndef RUSS_TRANSLATION_ENABLED                                       
 ;----------------------------------------------------------------------
-        ldiu      8,r0                  ; |643| 
+        ldiu      9,r0                  ; |643| 
         sti       r0,*+fp(1)            ; |643| 
 	.line	81
 ;----------------------------------------------------------------------

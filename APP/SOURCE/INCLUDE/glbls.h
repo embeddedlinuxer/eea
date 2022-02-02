@@ -54,12 +54,13 @@
 /// V6.15.08 | FEB-22-2021 | Fixed. Bug 103 - MSVE command broken for the Force Phase screen
 ///                          Fixed. Bug 104 - Incorrect Data Capturing in USB Data Logging
 ///                          Fixed. Bug 105 - Incorrect data logging array index
+/// V6.15.09 | FEB-02-2022 | Fixed. Bug 112 - Increase high temp limit in Density Correction
 ///
 /////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////
 
 #define FIRMWARE_VERSION	 			615
-#define FIRMWARE_SUBVERSION				8
+#define FIRMWARE_SUBVERSION				9
 
 /*
 	SUBVERSION CHANGES: ('->' arrow denotes partially non-cumulative release, i.e. a separate branch)

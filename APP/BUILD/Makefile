@@ -1,24 +1,19 @@
-VER = 6.15.08
-VER2 = 6_15_08
+VER = 6.15.09
+VER2 = 6_15_09
+GIT_COMMIT = ec483ceb445676aa1c58fcf9568eacd50823fa68
+GIT_DATE = "Thu Dec 16 07:57:21 2021 -0600"
 
-BUG_0 = "BUG[103]: MSVE command broken for the Force Phase screen (http://10.10.1.51/bugzilla/show_bug.cgi?id=103)\n"
-BUG_1 = "BUG[104]: Incorrect data capturing in USB data logging (http://10.10.1.51/bugzilla/show_bug.cgi?id=104)\n"
-BUG_2 = "BUG[105]: Incorrect data logging array index (http://10.10.1.51/bugzilla/show_bug.cgi?id=105)" 
-BUG_3 = ""
-BUG_4 = ""
-BUG_5 = ""
-BUG_6 = ""
-BUG_7 = ""
-BUG_8 = ""
-BUG_9 = ""
-BUGS = $(BUG_0)$(BUG_1)$(BUG_2)$(BUG_3)$(BUG_4)$(BUG_5)$(BUG_6)$(BUG_7)$(BUG_8)$(BUG_9)
+define BUGS
+BUG[112]: Increase high temp limit in Density Correction [http://10.10.1.51/bugzilla/show_bug.cgi?id=112]
+
+endef
 
 ##############################################
 ##############################################
 ### DO NOT CHANGE ANYTHING AFTER THIS LINE ###
 ##############################################
 ##############################################
-
+export BUGS
 PRODUCT = EEA
 TIME_STAMP = `date +'%Y_%m_%d'`
 RELEASE_DATE = $(shell date --iso=seconds)

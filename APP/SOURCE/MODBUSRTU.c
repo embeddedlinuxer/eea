@@ -621,35 +621,21 @@ void MODBUS_RX_CRC(int id)
 					
 						break;
 					}
-					case mb_cmd_pdi_analyzer_setup: // 0x41 DKOH OCT 9 2020
+					case mb_cmd_pdi_analyzer_sample: // 0x42 
+					case mb_cmd_pdi_analyzer_setup: // 0x41
 					{
-						if ((id!=PDI_id) || (DIPSWITCH[0] == 0)) // v.6.13.34 
-							MB_exception(id, mb_excp_illegal_func);
+						if (id!=PDI_id) MB_exception(id, mb_excp_illegal_func);// v.6.13.34 
 						else
 						{
-							RESEARCH();
+							if (DIPSWITCH[0] != 0) // BUG#117 BY DKOH APR 21, 2022
+							{
+								RESEARCH();
 							
-							PORT[id].SUCCESS++;
-							GIEP;
+								PORT[id].SUCCESS++;
+								GIEP;
 						
-							return;
-						}
-						
-						break;
-					}
-					case mb_cmd_pdi_analyzer_sample: // 0x42 DKOH OCT 9, 2020
-					{
-						//if ((id!=PDI_id) || (DIPSWITCH[0] == 0)) // v.6.13.34 
-						if (id!=PDI_id) // DKOH OCT 9, 2020
-							MB_exception(id, mb_excp_illegal_func);
-						else
-						{
-							RESEARCH();
-							
-							PORT[id].SUCCESS++;
-							GIEP;
-						
-							return;
+								return;
+							}
 						}
 						
 						break;

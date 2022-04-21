@@ -1,4 +1,4 @@
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Feb 02 15:41:58 2022
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Apr 21 09:28:10 2022
 Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30 boot.asm boot.obj -lx -v30 -mrb -iY:\workspace_eeaV615\APP\SOURCE -iY:\workspace_eea\V615\APP\SOURCE\INCLUDE -iY:\workspace_eea\V615\INCLUDE -iY:\workspace_eea\V615\APP\SOURCE\ASM 
 
 boot.asm                                                             PAGE    1
@@ -82,7 +82,7 @@ boot.asm                                                             PAGE    1
        77 0000000f 04e00001                 CMPI    1,R0                      ;check if address is between 0x400000 & 0x600000
        78 00000010 6a060008                 BNE             auto_init
        79                   
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Feb 02 15:41:58 2022
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Apr 21 09:28:10 2022
 Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30 boot.asm boot.obj -lx -v30 -mrb -iY:\workspace_eeaV615\APP\SOURCE -iY:\workspace_eea\V615\APP\SOURCE\INCLUDE -iY:\workspace_eea\V615\INCLUDE -iY:\workspace_eea\V615\APP\SOURCE\ASM 
 
 boot.asm                                                             PAGE    2
@@ -145,7 +145,7 @@ boot.asm                                                             PAGE    2
       135                           .end
 
  No Errors,  No Warnings
-TMS320C3x/4x COFF AssemblerVersion 5.12     Wed Feb 02 15:41:58 2022
+TMS320C3x/4x COFF AssemblerVersion 5.12     Thu Apr 21 09:28:10 2022
 Copyright (c) 1987-1999 Texas Instruments Incorporatedasm30 boot.asm boot.obj -lx -v30 -mrb -iY:\workspace_eeaV615\APP\SOURCE -iY:\workspace_eea\V615\APP\SOURCE\INCLUDE -iY:\workspace_eea\V615\INCLUDE -iY:\workspace_eea\V615\APP\SOURCE\ASM 
 
 boot.asm                                                             PAGE    3

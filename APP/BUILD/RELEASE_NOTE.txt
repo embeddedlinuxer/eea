@@ -2,8 +2,8 @@
 RELEASE SUMMARY
 -----------------------------------------------------
 PRODUCT      : EEA
-VERSION      : 6.15.09
-RELEASE DATE : 2022-02-02T11:53:06-06:00
+VERSION      : 6.15.10
+RELEASE DATE : 2022-04-21T09:30:01-05:00
 -----------------------------------------------------
 
 
@@ -11,7 +11,7 @@ RELEASE DATE : 2022-02-02T11:53:06-06:00
 -----------------------------------------------------
 BUG FIX & CHANGES
 -----------------------------------------------------
-BUG[112]: Increase high temp limit in Density Correction [http://10.10.1.51/bugzilla/show_bug.cgi?id=112]
+BUG[117]: HART communication not working
 
 
 
@@ -19,9 +19,9 @@ BUG[112]: Increase high temp limit in Density Correction [http://10.10.1.51/bugz
 -----------------------------------------------------
 MD5 HASHES
 -----------------------------------------------------
-d95770843838a57d52dc7bfbd9659885  pdi.out
-1d4f0f3e58e3262f63d35f2c6eeea97b  pdi.map
-684dcc70e3ce00905ec465cc2064b680  pdi.i0
+031eb469878a8ca1b4c027f9021b6996  pdi.out
+38faca7893d03d63f72f0a5fe50ac9eb  pdi.map
+38d3ece4eee75434346b35f40e9d3a8a  pdi.i0
 c9af1350551b69512e31f3da01cda861  PDI_BOOT.OUT
 2f74774c6718bb39378737968346f406  PDI_BOOT.I0
 

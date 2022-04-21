@@ -1,11 +1,11 @@
-Release 2022_02_02
+Release 2022_04_21
 CPLD:
    EEA    V2.0
    SA_54  0b10110110
    SA     0b10111010
 FLASH:
    BOOT 1.08
-   APP  V6.15.09
+   APP  V6.15.10
    OIT  CCM 3.14.2a
    EEA  3.14.2a
    BULK 1.11
